@@ -60,26 +60,28 @@ export function getAllPages(): Page[] {
 
   const files = fs.readdirSync(pagesDirectory).filter((file) => file.endsWith('.md'));
   
-  return files
-    .map((file) => {
-      try {
-        const fullPath = path.join(pagesDirectory, file);
-        const fileContents = fs.readFileSync(fullPath, 'utf8');
-        const { data, content } = matter(fileContents);
-        
-        return {
-          slug: data.slug || '',
-          title: data.title || '',
-          seo_title: data.seo_title,
-          seo_description: data.seo_description,
-          menu_order: data.menu_order || 0,
-          content,
-        };
-      } catch (error) {
-        return null;
-      }
-    })
-    .filter((page): page is Page => page !== null)
-    .sort((a, b) => (a.menu_order || 0) - (b.menu_order || 0));
+  const pages: Page[] = [];
+  
+  for (const file of files) {
+    try {
+      const fullPath = path.join(pagesDirectory, file);
+      const fileContents = fs.readFileSync(fullPath, 'utf8');
+      const { data, content } = matter(fileContents);
+      
+      pages.push({
+        slug: data.slug || '',
+        title: data.title || '',
+        seo_title: data.seo_title,
+        seo_description: data.seo_description,
+        menu_order: data.menu_order || 0,
+        content,
+      });
+    } catch (error) {
+      // Skip files that can't be parsed
+      console.error(`Error parsing page file ${file}:`, error);
+    }
+  }
+  
+  return pages.sort((a, b) => (a.menu_order || 0) - (b.menu_order || 0));
 }
 

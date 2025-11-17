@@ -24,15 +24,6 @@
       "href": "/services"
     },
     {
-      "id": "clogged-drains",
-      "icon": "Waves",
-      "title": "Clogged Drains",
-      "description": "Professional drain and sewer repair services. We use video inspection, hydro jetting, and trenchless pipe replacement to remove blockages and restore proper drainage.",
-      "features": ["Video Inspection", "Hydro Jetting", "Expert Team"],
-      "image": "/images/services/clog.jpg",
-      "href": "/services"
-    },
-    {
       "id": "leak-detection",
       "icon": "Zap",
       "title": "Leak Detection",
@@ -56,7 +47,7 @@
       "title": "Leaking Toilet & Faucets",
       "description": "Expert repair and replacement services for leaking toilets and faucets. We handle all types of plumbing fixture issues with professional installation and maintenance.",
       "features": ["Fixture Repair", "Installation", "Preventive Maintenance"],
-      "image": "/images/services/clog.jpg",
+      "image": "/wp-content/uploads/2024/06/shutterstock_2240976667.jpg",
       "href": "/services"
     },
     {
@@ -65,7 +56,7 @@
       "title": "Damaged Sewer Lines",
       "description": "Advanced methods to detect and repair damaged sewer lines. We use video camera inspections and hydro jetting to locate and fix sewer line issues quickly.",
       "features": ["Video Inspection", "Advanced Detection", "Quick Repair"],
-      "image": "/images/services/clog.jpg",
+      "image": "/wp-content/uploads/2024/08/shutterstock_2390974521.jpg",
       "href": "/services"
     },
     {
@@ -74,15 +65,6 @@
       "title": "Hydro Jetting",
       "description": "Non-chemical approach to clearing and cleaning your entire piping system using high-pressure water. Removes buildup, bacteria, and restores optimal flow.",
       "features": ["No Harsh Chemicals", "Complete Cleaning", "Long-Term Results"],
-      "image": "/images/services/clog.jpg",
-      "href": "/services"
-    },
-    {
-      "id": "slab-leaks",
-      "icon": "Home",
-      "title": "Slab Leaks",
-      "description": "Expert detection and repair of slab leaks located underneath concrete foundations. Early detection prevents severe damage to your foundation and floors.",
-      "features": ["Foundation Protection", "Early Detection", "Expert Repair"],
       "image": "/images/services/clog.jpg",
       "href": "/services"
     },

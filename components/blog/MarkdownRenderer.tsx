@@ -3,6 +3,7 @@
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import rehypeRaw from 'rehype-raw';
+import OptimizedImage from '@/components/OptimizedImage';
 
 interface MarkdownRendererProps {
   content: string;
@@ -51,17 +52,42 @@ export function MarkdownRenderer({ content }: MarkdownRendererProps) {
           strong: ({ children }) => (
             <strong className="font-bold text-gray-900">{children}</strong>
           ),
-          img: ({ src, alt, ...props }: React.ImgHTMLAttributes<HTMLImageElement> & { src?: string; alt?: string }) => {
+          img: ({ src, alt, width, height, ...props }: React.ImgHTMLAttributes<HTMLImageElement> & { src?: string; alt?: string; width?: number | string; height?: number | string }) => {
             // Handle both relative and absolute paths
             const imageSrc = src || '';
+            
+            // Use OptimizedImage for better performance and optimization
+            // If width/height are provided, use them; otherwise use fill with flexible container
+            if (width && height) {
+              const widthNum = typeof width === 'string' ? parseInt(width) : width;
+              const heightNum = typeof height === 'string' ? parseInt(height) : height;
+              return (
+                <div className="my-6 w-full flex justify-center">
+                  <OptimizedImage
+                    src={imageSrc}
+                    alt={alt || ''}
+                    width={widthNum}
+                    height={heightNum}
+                    className="rounded-lg max-w-full h-auto"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1200px"
+                    loading="lazy"
+                  />
+                </div>
+              );
+            }
+            
+            // For images without explicit dimensions, use fill with a flexible container
             return (
-              <img
-                src={imageSrc}
-                alt={alt || ''}
-                className="rounded-lg my-6 w-full h-auto"
-                loading="lazy"
-                {...props}
-              />
+              <div className="my-6 w-full relative" style={{ aspectRatio: '16/9', minHeight: '300px' }}>
+                <OptimizedImage
+                  src={imageSrc}
+                  alt={alt || ''}
+                  fill
+                  className="rounded-lg object-contain"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1200px"
+                  loading="lazy"
+                />
+              </div>
             );
           },
           iframe: ({ src, title, height, width, ...props }: React.IframeHTMLAttributes<HTMLIFrameElement> & { src?: string; title?: string }) => {
