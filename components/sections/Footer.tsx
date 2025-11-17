@@ -115,10 +115,18 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-gray-800 pt-8 text-center text-sm">
-          <p>
-            &copy; {currentYear} {siteConfig.name}. All rights reserved.
-          </p>
+        <div className="border-t border-gray-800 pt-8">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm">
+            <p>
+              &copy; {currentYear} {siteConfig.name}. All rights reserved. License # CFC1430460
+            </p>
+            <Link
+              href="/privacy-policy"
+              className="text-gray-400 hover:text-white transition-colors duration-200"
+            >
+              Privacy Policy
+            </Link>
+          </div>
         </div>
       </div>
     </footer>
