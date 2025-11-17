@@ -2,6 +2,7 @@
 
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
+import rehypeRaw from 'rehype-raw';
 
 interface MarkdownRendererProps {
   content: string;
@@ -12,6 +13,7 @@ export function MarkdownRenderer({ content }: MarkdownRendererProps) {
     <div className="prose prose-lg max-w-none">
       <ReactMarkdown
         remarkPlugins={[remarkGfm]}
+        rehypePlugins={[rehypeRaw]}
         components={{
           h1: ({ children }) => (
             <h1 className="text-4xl font-bold tracking-tight text-gray-900 mb-4 mt-8">
@@ -60,6 +62,27 @@ export function MarkdownRenderer({ content }: MarkdownRendererProps) {
                 loading="lazy"
                 {...props}
               />
+            );
+          },
+          iframe: ({ src, title, height, width, ...props }: React.IframeHTMLAttributes<HTMLIFrameElement> & { src?: string; title?: string }) => {
+            // If height is specified, use it; otherwise use responsive aspect ratio
+            const containerStyle = height 
+              ? { height: typeof height === 'string' ? height : `${height}px` }
+              : { aspectRatio: '16/9' };
+            
+            return (
+              <div className="my-6 w-full" style={containerStyle}>
+                <iframe
+                  src={src}
+                  title={title || 'Embedded content'}
+                  className="w-full h-full rounded-lg"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  height={height}
+                  width={width}
+                  {...props}
+                />
+              </div>
             );
           },
         }}

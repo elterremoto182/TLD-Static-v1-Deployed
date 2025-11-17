@@ -7,12 +7,16 @@ seo_title: "About - Total Leak Detection"
 seo_description: "About Total Leak Detection: Learn about our expertise in leak detection services and our commitment to customer satisfaction."
 keywords: ["plumbing", "detection", "reports", "advanced", "business", "sewer", "camera", "inspections", "techniques", "trained"]
 ---
+## About Total Leak Detection
 
 We decided to build a business around simplifying the plumbing industry with Total Leak Detection. With 3rd generation plumbing knowledge, we look to redefine customer service in three concentrated areas: water leak detection, sewer camera inspections, and plumbing report writing.  
 
 From preventing sewer pipe problems to delivering super reliable plumbing reports, we have you covered. If you suspect you have a leak, seek help immediately. Speed is everything in leak detection services. A plumbing leak, even a minor one, can end up becoming a long-term headache. 
 
 The good news is that the sooner they are corrected, the less chance there is of it causing serious damage to your home or business.
+
+<iframe width="100%" height="400px" src="https://www.youtube.com/embed/zAQ-o5fv-wU?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 
 ### Why choose us? 
 

@@ -35,6 +35,7 @@
     "react-dom": "18.2.0",
     "react-hook-form": "^7.53.0",
     "react-markdown": "^10.1.0",
+    "rehype-raw": "^7.0.0",
     "remark-gfm": "^4.0.1",
     "tailwind-merge": "^2.5.2",
     "tailwindcss": "3.3.3",
@@ -43,10 +44,9 @@
     "zod": "^3.23.8"
   },
   "browserslist": [
-  "last 2 Chrome versions",
-  "last 2 Firefox versions",
-  "last 2 Edge versions",
-  "Safari >= 15.4"
-]
-
+    "last 2 Chrome versions",
+    "last 2 Firefox versions",
+    "last 2 Edge versions",
+    "Safari >= 15.4"
+  ]
 }
