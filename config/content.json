@@ -15,36 +15,94 @@
   },
   "services": [
     {
-      "id": "clog",
-      "icon": "Wrench",
-      "title": "clog",
-      "description": "Professional clog services",
-      "features": ["Professional Service", "Expert Team", "Quality Results"],
-      "image": "/images/services/clog.jpg"
+      "id": "camera-inspection",
+      "icon": "Camera",
+      "title": "Sewer Camera Inspection",
+      "description": "Non-invasive video camera inspections to diagnose blockages, leaks, and structural problems in your pipes. Fast, reliable, and affordable sewer camera inspection services in Miami, FL.",
+      "features": ["HD Video Inspection", "Detailed Reports", "Non-Invasive"],
+      "image": "/images/services/clog.jpg",
+      "href": "/services"
     },
     {
-      "id": "drain-cleaning",
+      "id": "clogged-drains",
       "icon": "Waves",
-      "title": "Drain Cleaning",
-      "description": "Blocked drains can lead to unpleasant odors, slow water drainage, and even costly repairs. As an essential component of plumbing maintenance, effective drain cleaners play a pivotal role in preventing and resolving clogs.",
-      "features": ["Professional Service", "Expert Team", "Quality Results"],
-      "image": "/images/services/drain-cleaning.jpg"
+      "title": "Clogged Drains",
+      "description": "Professional drain and sewer repair services. We use video inspection, hydro jetting, and trenchless pipe replacement to remove blockages and restore proper drainage.",
+      "features": ["Video Inspection", "Hydro Jetting", "Expert Team"],
+      "image": "/images/services/clog.jpg",
+      "href": "/services"
     },
     {
       "id": "leak-detection",
       "icon": "Zap",
-      "title": "leak detection",
-      "description": "The Importance of Professional Leak Detection in Preventing Water Damage Water damage is one of the most costly and disruptive problems a homeowner or business can face.",
-      "features": ["Professional Service", "Expert Team", "Quality Results"],
-      "image": "/images/services/leak-detection.jpg"
+      "title": "Leak Detection",
+      "description": "Expert water leak detection services in Miami, FL. We specialize in quickly and accurately detecting and fixing leaks using advanced non-invasive techniques.",
+      "features": ["Non-Invasive Detection", "24/7 Emergency Service", "Insurance Accepted"],
+      "image": "/images/services/leak-detection.jpg",
+      "href": "/services"
     },
     {
-      "id": "mold",
+      "id": "mold-testing",
+      "icon": "Shield",
+      "title": "Mold Testing",
+      "description": "Reliable and accurate mold testing services to identify potential mold issues and protect your property from health risks. Detailed reports with remediation recommendations.",
+      "features": ["Accurate Testing", "Detailed Reports", "Health Protection"],
+      "image": "/images/services/mold.jpg",
+      "href": "/services"
+    },
+    {
+      "id": "leaking-toilet",
+      "icon": "Droplet",
+      "title": "Leaking Toilet & Faucets",
+      "description": "Expert repair and replacement services for leaking toilets and faucets. We handle all types of plumbing fixture issues with professional installation and maintenance.",
+      "features": ["Fixture Repair", "Installation", "Preventive Maintenance"],
+      "image": "/images/services/clog.jpg",
+      "href": "/services"
+    },
+    {
+      "id": "damaged-sewer",
+      "icon": "AlertTriangle",
+      "title": "Damaged Sewer Lines",
+      "description": "Advanced methods to detect and repair damaged sewer lines. We use video camera inspections and hydro jetting to locate and fix sewer line issues quickly.",
+      "features": ["Video Inspection", "Advanced Detection", "Quick Repair"],
+      "image": "/images/services/clog.jpg",
+      "href": "/services"
+    },
+    {
+      "id": "hydro-jetting",
+      "icon": "Waves",
+      "title": "Hydro Jetting",
+      "description": "Non-chemical approach to clearing and cleaning your entire piping system using high-pressure water. Removes buildup, bacteria, and restores optimal flow.",
+      "features": ["No Harsh Chemicals", "Complete Cleaning", "Long-Term Results"],
+      "image": "/images/services/clog.jpg",
+      "href": "/services"
+    },
+    {
+      "id": "slab-leaks",
       "icon": "Home",
-      "title": "Mold",
-      "description": "Mold Inspection Miami | Improve Indoor Air Quality with Total Leak Detection Breathe Easier with Professional Mold Inspections from Total Leak Detection",
-      "features": ["Professional Service", "Expert Team", "Quality Results"],
-      "image": "/images/services/mold.jpg"
+      "title": "Slab Leaks",
+      "description": "Expert detection and repair of slab leaks located underneath concrete foundations. Early detection prevents severe damage to your foundation and floors.",
+      "features": ["Foundation Protection", "Early Detection", "Expert Repair"],
+      "image": "/images/services/clog.jpg",
+      "href": "/services"
+    },
+    {
+      "id": "plumbing-report-writing",
+      "icon": "FileText",
+      "title": "Plumbing Report Writing",
+      "description": "Comprehensive plumbing reports for residential and commercial properties. Detailed documentation with clear images, exact locations, and repair estimates. 48-hour guarantee.",
+      "features": ["48-Hour Guarantee", "Detailed Documentation", "Insurance Ready"],
+      "image": "/images/services/plumbing.jpg",
+      "href": "/services"
+    },
+    {
+      "id": "commercial-services",
+      "icon": "Building",
+      "title": "Commercial Services",
+      "description": "Specialized commercial plumbing services for businesses of all sizes. Installations, maintenance, diagnostics, and emergency repairs to keep your business running smoothly.",
+      "features": ["Commercial Expertise", "24/7 Support", "All Property Types"],
+      "image": "/images/services/clog.jpg",
+      "href": "/services"
     }
   ],
   "about": {

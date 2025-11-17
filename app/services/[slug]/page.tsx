@@ -1,0 +1,100 @@
+import Link from 'next/link';
+import { notFound } from 'next/navigation';
+import { Header } from '@/components/sections/Header';
+import { Footer } from '@/components/sections/Footer';
+import { MarkdownRenderer } from '@/components/blog/MarkdownRenderer';
+import { getPageBySlug, getAllPages } from '@/lib/pages/pages';
+import { ArrowLeft } from 'lucide-react';
+import type { Metadata } from 'next';
+
+export async function generateStaticParams() {
+  const pages = getAllPages();
+  // Filter only service pages
+  const servicePages = pages.filter((page) => {
+    const normalizedSlug = page.slug.replace(/^\/+|\/+$/g, '');
+    return normalizedSlug.startsWith('services/');
+  });
+  
+  return servicePages.map((page) => {
+    // Extract the slug part after 'services/'
+    // Normalize by removing leading/trailing slashes first
+    const normalizedSlug = page.slug.replace(/^\/+|\/+$/g, '');
+    const slugPart = normalizedSlug.replace(/^services\//, '').replace(/\/$/, '');
+    return {
+      slug: slugPart,
+    };
+  });
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: { slug: string };
+}): Promise<Metadata> {
+  // Normalize the slug to match the format in markdown files
+  const fullSlug = `services/${params.slug}`;
+  const page = getPageBySlug(fullSlug);
+  
+  if (!page) {
+    return {
+      title: 'Page Not Found',
+    };
+  }
+
+  return {
+    title: page.seo_title || page.title,
+    description: page.seo_description || '',
+  };
+}
+
+export default function ServicePage({
+  params,
+}: {
+  params: { slug: string };
+}) {
+  // Normalize the slug to match the format in markdown files
+  // Try with and without trailing slash
+  let fullSlug = `services/${params.slug}`;
+  let page = getPageBySlug(fullSlug);
+  
+  // If not found, try with trailing slash
+  if (!page) {
+    fullSlug = `services/${params.slug}/`;
+    page = getPageBySlug(fullSlug);
+  }
+  
+  // If still not found, try the other way
+  if (!page && fullSlug.endsWith('/')) {
+    fullSlug = fullSlug.slice(0, -1);
+    page = getPageBySlug(fullSlug);
+  }
+
+  if (!page) {
+    notFound();
+  }
+
+  return (
+    <>
+      <Header />
+      <main className="min-h-screen pt-20">
+        <article className="max-w-4xl mx-auto px-4 py-12">
+          <div className="mb-8">
+            <Link
+              href="/services"
+              className="inline-flex items-center text-primary font-semibold hover:text-primary/80 transition-colors duration-200 mb-6"
+            >
+              <ArrowLeft className="w-4 h-4 mr-2" />
+              Back to Services
+            </Link>
+          </div>
+
+          <div className="prose prose-lg max-w-none">
+            <MarkdownRenderer content={page.content} />
+          </div>
+        </article>
+      </main>
+      <Footer />
+    </>
+  );
+}
+

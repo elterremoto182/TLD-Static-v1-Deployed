@@ -1,9 +1,25 @@
 'use client';
 
+import Link from 'next/link';
 import OptimizedImage from '@/components/OptimizedImage';
 import * as LucideIcons from 'lucide-react';
 import { AnimateOnScroll } from '@/components/AnimateOnScroll';
 import content from '@/config/content.json';
+
+// Map service IDs to their slugs from markdown files
+// URLs should not have trailing slashes to match Next.js routing
+const serviceSlugMap: Record<string, string> = {
+  'camera-inspection': '/services/camera-inspection',
+  'clogged-drains': '/services/clogged-drains',
+  'leak-detection': '/services/leak-detection',
+  'mold-testing': '/services/mold-testing',
+  'leaking-toilet': '/services/leaking-toilet',
+  'damaged-sewer': '/services/damaged-sewer',
+  'hydro-jetting': '/services/hydro-jetting',
+  'slab-leaks': '/services/slab-leaks',
+  'plumbing-report-writing': '/services/plumbing-report-writing',
+  'commercial-services': '/services/commercial-services',
+};
 
 export function Services() {
   const { services } = content;
@@ -27,6 +43,7 @@ export function Services() {
             const IconComponent = (LucideIcons[
               service.icon as keyof typeof LucideIcons
             ] || LucideIcons.Wrench) as React.ElementType;
+            const serviceSlug = serviceSlugMap[service.id] || '/services';
 
             return (
               <AnimateOnScroll
@@ -35,7 +52,10 @@ export function Services() {
                 duration={600}
                 delay={index * 100}
               >
-                <div className="bg-white rounded-xl border border-gray-200 hover:-translate-y-1 hover:shadow-lg transition-all duration-200 overflow-hidden group">
+                <Link
+                  href={serviceSlug}
+                  className="block bg-white rounded-xl border border-gray-200 hover:-translate-y-1 hover:shadow-lg transition-all duration-200 overflow-hidden group cursor-pointer"
+                >
                   {service.image && (
                     <div className="relative aspect-[4/3] overflow-hidden">
                       <OptimizedImage
@@ -89,7 +109,7 @@ export function Services() {
                       ))}
                     </ul>
                   </div>
-                </div>
+                </Link>
               </AnimateOnScroll>
             );
           })}
