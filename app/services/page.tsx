@@ -5,6 +5,7 @@ import { AnimateOnScroll } from '@/components/AnimateOnScroll';
 import OptimizedImage from '@/components/OptimizedImage';
 import content from '@/config/content.json';
 import * as LucideIcons from 'lucide-react';
+import { generatePageMetadata } from '@/lib/utils';
 
 // Map service IDs to their slugs from markdown files
 // URLs should not have trailing slashes to match Next.js routing
@@ -20,6 +21,15 @@ const serviceSlugMap: Record<string, string> = {
   'plumbing-report-writing': '/services/plumbing-report-writing',
   'commercial-services': '/services/commercial-services',
 };
+
+export async function generateMetadata() {
+  return generatePageMetadata({
+    title: 'Our Services - Total Leak Detection',
+    description: 'Comprehensive plumbing and leak detection services in Miami, FL. Water leak detection, sewer camera inspections, mold testing, and more.',
+    keywords: ['plumbing services', 'leak detection services', 'Miami plumbing'],
+    path: '/services',
+  });
+}
 
 export default function ServicesPage() {
   const { services } = content;

@@ -5,21 +5,25 @@ import { Footer } from '@/components/sections/Footer';
 import { MarkdownRenderer } from '@/components/blog/MarkdownRenderer';
 import { getPageBySlug } from '@/lib/pages/pages';
 import { Home } from 'lucide-react';
-import type { Metadata } from 'next';
+import { generatePageMetadata } from '@/lib/utils';
 
-export async function generateMetadata(): Promise<Metadata> {
+export async function generateMetadata() {
   const page = getPageBySlug('about');
   
   if (!page) {
-    return {
+    return generatePageMetadata({
       title: 'About - Total Leak Detection',
-    };
+      description: 'Learn about Total Leak Detection and our expertise in leak detection services.',
+      path: '/about',
+    });
   }
 
-  return {
-    title: page.seo_title || page.title,
-    description: page.seo_description || '',
-  };
+  return generatePageMetadata({
+    title: page.seo_title || page.title || 'About - Total Leak Detection',
+    description: page.seo_description || 'Learn about Total Leak Detection and our expertise in leak detection services.',
+    keywords: page.keywords || (page.seo_title ? ['about', 'leak detection', 'Miami'] : undefined),
+    path: '/about',
+  });
 }
 
 export default function AboutPage() {

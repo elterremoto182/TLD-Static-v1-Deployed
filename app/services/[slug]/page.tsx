@@ -5,7 +5,7 @@ import { Footer } from '@/components/sections/Footer';
 import { MarkdownRenderer } from '@/components/blog/MarkdownRenderer';
 import { getPageBySlug, getAllPages } from '@/lib/pages/pages';
 import { ArrowLeft } from 'lucide-react';
-import type { Metadata } from 'next';
+import { generatePageMetadata } from '@/lib/utils';
 
 export async function generateStaticParams() {
   const pages = getAllPages();
@@ -30,21 +30,29 @@ export async function generateMetadata({
   params,
 }: {
   params: { slug: string };
-}): Promise<Metadata> {
+}) {
   // Normalize the slug to match the format in markdown files
   const fullSlug = `services/${params.slug}`;
   const page = getPageBySlug(fullSlug);
   
   if (!page) {
-    return {
+    return generatePageMetadata({
       title: 'Page Not Found',
-    };
+      description: 'The requested page could not be found.',
+      path: `/services/${params.slug}`,
+    });
   }
 
-  return {
-    title: page.seo_title || page.title,
-    description: page.seo_description || '',
-  };
+  // Normalize slug for URL path
+  const normalizedSlug = page.slug.replace(/^\/+|\/+$/g, '');
+  const urlPath = `/${normalizedSlug}`;
+
+  return generatePageMetadata({
+    title: page.seo_title || page.title || 'Service - Total Leak Detection',
+    description: page.seo_description || page.title || 'Professional leak detection and plumbing services.',
+    keywords: page.keywords || (page.seo_title ? [page.seo_title] : undefined),
+    path: urlPath,
+  });
 }
 
 export default function ServicePage({

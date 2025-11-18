@@ -9,6 +9,7 @@ export interface Page {
   title: string;
   seo_title?: string;
   seo_description?: string;
+  keywords?: string[];
   menu_order?: number;
   content: string;
 }
@@ -40,6 +41,7 @@ export function getPageBySlug(slug: string): Page | null {
           title: data.title || '',
           seo_title: data.seo_title,
           seo_description: data.seo_description,
+          keywords: data.keywords,
           menu_order: data.menu_order,
           content,
         };
@@ -73,6 +75,7 @@ export function getAllPages(): Page[] {
         title: data.title || '',
         seo_title: data.seo_title,
         seo_description: data.seo_description,
+        keywords: data.keywords,
         menu_order: data.menu_order || 0,
         content,
       });

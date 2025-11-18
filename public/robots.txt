@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Sitemap location
-Sitemap: https://elitehomeservices.com/sitemap.xml
+Sitemap: https://totalleakdetection.com/sitemap.xml
 
 # Block specific paths (uncomment if needed)
 # Disallow: /api/

@@ -10,6 +10,7 @@ import { AnimateOnScroll } from '@/components/AnimateOnScroll';
 import siteConfig from '@/config/site.json';
 import content from '@/config/content.json';
 
+
 export default function ContactPage() {
   const { contact } = content;
   const [isSubmitting, setIsSubmitting] = useState(false);

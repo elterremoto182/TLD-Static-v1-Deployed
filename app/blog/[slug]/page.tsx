@@ -6,6 +6,7 @@ import { Footer } from '@/components/sections/Footer';
 import { MarkdownRenderer } from '@/components/blog/MarkdownRenderer';
 import { getPostBySlug, getAllPosts } from '@/lib/blog/posts';
 import { Calendar, User, ArrowLeft } from 'lucide-react';
+import { generatePageMetadata } from '@/lib/utils';
 
 export async function generateStaticParams() {
   const posts = getAllPosts();
@@ -22,15 +23,20 @@ export async function generateMetadata({
   const post = getPostBySlug(params.slug);
 
   if (!post) {
-    return {
+    return generatePageMetadata({
       title: 'Post Not Found',
-    };
+      description: 'The requested blog post could not be found.',
+      path: `/blog/${params.slug}`,
+    });
   }
 
-  return {
-    title: `${post.title} | Blog`,
-    description: post.excerpt,
-  };
+  return generatePageMetadata({
+    title: `${post.title} | Blog - Total Leak Detection`,
+    description: post.excerpt || post.title,
+    keywords: post.category ? [post.category, 'blog'] : ['blog'],
+    path: `/blog/${post.slug}`,
+    ogImage: post.image,
+  });
 }
 
 export default function BlogPostPage({

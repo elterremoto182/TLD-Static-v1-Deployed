@@ -5,21 +5,25 @@ import { Footer } from '@/components/sections/Footer';
 import { MarkdownRenderer } from '@/components/blog/MarkdownRenderer';
 import { getPageBySlug } from '@/lib/pages/pages';
 import { Home } from 'lucide-react';
-import type { Metadata } from 'next';
+import { generatePageMetadata } from '@/lib/utils';
 
-export async function generateMetadata(): Promise<Metadata> {
+export async function generateMetadata() {
   const page = getPageBySlug('privacy-policy');
   
   if (!page) {
-    return {
+    return generatePageMetadata({
       title: 'Privacy Policy - Total Leak Detection',
-    };
+      description: 'Privacy Policy for Total Leak Detection.',
+      path: '/privacy-policy',
+    });
   }
 
-  return {
-    title: page.seo_title || page.title,
-    description: page.seo_description || '',
-  };
+  return generatePageMetadata({
+    title: page.seo_title || page.title || 'Privacy Policy - Total Leak Detection',
+    description: page.seo_description || 'Privacy Policy for Total Leak Detection.',
+    keywords: page.keywords || (page.seo_title ? ['privacy policy'] : undefined),
+    path: '/privacy-policy',
+  });
 }
 
 export default function PrivacyPolicyPage() {

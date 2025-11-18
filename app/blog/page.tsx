@@ -4,6 +4,19 @@ import { Header } from '@/components/sections/Header';
 import { Footer } from '@/components/sections/Footer';
 import { getAllPosts } from '@/lib/blog/posts';
 import { Calendar, User, ArrowRight } from 'lucide-react';
+import { getPageBySlug } from '@/lib/pages/pages';
+import { generatePageMetadata } from '@/lib/utils';
+
+export async function generateMetadata() {
+  const page = getPageBySlug('blog');
+  
+  return generatePageMetadata({
+    title: page?.seo_title || page?.title || 'Blog - Total Leak Detection',
+    description: page?.seo_description || 'Expert tips, guides, and insights for maintaining your home plumbing and leak detection.',
+    keywords: page?.seo_title ? ['blog', 'plumbing tips', 'leak detection'] : undefined,
+    path: '/blog',
+  });
+}
 
 export default function BlogPage() {
   const posts = getAllPosts();
