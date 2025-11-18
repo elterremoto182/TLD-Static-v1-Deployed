@@ -17,8 +17,8 @@ const nextConfig = {
   images: {
     loader: 'custom',
     loaderFile: './loader.js',
-    imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
-    deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
+    imageSizes: [16, 32, 64, 96, 128, 256], // Reduced from 8 to 6 sizes (removed 48, 384)
+    deviceSizes: [640, 828, 1080, 1200, 1920], // Reduced from 8 to 5 sizes (removed 750, 2048, 3840)
   },
   trailingSlash: true,
   env: {

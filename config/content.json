@@ -138,35 +138,27 @@
     "projects": [
       {
         "id": 1,
-        "title": "What to Expect During a Sewer Camera Inspection in Miami, FL ",
-        "category": "Sewer",
-        "beforeImage": "/images/gallery/project-1-before.jpeg",
-        "afterImage": "/images/gallery/project-1-after.jpeg",
-        "description": "Introduction  If you’re a homeowner in Miami, FL, it’s important to understand what happens during a sewer camera inspection. This knowledge will help you maintain a healthy plumbing system.  Sewer camera inspections are a non-invasive way to diagnose plumbing problems. "
+        "title": "Leak Detection Service",
+        "category": "Leak Detection",
+        "beforeImage": "/images/gallery/leak-detection-before.jpeg",
+        "afterImage": "/images/gallery/leak-detection-after.jpeg",
+        "description": "Our advanced leak detection technology identifies hidden water leaks before they cause extensive damage. Using non-invasive methods, we locate leaks in walls, floors, and underground pipes, saving you thousands in repair costs and preventing mold growth."
       },
       {
         "id": 2,
-        "title": "The Importance of Sewer Camera Inspections in Miami: Prevent Costly Repairs ",
-        "category": "Sewer",
-        "beforeImage": "/images/gallery/project-2-before.jpeg",
-        "afterImage": "/images/gallery/project-2-after.jpeg",
-        "description": "Introduction  Sewer camera inspections are essential in Miami to prevent costly repairs and effectively address plumbing problems. This advanced technology allows for a non-invasive visual assessment of underground pipes, helping to identify issues such as blockages, leaks, or structural damage."
+        "title": "Mold Inspection & Testing",
+        "category": "Mold Inspection",
+        "beforeImage": "/images/gallery/mold-inspection-before.jpeg",
+        "afterImage": "/images/gallery/mold-inspection-after.jpeg",
+        "description": "Comprehensive mold inspection services to protect your health and property. Our certified inspectors use advanced testing methods to detect hidden mold growth, identify moisture sources, and provide detailed reports with remediation recommendations."
       },
       {
         "id": 3,
-        "title": "Effective Solutions for Low Water Pressure in Your Home",
-        "category": "Uncategorized",
-        "beforeImage": "/images/gallery/project-3-before.jpeg",
-        "afterImage": "/images/gallery/project-3-after.jpeg",
-        "description": "Understanding Low Water Pressure A well-functioning plumbing system is essential for maintaining adequate water pressure in your home. The system comprises pipes, valves, fixtures, and appliances that work together to deliver water efficiently."
-      },
-      {
-        "id": 4,
-        "title": "The Ultimate Guide to Effective Drain Cleaners: What Really Works?",
-        "category": "Drain Cleaning",
-        "beforeImage": "/images/gallery/project-4-before.jpeg",
-        "afterImage": "/images/gallery/project-4-after.jpeg",
-        "description": "Introduction Maintaining clear plumbing systems is crucial for the smooth functioning of any household. Blocked drains can lead to unpleasant odors, slow water drainage, and even costly repairs."
+        "title": "Sewer Camera Inspection",
+        "category": "Camera Inspection",
+        "beforeImage": "/images/gallery/camera-inspection-before.jpeg",
+        "afterImage": "/images/gallery/camera-inspection-after.jpeg",
+        "description": "Non-invasive sewer camera inspections provide a clear view inside your pipes without excavation. Our HD video technology diagnoses blockages, cracks, root intrusion, and structural damage, helping you make informed decisions about repairs."
       }
     ]
   },
