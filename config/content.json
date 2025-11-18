@@ -208,20 +208,29 @@
     "description": "Fill out the form below or call us directly. We're here to help!"
   },
   "branding": {
-    "companyName": "Your Business Name",
-    "tagline": "Professional Services",
+    "companyName": "Total Leak Detection",
+    "tagline": "Professional Leak Detection Services",
+    "licenseNumber": "CFC1430460",
     "badges": [
       {
         "name": "Licensed & Insured",
-        "image": "/images/badges/licensed-insured.jpeg"
+        "image": "/images/badges/licensed-insured.jpeg",
+        "description": "Fully licensed and insured for your protection"
       },
       {
-        "name": "Award Winning",
-        "image": "/images/badges/award-winning.jpeg"
+        "name": "BBB Accredited",
+        "image": "/images/badges/bbb-accredited.jpeg",
+        "description": "Better Business Bureau accredited business"
       },
       {
-        "name": "Trusted by Clients",
-        "image": "/images/badges/trusted.jpeg"
+        "name": "Certified Professional",
+        "image": "",
+        "description": "Industry certified technicians with years of experience"
+      },
+      {
+        "name": "Satisfaction Guaranteed",
+        "image": "",
+        "description": "100% satisfaction guarantee on all our work"
       }
     ]
   }
