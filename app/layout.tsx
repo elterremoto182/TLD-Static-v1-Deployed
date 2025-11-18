@@ -2,6 +2,7 @@ import './globals.css';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import siteConfig from '@/config/site.json';
+import { StickyCallButton } from '@/components/StickyCallButton';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -46,7 +47,10 @@ export default function RootLayout({
         <link rel="icon" href={faviconPath} />
         <link rel="apple-touch-icon" href={faviconPath} />
       </head>
-      <body>{children}</body>
+      <body>
+        {children}
+        <StickyCallButton />
+      </body>
     </html>
   );
 }

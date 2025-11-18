@@ -69,10 +69,10 @@ export function Header() {
           <div className="hidden md:flex items-center space-x-4">
             <a
               href={`tel:${siteConfig.phone}`}
-              className="flex items-center space-x-2 text-primary font-semibold"
+              className="flex items-center space-x-2 bg-[#FF6200] px-4 py-2 rounded-lg font-semibold hover:bg-[#E55A00] transition-colors duration-200"
             >
-              <Phone className="w-4 h-4" />
-              <span>{siteConfig.phone}</span>
+              <Phone className="w-4 h-4 !text-white" />
+              <span className="!text-white">Call Now – Same-Day Service</span>
             </a>
           </div>
 
