@@ -20,9 +20,7 @@ Commercial plumbing problems require specialized equipment and expertise. Whethe
 **Total Leak Detection provides specialized commercial plumbing services for businesses of all sizes. From installations to emergency repairs, we keep your business running smoothly. Available 24/7 for emergencies.**
 
 
-<div style="text-align: center; margin: 2rem 0;">
-<a href="tel:(855)385-5325" class="call-now-button">📞 Call Now – (855) 385-5325</a>
-</div>
+[📞 Call Now – (855) 385-5325](tel:(855)385-5325)
 
 
 [**Get Your Commercial Plumbing Service Today**](/contact/) - No Obligation, Insurance Accepted
@@ -45,9 +43,7 @@ Commercial plumbing problems impact your business in multiple ways:
 **Don't let plumbing problems shut down your business. Get professional help today.**
 
 
-<div style="text-align: center; margin: 2rem 0;">
-<a href="tel:(855)385-5325" class="call-now-button">📞 Call Now – (855) 385-5325</a>
-</div>
+[📞 Call Now – (855) 385-5325](tel:(855)385-5325)
 
 
 [**Schedule Emergency Service Now - Available 24/7**](/contact/)
@@ -192,9 +188,7 @@ Regular maintenance of your plumbing systems ensures they work smoothly all year
 **Join hundreds of satisfied businesses who chose Total Leak Detection for reliable commercial plumbing services.**
 
 
-<div style="text-align: center; margin: 2rem 0;">
-<a href="tel:(855)385-5325" class="call-now-button">📞 Call Now – (855) 385-5325</a>
-</div>
+[📞 Call Now – (855) 385-5325](tel:(855)385-5325)
 
 
 [**Call Now for Immediate Service - Available 24/7**](/contact/)
@@ -261,9 +255,7 @@ We offer **free estimates and consultations**. Our pricing is transparent with n
 **Commercial plumbing problems cost you money every minute. Don't let downtime hurt your bottom line or damage your reputation.**
 
 
-<div style="text-align: center; margin: 2rem 0;">
-<a href="tel:(855)385-5325" class="call-now-button">📞 Call Now – (855) 385-5325</a>
-</div>
+[📞 Call Now – (855) 385-5325](tel:(855)385-5325)
 
 
 [**Schedule Your Service Now**](/contact/) - Available 24/7 | Insurance Accepted | No Obligation

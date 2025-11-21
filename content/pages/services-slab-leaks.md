@@ -20,9 +20,7 @@ Slab leaks occur when water pipes beneath your concrete foundation crack or corr
 **Total Leak Detection uses advanced non-invasive technology to locate slab leaks quickly—without tearing up your foundation. Available 24/7 for emergency service.**
 
 
-<div style="text-align: center; margin: 2rem 0;">
-<a href="tel:(855)385-5325" class="call-now-button">📞 Call Now – (855) 385-5325</a>
-</div>
+[📞 Call Now – (855) 385-5325](tel:(855)385-5325)
 
 
 [**Get Your Free Slab Leak Inspection Today**](/contact/) - No Obligation, Insurance Accepted
@@ -44,9 +42,7 @@ Slab leaks are especially dangerous because they're located in a hard-to-reach a
 **Don't let a slab leak destroy your foundation. Schedule your free inspection today.**
 
 
-<div style="text-align: center; margin: 2rem 0;">
-<a href="tel:(855)385-5325" class="call-now-button">📞 Call Now – (855) 385-5325</a>
-</div>
+[📞 Call Now – (855) 385-5325](tel:(855)385-5325)
 
 
 [**Schedule Emergency Service Now - Available 24/7**](/contact/)
@@ -116,9 +112,7 @@ Our certified technicians use cutting-edge equipment specifically designed for s
 **We've successfully located hundreds of slab leaks that other companies missed. Our accuracy rate saves you thousands in unnecessary excavation costs.**
 
 
-<div style="text-align: center; margin: 2rem 0;">
-<a href="tel:(855)385-5325" class="call-now-button">📞 Call Now – (855) 385-5325</a>
-</div>
+[📞 Call Now – (855) 385-5325](tel:(855)385-5325)
 
 
 [**Contact Us for a Free Quote - No Hidden Fees**](/contact/)
@@ -190,9 +184,7 @@ We connect you with trusted repair partners or provide detailed information for 
 **Join hundreds of satisfied customers who chose Total Leak Detection when they needed answers fast.**
 
 
-<div style="text-align: center; margin: 2rem 0;">
-<a href="tel:(855)385-5325" class="call-now-button">📞 Call Now – (855) 385-5325</a>
-</div>
+[📞 Call Now – (855) 385-5325](tel:(855)385-5325)
 
 
 [**Call Now for Immediate Service - Available 24/7**](/contact/)
@@ -215,9 +207,7 @@ We connect you with trusted repair partners or provide detailed information for 
 **We serve all of Florida including Miami, Ft. Lauderdale, Doral, Coral Gables, and surrounding areas.**
 
 
-<div style="text-align: center; margin: 2rem 0;">
-<a href="tel:(855)385-5325" class="call-now-button">📞 Call Now – (855) 385-5325</a>
-</div>
+[📞 Call Now – (855) 385-5325](tel:(855)385-5325)
 
 
 [**Get Your Free Slab Leak Inspection Today**](/contact/)
@@ -265,9 +255,7 @@ Slab leaks are typically caused by: ground shifting underneath the home, copper 
 **Every day a slab leak goes undetected increases your risk of catastrophic foundation damage. Don't let a hidden leak destroy your home's structural integrity.**
 
 
-<div style="text-align: center; margin: 2rem 0;">
-<a href="tel:(855)385-5325" class="call-now-button">📞 Call Now – (855) 385-5325</a>
-</div>
+[📞 Call Now – (855) 385-5325](tel:(855)385-5325)
 
 
 [**Schedule Your Free Inspection Now**](/contact/) - Available 24/7 | Insurance Accepted | No Obligation

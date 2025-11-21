@@ -18,15 +18,27 @@ export async function generateStaticParams() {
 export async function generateMetadata({
   params,
 }: {
-  params: { slug: string };
+  params: { slug: string } | Promise<{ slug: string }>;
 }) {
-  const post = getPostBySlug(params.slug);
+  // Handle params as either a direct object or Promise (Next.js 14.2 compatibility)
+  const resolvedParams = params instanceof Promise ? await params : params;
+  
+  if (!resolvedParams || typeof resolvedParams !== 'object' || !resolvedParams.slug) {
+    return generatePageMetadata({
+      title: 'Post Not Found',
+      description: 'The requested blog post could not be found.',
+      path: '/blog',
+    });
+  }
+  
+  const slug = String(resolvedParams.slug || '').trim();
+  const post = getPostBySlug(slug);
 
   if (!post) {
     return generatePageMetadata({
       title: 'Post Not Found',
       description: 'The requested blog post could not be found.',
-      path: `/blog/${params.slug}`,
+      path: `/blog/${slug}`,
     });
   }
 
@@ -39,12 +51,20 @@ export async function generateMetadata({
   });
 }
 
-export default function BlogPostPage({
+export default async function BlogPostPage({
   params,
 }: {
-  params: { slug: string };
+  params: { slug: string } | Promise<{ slug: string }>;
 }) {
-  const post = getPostBySlug(params.slug);
+  // Handle params as either a direct object or Promise (Next.js 14.2 compatibility)
+  const resolvedParams = params instanceof Promise ? await params : params;
+  
+  if (!resolvedParams || typeof resolvedParams !== 'object' || !resolvedParams.slug) {
+    notFound();
+  }
+  
+  const slug = String(resolvedParams.slug || '').trim();
+  const post = getPostBySlug(slug);
 
   if (!post) {
     notFound();

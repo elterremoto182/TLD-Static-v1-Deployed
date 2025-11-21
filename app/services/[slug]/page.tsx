@@ -29,17 +29,38 @@ export async function generateStaticParams() {
 export async function generateMetadata({
   params,
 }: {
-  params: { slug: string };
+  params: { slug: string } | Promise<{ slug: string }>;
 }) {
+  // Handle params as either a direct object or Promise (Next.js 14.2 compatibility)
+  const resolvedParams = params instanceof Promise ? await params : params;
+  
+  if (!resolvedParams || typeof resolvedParams !== 'object' || !resolvedParams.slug) {
+    return generatePageMetadata({
+      title: 'Page Not Found',
+      description: 'The requested page could not be found.',
+      path: '/services',
+    });
+  }
+  
+  const slug = String(resolvedParams.slug || '').trim();
+  
+  if (!slug) {
+    return generatePageMetadata({
+      title: 'Page Not Found',
+      description: 'The requested page could not be found.',
+      path: '/services',
+    });
+  }
+  
   // Normalize the slug to match the format in markdown files
-  const fullSlug = `services/${params.slug}`;
+  const fullSlug = `services/${slug}`;
   const page = getPageBySlug(fullSlug);
   
   if (!page) {
     return generatePageMetadata({
       title: 'Page Not Found',
       description: 'The requested page could not be found.',
-      path: `/services/${params.slug}`,
+      path: `/services/${slug}`,
     });
   }
 
@@ -55,19 +76,32 @@ export async function generateMetadata({
   });
 }
 
-export default function ServicePage({
+export default async function ServicePage({
   params,
 }: {
-  params: { slug: string };
+  params: { slug: string } | Promise<{ slug: string }>;
 }) {
+  // Handle params as either a direct object or Promise (Next.js 14.2 compatibility)
+  const resolvedParams = params instanceof Promise ? await params : params;
+  
+  if (!resolvedParams || typeof resolvedParams !== 'object' || !resolvedParams.slug) {
+    notFound();
+  }
+  
+  const slug = String(resolvedParams.slug || '').trim();
+  
+  if (!slug) {
+    notFound();
+  }
+  
   // Normalize the slug to match the format in markdown files
   // Try with and without trailing slash
-  let fullSlug = `services/${params.slug}`;
+  let fullSlug = `services/${slug}`;
   let page = getPageBySlug(fullSlug);
   
   // If not found, try with trailing slash
   if (!page) {
-    fullSlug = `services/${params.slug}/`;
+    fullSlug = `services/${slug}/`;
     page = getPageBySlug(fullSlug);
   }
   

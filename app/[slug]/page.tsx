@@ -50,19 +50,40 @@ export async function generateStaticParams() {
 export async function generateMetadata({
   params,
 }: {
-  params: { slug: string };
+  params: { slug: string } | Promise<{ slug: string }>;
 }) {
-  const page = getPageBySlug(params.slug);
+  // Handle params as either a direct object or Promise (Next.js 14.2 compatibility)
+  const resolvedParams = params instanceof Promise ? await params : params;
+  
+  if (!resolvedParams || typeof resolvedParams !== 'object' || !resolvedParams.slug) {
+    return generatePageMetadata({
+      title: 'Page Not Found - Total Leak Detection',
+      description: 'The page you are looking for could not be found.',
+      path: '/',
+    });
+  }
+  
+  const slug = String(resolvedParams.slug || '').trim();
+  
+  if (!slug) {
+    return generatePageMetadata({
+      title: 'Page Not Found - Total Leak Detection',
+      description: 'The page you are looking for could not be found.',
+      path: '/',
+    });
+  }
+  
+  const page = getPageBySlug(slug);
   
   if (!page) {
     return generatePageMetadata({
       title: 'Page Not Found - Total Leak Detection',
       description: 'The page you are looking for could not be found.',
-      path: `/${params.slug}`,
+      path: `/${slug}`,
     });
   }
 
-  const urlPath = `/${params.slug}`;
+  const urlPath = `/${slug}`;
   
   return generatePageMetadata({
     title: page.seo_title || page.title || 'Total Leak Detection',
@@ -72,22 +93,35 @@ export async function generateMetadata({
   });
 }
 
-export default function DynamicPage({
+export default async function DynamicPage({
   params,
 }: {
-  params: { slug: string };
+  params: { slug: string } | Promise<{ slug: string }>;
 }) {
+  // Handle params as either a direct object or Promise (Next.js 14.2 compatibility)
+  const resolvedParams = params instanceof Promise ? await params : params;
+  
+  if (!resolvedParams || typeof resolvedParams !== 'object' || !resolvedParams.slug) {
+    notFound();
+  }
+  
+  const slug = String(resolvedParams.slug || '').trim();
+  
+  if (!slug) {
+    notFound();
+  }
+  
   // Check if this is a reserved route
-  if (reservedRoutes.includes(params.slug)) {
+  if (reservedRoutes.includes(slug)) {
     notFound();
   }
   
   // Check if this is a service page
-  if (params.slug.startsWith('services/')) {
+  if (slug.startsWith('services/')) {
     notFound();
   }
   
-  const page = getPageBySlug(params.slug);
+  const page = getPageBySlug(slug);
   
   if (!page) {
     notFound();

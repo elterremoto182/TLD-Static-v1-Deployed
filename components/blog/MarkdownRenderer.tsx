@@ -80,6 +80,36 @@ export function MarkdownRenderer({ content }: MarkdownRendererProps) {
           strong: ({ children }) => (
             <strong className="font-bold text-gray-900">{children}</strong>
           ),
+          a: ({ href, children, className, ...props }: React.AnchorHTMLAttributes<HTMLAnchorElement> & { href?: string }) => {
+            // Check if this is a tel: link and style it as a call button
+            const isTelLink = href?.startsWith('tel:');
+            
+            if (isTelLink) {
+              // For tel: links, apply button styling directly
+              // Don't wrap in div to avoid breaking paragraph flow
+              return (
+                <a
+                  href={href}
+                  className={`call-now-button ${className || ''}`}
+                  style={{ display: 'block', textAlign: 'center', margin: '2rem 0' }}
+                  {...props}
+                >
+                  {children}
+                </a>
+              );
+            }
+            
+            // Regular links
+            return (
+              <a
+                href={href}
+                className={className || 'text-primary hover:underline'}
+                {...props}
+              >
+                {children}
+              </a>
+            );
+          },
           img: ({ src, alt, width, height, ...props }: React.ImgHTMLAttributes<HTMLImageElement> & { src?: string; alt?: string; width?: number | string; height?: number | string }) => {
             // Handle both relative and absolute paths
             const imageSrc = src || '';

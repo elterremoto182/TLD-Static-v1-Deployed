@@ -18,9 +18,7 @@ keywords: ["Best Leak Detection Services Company Florida"]
 Total Leak Detection is Florida's leading leak detection company with 40+ years of experience. We use advanced non-invasive technology to locate leaks quickly and accurately—without tearing up your property. **Available 24/7 for emergency service.**
 
 
-<div style="text-align: center; margin: 2rem 0;">
-<a href="tel:(855)385-5325" class="call-now-button">📞 Call Now – (855) 385-5325</a>
-</div>
+[📞 Call Now – (855) 385-5325](tel:(855)385-5325)
 
 
 [**Get Your Free Leak Detection Inspection Today**](/contact/) - No Obligation, Insurance Accepted
@@ -44,9 +42,7 @@ Water leaks are silent destroyers. What starts as a small drip can quickly escal
 **Don't let a hidden leak destroy your property. Schedule your free inspection today.**
 
 
-<div style="text-align: center; margin: 2rem 0;">
-<a href="tel:(855)385-5325" class="call-now-button">📞 Call Now – (855) 385-5325</a>
-</div>
+[📞 Call Now – (855) 385-5325](tel:(855)385-5325)
 
 
 [**Schedule Emergency Service Now - Available 24/7**](/contact/)
@@ -75,9 +71,7 @@ Our certified technicians use cutting-edge equipment to pinpoint the exact locat
 **We've successfully located over 1,000 leaks that other companies missed. Our accuracy rate is unmatched.**
 
 
-<div style="text-align: center; margin: 2rem 0;">
-<a href="tel:(855)385-5325" class="call-now-button">📞 Call Now – (855) 385-5325</a>
-</div>
+[📞 Call Now – (855) 385-5325](tel:(855)385-5325)
 
 
 [**Contact Us for a Free Quote - No Hidden Fees**](/contact/)
@@ -168,9 +162,7 @@ We invest in the latest leak detection equipment because your property deserves 
 **Join hundreds of satisfied customers who chose Total Leak Detection when they needed answers fast.**
 
 
-<div style="text-align: center; margin: 2rem 0;">
-<a href="tel:(855)385-5325" class="call-now-button">📞 Call Now – (855) 385-5325</a>
-</div>
+[📞 Call Now – (855) 385-5325](tel:(855)385-5325)
 
 
 [**Call Now for Immediate Service - Available 24/7**](/contact/)
@@ -193,9 +185,7 @@ We invest in the latest leak detection equipment because your property deserves 
 **We serve all of Florida including Miami, Ft. Lauderdale, Doral, Coral Gables, and surrounding areas.**
 
 
-<div style="text-align: center; margin: 2rem 0;">
-<a href="tel:(855)385-5325" class="call-now-button">📞 Call Now – (855) 385-5325</a>
-</div>
+[📞 Call Now – (855) 385-5325](tel:(855)385-5325)
 
 
 [**Get Your Free Leak Detection Inspection Today**](/contact/)
@@ -250,9 +240,7 @@ We provide a detailed report with the exact leak location, photos, and recommend
 **Every hour a leak goes undetected increases your risk of costly damage. Don't let a small leak become a major problem.**
 
 
-<div style="text-align: center; margin: 2rem 0;">
-<a href="tel:(855)385-5325" class="call-now-button">📞 Call Now – (855) 385-5325</a>
-</div>
+[📞 Call Now – (855) 385-5325](tel:(855)385-5325)
 
 
 [**Schedule Your Free Inspection Now**](/contact/) - Available 24/7 | Insurance Accepted | No Obligation

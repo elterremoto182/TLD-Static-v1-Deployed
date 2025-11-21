@@ -21,9 +21,7 @@ We are a professional and reliable local plumbing contractor in Miami, FL that s
 **Total Leak Detection uses the latest technology and equipment to ensure every report is accurate and detailed. Our 48-hour guarantee means you get your report fast. Available 24/7 for urgent reports.**
 
 
-<div style="text-align: center; margin: 2rem 0;">
-<a href="tel:(855)385-5325" class="call-now-button">📞 Call Now – (855) 385-5325</a>
-</div>
+[📞 Call Now – (855) 385-5325](tel:(855)385-5325)
 
 
 [**Get Your Plumbing Report Today**](/contact/) - No Obligation, Insurance Accepted
@@ -52,9 +50,7 @@ Plumbing reports are essential for:
 **Don't let missing documentation delay your transaction or claim. Get your report fast with our 48-hour guarantee.**
 
 
-<div style="text-align: center; margin: 2rem 0;">
-<a href="tel:(855)385-5325" class="call-now-button">📞 Call Now – (855) 385-5325</a>
-</div>
+[📞 Call Now – (855) 385-5325](tel:(855)385-5325)
 
 
 [**Schedule Your Inspection Today**](/contact/) - 48-Hour Guarantee
@@ -228,9 +224,7 @@ Our plumbing reports include a thorough examination of all the major components 
 **We serve all of Florida including Miami, Ft. Lauderdale, Doral, Coral Gables, and surrounding areas.**
 
 
-<div style="text-align: center; margin: 2rem 0;">
-<a href="tel:(855)385-5325" class="call-now-button">📞 Call Now – (855) 385-5325</a>
-</div>
+[📞 Call Now – (855) 385-5325](tel:(855)385-5325)
 
 
 [**Schedule Your Plumbing Report Today**](/contact/)
@@ -278,9 +272,7 @@ Our reports include: thorough examination of all plumbing components, detailed a
 **Don't let missing documentation delay your transaction or claim. Our 48-hour guarantee ensures you get your comprehensive plumbing report fast.**
 
 
-<div style="text-align: center; margin: 2rem 0;">
-<a href="tel:(855)385-5325" class="call-now-button">📞 Call Now – (855) 385-5325</a>
-</div>
+[📞 Call Now – (855) 385-5325](tel:(855)385-5325)
 
 
 [**Schedule Your Inspection Now**](/contact/) - 48-Hour Guarantee | Insurance Accepted | No Obligation

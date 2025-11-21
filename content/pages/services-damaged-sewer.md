@@ -20,9 +20,7 @@ If you suspect you have a sewer line leak, it's important to act quickly before 
 **Total Leak Detection uses advanced methods to detect and clear your sewer lines quickly. We locate the exact problem and fix it fast. Available 24/7 for emergencies.**
 
 
-<div style="text-align: center; margin: 2rem 0;">
-<a href="tel:(855)385-5325" class="call-now-button">📞 Call Now – (855) 385-5325</a>
-</div>
+[📞 Call Now – (855) 385-5325](tel:(855)385-5325)
 
 
 [**Get Your Sewer Line Inspected Today**](/contact/) - No Obligation, Insurance Accepted
@@ -47,9 +45,7 @@ A damaged sewer line creates multiple serious problems:
 **Before your issue becomes worse, give us a call. Don't wait until you have a major problem.**
 
 
-<div style="text-align: center; margin: 2rem 0;">
-<a href="tel:(855)385-5325" class="call-now-button">📞 Call Now – (855) 385-5325</a>
-</div>
+[📞 Call Now – (855) 385-5325](tel:(855)385-5325)
 
 
 [**Schedule Emergency Service Now - Available 24/7**](/contact/)
@@ -186,9 +182,7 @@ We clean your entire sewer line to remove debris and restore proper flow.
 **Join hundreds of satisfied customers who chose Total Leak Detection for fast, effective solutions.**
 
 
-<div style="text-align: center; margin: 2rem 0;">
-<a href="tel:(855)385-5325" class="call-now-button">📞 Call Now – (855) 385-5325</a>
-</div>
+[📞 Call Now – (855) 385-5325](tel:(855)385-5325)
 
 
 [**Call Now for Immediate Service - Available 24/7**](/contact/)
@@ -211,9 +205,7 @@ We clean your entire sewer line to remove debris and restore proper flow.
 **We serve all of Florida including Miami, Ft. Lauderdale, Doral, Coral Gables, and surrounding areas.**
 
 
-<div style="text-align: center; margin: 2rem 0;">
-<a href="tel:(855)385-5325" class="call-now-button">📞 Call Now – (855) 385-5325</a>
-</div>
+[📞 Call Now – (855) 385-5325](tel:(855)385-5325)
 
 
 [**Schedule Your Sewer Line Service Today**](/contact/)
@@ -261,9 +253,7 @@ Common signs include: slow drains, sewage backups, foul odors, flooded yard, ove
 **A damaged sewer line causes health hazards, property damage, and costly repairs. Don't wait until you have a major problem.**
 
 
-<div style="text-align: center; margin: 2rem 0;">
-<a href="tel:(855)385-5325" class="call-now-button">📞 Call Now – (855) 385-5325</a>
-</div>
+[📞 Call Now – (855) 385-5325](tel:(855)385-5325)
 
 
 [**Schedule Your Service Now**](/contact/) - Available 24/7 | Insurance Accepted | No Obligation
