@@ -89,18 +89,15 @@ Total Leak Detection proudly serves Pinecrest and surrounding areas in Miami-Dad
 ✅ **[Hialeah Leak Detection Services](/hialeah-leak-detection-services/)**  
 ✅ **[Kendall Leak Detection Services](/kendall-leak-detection-services/)**  
 ✅ **[Pinecrest Leak Detection Services](/pinecrest-leak-detection-services/)**  
-✅ **[Homestead Leak Detection Services](/homestead-leak-detection-services/)**
+✅ **[Homestead Leak Detection Services](/homestead-leak-detection-services/)**  
+✅ **[Miami Lakes Leak Detection Services](/miami-lakes-leak-detection-services/)**  
+✅ **[Miami Beach Leak Detection Services](/miami-beach-leak-detection-services/)**  
+✅ **[Coral Gables Leak Detection Services](/coral-gables-leak-detection-services/)**  
+✅ **[South Miami Leak Detection Services](/south-miami-leak-detection-services/)**  
+✅ **[Cutler Bay Leak Detection Services](/cutler-bay-leak-detection-services/)**  
+✅ **[Aventura Leak Detection Services](/aventura-leak-detection-services/)**
 
-#### Expanding Service Areas in Miami-Dade County
-
-We are expanding our professional leak detection services to more cities, including:
-
-✔️ **Coral Gables**  
-✔️ **South Miami**  
-✔️ **Cutler Bay**  
-✔️ **Aventura**
-
-If you live in any of these areas and suspect a leak, contact **Total Leak Detection** today!
+📋 **[View All Service Areas](/areas/)**
 
 * * *
 

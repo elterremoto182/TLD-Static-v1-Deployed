@@ -50,6 +50,10 @@
       "name": "Services"
     },
     {
+      "href": "/areas",
+      "name": "Areas"
+    },
+    {
       "href": "/about",
       "name": "About"
     },
