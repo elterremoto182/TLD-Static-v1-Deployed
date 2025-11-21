@@ -54,7 +54,7 @@ export function Header() {
             )}
           </Link>
 
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden lg:flex items-center space-x-8">
             {siteConfig.navigation.map((item) => (
               <Link
                 key={item.name}
@@ -66,19 +66,19 @@ export function Header() {
             ))}
           </div>
 
-          <div className="hidden md:flex items-center space-x-4">
+          <div className="hidden lg:flex items-center space-x-4">
             <a
               href={`tel:${siteConfig.phone}`}
-              className="flex items-center space-x-2 bg-[#FF6200] px-4 py-2 rounded-lg font-semibold hover:bg-[#E55A00] transition-colors duration-200"
+              className="flex items-center space-x-2 bg-[#FF6200] px-4 py-2 rounded-lg font-semibold hover:bg-[#E55A00] transition-colors duration-200 whitespace-nowrap"
             >
-              <Phone className="w-4 h-4 !text-white" />
+              <Phone className="w-4 h-4 !text-white flex-shrink-0" />
               <span className="!text-white">Call Now – Same-Day Service</span>
             </a>
           </div>
 
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="md:hidden p-2"
+            className="lg:hidden p-2"
             aria-label="Toggle menu"
           >
             {isMobileMenuOpen ? (
@@ -90,7 +90,7 @@ export function Header() {
         </div>
 
         {isMobileMenuOpen && (
-          <div className="md:hidden py-4 border-t">
+          <div className="lg:hidden py-4 border-t">
             <div className="flex flex-col space-y-4">
               {siteConfig.navigation.map((item) => (
                 <Link
