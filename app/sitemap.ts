@@ -2,6 +2,19 @@ import { MetadataRoute } from 'next';
 import { getAllPosts } from '@/lib/blog/posts';
 import { getAllPages } from '@/lib/pages/pages';
 
+/**
+ * Ensures a URL has a trailing slash, except for the base URL
+ * This matches Next.js trailingSlash: true configuration
+ */
+function ensureTrailingSlash(url: string, baseUrl: string): string {
+  // Base URL should not have trailing slash
+  if (url === baseUrl) {
+    return url;
+  }
+  // All other URLs should have trailing slash
+  return url.endsWith('/') ? url : `${url}/`;
+}
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://totalleakdetection.com';
 
@@ -10,7 +23,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   // Blog routes
   const blogRoutes = posts.map((post) => ({
-    url: `${baseUrl}/${post.slug}`,
+    url: ensureTrailingSlash(`${baseUrl}/${post.slug}`, baseUrl),
     lastModified: new Date(post.date),
     changeFrequency: 'monthly' as const,
     priority: 0.7,
@@ -25,31 +38,31 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1,
     },
     {
-      url: `${baseUrl}/blog`,
+      url: ensureTrailingSlash(`${baseUrl}/blog`, baseUrl),
       lastModified: new Date(),
       changeFrequency: 'weekly' as const,
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/services`,
+      url: ensureTrailingSlash(`${baseUrl}/services`, baseUrl),
       lastModified: new Date(),
       changeFrequency: 'weekly' as const,
       priority: 0.9,
     },
     {
-      url: `${baseUrl}/about`,
+      url: ensureTrailingSlash(`${baseUrl}/about`, baseUrl),
       lastModified: new Date(),
       changeFrequency: 'monthly' as const,
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/contact`,
+      url: ensureTrailingSlash(`${baseUrl}/contact`, baseUrl),
       lastModified: new Date(),
       changeFrequency: 'monthly' as const,
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/privacy-policy`,
+      url: ensureTrailingSlash(`${baseUrl}/privacy-policy`, baseUrl),
       lastModified: new Date(),
       changeFrequency: 'yearly' as const,
       priority: 0.3,
@@ -65,7 +78,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     .map((page) => {
       const normalizedSlug = page.slug.replace(/^\/+|\/+$/g, '');
       return {
-        url: `${baseUrl}/${normalizedSlug}`,
+        url: ensureTrailingSlash(`${baseUrl}/${normalizedSlug}`, baseUrl),
         lastModified: new Date(),
         changeFrequency: 'monthly' as const,
         priority: 0.8,
@@ -101,7 +114,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       }
 
       return {
-        url: `${baseUrl}/${normalizedSlug}`,
+        url: ensureTrailingSlash(`${baseUrl}/${normalizedSlug}`, baseUrl),
         lastModified: new Date(),
         changeFrequency,
         priority,
