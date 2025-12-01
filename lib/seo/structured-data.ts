@@ -209,6 +209,14 @@ export function generateServiceSchema({
       '@type': 'LocalBusiness',
       name: provider || siteConfig.name,
       '@id': `${baseUrl}#organization`,
+      address: {
+        '@type': 'PostalAddress',
+        streetAddress: siteConfig.address,
+        addressLocality: 'Doral',
+        addressRegion: 'FL',
+        postalCode: '33166',
+        addressCountry: 'US',
+      },
     },
     serviceType: serviceType || 'Plumbing Service',
     areaServed: {
