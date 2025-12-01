@@ -5,9 +5,6 @@ Allow: /
 # Sitemap location
 Sitemap: https://totalleakdetection.com/sitemap.xml
 
-# LLMs.txt location
-LLMs-txt: /llms.txt
-
 # Block specific paths (uncomment if needed)
 # Disallow: /api/
 # Disallow: /admin/

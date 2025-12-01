@@ -9,7 +9,7 @@ excerpt: >-
   article will provide you with …
 author: Tomasz Alemany
 category: Uncategorized
-seo_title: Expert Tips to Prevent and Fix Clogged Kitchen Sinks
+seo_title: Expert Tips to Prevent and Fix Clogged Kitchen Sinks | Total Leak Detection
 seo_description: >-
   Discover expert tips to prevent and fix clogged kitchen sinks. Learn about
   common causes, preventive measures, and effective solutions to keep your
