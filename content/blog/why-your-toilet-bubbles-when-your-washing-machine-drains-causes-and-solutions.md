@@ -9,9 +9,7 @@ excerpt: >-
   Ignoring it may result in extensive plumbing repairs and increased …
 author: Tomasz Alemany
 category: Sewer
-seo_title: >-
-  Why Your Toilet Bubbles When Your Washing Machine Drains: Causes and Solutions
-  - Total Leak Detection
+seo_title: Toilet Bubbles When Washer Drains: Causes & Solutions
 seo_description: >-
   Find out why your toilet bubbles when your washing machine drains. Explore
   common causes and effective solutions to fix this plumbing issue fast.

@@ -2,7 +2,7 @@
 title: South Miami Leak Detection Services
 slug: south-miami-leak-detection-services
 menu_order: 0
-seo_title: South Miami Leak Detection | Professional Water & Sewer Leak Detection Services
+seo_title: South Miami Leak Detection | Water & Sewer Services
 seo_description: >-
   Need expert leak detection in South Miami, FL? Total Leak Detection offers fast,
   non-invasive water and sewer leak detection for homes and businesses. Call now

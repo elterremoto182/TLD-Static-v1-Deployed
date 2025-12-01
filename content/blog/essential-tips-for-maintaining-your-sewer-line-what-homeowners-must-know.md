@@ -9,9 +9,7 @@ excerpt: >-
   gravity-based system, where waste flows downhill …
 author: seoanalytics534@gmail.com
 category: Uncategorized
-seo_title: >-
-  Essential Tips for Maintaining Your Sewer Line: What Homeowners Must Know -
-  Total Leak Detection
+seo_title: Sewer Line Maintenance Tips for Homeowners - Total Leak Detection
 seo_description: >-
   Protect your home from costly sewer issues. Discover essential tips for
   maintaining your sewer line, including regular inspections, proper waste

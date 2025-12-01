@@ -7,6 +7,7 @@ const postsDirectory = path.join(process.cwd(), 'content/blog');
 export interface BlogPost {
   slug: string;
   title: string;
+  seo_title?: string;
   date: string;
   excerpt: string;
   author: string;
@@ -32,6 +33,7 @@ export function getPostBySlug(slug: string): BlogPost | null {
     return {
       slug: realSlug,
       title: data.title || '',
+      seo_title: data.seo_title,
       date: data.date || '',
       excerpt: data.excerpt || '',
       author: data.author || '',

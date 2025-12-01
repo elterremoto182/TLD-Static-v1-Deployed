@@ -91,7 +91,7 @@ export async function generateMetadata({
   const post = getPostBySlug(slug);
   if (post) {
     return generatePageMetadata({
-      title: `${post.title} | Total Leak Detection`,
+      title: post.seo_title || `${post.title} | Total Leak Detection`,
       description: post.excerpt || post.title,
       keywords: post.category ? [post.category, 'blog'] : ['blog'],
       path: `/${post.slug}`,

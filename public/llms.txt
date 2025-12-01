@@ -1,0 +1,41 @@
+# llms.txt for https://totalleakdetection.com
+
+# Last updated: 2025-12-01
+
+Site-Name: Total Leak Detection
+
+Description: Professional water leak detection, sewer camera inspection, and mold testing services in Miami, Florida. We provide expert leak detection technicians who work with all insurance companies, fast plumbing reports (48-hour guarantee), and are fully licensed and insured.
+
+Primary-Audience: Homeowners, property managers, business owners, and property investors in Miami, Florida and surrounding areas (Doral, Coral Gables, Miami Beach, Kendall, Aventura, Hialeah, Homestead, Cutler Bay, South Miami, Pinecrest, Miami Lakes, and more)
+
+Primary-Topics: Water leak detection, sewer camera inspection, mold testing, plumbing services, leak repair, hydro jetting, drain cleaning, damaged sewer lines, slab leaks, plumbing report writing, commercial plumbing services, non-invasive leak detection, insurance claims, water damage prevention
+
+Contact: info@totalleakdetection.com or (855) 385-5325 or https://totalleakdetection.com/contact/
+
+Sitemap: https://totalleakdetection.com/sitemap.xml
+
+Canonical-URL: https://totalleakdetection.com
+
+# Optional but helpful sections
+
+Allow-For-Training: yes
+
+Preferred-Citation: Please cite us as "Total Leak Detection (totalleakdetection.com)"
+
+More-Info: https://totalleakdetection.com/about/
+
+More-Info: https://totalleakdetection.com/services/
+
+# Service Areas
+Service-Areas: Miami, Doral, Coral Gables, Miami Beach, Kendall, Aventura, Hialeah, Homestead, Cutler Bay, South Miami, Pinecrest, Miami Lakes, Deerfield Beach, and surrounding South Florida areas
+
+# Key Services
+Services: Water leak detection, Sewer camera inspection, Mold testing, Hydro jetting, Drain cleaning, Damaged sewer line repair, Slab leak detection and repair, Plumbing report writing, Commercial plumbing services, Leaking toilet and faucet repair
+
+# Business Credentials
+License-Number: CFC1430460
+Licensed-Insured: Yes
+BBB-Accredited: Yes
+Hours: Monday - Friday: 9:00 AM - 5:00 PM
+Address: 7790 NW 55th St, Doral, FL 33166
+

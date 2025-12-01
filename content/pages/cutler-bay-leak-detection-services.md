@@ -2,7 +2,7 @@
 title: Cutler Bay Leak Detection Services
 slug: cutler-bay-leak-detection-services
 menu_order: 0
-seo_title: Cutler Bay Leak Detection | Professional Water & Sewer Leak Detection Services
+seo_title: Cutler Bay Leak Detection | Water & Sewer Services
 seo_description: >-
   Need expert leak detection in Cutler Bay, FL? Total Leak Detection offers fast,
   non-invasive water and sewer leak detection for homes and businesses. Call now

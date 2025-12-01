@@ -2,7 +2,7 @@
 title: Miami Beach Leak Detection Services
 slug: miami-beach-leak-detection-services
 menu_order: 0
-seo_title: Miami Beach Leak Detection | Professional Water & Sewer Leak Detection Services
+seo_title: Miami Beach Leak Detection | Water & Sewer Services
 seo_description: >-
   Need expert leak detection in Miami Beach, FL? Total Leak Detection offers fast,
   non-invasive water and sewer leak detection for homes and businesses. Call now
