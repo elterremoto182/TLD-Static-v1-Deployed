@@ -8,9 +8,9 @@ seo_description: >-
   customers and employees in all our leak detection services.
 keywords: ["health and safety total leak detection"]
 ---
-# Health & Safety - Total Leak Detection
+# Your Health, Safety and Well-Being is Our Top Priority
 
-### YOUR HEALTH, SAFETY AND WELL-BEING IS OUR TOP PRIORITY
+### OUR COMMITMENT TO HEALTH & SAFETY
 
 Our company is closely monitoring the current situation on a national and local level. While we cannot control the severity or predictability of this situation, we are taking preventive measures to limit the spread and impact on our community. We are operating with the utmost care in our day-to-day operations, and following the guidance set forth by the federal government and our local state/provincial authorities, including:
 
