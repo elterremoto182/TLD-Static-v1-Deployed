@@ -3,6 +3,7 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import siteConfig from '@/config/site.json';
 import { StickyCallButton } from '@/components/StickyCallButton';
+import { generateOrganizationSchema, structuredDataToJsonLd } from '@/lib/seo/structured-data';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -39,6 +40,8 @@ export default function RootLayout({
 }) {
   const faviconPath = siteConfig.favicon || '/favicon.ico';
 
+  const organizationSchema = generateOrganizationSchema();
+
   return (
     <html lang="en" className={inter.variable}>
       <head>
@@ -46,6 +49,12 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link rel="icon" href={faviconPath} />
         <link rel="apple-touch-icon" href={faviconPath} />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: structuredDataToJsonLd(organizationSchema),
+          }}
+        />
       </head>
       <body>
         {children}

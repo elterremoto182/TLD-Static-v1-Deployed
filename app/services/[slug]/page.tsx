@@ -1,11 +1,16 @@
-import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { Header } from '@/components/sections/Header';
 import { Footer } from '@/components/sections/Footer';
+import { Breadcrumb } from '@/components/ui/breadcrumb';
 import { MarkdownRenderer } from '@/components/blog/MarkdownRenderer';
 import { getPageBySlug, getAllPages } from '@/lib/pages/pages';
-import { ArrowLeft } from 'lucide-react';
-import { generatePageMetadata } from '@/lib/utils';
+import { generatePageMetadata, generateBreadcrumbs } from '@/lib/utils';
+import {
+  generateServiceSchema,
+  generateBreadcrumbListSchema,
+  generateWebPageSchema,
+  structuredDataToJsonLd,
+} from '@/lib/seo/structured-data';
 
 export async function generateStaticParams() {
   const pages = getAllPages();
@@ -115,19 +120,51 @@ export default async function ServicePage({
     notFound();
   }
 
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://totalleakdetection.com';
+  const normalizedSlug = page.slug.replace(/^\/+|\/+$/g, '');
+  const pageUrl = `${baseUrl}/${normalizedSlug}`;
+  const breadcrumbs = generateBreadcrumbs(`/${normalizedSlug}`, page.title);
+  
+  const serviceSchema = generateServiceSchema({
+    name: page.title,
+    description: page.seo_description || page.title,
+    serviceType: page.title,
+    areaServed: 'Miami',
+  });
+  
+  const breadcrumbSchema = generateBreadcrumbListSchema(breadcrumbs);
+  const webPageSchema = generateWebPageSchema({
+    title: page.title,
+    description: page.seo_description || page.title,
+    url: pageUrl,
+    breadcrumbs,
+  });
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: structuredDataToJsonLd(serviceSchema),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: structuredDataToJsonLd(breadcrumbSchema),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: structuredDataToJsonLd(webPageSchema),
+        }}
+      />
       <Header />
       <main className="min-h-screen pt-20">
         <article className="max-w-4xl mx-auto px-4 py-12">
           <div className="mb-8">
-            <Link
-              href="/services"
-              className="inline-flex items-center text-primary font-semibold hover:text-primary/80 transition-colors duration-200 mb-6"
-            >
-              <ArrowLeft className="w-4 h-4 mr-2" />
-              Back to Services
-            </Link>
+            <Breadcrumb items={breadcrumbs} />
           </div>
 
           <div className="prose prose-lg max-w-none">

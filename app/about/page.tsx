@@ -1,11 +1,15 @@
-import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { Header } from '@/components/sections/Header';
 import { Footer } from '@/components/sections/Footer';
+import { Breadcrumb } from '@/components/ui/breadcrumb';
 import { MarkdownRenderer } from '@/components/blog/MarkdownRenderer';
 import { getPageBySlug } from '@/lib/pages/pages';
-import { Home } from 'lucide-react';
-import { generatePageMetadata } from '@/lib/utils';
+import { generatePageMetadata, generateBreadcrumbs } from '@/lib/utils';
+import {
+  generateWebPageSchema,
+  generateBreadcrumbListSchema,
+  structuredDataToJsonLd,
+} from '@/lib/seo/structured-data';
 
 export async function generateMetadata() {
   const page = getPageBySlug('about');
@@ -33,19 +37,35 @@ export default function AboutPage() {
     notFound();
   }
 
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://totalleakdetection.com';
+  const breadcrumbs = generateBreadcrumbs('/about', page.title);
+  const webPageSchema = generateWebPageSchema({
+    title: page.seo_title || page.title || 'About - Total Leak Detection',
+    description: page.seo_description || 'Learn about Total Leak Detection and our expertise in leak detection services.',
+    url: `${baseUrl}/about`,
+    breadcrumbs,
+  });
+  const breadcrumbSchema = generateBreadcrumbListSchema(breadcrumbs);
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: structuredDataToJsonLd(webPageSchema),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: structuredDataToJsonLd(breadcrumbSchema),
+        }}
+      />
       <Header />
       <main className="min-h-screen pt-20">
         <article className="max-w-4xl mx-auto px-4 py-12">
           <div className="mb-8">
-            <Link
-              href="/"
-              className="inline-flex items-center text-primary font-semibold hover:text-primary/80 transition-colors duration-200 mb-6"
-            >
-              <Home className="w-4 h-4 mr-2" />
-              Back to Home
-            </Link>
+            <Breadcrumb items={breadcrumbs} />
           </div>
 
           <div className="prose prose-lg max-w-none">

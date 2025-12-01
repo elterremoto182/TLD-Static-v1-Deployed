@@ -15,9 +15,11 @@ keywords: ["plumbing"]
 
 ## Are you looking to understand all the plumbing issues that can cause water damage?
 
-### Learn how to find leaks like a licensed pro from an expert with 50 years in business! 
+### Learn how to find leaks like a licensed pro from an expert with 50 years in business! 
 
 Sign up for our Plumbing 101 free class
+
+For professional leak detection services, visit [Total Leak Detection](/services/leak-detection) to learn more about our comprehensive leak detection solutions. Our [professional leak detection services](/services/leak-detection) use advanced technology to locate hidden leaks throughout your property. If you need immediate assistance, [contact us](/contact) today. Learn more about [the importance of professional leak detection](/the-importance-of-professional-leak-detection-in-preventing-water-damage) in preventing costly water damage.
 
      
 

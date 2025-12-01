@@ -1,13 +1,20 @@
-import Link from 'next/link';
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
 import { Header } from '@/components/sections/Header';
 import { Footer } from '@/components/sections/Footer';
+import { Breadcrumb } from '@/components/ui/breadcrumb';
 import { MarkdownRenderer } from '@/components/blog/MarkdownRenderer';
 import { getPageBySlug, getAllPages } from '@/lib/pages/pages';
 import { getPostBySlug, getAllPosts } from '@/lib/blog/posts';
-import { Home, Calendar, User, ArrowLeft } from 'lucide-react';
-import { generatePageMetadata } from '@/lib/utils';
+import { Calendar, User } from 'lucide-react';
+import { generatePageMetadata, generateBreadcrumbs } from '@/lib/utils';
+import {
+  generateArticleSchema,
+  generateWebPageSchema,
+  generateBreadcrumbListSchema,
+  generateServiceSchema,
+  structuredDataToJsonLd,
+} from '@/lib/seo/structured-data';
 
 // Routes that have their own handlers and should not be handled by this catch-all
 const reservedRoutes = [
@@ -89,6 +96,10 @@ export async function generateMetadata({
       keywords: post.category ? [post.category, 'blog'] : ['blog'],
       path: `/${post.slug}`,
       ogImage: post.image,
+      articleType: 'article',
+      articleAuthor: post.author,
+      articlePublishedTime: post.date,
+      articleModifiedTime: post.date,
     });
   }
   
@@ -143,19 +154,42 @@ export default async function DynamicPage({
   // Check for blog post first
   const post = getPostBySlug(slug);
   if (post) {
+    const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://totalleakdetection.com';
+    const postUrl = `${baseUrl}/${post.slug}`;
+    const breadcrumbs = generateBreadcrumbs(`/${post.slug}`, post.title);
+    const articleSchema = generateArticleSchema({
+      title: post.title,
+      description: post.excerpt || post.title,
+      author: post.author,
+      datePublished: post.date,
+      dateModified: post.date,
+      image: post.image,
+      url: postUrl,
+      content: post.content,
+    });
+    const breadcrumbSchema = generateBreadcrumbListSchema(breadcrumbs);
+
     return (
       <>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: structuredDataToJsonLd(articleSchema),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: structuredDataToJsonLd(breadcrumbSchema),
+          }}
+        />
         <Header />
         <main className="min-h-screen">
           <article className="pt-32 pb-20">
             <div className="max-w-4xl mx-auto px-4">
-              <Link
-                href="/blog"
-                className="inline-flex items-center text-primary font-semibold hover:text-primary/80 transition-colors duration-200 mb-8"
-              >
-                <ArrowLeft className="w-4 h-4 mr-2" />
-                Back to Blog
-              </Link>
+              <div className="mb-8">
+                <Breadcrumb items={breadcrumbs} />
+              </div>
 
               {post.category && (
                 <span className="inline-block px-3 py-1 bg-primary/10 text-primary text-xs font-semibold rounded-full mb-4">
@@ -198,16 +232,6 @@ export default async function DynamicPage({
               )}
 
               <MarkdownRenderer content={post.content} />
-
-              <div className="mt-12 pt-8 border-t border-gray-200">
-                <Link
-                  href="/blog"
-                  className="inline-flex items-center text-primary font-semibold hover:text-primary/80 transition-colors duration-200"
-                >
-                  <ArrowLeft className="w-4 h-4 mr-2" />
-                  Back to Blog
-                </Link>
-              </div>
             </div>
           </article>
         </main>
@@ -222,19 +246,51 @@ export default async function DynamicPage({
     notFound();
   }
 
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://totalleakdetection.com';
+  const pageUrl = `${baseUrl}/${slug}`;
+  const breadcrumbs = generateBreadcrumbs(`/${slug}`, page.title);
+  const isLocationPage = slug.includes('leak-detection') || slug.includes('mold-testing');
+  
+  // Generate appropriate schema based on page type
+  let pageSchema;
+  if (isLocationPage) {
+    // For location pages, use Service schema
+    pageSchema = generateServiceSchema({
+      name: page.title,
+      description: page.seo_description || page.title,
+      areaServed: page.title.includes('Miami') ? 'Miami' : undefined,
+    });
+  } else {
+    // For other pages, use WebPage schema
+    pageSchema = generateWebPageSchema({
+      title: page.title,
+      description: page.seo_description || page.title,
+      url: pageUrl,
+      breadcrumbs,
+    });
+  }
+  
+  const breadcrumbSchema = generateBreadcrumbListSchema(breadcrumbs);
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: structuredDataToJsonLd(pageSchema),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: structuredDataToJsonLd(breadcrumbSchema),
+        }}
+      />
       <Header />
       <main className="min-h-screen pt-20">
         <article className="max-w-4xl mx-auto px-4 py-12">
           <div className="mb-8">
-            <Link
-              href="/"
-              className="inline-flex items-center text-primary font-semibold hover:text-primary/80 transition-colors duration-200 mb-6"
-            >
-              <Home className="w-4 h-4 mr-2" />
-              Back to Home
-            </Link>
+            <Breadcrumb items={breadcrumbs} />
           </div>
 
           <div className="prose prose-lg max-w-none">

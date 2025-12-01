@@ -2,10 +2,12 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { Header } from '@/components/sections/Header';
 import { Footer } from '@/components/sections/Footer';
+import { Breadcrumb } from '@/components/ui/breadcrumb';
 import { getAllPosts } from '@/lib/blog/posts';
 import { Calendar, User, ArrowRight } from 'lucide-react';
 import { getPageBySlug } from '@/lib/pages/pages';
-import { generatePageMetadata } from '@/lib/utils';
+import { generatePageMetadata, generateBreadcrumbs } from '@/lib/utils';
+import { generateCollectionPageSchema, structuredDataToJsonLd } from '@/lib/seo/structured-data';
 
 export async function generateMetadata() {
   const page = getPageBySlug('blog');
@@ -20,12 +22,29 @@ export async function generateMetadata() {
 
 export default function BlogPage() {
   const posts = getAllPosts();
+  const breadcrumbs = generateBreadcrumbs('/blog', 'Blog');
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://totalleakdetection.com';
+  const collectionPageSchema = generateCollectionPageSchema({
+    title: 'Blog - Total Leak Detection',
+    description: 'Expert tips, guides, and insights for maintaining your home plumbing and leak detection.',
+    url: `${baseUrl}/blog`,
+    breadcrumbs,
+  });
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: structuredDataToJsonLd(collectionPageSchema),
+        }}
+      />
       <Header />
       <main className="min-h-screen">
         <section className="pt-32 pb-20 md:pb-28 bg-gradient-to-br from-primary/10 via-background to-accent/10">
+          <div className="max-w-6xl mx-auto px-4 mb-4">
+            <Breadcrumb items={breadcrumbs} />
+          </div>
           <div className="max-w-6xl mx-auto px-4 text-center">
             <h1 className="text-5xl md:text-6xl font-bold tracking-tight text-gray-900 mb-6">
               Our Blog

@@ -59,9 +59,9 @@ If you need any help in any step of the process don’t hesitate to reach out, w
 
 Having a great relationship with the insurance companies, most of our customers use our no out-of-pocket option with direct insurance billing.
 
-We specialize in [leak detections](/services/leak-detection/ "LEAK DETECTION SERVICES IN DORAL, FL") and we guarantee we will offer you a solution.
+We specialize in [leak detections](/services/leak-detection/ "LEAK DETECTION SERVICES IN DORAL, FL") and we guarantee we will offer you a solution. Our [professional leak detection services](/services/leak-detection) use advanced technology to locate pinhole leaks and other plumbing issues throughout your home.
 
-We also offer mold tests just in case the water leak created a dangerous toxic  environment inside your home 
+We also offer mold tests just in case the water leak created a dangerous toxic  environment inside your home. Our [mold testing services](/services/mold-testing) can help identify mold growth resulting from water leaks. For more information about copper pipe leaks, check out our guide on [advanced techniques for detecting and repairing leaks beneath concrete foundations](/advanced-techniques-for-detecting-and-repairing-leaks-beneath-concrete-foundations). If you need immediate assistance, [contact Total Leak Detection](/contact) today. 
 
 Thanks for watching our video, I hope this helped you out in some way, please like comment and subscribe to the channel.
 

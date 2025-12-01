@@ -1,11 +1,13 @@
 import Link from 'next/link';
 import { Header } from '@/components/sections/Header';
 import { Footer } from '@/components/sections/Footer';
+import { Breadcrumb } from '@/components/ui/breadcrumb';
 import { AnimateOnScroll } from '@/components/AnimateOnScroll';
 import OptimizedImage from '@/components/OptimizedImage';
 import content from '@/config/content.json';
 import * as LucideIcons from 'lucide-react';
-import { generatePageMetadata } from '@/lib/utils';
+import { generatePageMetadata, generateBreadcrumbs } from '@/lib/utils';
+import { generateCollectionPageSchema, structuredDataToJsonLd } from '@/lib/seo/structured-data';
 
 // Map service IDs to their slugs from markdown files
 // URLs should not have trailing slashes to match Next.js routing
@@ -33,12 +35,29 @@ export async function generateMetadata() {
 
 export default function ServicesPage() {
   const { services } = content;
+  const breadcrumbs = generateBreadcrumbs('/services', 'Services');
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://totalleakdetection.com';
+  const collectionPageSchema = generateCollectionPageSchema({
+    title: 'Our Services - Total Leak Detection',
+    description: 'Comprehensive plumbing and leak detection services in Miami, FL. Water leak detection, sewer camera inspections, mold testing, and more.',
+    url: `${baseUrl}/services`,
+    breadcrumbs,
+  });
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: structuredDataToJsonLd(collectionPageSchema),
+        }}
+      />
       <Header />
       <main className="min-h-screen">
         <section className="pt-32 pb-20 md:pb-28 bg-gradient-to-br from-primary/10 via-background to-accent/10">
+          <div className="max-w-6xl mx-auto px-4 mb-4">
+            <Breadcrumb items={breadcrumbs} />
+          </div>
           <div className="max-w-6xl mx-auto px-4 text-center">
             <AnimateOnScroll animation="fade-in-up" duration={600} delay={0}>
               <h1 className="text-5xl md:text-6xl font-bold tracking-tight text-gray-900 mb-6">

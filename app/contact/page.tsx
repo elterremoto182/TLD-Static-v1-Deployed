@@ -1,14 +1,20 @@
 'use client';
 
 import { useState } from 'react';
-import Link from 'next/link';
 import { Header } from '@/components/sections/Header';
 import { Footer } from '@/components/sections/Footer';
+import { Breadcrumb } from '@/components/ui/breadcrumb';
 import { GoogleMap } from '@/components/sections/GoogleMap';
-import { Mail, Phone, MapPin, Send, CheckCircle, AlertCircle, Loader2, Home } from 'lucide-react';
+import { Mail, Phone, MapPin, Send, CheckCircle, AlertCircle, Loader2 } from 'lucide-react';
 import { AnimateOnScroll } from '@/components/AnimateOnScroll';
 import siteConfig from '@/config/site.json';
 import content from '@/config/content.json';
+import { generateBreadcrumbs } from '@/lib/utils';
+import {
+  generateWebPageSchema,
+  generateBreadcrumbListSchema,
+  structuredDataToJsonLd,
+} from '@/lib/seo/structured-data';
 
 
 export default function ContactPage() {
@@ -89,20 +95,35 @@ export default function ContactPage() {
 
   // Generate Google Maps search URL for the address link
   const googleMapsSearchUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(siteConfig.address)}`;
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://totalleakdetection.com';
+  const breadcrumbs = generateBreadcrumbs('/contact', 'Contact');
+  const webPageSchema = generateWebPageSchema({
+    title: 'Contact - Total Leak Detection',
+    description: contact.description,
+    url: `${baseUrl}/contact`,
+    breadcrumbs,
+  });
+  const breadcrumbSchema = generateBreadcrumbListSchema(breadcrumbs);
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: structuredDataToJsonLd(webPageSchema),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: structuredDataToJsonLd(breadcrumbSchema),
+        }}
+      />
       <Header />
       <main className="min-h-screen pt-20">
         <div className="max-w-6xl mx-auto px-4 py-12">
           <div className="mb-8">
-            <Link
-              href="/"
-              className="inline-flex items-center text-primary font-semibold hover:text-primary/80 transition-colors duration-200 mb-6"
-            >
-              <Home className="w-4 h-4 mr-2" />
-              Back to Home
-            </Link>
+            <Breadcrumb items={breadcrumbs} />
           </div>
 
           <AnimateOnScroll animation="fade-in-up" duration={600} delay={0}>

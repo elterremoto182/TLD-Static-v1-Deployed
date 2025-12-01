@@ -91,7 +91,9 @@ At Total Leak Detection, we offer a wide range of services to address your speci
 
 -   [Sewer Camera Inspections](/services/camera-inspection/): Learn more about our cutting-edge sewer camera inspection technology and how it can benefit your plumbing system.
 -   [Damaged Sewer Line Repair](/services/damaged-sewer/): Discover our solutions for repairing damaged sewer lines, including trenchless repair options that minimize disruption to your property.
--   [Plumbing Report Writing](/services/plumbing-report-writing/): Find out how our professionally written plumbing reports can provide you with a detailed assessment of your plumbing system’s condition.
+-   [Plumbing Report Writing](/services/plumbing-report-writing/): Find out how our professionally written plumbing reports can provide you with a detailed assessment of your plumbing system's condition.
+
+For more information about sewer camera inspections, check out our guides on [the importance of sewer camera inspections in Miami](/the-importance-of-sewer-camera-inspections-in-miami-prevent-costly-repairs) and [what to expect during a sewer camera inspection in Miami, FL](/what-to-expect-during-a-sewer-camera-inspection-in-miami-fl). Learn about [how much a sewer line camera inspection costs](/how-much-does-a-sewer-line-camera-inspection-cost) to plan your maintenance budget.
 
 ## Contact Total Leak Detection Today
 

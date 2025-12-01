@@ -10,6 +10,7 @@ import { Contact } from '@/components/sections/Contact';
 import { Footer } from '@/components/sections/Footer';
 import { getPageBySlug } from '@/lib/pages/pages';
 import { generatePageMetadata } from '@/lib/utils';
+import { generateLocalBusinessSchema, structuredDataToJsonLd } from '@/lib/seo/structured-data';
 
 export async function generateMetadata() {
   const page = getPageBySlug('home');
@@ -23,8 +24,16 @@ export async function generateMetadata() {
 }
 
 export default function Home() {
+  const localBusinessSchema = generateLocalBusinessSchema();
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: structuredDataToJsonLd(localBusinessSchema),
+        }}
+      />
       <Header />
       <main>
         <Hero />
