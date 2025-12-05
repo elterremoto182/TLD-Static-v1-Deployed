@@ -1,10 +1,21 @@
-'use client';
-
 import Link from 'next/link';
 import OptimizedImage from '@/components/OptimizedImage';
-import * as LucideIcons from 'lucide-react';
+import { Camera, Zap, Shield, Droplet, AlertTriangle, Waves, FileText, Building, Wrench, LucideIcon } from 'lucide-react';
 import { AnimateOnScroll } from '@/components/AnimateOnScroll';
 import content from '@/config/content.json';
+
+// Icon mapping for service icons - selective imports for better tree-shaking
+const iconMap: Record<string, LucideIcon> = {
+  Camera,
+  Zap,
+  Shield,
+  Droplet,
+  AlertTriangle,
+  Waves,
+  FileText,
+  Building,
+  Wrench,
+};
 
 // Map service IDs to their slugs from markdown files
 // URLs should not have trailing slashes to match Next.js routing
@@ -40,9 +51,7 @@ export function Services() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {services.map((service, index) => {
-            const IconComponent = (LucideIcons[
-              service.icon as keyof typeof LucideIcons
-            ] || LucideIcons.Wrench) as React.ElementType;
+            const IconComponent = iconMap[service.icon] || Wrench;
             const serviceSlug = serviceSlugMap[service.id] || '/services';
 
             return (
@@ -64,6 +73,7 @@ export function Services() {
                         fill
                         className="object-cover group-hover:scale-110 transition-transform duration-300"
                         sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                        loading="lazy"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
                       <div className="absolute bottom-4 left-4 w-12 h-12 bg-white rounded-xl flex items-center justify-center shadow-lg">

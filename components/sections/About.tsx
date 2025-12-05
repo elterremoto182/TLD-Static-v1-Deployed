@@ -1,9 +1,16 @@
-'use client';
-
-import * as LucideIcons from 'lucide-react';
+import { Shield, Award, Clock, Users, CheckCircle, LucideIcon } from 'lucide-react';
 import OptimizedImage from '@/components/OptimizedImage';
 import { AnimateOnScroll } from '@/components/AnimateOnScroll';
 import content from '@/config/content.json';
+
+// Icon mapping for about features - selective imports for better tree-shaking
+const iconMap: Record<string, LucideIcon> = {
+  Shield,
+  Award,
+  Clock,
+  Users,
+  CheckCircle,
+};
 
 export function About() {
   const { about } = content;
@@ -32,6 +39,7 @@ export function About() {
                   fill
                   className="object-cover"
                   sizes="(max-width: 768px) 100vw, 1200px"
+                  loading="lazy"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
               </div>
@@ -61,9 +69,7 @@ export function About() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {about.features.map((feature, index) => {
-            const IconComponent = (LucideIcons[
-              feature.icon as keyof typeof LucideIcons
-            ] || LucideIcons.CheckCircle) as React.ElementType;
+            const IconComponent = iconMap[feature.icon] || CheckCircle;
 
             return (
               <AnimateOnScroll

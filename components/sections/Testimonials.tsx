@@ -1,5 +1,3 @@
-'use client';
-
 import OptimizedImage from '@/components/OptimizedImage';
 import { Star } from 'lucide-react';
 import { AnimateOnScroll } from '@/components/AnimateOnScroll';
@@ -53,6 +51,7 @@ export function Testimonials() {
                       width={96}
                       height={96}
                       className="object-cover"
+                      loading="lazy"
                     />
                   ) : (
                     <span className="text-lg font-bold text-gray-600">

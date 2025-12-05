@@ -1,5 +1,3 @@
-'use client';
-
 import Link from 'next/link';
 import OptimizedImage from '@/components/OptimizedImage';
 import { AnimateOnScroll } from '@/components/AnimateOnScroll';
@@ -19,6 +17,7 @@ export function CTABanner() {
               fill
               className="object-cover"
               sizes="100vw"
+              loading="lazy"
             />
             <div className="absolute inset-0 bg-primary/90" />
           </div>

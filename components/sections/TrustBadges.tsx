@@ -1,5 +1,3 @@
-'use client';
-
 import OptimizedImage from '@/components/OptimizedImage';
 import { AnimateOnScroll } from '@/components/AnimateOnScroll';
 import { Shield, Award, CheckCircle, BadgeCheck, FileCheck, Users } from 'lucide-react';
@@ -98,6 +96,7 @@ export function TrustBadges() {
                           width={80}
                           height={80}
                           className="object-contain p-2"
+                          loading="lazy"
                         />
                       </div>
                     ) : (
