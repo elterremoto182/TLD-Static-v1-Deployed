@@ -90,6 +90,6 @@ If you are experiencing water build up in around your shower pan, do not hesitat
 
 We do thousands of shower pan tests a year. With over 40 years of plumbing experience, you can rest assure you are in good hands. Our [professional leak detection services](/services/leak-detection) specialize in finding leaks throughout your home, including shower pan leaks.
 
-We offer services in Miami, Ft Lauderdale, and more recently in Ft Myers. For services in specific areas, check out our [Miami leak detection services](/miami-leak-detection-services) and [Miami Lakes leak detection services](/total-leak-detection-miami-lakes).
+We offer services in Miami, Ft Lauderdale, and more recently in Ft Myers. For services in specific areas, check out our [Miami leak detection services](/miami-leak-detection-services), [Miami Lakes leak detection services](/total-leak-detection-miami-lakes), [Miramar leak detection services](/miramar-leak-detection-pinholes-in-pines), and [Deerfield Beach leak detection services](/total-leak-detection-deerfield-beach).
 
-If you are looking for a major shower pan fixes contact our sister company [Hernandez Plumbing](https://plumbinginmiamifl.com/services/7-shower-pan-leak-fixes/). For more information about our services or to schedule an inspection, [contact Total Leak Detection](/contact) today.
+If you are looking for a major shower pan fixes contact our sister company [Hernandez Plumbing](https://plumbinginmiamifl.com/services/7-shower-pan-leak-fixes/). For more information about our services or to schedule an inspection, [contact Total Leak Detection](/contact) today. Check out our [current promotions](/promotions) for special offers on leak detection services!

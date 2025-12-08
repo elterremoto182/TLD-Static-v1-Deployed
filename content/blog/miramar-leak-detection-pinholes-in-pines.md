@@ -51,7 +51,7 @@ Finally, if you’re looking to get your copper pipes replaced, we have one of t
 
 Our sister company Hernandez plumbing has done over [50 pipe replacements in the city of Miramar](https://plumbinginmiamifl.com/). In addition they have been around for over 50 years.  Also, they can offer zero interest financing for larger projects.
 
-Another thing to consider is the city of Miramar is offering a 1% interest loan for pipe-related leaks.  
+Another thing to consider is the city of Miramar is offering a 1% interest loan for pipe-related leaks. Check out our [current promotions](/promotions) for additional savings on leak detection and plumbing services.  
 
 When it comes to replacing the pipes most of them will be rerouted through the attic and Walls. 
 
@@ -61,7 +61,7 @@ Having a great relationship with the insurance companies, most of our customers 
 
 We specialize in [leak detections](/services/leak-detection/ "LEAK DETECTION SERVICES IN DORAL, FL") and we guarantee we will offer you a solution. Our [professional leak detection services](/services/leak-detection) use advanced technology to locate pinhole leaks and other plumbing issues throughout your home.
 
-We also offer mold tests just in case the water leak created a dangerous toxic  environment inside your home. Our [mold testing services](/services/mold-testing) can help identify mold growth resulting from water leaks. For more information about copper pipe leaks, check out our guide on [advanced techniques for detecting and repairing leaks beneath concrete foundations](/advanced-techniques-for-detecting-and-repairing-leaks-beneath-concrete-foundations). If you need immediate assistance, [contact Total Leak Detection](/contact) today. 
+We also offer mold tests just in case the water leak created a dangerous toxic environment inside your home. Our [mold testing services](/services/mold-testing) can help identify mold growth resulting from water leaks. For leaks beneath concrete foundations, our [slab leak detection services](/services/slab-leaks) specialize in finding these challenging issues. For more information about copper pipe leaks, check out our guide on [advanced techniques for detecting and repairing leaks beneath concrete foundations](/advanced-techniques-for-detecting-and-repairing-leaks-beneath-concrete-foundations). If you need immediate assistance, [contact Total Leak Detection](/contact) today. 
 
 Thanks for watching our video, I hope this helped you out in some way, please like comment and subscribe to the channel.
 

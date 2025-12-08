@@ -12,11 +12,8 @@
     "export-images": "next-image-export-optimizer"
   },
   "dependencies": {
-    "@hookform/resolvers": "^3.9.0",
     "@next/swc-wasm-nodejs": "^14.2.18",
-    "@radix-ui/react-label": "^2.1.0",
     "@radix-ui/react-slot": "^1.1.0",
-    "@supabase/supabase-js": "^2.58.0",
     "@types/node": "20.6.2",
     "@types/react": "18.2.22",
     "@types/react-dom": "18.2.7",
@@ -29,19 +26,16 @@
     "lucide-react": "^0.446.0",
     "next": "^14.2.18",
     "next-image-export-optimizer": "^1.19.0",
-    "next-themes": "^0.3.0",
     "postcss": "8.4.30",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-hook-form": "^7.53.0",
     "react-markdown": "^10.1.0",
     "rehype-raw": "^7.0.0",
     "remark-gfm": "^4.0.1",
     "tailwind-merge": "^2.5.2",
     "tailwindcss": "3.3.3",
     "tailwindcss-animate": "^1.0.7",
-    "typescript": "5.2.2",
-    "zod": "^3.23.8"
+    "typescript": "5.2.2"
   },
   "browserslist": [
     "last 2 Chrome versions",

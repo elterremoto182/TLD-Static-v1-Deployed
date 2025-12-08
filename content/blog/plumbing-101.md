@@ -19,7 +19,7 @@ keywords: ["plumbing"]
 
 Sign up for our Plumbing 101 free class
 
-For professional leak detection services, visit [Total Leak Detection](/services/leak-detection) to learn more about our comprehensive leak detection solutions. Our [professional leak detection services](/services/leak-detection) use advanced technology to locate hidden leaks throughout your property. If you need immediate assistance, [contact us](/contact) today. Learn more about [the importance of professional leak detection](/the-importance-of-professional-leak-detection-in-preventing-water-damage) in preventing costly water damage.
+For professional leak detection services, visit [Total Leak Detection](/services/leak-detection) to learn more about our comprehensive leak detection solutions. Our [professional leak detection services](/services/leak-detection) use advanced technology to locate hidden leaks throughout your property. For leaks beneath concrete, our [slab leak detection services](/services/slab-leaks) specialize in non-invasive detection. If you need immediate assistance, [contact us](/contact) today. Learn more about [the importance of professional leak detection](/the-importance-of-professional-leak-detection-in-preventing-water-damage) in preventing costly water damage. Check out our [current promotions](/promotions) for special offers on plumbing services.
 
      
 

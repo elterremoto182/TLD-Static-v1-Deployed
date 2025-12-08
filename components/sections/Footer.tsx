@@ -120,12 +120,20 @@ export function Footer() {
             <p>
               &copy; {currentYear} {siteConfig.name}. All rights reserved. License # CFC1430460
             </p>
-            <Link
-              href="/privacy-policy"
-              className="text-gray-400 hover:text-white transition-colors duration-200"
-            >
-              Privacy Policy
-            </Link>
+            <div className="flex gap-4">
+              <Link
+                href="/careers/"
+                className="text-gray-400 hover:text-white transition-colors duration-200"
+              >
+                Careers
+              </Link>
+              <Link
+                href="/privacy-policy"
+                className="text-gray-400 hover:text-white transition-colors duration-200"
+              >
+                Privacy Policy
+              </Link>
+            </div>
           </div>
         </div>
       </div>

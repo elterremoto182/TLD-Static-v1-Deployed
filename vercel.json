@@ -9,6 +9,11 @@
       "source": "/services/mold-detectionl-and-remediation/",
       "destination": "/services/mold-testing/",
       "permanent": true
+    },
+    {
+      "source": "/reviews/",
+      "destination": "/testimonials/",
+      "permanent": true
     }
   ]
 }
