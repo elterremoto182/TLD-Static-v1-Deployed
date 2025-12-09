@@ -10,12 +10,15 @@ export interface BreadcrumbItem {
 interface BreadcrumbProps {
   items: BreadcrumbItem[];
   className?: string;
+  variant?: 'default' | 'light';
 }
 
-export function Breadcrumb({ items, className }: BreadcrumbProps) {
+export function Breadcrumb({ items, className, variant = 'default' }: BreadcrumbProps) {
   if (!items || items.length === 0) {
     return null;
   }
+
+  const isLight = variant === 'light';
 
   return (
     <nav
@@ -36,7 +39,10 @@ export function Breadcrumb({ items, className }: BreadcrumbProps) {
             >
               {isLast ? (
                 <span
-                  className="text-gray-900 font-medium"
+                  className={cn(
+                    'font-medium',
+                    isLight ? 'text-white' : 'text-gray-900'
+                  )}
                   itemProp="name"
                 >
                   {item.label}
@@ -44,7 +50,12 @@ export function Breadcrumb({ items, className }: BreadcrumbProps) {
               ) : (
                 <Link
                   href={item.href}
-                  className="text-gray-600 hover:text-primary transition-colors duration-200"
+                  className={cn(
+                    'transition-colors duration-200',
+                    isLight 
+                      ? 'text-white/80 hover:text-white' 
+                      : 'text-gray-600 hover:text-primary'
+                  )}
                   itemProp="item"
                 >
                   <span itemProp="name">{item.label}</span>
@@ -52,7 +63,13 @@ export function Breadcrumb({ items, className }: BreadcrumbProps) {
               )}
               <meta itemProp="position" content={String(index + 1)} />
               {!isLast && (
-                <ChevronRight className="w-4 h-4 text-gray-400 mx-2" aria-hidden="true" />
+                <ChevronRight 
+                  className={cn(
+                    'w-4 h-4 mx-2',
+                    isLight ? 'text-white/60' : 'text-gray-400'
+                  )} 
+                  aria-hidden="true" 
+                />
               )}
             </li>
           );

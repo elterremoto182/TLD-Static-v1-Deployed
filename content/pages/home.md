@@ -66,3 +66,10 @@ Licensed & Insured
 [![Youtube Logo](/wp-content/uploads/2021/09/youtube.png)](https://www.youtube.com/channel/UCBqXE0Om4ZTJEgISWBIl_rA?view_as=subscriber)  
 [![Facebook Logo](/wp-content/uploads/2021/09/facebook-reviews-1.png)](https://www.facebook.com/totalleakdetection/)  
 [![google reviews logo](/wp-content/uploads/2021/09/google.png)](/reviews/)
+
+## Educational Resources
+
+- [Plumbing 101](/plumbing-101) - Sign up for our FREE plumbing class
+- [Event Sign Up](/event-sign-up) - Register for our presentations
+- [How to Check Shower Pan for Leaks](/how-to-check-shower-pan-leaks) - DIY guide
+- [How to Identify and Fix Common Toilet Leaks](/how-to-identify-and-fix-common-toilet-leaks-a-comprehensive-guide) - Toilet leak guide

@@ -2,7 +2,7 @@
 title: North Miami Beach Leak Detection Services
 slug: north-miami-beach-leak-detection-services
 menu_order: 0
-seo_title: North Miami Beach Leak Detection | Expert Water & Sewer Leak Detection Services
+seo_title: North Miami Beach Leak Detection | Water & Sewer Leak Detection Services
 seo_description: >-
   Looking for professional leak detection in North Miami Beach, FL? Total Leak
   Detection provides non-invasive water and sewer leak detection for homes and

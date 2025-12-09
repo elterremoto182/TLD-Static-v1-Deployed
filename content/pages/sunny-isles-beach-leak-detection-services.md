@@ -2,7 +2,7 @@
 title: Sunny Isles Beach Leak Detection Services
 slug: sunny-isles-beach-leak-detection-services
 menu_order: 0
-seo_title: Sunny Isles Beach Leak Detection | Expert Water & Sewer Leak Detection Services
+seo_title: Sunny Isles Beach Leak Detection | Water Leak Detection Services
 seo_description: >-
   Looking for professional leak detection in Sunny Isles Beach, FL? Total Leak
   Detection provides non-invasive water and sewer leak detection for homes and

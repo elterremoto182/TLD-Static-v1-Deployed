@@ -2,7 +2,7 @@
 title: Pembroke Pines Leak Detection Services
 slug: pembroke-pines-leak-detection-services
 menu_order: 0
-seo_title: Pembroke Pines Leak Detection | Expert Water & Sewer Leak Detection Services
+seo_title: Pembroke Pines Leak Detection | Water & Sewer Leak Detection Services
 seo_description: >-
   Looking for professional leak detection in Pembroke Pines, FL? Total Leak
   Detection provides non-invasive water and sewer leak detection for homes and

@@ -70,3 +70,9 @@ After the re-testing has been completed, the mold inspector will provide a final
 Total Leak Detection offers reliable and accurate mold testing services for residential and commercial properties. Our team of experienced professionals use the latest testing methods and equipment to detect the presence of mold in your property, and to identify the type of mold present.
 
 We also provide recommendations on how to best address any mold issues that are found. Learn more about [how mold inspection can improve your indoor air quality](/how-mold-inspection-can-improve-your-indoor-air-quality) and our commitment to [health and safety](/health-and-safety). Contact us today to learn more about our [mold testing services](/services/mold-testing) and how we can help you protect your home or business from mold-related health risks. Check out our [current promotions](/promotions) for special offers on mold testing and leak detection services.
+
+### Related Resources
+
+- [What is Post Remediation Verification?](/what-is-a-post-remediation-verification) - Understanding the verification process after mold remediation
+- [Effective Solutions for Low Water Pressure](/effective-solutions-for-low-water-pressure-in-your-home) - Water issues that can lead to mold
+- [How to Check Shower Pan for Leaks](/how-to-check-shower-pan-leaks) - Shower leaks can cause mold growth

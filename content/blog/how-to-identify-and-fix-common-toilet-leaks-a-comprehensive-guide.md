@@ -38,7 +38,7 @@ Regular maintenance helps prevent these issues:
 
 Ignoring routine checks can lead to significant water wastage, potentially up to 5 gallons per minute.
 
-For additional plumbing services, consider visiting [Total Leak Detection](/) or learn more about addressing clogged drains [here](/services/clogged-drains). Our [professional leak detection services](/services/leak-detection) can help identify hidden leaks that may be affecting your toilet's performance. For related issues, check out our guide on [why your toilet bubbles when your washing machine drains](/why-your-toilet-bubbles-when-your-washing-machine-drains-causes-and-solutions).
+For additional plumbing services, consider visiting [Total Leak Detection](/) or learn more about addressing [clogged drain services](/services/clogged-drains). Our [professional leak detection services](/services/leak-detection) can help identify hidden leaks that may be affecting your toilet's performance. For related issues, check out our guide on [why your toilet bubbles when your washing machine drains](/why-your-toilet-bubbles-when-your-washing-machine-drains-causes-and-solutions).
 
 ## Identifying Toilet Leaks
 

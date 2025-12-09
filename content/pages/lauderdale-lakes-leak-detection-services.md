@@ -2,7 +2,7 @@
 title: Lauderdale Lakes Leak Detection Services
 slug: lauderdale-lakes-leak-detection-services
 menu_order: 0
-seo_title: Lauderdale Lakes Leak Detection | Expert Water & Sewer Leak Detection Services
+seo_title: Lauderdale Lakes Leak Detection | Water Leak Detection Services
 seo_description: >-
   Looking for professional leak detection in Lauderdale Lakes, FL? Total Leak
   Detection provides non-invasive water and sewer leak detection for homes and

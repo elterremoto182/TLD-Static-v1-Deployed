@@ -248,3 +248,13 @@ We provide a detailed report with the exact leak location, photos, and recommend
 **Total Leak Detection** - Florida's Trusted Leak Detection Experts Since 1980
 
 Licensed & Insured (CFC1430460) | Better Business Bureau Accredited | 4.7★ Rating with 100+ Reviews
+
+---
+
+## Related Resources
+
+- [Slab Leak Detection Services](/services/slab-leaks) - Specialized detection for leaks beneath concrete foundations
+- [How to Check Shower Pan for Leaks](/how-to-check-shower-pan-leaks) - DIY guide to testing your shower pan
+- [How to Identify and Fix Common Toilet Leaks](/how-to-identify-and-fix-common-toilet-leaks-a-comprehensive-guide) - Comprehensive toilet leak guide
+- [Effective Solutions for Low Water Pressure](/effective-solutions-for-low-water-pressure-in-your-home) - Fix water pressure issues
+- [Our Current Promotions](/promotions) - Check out our latest discounts and special offers

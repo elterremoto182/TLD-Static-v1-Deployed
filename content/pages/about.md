@@ -35,3 +35,16 @@ We specialize in non-invasive leak detection. This involves the use of advanced 
 -   Fast plumbing reports
 -   We create reports for insurance purposes
 -   Immediate emergency response
+
+---
+
+### Educational Resources
+
+- [Plumbing 101](/plumbing-101) - Sign up for our FREE plumbing class
+- [Event Sign Up](/event-sign-up) - Register for our upcoming presentations
+
+### Helpful Guides
+
+- [How to Identify and Fix Common Toilet Leaks](/how-to-identify-and-fix-common-toilet-leaks-a-comprehensive-guide) - DIY toilet troubleshooting
+- [How to Check Shower Pan for Leaks](/how-to-check-shower-pan-leaks) - Shower leak detection guide
+- [Effective Solutions for Low Water Pressure](/effective-solutions-for-low-water-pressure-in-your-home) - Water pressure solutions
