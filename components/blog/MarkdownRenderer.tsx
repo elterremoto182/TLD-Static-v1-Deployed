@@ -61,6 +61,19 @@ function rehypeYouTubeFacade() {
  */
 function rehypeApplyStyles() {
   return (tree: Root) => {
+    // First pass: find the first image to mark it as eager (for LCP optimization)
+    let firstImageFound = false;
+    
+    visit(tree, 'element', (node: Element) => {
+      if (node.tagName === 'img' && !firstImageFound) {
+        firstImageFound = true;
+        // Mark first image for eager loading
+        if (!node.properties) node.properties = {};
+        node.properties['data-lcp-image'] = 'true';
+      }
+    });
+    
+    // Second pass: apply styles
     visit(tree, 'element', (node: Element) => {
       const existingClass = node.properties?.className 
         ? (Array.isArray(node.properties.className) 
@@ -152,14 +165,23 @@ function rehypeApplyStyles() {
           const imgAlt = node.properties?.alt ? String(node.properties.alt) : '';
           const imgWidth = node.properties?.width;
           const imgHeight = node.properties?.height;
+          const isLcpImage = node.properties?.['data-lcp-image'] === 'true';
           
           node.properties = {
             ...node.properties,
             src: imgSrc,
             alt: imgAlt,
             className: `${existingClass} rounded-lg max-w-full h-auto my-6`.trim(),
-            loading: 'lazy',
+            // First image should be eager (not lazy) for LCP optimization
+            // Subsequent images can be lazy loaded
+            loading: isLcpImage ? 'eager' : 'lazy',
+            fetchpriority: isLcpImage ? 'high' : undefined,
           };
+          
+          // Remove the data attribute as it's no longer needed
+          if (node.properties['data-lcp-image']) {
+            delete node.properties['data-lcp-image'];
+          }
           
           // If no dimensions, add aspect ratio styling via wrapper
           if (!imgWidth || !imgHeight) {
