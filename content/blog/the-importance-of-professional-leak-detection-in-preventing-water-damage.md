@@ -122,11 +122,11 @@ At **Total Leak Detection**, we specialize in non-invasive, highly accurate leak
 📞 **Call Today:** (855) 385-5325  
 🌐 **Learn More:** [totalleakdetection.com](/)
 
-For more information about leak detection, check out our guide on [advanced techniques for detecting and repairing leaks beneath concrete foundations](/advanced-techniques-for-detecting-and-repairing-leaks-beneath-concrete-foundations). If you suspect mold growth from water damage, our [mold testing services](/services/mold-testing/) can help identify and address the problem. Learn more about [how mold inspection can improve your indoor air quality](/how-mold-inspection-can-improve-your-indoor-air-quality). For comprehensive plumbing services, [contact Total Leak Detection](/contact/) today. Check out our [current promotions](/promotions/) for special offers on leak detection services.
+For more information about leak detection, check out our guide on [advanced techniques for detecting and repairing leaks beneath concrete foundations) If you suspect mold growth from water damage, our [mold testing services](/services/mold-testing/) can help identify and address the problem. Learn more about [how mold inspection can improve your indoor air quality) For comprehensive plumbing services, [contact Total Leak Detection](/contact/) today. Check out our [current promotions](/promotions/) for special offers on leak detection services.
 
 ### Additional Resources
 
-- [How to Check Shower Pan for Leaks](/how-to-check-shower-pan-leaks) - DIY shower pan leak detection guide
-- [How to Identify and Fix Common Toilet Leaks](/how-to-identify-and-fix-common-toilet-leaks-a-comprehensive-guide) - Comprehensive toilet leak guide
+- [How to Check Shower Pan for Leaks](/how-to-check-shower-pan-leaks/) - DIY shower pan leak detection guide
+- [How to Identify and Fix Common Toilet Leaks)- Comprehensive toilet leak guide
 - [Slab Leak Detection Services](/services/slab-leaks/) - Expert slab leak detection
 - [Plumbing 101](/plumbing-101/) - Free plumbing class from our experts

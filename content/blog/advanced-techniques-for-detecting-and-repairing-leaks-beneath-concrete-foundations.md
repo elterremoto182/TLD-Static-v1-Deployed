@@ -96,13 +96,13 @@ While some keen DIYers might attempt to tackle leak detection, the precision req
 
 Leaks under concrete foundations can be daunting to address, but with the right techniques and expert guidance, they can be managed successfully. If you suspect a leak beneath your foundation, it’s essential to act quickly to minimize damage and restore safety to your environment.
 
-For expert leak detection services, visit [Total Leak Detection](/), and if you have any questions or need assistance, don't hesitate to [contact us](/contact/). Our team is here to ensure your property is secure, sound, and leak-free. We serve all of South Florida including [Miami Lakes](/total-leak-detection-miami-lakes), [Miramar](/miramar-leak-detection-pinholes-in-pines), and [Deerfield Beach](/total-leak-detection-deerfield-beach). If you're dealing with water damage from leaks, our [mold testing services](/services/mold-testing/) can help identify any mold growth that may have resulted from moisture issues. Learn more about [how mold inspection can improve your indoor air quality](/how-mold-inspection-can-improve-your-indoor-air-quality) and our commitment to [health and safety](/health-and-safety/). Additionally, learn more about [the importance of professional leak detection](/the-importance-of-professional-leak-detection-in-preventing-water-damage) in preventing costly water damage.
+For expert leak detection services, visit [Total Leak Detection](/), and if you have any questions or need assistance, don't hesitate to [contact us](/contact/). Our team is here to ensure your property is secure, sound, and leak-free. We serve all of South Florida including [Miami Lakes) [Miramar) and [Deerfield Beach) If you're dealing with water damage from leaks, our [mold testing services](/services/mold-testing/) can help identify any mold growth that may have resulted from moisture issues. Learn more about [how mold inspection can improve your indoor air quality)and our commitment to [health and safety](/health-and-safety/). Additionally, learn more about [the importance of professional leak detection)in preventing costly water damage.
 
 By staying informed and proactive, you can protect your property from the severe consequences of undetected water leaks beneath concrete foundations.
 
 ### Additional Plumbing Resources
 
-- [Effective Solutions for Low Water Pressure](/effective-solutions-for-low-water-pressure-in-your-home) - Slab leaks can cause water pressure issues
-- [Eliminating Air Pockets in Water Pipes](/eliminating-air-pockets-effective-solutions-for-air-in-water-pipes) - Related plumbing maintenance tips
-- [Essential Tips for Maintaining Your Sewer Line](/essential-tips-for-maintaining-your-sewer-line-what-homeowners-must-know) - Comprehensive sewer maintenance guide
+- [Effective Solutions for Low Water Pressure)- Slab leaks can cause water pressure issues
+- [Eliminating Air Pockets in Water Pipes)- Related plumbing maintenance tips
+- [Essential Tips for Maintaining Your Sewer Line)- Comprehensive sewer maintenance guide
 - [Plumbing 101](/plumbing-101/) - Sign up for our free plumbing class to learn from the experts

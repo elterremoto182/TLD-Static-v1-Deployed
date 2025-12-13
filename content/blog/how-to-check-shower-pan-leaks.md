@@ -69,7 +69,7 @@ The plastic liner of a shower pan is a vital component for keeping water from le
 
 If not addressed quickly, a shower pan leak can lead to water damage on bathroom walls, around the shower curb, first floor ceilings under the shower, and in crawl spaces. Furthermore, it can cause mold growth and wet rot in the subfloor. If you suspect mold growth from water damage, our [mold testing services](/services/mold-testing/) can help identify and address the problem. For comprehensive leak detection, our [professional leak detection services](/services/leak-detection/) can locate hidden leaks throughout your home.
 
-Watch the video above to learn how to test the liner for any potential leaks. To prevent water damage and mold, it is important to inspect your shower pan regularly and make sure it is properly installed and sealed. Learn more about [10 effective ways to boost water pressure in your shower](/10-effective-ways-to-boost-water-pressure-in-your-shower-quick-fixes-and-long-term-solutions) and [effective solutions for low water pressure](/effective-solutions-for-low-water-pressure-in-your-home) to maintain your shower's performance.
+Watch the video above to learn how to test the liner for any potential leaks. To prevent water damage and mold, it is important to inspect your shower pan regularly and make sure it is properly installed and sealed. Learn more about [10 effective ways to boost water pressure in your shower)and [effective solutions for low water pressure)to maintain your shower's performance.
 
 This test must be done and is recommended by most building codes during inspections before the tile is installed. It can also be done after tile has been installed as well to test for leaks.
 
@@ -90,6 +90,6 @@ If you are experiencing water build up in around your shower pan, do not hesitat
 
 We do thousands of shower pan tests a year. With over 40 years of plumbing experience, you can rest assure you are in good hands. Our [professional leak detection services](/services/leak-detection/) specialize in finding leaks throughout your home, including shower pan leaks.
 
-We offer services in Miami, Ft Lauderdale, and more recently in Ft Myers. For services in specific areas, check out our [Miami leak detection services](/miami-leak-detection-services), [Miami Lakes leak detection services](/total-leak-detection-miami-lakes), [Miramar leak detection services](/miramar-leak-detection-pinholes-in-pines), and [Deerfield Beach leak detection services](/total-leak-detection-deerfield-beach).
+We offer services in Miami, Ft Lauderdale, and more recently in Ft Myers. For services in specific areas, check out our [Miami leak detection services) [Miami Lakes leak detection services) [Miramar leak detection services) and [Deerfield Beach leak detection services)
 
 If you are looking for a major shower pan fixes contact our sister company [Hernandez Plumbing](https://plumbinginmiamifl.com/services/7-shower-pan-leak-fixes/). For more information about our services or to schedule an inspection, [contact Total Leak Detection](/contact/) today. Check out our [current promotions](/promotions/) for special offers on leak detection services!

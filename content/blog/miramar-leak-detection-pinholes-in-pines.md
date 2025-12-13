@@ -61,7 +61,7 @@ Having a great relationship with the insurance companies, most of our customers 
 
 We specialize in [leak detections](/services/leak-detection/ "LEAK DETECTION SERVICES IN DORAL, FL") and we guarantee we will offer you a solution. Our [professional leak detection services](/services/leak-detection/) use advanced technology to locate pinhole leaks and other plumbing issues throughout your home.
 
-We also offer mold tests just in case the water leak created a dangerous toxic environment inside your home. Our [mold testing services](/services/mold-testing/) can help identify mold growth resulting from water leaks. For leaks beneath concrete foundations, our [slab leak detection services](/services/slab-leaks/) specialize in finding these challenging issues. For more information about copper pipe leaks, check out our guide on [advanced techniques for detecting and repairing leaks beneath concrete foundations](/advanced-techniques-for-detecting-and-repairing-leaks-beneath-concrete-foundations). If you need immediate assistance, [contact Total Leak Detection](/contact/) today. 
+We also offer mold tests just in case the water leak created a dangerous toxic environment inside your home. Our [mold testing services](/services/mold-testing/) can help identify mold growth resulting from water leaks. For leaks beneath concrete foundations, our [slab leak detection services](/services/slab-leaks/) specialize in finding these challenging issues. For more information about copper pipe leaks, check out our guide on [advanced techniques for detecting and repairing leaks beneath concrete foundations) If you need immediate assistance, [contact Total Leak Detection](/contact/) today. 
 
 Thanks for watching our video, I hope this helped you out in some way, please like comment and subscribe to the channel.
 
@@ -69,7 +69,7 @@ Remember we total leak got you covered!
 
 ### Related Resources
 
-- [Effective Solutions for Low Water Pressure](/effective-solutions-for-low-water-pressure-in-your-home) - Pinhole leaks often cause low water pressure
-- [Miami Lakes Leak Detection](/total-leak-detection-miami-lakes) - Serving nearby Miami Lakes area
+- [Effective Solutions for Low Water Pressure)- Pinhole leaks often cause low water pressure
+- [Miami Lakes Leak Detection)- Serving nearby Miami Lakes area
 - [Plumbing 101](/plumbing-101/) - Sign up for our free plumbing class
-- [How to Identify and Fix Common Toilet Leaks](/how-to-identify-and-fix-common-toilet-leaks-a-comprehensive-guide) - Related plumbing guide
+- [How to Identify and Fix Common Toilet Leaks)- Related plumbing guide

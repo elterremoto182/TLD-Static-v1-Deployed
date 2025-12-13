@@ -202,14 +202,14 @@ The importance of [sewer camera inspections in Miami](/services/camera-inspectio
 
 **Ready to protect your home?** Schedule an inspection before small problems become big ones.
 
-Learn more about [the benefits of sewer camera inspections for Miami homeowners](/the-benefits-of-sewer-camera-inspections-for-miami-homeowners) and [what to expect during a sewer camera inspection in Miami, FL](/what-to-expect-during-a-sewer-camera-inspection-in-miami-fl). For pricing details, check out [how much a sewer line camera inspection costs](/how-much-does-a-sewer-line-camera-inspection-cost). 
+Learn more about [the benefits of sewer camera inspections for Miami homeowners)and [what to expect during a sewer camera inspection in Miami, FL) For pricing details, check out [how much a sewer line camera inspection costs) 
 
 [Contact Total Leak Detection](/contact/) today for professional sewer services.
 
 ### Related Resources
 
-- [Main Sewer Line Pipe Size Guide](/choosing-the-perfect-pipe-size-for-your-main-sewer-line-types-repairs-and-expert-tips) - Understanding proper sewer pipe sizing
-- [Essential Tips for Maintaining Your Sewer Line](/essential-tips-for-maintaining-your-sewer-line-what-homeowners-must-know) - Comprehensive sewer maintenance guide
-- [The Ultimate Guide to Effective Drain Cleaners](/the-ultimate-guide-to-effective-drain-cleaners-what-really-works) - Learn what really works
-- [Expert Tips for Clogged Kitchen Sinks](/expert-tips-to-prevent-and-fix-clogged-kitchen-sinks) - Prevention and solutions
+- [Main Sewer Line Pipe Size Guide)- Understanding proper sewer pipe sizing
+- [Essential Tips for Maintaining Your Sewer Line)- Comprehensive sewer maintenance guide
+- [The Ultimate Guide to Effective Drain Cleaners)- Learn what really works
+- [Expert Tips for Clogged Kitchen Sinks)- Prevention and solutions
 - [Our Current Promotions](/promotions/) - Check out our latest discounts on sewer services

@@ -22,7 +22,7 @@ keywords: ["indoor air quality mold testing"]
 
 Living in Miami means dealing with high humidity, frequent rainfall, and year-round warmth—ideal conditions for mold to grow unnoticed in your home. While many homeowners focus on visible cleanliness, the air you breathe can silently affect your health. If you’ve noticed musty odors or allergy-like symptoms indoors, your indoor air quality may be compromised by hidden mold.
 
-At **Total Leak Detection**, we help Miami homeowners improve their **indoor air quality** through expert **mold inspections** designed to detect and eliminate mold at the source. Our [mold testing services](/services/mold-testing/) provide comprehensive assessments to identify mold growth and improve your home's air quality. Learn more about [how to do a mold test](/7-simple-steps-to-do-a-mold-test) with our step-by-step guide.
+At **Total Leak Detection**, we help Miami homeowners improve their **indoor air quality** through expert **mold inspections** designed to detect and eliminate mold at the source. Our [mold testing services](/services/mold-testing/) provide comprehensive assessments to identify mold growth and improve your home's air quality. Learn more about [how to do a mold test)with our step-by-step guide.
 
 * * *
 

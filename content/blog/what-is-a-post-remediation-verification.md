@@ -127,7 +127,7 @@ While PRV is an essential best practice, it does have its limitations:
 
 At **Total Leak Detection**, we work hand-in-hand with certified PRV professionals to make sure our mold remediation projects are backed by science and verified results. Whether you’re restoring your home after a mold outbreak or preparing a commercial building for re-occupancy, our team will ensure your remediation holds up under scrutiny—and passes every test.
 
-If you need guidance on PRV, mold [testing](/services/mold-testing/), or reliable [mold removal](https://totalcarerestoration.com/services/mold-remediation/) in **Miami or South Florida**, contact our team for expert help. Learn more about [how mold inspection can improve your indoor air quality](/how-mold-inspection-can-improve-your-indoor-air-quality) and our commitment to [health and safety](/health-and-safety/) throughout the remediation process.
+If you need guidance on PRV, mold [testing](/services/mold-testing/), or reliable [mold removal](https://totalcarerestoration.com/services/mold-remediation/) in **Miami or South Florida**, contact our team for expert help. Learn more about [how mold inspection can improve your indoor air quality)and our commitment to [health and safety](/health-and-safety/) throughout the remediation process.
 
 📞 **Call Now:** (855) 385-5325  
 🌐 **Visit:** [totalleakdetection.com](/)

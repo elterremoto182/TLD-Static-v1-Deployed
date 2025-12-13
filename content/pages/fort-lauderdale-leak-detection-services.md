@@ -119,7 +119,7 @@ If your Fort Lauderdale home or business has a hidden leak, don't wait! Call us 
 ### Related Resources
 
 - [Slab Leak Detection Services](/services/slab-leaks/) - Specialized slab leak detection
-- [Effective Solutions for Low Water Pressure](/effective-solutions-for-low-water-pressure-in-your-home) - Water pressure solutions
-- [How to Identify and Fix Common Toilet Leaks](/how-to-identify-and-fix-common-toilet-leaks-a-comprehensive-guide) - Toilet leak guide
+- [Effective Solutions for Low Water Pressure)- Water pressure solutions
+- [How to Identify and Fix Common Toilet Leaks)- Toilet leak guide
 - [Our Current Promotions](/promotions/) - Check out our latest discounts
 

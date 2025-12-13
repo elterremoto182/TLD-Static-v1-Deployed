@@ -54,11 +54,11 @@ The sewer camera inspection process typically involves the following steps:
 
 ## Conclusion
 
-Sewer camera inspections are an important part of maintaining your sewer lines and should be performed every five years. The cost of a sewer camera inspection can vary depending on several factors, such as the length of the sewer line, the complexity of the job, and the type of camera used. Generally speaking, a sewer camera inspection can cost anywhere from $150 to $400. It's important to make sure that you are working with a reputable technician who is experienced in sewer camera inspections and to ask your technician to provide you with a detailed report that outlines the findings of the inspection. Learn more about [the benefits of sewer camera inspections for Miami homeowners](/the-benefits-of-sewer-camera-inspections-for-miami-homeowners) and [what to expect during a sewer camera inspection in Miami, FL](/what-to-expect-during-a-sewer-camera-inspection-in-miami-fl). For professional sewer services, [contact Total Leak Detection](/contact/) today. Our [sewer camera inspection services](/services/camera-inspection/) provide accurate diagnosis and detailed reports for your plumbing system.
+Sewer camera inspections are an important part of maintaining your sewer lines and should be performed every five years. The cost of a sewer camera inspection can vary depending on several factors, such as the length of the sewer line, the complexity of the job, and the type of camera used. Generally speaking, a sewer camera inspection can cost anywhere from $150 to $400. It's important to make sure that you are working with a reputable technician who is experienced in sewer camera inspections and to ask your technician to provide you with a detailed report that outlines the findings of the inspection. Learn more about [the benefits of sewer camera inspections for Miami homeowners)and [what to expect during a sewer camera inspection in Miami, FL) For professional sewer services, [contact Total Leak Detection](/contact/) today. Our [sewer camera inspection services](/services/camera-inspection/) provide accurate diagnosis and detailed reports for your plumbing system.
 
 ### Related Resources
 
-- [Essential Tips for Maintaining Your Sewer Line](/essential-tips-for-maintaining-your-sewer-line-what-homeowners-must-know) - Sewer maintenance guide for homeowners
-- [Main Sewer Line Pipe Size Guide](/choosing-the-perfect-pipe-size-for-your-main-sewer-line-types-repairs-and-expert-tips) - Understanding proper pipe sizing
+- [Essential Tips for Maintaining Your Sewer Line)- Sewer maintenance guide for homeowners
+- [Main Sewer Line Pipe Size Guide)- Understanding proper pipe sizing
 - [Plumbing 101](/plumbing-101/) - Sign up for our free plumbing class
 - [Our Current Promotions](/promotions/) - Check out our latest discounts

@@ -261,8 +261,8 @@ Licensed & Insured (CFC1430460) | Better Business Bureau Accredited | 4.7★ Rat
 
 ## Related Resources
 
-- [How to Identify and Fix Common Toilet Leaks](/how-to-identify-and-fix-common-toilet-leaks-a-comprehensive-guide) - Comprehensive DIY toilet leak guide
-- [How to Check Shower Pan for Leaks](/how-to-check-shower-pan-leaks) - Related shower leak guide
-- [Effective Solutions for Low Water Pressure](/effective-solutions-for-low-water-pressure-in-your-home) - Water pressure issues
-- [Eliminating Air Pockets in Water Pipes](/eliminating-air-pockets-effective-solutions-for-air-in-water-pipes) - Related plumbing issues
+- [How to Identify and Fix Common Toilet Leaks)- Comprehensive DIY toilet leak guide
+- [How to Check Shower Pan for Leaks](/how-to-check-shower-pan-leaks/) - Related shower leak guide
+- [Effective Solutions for Low Water Pressure)- Water pressure issues
+- [Eliminating Air Pockets in Water Pipes)- Related plumbing issues
 - [Our Current Promotions](/promotions/) - Check out our latest discounts

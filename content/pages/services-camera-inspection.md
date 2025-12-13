@@ -285,8 +285,8 @@ Licensed & Insured (CFC1430460) | Better Business Bureau Accredited | 4.7★ Rat
 
 ## Related Resources
 
-- [Essential Tips for Maintaining Your Sewer Line](/essential-tips-for-maintaining-your-sewer-line-what-homeowners-must-know) - Sewer maintenance guide
-- [Main Sewer Line Pipe Size Guide](/choosing-the-perfect-pipe-size-for-your-main-sewer-line-types-repairs-and-expert-tips) - Understanding sewer pipe sizing
-- [The Benefits of Sewer Camera Inspections for Miami Homeowners](/the-benefits-of-sewer-camera-inspections-for-miami-homeowners) - Learn more about camera inspections
+- [Essential Tips for Maintaining Your Sewer Line)- Sewer maintenance guide
+- [Main Sewer Line Pipe Size Guide)- Understanding sewer pipe sizing
+- [The Benefits of Sewer Camera Inspections for Miami Homeowners)- Learn more about camera inspections
 - [Plumbing 101](/plumbing-101/) - Sign up for our free plumbing class
 - [Our Current Promotions](/promotions/) - Check out our latest discounts

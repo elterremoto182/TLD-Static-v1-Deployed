@@ -45,6 +45,6 @@ We specialize in non-invasive leak detection. This involves the use of advanced 
 
 ### Helpful Guides
 
-- [How to Identify and Fix Common Toilet Leaks](/how-to-identify-and-fix-common-toilet-leaks-a-comprehensive-guide) - DIY toilet troubleshooting
-- [How to Check Shower Pan for Leaks](/how-to-check-shower-pan-leaks) - Shower leak detection guide
-- [Effective Solutions for Low Water Pressure](/effective-solutions-for-low-water-pressure-in-your-home) - Water pressure solutions
+- [How to Identify and Fix Common Toilet Leaks](/how-to-identify-and-fix-common-toilet-leaks-a-comprehensive-guide/) - DIY toilet troubleshooting
+- [How to Check Shower Pan for Leaks](/how-to-check-shower-pan-leaks/) - Shower leak detection guide
+- [Effective Solutions for Low Water Pressure](/effective-solutions-for-low-water-pressure-in-your-home/) - Water pressure solutions

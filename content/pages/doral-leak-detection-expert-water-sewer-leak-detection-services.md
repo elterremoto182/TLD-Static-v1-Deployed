@@ -116,7 +116,7 @@ If your Doral home or business has a hidden leak, don’t wait! Call us today fo
 
 ### Related Resources
 
-- [Effective Solutions for Low Water Pressure](/effective-solutions-for-low-water-pressure-in-your-home) - Water pressure solutions
+- [Effective Solutions for Low Water Pressure)- Water pressure solutions
 - [Slab Leak Detection Services](/services/slab-leaks/) - Specialized slab leak detection
-- [How to Check Shower Pan for Leaks](/how-to-check-shower-pan-leaks) - DIY shower leak test
+- [How to Check Shower Pan for Leaks](/how-to-check-shower-pan-leaks/) - DIY shower leak test
 - [Our Current Promotions](/promotions/) - Check out our latest discounts

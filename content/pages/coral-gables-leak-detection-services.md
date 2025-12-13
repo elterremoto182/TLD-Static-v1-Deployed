@@ -114,7 +114,7 @@ If your Coral Gables home or business has a hidden leak, don't wait! Call us tod
 ### Related Resources
 
 - [Slab Leak Detection Services](/services/slab-leaks/) - Specialized slab leak detection
-- [How Mold Inspection Can Improve Indoor Air Quality](/how-mold-inspection-can-improve-your-indoor-air-quality) - Mold inspection guide
-- [Essential Tips for Maintaining Your Sewer Line](/essential-tips-for-maintaining-your-sewer-line-what-homeowners-must-know) - Sewer maintenance tips
+- [How Mold Inspection Can Improve Indoor Air Quality](/how-mold-inspection-can-improve-your-indoor-air-quality/) - Mold inspection guide
+- [Essential Tips for Maintaining Your Sewer Line](/essential-tips-for-maintaining-your-sewer-line-what-homeowners-must-know/) - Sewer maintenance tips
 - [Our Current Promotions](/promotions/) - Check out our latest discounts
 
