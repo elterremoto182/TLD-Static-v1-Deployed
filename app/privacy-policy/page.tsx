@@ -43,7 +43,7 @@ export default async function PrivacyPolicyPage() {
   const webPageSchema = generateWebPageSchema({
     title: page.seo_title || page.title || 'Privacy Policy - Total Leak Detection',
     description: page.seo_description || 'Privacy Policy for Total Leak Detection.',
-    url: `${baseUrl}/privacy-policy`,
+    url: `${baseUrl}/privacy-policy/`,
     breadcrumbs,
   });
   const breadcrumbSchema = generateBreadcrumbListSchema(breadcrumbs);

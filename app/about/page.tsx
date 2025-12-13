@@ -45,7 +45,7 @@ export default async function AboutPage() {
   const webPageSchema = generateWebPageSchema({
     title: page.seo_title || page.title || 'About - Total Leak Detection',
     description: page.seo_description || 'Learn about Total Leak Detection and our expertise in leak detection services.',
-    url: `${baseUrl}/about`,
+    url: `${baseUrl}/about/`,
     breadcrumbs,
   });
   const breadcrumbSchema = generateBreadcrumbListSchema(breadcrumbs);

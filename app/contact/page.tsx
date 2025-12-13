@@ -100,7 +100,7 @@ export default function ContactPage() {
   const webPageSchema = generateWebPageSchema({
     title: 'Contact - Total Leak Detection',
     description: contact.description,
-    url: `${baseUrl}/contact`,
+    url: `${baseUrl}/contact/`,
     breadcrumbs,
   });
   const breadcrumbSchema = generateBreadcrumbListSchema(breadcrumbs);

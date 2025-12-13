@@ -73,7 +73,15 @@ export function generatePageMetadata({
   articleType?: 'website' | 'article';
 }): Metadata {
   const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://totalleakdetection.com';
-  const url = `${baseUrl}${path}`;
+  
+  // Ensure trailing slash for canonical URL (except base URL)
+  // This matches Next.js trailingSlash: true configuration
+  let canonicalPath = path;
+  if (path && path !== '/' && !path.endsWith('/')) {
+    canonicalPath = `${path}/`;
+  }
+  
+  const url = `${baseUrl}${canonicalPath}`;
   const finalDescription = description || siteConfig.seo.description;
   const finalOgImage = ogImage || siteConfig.seo.ogImage;
   const ogImageUrl = finalOgImage.startsWith('http') 

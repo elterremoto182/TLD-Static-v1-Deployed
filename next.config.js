@@ -17,18 +17,32 @@ const nextConfig = {
   images: {
     loader: 'custom',
     loaderFile: './loader.js',
-    imageSizes: [16, 32, 64, 96, 128, 256], // Reduced from 8 to 6 sizes (removed 48, 384)
-    deviceSizes: [640, 828, 1080, 1200, 1920], // Reduced from 8 to 5 sizes (removed 750, 2048, 3840)
+    imageSizes: [96, 256], // Only sizes actually used (96 for avatars/badges, 256 for logo)
+    deviceSizes: [640, 1080, 1920], // Essential breakpoints only
   },
   trailingSlash: true,
+  // Explicitly ensure minification is enabled for production builds
+  webpack: (config, { dev, isServer }) => {
+    // Ensure minification is enabled in production for all builds
+    if (!dev) {
+      config.optimization = {
+        ...config.optimization,
+        minimize: true,
+        minimizer: config.optimization.minimizer || [],
+      };
+    }
+    return config;
+  },
   env: {
     nextImageExportOptimizer_imageFolderPath: 'public',
     nextImageExportOptimizer_exportFolderPath: 'out',
-    nextImageExportOptimizer_quality: '75',
+    nextImageExportOptimizer_quality: '65',
     nextImageExportOptimizer_storePicturesInWEBP: 'true',
     nextImageExportOptimizer_exportFolderName: 'nextImageExportOptimizer',
     nextImageExportOptimizer_generateAndUseBlurImages: 'true',
     nextImageExportOptimizer_remoteImageCacheTTL: '0',
+    nextImageExportOptimizer_imageSizes: '[96, 256]',
+    nextImageExportOptimizer_deviceSizes: '[640, 1080, 1920]',
   },
 };
 

@@ -123,7 +123,7 @@ export default async function ServicePage({
 
   const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://totalleakdetection.com';
   const normalizedSlug = page.slug.replace(/^\/+|\/+$/g, '');
-  const pageUrl = `${baseUrl}/${normalizedSlug}`;
+  const pageUrl = `${baseUrl}/${normalizedSlug}/`;
   const breadcrumbs = generateBreadcrumbs(`/${normalizedSlug}`, page.title);
   
   const serviceSchema = generateServiceSchema({

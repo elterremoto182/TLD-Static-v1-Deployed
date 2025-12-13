@@ -195,7 +195,7 @@ export default async function DynamicPage({
   const post = getPostBySlug(slug);
   if (post) {
     const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://totalleakdetection.com';
-    const postUrl = `${baseUrl}/${post.slug}`;
+    const postUrl = `${baseUrl}/${post.slug}/`;
     const breadcrumbs = generateBreadcrumbs(`/${post.slug}`, post.title);
     const articleSchema = generateArticleSchema({
       title: post.title,
@@ -290,7 +290,7 @@ export default async function DynamicPage({
   }
 
   const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://totalleakdetection.com';
-  const pageUrl = `${baseUrl}/${slug}`;
+  const pageUrl = `${baseUrl}/${slug}/`;
   const breadcrumbs = generateBreadcrumbs(`/${slug}`, page.title);
   const isLocationPage = slug.includes('leak-detection') || slug.includes('mold-testing');
   

@@ -27,7 +27,7 @@ export default function BlogPage() {
   const collectionPageSchema = generateCollectionPageSchema({
     title: 'Blog - Total Leak Detection',
     description: 'Expert tips, guides, and insights for maintaining your home plumbing and leak detection.',
-    url: `${baseUrl}/blog`,
+    url: `${baseUrl}/blog/`,
     breadcrumbs,
   });
 

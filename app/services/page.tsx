@@ -40,7 +40,7 @@ export default function ServicesPage() {
   const collectionPageSchema = generateCollectionPageSchema({
     title: 'Our Services - Total Leak Detection',
     description: 'Comprehensive plumbing and leak detection services in Miami, FL. Water leak detection, sewer camera inspections, mold testing, and more.',
-    url: `${baseUrl}/services`,
+    url: `${baseUrl}/services/`,
     breadcrumbs,
   });
 
