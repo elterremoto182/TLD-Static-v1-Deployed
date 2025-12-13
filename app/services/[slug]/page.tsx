@@ -182,7 +182,7 @@ export default async function ServicePage({
       <Header />
       <main className="min-h-screen">
         {/* Hero Section with Image - Above the fold for LCP optimization */}
-        <section className="relative h-[50vh] min-h-[400px] max-h-[500px] overflow-hidden">
+        <section className="relative h-[calc(50vh+5rem)] min-h-[calc(400px+5rem)] max-h-[calc(500px+5rem)] overflow-hidden pt-20">
           <div className="absolute inset-0">
             <OptimizedImage
               src={heroImage}
@@ -191,15 +191,15 @@ export default async function ServicePage({
               className="object-cover"
               priority
               fetchPriority="high"
-              sizes="100vw"
+              sizes="(max-width: 768px) 100vw, (max-width: 1024px) 90vw, 896px"
             />
             <div className="absolute inset-0 bg-gradient-to-r from-primary/90 via-primary/75 to-primary/60" />
             <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
           </div>
           
-          <div className="relative h-full max-w-6xl mx-auto px-4 flex flex-col justify-center">
-            <div className="mb-4">
-              <Breadcrumb items={breadcrumbs} />
+          <div className="relative h-full max-w-6xl mx-auto px-4 flex flex-col justify-center pt-4 sm:pt-0">
+            <div className="mb-4 min-h-[2.5rem] sm:min-h-[1.5rem]">
+              <Breadcrumb items={breadcrumbs} variant="light" />
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 drop-shadow-lg">
               {page.title}
