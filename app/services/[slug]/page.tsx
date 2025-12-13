@@ -4,6 +4,7 @@ import { Footer } from '@/components/sections/Footer';
 import { Breadcrumb } from '@/components/ui/breadcrumb';
 import { MarkdownRenderer, processMarkdown } from '@/components/blog/MarkdownRenderer';
 import { YouTubeHydrator } from '@/components/YouTubeHydrator';
+import OptimizedImage from '@/components/OptimizedImage';
 import { getPageBySlug, getAllPages } from '@/lib/pages/pages';
 import { generatePageMetadata, generateBreadcrumbs } from '@/lib/utils';
 import {
@@ -140,7 +141,23 @@ export default async function ServicePage({
     url: pageUrl,
     breadcrumbs,
   });
-  const html = await processMarkdown(page.content);
+  let html = await processMarkdown(page.content);
+  
+  // Extract first image from markdown content for hero, or use page.image or default
+  const extractFirstImage = (htmlContent: string): string | null => {
+    const imgMatch = htmlContent.match(/<img[^>]+src=["']([^"']+)["']/i);
+    return imgMatch ? imgMatch[1] : null;
+  };
+  
+  const firstImage = extractFirstImage(html);
+  const heroImage = page.image || firstImage || '/images/services/leak-detection.jpg';
+  
+  // Remove first image from markdown if we're using it as hero to avoid duplicate loading
+  if (firstImage && !page.image) {
+    // Remove the first img tag and its wrapping paragraph if present
+    html = html.replace(/<p[^>]*>\s*<img[^>]+src=["'][^"']*["'][^>]*>\s*<\/p>/i, '');
+    html = html.replace(/<img[^>]+src=["'][^"']*["'][^>]*>/i, '');
+  }
 
   return (
     <>
@@ -163,12 +180,39 @@ export default async function ServicePage({
         }}
       />
       <Header />
-      <main className="min-h-screen pt-20">
-        <article className="max-w-4xl mx-auto px-4 py-12">
-          <div className="mb-8">
-            <Breadcrumb items={breadcrumbs} />
+      <main className="min-h-screen">
+        {/* Hero Section with Image - Above the fold for LCP optimization */}
+        <section className="relative h-[50vh] min-h-[400px] max-h-[500px] overflow-hidden">
+          <div className="absolute inset-0">
+            <OptimizedImage
+              src={heroImage}
+              alt={`${page.title} - Professional Leak Detection Services`}
+              fill
+              className="object-cover"
+              priority
+              fetchPriority="high"
+              sizes="100vw"
+            />
+            <div className="absolute inset-0 bg-gradient-to-r from-primary/90 via-primary/75 to-primary/60" />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
           </div>
+          
+          <div className="relative h-full max-w-6xl mx-auto px-4 flex flex-col justify-center">
+            <div className="mb-4">
+              <Breadcrumb items={breadcrumbs} />
+            </div>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 drop-shadow-lg">
+              {page.title}
+            </h1>
+            {page.seo_description && (
+              <p className="text-xl md:text-2xl text-white/90 max-w-3xl drop-shadow-md">
+                {page.seo_description}
+              </p>
+            )}
+          </div>
+        </section>
 
+        <article className="max-w-4xl mx-auto px-4 py-12">
           <YouTubeHydrator>
             <MarkdownRenderer html={html} />
           </YouTubeHydrator>
