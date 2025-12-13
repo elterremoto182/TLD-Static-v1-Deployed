@@ -22,7 +22,7 @@ keywords: ["indoor air quality mold testing"]
 
 Living in Miami means dealing with high humidity, frequent rainfall, and year-round warmth—ideal conditions for mold to grow unnoticed in your home. While many homeowners focus on visible cleanliness, the air you breathe can silently affect your health. If you’ve noticed musty odors or allergy-like symptoms indoors, your indoor air quality may be compromised by hidden mold.
 
-At **Total Leak Detection**, we help Miami homeowners improve their **indoor air quality** through expert **mold inspections** designed to detect and eliminate mold at the source. Our [mold testing services](/services/mold-testing) provide comprehensive assessments to identify mold growth and improve your home's air quality. Learn more about [how to do a mold test](/7-simple-steps-to-do-a-mold-test) with our step-by-step guide.
+At **Total Leak Detection**, we help Miami homeowners improve their **indoor air quality** through expert **mold inspections** designed to detect and eliminate mold at the source. Our [mold testing services](/services/mold-testing/) provide comprehensive assessments to identify mold growth and improve your home's air quality. Learn more about [how to do a mold test](/7-simple-steps-to-do-a-mold-test) with our step-by-step guide.
 
 * * *
 
@@ -67,7 +67,7 @@ At Total Leak Detection, we go beyond surface-level inspections. We offer a full
 
 ## Take Control of Your Indoor Air
 
-Don't wait for symptoms to show. If you live in Miami and suspect mold may be affecting your indoor air quality, contact Total Leak Detection today. A simple inspection could protect your health, your home, and your peace of mind. Our [mold testing services](/services/mold-testing) are available throughout Miami, Broward, and Palm Beach counties. If you've had water damage, our [professional leak detection services](/services/leak-detection) can help identify the source of moisture that may be causing mold growth. For more information about our health and safety protocols, visit our [health and safety page](/health-and-safety).
+Don't wait for symptoms to show. If you live in Miami and suspect mold may be affecting your indoor air quality, contact Total Leak Detection today. A simple inspection could protect your health, your home, and your peace of mind. Our [mold testing services](/services/mold-testing/) are available throughout Miami, Broward, and Palm Beach counties. If you've had water damage, our [professional leak detection services](/services/leak-detection/) can help identify the source of moisture that may be causing mold growth. For more information about our health and safety protocols, visit our [health and safety page](/health-and-safety/).
 
 📞 **Call Now:** [**(855) 385-5325**](tel:8553855325)  
 🌐 **Website:** [TotalLeakDetection.com](/)

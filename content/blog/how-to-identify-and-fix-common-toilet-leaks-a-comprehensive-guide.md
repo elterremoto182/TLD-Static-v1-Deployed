@@ -38,7 +38,7 @@ Regular maintenance helps prevent these issues:
 
 Ignoring routine checks can lead to significant water wastage, potentially up to 5 gallons per minute.
 
-For additional plumbing services, consider visiting [Total Leak Detection](/) or learn more about addressing [clogged drain services](/services/clogged-drains). Our [professional leak detection services](/services/leak-detection) can help identify hidden leaks that may be affecting your toilet's performance. For related issues, check out our guide on [why your toilet bubbles when your washing machine drains](/why-your-toilet-bubbles-when-your-washing-machine-drains-causes-and-solutions).
+For additional plumbing services, consider visiting [Total Leak Detection](/) or learn more about addressing [clogged drain services](/services/clogged-drains/). Our [professional leak detection services](/services/leak-detection/) can help identify hidden leaks that may be affecting your toilet's performance. For related issues, check out our guide on [why your toilet bubbles when your washing machine drains](/why-your-toilet-bubbles-when-your-washing-machine-drains-causes-and-solutions).
 
 ## Identifying Toilet Leaks
 
@@ -296,4 +296,4 @@ Some toilet leaks require expertise beyond what you can do yourself. It’s impo
 -   **Extensive Mold Growth**: Prolonged leakage can lead to significant mold infestation, posing health risks and requiring specialized treatment.
 -   **Persistent Leaks**: If DIY attempts fail to resolve the issue, a professional can diagnose and fix underlying problems effectively.
 
-Consulting a professional plumber ensures thorough repairs, preventing further damage and costly water waste. Our [professional leak detection services](/services/leak-detection) can help identify the source of toilet leaks, while our [leaking toilet services](/services/leaking-toilet) specialize in resolving toilet-related issues. If you suspect mold growth from water damage, our [mold testing services](/services/mold-testing) can help identify and address the problem. For comprehensive plumbing assistance, [contact Total Leak Detection](/contact) today.
+Consulting a professional plumber ensures thorough repairs, preventing further damage and costly water waste. Our [professional leak detection services](/services/leak-detection/) can help identify the source of toilet leaks, while our [leaking toilet services](/services/leaking-toilet/) specialize in resolving toilet-related issues. If you suspect mold growth from water damage, our [mold testing services](/services/mold-testing/) can help identify and address the problem. For comprehensive plumbing assistance, [contact Total Leak Detection](/contact/) today.

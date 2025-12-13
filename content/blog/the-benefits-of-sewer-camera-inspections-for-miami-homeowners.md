@@ -99,10 +99,10 @@ For more information about sewer camera inspections, check out our guides on [th
 
 As a female homeowner in Miami, you deserve peace of mind knowing that your plumbing system is in excellent condition. With Total Leak Detection’s sewer camera inspections, you can make informed decisions and prevent potential plumbing disasters.
 
-Contact us today to schedule your sewer camera inspection or to learn more about our comprehensive plumbing services. We serve all of South Florida, including [Miami Lakes](/total-leak-detection-miami-lakes), [Miramar](/miramar-leak-detection-pinholes-in-pines), and [Deerfield Beach](/total-leak-detection-deerfield-beach). Our expert plumbers are dedicated to providing you with high-quality solutions tailored to meet your specific needs. Check out our [current promotions](/promotions) for special offers on sewer inspections!
+Contact us today to schedule your sewer camera inspection or to learn more about our comprehensive plumbing services. We serve all of South Florida, including [Miami Lakes](/total-leak-detection-miami-lakes), [Miramar](/miramar-leak-detection-pinholes-in-pines), and [Deerfield Beach](/total-leak-detection-deerfield-beach). Our expert plumbers are dedicated to providing you with high-quality solutions tailored to meet your specific needs. Check out our [current promotions](/promotions/) for special offers on sewer inspections!
 
 ### Related Resources
 
 - [Main Sewer Line Pipe Size Guide](/choosing-the-perfect-pipe-size-for-your-main-sewer-line-types-repairs-and-expert-tips) - Understanding sewer pipe sizing
 - [Essential Tips for Maintaining Your Sewer Line](/essential-tips-for-maintaining-your-sewer-line-what-homeowners-must-know) - Sewer maintenance for homeowners
-- [Plumbing 101](/plumbing-101) - Sign up for our free plumbing class
+- [Plumbing 101](/plumbing-101/) - Sign up for our free plumbing class

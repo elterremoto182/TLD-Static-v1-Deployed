@@ -204,7 +204,7 @@ The importance of [sewer camera inspections in Miami](/services/camera-inspectio
 
 Learn more about [the benefits of sewer camera inspections for Miami homeowners](/the-benefits-of-sewer-camera-inspections-for-miami-homeowners) and [what to expect during a sewer camera inspection in Miami, FL](/what-to-expect-during-a-sewer-camera-inspection-in-miami-fl). For pricing details, check out [how much a sewer line camera inspection costs](/how-much-does-a-sewer-line-camera-inspection-cost). 
 
-[Contact Total Leak Detection](/contact) today for professional sewer services.
+[Contact Total Leak Detection](/contact/) today for professional sewer services.
 
 ### Related Resources
 
@@ -212,4 +212,4 @@ Learn more about [the benefits of sewer camera inspections for Miami homeowners]
 - [Essential Tips for Maintaining Your Sewer Line](/essential-tips-for-maintaining-your-sewer-line-what-homeowners-must-know) - Comprehensive sewer maintenance guide
 - [The Ultimate Guide to Effective Drain Cleaners](/the-ultimate-guide-to-effective-drain-cleaners-what-really-works) - Learn what really works
 - [Expert Tips for Clogged Kitchen Sinks](/expert-tips-to-prevent-and-fix-clogged-kitchen-sinks) - Prevention and solutions
-- [Our Current Promotions](/promotions) - Check out our latest discounts on sewer services
+- [Our Current Promotions](/promotions/) - Check out our latest discounts on sewer services

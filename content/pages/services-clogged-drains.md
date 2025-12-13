@@ -261,4 +261,4 @@ Licensed & Insured (CFC1430460) | Better Business Bureau Accredited | 4.7★ Rat
 - [Expert Tips to Prevent and Fix Clogged Kitchen Sinks](/expert-tips-to-prevent-and-fix-clogged-kitchen-sinks) - Kitchen sink solutions
 - [Essential Tips for Maintaining Your Sewer Line](/essential-tips-for-maintaining-your-sewer-line-what-homeowners-must-know) - Sewer maintenance guide
 - [Main Sewer Line Pipe Size Guide](/choosing-the-perfect-pipe-size-for-your-main-sewer-line-types-repairs-and-expert-tips) - Sewer pipe sizing
-- [Our Current Promotions](/promotions) - Check out our latest discounts
+- [Our Current Promotions](/promotions/) - Check out our latest discounts

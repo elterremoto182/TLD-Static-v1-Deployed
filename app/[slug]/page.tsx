@@ -418,7 +418,7 @@ export default async function DynamicPage({
                   Call Now: (855) 385-5325
                 </a>
                 <a
-                  href="/contact"
+                  href="/contact/"
                   className="inline-flex items-center gap-2 bg-white hover:bg-gray-100 text-primary px-8 py-4 rounded-lg font-bold text-lg transition-all duration-200"
                 >
                   Request a Quote

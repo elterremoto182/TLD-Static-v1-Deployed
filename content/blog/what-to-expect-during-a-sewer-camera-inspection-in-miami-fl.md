@@ -170,7 +170,7 @@ Schedule Your Sewer Camera Inspection Today For Peace Of Mind With A Well-Mainta
 
 Regular sewer camera inspections are essential for maintaining plumbing systems in Miami, FL. With the ability to pinpoint issues like cracks, leaks, or misaligned pipes early on, these inspections prevent costly repairs and plumbing emergencies. 
 
-By understanding what to expect during a sewer camera inspection in Miami, FL, homeowners can make informed decisions and keep their plumbing systems in top condition. Embracing this proactive approach ensures peace of mind, knowing any potential problems are addressed promptly and effectively. Learn more about [the importance of sewer camera inspections in Miami](/the-importance-of-sewer-camera-inspections-in-miami-prevent-costly-repairs) and [the benefits of sewer camera inspections for Miami homeowners](/the-benefits-of-sewer-camera-inspections-for-miami-homeowners). For information about costs, check out [how much a sewer line camera inspection costs](/how-much-does-a-sewer-line-camera-inspection-cost). Our [sewer camera inspection services](/services/camera-inspection) provide comprehensive assessments of your plumbing system.
+By understanding what to expect during a sewer camera inspection in Miami, FL, homeowners can make informed decisions and keep their plumbing systems in top condition. Embracing this proactive approach ensures peace of mind, knowing any potential problems are addressed promptly and effectively. Learn more about [the importance of sewer camera inspections in Miami](/the-importance-of-sewer-camera-inspections-in-miami-prevent-costly-repairs) and [the benefits of sewer camera inspections for Miami homeowners](/the-benefits-of-sewer-camera-inspections-for-miami-homeowners). For information about costs, check out [how much a sewer line camera inspection costs](/how-much-does-a-sewer-line-camera-inspection-cost). Our [sewer camera inspection services](/services/camera-inspection/) provide comprehensive assessments of your plumbing system.
 
 ### Related Resources
 
@@ -178,4 +178,4 @@ By understanding what to expect during a sewer camera inspection in Miami, FL, h
 - [Main Sewer Line Pipe Size Guide](/choosing-the-perfect-pipe-size-for-your-main-sewer-line-types-repairs-and-expert-tips) - Understanding sewer pipe sizing
 - [The Ultimate Guide to Effective Drain Cleaners](/the-ultimate-guide-to-effective-drain-cleaners-what-really-works) - What drain cleaners work
 - [Miami Lakes Leak Detection](/total-leak-detection-miami-lakes) - Serving Miami Lakes area
-- [Our Current Promotions](/promotions) - Check out our latest discounts
+- [Our Current Promotions](/promotions/) - Check out our latest discounts

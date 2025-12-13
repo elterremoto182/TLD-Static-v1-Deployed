@@ -116,6 +116,6 @@ If your Miami home or business has a hidden leak, don’t wait! Call us today fo
 
 - [Miami Lakes Leak Detection](/total-leak-detection-miami-lakes) - Blog post about leak detection in Miami Lakes
 - [How Mold Inspection Can Improve Indoor Air Quality](/how-mold-inspection-can-improve-your-indoor-air-quality) - Miami mold inspection guide
-- [Slab Leak Detection Services](/services/slab-leaks) - Specialized slab leak detection
+- [Slab Leak Detection Services](/services/slab-leaks/) - Specialized slab leak detection
 - [Effective Solutions for Low Water Pressure](/effective-solutions-for-low-water-pressure-in-your-home) - Water pressure solutions
-- [Our Current Promotions](/promotions) - Check out our latest discounts
+- [Our Current Promotions](/promotions/) - Check out our latest discounts

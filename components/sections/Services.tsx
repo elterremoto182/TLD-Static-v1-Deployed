@@ -18,18 +18,18 @@ const iconMap: Record<string, LucideIcon> = {
 };
 
 // Map service IDs to their slugs from markdown files
-// URLs should not have trailing slashes to match Next.js routing
+// URLs should have trailing slashes to match Next.js trailingSlash: true configuration
 const serviceSlugMap: Record<string, string> = {
-  'camera-inspection': '/services/camera-inspection',
-  'clogged-drains': '/services/clogged-drains',
-  'leak-detection': '/services/leak-detection',
-  'mold-testing': '/services/mold-testing',
-  'leaking-toilet': '/services/leaking-toilet',
-  'damaged-sewer': '/services/damaged-sewer',
-  'hydro-jetting': '/services/hydro-jetting',
-  'slab-leaks': '/services/slab-leaks',
-  'plumbing-report-writing': '/services/plumbing-report-writing',
-  'commercial-services': '/services/commercial-services',
+  'camera-inspection': '/services/camera-inspection/',
+  'clogged-drains': '/services/clogged-drains/',
+  'leak-detection': '/services/leak-detection/',
+  'mold-testing': '/services/mold-testing/',
+  'leaking-toilet': '/services/leaking-toilet/',
+  'damaged-sewer': '/services/damaged-sewer/',
+  'hydro-jetting': '/services/hydro-jetting/',
+  'slab-leaks': '/services/slab-leaks/',
+  'plumbing-report-writing': '/services/plumbing-report-writing/',
+  'commercial-services': '/services/commercial-services/',
 };
 
 export function Services() {
@@ -52,7 +52,7 @@ export function Services() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {services.map((service, index) => {
             const IconComponent = iconMap[service.icon] || Wrench;
-            const serviceSlug = serviceSlugMap[service.id] || '/services';
+            const serviceSlug = serviceSlugMap[service.id] || '/services/';
 
             return (
               <AnimateOnScroll

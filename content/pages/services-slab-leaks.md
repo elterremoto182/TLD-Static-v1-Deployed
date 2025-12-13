@@ -271,4 +271,4 @@ Licensed & Insured (CFC1430460) | Better Business Bureau Accredited | 4.7★ Rat
 - [Advanced Techniques for Detecting Leaks Beneath Concrete](/advanced-techniques-for-detecting-and-repairing-leaks-beneath-concrete-foundations) - In-depth slab leak detection guide
 - [Effective Solutions for Low Water Pressure](/effective-solutions-for-low-water-pressure-in-your-home) - Slab leaks can cause low water pressure
 - [The Importance of Professional Leak Detection](/the-importance-of-professional-leak-detection-in-preventing-water-damage) - Why early detection matters
-- [Our Current Promotions](/promotions) - Check out our latest discounts and special offers
+- [Our Current Promotions](/promotions/) - Check out our latest discounts and special offers

@@ -10,18 +10,18 @@ import { generatePageMetadata, generateBreadcrumbs } from '@/lib/utils';
 import { generateCollectionPageSchema, structuredDataToJsonLd } from '@/lib/seo/structured-data';
 
 // Map service IDs to their slugs from markdown files
-// URLs should not have trailing slashes to match Next.js routing
+// URLs should have trailing slashes to match Next.js trailingSlash: true configuration
 const serviceSlugMap: Record<string, string> = {
-  'camera-inspection': '/services/camera-inspection',
-  'clogged-drains': '/services/clogged-drains',
-  'leak-detection': '/services/leak-detection',
-  'mold-testing': '/services/mold-testing',
-  'leaking-toilet': '/services/leaking-toilet',
-  'damaged-sewer': '/services/damaged-sewer',
-  'hydro-jetting': '/services/hydro-jetting',
-  'slab-leaks': '/services/slab-leaks',
-  'plumbing-report-writing': '/services/plumbing-report-writing',
-  'commercial-services': '/services/commercial-services',
+  'camera-inspection': '/services/camera-inspection/',
+  'clogged-drains': '/services/clogged-drains/',
+  'leak-detection': '/services/leak-detection/',
+  'mold-testing': '/services/mold-testing/',
+  'leaking-toilet': '/services/leaking-toilet/',
+  'damaged-sewer': '/services/damaged-sewer/',
+  'hydro-jetting': '/services/hydro-jetting/',
+  'slab-leaks': '/services/slab-leaks/',
+  'plumbing-report-writing': '/services/plumbing-report-writing/',
+  'commercial-services': '/services/commercial-services/',
 };
 
 export async function generateMetadata() {
@@ -77,7 +77,7 @@ export default function ServicesPage() {
                 const IconComponent = (LucideIcons[
                   service.icon as keyof typeof LucideIcons
                 ] || LucideIcons.Wrench) as React.ElementType;
-                const serviceSlug = serviceSlugMap[service.id] || '/services';
+                const serviceSlug = serviceSlugMap[service.id] || '/services/';
 
                 return (
                   <AnimateOnScroll

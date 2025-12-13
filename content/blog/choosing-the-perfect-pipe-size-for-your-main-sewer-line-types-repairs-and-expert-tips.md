@@ -23,7 +23,7 @@ Choosing the perfect pipe size for your main sewer line is critical for the over
 
 **Key takeaway:** In this article, we discuss the different types of pipes for main sewer lines, standard sizes you should be aware of, and provide expert tips on how to determine the perfect pipe size.
 
-Additionally, when it comes to maintaining a well-functioning sewer system, it's important to consider certain factors beyond just pipe size. [Health and safety](/health-and-safety) is one such aspect that requires attention. At Total Leak Detection, we prioritize the well-being of our customers and employees in all our leak detection services, including those related to sewer systems. Regular [sewer camera inspections](/services/camera-inspection) are essential for maintaining your sewer line's health and identifying issues before they become costly repairs.
+Additionally, when it comes to maintaining a well-functioning sewer system, it's important to consider certain factors beyond just pipe size. [Health and safety](/health-and-safety/) is one such aspect that requires attention. At Total Leak Detection, we prioritize the well-being of our customers and employees in all our leak detection services, including those related to sewer systems. Regular [sewer camera inspections](/services/camera-inspection/) are essential for maintaining your sewer line's health and identifying issues before they become costly repairs.
 
 Moreover, after completing any remediation project within your property, it is crucial to ensure its success through a process called [Post Remediation Verification (PRV)](/what-is-a-post-remediation-verification). This process guarantees that the remediation was effective in addressing any issues such as mold growth or leaks. Understanding PRV can help you assess the efficacy of your own projects and make necessary improvements.
 
@@ -63,7 +63,7 @@ Understanding these materials can help you make an informed decision based on yo
 
 For more insights on maintaining your plumbing system effectively, check out our comprehensive guide on [Eliminating Air Pockets](/eliminating-air-pockets-effective-solutions-for-air-in-water-pipes). This resource provides expert tips and strategies to remove trapped air from water pipes effectively, ensuring smoother and quieter plumbing operation.
 
-If you’re currently dealing with issues like slab leaks, our [Slab Leak Detection Services](/services/slab-leaks) can promptly identify and resolve them. Our efficient techniques for detecting and repairing slab leaks will help mitigate further damage to your property.
+If you’re currently dealing with issues like slab leaks, our [Slab Leak Detection Services](/services/slab-leaks/) can promptly identify and resolve them. Our efficient techniques for detecting and repairing slab leaks will help mitigate further damage to your property.
 
 ## **2\. Understanding Standard Sewer Pipe Sizes**
 
@@ -76,7 +76,7 @@ Residential sewer pipes typically have a diameter ranging from 4 inches to 6 inc
 -   **Number of Bathrooms**: The more bathrooms in a house, the more wastewater needs to be transported. For homes with multiple bathrooms, it’s recommended to use a larger diameter pipe, such as 6 inches, for better drainage.
 -   **Household Size**: Larger families produce more wastewater. In such cases, using a bigger sewer pipe diameter may be necessary.
 -   **Fixtures and Appliances**: Having multiple water-intensive appliances like dishwashers and washing machines can also influence the selection of pipe size.
--   [**Clogged drains**](/services/clogged-drains): Neglecting proper maintenance can lead to clogs and backups in your sewer system. Regular inspections and maintenance by professionals can help prevent these issues. Our [professional drain cleaning services](/services/drain-cleaning) use advanced techniques like hydro jetting to keep your sewer lines clear and functioning properly.
+-   [**Clogged drains**](/services/clogged-drains/): Neglecting proper maintenance can lead to clogs and backups in your sewer system. Regular inspections and maintenance by professionals can help prevent these issues. Our [professional drain cleaning services](/services/drain-cleaning/) use advanced techniques like hydro jetting to keep your sewer lines clear and functioning properly.
 
 It’s important to properly size your residential sewer pipes to prevent clogs and backups. Having the right diameter can save you from potential problems in the future.
 
@@ -89,10 +89,10 @@ Key factors for determining the size of commercial sewer pipes include:
 -   **Building Occupancy**: Higher occupancy levels mean more wastewater generation.
 -   **Type of Business**: Restaurants and hotels produce significantly more wastewater compared to office buildings.
 -   **Local Regulations**: Certain areas have specific requirements or regulations that dictate minimum pipe sizes for commercial properties.
--   [**Sewer Camera Inspection**](/services/camera-inspection): A crucial step in determining the condition of your commercial sewer pipes is a thorough inspection with advanced technology. Sewer camera inspections can identify blockages, leaks, or other issues without invasive procedures.
--   [**Mold Testing**](/services/mold-testing): Mold growth is a common problem in damp environments, and it can affect both residential and commercial properties. For commercial buildings, where the presence of mold can lead to health and safety concerns for occupants, regular mold testing is essential.
+-   [**Sewer Camera Inspection**](/services/camera-inspection/): A crucial step in determining the condition of your commercial sewer pipes is a thorough inspection with advanced technology. Sewer camera inspections can identify blockages, leaks, or other issues without invasive procedures.
+-   [**Mold Testing**](/services/mold-testing/): Mold growth is a common problem in damp environments, and it can affect both residential and commercial properties. For commercial buildings, where the presence of mold can lead to health and safety concerns for occupants, regular mold testing is essential.
 
-Choosing the right-sized sewer pipe is crucial for maintaining an efficient drainage system, preventing clogs, and following local codes. Whether you're dealing with residential or commercial properties, consulting professionals like [Total Leak Detection](/) ensures that your system operates efficiently and complies with all relevant codes and regulations. For more tips on maintaining your sewer line, check out our guide on [essential tips for maintaining your sewer line](/essential-tips-for-maintaining-your-sewer-line-what-homeowners-must-know). If you need immediate assistance, [contact us](/contact) for professional sewer services.
+Choosing the right-sized sewer pipe is crucial for maintaining an efficient drainage system, preventing clogs, and following local codes. Whether you're dealing with residential or commercial properties, consulting professionals like [Total Leak Detection](/) ensures that your system operates efficiently and complies with all relevant codes and regulations. For more tips on maintaining your sewer line, check out our guide on [essential tips for maintaining your sewer line](/essential-tips-for-maintaining-your-sewer-line-what-homeowners-must-know). If you need immediate assistance, [contact us](/contact/) for professional sewer services.
 
 ### **2.2 Commercial Sewer Pipe Sizes**
 
@@ -108,7 +108,7 @@ In commercial sewer systems, larger pipes are needed to handle higher volumes of
 -   Mandates on minimum pipe diameters based on building occupancy and usage.
 -   Specifications for pipe materials that can withstand high flow rates and potential chemical exposure from industrial activities.
 
-Understanding these factors is essential for selecting the right **commercial sewer pipe sizes**. For instance, experienced plumbing professionals can help navigate these requirements effectively, ensuring compliance and optimal performance. Additionally, considering ongoing [promotions](/promotions) offered by plumbing service providers like Total Leak Detection could also provide cost-saving opportunities during the installation or maintenance process. Learn more about [the benefits of sewer camera inspections](/the-benefits-of-sewer-camera-inspections-for-miami-homeowners) for both residential and commercial properties.
+Understanding these factors is essential for selecting the right **commercial sewer pipe sizes**. For instance, experienced plumbing professionals can help navigate these requirements effectively, ensuring compliance and optimal performance. Additionally, considering ongoing [promotions](/promotions/) offered by plumbing service providers like Total Leak Detection could also provide cost-saving opportunities during the installation or maintenance process. Learn more about [the benefits of sewer camera inspections](/the-benefits-of-sewer-camera-inspections-for-miami-homeowners) for both residential and commercial properties.
 
 ## **3\. Factors to Consider in Determining the Right Pipe Size**
 

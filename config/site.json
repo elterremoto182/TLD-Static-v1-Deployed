@@ -46,15 +46,15 @@
   "tagline": "Get water leak detection in Florida. Get plumbing & water meter repair services. Plumbing reports in 2 days. Licensed & insured. Get a free estimate today!",
   "navigation": [
     {
-      "href": "/services",
+      "href": "/services/",
       "name": "Services"
     },
     {
-      "href": "/areas",
+      "href": "/areas/",
       "name": "Areas"
     },
     {
-      "href": "/about",
+      "href": "/about/",
       "name": "About"
     },
     {
@@ -62,11 +62,11 @@
       "name": "Testimonials"
     },
     {
-      "href": "/blog",
+      "href": "/blog/",
       "name": "Blog"
     },
     {
-      "href": "/contact",
+      "href": "/contact/",
       "name": "Contact"
     }
   ],

@@ -265,4 +265,4 @@ Licensed & Insured (CFC1430460) | Better Business Bureau Accredited | 4.7★ Rat
 - [How to Check Shower Pan for Leaks](/how-to-check-shower-pan-leaks) - Related shower leak guide
 - [Effective Solutions for Low Water Pressure](/effective-solutions-for-low-water-pressure-in-your-home) - Water pressure issues
 - [Eliminating Air Pockets in Water Pipes](/eliminating-air-pockets-effective-solutions-for-air-in-water-pipes) - Related plumbing issues
-- [Our Current Promotions](/promotions) - Check out our latest discounts
+- [Our Current Promotions](/promotions/) - Check out our latest discounts
