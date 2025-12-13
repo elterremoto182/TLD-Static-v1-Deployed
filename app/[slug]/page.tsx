@@ -3,7 +3,8 @@ import { notFound } from 'next/navigation';
 import { Header } from '@/components/sections/Header';
 import { Footer } from '@/components/sections/Footer';
 import { Breadcrumb } from '@/components/ui/breadcrumb';
-import { MarkdownRenderer } from '@/components/blog/MarkdownRenderer';
+import { MarkdownRenderer, processMarkdown } from '@/components/blog/MarkdownRenderer';
+import { YouTubeHydrator } from '@/components/YouTubeHydrator';
 import OptimizedImage from '@/components/OptimizedImage';
 import { getPageBySlug, getAllPages } from '@/lib/pages/pages';
 import { getPostBySlug, getAllPosts } from '@/lib/blog/posts';
@@ -207,6 +208,7 @@ export default async function DynamicPage({
       content: post.content,
     });
     const breadcrumbSchema = generateBreadcrumbListSchema(breadcrumbs);
+    const html = await processMarkdown(post.content);
 
     return (
       <>
@@ -270,7 +272,9 @@ export default async function DynamicPage({
                 </div>
               )}
 
-              <MarkdownRenderer content={post.content} />
+              <YouTubeHydrator>
+                <MarkdownRenderer html={html} />
+              </YouTubeHydrator>
             </div>
           </article>
         </main>
@@ -312,6 +316,7 @@ export default async function DynamicPage({
   const breadcrumbSchema = generateBreadcrumbListSchema(breadcrumbs);
   const heroImage = isLocationPage ? getServiceAreaImage(slug, page.image) : null;
   const cityName = isLocationPage ? extractCityName(slug) : '';
+  const html = await processMarkdown(page.content);
 
   // Render location/service area page with hero image
   if (isLocationPage) {
@@ -388,9 +393,11 @@ export default async function DynamicPage({
 
           {/* Main Content */}
           <article className="max-w-4xl mx-auto px-4 py-12">
-            <div className="prose prose-lg max-w-none prose-headings:text-gray-900 prose-p:text-gray-700 prose-a:text-primary hover:prose-a:text-primary/80">
-              <MarkdownRenderer content={page.content} />
-            </div>
+            <YouTubeHydrator>
+              <div className="prose prose-lg max-w-none prose-headings:text-gray-900 prose-p:text-gray-700 prose-a:text-primary hover:prose-a:text-primary/80">
+                <MarkdownRenderer html={html} />
+              </div>
+            </YouTubeHydrator>
           </article>
 
           {/* Bottom CTA Section */}
@@ -447,9 +454,11 @@ export default async function DynamicPage({
             <Breadcrumb items={breadcrumbs} />
           </div>
 
-          <div className="prose prose-lg max-w-none">
-            <MarkdownRenderer content={page.content} />
-          </div>
+          <YouTubeHydrator>
+            <div className="prose prose-lg max-w-none">
+              <MarkdownRenderer html={html} />
+            </div>
+          </YouTubeHydrator>
         </article>
       </main>
       <Footer />

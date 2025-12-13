@@ -2,7 +2,8 @@ import { notFound } from 'next/navigation';
 import { Header } from '@/components/sections/Header';
 import { Footer } from '@/components/sections/Footer';
 import { Breadcrumb } from '@/components/ui/breadcrumb';
-import { MarkdownRenderer } from '@/components/blog/MarkdownRenderer';
+import { MarkdownRenderer, processMarkdown } from '@/components/blog/MarkdownRenderer';
+import { YouTubeHydrator } from '@/components/YouTubeHydrator';
 import { getPageBySlug, getAllPages } from '@/lib/pages/pages';
 import { generatePageMetadata, generateBreadcrumbs } from '@/lib/utils';
 import {
@@ -139,6 +140,7 @@ export default async function ServicePage({
     url: pageUrl,
     breadcrumbs,
   });
+  const html = await processMarkdown(page.content);
 
   return (
     <>
@@ -167,9 +169,9 @@ export default async function ServicePage({
             <Breadcrumb items={breadcrumbs} />
           </div>
 
-          <div className="prose prose-lg max-w-none">
-            <MarkdownRenderer content={page.content} />
-          </div>
+          <YouTubeHydrator>
+            <MarkdownRenderer html={html} />
+          </YouTubeHydrator>
         </article>
       </main>
       <Footer />

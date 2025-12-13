@@ -2,7 +2,8 @@ import { notFound } from 'next/navigation';
 import { Header } from '@/components/sections/Header';
 import { Footer } from '@/components/sections/Footer';
 import { Breadcrumb } from '@/components/ui/breadcrumb';
-import { MarkdownRenderer } from '@/components/blog/MarkdownRenderer';
+import { MarkdownRenderer, processMarkdown } from '@/components/blog/MarkdownRenderer';
+import { YouTubeHydrator } from '@/components/YouTubeHydrator';
 import { getPageBySlug } from '@/lib/pages/pages';
 import { generatePageMetadata, generateBreadcrumbs } from '@/lib/utils';
 import {
@@ -30,7 +31,7 @@ export async function generateMetadata() {
   });
 }
 
-export default function PrivacyPolicyPage() {
+export default async function PrivacyPolicyPage() {
   const page = getPageBySlug('privacy-policy');
 
   if (!page) {
@@ -46,6 +47,7 @@ export default function PrivacyPolicyPage() {
     breadcrumbs,
   });
   const breadcrumbSchema = generateBreadcrumbListSchema(breadcrumbs);
+  const html = await processMarkdown(page.content);
 
   return (
     <>
@@ -68,9 +70,11 @@ export default function PrivacyPolicyPage() {
             <Breadcrumb items={breadcrumbs} />
           </div>
 
-          <div className="prose prose-lg max-w-none">
-            <MarkdownRenderer content={page.content} />
-          </div>
+          <YouTubeHydrator>
+            <div className="prose prose-lg max-w-none">
+              <MarkdownRenderer html={html} />
+            </div>
+          </YouTubeHydrator>
         </article>
       </main>
       <Footer />
