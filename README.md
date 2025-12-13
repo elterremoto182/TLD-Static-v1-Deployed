@@ -83,9 +83,6 @@ A modern, production-ready Next.js template for building small business websites
 │   ├── images/            # Image assets
 │   │   └── */nextImageExportOptimizer/ # Optimized WebP images
 │   └── robots.txt         # Search engine directives
-├── scripts/
-│   ├── clean-images.js    # Image cleanup utility
-│   └── optimize-css.js    # CSS optimization script
 ├── loader.js              # Custom Next.js image loader
 ├── next.config.js         # Next.js configuration
 └── .env                   # Environment variables (Supabase)

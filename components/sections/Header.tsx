@@ -46,6 +46,7 @@ export function Header() {
                     'object-contain'
                   )}
                   priority
+                  fetchPriority="high"
                   onError={() => setLogoError(true)}
                 />
               </div>

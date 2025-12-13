@@ -42,11 +42,26 @@ export default function RootLayout({
 
   const organizationSchema = generateOrganizationSchema();
 
+  // Get critical image paths for preloading
+  const heroBackgroundImage = '/images/hero/hero-background.jpeg';
+  const logoImage = siteConfig.logo || '/images/logo.png';
+
   return (
     <html lang="en" className={inter.variable}>
       <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        {/* Preload critical images */}
+        <link
+          rel="preload"
+          href={heroBackgroundImage}
+          as="image"
+          fetchPriority="high"
+        />
+        <link
+          rel="preload"
+          href={logoImage}
+          as="image"
+          fetchPriority="high"
+        />
         <link rel="icon" href={faviconPath} />
         <link rel="apple-touch-icon" href={faviconPath} />
         <script
