@@ -74,6 +74,10 @@ export function generateLocalBusinessSchema(city: City, service?: Service) {
  * Generate Service schema for city × service pages
  */
 export function generateLocalServiceSchema(service: Service, city: City) {
+  // Parse the address to extract just the street portion
+  const fullAddress = siteConfig.address || '7790 NW 55th St, Doral, FL 33166';
+  const streetAddress = fullAddress.split(',')[0]?.trim() || '7790 NW 55th St';
+  
   return {
     '@context': 'https://schema.org',
     '@type': 'Service',
@@ -83,6 +87,14 @@ export function generateLocalServiceSchema(service: Service, city: City) {
       '@type': 'LocalBusiness',
       name: siteConfig.name,
       '@id': `${baseUrl}#organization`,
+      address: {
+        '@type': 'PostalAddress',
+        streetAddress: streetAddress,
+        addressLocality: 'Doral',
+        addressRegion: 'FL',
+        postalCode: '33166',
+        addressCountry: 'US',
+      },
     },
     areaServed: {
       '@type': 'City',
