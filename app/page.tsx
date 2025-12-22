@@ -6,6 +6,7 @@ import { About } from '@/components/sections/About';
 import { CTABanner } from '@/components/sections/CTABanner';
 import { Contact } from '@/components/sections/Contact';
 import { Footer } from '@/components/sections/Footer';
+import { ServiceAreas } from '@/components/sections/ServiceAreas';
 import { getPageBySlug } from '@/lib/pages/pages';
 import { generatePageMetadata } from '@/lib/utils';
 import { generateLocalBusinessSchema, structuredDataToJsonLd } from '@/lib/seo/structured-data';
@@ -50,6 +51,7 @@ export default function Home() {
       <main>
         <Hero />
         <Services />
+        <ServiceAreas />
         <About />
         <Gallery />
         <Testimonials />

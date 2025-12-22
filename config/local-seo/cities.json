@@ -1,0 +1,687 @@
+{
+  "miami": {
+    "name": "Miami",
+    "slug": "miami",
+    "county": "Miami-Dade County",
+    "state": "FL",
+    "coordinates": { "lat": 25.7617, "lng": -80.1918 },
+    "neighborhoods": ["Brickell", "Downtown Miami", "Little Havana", "Wynwood", "Coconut Grove", "Edgewater", "Design District", "Overtown", "Allapattah", "Little Haiti"],
+    "zipCodes": ["33101", "33109", "33125", "33126", "33127", "33128", "33129", "33130", "33131", "33132", "33133", "33134", "33135", "33136", "33137", "33138", "33139", "33140", "33141", "33142", "33144", "33145", "33146", "33147", "33149", "33150"],
+    "responseTime": "30-45 minutes",
+    "localFactors": {
+      "climate": "Tropical monsoon climate with high humidity year-round and frequent afternoon thunderstorms during summer months.",
+      "risks": ["Hurricane flooding", "Aging infrastructure in historic neighborhoods", "High water table causing foundation issues", "Saltwater intrusion in coastal areas"],
+      "characteristics": "Mix of high-rise condos, historic Art Deco buildings, and single-family homes. Many properties built on limestone with unique drainage challenges."
+    },
+    "intro": "As Miami's trusted leak detection experts, Total Leak Detection provides fast, professional service throughout the city. From Brickell's high-rise condos to Coconut Grove's historic homes, we understand the unique plumbing challenges Miami properties face.",
+    "extendedContent": "Miami's tropical climate and aging infrastructure make professional leak detection essential. Our technicians are experienced with the specific challenges of Miami properties, including saltwater corrosion, limestone foundations, and high humidity conditions that can mask water damage.",
+    "nearbyAreas": ["miami-beach", "coral-gables", "hialeah", "doral", "north-miami"]
+  },
+  "miami-beach": {
+    "name": "Miami Beach",
+    "slug": "miami-beach",
+    "county": "Miami-Dade County",
+    "state": "FL",
+    "coordinates": { "lat": 25.7907, "lng": -80.1300 },
+    "neighborhoods": ["South Beach", "Mid-Beach", "North Beach", "Surfside", "Bal Harbour", "Fisher Island", "La Gorce", "Normandy Isles"],
+    "zipCodes": ["33109", "33139", "33140", "33141", "33154"],
+    "responseTime": "35-50 minutes",
+    "localFactors": {
+      "climate": "Coastal environment with salt air exposure and high humidity affecting plumbing systems.",
+      "risks": ["Saltwater corrosion on pipes", "Storm surge flooding", "Sandy soil shifting foundations", "Historic building deterioration"],
+      "characteristics": "Art Deco historic district with aging plumbing, luxury high-rise condos, and beachfront properties with unique moisture challenges."
+    },
+    "intro": "Total Leak Detection serves Miami Beach with specialized expertise for coastal properties. From South Beach's Art Deco gems to luxury oceanfront condos, we understand the unique challenges of barrier island plumbing.",
+    "extendedContent": "Miami Beach properties face constant exposure to salt air and high humidity, accelerating pipe corrosion and water damage. Our non-invasive detection methods are ideal for historic buildings and luxury condos where preserving aesthetics is crucial.",
+    "nearbyAreas": ["miami", "north-miami-beach", "sunny-isles-beach", "aventura"]
+  },
+  "coral-gables": {
+    "name": "Coral Gables",
+    "slug": "coral-gables",
+    "county": "Miami-Dade County",
+    "state": "FL",
+    "coordinates": { "lat": 25.7215, "lng": -80.2684 },
+    "neighborhoods": ["Coral Gables Historic District", "Riviera", "Crafts Section", "Biltmore", "Golden Triangle", "Cocoplum", "Gables Estates", "Tahiti Beach"],
+    "zipCodes": ["33124", "33133", "33134", "33143", "33146", "33156"],
+    "responseTime": "25-40 minutes",
+    "localFactors": {
+      "climate": "Subtropical with lush vegetation that can affect underground pipes through root intrusion.",
+      "risks": ["Historic home plumbing degradation", "Tree root intrusion", "Coral rock foundation complications", "Underground spring activity"],
+      "characteristics": "Known as 'The City Beautiful' with Mediterranean Revival architecture, mature tree canopy, and strict historic preservation requirements."
+    },
+    "intro": "Total Leak Detection provides expert service for Coral Gables' distinctive Mediterranean-style homes and estates. We specialize in non-invasive detection methods that protect your property's historic character and beautiful landscaping.",
+    "extendedContent": "Coral Gables' historic homes and mature landscaping require specialized leak detection approaches. Our team understands the importance of preserving architectural integrity while quickly locating and addressing water leaks.",
+    "nearbyAreas": ["miami", "south-miami", "pinecrest", "coconut-grove"]
+  },
+  "hialeah": {
+    "name": "Hialeah",
+    "slug": "hialeah",
+    "county": "Miami-Dade County",
+    "state": "FL",
+    "coordinates": { "lat": 25.8576, "lng": -80.2781 },
+    "neighborhoods": ["Palm Springs", "Hialeah Gardens", "Miami Lakes", "Westland", "Country Club", "Palm Springs North"],
+    "zipCodes": ["33010", "33011", "33012", "33013", "33014", "33015", "33016", "33018"],
+    "responseTime": "30-45 minutes",
+    "localFactors": {
+      "climate": "Hot and humid subtropical climate with heavy summer rainfall.",
+      "risks": ["Aging municipal water infrastructure", "Older home plumbing systems", "Industrial area contamination concerns", "High water table"],
+      "characteristics": "Dense residential and commercial mix with many homes built in the 1950s-1970s. Large industrial areas with specialized plumbing needs."
+    },
+    "intro": "Total Leak Detection serves Hialeah with fast, reliable leak detection for homes and businesses. Our bilingual team understands the community and provides expert service for properties of all ages.",
+    "extendedContent": "Many Hialeah homes were built decades ago with plumbing systems that are now reaching the end of their lifespan. Our advanced detection technology helps identify problems before they become major repairs.",
+    "nearbyAreas": ["miami-lakes", "doral", "miami-springs", "medley"]
+  },
+  "doral": {
+    "name": "Doral",
+    "slug": "doral",
+    "county": "Miami-Dade County",
+    "state": "FL",
+    "coordinates": { "lat": 25.8195, "lng": -80.3553 },
+    "neighborhoods": ["Downtown Doral", "Doral Isles", "Costa Del Sol", "Doral Meadows", "Doral Palms", "Trump National Doral"],
+    "zipCodes": ["33122", "33166", "33172", "33178"],
+    "responseTime": "20-35 minutes",
+    "localFactors": {
+      "climate": "Subtropical climate with newer construction but still prone to humidity-related issues.",
+      "risks": ["New construction settling issues", "Golf course irrigation conflicts", "Commercial property complex systems", "Rapid development drainage problems"],
+      "characteristics": "Modern planned community with newer construction, major corporate headquarters, and upscale residential developments."
+    },
+    "intro": "As Doral's local leak detection experts—headquartered right here in your community—Total Leak Detection provides the fastest response times and most reliable service for homes and businesses throughout the city.",
+    "extendedContent": "From our Doral headquarters, we serve the entire community with expert leak detection. Whether you're in a Downtown Doral condo, a family home in Doral Isles, or a commercial property, we're your neighbors and your trusted leak detection specialists.",
+    "nearbyAreas": ["miami", "hialeah", "sweetwater", "miami-springs"]
+  },
+  "kendall": {
+    "name": "Kendall",
+    "slug": "kendall",
+    "county": "Miami-Dade County",
+    "state": "FL",
+    "coordinates": { "lat": 25.6747, "lng": -80.3519 },
+    "neighborhoods": ["The Falls", "Kendall Lakes", "Sunset", "West Kendall", "Three Lakes", "Kendale Lakes", "The Crossings", "Country Walk"],
+    "zipCodes": ["33156", "33157", "33173", "33175", "33176", "33177", "33183", "33186", "33193", "33196"],
+    "responseTime": "30-45 minutes",
+    "localFactors": {
+      "climate": "Subtropical with consistent humidity and seasonal heavy rains affecting slab foundations.",
+      "risks": ["Slab leaks in 1970s-90s homes", "Pool and irrigation leaks", "Limestone foundation issues", "Hurricane damage to plumbing"],
+      "characteristics": "Large suburban area with mix of established neighborhoods and newer developments. Many single-family homes with pools and extensive irrigation."
+    },
+    "intro": "Total Leak Detection provides comprehensive leak detection services throughout Kendall. From The Falls to West Kendall, our technicians know the area and respond quickly to protect your home.",
+    "extendedContent": "Kendall's suburban homes often feature pools, extensive landscaping, and irrigation systems—all potential sources of hidden leaks. Our detection technology can pinpoint issues in slab foundations, pool systems, and underground pipes.",
+    "nearbyAreas": ["pinecrest", "south-miami", "homestead", "cutler-bay"]
+  },
+  "pinecrest": {
+    "name": "Pinecrest",
+    "slug": "pinecrest",
+    "county": "Miami-Dade County",
+    "state": "FL",
+    "coordinates": { "lat": 25.6670, "lng": -80.3081 },
+    "neighborhoods": ["Pinecrest Gardens", "Palmetto Bay Border", "Old Cutler Road Corridor"],
+    "zipCodes": ["33156", "33157"],
+    "responseTime": "25-40 minutes",
+    "localFactors": {
+      "climate": "Lush subtropical environment with mature trees and established landscaping.",
+      "risks": ["Mature tree root intrusion", "Estate home complex plumbing", "Pool and water feature leaks", "Older pipe materials in established homes"],
+      "characteristics": "Affluent village with large estate homes, mature landscaping, and high property values requiring careful, non-invasive detection methods."
+    },
+    "intro": "Total Leak Detection provides discreet, professional service for Pinecrest's luxury homes and estates. Our non-invasive methods protect your property and landscaping while accurately locating hidden leaks.",
+    "extendedContent": "Pinecrest estates feature complex plumbing systems, pools, water features, and mature landscaping that can both cause and hide water leaks. Our advanced technology detects problems without disturbing your property.",
+    "nearbyAreas": ["coral-gables", "south-miami", "kendall", "palmetto-bay"]
+  },
+  "homestead": {
+    "name": "Homestead",
+    "slug": "homestead",
+    "county": "Miami-Dade County",
+    "state": "FL",
+    "coordinates": { "lat": 25.4687, "lng": -80.4776 },
+    "neighborhoods": ["Downtown Homestead", "Leisure City", "Florida City", "Redland", "Naranja"],
+    "zipCodes": ["33030", "33031", "33032", "33033", "33034", "33035"],
+    "responseTime": "45-60 minutes",
+    "localFactors": {
+      "climate": "Agricultural area with unique soil conditions and water quality challenges.",
+      "risks": ["Agricultural runoff affecting water systems", "Well water complications", "Mobile home park plumbing", "Hurricane damage history"],
+      "characteristics": "Agricultural community with mix of older homes, new developments, and agricultural properties with unique water system needs."
+    },
+    "intro": "Total Leak Detection serves Homestead and the Redland area with specialized expertise for the unique properties in South Miami-Dade. From agricultural wells to residential plumbing, we detect leaks fast.",
+    "extendedContent": "Homestead's diverse property types—from agricultural operations to new housing developments—require versatile leak detection expertise. We handle everything from well systems to modern residential plumbing.",
+    "nearbyAreas": ["florida-city", "cutler-bay", "kendall"]
+  },
+  "miami-lakes": {
+    "name": "Miami Lakes",
+    "slug": "miami-lakes",
+    "county": "Miami-Dade County",
+    "state": "FL",
+    "coordinates": { "lat": 25.9087, "lng": -80.3086 },
+    "neighborhoods": ["Miami Lakes East", "Miami Lakes West", "Royal Oaks", "Loch Lomond", "Lake Patricia"],
+    "zipCodes": ["33014", "33015", "33016"],
+    "responseTime": "25-40 minutes",
+    "localFactors": {
+      "climate": "Planned community with extensive lake system affecting groundwater levels.",
+      "risks": ["Lake proximity affecting foundations", "Irrigation system leaks", "Pinhole leaks in copper pipes (common in area)", "Community water system issues"],
+      "characteristics": "Master-planned community built in the 1960s-80s with homes experiencing pinhole leak issues common to this era of construction."
+    },
+    "intro": "Total Leak Detection is Miami Lakes' trusted expert for pinhole leaks and water detection. We understand the specific plumbing challenges in this community and provide fast, effective solutions.",
+    "extendedContent": "Miami Lakes homes are known for experiencing pinhole leaks in copper pipes—a common issue in homes from this era. Our detection technology quickly locates these small but damaging leaks before they cause major water damage.",
+    "nearbyAreas": ["hialeah", "palm-springs-north", "opa-locka", "doral"]
+  },
+  "aventura": {
+    "name": "Aventura",
+    "slug": "aventura",
+    "county": "Miami-Dade County",
+    "state": "FL",
+    "coordinates": { "lat": 25.9565, "lng": -80.1392 },
+    "neighborhoods": ["Aventura Lakes", "Williams Island", "Turnberry", "The Waterways"],
+    "zipCodes": ["33160", "33180"],
+    "responseTime": "35-50 minutes",
+    "localFactors": {
+      "climate": "Coastal location with high humidity and salt air exposure.",
+      "risks": ["High-rise building complexities", "Saltwater proximity", "Luxury condo association requirements", "Underground parking drainage"],
+      "characteristics": "Upscale planned community known for luxury high-rise condos, Aventura Mall, and waterfront properties."
+    },
+    "intro": "Total Leak Detection serves Aventura's luxury condos and waterfront properties with expert, professional service. We're experienced with high-rise buildings and condo association requirements.",
+    "extendedContent": "Aventura's high-rise condos require specialized leak detection approaches. Our team coordinates with building management, works within condo association guidelines, and uses technology suited for multi-story buildings.",
+    "nearbyAreas": ["sunny-isles-beach", "north-miami-beach", "hallandale-beach", "golden-beach"]
+  },
+  "north-miami": {
+    "name": "North Miami",
+    "slug": "north-miami",
+    "county": "Miami-Dade County",
+    "state": "FL",
+    "coordinates": { "lat": 25.8901, "lng": -80.1867 },
+    "neighborhoods": ["Keystone Point", "Sans Souci", "Arch Creek", "Eastern Shores"],
+    "zipCodes": ["33161", "33162", "33168", "33181"],
+    "responseTime": "30-45 minutes",
+    "localFactors": {
+      "climate": "Coastal proximity with canal systems affecting drainage.",
+      "risks": ["Waterfront property challenges", "Older infrastructure in established areas", "Canal-adjacent foundation issues", "Mixed-use development plumbing"],
+      "characteristics": "Diverse community with mix of waterfront estates, modest single-family homes, and commercial properties. Home to Florida International University Biscayne Bay Campus."
+    },
+    "intro": "Total Leak Detection provides reliable leak detection throughout North Miami. From Keystone Point's waterfront homes to established neighborhoods, we deliver fast, accurate results.",
+    "extendedContent": "North Miami's waterfront properties and older homes present unique leak detection challenges. Our non-invasive technology is ideal for locating leaks without damaging your property.",
+    "nearbyAreas": ["north-miami-beach", "miami", "miami-shores", "biscayne-park"]
+  },
+  "north-miami-beach": {
+    "name": "North Miami Beach",
+    "slug": "north-miami-beach",
+    "county": "Miami-Dade County",
+    "state": "FL",
+    "coordinates": { "lat": 25.9331, "lng": -80.1625 },
+    "neighborhoods": ["Eastern Shores", "Skylake", "Ojus", "Uleta"],
+    "zipCodes": ["33160", "33162", "33179", "33180"],
+    "responseTime": "30-45 minutes",
+    "localFactors": {
+      "climate": "Near-coastal environment with high humidity.",
+      "risks": ["Older home plumbing systems", "Commercial property leaks", "Condo building issues", "Hurricane damage susceptibility"],
+      "characteristics": "Residential community with mix of single-family homes, condos, and commercial properties. Many homes built in the 1960s-1980s."
+    },
+    "intro": "Total Leak Detection serves North Miami Beach with expert leak detection for residential and commercial properties. We understand the area's older homes and provide fast, accurate service.",
+    "extendedContent": "Many North Miami Beach properties have aging plumbing systems that are prone to leaks. Our advanced detection technology locates problems quickly, helping you avoid costly water damage.",
+    "nearbyAreas": ["sunny-isles-beach", "aventura", "north-miami", "hallandale-beach"]
+  },
+  "south-miami": {
+    "name": "South Miami",
+    "slug": "south-miami",
+    "county": "Miami-Dade County",
+    "state": "FL",
+    "coordinates": { "lat": 25.7076, "lng": -80.2934 },
+    "neighborhoods": ["Downtown South Miami", "Sunset Drive Corridor", "South Miami Heights"],
+    "zipCodes": ["33143", "33155", "33156"],
+    "responseTime": "25-40 minutes",
+    "localFactors": {
+      "climate": "Subtropical with mature tree coverage creating shade but also root intrusion risks.",
+      "risks": ["Historic home plumbing", "Mature tree root intrusion", "Commercial district complexities", "Underground utility conflicts"],
+      "characteristics": "Charming city with mix of historic homes, local businesses, and proximity to University of Miami. Known for walkable downtown area."
+    },
+    "intro": "Total Leak Detection provides professional leak detection for South Miami's homes and businesses. From historic properties to modern construction, we protect your investment with accurate, non-invasive detection.",
+    "extendedContent": "South Miami's tree-lined streets and established homes create both charm and plumbing challenges. Root intrusion and aging pipes are common concerns we address daily.",
+    "nearbyAreas": ["coral-gables", "pinecrest", "kendall", "coconut-grove"]
+  },
+  "cutler-bay": {
+    "name": "Cutler Bay",
+    "slug": "cutler-bay",
+    "county": "Miami-Dade County",
+    "state": "FL",
+    "coordinates": { "lat": 25.5808, "lng": -80.3464 },
+    "neighborhoods": ["Saga Bay", "Whispering Pines", "Cutler Ridge", "Lakes by the Bay", "Southland"],
+    "zipCodes": ["33157", "33189", "33190"],
+    "responseTime": "35-50 minutes",
+    "localFactors": {
+      "climate": "Coastal proximity with tropical weather patterns.",
+      "risks": ["Hurricane zone vulnerabilities", "Newer development settling", "Slab foundation issues", "Coastal flooding risks"],
+      "characteristics": "Growing suburban community with newer developments and established neighborhoods. Close to Biscayne National Park."
+    },
+    "intro": "Total Leak Detection serves Cutler Bay with fast, professional leak detection services. From Lakes by the Bay to established Cutler Ridge neighborhoods, we're your local experts.",
+    "extendedContent": "Cutler Bay's mix of newer and established homes each present unique leak detection challenges. Our technology handles everything from new construction settling issues to older pipe degradation.",
+    "nearbyAreas": ["palmetto-bay", "homestead", "kendall", "pinecrest"]
+  },
+  "palmetto-bay": {
+    "name": "Palmetto Bay",
+    "slug": "palmetto-bay",
+    "county": "Miami-Dade County",
+    "state": "FL",
+    "coordinates": { "lat": 25.6223, "lng": -80.3248 },
+    "neighborhoods": ["Old Cutler Road", "Palmetto Bay Village Center", "Coral Reef"],
+    "zipCodes": ["33157", "33158"],
+    "responseTime": "30-45 minutes",
+    "localFactors": {
+      "climate": "Lush subtropical environment with extensive tree canopy.",
+      "risks": ["Mature tree root damage", "Estate home complex systems", "Pool and water feature leaks", "Hurricane-related plumbing damage"],
+      "characteristics": "Upscale residential village with large lots, mature landscaping, and high property values. Known as 'Village of Parks.'"
+    },
+    "intro": "Total Leak Detection provides expert service for Palmetto Bay's beautiful homes and estates. Our non-invasive methods protect your landscaping while accurately locating hidden leaks.",
+    "extendedContent": "Palmetto Bay's estate homes and lush landscaping require careful, professional leak detection. We locate problems without disturbing your property's natural beauty.",
+    "nearbyAreas": ["pinecrest", "cutler-bay", "coral-gables", "south-miami"]
+  },
+  "key-biscayne": {
+    "name": "Key Biscayne",
+    "slug": "key-biscayne",
+    "county": "Miami-Dade County",
+    "state": "FL",
+    "coordinates": { "lat": 25.6936, "lng": -80.1628 },
+    "neighborhoods": ["The Village", "Cape Florida", "Crandon Park"],
+    "zipCodes": ["33149"],
+    "responseTime": "40-55 minutes",
+    "localFactors": {
+      "climate": "Island environment with extreme salt air exposure and hurricane vulnerability.",
+      "risks": ["Severe saltwater corrosion", "Hurricane damage", "High-rise condo complexities", "Limited access during storms"],
+      "characteristics": "Exclusive barrier island community with luxury homes and condos. Limited access via single causeway."
+    },
+    "intro": "Total Leak Detection serves Key Biscayne with specialized expertise for island properties. We understand the unique challenges of saltwater exposure and luxury home requirements.",
+    "extendedContent": "Key Biscayne's island location creates extreme conditions for plumbing systems. Saltwater corrosion accelerates pipe deterioration, making regular leak detection essential for protecting your property.",
+    "nearbyAreas": ["miami", "coral-gables", "coconut-grove"]
+  },
+  "sweetwater": {
+    "name": "Sweetwater",
+    "slug": "sweetwater",
+    "county": "Miami-Dade County",
+    "state": "FL",
+    "coordinates": { "lat": 25.7632, "lng": -80.3732 },
+    "neighborhoods": ["Downtown Sweetwater", "Florida International University Area"],
+    "zipCodes": ["33172", "33174", "33182", "33184", "33185"],
+    "responseTime": "25-40 minutes",
+    "localFactors": {
+      "climate": "Subtropical with typical South Florida humidity and rainfall.",
+      "risks": ["Older residential plumbing", "Commercial property leaks", "Student housing maintenance", "Municipal water system age"],
+      "characteristics": "Small city near FIU with mix of residential, commercial, and rental properties. Known for its Cuban-American community."
+    },
+    "intro": "Total Leak Detection provides fast, affordable leak detection throughout Sweetwater. Our bilingual team serves homeowners, landlords, and businesses with professional, reliable service.",
+    "extendedContent": "Sweetwater's mix of residential and rental properties means we work with homeowners and property managers alike. We provide fast service and detailed reports for insurance purposes.",
+    "nearbyAreas": ["doral", "miami", "kendall", "westchester"]
+  },
+  "sunny-isles-beach": {
+    "name": "Sunny Isles Beach",
+    "slug": "sunny-isles-beach",
+    "county": "Miami-Dade County",
+    "state": "FL",
+    "coordinates": { "lat": 25.9506, "lng": -80.1228 },
+    "neighborhoods": ["Golden Shores", "Sunny Isles Beach Central"],
+    "zipCodes": ["33160"],
+    "responseTime": "35-50 minutes",
+    "localFactors": {
+      "climate": "Oceanfront with extreme salt air and humidity exposure.",
+      "risks": ["Luxury high-rise complexities", "Saltwater corrosion", "Oceanfront building challenges", "International ownership coordination"],
+      "characteristics": "Upscale oceanfront community known as 'Florida's Riviera' with luxury high-rise condos and international residents."
+    },
+    "intro": "Total Leak Detection serves Sunny Isles Beach's luxury high-rise condos with expert, professional service. We coordinate with building management and work within condo association requirements.",
+    "extendedContent": "Sunny Isles Beach's luxury high-rises require specialized leak detection approaches. Our team is experienced with multi-story buildings, saltwater exposure issues, and the coordination required for condo associations.",
+    "nearbyAreas": ["aventura", "north-miami-beach", "hallandale-beach", "golden-beach"]
+  },
+  "fort-lauderdale": {
+    "name": "Fort Lauderdale",
+    "slug": "fort-lauderdale",
+    "county": "Broward County",
+    "state": "FL",
+    "coordinates": { "lat": 26.1224, "lng": -80.1373 },
+    "neighborhoods": ["Las Olas", "Victoria Park", "Rio Vista", "Coral Ridge", "Harbor Beach", "Lauderdale Beach", "Wilton Manors", "Oakland Park"],
+    "zipCodes": ["33301", "33304", "33305", "33306", "33308", "33309", "33311", "33312", "33313", "33315", "33316", "33334"],
+    "responseTime": "35-50 minutes",
+    "localFactors": {
+      "climate": "Coastal subtropical with extensive canal system throughout the city.",
+      "risks": ["Canal-adjacent property issues", "Yacht and marine facility plumbing", "Historic district preservation", "Salt air corrosion"],
+      "characteristics": "Venice of America with 300+ miles of canals. Mix of luxury waterfront estates, historic neighborhoods, and urban condos."
+    },
+    "intro": "Total Leak Detection serves Fort Lauderdale from our Miami-Dade headquarters with fast, professional leak detection. From Las Olas to Harbor Beach, we protect your property with expert service.",
+    "extendedContent": "Fort Lauderdale's extensive canal system and waterfront properties create unique plumbing challenges. Our detection technology is ideal for locating leaks in these complex environments.",
+    "nearbyAreas": ["oakland-park", "wilton-manors", "pompano-beach", "hollywood", "lauderdale-by-the-sea"]
+  },
+  "hollywood": {
+    "name": "Hollywood",
+    "slug": "hollywood",
+    "county": "Broward County",
+    "state": "FL",
+    "coordinates": { "lat": 26.0112, "lng": -80.1495 },
+    "neighborhoods": ["Hollywood Beach", "Downtown Hollywood", "Hollywood Lakes", "Emerald Hills", "Oakwood"],
+    "zipCodes": ["33019", "33020", "33021", "33023", "33024", "33025", "33026", "33027", "33028", "33029"],
+    "responseTime": "30-45 minutes",
+    "localFactors": {
+      "climate": "Coastal with beach exposure and typical South Florida humidity.",
+      "risks": ["Beachside property corrosion", "Older downtown infrastructure", "Mixed residential/commercial challenges", "Hurricane vulnerability"],
+      "characteristics": "Beach community with famous boardwalk, diverse neighborhoods ranging from beachfront condos to inland suburbs."
+    },
+    "intro": "Total Leak Detection provides reliable leak detection throughout Hollywood. From the beach to Emerald Hills, our technicians respond quickly to protect your home or business.",
+    "extendedContent": "Hollywood's diverse property types—from beachfront condos to suburban homes—each have unique leak detection needs. Our versatile team handles them all with professional expertise.",
+    "nearbyAreas": ["hallandale-beach", "pembroke-pines", "miramar", "fort-lauderdale", "dania-beach"]
+  },
+  "pembroke-pines": {
+    "name": "Pembroke Pines",
+    "slug": "pembroke-pines",
+    "county": "Broward County",
+    "state": "FL",
+    "coordinates": { "lat": 26.0128, "lng": -80.3118 },
+    "neighborhoods": ["Century Village", "Pembroke Lakes", "Silver Lakes", "Chapel Trail", "Pembroke Falls"],
+    "zipCodes": ["33023", "33024", "33025", "33026", "33027", "33028", "33029", "33082", "33084"],
+    "responseTime": "35-50 minutes",
+    "localFactors": {
+      "climate": "Inland suburban with lower salt exposure than coastal areas.",
+      "risks": ["1980s-2000s home plumbing issues", "Large community pool systems", "Irrigation and landscape leaks", "Slab foundation problems"],
+      "characteristics": "Large suburban city with master-planned communities, excellent schools, and many homes built in the 1980s-2000s."
+    },
+    "intro": "Total Leak Detection serves Pembroke Pines with fast, professional leak detection for your home or business. We're experienced with the plumbing systems common in this community.",
+    "extendedContent": "Pembroke Pines homes often experience slab leaks, irrigation system issues, and other problems common to South Florida construction. Our detection technology locates these issues quickly.",
+    "nearbyAreas": ["miramar", "hollywood", "cooper-city", "davie", "weston"]
+  },
+  "miramar": {
+    "name": "Miramar",
+    "slug": "miramar",
+    "county": "Broward County",
+    "state": "FL",
+    "coordinates": { "lat": 25.9773, "lng": -80.3324 },
+    "neighborhoods": ["Miramar Parkway", "Sunset Falls", "Sunset Lakes", "Silver Shores", "Vizcaya"],
+    "zipCodes": ["33023", "33025", "33027", "33029"],
+    "responseTime": "30-45 minutes",
+    "localFactors": {
+      "climate": "Suburban with typical Broward County climate conditions.",
+      "risks": ["Pinhole leak epidemic in certain developments", "Newer construction settling", "Community water system variations", "Slab foundation issues"],
+      "characteristics": "Growing suburban city with newer developments. Has experienced pinhole leak issues in certain neighborhoods."
+    },
+    "intro": "Total Leak Detection is Miramar's trusted expert for pinhole leaks and water detection. We've helped hundreds of homeowners in communities affected by copper pipe corrosion.",
+    "extendedContent": "Miramar has experienced significant pinhole leak issues in certain neighborhoods. Our team has extensive experience detecting and documenting these leaks for insurance claims and repairs.",
+    "nearbyAreas": ["pembroke-pines", "hollywood", "miami-gardens", "hialeah"]
+  },
+  "coral-springs": {
+    "name": "Coral Springs",
+    "slug": "coral-springs",
+    "county": "Broward County",
+    "state": "FL",
+    "coordinates": { "lat": 26.2712, "lng": -80.2706 },
+    "neighborhoods": ["Coral Springs East", "Coral Springs West", "Heron Bay", "The Walk"],
+    "zipCodes": ["33065", "33067", "33071", "33073", "33075", "33076", "33077"],
+    "responseTime": "45-60 minutes",
+    "localFactors": {
+      "climate": "Inland location with slightly different weather patterns than coastal areas.",
+      "risks": ["1970s-90s construction plumbing", "Swimming pool and spa leaks", "Irrigation system issues", "Slab leaks"],
+      "characteristics": "Well-planned suburban city known for excellent parks and schools. Many homes built during the community's 1970s-90s growth period."
+    },
+    "intro": "Total Leak Detection serves Coral Springs with professional leak detection services. Our technicians are experienced with the plumbing systems and common issues in this community.",
+    "extendedContent": "Coral Springs homes from the 1970s-90s often have plumbing systems that are now showing their age. We detect slab leaks, pipe leaks, and irrigation issues before they cause major damage.",
+    "nearbyAreas": ["parkland", "coconut-creek", "margate", "tamarac"]
+  },
+  "plantation": {
+    "name": "Plantation",
+    "slug": "plantation",
+    "county": "Broward County",
+    "state": "FL",
+    "coordinates": { "lat": 26.1276, "lng": -80.2331 },
+    "neighborhoods": ["Jacaranda", "Plantation Acres", "Central Park", "Pine Island Ridge"],
+    "zipCodes": ["33317", "33322", "33323", "33324", "33325", "33388"],
+    "responseTime": "40-55 minutes",
+    "localFactors": {
+      "climate": "Suburban location with standard South Florida climate.",
+      "risks": ["Mixed-age housing stock", "Commercial property complexity", "Golf course community irrigation", "Pool and water feature leaks"],
+      "characteristics": "Established suburban city with diverse housing from different eras, major employers, and upscale communities."
+    },
+    "intro": "Total Leak Detection provides reliable leak detection services throughout Plantation. From Jacaranda to Plantation Acres, we protect homes and businesses with expert detection.",
+    "extendedContent": "Plantation's diverse housing stock—from 1960s homes to newer construction—means varied plumbing systems and challenges. Our technology handles them all effectively.",
+    "nearbyAreas": ["sunrise", "davie", "fort-lauderdale", "lauderhill", "lauderdale-lakes"]
+  },
+  "davie": {
+    "name": "Davie",
+    "slug": "davie",
+    "county": "Broward County",
+    "state": "FL",
+    "coordinates": { "lat": 26.0765, "lng": -80.2521 },
+    "neighborhoods": ["Davie Town Center", "Rolling Hills", "Flamingo Gardens", "Pine Island"],
+    "zipCodes": ["33024", "33025", "33026", "33027", "33028", "33029", "33314", "33317", "33325", "33328", "33329", "33330", "33331", "33332"],
+    "responseTime": "40-55 minutes",
+    "localFactors": {
+      "climate": "Semi-rural to suburban with some agricultural properties.",
+      "risks": ["Well water systems on larger properties", "Horse property unique needs", "Agricultural irrigation", "Varied construction ages"],
+      "characteristics": "Western-themed town with mix of suburban homes, horse ranches, and Nova Southeastern University. Known for equestrian lifestyle."
+    },
+    "intro": "Total Leak Detection serves Davie's unique mix of suburban homes and ranches. Whether you have a townhome or an equestrian estate, we provide expert leak detection service.",
+    "extendedContent": "Davie's diverse properties—from typical suburban homes to large ranches with well systems—require versatile detection expertise. We handle residential, commercial, and agricultural property needs.",
+    "nearbyAreas": ["plantation", "cooper-city", "pembroke-pines", "weston", "southwest-ranches"]
+  },
+  "sunrise": {
+    "name": "Sunrise",
+    "slug": "sunrise",
+    "county": "Broward County",
+    "state": "FL",
+    "coordinates": { "lat": 26.1669, "lng": -80.2564 },
+    "neighborhoods": ["Sunrise Lakes", "Sawgrass Mills", "Sunrise Golf Village"],
+    "zipCodes": ["33313", "33322", "33323", "33325", "33326", "33351"],
+    "responseTime": "40-55 minutes",
+    "localFactors": {
+      "climate": "Suburban with standard Broward County conditions.",
+      "risks": ["1970s-80s construction issues", "Commercial complex plumbing", "Golf course irrigation conflicts", "Condo association properties"],
+      "characteristics": "Suburban city home to Sawgrass Mills Mall, BB&T Center, and numerous residential communities built primarily in the 1970s-80s."
+    },
+    "intro": "Total Leak Detection provides professional leak detection throughout Sunrise. We're experienced with the plumbing systems in this community and respond quickly to your needs.",
+    "extendedContent": "Sunrise's homes and commercial properties often have plumbing from the 1970s-80s that may be reaching the end of its lifespan. Our detection services help identify problems early.",
+    "nearbyAreas": ["plantation", "lauderhill", "tamarac", "coral-springs"]
+  },
+  "pompano-beach": {
+    "name": "Pompano Beach",
+    "slug": "pompano-beach",
+    "county": "Broward County",
+    "state": "FL",
+    "coordinates": { "lat": 26.2379, "lng": -80.1248 },
+    "neighborhoods": ["Pompano Beach Highlands", "Palm Aire", "Cypress Bend", "Lighthouse Point"],
+    "zipCodes": ["33060", "33062", "33063", "33064", "33069", "33073"],
+    "responseTime": "40-55 minutes",
+    "localFactors": {
+      "climate": "Coastal with salt air exposure and beach proximity.",
+      "risks": ["Beachside property corrosion", "Older infrastructure", "Boat and marina plumbing", "Commercial fishing facility needs"],
+      "characteristics": "Beach community known for diving, fishing, and mix of older beach properties and newer developments."
+    },
+    "intro": "Total Leak Detection serves Pompano Beach with expert leak detection for coastal properties. From beachfront condos to inland homes, we provide fast, reliable service.",
+    "extendedContent": "Pompano Beach's coastal location means salt air corrosion is a constant concern. Our detection services help identify leaks caused by pipe deterioration before major damage occurs.",
+    "nearbyAreas": ["lighthouse-point", "deerfield-beach", "fort-lauderdale", "coconut-creek"]
+  },
+  "deerfield-beach": {
+    "name": "Deerfield Beach",
+    "slug": "deerfield-beach",
+    "county": "Broward County",
+    "state": "FL",
+    "coordinates": { "lat": 26.3184, "lng": -80.0998 },
+    "neighborhoods": ["Deerfield Beach Central", "Cove", "Waterways", "Century Village"],
+    "zipCodes": ["33064", "33441", "33442", "33443"],
+    "responseTime": "45-60 minutes",
+    "localFactors": {
+      "climate": "Coastal beach community with typical South Florida conditions.",
+      "risks": ["Beachfront property challenges", "55+ community infrastructure", "Salt air corrosion", "Older condo complexes"],
+      "characteristics": "Charming beach town with famous pier, mix of beach properties, retirement communities, and family neighborhoods."
+    },
+    "intro": "Total Leak Detection provides trusted leak detection services in Deerfield Beach. From oceanfront properties to Century Village, we serve all property types with professional expertise.",
+    "extendedContent": "Deerfield Beach's mix of beachfront condos and residential neighborhoods each have unique leak detection needs. We provide fast service and detailed documentation for all property types.",
+    "nearbyAreas": ["boca-raton", "pompano-beach", "lighthouse-point", "coconut-creek"]
+  },
+  "lauderhill": {
+    "name": "Lauderhill",
+    "slug": "lauderhill",
+    "county": "Broward County",
+    "state": "FL",
+    "coordinates": { "lat": 26.1403, "lng": -80.2134 },
+    "neighborhoods": ["Inverrary", "Lauderhill Central", "Lauderhill Lakes"],
+    "zipCodes": ["33311", "33313", "33319", "33351"],
+    "responseTime": "40-55 minutes",
+    "localFactors": {
+      "climate": "Suburban with typical South Florida weather patterns.",
+      "risks": ["Aging infrastructure from 1970s development", "Mixed housing stock conditions", "Commercial property leaks", "Slab foundation issues"],
+      "characteristics": "Diverse suburban city developed primarily in the 1970s-80s. Home to Central Broward Regional Park and sports facilities."
+    },
+    "intro": "Total Leak Detection serves Lauderhill with fast, reliable leak detection services. Our experienced technicians understand the plumbing challenges in this community.",
+    "extendedContent": "Lauderhill homes and businesses often have plumbing systems from the 1970s-80s. Our detection technology helps identify leaks in these aging systems before they cause major damage.",
+    "nearbyAreas": ["sunrise", "plantation", "lauderdale-lakes", "tamarac", "fort-lauderdale"]
+  },
+  "lauderdale-lakes": {
+    "name": "Lauderdale Lakes",
+    "slug": "lauderdale-lakes",
+    "county": "Broward County",
+    "state": "FL",
+    "coordinates": { "lat": 26.1662, "lng": -80.2076 },
+    "neighborhoods": ["Lauderdale Lakes Central", "Palm Gardens"],
+    "zipCodes": ["33309", "33311", "33313", "33319"],
+    "responseTime": "40-55 minutes",
+    "localFactors": {
+      "climate": "Suburban location with standard Broward conditions.",
+      "risks": ["Older plumbing infrastructure", "Rental property maintenance", "Commercial strip plaza leaks", "Water main connection issues"],
+      "characteristics": "Suburban city with diverse population and mix of residential and commercial properties built primarily in the 1960s-80s."
+    },
+    "intro": "Total Leak Detection provides affordable, professional leak detection in Lauderdale Lakes. We serve homeowners, landlords, and businesses with fast, accurate service.",
+    "extendedContent": "Lauderdale Lakes properties often have aging plumbing that requires regular inspection. Our detection services help property owners identify and address problems early.",
+    "nearbyAreas": ["lauderhill", "plantation", "tamarac", "fort-lauderdale"]
+  },
+  "tamarac": {
+    "name": "Tamarac",
+    "slug": "tamarac",
+    "county": "Broward County",
+    "state": "FL",
+    "coordinates": { "lat": 26.2128, "lng": -80.2498 },
+    "neighborhoods": ["Tamarac Lakes", "Mainlands", "Woodmont"],
+    "zipCodes": ["33309", "33319", "33321", "33323", "33351"],
+    "responseTime": "45-60 minutes",
+    "localFactors": {
+      "climate": "Suburban with typical South Florida humidity and rainfall.",
+      "risks": ["55+ community infrastructure challenges", "Condo association complexities", "Aging plumbing from 1970s-80s", "Pool and recreational facility leaks"],
+      "characteristics": "Suburban city known for 55+ communities and family neighborhoods. Many properties built in the 1970s-80s."
+    },
+    "intro": "Total Leak Detection serves Tamarac's homes and communities with professional leak detection services. We're experienced with condo associations and 55+ communities.",
+    "extendedContent": "Tamarac's 55+ communities and established neighborhoods often have plumbing systems that are reaching the end of their lifespan. Our detection services help identify problems before they become emergencies.",
+    "nearbyAreas": ["coral-springs", "lauderhill", "sunrise", "margate", "coconut-creek"]
+  },
+  "coconut-creek": {
+    "name": "Coconut Creek",
+    "slug": "coconut-creek",
+    "county": "Broward County",
+    "state": "FL",
+    "coordinates": { "lat": 26.2517, "lng": -80.1789 },
+    "neighborhoods": ["Coconut Creek Central", "Wynmoor", "Palm Beach Farms"],
+    "zipCodes": ["33063", "33066", "33073", "33097"],
+    "responseTime": "45-60 minutes",
+    "localFactors": {
+      "climate": "Suburban with focus on environmental preservation.",
+      "risks": ["55+ community plumbing systems", "Protected butterfly habitat requirements", "Older construction in established areas", "Irrigation system leaks"],
+      "characteristics": "Butterfly-friendly city with Wynmoor 55+ community, family neighborhoods, and focus on environmental sustainability."
+    },
+    "intro": "Total Leak Detection provides reliable leak detection in Coconut Creek. We serve Wynmoor and family neighborhoods with fast, professional service.",
+    "extendedContent": "Coconut Creek's commitment to environmental protection aligns with our non-invasive detection methods. We locate leaks without disturbing your property or landscaping.",
+    "nearbyAreas": ["pompano-beach", "margate", "coral-springs", "deerfield-beach"]
+  },
+  "margate": {
+    "name": "Margate",
+    "slug": "margate",
+    "county": "Broward County",
+    "state": "FL",
+    "coordinates": { "lat": 26.2445, "lng": -80.2064 },
+    "neighborhoods": ["Margate Central", "Oriole Estates", "Coral Gate"],
+    "zipCodes": ["33063", "33068", "33093"],
+    "responseTime": "45-60 minutes",
+    "localFactors": {
+      "climate": "Suburban with typical South Florida conditions.",
+      "risks": ["1970s-80s construction aging", "Mixed housing conditions", "Commercial property leaks", "Slab foundation issues"],
+      "characteristics": "Family-friendly suburban city with affordable housing, good schools, and diverse neighborhoods."
+    },
+    "intro": "Total Leak Detection serves Margate with affordable, professional leak detection. We help homeowners and businesses protect their properties from water damage.",
+    "extendedContent": "Margate's homes built in the 1970s-80s often have plumbing systems that are now showing their age. Our detection technology identifies problems before they become expensive repairs.",
+    "nearbyAreas": ["coconut-creek", "coral-springs", "tamarac", "pompano-beach"]
+  },
+  "weston": {
+    "name": "Weston",
+    "slug": "weston",
+    "county": "Broward County",
+    "state": "FL",
+    "coordinates": { "lat": 26.1004, "lng": -80.3998 },
+    "neighborhoods": ["Weston Hills", "Savanna", "The Ridges", "Windmill Ranch Estates"],
+    "zipCodes": ["33326", "33327", "33331", "33332"],
+    "responseTime": "45-60 minutes",
+    "localFactors": {
+      "climate": "Western Broward with Everglades proximity creating unique conditions.",
+      "risks": ["1990s-2000s construction challenges", "Golf course community irrigation", "Everglades drainage considerations", "Pool and water feature leaks"],
+      "characteristics": "Upscale planned community known for excellent schools, golf courses, and family-oriented neighborhoods. Mostly built 1990s-2000s."
+    },
+    "intro": "Total Leak Detection serves Weston's upscale communities with professional, discreet leak detection services. We protect your investment with accurate, non-invasive detection.",
+    "extendedContent": "Weston's newer construction means plumbing issues may still be under warranty. We provide detailed detection reports that help with warranty claims and insurance documentation.",
+    "nearbyAreas": ["pembroke-pines", "davie", "southwest-ranches", "miramar"]
+  },
+  "hallandale-beach": {
+    "name": "Hallandale Beach",
+    "slug": "hallandale-beach",
+    "county": "Broward County",
+    "state": "FL",
+    "coordinates": { "lat": 25.9812, "lng": -80.1484 },
+    "neighborhoods": ["Hallandale Beach Central", "Golden Isles", "Three Islands"],
+    "zipCodes": ["33008", "33009"],
+    "responseTime": "30-45 minutes",
+    "localFactors": {
+      "climate": "Coastal with beach exposure and salt air.",
+      "risks": ["High-rise condo complexities", "Beachfront corrosion", "Older building infrastructure", "Casino and entertainment venue needs"],
+      "characteristics": "Beach city on Miami-Dade/Broward border with high-rise condos, Gulfstream Park, and mix of older and newer properties."
+    },
+    "intro": "Total Leak Detection serves Hallandale Beach with expert leak detection for condos and homes. We're experienced with high-rise buildings and beachfront properties.",
+    "extendedContent": "Hallandale Beach's high-rise condos and beachfront location create unique leak detection challenges. Our team coordinates with building management and handles complex multi-unit situations.",
+    "nearbyAreas": ["aventura", "hollywood", "sunny-isles-beach", "golden-beach"]
+  },
+  "cooper-city": {
+    "name": "Cooper City",
+    "slug": "cooper-city",
+    "county": "Broward County",
+    "state": "FL",
+    "coordinates": { "lat": 26.0573, "lng": -80.2719 },
+    "neighborhoods": ["Rock Creek", "Embassy Lakes", "Monterra"],
+    "zipCodes": ["33024", "33026", "33328", "33330"],
+    "responseTime": "40-55 minutes",
+    "localFactors": {
+      "climate": "Suburban with typical South Florida conditions.",
+      "risks": ["1980s-90s construction plumbing", "Pool and irrigation leaks", "Slab foundation issues", "Family home maintenance needs"],
+      "characteristics": "Family-oriented suburban city known for excellent schools, safe neighborhoods, and community feel. Most homes built 1980s-90s."
+    },
+    "intro": "Total Leak Detection serves Cooper City families with reliable, professional leak detection. We understand the plumbing systems in this community and respond quickly.",
+    "extendedContent": "Cooper City's family homes often have plumbing from the 1980s-90s. Our detection services identify slab leaks, pipe leaks, and irrigation issues before they cause major problems.",
+    "nearbyAreas": ["davie", "pembroke-pines", "plantation", "weston"]
+  },
+  "parkland": {
+    "name": "Parkland",
+    "slug": "parkland",
+    "county": "Broward County",
+    "state": "FL",
+    "coordinates": { "lat": 26.3100, "lng": -80.2334 },
+    "neighborhoods": ["Heron Bay", "Parkland Golf & Country Club", "Watercrest"],
+    "zipCodes": ["33067", "33073", "33076"],
+    "responseTime": "50-65 minutes",
+    "localFactors": {
+      "climate": "Suburban with Everglades proximity and environmental considerations.",
+      "risks": ["Newer construction settling", "Golf course irrigation conflicts", "Pool and water feature leaks", "Luxury home complex systems"],
+      "characteristics": "Affluent suburban city with upscale homes, golf courses, and family focus. Newer construction from 1990s-present."
+    },
+    "intro": "Total Leak Detection provides premium leak detection services for Parkland's luxury homes. Our professional team handles complex systems with expert care.",
+    "extendedContent": "Parkland's newer luxury homes feature sophisticated plumbing, pools, and water features. We provide the detailed detection and documentation these properties require.",
+    "nearbyAreas": ["coral-springs", "coconut-creek", "margate", "boca-raton"]
+  },
+  "oakland-park": {
+    "name": "Oakland Park",
+    "slug": "oakland-park",
+    "county": "Broward County",
+    "state": "FL",
+    "coordinates": { "lat": 26.1723, "lng": -80.1319 },
+    "neighborhoods": ["Oakland Park Central", "Coral Heights", "Lake Park"],
+    "zipCodes": ["33306", "33309", "33311", "33334"],
+    "responseTime": "35-50 minutes",
+    "localFactors": {
+      "climate": "Suburban near coast with typical South Florida conditions.",
+      "risks": ["Older home infrastructure", "Mixed-age housing", "Commercial property needs", "Redevelopment area considerations"],
+      "characteristics": "Diverse suburban city experiencing revitalization. Mix of older single-family homes, condos, and commercial properties."
+    },
+    "intro": "Total Leak Detection serves Oakland Park with fast, affordable leak detection. We help homeowners and businesses protect their properties from water damage.",
+    "extendedContent": "Oakland Park's mix of property types and ages requires versatile detection expertise. We handle everything from older homes to newer commercial developments.",
+    "nearbyAreas": ["fort-lauderdale", "wilton-manors", "pompano-beach", "lauderdale-lakes"]
+  }
+}
+

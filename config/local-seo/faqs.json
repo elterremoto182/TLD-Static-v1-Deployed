@@ -1,0 +1,105 @@
+{
+  "leak-detection": [
+    {
+      "question": "How quickly can you respond to a leak detection call in {city}?",
+      "answer": "We typically respond to {city} leak detection calls within {responseTime}. For emergencies, we offer 24/7 service and prioritize urgent situations like active water leaks or flooding."
+    },
+    {
+      "question": "How much does leak detection cost in {city}, FL?",
+      "answer": "We offer free estimates for leak detection in {city}. The cost depends on the complexity of the situation, but our transparent pricing means no hidden fees. We also work with all insurance companies and provide detailed documentation for claims."
+    },
+    {
+      "question": "Will leak detection damage my {city} property?",
+      "answer": "No. Our non-invasive leak detection methods use thermal imaging, acoustic sensors, and moisture meters to locate leaks without cutting, drilling, or damaging your property. We pinpoint leaks precisely so repairs are targeted and minimal."
+    },
+    {
+      "question": "What types of leaks can you detect in {city} homes?",
+      "answer": "We detect all types of water leaks including slab leaks under foundations, pipe leaks behind walls, pool and spa leaks, irrigation system leaks, water heater leaks, and underground pipe leaks throughout {city} and {county}."
+    },
+    {
+      "question": "Do you work with insurance companies for leak detection in {city}?",
+      "answer": "Yes, we work with all insurance companies. Our detailed reports include exact leak locations, photos, and documentation that meets insurance requirements. We can help guide you through the claims process."
+    },
+    {
+      "question": "How do I know if I have a hidden water leak?",
+      "answer": "Common signs include unexplained high water bills, the sound of running water when fixtures are off, wet spots on floors or walls, musty odors, warm spots on floors (for hot water leaks), and low water pressure. If you notice any of these in your {city} home, call us for an inspection."
+    },
+    {
+      "question": "What areas do you serve near {city}?",
+      "answer": "We serve {city} and all surrounding areas in {county}. Our {city} service area includes nearby neighborhoods and communities. We're headquartered in Doral and provide fast response throughout South Florida."
+    },
+    {
+      "question": "Can you detect leaks in older {city} homes?",
+      "answer": "Absolutely. Older homes in {city} often have aging plumbing that's more prone to leaks. Our technology is especially valuable for older properties where pipes may be corroded, galvanized, or made from materials no longer used. We're experienced with the plumbing challenges common in {county}."
+    }
+  ],
+  "mold-testing": [
+    {
+      "question": "How long does mold testing take in {city}?",
+      "answer": "A typical mold inspection in {city} takes 1-2 hours depending on property size. Air sample results from the laboratory are usually available within 2-3 business days, and we provide a comprehensive report with findings and recommendations."
+    },
+    {
+      "question": "What's included in your {city} mold inspection?",
+      "answer": "Our mold testing in {city} includes a thorough visual inspection, air sampling from strategic locations, surface sampling when needed, moisture detection to find hidden water sources, and a detailed report with lab results and remediation recommendations."
+    },
+    {
+      "question": "How much does mold testing cost in {city}, FL?",
+      "answer": "Mold testing costs vary based on property size and the number of samples needed. We offer competitive pricing for {city} and provide free phone consultations to discuss your situation. Contact us for a quote specific to your needs."
+    },
+    {
+      "question": "Do I need mold testing after water damage in {city}?",
+      "answer": "Yes, mold testing is highly recommended after any water damage. Mold can begin growing within 24-48 hours of water exposure. Testing after water events in {city} ensures your property is safe and identifies any hidden mold growth before it becomes a larger problem."
+    },
+    {
+      "question": "What types of mold do you test for?",
+      "answer": "Our laboratory analysis identifies all common mold types including Aspergillus, Penicillium, Cladosporium, Stachybotrys (black mold), and others. The report specifies which molds are present and their spore counts compared to outdoor levels."
+    },
+    {
+      "question": "Can you test for mold in my {city} condo or apartment?",
+      "answer": "Yes, we regularly perform mold testing in {city} condos and apartments. We coordinate with building management and condo associations as needed. Our testing can help identify whether mold is coming from your unit or from building-wide issues."
+    },
+    {
+      "question": "What should I do if mold is found in my {city} home?",
+      "answer": "If testing confirms mold, our report includes specific remediation recommendations. We can refer you to qualified mold remediation companies in {city}. After remediation, we offer post-remediation verification testing to confirm the mold has been properly removed."
+    },
+    {
+      "question": "Is mold common in {city} and {county}?",
+      "answer": "Yes, Florida's humid climate makes mold growth common throughout {county}. {city}'s combination of heat, humidity, and frequent rain creates ideal conditions for mold. Regular inspection is particularly important for older homes and properties with prior water damage."
+    }
+  ],
+  "sewer-camera-inspection": [
+    {
+      "question": "What can you see with a sewer camera inspection in {city}?",
+      "answer": "Our HD sewer cameras show the interior condition of your pipes, including blockages, root intrusion, cracks, corrosion, bellied sections, and collapsed areas. We can inspect sewer lines, drain lines, and other plumbing in {city} homes and businesses."
+    },
+    {
+      "question": "How much does sewer camera inspection cost in {city}, FL?",
+      "answer": "Sewer camera inspection in {city} is very affordable compared to the problems it can prevent. We offer competitive pricing and the inspection includes a complete video recording of your pipes. Contact us for a quote."
+    },
+    {
+      "question": "Should I get a sewer inspection before buying a home in {city}?",
+      "answer": "Absolutely. A sewer camera inspection is essential before purchasing a {city} home. Sewer line repairs can cost thousands of dollars. Our inspection reveals the true condition of the sewer system so you can make an informed decision or negotiate repairs."
+    },
+    {
+      "question": "How long does a sewer camera inspection take?",
+      "answer": "Most sewer camera inspections in {city} take 30-60 minutes. We provide the video recording and our findings immediately. Written reports are available for real estate transactions or insurance purposes."
+    },
+    {
+      "question": "Can you clear blockages you find during inspection?",
+      "answer": "We focus on diagnostic inspection to accurately identify problems. Once we know what's causing issues in your {city} sewer line, we can recommend the appropriate solution—whether it's hydro jetting for blockages, root removal, or pipe repair."
+    },
+    {
+      "question": "My drains are slow—do I need camera inspection?",
+      "answer": "If you're experiencing recurring slow drains in your {city} home, camera inspection can identify the cause. It might be root intrusion, buildup, or a structural problem. Knowing the exact issue ensures the right solution rather than repeated drain cleaning."
+    },
+    {
+      "question": "Do you inspect residential and commercial properties in {city}?",
+      "answer": "Yes, we perform sewer camera inspections for both residential and commercial properties throughout {city} and {county}. We handle everything from single-family homes to apartment complexes, restaurants, and commercial buildings."
+    },
+    {
+      "question": "What happens if you find a problem during inspection?",
+      "answer": "If our inspection reveals issues, we explain the findings using the video footage, provide a detailed report, and discuss your options. We can recommend repair solutions and qualified contractors in {city} to complete the work."
+    }
+  ]
+}
+

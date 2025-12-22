@@ -1,0 +1,254 @@
+{
+  "leak-detection": {
+    "name": "Leak Detection",
+    "slug": "leak-detection",
+    "icon": "Droplet",
+    "metaTitleTemplate": "{service} in {city}, FL | 24/7 Emergency Water Leak Detection",
+    "metaDescTemplate": "Expert {service} services in {city}, {county}. Non-invasive water leak detection for homes and businesses. Fast response, insurance accepted. Call (855) 385-5325!",
+    "h1Template": "{service} Services in {city}, FL",
+    "subheadingTemplate": "Professional Water Leak Detection for {city} Homes & Businesses",
+    "keywords": ["leak detection", "water leak detection", "plumbing leak detection", "pipe leak detection", "slab leak detection", "hidden water leaks", "leak detection services"],
+    "process": [
+      {
+        "step": 1,
+        "title": "Initial Consultation",
+        "description": "Call us 24/7 or schedule online. We'll discuss your concerns, symptoms you've noticed, and schedule a convenient appointment.",
+        "icon": "Phone"
+      },
+      {
+        "step": 2,
+        "title": "Property Assessment",
+        "description": "Our certified technician arrives and conducts a thorough visual inspection, checking water meters, fixtures, and potential problem areas.",
+        "icon": "ClipboardCheck"
+      },
+      {
+        "step": 3,
+        "title": "Advanced Detection",
+        "description": "Using thermal imaging, acoustic sensors, and moisture meters, we locate leaks behind walls, under slabs, and in underground pipes—without damaging your property.",
+        "icon": "Search"
+      },
+      {
+        "step": 4,
+        "title": "Detailed Report",
+        "description": "We provide a comprehensive report with exact leak locations, photos, recommended repairs, and documentation ready for insurance claims.",
+        "icon": "FileText"
+      }
+    ],
+    "problems": ["slab-leak", "pipe-burst", "water-heater-leak", "pool-leak", "underground-leak", "shower-pan-leak", "toilet-leak"],
+    "bodyContent": {
+      "overview": "Water leaks can cause thousands of dollars in damage if left undetected. From hidden pipe leaks behind walls to slab leaks under your foundation, our advanced detection technology finds problems before they become disasters. Total Leak Detection uses non-invasive methods to pinpoint leaks quickly and accurately, saving you money and protecting your property.",
+      "whyImportant": "A small leak can waste thousands of gallons of water and cause extensive structural damage, mold growth, and foundation problems. Early detection is crucial to preventing costly repairs and health hazards.",
+      "technology": [
+        {
+          "name": "Thermal Imaging",
+          "description": "Infrared cameras detect temperature variations caused by moisture, revealing hidden leaks behind walls and under floors."
+        },
+        {
+          "name": "Acoustic Detection",
+          "description": "Sensitive microphones amplify the sound of water escaping from pipes, helping locate leaks in walls and underground."
+        },
+        {
+          "name": "Moisture Meters",
+          "description": "Electronic sensors measure moisture levels in building materials to identify water intrusion without drilling or cutting."
+        },
+        {
+          "name": "Video Pipe Inspection",
+          "description": "Fiber optic cameras inspect the inside of pipes to locate cracks, corrosion, and blockages causing leaks."
+        }
+      ],
+      "commonSigns": [
+        "Unexplained increase in water bills",
+        "Sound of running water when fixtures are off",
+        "Wet spots on floors, walls, or ceilings",
+        "Musty odors or visible mold growth",
+        "Cracks in foundation or walls",
+        "Low water pressure",
+        "Warm spots on floors (hot water line leaks)"
+      ],
+      "whyChooseUs": [
+        "40+ years of combined experience",
+        "24/7 emergency response available",
+        "Non-invasive detection methods",
+        "Insurance-ready documentation",
+        "Licensed & insured (CFC1430460)",
+        "Bilingual technicians available"
+      ]
+    },
+    "hubContent": {
+      "intro": "Total Leak Detection provides professional water leak detection services throughout South Florida. Our expert technicians use advanced, non-invasive technology to locate hidden leaks quickly and accurately—protecting your property from costly water damage.",
+      "serviceAreas": "We serve Miami-Dade and Broward counties, including Miami, Fort Lauderdale, Coral Gables, Pembroke Pines, and over 35 other communities.",
+      "callToAction": "Don't let a hidden leak destroy your property. Call now for fast, professional leak detection service."
+    }
+  },
+  "mold-testing": {
+    "name": "Mold Testing",
+    "slug": "mold-testing",
+    "icon": "Shield",
+    "metaTitleTemplate": "{service} in {city}, FL | Professional Mold Inspection Services",
+    "metaDescTemplate": "Certified {service} services in {city}, {county}. Accurate mold inspection and air quality testing. Detailed reports with remediation recommendations. Call (855) 385-5325!",
+    "h1Template": "{service} Services in {city}, FL",
+    "subheadingTemplate": "Certified Mold Inspection & Air Quality Testing in {city}",
+    "keywords": ["mold testing", "mold inspection", "mold detection", "air quality testing", "mold assessment", "indoor air quality", "mold remediation", "black mold testing"],
+    "process": [
+      {
+        "step": 1,
+        "title": "Schedule Inspection",
+        "description": "Contact us to schedule your mold inspection. We'll discuss your concerns and any visible signs of mold or water damage you've noticed.",
+        "icon": "Calendar"
+      },
+      {
+        "step": 2,
+        "title": "Visual Inspection",
+        "description": "Our certified inspector conducts a thorough examination of your property, checking common mold growth areas and signs of moisture intrusion.",
+        "icon": "Eye"
+      },
+      {
+        "step": 3,
+        "title": "Sample Collection",
+        "description": "We collect air and surface samples from strategic locations throughout your property for laboratory analysis.",
+        "icon": "TestTube"
+      },
+      {
+        "step": 4,
+        "title": "Lab Analysis & Report",
+        "description": "Samples are analyzed by an accredited laboratory. You receive a detailed report with findings, mold types identified, and recommended remediation steps.",
+        "icon": "FileCheck"
+      }
+    ],
+    "problems": ["bathroom-mold", "attic-mold", "water-damage-mold", "hidden-mold", "hvac-mold", "basement-mold"],
+    "bodyContent": {
+      "overview": "Mold can grow undetected in your home or business, causing health problems and property damage. Total Leak Detection provides professional mold testing services to identify mold types, assess contamination levels, and guide effective remediation. Our certified inspectors use accredited laboratory analysis to give you accurate, actionable results.",
+      "whyImportant": "Mold exposure can cause allergic reactions, respiratory problems, and other health issues. Some mold types produce mycotoxins that can be particularly harmful. Professional testing identifies the specific molds present and their concentration levels.",
+      "technology": [
+        {
+          "name": "Air Sampling",
+          "description": "Captures airborne mold spores to assess indoor air quality and compare with outdoor baseline levels."
+        },
+        {
+          "name": "Surface Sampling",
+          "description": "Collects samples from visible growth or suspected areas to identify specific mold species."
+        },
+        {
+          "name": "Moisture Detection",
+          "description": "Identifies hidden moisture sources that promote mold growth using thermal imaging and moisture meters."
+        },
+        {
+          "name": "HVAC Inspection",
+          "description": "Examines air handling systems for mold contamination that can spread spores throughout your property."
+        }
+      ],
+      "commonSigns": [
+        "Visible mold growth on surfaces",
+        "Musty or earthy odors",
+        "Recent water damage or flooding",
+        "Unexplained allergic symptoms",
+        "Condensation on windows or walls",
+        "Discoloration on walls or ceilings",
+        "Respiratory issues that improve when away from property"
+      ],
+      "whyChooseUs": [
+        "Certified mold inspectors",
+        "Accredited laboratory analysis",
+        "Comprehensive written reports",
+        "Remediation recommendations",
+        "Post-remediation verification available",
+        "Fast turnaround on results"
+      ]
+    },
+    "hubContent": {
+      "intro": "Total Leak Detection provides certified mold testing and inspection services throughout South Florida. Our professional inspectors identify mold problems, assess indoor air quality, and provide detailed reports with remediation recommendations.",
+      "serviceAreas": "We serve Miami-Dade and Broward counties with comprehensive mold testing services for homes, condos, apartments, and commercial properties.",
+      "callToAction": "Concerned about mold? Schedule a professional mold inspection today for peace of mind."
+    }
+  },
+  "sewer-camera-inspection": {
+    "name": "Sewer Camera Inspection",
+    "slug": "sewer-camera-inspection",
+    "icon": "Camera",
+    "metaTitleTemplate": "{service} in {city}, FL | HD Video Pipe Inspection Services",
+    "metaDescTemplate": "Professional {service} in {city}, {county}. HD video inspection for sewer lines, drains, and plumbing. Find blockages, cracks, and damage fast. Call (855) 385-5325!",
+    "h1Template": "{service} Services in {city}, FL",
+    "subheadingTemplate": "HD Video Sewer Line & Drain Inspection in {city}",
+    "keywords": ["sewer camera inspection", "video pipe inspection", "drain camera", "sewer line inspection", "plumbing camera", "pipe inspection", "sewer scope"],
+    "process": [
+      {
+        "step": 1,
+        "title": "Access Point Preparation",
+        "description": "We locate the best access point to your sewer or drain system, typically through a cleanout or fixture removal.",
+        "icon": "Wrench"
+      },
+      {
+        "step": 2,
+        "title": "Camera Insertion",
+        "description": "A flexible, waterproof HD camera is carefully inserted into your pipes, transmitting real-time video to our monitor.",
+        "icon": "Camera"
+      },
+      {
+        "step": 3,
+        "title": "Complete Inspection",
+        "description": "We navigate the camera through your entire sewer line, documenting conditions, locating problems, and measuring distances.",
+        "icon": "Search"
+      },
+      {
+        "step": 4,
+        "title": "Video Report",
+        "description": "You receive a complete video recording, detailed findings report, and recommendations for any needed repairs.",
+        "icon": "Video"
+      }
+    ],
+    "problems": ["root-intrusion", "pipe-collapse", "sewer-blockage", "grease-buildup", "pipe-corrosion", "bellied-pipe"],
+    "bodyContent": {
+      "overview": "See inside your pipes without digging or demolition. Total Leak Detection's sewer camera inspection service uses HD video technology to diagnose blockages, locate damage, and assess pipe conditions. Whether you're dealing with slow drains, buying a home, or planning renovations, our camera inspections provide the answers you need.",
+      "whyImportant": "Sewer line problems can be expensive to repair if not caught early. Camera inspection allows us to identify issues like root intrusion, pipe collapse, and corrosion before they cause backups or require emergency repairs. It's also essential for home buyers to assess the condition of sewer lines before purchase.",
+      "technology": [
+        {
+          "name": "HD Video Camera",
+          "description": "High-definition waterproof cameras provide clear images of pipe interiors, capturing every detail."
+        },
+        {
+          "name": "Flexible Push Rod",
+          "description": "Camera travels through pipes of various sizes and navigates bends to inspect entire sewer systems."
+        },
+        {
+          "name": "Distance Counter",
+          "description": "Precise measurement of camera location helps pinpoint exact problem locations for repairs."
+        },
+        {
+          "name": "Recording System",
+          "description": "Complete inspection is recorded for your records, insurance claims, or sharing with contractors."
+        }
+      ],
+      "commonSigns": [
+        "Recurring drain clogs",
+        "Slow draining fixtures",
+        "Sewage odors in home or yard",
+        "Gurgling sounds from drains",
+        "Wet spots in yard near sewer line",
+        "Multiple fixtures backing up simultaneously",
+        "Very old cast iron or clay pipes"
+      ],
+      "whenNeeded": [
+        "Before buying a home",
+        "Recurring sewer backups",
+        "Planning kitchen or bathroom remodel",
+        "Locating lost items in drains",
+        "Verifying repair completion",
+        "Routine maintenance inspection"
+      ],
+      "whyChooseUs": [
+        "HD video quality for clear diagnosis",
+        "Complete video recording provided",
+        "Experienced, certified technicians",
+        "Non-invasive inspection",
+        "Same-day service available",
+        "Detailed written reports"
+      ]
+    },
+    "hubContent": {
+      "intro": "Total Leak Detection provides professional sewer camera inspection services throughout South Florida. Our HD video technology lets us see inside your pipes to diagnose problems accurately—without digging or damaging your property.",
+      "serviceAreas": "We serve homes and businesses throughout Miami-Dade and Broward counties with comprehensive sewer line and drain inspection services.",
+      "callToAction": "Need to see what's happening inside your pipes? Schedule a sewer camera inspection today."
+    }
+  }
+}
+

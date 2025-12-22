@@ -1,7 +1,49 @@
 # Redirects for static site
 # Format: from_path to_path status_code
 
+# Service page redirects
 /services/leak-detection-services/ /services/leak-detection/ 301
 /services/mold-detectionl-and-remediation/ /services/mold-testing/ 301
 /reviews/ /testimonials/ 301
+
+# Local SEO City Page Redirects - Miami-Dade County
+/miami-leak-detection-services/ /leak-detection/miami/ 301
+/doral-leak-detection-expert-water-sewer-leak-detection-services/ /leak-detection/doral/ 301
+/coral-gables-leak-detection-services/ /leak-detection/coral-gables/ 301
+/hialeah-leak-detection-services/ /leak-detection/hialeah/ 301
+/kendall-leak-detection-services/ /leak-detection/kendall/ 301
+/pinecrest-leak-detection-services/ /leak-detection/pinecrest/ 301
+/homestead-leak-detection-services/ /leak-detection/homestead/ 301
+/miami-lakes-leak-detection-services/ /leak-detection/miami-lakes/ 301
+/miami-beach-leak-detection-services/ /leak-detection/miami-beach/ 301
+/south-miami-leak-detection-services/ /leak-detection/south-miami/ 301
+/cutler-bay-leak-detection-services/ /leak-detection/cutler-bay/ 301
+/aventura-leak-detection-services/ /leak-detection/aventura/ 301
+/north-miami-leak-detection-services/ /leak-detection/north-miami/ 301
+/north-miami-beach-leak-detection-services/ /leak-detection/north-miami-beach/ 301
+/key-biscayne-leak-detection-services/ /leak-detection/key-biscayne/ 301
+/palmetto-bay-leak-detection-services/ /leak-detection/palmetto-bay/ 301
+/sweetwater-leak-detection-services/ /leak-detection/sweetwater/ 301
+/sunny-isles-beach-leak-detection-services/ /leak-detection/sunny-isles-beach/ 301
+
+# Local SEO City Page Redirects - Broward County
+/fort-lauderdale-leak-detection-services/ /leak-detection/fort-lauderdale/ 301
+/hollywood-leak-detection-services/ /leak-detection/hollywood/ 301
+/pembroke-pines-leak-detection-services/ /leak-detection/pembroke-pines/ 301
+/coral-springs-leak-detection-services/ /leak-detection/coral-springs/ 301
+/plantation-leak-detection-services/ /leak-detection/plantation/ 301
+/davie-leak-detection-services/ /leak-detection/davie/ 301
+/sunrise-leak-detection-services/ /leak-detection/sunrise/ 301
+/pompano-beach-leak-detection-services/ /leak-detection/pompano-beach/ 301
+/lauderhill-leak-detection-services/ /leak-detection/lauderhill/ 301
+/lauderdale-lakes-leak-detection-services/ /leak-detection/lauderdale-lakes/ 301
+/tamarac-leak-detection-services/ /leak-detection/tamarac/ 301
+/coconut-creek-leak-detection-services/ /leak-detection/coconut-creek/ 301
+/margate-leak-detection-services/ /leak-detection/margate/ 301
+/weston-leak-detection-services/ /leak-detection/weston/ 301
+/hallandale-beach-leak-detection-services/ /leak-detection/hallandale-beach/ 301
+/total-leak-detection-deerfield-beach/ /leak-detection/deerfield-beach/ 301
+
+# Mold testing page redirects
+/mold-testing-in-deerfield-beach-fl/ /mold-testing/deerfield-beach/ 301
 

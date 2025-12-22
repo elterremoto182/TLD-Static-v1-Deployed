@@ -1,0 +1,383 @@
+{
+  "slab-leak": {
+    "name": "Slab Leak Detection",
+    "slug": "slab-leak",
+    "parentService": "leak-detection",
+    "icon": "Layers",
+    "metaTitleTemplate": "Slab Leak Detection in {city}, FL | Under Foundation Leak Repair",
+    "metaDescTemplate": "Expert slab leak detection in {city}, {county}. Find leaks under your foundation fast with non-invasive technology. Prevent costly damage. Call (855) 385-5325!",
+    "h1Template": "Slab Leak Detection in {city}, FL",
+    "keywords": ["slab leak", "under slab leak", "foundation leak", "concrete slab leak", "slab leak detection", "slab leak repair"],
+    "overview": "A slab leak occurs when water pipes running beneath your concrete foundation develop holes, cracks, or breaks. These hidden leaks can cause serious structural damage, foundation issues, and mold growth if not detected and repaired quickly.",
+    "symptoms": [
+      "Unexplained spike in water bills",
+      "Sound of running water when all fixtures are off",
+      "Warm or hot spots on floor",
+      "Cracks in walls or flooring",
+      "Mold or mildew smell",
+      "Wet or damp spots on floor",
+      "Low water pressure",
+      "Foundation shifting or heaving"
+    ],
+    "causes": [
+      "Pipe corrosion from chemical reactions in water or soil",
+      "Poor installation or construction",
+      "Ground shifting from earthquakes or settling",
+      "Abrasion from pipes rubbing against concrete or gravel",
+      "High water pressure stressing pipe joints",
+      "Tree root intrusion near foundation"
+    ],
+    "whyUrgent": "Slab leaks can waste thousands of gallons of water monthly, damage your foundation, cause mold growth, and lead to repairs costing $5,000-$15,000 or more. Early detection saves money and prevents structural damage.",
+    "ourApproach": "We use acoustic listening devices, thermal imaging, and electronic leak detection equipment to locate slab leaks without jackhammering your floor. Once located precisely, repairs can be targeted to minimize damage."
+  },
+  "pipe-burst": {
+    "name": "Burst Pipe Detection",
+    "slug": "pipe-burst",
+    "parentService": "leak-detection",
+    "icon": "Zap",
+    "metaTitleTemplate": "Burst Pipe Detection & Emergency Service in {city}, FL",
+    "metaDescTemplate": "24/7 burst pipe detection in {city}, {county}. Fast emergency response for water pipe breaks. Minimize water damage with immediate service. Call (855) 385-5325!",
+    "h1Template": "Burst Pipe Detection in {city}, FL",
+    "keywords": ["burst pipe", "broken pipe", "pipe break", "water main break", "emergency pipe repair", "burst water line"],
+    "overview": "A burst pipe can release hundreds of gallons of water per hour into your home, causing devastating damage in minutes. Quick detection and response are critical to minimizing water damage and repair costs.",
+    "symptoms": [
+      "Visible water gushing or spraying",
+      "Sudden loss of water pressure",
+      "Water pooling in unexpected areas",
+      "Sounds of rushing water in walls",
+      "Wet drywall or ceilings",
+      "Flooding in yard or basement"
+    ],
+    "causes": [
+      "Freezing temperatures (rare in Florida but possible)",
+      "Corrosion weakening pipe walls",
+      "Excessive water pressure",
+      "Tree root damage to underground pipes",
+      "Age and deterioration of pipe materials",
+      "Physical damage from construction or digging"
+    ],
+    "whyUrgent": "A burst pipe is a plumbing emergency. Water damage compounds rapidly—within 24-48 hours, mold can begin growing. Immediate shutoff and professional response are essential.",
+    "ourApproach": "We provide 24/7 emergency response for burst pipes. Our technicians quickly locate the break, help you minimize damage, and document everything for insurance claims."
+  },
+  "water-heater-leak": {
+    "name": "Water Heater Leak Detection",
+    "slug": "water-heater-leak",
+    "parentService": "leak-detection",
+    "icon": "Flame",
+    "metaTitleTemplate": "Water Heater Leak Detection in {city}, FL | Tank & Tankless",
+    "metaDescTemplate": "Professional water heater leak detection in {city}, {county}. Find leaks in tank and tankless systems fast. Prevent water damage. Call (855) 385-5325!",
+    "h1Template": "Water Heater Leak Detection in {city}, FL",
+    "keywords": ["water heater leak", "hot water heater leak", "water heater leaking", "tankless water heater leak", "water heater repair"],
+    "overview": "Water heater leaks range from minor drips to catastrophic tank failures. Whether you have a traditional tank or tankless system, detecting leaks early prevents water damage, energy waste, and unexpected cold showers.",
+    "symptoms": [
+      "Water pooling around water heater base",
+      "Rust-colored water from hot taps",
+      "Unusual noises from water heater",
+      "Reduced hot water capacity",
+      "Higher energy bills",
+      "Moisture or corrosion on tank exterior",
+      "Hot water running out quickly"
+    ],
+    "causes": [
+      "Tank corrosion from age (10-15 year lifespan)",
+      "Sediment buildup causing overheating",
+      "High water pressure",
+      "Loose or corroded fittings",
+      "Temperature/pressure relief valve failure",
+      "Deteriorated anode rod"
+    ],
+    "whyUrgent": "A failing water heater tank can rupture and release 40-80 gallons of water into your home. Slow leaks cause hidden water damage and mold growth behind and beneath the unit.",
+    "ourApproach": "We inspect water heater connections, tanks, and surrounding areas for signs of leaks and potential failures. Early detection allows for planned replacement rather than emergency response."
+  },
+  "pool-leak": {
+    "name": "Pool Leak Detection",
+    "slug": "pool-leak",
+    "parentService": "leak-detection",
+    "icon": "Waves",
+    "metaTitleTemplate": "Pool Leak Detection in {city}, FL | Swimming Pool & Spa Leaks",
+    "metaDescTemplate": "Expert pool leak detection in {city}, {county}. Find leaks in pools, spas, and equipment fast. Non-invasive testing saves water and money. Call (855) 385-5325!",
+    "h1Template": "Pool Leak Detection in {city}, FL",
+    "keywords": ["pool leak", "swimming pool leak", "pool leak detection", "spa leak", "pool plumbing leak", "pool shell leak"],
+    "overview": "A leaking pool can waste thousands of gallons of water monthly, damage your deck and landscaping, and undermine your pool's structure. Professional leak detection pinpoints problems in the shell, plumbing, or equipment so repairs are targeted and effective.",
+    "symptoms": [
+      "Water level drops more than 1/4 inch per day",
+      "Constantly adding water to pool",
+      "Cracks in pool deck or surrounding areas",
+      "Wet or spongy areas in yard near pool",
+      "Pool equipment running constantly",
+      "Algae growth despite proper chemical treatment",
+      "Air bubbles in return jets"
+    ],
+    "causes": [
+      "Age and deterioration of pool shell",
+      "Ground movement affecting structure",
+      "Plumbing connection failures",
+      "Skimmer or return fitting leaks",
+      "Main drain issues",
+      "Light fixture seal failures",
+      "Equipment pad plumbing leaks"
+    ],
+    "whyUrgent": "Pool leaks waste water and chemicals, damage surrounding structures, and can undermine your pool's integrity. Leak rates of even 1 inch per day mean losing 10,000+ gallons monthly.",
+    "ourApproach": "We use dye testing, pressure testing, and electronic detection to locate leaks in your pool shell, plumbing, and equipment. Precise location means efficient, cost-effective repairs."
+  },
+  "underground-leak": {
+    "name": "Underground Leak Detection",
+    "slug": "underground-leak",
+    "parentService": "leak-detection",
+    "icon": "Mountain",
+    "metaTitleTemplate": "Underground Leak Detection in {city}, FL | Buried Pipe Leaks",
+    "metaDescTemplate": "Expert underground leak detection in {city}, {county}. Locate buried pipe leaks without excavation using advanced technology. Call (855) 385-5325!",
+    "h1Template": "Underground Leak Detection in {city}, FL",
+    "keywords": ["underground leak", "buried pipe leak", "underground water leak", "main line leak", "water main leak", "irrigation leak"],
+    "overview": "Underground water leaks can go undetected for months, wasting water, increasing bills, and causing soil erosion and foundation damage. Our advanced detection technology locates buried pipe leaks without digging up your yard.",
+    "symptoms": [
+      "Unexplained high water bills",
+      "Wet or muddy areas in yard when dry",
+      "Sinkholes or soil erosion",
+      "Low water pressure throughout property",
+      "Sound of running water outdoors",
+      "Lush green patches in otherwise dry lawn",
+      "Water meter spinning when nothing is on"
+    ],
+    "causes": [
+      "Corrosion of older metal pipes",
+      "Tree root intrusion",
+      "Ground shifting and settling",
+      "Frost damage (rare in Florida)",
+      "Poor installation or materials",
+      "Age of piping system"
+    ],
+    "whyUrgent": "Underground leaks can waste thousands of gallons without visible signs. They can also cause foundation damage, soil erosion, and contamination issues.",
+    "ourApproach": "Using acoustic detection, ground-penetrating radar, and tracer gas, we locate underground leaks precisely. This minimizes excavation, reduces repair costs, and protects your landscaping."
+  },
+  "shower-pan-leak": {
+    "name": "Shower Pan Leak Detection",
+    "slug": "shower-pan-leak",
+    "parentService": "leak-detection",
+    "icon": "Droplets",
+    "metaTitleTemplate": "Shower Pan Leak Detection in {city}, FL | Bathroom Leak Experts",
+    "metaDescTemplate": "Professional shower pan leak detection in {city}, {county}. Find hidden bathroom leaks before they cause mold and damage. Call (855) 385-5325!",
+    "h1Template": "Shower Pan Leak Detection in {city}, FL",
+    "keywords": ["shower pan leak", "shower leak", "bathroom leak", "shower base leak", "tile shower leak", "shower drain leak"],
+    "overview": "Shower pan leaks are among the most common sources of hidden water damage in homes. Water escapes through failed waterproofing beneath the tile, soaking into subfloors and walls where it causes rot and mold growth.",
+    "symptoms": [
+      "Stains on ceiling below bathroom",
+      "Soft or spongy floor near shower",
+      "Loose or cracked tiles",
+      "Musty smell in bathroom area",
+      "Peeling paint or wallpaper nearby",
+      "Warped baseboards or door frames",
+      "Mold growth on adjacent walls"
+    ],
+    "causes": [
+      "Deteriorated shower pan liner",
+      "Failed grout or caulk at drain",
+      "Cracked tile allowing water penetration",
+      "Improper original installation",
+      "Age and wear of waterproofing",
+      "Structural movement cracking pan"
+    ],
+    "whyUrgent": "Shower pan leaks cause hidden damage to subfloors, wall framing, and adjacent rooms. Mold growth can begin within 24-48 hours of water exposure.",
+    "ourApproach": "We use flood testing, moisture meters, and thermal imaging to detect shower pan failures. Early detection prevents extensive mold remediation and structural repairs."
+  },
+  "toilet-leak": {
+    "name": "Toilet Leak Detection",
+    "slug": "toilet-leak",
+    "parentService": "leak-detection",
+    "icon": "Droplet",
+    "metaTitleTemplate": "Toilet Leak Detection in {city}, FL | Wax Ring & Tank Leaks",
+    "metaDescTemplate": "Expert toilet leak detection in {city}, {county}. Find hidden toilet leaks, wax ring failures, and tank issues. Prevent floor damage. Call (855) 385-5325!",
+    "h1Template": "Toilet Leak Detection in {city}, FL",
+    "keywords": ["toilet leak", "leaking toilet", "toilet wax ring leak", "running toilet", "toilet tank leak", "toilet base leak"],
+    "overview": "Toilet leaks range from obvious running water to hidden wax ring failures that silently damage your subfloor. Both types waste water and can cause significant damage if not addressed promptly.",
+    "symptoms": [
+      "Toilet runs intermittently",
+      "Water on floor around toilet base",
+      "Rocking or unstable toilet",
+      "Sewer smell from bathroom",
+      "Stains on ceiling below bathroom",
+      "Soft flooring around toilet",
+      "Higher than normal water bills"
+    ],
+    "causes": [
+      "Failed wax ring seal",
+      "Worn flapper valve",
+      "Cracked tank or bowl",
+      "Loose tank bolts",
+      "Fill valve malfunction",
+      "Condensation issues (less common)"
+    ],
+    "whyUrgent": "A running toilet can waste 200+ gallons per day. Wax ring failures allow sewage to leak into subfloors, causing rot, mold, and structural damage.",
+    "ourApproach": "We test toilets for running water, wax ring integrity, and hidden leaks. Our detection methods identify problems before they cause major damage."
+  },
+  "bathroom-mold": {
+    "name": "Bathroom Mold Testing",
+    "slug": "bathroom-mold",
+    "parentService": "mold-testing",
+    "icon": "Bath",
+    "metaTitleTemplate": "Bathroom Mold Testing in {city}, FL | Shower & Tile Mold",
+    "metaDescTemplate": "Professional bathroom mold testing in {city}, {county}. Identify mold in showers, behind tiles, and in walls. Certified inspection. Call (855) 385-5325!",
+    "h1Template": "Bathroom Mold Testing in {city}, FL",
+    "keywords": ["bathroom mold", "shower mold", "tile mold", "bathroom mold testing", "black mold bathroom", "mold behind tiles"],
+    "overview": "Bathrooms are prime locations for mold growth due to constant moisture exposure. From visible mold in grout to hidden colonies behind walls, professional testing identifies mold problems and their source.",
+    "symptoms": [
+      "Visible mold on grout or caulk",
+      "Musty odor in bathroom",
+      "Peeling or bubbling paint",
+      "Dark spots on ceiling",
+      "Allergic symptoms in bathroom",
+      "Soft or damaged drywall"
+    ],
+    "causes": [
+      "Poor ventilation",
+      "Shower or tub leaks",
+      "Plumbing leaks behind walls",
+      "Inadequate exhaust fan use",
+      "Condensation on surfaces",
+      "Toilet wax ring failures"
+    ],
+    "whyUrgent": "Bathroom mold can spread quickly and release spores throughout your home's HVAC system. Some bathroom molds produce mycotoxins that pose health risks.",
+    "ourApproach": "We test air quality, sample visible mold, and use moisture detection to find hidden mold sources in bathrooms. Our reports guide effective remediation."
+  },
+  "water-damage-mold": {
+    "name": "Water Damage Mold Assessment",
+    "slug": "water-damage-mold",
+    "parentService": "mold-testing",
+    "icon": "CloudRain",
+    "metaTitleTemplate": "Water Damage Mold Testing in {city}, FL | Post-Flood Inspection",
+    "metaDescTemplate": "Mold testing after water damage in {city}, {county}. Essential after floods, leaks, or storms. Certified mold assessment and air quality testing. Call (855) 385-5325!",
+    "h1Template": "Water Damage Mold Testing in {city}, FL",
+    "keywords": ["water damage mold", "flood mold", "mold after leak", "post-flood mold", "storm damage mold", "mold inspection after water damage"],
+    "overview": "After any water damage event—flood, leak, or storm—mold can begin growing within 24-48 hours. Professional mold testing after water damage ensures your property is safe and identifies hidden mold growth.",
+    "symptoms": [
+      "Visible mold growth after water event",
+      "Musty odors in affected areas",
+      "Respiratory symptoms returning",
+      "Discoloration on dried surfaces",
+      "Warped or buckled materials"
+    ],
+    "causes": [
+      "Flooding from storms or plumbing failures",
+      "Slow leaks discovered late",
+      "Incomplete drying after water damage",
+      "Hidden moisture in wall cavities",
+      "HVAC contamination during water event"
+    ],
+    "whyUrgent": "Mold can grow on any wet surface within 24-48 hours. Even after materials appear dry, hidden mold may be developing in wall cavities and under flooring.",
+    "ourApproach": "We assess properties after water damage to detect mold growth, test air quality, and verify that remediation efforts are complete. Post-remediation verification confirms your space is safe."
+  },
+  "hidden-mold": {
+    "name": "Hidden Mold Detection",
+    "slug": "hidden-mold",
+    "parentService": "mold-testing",
+    "icon": "Search",
+    "metaTitleTemplate": "Hidden Mold Detection in {city}, FL | Find Mold Behind Walls",
+    "metaDescTemplate": "Expert hidden mold detection in {city}, {county}. Find mold inside walls, under floors, and in HVAC systems. Non-invasive testing. Call (855) 385-5325!",
+    "h1Template": "Hidden Mold Detection in {city}, FL",
+    "keywords": ["hidden mold", "mold behind walls", "mold detection", "mold in walls", "invisible mold", "mold air testing"],
+    "overview": "Not all mold is visible. Hidden mold can grow inside wall cavities, beneath flooring, and in HVAC systems—causing health problems and structural damage while remaining invisible. Professional detection finds these hidden problems.",
+    "symptoms": [
+      "Musty odors without visible source",
+      "Unexplained allergic symptoms at home",
+      "Symptoms improve when away from property",
+      "History of water damage or leaks",
+      "Older building with unknown history"
+    ],
+    "causes": [
+      "Past water damage not fully remediated",
+      "Slow leaks inside walls",
+      "Condensation in wall cavities",
+      "HVAC system moisture problems",
+      "Poor building envelope design"
+    ],
+    "whyUrgent": "Hidden mold releases spores into your indoor air, affecting air quality and health even though you can't see it. It also continues damaging building materials until addressed.",
+    "ourApproach": "We use air sampling, thermal imaging, and moisture detection to locate hidden mold. Our non-invasive methods find problems without damaging your walls."
+  },
+  "root-intrusion": {
+    "name": "Tree Root Intrusion",
+    "slug": "root-intrusion",
+    "parentService": "sewer-camera-inspection",
+    "icon": "TreeDeciduous",
+    "metaTitleTemplate": "Tree Root Intrusion Detection in {city}, FL | Sewer Line Roots",
+    "metaDescTemplate": "Sewer camera inspection for tree root intrusion in {city}, {county}. Find roots blocking your sewer line. HD video diagnosis. Call (855) 385-5325!",
+    "h1Template": "Tree Root Intrusion Detection in {city}, FL",
+    "keywords": ["tree roots in sewer", "root intrusion", "roots in pipes", "sewer root damage", "tree root plumbing", "root removal sewer"],
+    "overview": "Tree roots are attracted to the moisture and nutrients in sewer lines. They can enter through tiny cracks and joints, eventually blocking the entire pipe. Camera inspection locates root intrusion so it can be addressed before causing backups.",
+    "symptoms": [
+      "Slow draining fixtures",
+      "Recurring drain clogs",
+      "Gurgling sounds from drains",
+      "Sewage odors in yard",
+      "Frequent need for drain cleaning",
+      "Large trees near sewer line path"
+    ],
+    "causes": [
+      "Trees planted too close to sewer lines",
+      "Old clay or cast iron pipes with joints",
+      "Cracks in pipe walls",
+      "Improperly sealed connections",
+      "Aggressive root species (willows, maples, poplars)"
+    ],
+    "whyUrgent": "Root intrusion worsens over time. Small root masses can become complete blockages, and root growth can crack and collapse pipes.",
+    "ourApproach": "Our HD camera inspection shows the exact location and severity of root intrusion. We can recommend mechanical removal, chemical treatment, or pipe replacement based on findings."
+  },
+  "pipe-collapse": {
+    "name": "Collapsed Pipe Detection",
+    "slug": "pipe-collapse",
+    "parentService": "sewer-camera-inspection",
+    "icon": "AlertTriangle",
+    "metaTitleTemplate": "Collapsed Sewer Pipe Detection in {city}, FL | Broken Sewer Lines",
+    "metaDescTemplate": "Sewer camera inspection for collapsed pipes in {city}, {county}. Diagnose broken sewer lines with HD video. Accurate location for repairs. Call (855) 385-5325!",
+    "h1Template": "Collapsed Pipe Detection in {city}, FL",
+    "keywords": ["collapsed pipe", "broken sewer line", "pipe collapse", "sewer line collapse", "crushed pipe", "damaged sewer"],
+    "overview": "A collapsed sewer pipe is a serious problem that causes complete drainage failure. Whether from age, ground movement, or root damage, camera inspection locates the collapse precisely so repairs can be targeted and effective.",
+    "symptoms": [
+      "Complete drainage failure",
+      "Sewage backing up into home",
+      "Sinkholes in yard near sewer line",
+      "Foul odors from drains",
+      "Wet areas in yard above sewer line",
+      "Multiple fixtures affected simultaneously"
+    ],
+    "causes": [
+      "Age and deterioration of pipe materials",
+      "Ground settling or shifting",
+      "Heavy vehicle traffic over pipes",
+      "Tree root damage",
+      "Poor installation or materials",
+      "Bellied pipes eventually collapsing"
+    ],
+    "whyUrgent": "Collapsed pipes require repair or replacement. They cannot be cleared with drain cleaning—structural repair is necessary.",
+    "ourApproach": "Camera inspection confirms pipe collapse, shows the extent of damage, and provides precise location information for repair planning. We can distinguish between collapse and other issues."
+  },
+  "sewer-blockage": {
+    "name": "Sewer Blockage Diagnosis",
+    "slug": "sewer-blockage",
+    "parentService": "sewer-camera-inspection",
+    "icon": "Ban",
+    "metaTitleTemplate": "Sewer Blockage Diagnosis in {city}, FL | HD Camera Inspection",
+    "metaDescTemplate": "Find sewer blockages with HD camera inspection in {city}, {county}. Diagnose clogs, buildup, and obstructions accurately. Call (855) 385-5325!",
+    "h1Template": "Sewer Blockage Diagnosis in {city}, FL",
+    "keywords": ["sewer blockage", "clogged sewer", "sewer clog", "drain blockage", "sewer backup", "main line clog"],
+    "overview": "When your sewer line backs up, camera inspection shows exactly what's causing the blockage. Whether it's grease buildup, debris, root intrusion, or structural damage, seeing the problem leads to the right solution.",
+    "symptoms": [
+      "Multiple drains backing up",
+      "Toilet bubbling when other fixtures drain",
+      "Sewage odors from drains",
+      "Slow drainage throughout home",
+      "Water backing up in bathtub",
+      "Gurgling sounds from multiple fixtures"
+    ],
+    "causes": [
+      "Grease and oil buildup",
+      "Foreign objects flushed or dropped",
+      "Tree root intrusion",
+      "Pipe scale and mineral buildup",
+      "Offset joints catching debris",
+      "Bellied pipe sections collecting waste"
+    ],
+    "whyUrgent": "Sewer blockages can cause sewage to back up into your home, creating health hazards and significant cleanup costs.",
+    "ourApproach": "Camera inspection identifies the type, location, and extent of blockages. This ensures the right clearing method is used—whether mechanical snaking, hydro jetting, or repair."
+  }
+}
+

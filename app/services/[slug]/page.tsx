@@ -5,6 +5,7 @@ import { Breadcrumb } from '@/components/ui/breadcrumb';
 import { MarkdownRenderer, processMarkdown } from '@/components/blog/MarkdownRenderer';
 import { YouTubeHydrator } from '@/components/YouTubeHydrator';
 import OptimizedImage from '@/components/OptimizedImage';
+import { FindInYourCity } from '@/components/sections/FindInYourCity';
 import { getPageBySlug, getAllPages } from '@/lib/pages/pages';
 import { generatePageMetadata, generateBreadcrumbs } from '@/lib/utils';
 import {
@@ -217,6 +218,9 @@ export default async function ServicePage({
             <MarkdownRenderer html={html} />
           </YouTubeHydrator>
         </article>
+        
+        {/* Find in Your City Section */}
+        <FindInYourCity serviceSlug={slug} serviceName={page.title} />
       </main>
       <Footer />
     </>

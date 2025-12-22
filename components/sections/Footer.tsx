@@ -37,6 +37,23 @@ const socialIcons: Record<string, React.ReactNode> = {
   ),
 };
 
+// Service hub links
+const serviceLinks = [
+  { href: '/leak-detection/', name: 'Leak Detection' },
+  { href: '/mold-testing/', name: 'Mold Testing' },
+  { href: '/sewer-camera-inspection/', name: 'Sewer Camera Inspection' },
+];
+
+// Popular city links (major metros)
+const popularCityLinks = [
+  { href: '/leak-detection/miami/', name: 'Miami' },
+  { href: '/leak-detection/fort-lauderdale/', name: 'Fort Lauderdale' },
+  { href: '/leak-detection/coral-gables/', name: 'Coral Gables' },
+  { href: '/leak-detection/hollywood/', name: 'Hollywood' },
+  { href: '/leak-detection/pembroke-pines/', name: 'Pembroke Pines' },
+  { href: '/leak-detection/doral/', name: 'Doral' },
+];
+
 export function Footer() {
   const currentYear = new Date().getFullYear();
   const social = siteConfig.social || {};
@@ -44,8 +61,9 @@ export function Footer() {
   return (
     <footer className="bg-gray-900 text-gray-300 py-12">
       <div className="max-w-6xl mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
-          <div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-8">
+          {/* Company Info */}
+          <div className="lg:col-span-2">
             <h3 className="text-white font-bold text-lg mb-4">
               {siteConfig.name}
             </h3>
@@ -53,22 +71,57 @@ export function Footer() {
             <ReviewBadge />
           </div>
 
+          {/* Services */}
           <div>
-            <h4 className="text-white font-semibold mb-4">Quick Links</h4>
+            <h4 className="text-white font-semibold mb-4">Services</h4>
             <ul className="space-y-2">
-              {siteConfig.navigation.slice(0, 4).map((item) => (
-                <li key={item.name}>
+              <li>
+                <Link
+                  href="/services/"
+                  className="text-sm hover:text-white transition-colors duration-200"
+                >
+                  All Services
+                </Link>
+              </li>
+              {serviceLinks.map((link) => (
+                <li key={link.href}>
                   <Link
-                    href={item.href}
+                    href={link.href}
                     className="text-sm hover:text-white transition-colors duration-200"
                   >
-                    {item.name}
+                    {link.name}
                   </Link>
                 </li>
               ))}
             </ul>
           </div>
 
+          {/* Service Areas */}
+          <div>
+            <h4 className="text-white font-semibold mb-4">Service Areas</h4>
+            <ul className="space-y-2">
+              <li>
+                <Link
+                  href="/areas/"
+                  className="text-sm text-primary hover:text-primary/80 font-medium transition-colors duration-200"
+                >
+                  View All Areas →
+                </Link>
+              </li>
+              {popularCityLinks.map((link) => (
+                <li key={link.href}>
+                  <Link
+                    href={link.href}
+                    className="text-sm hover:text-white transition-colors duration-200"
+                  >
+                    {link.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Contact */}
           <div>
             <h4 className="text-white font-semibold mb-4">Contact</h4>
             <ul className="space-y-2 text-sm">
@@ -90,11 +143,9 @@ export function Footer() {
               </li>
               <li className="text-sm">{siteConfig.address}</li>
             </ul>
-          </div>
-
-          <div>
-            <h4 className="text-white font-semibold mb-4">Follow Us</h4>
-            <div className="flex flex-wrap gap-4">
+            
+            {/* Social Icons */}
+            <div className="flex flex-wrap gap-4 mt-4">
               {Object.entries(social).map(
                 ([platform, url]) =>
                   url &&
