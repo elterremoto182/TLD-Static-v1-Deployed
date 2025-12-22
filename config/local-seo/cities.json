@@ -682,6 +682,24 @@
     "intro": "Total Leak Detection serves Oakland Park with fast, affordable leak detection. We help homeowners and businesses protect their properties from water damage.",
     "extendedContent": "Oakland Park's mix of property types and ages requires versatile detection expertise. We handle everything from older homes to newer commercial developments.",
     "nearbyAreas": ["fort-lauderdale", "wilton-manors", "pompano-beach", "lauderdale-lakes"]
+  },
+  "boca-raton": {
+    "name": "Boca Raton",
+    "slug": "boca-raton",
+    "county": "Palm Beach County",
+    "state": "FL",
+    "coordinates": { "lat": 26.3587, "lng": -80.0831 },
+    "neighborhoods": ["Boca Del Mar", "Boca West", "Town Center", "Spanish River", "Mizner Park", "Royal Palm Yacht & Country Club", "The Sanctuary", "Broken Sound", "Woodfield Country Club", "St. Andrews Country Club"],
+    "zipCodes": ["33427", "33428", "33429", "33431", "33432", "33433", "33434", "33486", "33487", "33496", "33498"],
+    "responseTime": "50-65 minutes",
+    "localFactors": {
+      "climate": "Coastal subtropical with ocean breezes and high humidity year-round.",
+      "risks": ["Luxury home complex plumbing systems", "Salt air corrosion near beach", "Golf course community irrigation conflicts", "Pool and water feature leaks", "Hurricane flooding in low-lying areas"],
+      "characteristics": "Affluent coastal city known for resort-style living, world-class golf courses, and prestigious country clubs. Mix of luxury estates, waterfront condos, and upscale planned communities."
+    },
+    "intro": "Total Leak Detection provides premium leak detection services for Boca Raton's luxury homes and estates. From Mizner Park to Boca West, we understand the unique plumbing challenges of South Florida's most prestigious properties.",
+    "extendedContent": "Boca Raton's luxury homes feature sophisticated plumbing systems, pools, spas, and elaborate water features. Our non-invasive detection technology is ideal for protecting high-value properties and beautiful landscaping while accurately locating hidden leaks.",
+    "nearbyAreas": ["deerfield-beach", "parkland", "delray-beach", "coral-springs"]
   }
 }
 
