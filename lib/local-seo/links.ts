@@ -118,54 +118,55 @@ export function getRelatedBlogLinks(
 ): InternalLink[] {
   // This would typically query the blog system for related posts
   // For now, return some static relevant blog links
+  // Note: Blog posts are served at root level (e.g., /slug/) not under /blog/
   const blogLinks: Record<string, InternalLink[]> = {
     'leak-detection': [
       {
-        href: '/blog/the-importance-of-professional-leak-detection-in-preventing-water-damage/',
+        href: '/the-importance-of-professional-leak-detection-in-preventing-water-damage/',
         label: 'The Importance of Professional Leak Detection',
         description: 'Learn why early detection saves thousands in repair costs.',
       },
       {
-        href: '/blog/advanced-techniques-for-detecting-and-repairing-leaks-beneath-concrete-foundations/',
+        href: '/advanced-techniques-for-detecting-and-repairing-leaks-beneath-concrete-foundations/',
         label: 'Detecting Leaks Under Concrete Foundations',
         description: 'Advanced techniques for slab leak detection.',
       },
       {
-        href: '/blog/how-to-check-shower-pan-leaks/',
+        href: '/how-to-check-shower-pan-leaks/',
         label: 'How to Check for Shower Pan Leaks',
         description: 'DIY tips and when to call professionals.',
       },
     ],
     'mold-testing': [
       {
-        href: '/blog/how-mold-inspection-can-improve-your-indoor-air-quality/',
+        href: '/how-mold-inspection-can-improve-your-indoor-air-quality/',
         label: 'How Mold Inspection Improves Indoor Air Quality',
         description: 'The connection between mold testing and healthy air.',
       },
       {
-        href: '/blog/what-is-a-post-remediation-verification/',
+        href: '/what-is-a-post-remediation-verification/',
         label: 'What is Post-Remediation Verification?',
         description: 'Ensuring mold removal was successful.',
       },
       {
-        href: '/blog/7-simple-steps-to-do-a-mold-test/',
+        href: '/7-simple-steps-to-do-a-mold-test/',
         label: '7 Simple Steps to Do a Mold Test',
         description: 'Understanding the mold testing process.',
       },
     ],
     'sewer-camera-inspection': [
       {
-        href: '/blog/the-benefits-of-sewer-camera-inspections-for-miami-homeowners/',
+        href: '/the-benefits-of-sewer-camera-inspections-for-miami-homeowners/',
         label: 'Benefits of Sewer Camera Inspections',
         description: 'Why camera inspection is essential for homeowners.',
       },
       {
-        href: '/blog/how-much-does-a-sewer-line-camera-inspection-cost/',
+        href: '/how-much-does-a-sewer-line-camera-inspection-cost/',
         label: 'Sewer Camera Inspection Cost Guide',
         description: 'What to expect for pricing and value.',
       },
       {
-        href: '/blog/what-to-expect-during-a-sewer-camera-inspection-in-miami-fl/',
+        href: '/what-to-expect-during-a-sewer-camera-inspection-in-miami-fl/',
         label: 'What to Expect During Sewer Camera Inspection',
         description: 'A walkthrough of the inspection process.',
       },

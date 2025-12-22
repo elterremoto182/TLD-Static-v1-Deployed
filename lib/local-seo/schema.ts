@@ -12,6 +12,11 @@ export interface BreadcrumbItem {
  * Generate LocalBusiness schema with city-specific information
  */
 export function generateLocalBusinessSchema(city: City, service?: Service) {
+  // Parse the address to extract just the street portion
+  // Address format: "7790 NW 55th St, Doral, FL 33166"
+  const fullAddress = siteConfig.address || '7790 NW 55th St, Doral, FL 33166';
+  const streetAddress = fullAddress.split(',')[0]?.trim() || '7790 NW 55th St';
+  
   return {
     '@context': 'https://schema.org',
     '@type': 'LocalBusiness',
@@ -26,7 +31,7 @@ export function generateLocalBusinessSchema(city: City, service?: Service) {
       : `Professional leak detection and plumbing services in ${city.name}, ${city.county}, Florida.`,
     address: {
       '@type': 'PostalAddress',
-      streetAddress: siteConfig.address,
+      streetAddress: streetAddress,
       addressLocality: 'Doral',
       addressRegion: 'FL',
       postalCode: '33166',

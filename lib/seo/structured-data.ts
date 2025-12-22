@@ -7,6 +7,11 @@ export interface BreadcrumbItem {
   href: string;
 }
 
+// Parse the address to extract just the street portion
+// Address format: "7790 NW 55th St, Doral, FL 33166"
+const fullAddress = siteConfig.address || '7790 NW 55th St, Doral, FL 33166';
+const streetAddress = fullAddress.split(',')[0]?.trim() || '7790 NW 55th St';
+
 /**
  * Generate Organization structured data
  */
@@ -25,7 +30,7 @@ export function generateOrganizationSchema() {
     description: siteConfig.description,
     address: {
       '@type': 'PostalAddress',
-      streetAddress: siteConfig.address,
+      streetAddress: streetAddress,
       addressLocality: 'Doral',
       addressRegion: 'FL',
       postalCode: '33166',
@@ -92,7 +97,7 @@ export function generateLocalBusinessSchema() {
     description: siteConfig.description,
     address: {
       '@type': 'PostalAddress',
-      streetAddress: siteConfig.address,
+      streetAddress: streetAddress,
       addressLocality: 'Doral',
       addressRegion: 'FL',
       postalCode: '33166',
@@ -211,7 +216,7 @@ export function generateServiceSchema({
       '@id': `${baseUrl}#organization`,
       address: {
         '@type': 'PostalAddress',
-        streetAddress: siteConfig.address,
+        streetAddress: streetAddress,
         addressLocality: 'Doral',
         addressRegion: 'FL',
         postalCode: '33166',
