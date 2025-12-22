@@ -73,6 +73,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'yearly' as const,
       priority: 0.3,
     },
+    {
+      url: ensureTrailingSlash(`${baseUrl}/problems`, baseUrl),
+      lastModified: new Date(),
+      changeFrequency: 'weekly' as const,
+      priority: 0.9,
+    },
   ];
 
   // Service pages (from markdown)
