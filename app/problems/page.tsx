@@ -55,7 +55,7 @@ export default function ProblemsPage() {
     { label: 'Problems', href: '/problems/' },
   ];
 
-  const breadcrumbSchema = generateBreadcrumbSchema(breadcrumbs);
+  const breadcrumbSchema = generateBreadcrumbSchema(breadcrumbs, canonicalUrl);
   const webPageSchema = generateWebPageSchema({
     title: 'Common Plumbing Problems | Expert Detection & Solutions',
     description:

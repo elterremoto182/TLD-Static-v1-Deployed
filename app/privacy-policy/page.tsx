@@ -46,7 +46,7 @@ export default async function PrivacyPolicyPage() {
     url: `${baseUrl}/privacy-policy/`,
     breadcrumbs,
   });
-  const breadcrumbSchema = generateBreadcrumbListSchema(breadcrumbs);
+  const breadcrumbSchema = generateBreadcrumbListSchema(breadcrumbs, `${baseUrl}/privacy-policy/`);
   const html = await processMarkdown(page.content);
 
   return (

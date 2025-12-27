@@ -126,7 +126,7 @@ export default async function ProblemCityPage({
   const nearbyCities = getNearbyCities(citySlug, 6);
   
   // Generate schemas
-  const breadcrumbSchema = generateBreadcrumbSchema(breadcrumbs);
+  const breadcrumbSchema = generateBreadcrumbSchema(breadcrumbs, canonicalUrl);
   const localBusinessSchema = generateLocalBusinessSchema(city);
   const webPageSchema = generateWebPageSchema({
     title: h1,

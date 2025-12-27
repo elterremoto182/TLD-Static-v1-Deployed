@@ -326,7 +326,7 @@
     "slug": "pipe-collapse",
     "parentService": "sewer-camera-inspection",
     "icon": "AlertTriangle",
-    "metaTitleTemplate": "Collapsed Sewer Pipe Detection in {city}, FL | Broken Sewer Lines",
+    "metaTitleTemplate": "Collapsed Pipe Detection in {city}, FL | Sewer Repair",
     "metaDescTemplate": "Sewer camera inspection for collapsed pipes in {city}, {county}. Diagnose broken sewer lines with HD video. Accurate location for repairs. Call (855) 385-5325!",
     "h1Template": "Collapsed Pipe Detection in {city}, FL",
     "keywords": ["collapsed pipe", "broken sewer line", "pipe collapse", "sewer line collapse", "crushed pipe", "damaged sewer"],

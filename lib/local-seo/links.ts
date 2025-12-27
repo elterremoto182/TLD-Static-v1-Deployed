@@ -136,6 +136,11 @@ export function getRelatedBlogLinks(
         label: 'How to Check for Shower Pan Leaks',
         description: 'DIY tips and when to call professionals.',
       },
+      {
+        href: '/10-effective-ways-to-boost-water-pressure-in-your-shower-quick-fixes-and-long-term-solutions/',
+        label: 'Boost Water Pressure in Your Shower',
+        description: 'Quick fixes and long-term solutions for better water flow.',
+      },
     ],
     'mold-testing': [
       {
@@ -170,10 +175,142 @@ export function getRelatedBlogLinks(
         label: 'What to Expect During Sewer Camera Inspection',
         description: 'A walkthrough of the inspection process.',
       },
+      {
+        href: '/the-importance-of-sewer-camera-inspections-in-miami-prevent-costly-repairs/',
+        label: 'Prevent Costly Repairs with Sewer Camera Inspections',
+        description: 'How regular inspections save money on repairs.',
+      },
+      {
+        href: '/choosing-the-perfect-pipe-size-for-your-main-sewer-line-types-repairs-and-expert-tips/',
+        label: 'Main Sewer Line Pipe Size Guide',
+        description: 'Types, repairs, and expert tips for sewer line pipes.',
+      },
+      {
+        href: '/the-ultimate-guide-to-effective-drain-cleaners-what-really-works/',
+        label: 'The Ultimate Guide to Drain Cleaners',
+        description: 'What really works for clearing stubborn clogs.',
+      },
+      {
+        href: '/why-your-toilet-bubbles-when-your-washing-machine-drains-causes-and-solutions/',
+        label: 'Why Your Toilet Bubbles When Washer Drains',
+        description: 'Causes and solutions for drain venting issues.',
+      },
+      {
+        href: '/expert-tips-to-prevent-and-fix-clogged-kitchen-sinks/',
+        label: 'Prevent and Fix Clogged Kitchen Sinks',
+        description: 'Expert tips for kitchen drain maintenance.',
+      },
     ],
   };
   
   return (blogLinks[serviceSlug] || []).slice(0, limit);
+}
+
+/**
+ * Get all blog posts for internal linking purposes
+ */
+export function getAllBlogPostLinks(): InternalLink[] {
+  return [
+    // Leak Detection Articles
+    {
+      href: '/the-importance-of-professional-leak-detection-in-preventing-water-damage/',
+      label: 'Professional Leak Detection for Water Damage Prevention',
+      description: 'Learn why early detection saves thousands in repair costs.',
+    },
+    {
+      href: '/advanced-techniques-for-detecting-and-repairing-leaks-beneath-concrete-foundations/',
+      label: 'Detecting Leaks Under Concrete Foundations',
+      description: 'Advanced techniques for slab leak detection.',
+    },
+    {
+      href: '/how-to-check-shower-pan-leaks/',
+      label: 'How to Check for Shower Pan Leaks',
+      description: 'DIY tips and when to call professionals.',
+    },
+    {
+      href: '/10-effective-ways-to-boost-water-pressure-in-your-shower-quick-fixes-and-long-term-solutions/',
+      label: 'Boost Water Pressure in Your Shower',
+      description: 'Quick fixes and long-term solutions for better water flow.',
+    },
+    {
+      href: '/how-to-identify-and-fix-common-toilet-leaks-a-comprehensive-guide/',
+      label: 'How to Identify and Fix Common Toilet Leaks',
+      description: 'A comprehensive guide to toilet leak repair.',
+    },
+    {
+      href: '/effective-solutions-for-low-water-pressure-in-your-home/',
+      label: 'Solutions for Low Water Pressure',
+      description: 'Effective fixes for water pressure issues at home.',
+    },
+    {
+      href: '/eliminating-air-pockets-effective-solutions-for-air-in-water-pipes/',
+      label: 'Eliminating Air in Water Pipes',
+      description: 'Solutions for air pockets causing plumbing problems.',
+    },
+    // Mold Testing Articles
+    {
+      href: '/how-mold-inspection-can-improve-your-indoor-air-quality/',
+      label: 'Mold Inspection and Indoor Air Quality',
+      description: 'The connection between mold testing and healthy air.',
+    },
+    {
+      href: '/what-is-a-post-remediation-verification/',
+      label: 'Post-Remediation Verification Explained',
+      description: 'Ensuring mold removal was successful.',
+    },
+    {
+      href: '/7-simple-steps-to-do-a-mold-test/',
+      label: '7 Simple Steps to Do a Mold Test',
+      description: 'Understanding the mold testing process.',
+    },
+    // Sewer Inspection Articles  
+    {
+      href: '/the-benefits-of-sewer-camera-inspections-for-miami-homeowners/',
+      label: 'Benefits of Sewer Camera Inspections',
+      description: 'Why camera inspection is essential for homeowners.',
+    },
+    {
+      href: '/how-much-does-a-sewer-line-camera-inspection-cost/',
+      label: 'Sewer Camera Inspection Cost Guide',
+      description: 'What to expect for pricing and value.',
+    },
+    {
+      href: '/what-to-expect-during-a-sewer-camera-inspection-in-miami-fl/',
+      label: 'What to Expect During Sewer Camera Inspection',
+      description: 'A walkthrough of the inspection process.',
+    },
+    {
+      href: '/the-importance-of-sewer-camera-inspections-in-miami-prevent-costly-repairs/',
+      label: 'Prevent Costly Repairs with Sewer Inspections',
+      description: 'How regular inspections save money on repairs.',
+    },
+    {
+      href: '/choosing-the-perfect-pipe-size-for-your-main-sewer-line-types-repairs-and-expert-tips/',
+      label: 'Main Sewer Line Pipe Size Guide',
+      description: 'Types, repairs, and expert tips for sewer line pipes.',
+    },
+    {
+      href: '/essential-tips-for-maintaining-your-sewer-line-what-homeowners-must-know/',
+      label: 'Essential Sewer Line Maintenance Tips',
+      description: 'What homeowners must know about sewer maintenance.',
+    },
+    // Drain Cleaning Articles
+    {
+      href: '/the-ultimate-guide-to-effective-drain-cleaners-what-really-works/',
+      label: 'The Ultimate Guide to Drain Cleaners',
+      description: 'What really works for clearing stubborn clogs.',
+    },
+    {
+      href: '/why-your-toilet-bubbles-when-your-washing-machine-drains-causes-and-solutions/',
+      label: 'Why Your Toilet Bubbles When Washer Drains',
+      description: 'Causes and solutions for drain venting issues.',
+    },
+    {
+      href: '/expert-tips-to-prevent-and-fix-clogged-kitchen-sinks/',
+      label: 'Prevent and Fix Clogged Kitchen Sinks',
+      description: 'Expert tips for kitchen drain maintenance.',
+    },
+  ];
 }
 
 /**

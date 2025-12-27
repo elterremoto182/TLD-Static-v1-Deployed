@@ -36,7 +36,8 @@ export default function AreasPage() {
   const breadcrumbs = generateBreadcrumbs('/areas', 'Service Areas');
   
   const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://totalleakdetection.com';
-  const breadcrumbSchema = generateBreadcrumbSchema(breadcrumbs);
+  const pageUrl = `${baseUrl}/areas/`;
+  const breadcrumbSchema = generateBreadcrumbSchema(breadcrumbs, pageUrl);
   const webPageSchema = generateWebPageSchema({
     title: 'Service Areas | Total Leak Detection',
     description: 'Professional leak detection services throughout South Florida',

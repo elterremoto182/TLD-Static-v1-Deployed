@@ -103,7 +103,7 @@ export default function ContactPage() {
     url: `${baseUrl}/contact/`,
     breadcrumbs,
   });
-  const breadcrumbSchema = generateBreadcrumbListSchema(breadcrumbs);
+  const breadcrumbSchema = generateBreadcrumbListSchema(breadcrumbs, `${baseUrl}/contact/`);
 
   return (
     <>

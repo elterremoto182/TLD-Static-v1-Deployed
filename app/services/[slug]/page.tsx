@@ -135,7 +135,7 @@ export default async function ServicePage({
     areaServed: 'Miami',
   });
   
-  const breadcrumbSchema = generateBreadcrumbListSchema(breadcrumbs);
+  const breadcrumbSchema = generateBreadcrumbListSchema(breadcrumbs, pageUrl);
   const webPageSchema = generateWebPageSchema({
     title: page.title,
     description: page.seo_description || page.title,

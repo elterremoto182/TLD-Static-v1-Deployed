@@ -122,10 +122,21 @@ export function generateLocalBusinessSchema() {
 /**
  * Generate BreadcrumbList structured data
  */
-export function generateBreadcrumbListSchema(items: BreadcrumbItem[]) {
+export function generateBreadcrumbListSchema(items: BreadcrumbItem[], pageUrl?: string) {
+  // Determine the page URL for @id - use provided pageUrl or derive from last breadcrumb item
+  let breadcrumbId: string;
+  if (pageUrl) {
+    breadcrumbId = `${pageUrl}#BreadcrumbList`;
+  } else {
+    const lastItem = items[items.length - 1];
+    const url = lastItem ? `${baseUrl}${lastItem.href}` : baseUrl;
+    breadcrumbId = `${url}#BreadcrumbList`;
+  }
+
   return {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
+    '@id': breadcrumbId,
     itemListElement: items.map((item, index) => ({
       '@type': 'ListItem',
       position: index + 1,
@@ -259,7 +270,7 @@ export function generateWebPageSchema({
   };
 
   if (breadcrumbs && breadcrumbs.length > 0) {
-    schema.breadcrumb = generateBreadcrumbListSchema(breadcrumbs);
+    schema.breadcrumb = generateBreadcrumbListSchema(breadcrumbs, url);
   }
 
   return schema;
@@ -291,7 +302,7 @@ export function generateCollectionPageSchema({
       url: baseUrl,
     },
     breadcrumb: breadcrumbs && breadcrumbs.length > 0
-      ? generateBreadcrumbListSchema(breadcrumbs)
+      ? generateBreadcrumbListSchema(breadcrumbs, url)
       : undefined,
   };
 }

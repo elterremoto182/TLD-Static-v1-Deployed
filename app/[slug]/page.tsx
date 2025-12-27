@@ -7,7 +7,8 @@ import { MarkdownRenderer, processMarkdown } from '@/components/blog/MarkdownRen
 import { YouTubeHydrator } from '@/components/YouTubeHydrator';
 import OptimizedImage from '@/components/OptimizedImage';
 import { getPageBySlug, getAllPages } from '@/lib/pages/pages';
-import { getPostBySlug, getAllPosts } from '@/lib/blog/posts';
+import { getPostBySlug, getAllPosts, BlogPost } from '@/lib/blog/posts';
+import { RelatedPosts } from '@/components/blog/RelatedPosts';
 import { Calendar, User, Phone, MapPin, Shield } from 'lucide-react';
 import { generatePageMetadata, generateBreadcrumbs } from '@/lib/utils';
 import {
@@ -207,8 +208,30 @@ export default async function DynamicPage({
       url: postUrl,
       content: post.content,
     });
-    const breadcrumbSchema = generateBreadcrumbListSchema(breadcrumbs);
+    const breadcrumbSchema = generateBreadcrumbListSchema(breadcrumbs, postUrl);
     const html = await processMarkdown(post.content);
+    
+    // Get all posts for related posts section
+    const allPosts = getAllPosts();
+    // Get related posts - prioritize same category, then other posts
+    const relatedPosts = allPosts
+      .filter((p: BlogPost) => p.slug !== post.slug)
+      .sort((a: BlogPost, b: BlogPost) => {
+        // Prioritize posts in the same category
+        if (post.category) {
+          if (a.category === post.category && b.category !== post.category) return -1;
+          if (b.category === post.category && a.category !== post.category) return 1;
+        }
+        // Then sort by date
+        return new Date(b.date).getTime() - new Date(a.date).getTime();
+      })
+      .slice(0, 4)
+      .map((p: BlogPost) => ({
+        slug: p.slug,
+        title: p.title,
+        excerpt: p.excerpt,
+        category: p.category,
+      }));
 
     return (
       <>
@@ -277,6 +300,9 @@ export default async function DynamicPage({
               </YouTubeHydrator>
             </div>
           </article>
+          
+          {/* Related Posts Section */}
+          <RelatedPosts posts={relatedPosts} currentSlug={post.slug} />
         </main>
         <Footer />
       </>
@@ -313,7 +339,7 @@ export default async function DynamicPage({
     });
   }
   
-  const breadcrumbSchema = generateBreadcrumbListSchema(breadcrumbs);
+  const breadcrumbSchema = generateBreadcrumbListSchema(breadcrumbs, pageUrl);
   const heroImage = isLocationPage ? getServiceAreaImage(slug, page.image) : null;
   const cityName = isLocationPage ? extractCityName(slug) : '';
   const html = await processMarkdown(page.content);

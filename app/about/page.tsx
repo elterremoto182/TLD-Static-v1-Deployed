@@ -48,7 +48,7 @@ export default async function AboutPage() {
     url: `${baseUrl}/about/`,
     breadcrumbs,
   });
-  const breadcrumbSchema = generateBreadcrumbListSchema(breadcrumbs);
+  const breadcrumbSchema = generateBreadcrumbListSchema(breadcrumbs, `${baseUrl}/about/`);
   const html = await processMarkdown(page.content);
   
   // Use a service image for the hero

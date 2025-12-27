@@ -46,7 +46,7 @@ export default function SewerCameraInspectionHubPage() {
   const breadcrumbs = generateServiceHubBreadcrumbs(service);
   const canonicalUrl = getServiceHubCanonicalUrl(SERVICE_SLUG);
   
-  const breadcrumbSchema = generateBreadcrumbSchema(breadcrumbs);
+  const breadcrumbSchema = generateBreadcrumbSchema(breadcrumbs, canonicalUrl);
   const webPageSchema = generateWebPageSchema({
     title: `${service.name} Services in Florida`,
     description: service.hubContent.intro,

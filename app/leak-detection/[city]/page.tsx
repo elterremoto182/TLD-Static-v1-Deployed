@@ -104,7 +104,8 @@ export default async function LeakDetectionCityPage({
   const problemLinks = getProblemLinksForService(SERVICE_SLUG, citySlug);
   const blogLinks = getRelatedBlogLinks(SERVICE_SLUG, citySlug, 3);
   
-  const breadcrumbSchema = generateBreadcrumbSchema(breadcrumbs);
+  const canonicalUrl = getCityServiceCanonicalUrl(SERVICE_SLUG, citySlug);
+  const breadcrumbSchema = generateBreadcrumbSchema(breadcrumbs, canonicalUrl);
   const localBusinessSchema = generateLocalBusinessSchema(city, service);
   const serviceSchema = generateLocalServiceSchema(service, city);
   const howToSchema = generateHowToSchema(service, city);

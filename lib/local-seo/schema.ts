@@ -160,10 +160,21 @@ export function generateHowToSchema(service: Service, city: City) {
 /**
  * Generate BreadcrumbList schema
  */
-export function generateBreadcrumbSchema(items: BreadcrumbItem[]) {
+export function generateBreadcrumbSchema(items: BreadcrumbItem[], pageUrl?: string) {
+  // Determine the page URL for @id - use provided pageUrl or derive from last breadcrumb item
+  let breadcrumbId: string;
+  if (pageUrl) {
+    breadcrumbId = `${pageUrl}#BreadcrumbList`;
+  } else {
+    const lastItem = items[items.length - 1];
+    const url = lastItem ? `${baseUrl}${lastItem.href}` : baseUrl;
+    breadcrumbId = `${url}#BreadcrumbList`;
+  }
+
   return {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
+    '@id': breadcrumbId,
     itemListElement: items.map((item, index) => ({
       '@type': 'ListItem',
       position: index + 1,
@@ -196,7 +207,7 @@ export function generateWebPageSchema(options: {
   };
 
   if (options.breadcrumbs && options.breadcrumbs.length > 0) {
-    schema.breadcrumb = generateBreadcrumbSchema(options.breadcrumbs);
+    schema.breadcrumb = generateBreadcrumbSchema(options.breadcrumbs, options.url);
   }
 
   return schema;

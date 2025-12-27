@@ -113,7 +113,7 @@ export default async function ProblemHubPage({
   const canonicalUrl = `${baseUrl}/problems/${problemSlug}/`;
   
   // Generate schemas
-  const breadcrumbSchema = generateBreadcrumbSchema(breadcrumbs);
+  const breadcrumbSchema = generateBreadcrumbSchema(breadcrumbs, canonicalUrl);
   const webPageSchema = generateWebPageSchema({
     title: `${problem.name} | Expert Detection & Solutions`,
     description: problem.overview,
@@ -278,35 +278,79 @@ export default async function ProblemHubPage({
               </div>
             </AnimateOnScroll>
             
-            {/* Simplified city links for problem pages */}
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3">
-              {cities.slice(0, 20).map((city, index) => (
-                <AnimateOnScroll
-                  key={city.slug}
-                  animation="fade-in-up"
-                  duration={600}
-                  delay={index * 20}
-                >
-                  <Link
-                    href={`/problems/${problemSlug}/${city.slug}/`}
-                    className="group flex items-center gap-2 p-3 bg-gray-50 hover:bg-primary/5 rounded-lg border border-gray-100 hover:border-primary/20 transition-all duration-200"
-                  >
-                    <MapPin className="w-4 h-4 text-primary flex-shrink-0" />
-                    <span className="font-medium text-gray-800 group-hover:text-primary transition-colors truncate text-sm">
-                      {city.name}
-                    </span>
-                  </Link>
-                </AnimateOnScroll>
-              ))}
-            </div>
-            
-            {cities.length > 20 && (
-              <div className="text-center mt-8">
-                <p className="text-gray-600">
-                  And {cities.length - 20} more cities throughout South Florida
-                </p>
+            {/* All city links for problem pages - grouped by county */}
+            <div className="space-y-8">
+              {/* Miami-Dade County */}
+              <div>
+                <h3 className="text-lg font-semibold text-gray-800 mb-4 flex items-center gap-2">
+                  <MapPin className="w-5 h-5 text-primary" />
+                  Miami-Dade County
+                </h3>
+                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3">
+                  {cities
+                    .filter(city => city.county === 'Miami-Dade County')
+                    .map((city) => (
+                      <Link
+                        key={city.slug}
+                        href={`/problems/${problemSlug}/${city.slug}/`}
+                        className="group flex items-center gap-2 p-3 bg-gray-50 hover:bg-primary/5 rounded-lg border border-gray-100 hover:border-primary/20 transition-all duration-200"
+                      >
+                        <span className="font-medium text-gray-800 group-hover:text-primary transition-colors truncate text-sm">
+                          {city.name}
+                        </span>
+                      </Link>
+                    ))}
+                </div>
               </div>
-            )}
+              
+              {/* Broward County */}
+              <div>
+                <h3 className="text-lg font-semibold text-gray-800 mb-4 flex items-center gap-2">
+                  <MapPin className="w-5 h-5 text-primary" />
+                  Broward County
+                </h3>
+                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3">
+                  {cities
+                    .filter(city => city.county === 'Broward County')
+                    .map((city) => (
+                      <Link
+                        key={city.slug}
+                        href={`/problems/${problemSlug}/${city.slug}/`}
+                        className="group flex items-center gap-2 p-3 bg-gray-50 hover:bg-primary/5 rounded-lg border border-gray-100 hover:border-primary/20 transition-all duration-200"
+                      >
+                        <span className="font-medium text-gray-800 group-hover:text-primary transition-colors truncate text-sm">
+                          {city.name}
+                        </span>
+                      </Link>
+                    ))}
+                </div>
+              </div>
+              
+              {/* Palm Beach County */}
+              {cities.filter(city => city.county === 'Palm Beach County').length > 0 && (
+                <div>
+                  <h3 className="text-lg font-semibold text-gray-800 mb-4 flex items-center gap-2">
+                    <MapPin className="w-5 h-5 text-primary" />
+                    Palm Beach County
+                  </h3>
+                  <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3">
+                    {cities
+                      .filter(city => city.county === 'Palm Beach County')
+                      .map((city) => (
+                        <Link
+                          key={city.slug}
+                          href={`/problems/${problemSlug}/${city.slug}/`}
+                          className="group flex items-center gap-2 p-3 bg-gray-50 hover:bg-primary/5 rounded-lg border border-gray-100 hover:border-primary/20 transition-all duration-200"
+                        >
+                          <span className="font-medium text-gray-800 group-hover:text-primary transition-colors truncate text-sm">
+                            {city.name}
+                          </span>
+                        </Link>
+                      ))}
+                  </div>
+                </div>
+              )}
+            </div>
           </div>
         </section>
         

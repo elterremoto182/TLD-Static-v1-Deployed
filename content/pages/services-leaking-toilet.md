@@ -2,7 +2,7 @@
 title: Leaking toilet and faucets
 slug: services/leaking-toilet/
 menu_order: 0
-seo_title: Leaking toilet and faucets
+seo_title: Leaky Toilet & Faucet Repair | Fast Florida Plumbing Services
 seo_description: >-
   Leaking Toilet Services: Don't let a leaking toilet cause inconvenience.
   Contact us for efficient leak detection and repair services.
