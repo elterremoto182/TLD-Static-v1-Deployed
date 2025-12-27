@@ -136,6 +136,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // Other pages (excluding services handled above and old city pages that are now redirected)
   const excludedSlugs = [
     'home', 'about', 'contact', 'blog', 'privacy-policy',
+    // Orphan/redirect pages - excluded from sitemap
+    'financing',  // Legacy HVAC page with no internal links
+    'reviews',    // Redirects to /testimonials/
+    'thanks',     // Thank you page (not for organic traffic)
     // These are now handled by local SEO routes
     'miami-leak-detection-services',
     'doral-leak-detection-expert-water-sewer-leak-detection-services',
