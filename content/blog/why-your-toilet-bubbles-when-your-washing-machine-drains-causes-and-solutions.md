@@ -378,13 +378,13 @@ Understanding the causes and implementing the appropriate solutions can effectiv
 
 ### Leak Detection Services Across Miami-Dade County
 
-Total Leak Detection proudly serves areas in Miami-Dade County and Broward County. If you’re outside Miami, check out our other service areas:
+Total Leak Detection proudly serves areas in Miami-Dade County and Broward County. If you're outside Miami, check out our other service areas:
 
 #### Other Miami-Dade County Service Areas:
 
-✅ **[Miami Leak Detection Services](/miami-leak-detection-services/)**  
-✅ **[Doral Leak Detection Services](/doral-leak-detection-expert-water-sewer-leak-detection-services/)**  
-✅ **Hialeah Leak Detection Services**  
-✅ **[Kendall Leak Detection Services](/kendall-leak-detection-services/)**  
-✅ **Homestead Leak Detection Services**  
-✅ **[Pinecrest Leak Detection Services](/pinecrest-leak-detection-services/)**
+✅ **[Miami Leak Detection Services](/leak-detection/miami/)**  
+✅ **[Doral Leak Detection Services](/leak-detection/doral/)**  
+✅ **[Hialeah Leak Detection Services](/leak-detection/hialeah/)**  
+✅ **[Kendall Leak Detection Services](/leak-detection/kendall/)**  
+✅ **[Homestead Leak Detection Services](/leak-detection/homestead/)**  
+✅ **[Pinecrest Leak Detection Services](/leak-detection/pinecrest/)**

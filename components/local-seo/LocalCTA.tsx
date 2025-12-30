@@ -90,7 +90,7 @@ export function InlineCTA({
         </div>
         <a
           href={`tel:${phone.replace(/[^0-9]/g, '')}`}
-          className="inline-flex items-center gap-2 bg-primary hover:bg-primary/90 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-200 whitespace-nowrap"
+          className="inline-flex items-center gap-2 bg-accent hover:bg-accent/90 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-200 whitespace-nowrap"
         >
           <Phone className="w-5 h-5" />
           {phone}
