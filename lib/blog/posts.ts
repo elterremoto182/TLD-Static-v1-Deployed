@@ -13,6 +13,7 @@ export interface BlogPost {
   author: string;
   category: string;
   image?: string;
+  imageAlt?: string;
   content: string;
 }
 
@@ -39,6 +40,7 @@ export function getPostBySlug(slug: string): BlogPost | null {
       author: data.author || '',
       category: data.category || '',
       image: data.image || '',
+      imageAlt: data.imageAlt || '',
       content,
     };
   } catch (error) {

@@ -2,20 +2,22 @@
 title: 'How to Identify and Fix Common Toilet Leaks: A Comprehensive Guide'
 date: '2024-07-24'
 excerpt: >-
-  Understanding Toilet Leaks To effectively identify and fix toilet leaks, it’s
+  Understanding Toilet Leaks To effectively identify and fix toilet leaks, it's
   crucial to understand how toilets work and the role each component plays in
   maintaining proper functionality. Common Components Involved in Leaks
   Importance of Regular Maintenance Regular maintenance helps prevent these
   issues: Ignoring routine checks can lead to significant water wastage,
   potentially up to 5 …
 author: Tomasz Alemany
-category: Uncategorized
+category: Leak Detection
 seo_title: 'How to Identify & Fix Common Toilet Leaks: A Comprehensive Guide'
 seo_description: >-
   Learn how to identify and fix common toilet leaks with our comprehensive
   guide. Discover simple DIY methods to detect leaks, prevent water damage, and
   save on utility bills.
 keywords: ["How to fix common toilet leaks"]
+image: /images/services/leak-detection.jpg
+imageAlt: Plumber diagnosing a toilet leak by inspecting the tank components and water connections
 ---
 
 ## Understanding Toilet Leaks
@@ -38,7 +40,7 @@ Regular maintenance helps prevent these issues:
 
 Ignoring routine checks can lead to significant water wastage, potentially up to 5 gallons per minute.
 
-For additional plumbing services, consider visiting [Total Leak Detection](/) or learn more about addressing [clogged drain services](/services/clogged-drains/). Our [professional leak detection services](/services/leak-detection/) can help identify hidden leaks that may be affecting your toilet's performance. For related issues, check out our guide on [why your toilet bubbles when your washing machine drains)
+For additional plumbing services, consider visiting [Total Leak Detection](/) or learn more about addressing [clogged drain services](/services/clogged-drains/). Our [professional leak detection services](/services/leak-detection/) can help identify hidden leaks that may be affecting your toilet's performance. For related issues, check out our guide on [why your toilet bubbles when your washing machine drains](/why-your-toilet-bubbles-when-your-washing-machine-drains-causes-and-solutions/).
 
 ## Identifying Toilet Leaks
 

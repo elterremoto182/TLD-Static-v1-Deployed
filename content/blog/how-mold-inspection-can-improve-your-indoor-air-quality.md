@@ -8,12 +8,14 @@ excerpt: >-
   year-round warmth—ideal conditions for mold to grow unnoticed in your home.
   While many homeowners focus on visible cleanliness, the air you breathe …
 author: Tomasz Alemany
-category: Mold
+category: Mold Testing
 seo_title: Mold Inspection Miami | Improve Indoor Air Quality
 seo_description: >-
   Worried about indoor air quality? Get expert mold inspections in Miami from
   Total Leak Detection. Improve your air, protect your health. Call now!
 keywords: ["indoor air quality mold testing"]
+image: /images/gallery/mold-inspection-before.jpg
+imageAlt: Mold inspection specialist testing indoor air quality in a Miami home for mold spores and allergens
 ---
 
 # Mold Inspection Miami | Improve Indoor Air Quality with Total Leak Detection
@@ -22,7 +24,7 @@ keywords: ["indoor air quality mold testing"]
 
 Living in Miami means dealing with high humidity, frequent rainfall, and year-round warmth—ideal conditions for mold to grow unnoticed in your home. While many homeowners focus on visible cleanliness, the air you breathe can silently affect your health. If you’ve noticed musty odors or allergy-like symptoms indoors, your indoor air quality may be compromised by hidden mold.
 
-At **Total Leak Detection**, we help Miami homeowners improve their **indoor air quality** through expert **mold inspections** designed to detect and eliminate mold at the source. Our [mold testing services](/services/mold-testing/) provide comprehensive assessments to identify mold growth and improve your home's air quality. Learn more about [how to do a mold test)with our step-by-step guide.
+At **Total Leak Detection**, we help Miami homeowners improve their **indoor air quality** through expert **mold inspections** designed to detect and eliminate mold at the source. Our [mold testing services](/services/mold-testing/) provide comprehensive assessments to identify mold growth and improve your home's air quality. Learn more about [how to do a mold test](/7-simple-steps-to-do-a-mold-test/) with our step-by-step guide.
 
 * * *
 

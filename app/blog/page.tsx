@@ -74,7 +74,7 @@ export default function BlogPage() {
                       <div className="aspect-video relative">
                         <Image
                           src={post.image}
-                          alt={post.title}
+                          alt={post.imageAlt || post.title}
                           fill
                           className="object-cover"
                           sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"

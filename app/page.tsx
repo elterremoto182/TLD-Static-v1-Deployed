@@ -1,6 +1,7 @@
 import dynamic from 'next/dynamic';
 import { Header } from '@/components/sections/Header';
 import { Hero } from '@/components/sections/Hero';
+import { ValueProposition } from '@/components/sections/ValueProposition';
 import { Services } from '@/components/sections/Services';
 import { About } from '@/components/sections/About';
 import { CTABanner } from '@/components/sections/CTABanner';
@@ -9,7 +10,8 @@ import { Footer } from '@/components/sections/Footer';
 import { ServiceAreas } from '@/components/sections/ServiceAreas';
 import { getPageBySlug } from '@/lib/pages/pages';
 import { generatePageMetadata } from '@/lib/utils';
-import { generateLocalBusinessSchema, structuredDataToJsonLd } from '@/lib/seo/structured-data';
+import { generateLocalBusinessSchema, generateServiceSchema, structuredDataToJsonLd } from '@/lib/seo/structured-data';
+import { generateFAQSchema } from '@/lib/seo/faq-data';
 
 // Lazy load below-the-fold components to reduce initial bundle size
 const Gallery = dynamic(() => import('@/components/sections/Gallery').then(mod => ({ default: mod.Gallery })), {
@@ -24,19 +26,30 @@ const TrustBadges = dynamic(() => import('@/components/sections/TrustBadges').th
   ssr: true,
 });
 
+const FAQ = dynamic(() => import('@/components/sections/FAQ').then(mod => ({ default: mod.FAQ })), {
+  ssr: true,
+});
+
 export async function generateMetadata() {
   const page = getPageBySlug('home');
   
   return generatePageMetadata({
-    title: page?.seo_title || page?.title || 'Water Meter Leak Detection, Miami Florida | Total Leak Detection',
-    description: page?.seo_description || 'Get water leak detection in Florida. Get plumbing & water meter repair services. Plumbing reports in 2 days. Licensed & insured. Get a free estimate today!',
-    keywords: page?.seo_title ? ['water leak detection'] : undefined,
+    title: page?.seo_title || page?.title || 'Leak Detection Miami | Water Leak Detection Services',
+    description: page?.seo_description || 'Need leak detection in Miami? Our licensed technicians find hidden water leaks fast using non-invasive methods. Family-owned since 2005. Free estimates!',
+    keywords: page?.keywords || ['leak detection miami', 'water leak detection', 'leak detection near me'],
     path: '/',
   });
 }
 
 export default function Home() {
   const localBusinessSchema = generateLocalBusinessSchema();
+  const serviceSchema = generateServiceSchema({
+    name: 'Leak Detection',
+    description: 'Professional water leak detection services in Miami FL. Non-invasive leak detection for residential and commercial properties.',
+    serviceType: 'Water Leak Detection',
+    areaServed: 'Miami',
+  });
+  const faqSchema = generateFAQSchema();
 
   return (
     <>
@@ -47,14 +60,28 @@ export default function Home() {
           __html: structuredDataToJsonLd(localBusinessSchema),
         }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: structuredDataToJsonLd(serviceSchema),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: structuredDataToJsonLd(faqSchema),
+        }}
+      />
       <Header />
       <main>
         <Hero />
+        <ValueProposition />
         <Services />
         <ServiceAreas />
         <About />
         <Gallery />
         <Testimonials />
+        <FAQ />
         <TrustBadges />
         <CTABanner />
         <Contact />

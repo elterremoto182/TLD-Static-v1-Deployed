@@ -44,7 +44,7 @@ export function Services() {
               Our Services
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Comprehensive solutions for all your home service needs
+              Leak detection and plumbing services for Miami homes and businesses
             </p>
           </div>
         </AnimateOnScroll>

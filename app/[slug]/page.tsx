@@ -286,7 +286,7 @@ export default async function DynamicPage({
                 <div className="aspect-video rounded-xl overflow-hidden mb-12 relative">
                   <Image
                     src={post.image}
-                    alt={post.title}
+                    alt={post.imageAlt || post.title}
                     fill
                     className="object-cover"
                     priority

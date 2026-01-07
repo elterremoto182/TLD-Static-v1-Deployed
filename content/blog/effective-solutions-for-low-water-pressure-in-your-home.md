@@ -9,13 +9,15 @@ excerpt: >-
   obstructed, it can lead to reduced water flow. Several factors contribute to
   low …
 author: Tomasz Alemany
-category: Uncategorized
+category: Leak Detection
 seo_title: Low Water Pressure Solutions for Your Home - Total Leak Detection
 seo_description: >-
   Experiencing low water pressure at home? Discover effective solutions to
   identify and fix common causes of reduced water flow, ensuring optimal
   plumbing performance.
 keywords: ["Low water pressure solutions"]
+image: /images/services/leak-detection.jpg
+imageAlt: Homeowner testing water pressure from a faucet showing low flow issues
 ---
 
 ## Understanding Low Water Pressure
@@ -123,7 +125,7 @@ Corrosion in plumbing can significantly hinder water flow, making it essential t
 
 In cases where the corrosion is severe or widespread, replacing the affected sections of piping becomes necessary. While this option requires more investment, it ensures long-term reliability and effectiveness, eliminating persistent issues that cleaning might not resolve.
 
-Deciding between cleaning or replacing depends on the extent of corrosion and your budget. [Consulting with a professional](/services/clogged-drains/) can provide clarity on the best course of action tailored to your home's specific needs. Our [drain cleaning services](/services/drain-cleaning/) can help address corrosion issues, while [leak detection services](/services/leak-detection/) can identify pipes that need replacement. For more comprehensive solutions, check out our guide on [10 effective ways to boost water pressure in your shower)
+Deciding between cleaning or replacing depends on the extent of corrosion and your budget. [Consulting with a professional](/services/clogged-drains/) can provide clarity on the best course of action tailored to your home's specific needs. Our [drain cleaning services](/services/drain-cleaning/) can help address corrosion issues, while [leak detection services](/services/leak-detection/) can identify pipes that need replacement. For more comprehensive solutions, check out our guide on [10 effective ways to boost water pressure in your shower](/10-effective-ways-to-boost-water-pressure-in-your-shower-quick-fixes-and-long-term-solutions/).
 
 ### 3\. Sealing Leaks Effectively to Restore Lost Pressure
 

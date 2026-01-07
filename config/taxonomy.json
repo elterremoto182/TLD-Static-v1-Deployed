@@ -1,0 +1,338 @@
+{
+  "siteName": "Total Leak Detection",
+  "description": "Complete website structure and taxonomy for Total Leak Detection",
+  "structure": {
+    "home": {
+      "path": "/",
+      "title": "Home",
+      "description": "Water Leak Detection Florida – Total Leak Detection"
+    },
+    "services": {
+      "path": "/services/",
+      "title": "Services",
+      "description": "Professional leak detection and plumbing services",
+      "children": {
+        "leak-detection": {
+          "path": "/services/leak-detection/",
+          "title": "Leak Detection",
+          "description": "Professional water leak detection services using non-invasive technology",
+          "keywords": ["leak detection", "water leak detection", "plumbing leak detection", "pipe leak detection", "hidden water leaks"],
+          "relatedProblems": ["slab-leak", "pipe-burst", "water-heater-leak", "pool-leak", "underground-leak", "shower-pan-leak", "toilet-leak"]
+        },
+        "mold-testing": {
+          "path": "/services/mold-testing/",
+          "title": "Mold Testing",
+          "description": "Certified mold inspection and air quality testing services",
+          "keywords": ["mold testing", "mold inspection", "mold detection", "air quality testing", "mold assessment", "indoor air quality"],
+          "relatedProblems": ["bathroom-mold", "attic-mold", "water-damage-mold", "hidden-mold", "hvac-mold"]
+        },
+        "camera-inspection": {
+          "path": "/services/camera-inspection/",
+          "title": "Sewer Camera Inspection",
+          "description": "HD video sewer line and drain inspection services",
+          "keywords": ["sewer camera inspection", "video pipe inspection", "drain camera", "sewer line inspection", "plumbing camera"],
+          "relatedProblems": ["root-intrusion", "pipe-collapse", "sewer-blockage", "grease-buildup", "pipe-corrosion"]
+        },
+        "slab-leaks": {
+          "path": "/services/slab-leaks/",
+          "title": "Slab Leak Detection",
+          "description": "Expert detection of leaks beneath concrete foundations",
+          "keywords": ["slab leak", "foundation leak", "under slab leak", "concrete leak detection"]
+        },
+        "clogged-drains": {
+          "path": "/services/clogged-drains/",
+          "title": "Clogged Drains",
+          "description": "Professional clogged drain services and solutions",
+          "keywords": ["clogged drains", "blocked drains", "drain blockage", "slow drains"]
+        },
+        "drain-cleaning": {
+          "path": "/services/drain-cleaning/",
+          "title": "Drain Cleaning",
+          "description": "Professional drain cleaning and maintenance services",
+          "keywords": ["drain cleaning", "drain maintenance", "hydro jetting", "pipe cleaning"]
+        },
+        "damaged-sewer": {
+          "path": "/services/damaged-sewer/",
+          "title": "Damaged Sewer Line Repair",
+          "description": "Solutions for repairing damaged sewer lines",
+          "keywords": ["damaged sewer", "sewer repair", "sewer line damage", "broken sewer pipe"]
+        },
+        "leaking-toilet": {
+          "path": "/services/leaking-toilet/",
+          "title": "Leaking Toilet",
+          "description": "Toilet leak detection and repair services",
+          "keywords": ["leaking toilet", "toilet leak", "running toilet", "toilet repair"]
+        },
+        "hydro-jetting": {
+          "path": "/services/hydro-jetting/",
+          "title": "Hydro Jetting",
+          "description": "High-pressure water jet drain cleaning services",
+          "keywords": ["hydro jetting", "high pressure cleaning", "pipe jetting", "sewer jetting"]
+        },
+        "plumbing-report-writing": {
+          "path": "/services/plumbing-report-writing/",
+          "title": "Plumbing Report Writing",
+          "description": "Professional plumbing reports for insurance and documentation",
+          "keywords": ["plumbing report", "inspection report", "insurance documentation"]
+        },
+        "commercial-services": {
+          "path": "/services/commercial-services/",
+          "title": "Commercial Services",
+          "description": "Commercial leak detection and plumbing services",
+          "keywords": ["commercial plumbing", "commercial leak detection", "business plumbing"]
+        }
+      }
+    },
+    "areas": {
+      "path": "/areas/",
+      "title": "Service Areas",
+      "description": "Areas we serve in South Florida",
+      "regions": {
+        "miami-dade": {
+          "name": "Miami-Dade County",
+          "cities": ["miami", "miami-beach", "coral-gables", "hialeah", "doral", "kendall", "pinecrest", "homestead", "miami-lakes", "aventura", "north-miami", "north-miami-beach", "south-miami", "cutler-bay", "palmetto-bay", "key-biscayne", "sweetwater", "sunny-isles-beach"]
+        },
+        "broward": {
+          "name": "Broward County",
+          "cities": ["fort-lauderdale", "hollywood", "pembroke-pines", "miramar", "coral-springs", "plantation", "davie", "sunrise", "pompano-beach", "deerfield-beach", "lauderhill", "lauderdale-lakes", "tamarac", "coconut-creek", "margate", "weston", "hallandale-beach", "cooper-city", "parkland", "oakland-park"]
+        },
+        "palm-beach": {
+          "name": "Palm Beach County",
+          "cities": ["boca-raton"]
+        }
+      }
+    },
+    "localSeo": {
+      "description": "City-specific service pages for local SEO",
+      "templates": {
+        "leak-detection": {
+          "pathPattern": "/leak-detection/{city}/",
+          "title": "Leak Detection in {City}, FL",
+          "parentService": "/services/leak-detection/"
+        },
+        "mold-testing": {
+          "pathPattern": "/mold-testing/{city}/",
+          "title": "Mold Testing in {City}, FL",
+          "parentService": "/services/mold-testing/"
+        },
+        "sewer-camera-inspection": {
+          "pathPattern": "/sewer-camera-inspection/{city}/",
+          "title": "Sewer Camera Inspection in {City}, FL",
+          "parentService": "/services/camera-inspection/"
+        },
+        "problems": {
+          "pathPattern": "/problems/{problem}/{city}/",
+          "title": "{Problem} Services in {City}, FL",
+          "description": "Problem-specific service pages by city"
+        }
+      }
+    },
+    "about": {
+      "path": "/about/",
+      "title": "About Us",
+      "description": "About Total Leak Detection"
+    },
+    "blog": {
+      "path": "/blog/",
+      "title": "Blog",
+      "description": "Plumbing tips, guides, and leak detection resources"
+    },
+    "contact": {
+      "path": "/contact/",
+      "title": "Contact",
+      "description": "Contact Total Leak Detection"
+    },
+    "staticPages": {
+      "privacy-policy": {
+        "path": "/privacy-policy/",
+        "title": "Privacy Policy"
+      },
+      "promotions": {
+        "path": "/promotions/",
+        "title": "Current Promotions"
+      },
+      "health-and-safety": {
+        "path": "/health-and-safety/",
+        "title": "Health and Safety"
+      }
+    }
+  },
+  "blogTaxonomy": {
+    "description": "Blog post categorization by related service",
+    "categories": {
+      "leak-detection": {
+        "service": "/services/leak-detection/",
+        "serviceName": "Leak Detection",
+        "articles": [
+          {
+            "slug": "the-importance-of-professional-leak-detection-in-preventing-water-damage",
+            "title": "The Importance of Professional Leak Detection in Preventing Water Damage",
+            "topics": ["water damage prevention", "professional detection", "hidden leaks"]
+          },
+          {
+            "slug": "how-to-check-shower-pan-leaks",
+            "title": "How to Check A Shower Pan For Leaks",
+            "topics": ["shower pan leak", "DIY detection", "bathroom leaks"]
+          },
+          {
+            "slug": "advanced-techniques-for-detecting-and-repairing-leaks-beneath-concrete-foundations",
+            "title": "Advanced Techniques for Detecting and Repairing Leaks Beneath Concrete Foundations",
+            "topics": ["slab leaks", "foundation leaks", "concrete detection"]
+          },
+          {
+            "slug": "miramar-leak-detection-pinholes-in-pines",
+            "title": "Miramar Leak Detection [Pinholes in Pines]",
+            "topics": ["pinhole leaks", "copper pipe leaks", "Miramar"]
+          },
+          {
+            "slug": "total-leak-detection-miami-lakes",
+            "title": "Total Leak Detection: Miami Lakes",
+            "topics": ["Miami Lakes", "water leak detection", "sewer camera"]
+          },
+          {
+            "slug": "effective-solutions-for-low-water-pressure-in-your-home",
+            "title": "Effective Solutions for Low Water Pressure in Your Home",
+            "topics": ["water pressure", "plumbing issues", "leak symptoms"]
+          },
+          {
+            "slug": "10-effective-ways-to-boost-water-pressure-in-your-shower-quick-fixes-and-long-term-solutions",
+            "title": "10 Effective Ways to Boost Water Pressure in Your Shower",
+            "topics": ["shower pressure", "water flow", "plumbing maintenance"]
+          },
+          {
+            "slug": "how-to-identify-and-fix-common-toilet-leaks-a-comprehensive-guide",
+            "title": "How to Identify and Fix Common Toilet Leaks",
+            "topics": ["toilet leaks", "flapper", "fill valve"]
+          },
+          {
+            "slug": "plumbing-101",
+            "title": "Plumbing 101",
+            "topics": ["plumbing basics", "education", "leak detection training"]
+          },
+          {
+            "slug": "event-sign-up",
+            "title": "Event Sign Up",
+            "topics": ["events", "presentations"]
+          }
+        ]
+      },
+      "mold-testing": {
+        "service": "/services/mold-testing/",
+        "serviceName": "Mold Testing",
+        "articles": [
+          {
+            "slug": "how-mold-inspection-can-improve-your-indoor-air-quality",
+            "title": "How Mold Inspection Can Improve Your Indoor Air Quality",
+            "topics": ["indoor air quality", "mold inspection", "health"]
+          },
+          {
+            "slug": "7-simple-steps-to-do-a-mold-test",
+            "title": "7 Simple Steps To Do A Mold Test",
+            "topics": ["mold testing process", "sample collection", "lab analysis"]
+          },
+          {
+            "slug": "what-is-a-post-remediation-verification",
+            "title": "What is a Post Remediation Verification?",
+            "topics": ["PRV", "mold remediation", "verification testing"]
+          }
+        ]
+      },
+      "sewer-camera-inspection": {
+        "service": "/services/camera-inspection/",
+        "serviceName": "Sewer Camera Inspection",
+        "articles": [
+          {
+            "slug": "the-benefits-of-sewer-camera-inspections-for-miami-homeowners",
+            "title": "The Benefits of Sewer Camera Inspections for Miami Homeowners",
+            "topics": ["sewer inspection", "Miami homeowners", "plumbing diagnosis"]
+          },
+          {
+            "slug": "how-much-does-a-sewer-line-camera-inspection-cost",
+            "title": "How Much Does a Sewer Line Camera Inspection Cost?",
+            "topics": ["inspection cost", "pricing", "maintenance"]
+          },
+          {
+            "slug": "what-to-expect-during-a-sewer-camera-inspection-in-miami-fl",
+            "title": "What to Expect During a Sewer Camera Inspection in Miami, FL",
+            "topics": ["inspection process", "HD camera", "pipe diagnosis"]
+          },
+          {
+            "slug": "the-importance-of-sewer-camera-inspections-in-miami-prevent-costly-repairs",
+            "title": "The Importance of Sewer Camera Inspections in Miami: Prevent Costly Repairs",
+            "topics": ["preventive maintenance", "cost savings", "early detection"]
+          },
+          {
+            "slug": "choosing-the-perfect-pipe-size-for-your-main-sewer-line-types-repairs-and-expert-tips",
+            "title": "Choosing the Perfect Pipe Size for Your Main Sewer Line",
+            "topics": ["pipe sizing", "sewer materials", "installation"]
+          },
+          {
+            "slug": "essential-tips-for-maintaining-your-sewer-line-what-homeowners-must-know",
+            "title": "Essential Tips for Maintaining Your Sewer Line",
+            "topics": ["sewer maintenance", "preventive tips", "tree roots"]
+          }
+        ]
+      },
+      "drain-cleaning": {
+        "service": "/services/drain-cleaning/",
+        "serviceName": "Drain Cleaning",
+        "articles": [
+          {
+            "slug": "expert-tips-to-prevent-and-fix-clogged-kitchen-sinks",
+            "title": "Expert Tips to Prevent and Fix Clogged Kitchen Sinks",
+            "topics": ["kitchen sink clogs", "grease disposal", "drain screens"]
+          },
+          {
+            "slug": "the-ultimate-guide-to-effective-drain-cleaners-what-really-works",
+            "title": "The Ultimate Guide to Effective Drain Cleaners: What Really Works?",
+            "topics": ["drain cleaners", "chemical vs enzymatic", "maintenance"]
+          },
+          {
+            "slug": "eliminating-air-pockets-effective-solutions-for-air-in-water-pipes",
+            "title": "Eliminating Air Pockets: Effective Solutions for Air in Water Pipes",
+            "topics": ["air in pipes", "sputtering water", "plumbing maintenance"]
+          },
+          {
+            "slug": "why-your-toilet-bubbles-when-your-washing-machine-drains-causes-and-solutions",
+            "title": "Why Your Toilet Bubbles When Your Washing Machine Drains",
+            "topics": ["toilet bubbling", "venting issues", "drainage problems"]
+          }
+        ]
+      }
+    }
+  },
+  "internalLinking": {
+    "description": "Guidelines for internal linking between blog posts and services",
+    "rules": [
+      {
+        "rule": "Service Links",
+        "description": "Every blog post should link to its primary related service at least once",
+        "examples": {
+          "leak-detection-articles": "/services/leak-detection/",
+          "mold-articles": "/services/mold-testing/",
+          "sewer-articles": "/services/camera-inspection/",
+          "drain-articles": "/services/drain-cleaning/"
+        }
+      },
+      {
+        "rule": "Cross-Service Links",
+        "description": "When content mentions related services, link to those as well",
+        "examples": [
+          "Mold growth from leaks → link to both leak detection and mold testing",
+          "Slab leaks → link to both leak detection and slab leak services",
+          "Sewer issues → link to camera inspection and drain cleaning"
+        ]
+      },
+      {
+        "rule": "Related Blog Posts",
+        "description": "Link to related blog posts within the same category",
+        "implementation": "Add 'Related Resources' section at end of articles"
+      },
+      {
+        "rule": "Call to Action",
+        "description": "Include contact page link and promotions page link in conclusion sections"
+      }
+    ]
+  }
+}
+
