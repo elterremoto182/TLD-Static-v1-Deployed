@@ -10,6 +10,8 @@ excerpt: >-
   low …
 author: Tomasz Alemany
 category: Leak Detection
+pillar: leak-detection
+feedsService: /services/leak-detection/
 seo_title: Low Water Pressure Solutions for Your Home - Total Leak Detection
 seo_description: >-
   Experiencing low water pressure at home? Discover effective solutions to

@@ -9,6 +9,8 @@ excerpt: >-
   While many homeowners focus on visible cleanliness, the air you breathe …
 author: Tomasz Alemany
 category: Mold Testing
+pillar: mold-testing
+feedsService: /services/mold-testing/
 seo_title: Mold Inspection Miami | Improve Indoor Air Quality
 seo_description: >-
   Worried about indoor air quality? Get expert mold inspections in Miami from

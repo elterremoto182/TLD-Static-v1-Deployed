@@ -1,37 +1,98 @@
 {
   "siteName": "Total Leak Detection",
   "description": "Complete website structure and taxonomy for Total Leak Detection",
+  "contentTiers": {
+    "description": "3-tier content architecture for SEO authority",
+    "tier1_content": {
+      "purpose": "Education, problem-solving, trust-building",
+      "types": ["pillar-pages", "blog-posts"],
+      "intent": "informational",
+      "linkDirection": "down to tier2"
+    },
+    "tier2_services": {
+      "purpose": "Sales, conversions, lead generation",
+      "types": ["service-pages"],
+      "intent": "transactional",
+      "linkDirection": "down to tier3, up from tier1"
+    },
+    "tier3_local": {
+      "purpose": "Local SEO, geo-targeted capture",
+      "types": ["location-pages"],
+      "intent": "transactional + local",
+      "linkDirection": "up from tier2"
+    }
+  },
   "structure": {
     "home": {
       "path": "/",
       "title": "Home",
       "description": "Water Leak Detection Florida – Total Leak Detection"
     },
+    "guides": {
+      "path": "/guides/",
+      "title": "Guides",
+      "description": "Comprehensive educational guides on plumbing and leak detection",
+      "tier": 1,
+      "children": {
+        "leak-detection": {
+          "path": "/guides/leak-detection/",
+          "title": "The Complete Guide to Leak Detection",
+          "description": "Everything Florida homeowners need to know about detecting and preventing water leaks",
+          "feedsService": "/services/leak-detection/",
+          "relatedCategory": "leak-detection"
+        },
+        "sewer-camera-inspection": {
+          "path": "/guides/sewer-camera-inspection/",
+          "title": "The Complete Guide to Sewer Camera Inspections",
+          "description": "Comprehensive guide to sewer line inspections for Florida property owners",
+          "feedsService": "/services/camera-inspection/",
+          "relatedCategory": "sewer-camera-inspection"
+        },
+        "drain-cleaning": {
+          "path": "/guides/drain-cleaning/",
+          "title": "The Complete Guide to Drain Cleaning",
+          "description": "Professional drain cleaning and maintenance guide for homeowners",
+          "feedsService": "/services/drain-cleaning/",
+          "relatedCategory": "drain-cleaning"
+        },
+        "mold-testing": {
+          "path": "/guides/mold-testing/",
+          "title": "The Complete Guide to Mold Testing",
+          "description": "Everything you need to know about mold testing and indoor air quality",
+          "feedsService": "/services/mold-testing/",
+          "relatedCategory": "mold-testing"
+        }
+      }
+    },
     "services": {
       "path": "/services/",
       "title": "Services",
       "description": "Professional leak detection and plumbing services",
+      "tier": 2,
       "children": {
         "leak-detection": {
           "path": "/services/leak-detection/",
           "title": "Leak Detection",
           "description": "Professional water leak detection services using non-invasive technology",
           "keywords": ["leak detection", "water leak detection", "plumbing leak detection", "pipe leak detection", "hidden water leaks"],
-          "relatedProblems": ["slab-leak", "pipe-burst", "water-heater-leak", "pool-leak", "underground-leak", "shower-pan-leak", "toilet-leak"]
+          "relatedProblems": ["slab-leak", "pipe-burst", "water-heater-leak", "pool-leak", "underground-leak", "shower-pan-leak", "toilet-leak"],
+          "fedByPillar": "/guides/leak-detection/"
         },
         "mold-testing": {
           "path": "/services/mold-testing/",
           "title": "Mold Testing",
           "description": "Certified mold inspection and air quality testing services",
           "keywords": ["mold testing", "mold inspection", "mold detection", "air quality testing", "mold assessment", "indoor air quality"],
-          "relatedProblems": ["bathroom-mold", "attic-mold", "water-damage-mold", "hidden-mold", "hvac-mold"]
+          "relatedProblems": ["bathroom-mold", "attic-mold", "water-damage-mold", "hidden-mold", "hvac-mold"],
+          "fedByPillar": "/guides/mold-testing/"
         },
         "camera-inspection": {
           "path": "/services/camera-inspection/",
           "title": "Sewer Camera Inspection",
           "description": "HD video sewer line and drain inspection services",
           "keywords": ["sewer camera inspection", "video pipe inspection", "drain camera", "sewer line inspection", "plumbing camera"],
-          "relatedProblems": ["root-intrusion", "pipe-collapse", "sewer-blockage", "grease-buildup", "pipe-corrosion"]
+          "relatedProblems": ["root-intrusion", "pipe-collapse", "sewer-blockage", "grease-buildup", "pipe-corrosion"],
+          "fedByPillar": "/guides/sewer-camera-inspection/"
         },
         "slab-leaks": {
           "path": "/services/slab-leaks/",
@@ -49,7 +110,8 @@
           "path": "/services/drain-cleaning/",
           "title": "Drain Cleaning",
           "description": "Professional drain cleaning and maintenance services",
-          "keywords": ["drain cleaning", "drain maintenance", "hydro jetting", "pipe cleaning"]
+          "keywords": ["drain cleaning", "drain maintenance", "hydro jetting", "pipe cleaning"],
+          "fedByPillar": "/guides/drain-cleaning/"
         },
         "damaged-sewer": {
           "path": "/services/damaged-sewer/",
@@ -87,6 +149,7 @@
       "path": "/areas/",
       "title": "Service Areas",
       "description": "Areas we serve in South Florida",
+      "tier": 3,
       "regions": {
         "miami-dade": {
           "name": "Miami-Dade County",
@@ -104,6 +167,7 @@
     },
     "localSeo": {
       "description": "City-specific service pages for local SEO",
+      "tier": 3,
       "templates": {
         "leak-detection": {
           "pathPattern": "/leak-detection/{city}/",
@@ -135,7 +199,8 @@
     "blog": {
       "path": "/blog/",
       "title": "Blog",
-      "description": "Plumbing tips, guides, and leak detection resources"
+      "description": "Plumbing tips, guides, and leak detection resources",
+      "tier": 1
     },
     "contact": {
       "path": "/contact/",
@@ -159,10 +224,42 @@
   },
   "blogTaxonomy": {
     "description": "Blog post categorization by related service",
+    "pillarPages": {
+      "leak-detection": {
+        "path": "/guides/leak-detection/",
+        "title": "The Complete Guide to Leak Detection for Florida Homeowners",
+        "feedsService": "/services/leak-detection/",
+        "tier": 1,
+        "targetPostCount": 20
+      },
+      "sewer-camera-inspection": {
+        "path": "/guides/sewer-camera-inspection/",
+        "title": "The Complete Guide to Sewer Camera Inspections",
+        "feedsService": "/services/camera-inspection/",
+        "tier": 1,
+        "targetPostCount": 15
+      },
+      "drain-cleaning": {
+        "path": "/guides/drain-cleaning/",
+        "title": "The Complete Guide to Drain Cleaning and Maintenance",
+        "feedsService": "/services/drain-cleaning/",
+        "tier": 1,
+        "targetPostCount": 15
+      },
+      "mold-testing": {
+        "path": "/guides/mold-testing/",
+        "title": "The Complete Guide to Mold Testing and Indoor Air Quality",
+        "feedsService": "/services/mold-testing/",
+        "tier": 1,
+        "targetPostCount": 15
+      }
+    },
     "categories": {
       "leak-detection": {
         "service": "/services/leak-detection/",
         "serviceName": "Leak Detection",
+        "pillarPage": "/guides/leak-detection/",
+        "feedsService": "/services/leak-detection/",
         "articles": [
           {
             "slug": "the-importance-of-professional-leak-detection-in-preventing-water-damage",
@@ -214,11 +311,26 @@
             "title": "Event Sign Up",
             "topics": ["events", "presentations"]
           }
+        ],
+        "plannedArticles": [
+          {"slug": "signs-hidden-water-leak", "title": "Signs You Have a Hidden Water Leak in Your Home", "priority": "high"},
+          {"slug": "leak-detection-cost-florida", "title": "How Much Does Leak Detection Cost in Florida?", "priority": "high"},
+          {"slug": "slab-leak-vs-pipe-leak", "title": "Slab Leak vs Pipe Leak: How to Tell the Difference", "priority": "high"},
+          {"slug": "water-leak-cause-mold", "title": "Can a Water Leak Cause Mold? What Homeowners Need to Know", "priority": "high"},
+          {"slug": "diy-leak-detection", "title": "DIY Leak Detection: What You Can Check Before Calling a Pro", "priority": "medium"},
+          {"slug": "water-meter-test-leaks", "title": "Water Meter Test: How to Check for Leaks Yourself", "priority": "medium"},
+          {"slug": "pool-leak-detection", "title": "Pool Leak Detection: Signs and Solutions", "priority": "medium"},
+          {"slug": "hot-water-heater-leaks", "title": "Hot Water Heater Leaks: Causes and Fixes", "priority": "medium"},
+          {"slug": "irrigation-system-leaks", "title": "Irrigation System Leaks: Hidden Water Wasters", "priority": "medium"},
+          {"slug": "water-damage-insurance-claims", "title": "Water Damage Insurance Claims: What Leak Detection Reports Include", "priority": "low"},
+          {"slug": "commercial-leak-detection", "title": "Commercial Leak Detection: What Business Owners Need to Know", "priority": "low"}
         ]
       },
       "mold-testing": {
         "service": "/services/mold-testing/",
         "serviceName": "Mold Testing",
+        "pillarPage": "/guides/mold-testing/",
+        "feedsService": "/services/mold-testing/",
         "articles": [
           {
             "slug": "how-mold-inspection-can-improve-your-indoor-air-quality",
@@ -235,11 +347,27 @@
             "title": "What is a Post Remediation Verification?",
             "topics": ["PRV", "mold remediation", "verification testing"]
           }
+        ],
+        "plannedArticles": [
+          {"slug": "signs-of-mold-in-home", "title": "Signs of Mold in Your Home: When to Get a Professional Test", "priority": "high"},
+          {"slug": "mold-testing-cost-florida", "title": "How Much Does Mold Testing Cost in Florida?", "priority": "high"},
+          {"slug": "mold-testing-vs-inspection", "title": "Mold Testing vs Mold Inspection: What's the Difference?", "priority": "high"},
+          {"slug": "black-mold-identification", "title": "Black Mold: Identification, Dangers, and Testing", "priority": "high"},
+          {"slug": "water-leak-and-mold", "title": "Water Leak and Mold: How Quickly Can Mold Grow?", "priority": "high"},
+          {"slug": "air-quality-testing", "title": "Air Quality Testing: What Homeowners Should Know", "priority": "medium"},
+          {"slug": "mold-in-hvac-systems", "title": "Mold in HVAC Systems: Detection and Prevention", "priority": "medium"},
+          {"slug": "mold-after-hurricane-flood", "title": "Mold After Hurricane or Flood: Testing and Remediation", "priority": "medium"},
+          {"slug": "hidden-mold-locations", "title": "Hidden Mold: Where It Grows and How to Find It", "priority": "medium"},
+          {"slug": "mold-testing-real-estate", "title": "Mold Testing for Real Estate Transactions", "priority": "medium"},
+          {"slug": "diy-mold-test-kits", "title": "DIY Mold Test Kits: Are They Accurate?", "priority": "low"},
+          {"slug": "mold-prevention-tips-florida", "title": "Mold Prevention Tips for Florida Homeowners", "priority": "low"}
         ]
       },
       "sewer-camera-inspection": {
         "service": "/services/camera-inspection/",
         "serviceName": "Sewer Camera Inspection",
+        "pillarPage": "/guides/sewer-camera-inspection/",
+        "feedsService": "/services/camera-inspection/",
         "articles": [
           {
             "slug": "the-benefits-of-sewer-camera-inspections-for-miami-homeowners",
@@ -271,11 +399,24 @@
             "title": "Essential Tips for Maintaining Your Sewer Line",
             "topics": ["sewer maintenance", "preventive tips", "tree roots"]
           }
+        ],
+        "plannedArticles": [
+          {"slug": "sewer-camera-inspection-warning-signs", "title": "When Do You Need a Sewer Camera Inspection? 7 Warning Signs", "priority": "high"},
+          {"slug": "sewer-inspection-before-buying-home", "title": "Sewer Camera Inspection Before Buying a Home: Why It's Essential", "priority": "high"},
+          {"slug": "what-sewer-camera-finds", "title": "What Can a Sewer Camera Find? Common Problems Revealed", "priority": "high"},
+          {"slug": "tree-roots-sewer-lines", "title": "Tree Roots in Sewer Lines: Detection and Prevention", "priority": "medium"},
+          {"slug": "bellied-sewer-pipe", "title": "Bellied Sewer Pipe: What It Is and How to Fix It", "priority": "medium"},
+          {"slug": "cast-iron-vs-pvc-sewer", "title": "Cast Iron vs PVC Sewer Pipes: What the Camera Reveals", "priority": "medium"},
+          {"slug": "sewer-scope-vs-full-inspection", "title": "Sewer Scope vs Full Inspection: What's the Difference?", "priority": "medium"},
+          {"slug": "commercial-sewer-inspections", "title": "Commercial Sewer Inspections: What Property Managers Need to Know", "priority": "low"},
+          {"slug": "how-often-inspect-sewer-line", "title": "How Often Should You Inspect Your Sewer Line?", "priority": "low"}
         ]
       },
       "drain-cleaning": {
         "service": "/services/drain-cleaning/",
         "serviceName": "Drain Cleaning",
+        "pillarPage": "/guides/drain-cleaning/",
+        "feedsService": "/services/drain-cleaning/",
         "articles": [
           {
             "slug": "expert-tips-to-prevent-and-fix-clogged-kitchen-sinks",
@@ -297,16 +438,30 @@
             "title": "Why Your Toilet Bubbles When Your Washing Machine Drains",
             "topics": ["toilet bubbling", "venting issues", "drainage problems"]
           }
+        ],
+        "plannedArticles": [
+          {"slug": "hydro-jetting-vs-snaking", "title": "Hydro Jetting vs Snaking: Which Drain Cleaning Method is Best?", "priority": "high"},
+          {"slug": "unclog-main-sewer-line", "title": "How to Unclog a Main Sewer Line: DIY vs Professional", "priority": "high"},
+          {"slug": "bathroom-drain-cleaning", "title": "Bathroom Drain Cleaning: Shower, Tub, and Sink Solutions", "priority": "high"},
+          {"slug": "why-drains-keep-clogging", "title": "Why Do My Drains Keep Clogging? Common Causes and Fixes", "priority": "high"},
+          {"slug": "grease-trap-cleaning", "title": "Grease Trap Cleaning: Restaurant and Commercial Drain Care", "priority": "medium"},
+          {"slug": "floor-drain-maintenance", "title": "Floor Drain Maintenance: Preventing Basement and Garage Clogs", "priority": "medium"},
+          {"slug": "washing-machine-drain-problems", "title": "Washing Machine Drain Problems: Causes and Solutions", "priority": "medium"},
+          {"slug": "garbage-disposal-clogs", "title": "Garbage Disposal Clogs: Prevention and Fixes", "priority": "medium"},
+          {"slug": "drain-cleaning-cost", "title": "How Much Does Professional Drain Cleaning Cost?", "priority": "medium"},
+          {"slug": "bio-enzymatic-drain-cleaners", "title": "Bio-Enzymatic Drain Cleaners: Do They Really Work?", "priority": "low"},
+          {"slug": "preventive-drain-maintenance", "title": "Preventive Drain Maintenance Schedule for Homeowners", "priority": "low"}
         ]
       }
     }
   },
   "internalLinking": {
-    "description": "Guidelines for internal linking between blog posts and services",
+    "description": "Guidelines for internal linking between content tiers",
     "rules": [
       {
-        "rule": "Service Links",
-        "description": "Every blog post should link to its primary related service at least once",
+        "rule": "Tier 1 to Tier 2 (Blog to Service)",
+        "description": "Every blog post MUST link to its parent service page at least once as a CTA",
+        "required": true,
         "examples": {
           "leak-detection-articles": "/services/leak-detection/",
           "mold-articles": "/services/mold-testing/",
@@ -315,8 +470,30 @@
         }
       },
       {
-        "rule": "Cross-Service Links",
-        "description": "When content mentions related services, link to those as well",
+        "rule": "Tier 1 to Pillar",
+        "description": "Every blog post links to its pillar page for topical clustering",
+        "required": true,
+        "examples": {
+          "leak-detection-articles": "/guides/leak-detection/",
+          "mold-articles": "/guides/mold-testing/",
+          "sewer-articles": "/guides/sewer-camera-inspection/",
+          "drain-articles": "/guides/drain-cleaning/"
+        }
+      },
+      {
+        "rule": "Pillar to Cluster",
+        "description": "Pillar pages link to ALL supporting blog posts in their cluster",
+        "required": true
+      },
+      {
+        "rule": "Pillar to Service",
+        "description": "Pillar pages include prominent CTAs to their related service page",
+        "required": true
+      },
+      {
+        "rule": "Cross-Cluster Links",
+        "description": "Related topics across clusters can link horizontally (e.g., leak causes mold)",
+        "required": false,
         "examples": [
           "Mold growth from leaks → link to both leak detection and mold testing",
           "Slab leaks → link to both leak detection and slab leak services",
@@ -324,15 +501,10 @@
         ]
       },
       {
-        "rule": "Related Blog Posts",
-        "description": "Link to related blog posts within the same category",
-        "implementation": "Add 'Related Resources' section at end of articles"
-      },
-      {
         "rule": "Call to Action",
-        "description": "Include contact page link and promotions page link in conclusion sections"
+        "description": "Include contact page link and promotions page link in conclusion sections",
+        "required": true
       }
     ]
   }
 }
-

@@ -54,6 +54,14 @@ const popularCityLinks = [
   { href: '/leak-detection/doral/', name: 'Doral' },
 ];
 
+// Guide/Pillar page links
+const guideLinks = [
+  { href: '/guides/leak-detection/', name: 'Leak Detection Guide' },
+  { href: '/guides/sewer-camera-inspection/', name: 'Sewer Inspection Guide' },
+  { href: '/guides/drain-cleaning/', name: 'Drain Cleaning Guide' },
+  { href: '/guides/mold-testing/', name: 'Mold Testing Guide' },
+];
+
 export function Footer() {
   const currentYear = new Date().getFullYear();
   const social = siteConfig.social || {};
@@ -61,7 +69,7 @@ export function Footer() {
   return (
     <footer className="bg-gray-900 text-gray-300 py-12">
       <div className="max-w-6xl mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8 mb-8">
           {/* Company Info */}
           <div className="lg:col-span-2">
             <h3 className="text-white font-bold text-lg mb-4">
@@ -93,6 +101,31 @@ export function Footer() {
                   </Link>
                 </li>
               ))}
+            </ul>
+          </div>
+
+          {/* Guides */}
+          <div>
+            <h4 className="text-white font-semibold mb-4">Guides</h4>
+            <ul className="space-y-2">
+              {guideLinks.map((link) => (
+                <li key={link.href}>
+                  <Link
+                    href={link.href}
+                    className="text-sm hover:text-white transition-colors duration-200"
+                  >
+                    {link.name}
+                  </Link>
+                </li>
+              ))}
+              <li>
+                <Link
+                  href="/blog/"
+                  className="text-sm text-primary hover:text-primary/80 font-medium transition-colors duration-200"
+                >
+                  View All Articles →
+                </Link>
+              </li>
             </ul>
           </div>
 

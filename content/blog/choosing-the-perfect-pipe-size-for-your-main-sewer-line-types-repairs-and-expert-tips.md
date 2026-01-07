@@ -9,6 +9,8 @@ excerpt: >-
   the different types of pipes for …
 author: Tomasz Alemany
 category: Sewer Camera Inspection
+pillar: sewer-camera-inspection
+feedsService: /services/camera-inspection/
 seo_title: 'Main Sewer Line Pipe Size: Importance Explained - Total Leak Detection'
 seo_description: >-
   Learn how to choose the perfect pipe size for your main sewer line. Explore

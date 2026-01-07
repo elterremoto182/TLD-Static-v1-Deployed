@@ -9,6 +9,8 @@ excerpt: >-
   effective tools available to …
 author: Tomasz Alemany
 category: Sewer Camera Inspection
+pillar: sewer-camera-inspection
+feedsService: /services/camera-inspection/
 seo_title: Sewer Camera Inspection Miami | Homeowners Should Consider It
 seo_description: >-
   Learn how sewer camera inspections help Miami homeowners detect plumbing

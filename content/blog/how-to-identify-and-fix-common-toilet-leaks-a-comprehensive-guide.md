@@ -10,6 +10,8 @@ excerpt: >-
   potentially up to 5 …
 author: Tomasz Alemany
 category: Leak Detection
+pillar: leak-detection
+feedsService: /services/leak-detection/
 seo_title: 'How to Identify & Fix Common Toilet Leaks: A Comprehensive Guide'
 seo_description: >-
   Learn how to identify and fix common toilet leaks with our comprehensive

@@ -8,6 +8,8 @@ excerpt: >-
   flexible plastic.
 author: Tomasz Alemany
 category: Leak Detection
+pillar: leak-detection
+feedsService: /services/leak-detection/
 seo_title: How to Check A Shower Pan For Leaks - Total Leak Detection
 seo_description: >-
   This article provides a step-by-step guide on how to check for shower pan

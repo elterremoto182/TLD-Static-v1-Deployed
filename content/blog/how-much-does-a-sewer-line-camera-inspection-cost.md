@@ -9,6 +9,8 @@ excerpt: >-
   lines in good working order. In …
 author: Tomasz Alemany
 category: Sewer Camera Inspection
+pillar: sewer-camera-inspection
+feedsService: /services/camera-inspection/
 seo_title: How Much Does a Sewer Line Camera Inspection Cost? - Total Leak Detection
 seo_description: >-
   Are you curious about the sewer camera inspection cost? A sewer camera

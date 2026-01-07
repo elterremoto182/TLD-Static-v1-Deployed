@@ -9,6 +9,8 @@ excerpt: >-
   an essential safeguard that confirms your property is truly safe …
 author: Tomasz Alemany
 category: Mold Testing
+pillar: mold-testing
+feedsService: /services/mold-testing/
 seo_title: 'What is a Post Remediation Verification? [Needed Mold Tests]'
 seo_description: >-
   This introduction to Post Remediation Verification (PRV) explains the process

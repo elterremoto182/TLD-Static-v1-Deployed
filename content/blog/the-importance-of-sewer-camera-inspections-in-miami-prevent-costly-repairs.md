@@ -4,6 +4,8 @@ date: '2024-12-03'
 excerpt: "Learn why sewer camera inspections are essential for Miami homeowners. Discover how this non-invasive technology helps find blockages, leaks, and damage before they become expensive problems."
 author: Tomasz Alemany
 category: Sewer Camera Inspection
+pillar: sewer-camera-inspection
+feedsService: /services/camera-inspection/
 seo_title: 'Sewer Camera Inspections in Miami: Prevent Costly Repairs'
 seo_description: >-
   Discover how sewer camera inspections in Miami can prevent costly repairs.

@@ -10,6 +10,8 @@ excerpt: >-
   designed …
 author: Tomasz Alemany
 category: Drain Cleaning
+pillar: drain-cleaning
+feedsService: /services/drain-cleaning/
 seo_title: The Ultimate Guide to Effective Drain Cleaners | Top Solutions That Work
 seo_description: >-
   Discover which drain cleaners are truly effective! Our comprehensive guide

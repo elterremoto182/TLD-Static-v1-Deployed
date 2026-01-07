@@ -9,6 +9,8 @@ excerpt: >-
   Ignoring it may result in extensive plumbing repairs and increased …
 author: Tomasz Alemany
 category: Drain Cleaning
+pillar: drain-cleaning
+feedsService: /services/drain-cleaning/
 seo_title: 'Toilet Bubbles When Washer Drains: Causes & Solutions'
 seo_description: >-
   Find out why your toilet bubbles when your washing machine drains. Explore

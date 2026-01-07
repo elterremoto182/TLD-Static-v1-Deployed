@@ -9,6 +9,8 @@ excerpt: >-
   gravity-based system, where waste flows downhill …
 author: seoanalytics534@gmail.com
 category: Sewer Camera Inspection
+pillar: sewer-camera-inspection
+feedsService: /services/camera-inspection/
 seo_title: Sewer Line Maintenance Tips for Homeowners - Total Leak Detection
 seo_description: >-
   Protect your home from costly sewer issues. Discover essential tips for

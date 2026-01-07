@@ -12,6 +12,8 @@ excerpt: >-
   referred to …
 author: Tomasz Alemany
 category: Leak Detection
+pillar: leak-detection
+feedsService: /services/leak-detection/
 seo_title: Detecting and Repairing Leaks Beneath Concrete Foundations
 seo_description: >-
   Explore state-of-the-art methods for locating and fixing plumbing leaks under

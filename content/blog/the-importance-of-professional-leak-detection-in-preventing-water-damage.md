@@ -9,6 +9,8 @@ excerpt: >-
   undetected leaks can slowly compromise your property's …
 author: Tomasz Alemany
 category: Leak Detection
+pillar: leak-detection
+feedsService: /services/leak-detection/
 seo_title: Professional Leak Detection Miami | Prevent Water Damage
 seo_description: >-
   Discover how professional leak detection can prevent costly water damage in

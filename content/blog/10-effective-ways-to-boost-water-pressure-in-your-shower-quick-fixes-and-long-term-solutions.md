@@ -9,6 +9,8 @@ excerpt: >-
   available water splits between these sources, leading to reduced flow in the …
 author: seoanalytics534@gmail.com
 category: Leak Detection
+pillar: leak-detection
+feedsService: /services/leak-detection/
 seo_title: Increase Shower Water Pressure for Better Flow - Total Leak Detection
 seo_description: >-
   Struggling with low water pressure in your shower? Discover 10 effective ways

@@ -6,6 +6,8 @@ excerpt: >-
   presentation.
 author: priyanka
 category: Leak Detection
+pillar: leak-detection
+feedsService: /services/leak-detection/
 seo_title: Event Sign Up - Total Leak Detection
 seo_description: >-
   Total Leak event sign up, this is for particular events where we market leak
