@@ -7,6 +7,7 @@ import {
   getCity,
   getAllCitySlugs,
   getFaqsForService,
+  getCityServiceVideo,
 } from '@/lib/local-seo/data';
 import {
   generateCityServiceMetaTitle,
@@ -42,6 +43,7 @@ import {
   LocalCTA,
   NearbyAreas,
   RelatedLinks,
+  ServiceVideoEmbed,
 } from '@/components/local-seo';
 
 const SERVICE_SLUG = 'sewer-camera-inspection';
@@ -103,6 +105,7 @@ export default async function SewerCameraInspectionCityPage({
   const relatedServiceLinks = getRelatedServiceLinks(SERVICE_SLUG, citySlug);
   const problemLinks = getProblemLinksForService(SERVICE_SLUG, citySlug);
   const blogLinks = getRelatedBlogLinks(SERVICE_SLUG, citySlug, 3);
+  const videoConfig = getCityServiceVideo(SERVICE_SLUG, citySlug);
   
   const canonicalUrl = getCityServiceCanonicalUrl(SERVICE_SLUG, citySlug);
   const breadcrumbSchema = generateBreadcrumbSchema(breadcrumbs, canonicalUrl);
@@ -170,6 +173,13 @@ export default async function SewerCameraInspectionCityPage({
           title={`Our ${service.name} Process`}
           subtitle={`How we deliver results for ${city.name} properties`}
         />
+        
+        {videoConfig && (
+          <ServiceVideoEmbed 
+            videoUrl={videoConfig.url!}
+            title={`${service.name} in ${city.name}`}
+          />
+        )}
         
         <NeighborhoodList
           neighborhoods={city.neighborhoods}

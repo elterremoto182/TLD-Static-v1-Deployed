@@ -1,56 +1,153 @@
-# AI Website Builder Template v2.0
+# Total Leak Detection - Static Website v2.0
 
-A modern, production-ready Next.js template for building small business websites with AI. Built with performance, modularity, and flexibility in mind.
+A production-ready Next.js static website for Total Leak Detection, featuring a sophisticated 3-tier content architecture for SEO authority, comprehensive local SEO system, and educational pillar content strategy.
 
-## Features 
+## Features
 
-- **Fast & Optimized**: Static generation, lazy loading, image optimization, and CDN-ready
-- **Modern Design**: Clean typography, smooth animations, and professional styling
+- **3-Tier SEO Architecture**: Educational content → Services → Local SEO pages
+- **Local SEO System**: City-specific service pages for 39+ South Florida cities
+- **Pillar Content Strategy**: Comprehensive guides linking to service clusters
+- **Blog with Taxonomy**: Posts organized by category with related post discovery
+- **Fast & Optimized**: Static generation, lazy loading, image optimization, CDN-ready
 - **Config-Driven**: All content managed through JSON and Markdown files
-- **Modular Components**: Reusable, well-organized component structure
-- **Blog System**: Full Markdown blog with category support
-- **SEO Optimized**: Meta tags, Open Graph, Twitter cards, sitemap.xml, and robots.txt
+- **SEO Optimized**: Meta tags, Open Graph, structured data, sitemap.xml
 - **Responsive**: Mobile-first design with breakpoints
-- **Image Optimization**: Automatic WebP conversion with blur placeholders and responsive sizing
-- **Media Optimized**: Lazy-loaded images and videos with loading skeletons
-- **Error Handling**: Custom 404 page and error boundaries
-- **Accessible**: WCAG compliant with semantic HTML
-- **Database Ready**: Supabase integration for data persistence
+- **Image Optimization**: Automatic WebP conversion with blur placeholders
 
 ## Tech Stack
 
-- **Framework**: Next.js 14 (App Router)
+- **Framework**: Next.js 14 (App Router, Static Export)
 - **Styling**: Tailwind CSS with shadcn/ui components
-- **Database**: Supabase (PostgreSQL)
-- **Forms**: React Hook Form with Zod validation
 - **Image Optimization**: next-image-export-optimizer
 - **Animations**: CSS transitions and transforms
-- **Theme**: next-themes for dark/light mode support
 - **Typography**: Inter (Google Fonts)
 - **Icons**: Lucide React
-- **Blog**: Markdown with gray-matter and react-markdown
+- **Content**: Markdown with gray-matter and react-markdown
+
+---
+
+## Content Architecture
+
+### 3-Tier SEO Strategy
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  TIER 1: Educational Content (Informational Intent)         │
+│  ├── /guides/{topic}/ - Pillar pages                        │
+│  └── /blog/{slug}/ - Supporting articles                    │
+│      ↓ Links down to services                               │
+├─────────────────────────────────────────────────────────────┤
+│  TIER 2: Service Pages (Transactional Intent)               │
+│  └── /services/{service}/ - Main service pages              │
+│      ↓ Links down to local pages                            │
+├─────────────────────────────────────────────────────────────┤
+│  TIER 3: Local SEO (Transactional + Local Intent)           │
+│  ├── /{service}/{city}/ - City service pages                │
+│  └── /problems/{problem}/{city}/ - Problem-specific pages   │
+└─────────────────────────────────────────────────────────────┘
+```
+
+### Pillar Pages (Guides)
+
+Comprehensive educational content that establishes topical authority:
+
+| Guide | Path | Feeds Service |
+|-------|------|---------------|
+| Leak Detection Guide | `/guides/leak-detection/` | `/services/leak-detection/` |
+| Sewer Camera Guide | `/guides/sewer-camera-inspection/` | `/services/camera-inspection/` |
+| Drain Cleaning Guide | `/guides/drain-cleaning/` | `/services/drain-cleaning/` |
+| Mold Testing Guide | `/guides/mold-testing/` | `/services/mold-testing/` |
+
+### Services (Tier 2)
+
+Main service pages with detailed information:
+
+- `/services/leak-detection/` - Water leak detection
+- `/services/mold-testing/` - Mold inspection & air quality
+- `/services/camera-inspection/` - Sewer camera inspection
+- `/services/slab-leaks/` - Foundation leak detection
+- `/services/drain-cleaning/` - Drain maintenance
+- `/services/clogged-drains/` - Blockage clearing
+- `/services/hydro-jetting/` - High-pressure cleaning
+- `/services/damaged-sewer/` - Sewer line repair
+- `/services/leaking-toilet/` - Toilet leak services
+- `/services/plumbing-report-writing/` - Documentation services
+- `/services/commercial-services/` - Commercial solutions
+
+### Local SEO Pages (Tier 3)
+
+City-specific service pages for local search visibility:
+
+**Service + City Pages:**
+- `/leak-detection/{city}/` - Leak detection in specific cities
+- `/mold-testing/{city}/` - Mold testing in specific cities
+- `/sewer-camera-inspection/{city}/` - Camera inspection in specific cities
+
+**Problem + City Pages:**
+- `/problems/{problem}/{city}/` - Problem-specific pages by city
+- Examples: `/problems/slab-leak/miami/`, `/problems/root-intrusion/fort-lauderdale/`
+
+---
 
 ## Project Structure
 
 ```
-├── app/                      # Next.js app directory
-│   ├── blog/                # Blog pages
-│   │   ├── [slug]/         # Dynamic blog post pages
-│   │   ├── loading.tsx     # Blog loading state
-│   │   └── page.tsx        # Blog listing page
-│   ├── error.tsx           # Error boundary
-│   ├── global-error.tsx    # Global error handler
-│   ├── layout.tsx          # Root layout with SEO
-│   ├── loading.tsx         # Root loading state
-│   ├── not-found.tsx       # Custom 404 page
-│   ├── page.tsx            # Home page
-│   └── sitemap.ts          # Dynamic sitemap generator
+├── app/                          # Next.js App Router
+│   ├── page.tsx                  # Home page
+│   ├── layout.tsx                # Root layout with SEO
+│   ├── sitemap.ts                # Dynamic sitemap generator
+│   │
+│   ├── guides/                   # Tier 1: Pillar pages
+│   │   └── [slug]/page.tsx       # Dynamic guide pages
+│   │
+│   ├── blog/                     # Tier 1: Blog content
+│   │   ├── page.tsx              # Blog listing
+│   │   └── [slug]/page.tsx       # Individual posts
+│   │
+│   ├── services/                 # Tier 2: Service pages
+│   │   ├── page.tsx              # Services overview
+│   │   └── [slug]/page.tsx       # Individual services
+│   │
+│   ├── leak-detection/           # Tier 3: Local SEO
+│   │   ├── page.tsx              # Service hub
+│   │   └── [city]/page.tsx       # City-specific pages
+│   │
+│   ├── mold-testing/             # Tier 3: Local SEO
+│   │   ├── page.tsx              # Service hub
+│   │   └── [city]/page.tsx       # City-specific pages
+│   │
+│   ├── sewer-camera-inspection/  # Tier 3: Local SEO
+│   │   ├── page.tsx              # Service hub
+│   │   └── [city]/page.tsx       # City-specific pages
+│   │
+│   ├── problems/                 # Tier 3: Problem pages
+│   │   ├── page.tsx              # Problems overview
+│   │   ├── [problem]/page.tsx    # Problem detail
+│   │   └── [problem]/[city]/     # Problem + city pages
+│   │
+│   ├── areas/page.tsx            # Service areas overview
+│   ├── about/page.tsx            # About page
+│   ├── contact/                  # Contact page
+│   └── [slug]/page.tsx           # Dynamic static pages
+│
 ├── components/
-│   ├── blog/               # Blog-specific components
-│   │   └── MarkdownRenderer.tsx
-│   ├── media/              # Media components
-│   │   └── VideoPlayer.tsx
-│   ├── sections/           # Page sections
+│   ├── local-seo/                # Local SEO components
+│   │   ├── LocalHero.tsx         # Hero with city name
+│   │   ├── LocalIntro.tsx        # City-specific intro
+│   │   ├── ServiceOverview.tsx   # Service details
+│   │   ├── ServiceProcess.tsx    # How-it-works steps
+│   │   ├── LocalFAQ.tsx          # FAQ section
+│   │   ├── LocalCTA.tsx          # Call-to-action
+│   │   ├── CityGrid.tsx          # City selection grid
+│   │   ├── NearbyAreas.tsx       # Related cities
+│   │   ├── NeighborhoodList.tsx  # Local neighborhoods
+│   │   └── RelatedLinks.tsx      # Internal linking
+│   │
+│   ├── blog/                     # Blog components
+│   │   ├── MarkdownRenderer.tsx  # MDX rendering
+│   │   └── RelatedPosts.tsx      # Related post cards
+│   │
+│   ├── sections/                 # Page sections
 │   │   ├── Header.tsx
 │   │   ├── Hero.tsx
 │   │   ├── Services.tsx
@@ -59,187 +156,199 @@ A modern, production-ready Next.js template for building small business websites
 │   │   ├── Testimonials.tsx
 │   │   ├── TrustBadges.tsx
 │   │   ├── CTABanner.tsx
+│   │   ├── FAQ.tsx
 │   │   ├── Contact.tsx
-│   │   └── Footer.tsx
-│   ├── ui/                 # shadcn/ui components
-│   │   ├── button.tsx
-│   │   ├── input.tsx
-│   │   ├── label.tsx
+│   │   ├── Footer.tsx
+│   │   ├── ServiceAreas.tsx
+│   │   ├── FindInYourCity.tsx
+│   │   ├── GoogleMap.tsx
+│   │   └── ValueProposition.tsx
+│   │
+│   ├── ui/                       # shadcn/ui components
+│   │   ├── breadcrumb.tsx
 │   │   └── loading-skeleton.tsx
-│   ├── AnimateOnScroll.tsx # Scroll animation wrapper
-│   ├── OptimizedImage.tsx  # Image optimization component
-│   └── ReviewBadge.tsx     # Review/rating component
-├── config/                 # Configuration files
-│   ├── site.json          # Site metadata & navigation
-│   ├── theme.json         # Theme customization
-│   └── content.json       # Page content
+│   │
+│   ├── media/VideoPlayer.tsx
+│   ├── AnimateOnScroll.tsx
+│   ├── OptimizedImage.tsx
+│   ├── ReviewBadge.tsx
+│   ├── StickyCallButton.tsx
+│   └── YouTubeHydrator.tsx
+│
+├── config/                       # Configuration files
+│   ├── site.json                 # Site metadata & navigation
+│   ├── theme.json                # Theme customization
+│   ├── content.json              # Home page content
+│   ├── seo.json                  # SEO settings
+│   ├── taxonomy.json             # Content structure & linking rules
+│   └── local-seo/                # Local SEO data
+│       ├── cities.json           # 39+ city definitions
+│       ├── services.json         # Service templates
+│       ├── problems.json         # Problem type definitions
+│       └── faqs.json             # FAQ content
+│
 ├── content/
-│   └── blog/              # Markdown blog posts
+│   ├── blog/                     # 23 Markdown blog posts
+│   └── pages/                    # Static page content
+│       ├── guides-*.md           # Pillar page content
+│       └── services-*.md         # Service page content
+│
 ├── lib/
-│   ├── blog/              # Blog utilities
-│   │   └── posts.ts
-│   └── utils.ts           # Helper functions
-├── public/
-│   ├── images/            # Image assets
-│   │   └── */nextImageExportOptimizer/ # Optimized WebP images
-│   └── robots.txt         # Search engine directives
-├── loader.js              # Custom Next.js image loader
-├── next.config.js         # Next.js configuration
-└── .env                   # Environment variables (Supabase)
+│   ├── local-seo/                # Local SEO utilities
+│   │   ├── data.ts               # Data fetching
+│   │   ├── templates.ts          # Content templating
+│   │   ├── links.ts              # Internal linking
+│   │   └── schema.ts             # Structured data
+│   ├── blog/posts.ts             # Blog utilities
+│   ├── pages/pages.ts            # Page utilities
+│   ├── seo/                      # SEO utilities
+│   │   ├── structured-data.ts
+│   │   └── faq-data.ts
+│   └── utils.ts                  # Helper functions
+│
+└── public/
+    ├── images/                   # Image assets
+    ├── robots.txt
+    └── llms.txt                  # AI crawler guidance
 ```
+
+---
+
+## Local SEO System
+
+### Service Areas
+
+**Miami-Dade County (18 cities):**
+Miami, Miami Beach, Coral Gables, Hialeah, Doral, Kendall, Pinecrest, Homestead, Miami Lakes, Aventura, North Miami, North Miami Beach, South Miami, Cutler Bay, Palmetto Bay, Key Biscayne, Sweetwater, Sunny Isles Beach
+
+**Broward County (20 cities):**
+Fort Lauderdale, Hollywood, Pembroke Pines, Miramar, Coral Springs, Plantation, Davie, Sunrise, Pompano Beach, Deerfield Beach, Lauderhill, Lauderdale Lakes, Tamarac, Coconut Creek, Margate, Weston, Hallandale Beach, Cooper City, Parkland, Oakland Park
+
+**Palm Beach County (1 city):**
+Boca Raton
+
+### City Data Structure
+
+Each city includes:
+- Name and slug
+- County and state
+- Coordinates (lat/lng)
+- Neighborhoods served
+- ZIP codes
+- Response time estimates
+- Local factors (climate, risks, characteristics)
+- Custom intro and extended content
+- Nearby areas for linking
+
+### Problem Types
+
+**Leak Detection Problems:**
+- Slab Leak Detection
+- Burst Pipe Detection
+- Water Heater Leak Detection
+- Pool Leak Detection
+- Underground Leak Detection
+- Shower Pan Leak Detection
+- Toilet Leak Detection
+
+**Mold Testing Problems:**
+- Bathroom Mold Testing
+- Water Damage Mold Assessment
+- Hidden Mold Detection
+
+**Sewer Inspection Problems:**
+- Tree Root Intrusion
+- Collapsed Pipe Detection
+- Sewer Blockage Diagnosis
+
+---
+
+## Blog Taxonomy
+
+Blog posts are organized by category and linked to their parent service and pillar page:
+
+### Category: Leak Detection
+- Parent Pillar: `/guides/leak-detection/`
+- Parent Service: `/services/leak-detection/`
+- 10 published articles, 11 planned
+
+### Category: Mold Testing
+- Parent Pillar: `/guides/mold-testing/`
+- Parent Service: `/services/mold-testing/`
+- 3 published articles, 12 planned
+
+### Category: Sewer Camera Inspection
+- Parent Pillar: `/guides/sewer-camera-inspection/`
+- Parent Service: `/services/camera-inspection/`
+- 6 published articles, 9 planned
+
+### Category: Drain Cleaning
+- Parent Pillar: `/guides/drain-cleaning/`
+- Parent Service: `/services/drain-cleaning/`
+- 4 published articles, 11 planned
+
+---
+
+## Internal Linking Strategy
+
+### Rules
+
+1. **Tier 1 → Tier 2**: Every blog post links to its parent service page
+2. **Tier 1 → Pillar**: Every blog post links to its pillar page
+3. **Pillar → Cluster**: Pillar pages link to all supporting blog posts
+4. **Pillar → Service**: Pillar pages include CTAs to related services
+5. **Service → Local**: Service pages link to city-specific pages
+6. **Cross-Cluster**: Related topics link horizontally (e.g., leaks → mold)
+
+### Example Link Flow
+
+```
+Blog Post: "Signs of Hidden Water Leaks"
+    ↓
+Pillar Page: /guides/leak-detection/
+    ↓
+Service Page: /services/leak-detection/
+    ↓
+Local Page: /leak-detection/miami/
+```
+
+---
 
 ## Configuration
 
 ### Site Configuration (`config/site.json`)
 
-Contains site-wide settings:
+Site-wide settings including:
 - Business name and contact info
 - Navigation menu
-- Social media links (Facebook, Twitter/X, Instagram, YouTube, LinkedIn, TikTok)
+- Social media links
 - SEO metadata
-
-**Social Links:** Add any combination of social platforms. The footer automatically displays only the platforms you configure. Supported platforms: `facebook`, `twitter`, `instagram`, `youtube`, `linkedin`, `tiktok`.
 
 ### Theme Configuration (`config/theme.json`)
 
-Customize the visual appearance:
-- Color palette (HSL format for Tailwind)
+Visual appearance including:
+- Color palette (HSL format)
 - Typography
 - Spacing
 - Border radius
 
-### Content Configuration (`config/content.json`)
+### Taxonomy Configuration (`config/taxonomy.json`)
 
-All page content:
-- Hero section
-- Services
-- About section with stats
-- Gallery (before/after showcase)
-- Testimonials
-- Trust badges
-- CTA banner
-- Contact form
+Complete content structure including:
+- 3-tier architecture definition
+- Page structure and paths
+- Blog category mappings
+- Pillar page definitions
+- Internal linking rules
 
-### Database Configuration (`.env`)
+### Local SEO Configuration (`config/local-seo/`)
 
-Supabase connection settings:
-```env
-NEXT_PUBLIC_SUPABASE_URL=your-project-url
-NEXT_PUBLIC_SUPABASE_ANON_KEY=your-anon-key
-```
+- `cities.json` - City data with neighborhoods, ZIP codes, local factors
+- `services.json` - Service templates with process steps, technology, content
+- `problems.json` - Problem definitions with symptoms, causes, urgency
+- `faqs.json` - FAQ content organized by service type
 
-The template includes Supabase client integration for data persistence. You can use it for:
-- Contact form submissions
-- User authentication
-- Dynamic content management
-- Blog comments
-- Any custom database needs
-
-### Image Optimization Configuration
-
-Image optimization is configured in `next.config.js`:
-- **Quality**: 75% (configurable via `nextImageExportOptimizer_quality`)
-- **Format**: WebP conversion enabled
-- **Blur Placeholders**: Automatically generated
-- **Responsive Sizes**: 16px to 3840px for all devices
-- **Cache**: Optimized images are cached and only regenerated when source changes
-
-## Customization
-
-### Changing Colors
-
-Edit `config/theme.json` and update the CSS variables in `app/globals.css`:
-
-```json
-{
-  "colors": {
-    "primary": "217.2 91.2% 59.8%",
-    "accent": "37.7 92.1% 50.2%"
-  }
-}
-```
-
-### Adding Content
-
-1. **Update site info**: Edit `config/site.json`
-2. **Modify sections**: Edit `config/content.json`
-3. **Add blog posts**: Create `.md` files in `content/blog/`
-
-### Blog Post Format
-
-```markdown
 ---
-title: "Post Title"
-date: "2025-10-15"
-excerpt: "Brief description"
-author: "Author Name"
-category: "Category"
-image: "/images/blog/image.jpg"
----
-
-# Your content here
-```
-
-## Component Features
-
-### OptimizedImage
-
-Automatically optimizes images with WebP conversion and blur placeholders:
-```tsx
-<OptimizedImage
-  src="/images/hero/hero-background.jpeg"
-  alt="Hero background"
-  width={1920}
-  height={1080}
-  priority={true}
-/>
-```
-
-Images are automatically:
-- Converted to WebP format
-- Generated at multiple responsive sizes
-- Given blur placeholders for smooth loading
-- Cached for faster subsequent builds
-
-### VideoPlayer
-
-Custom video player with controls:
-```tsx
-<VideoPlayer
-  src="/path/to/video.mp4"
-  poster="/poster.jpg"
-  autoPlay={true}
-  loop={true}
-  muted={true}
-/>
-```
-
-### AnimateOnScroll
-
-Wrapper component for scroll-based animations:
-```tsx
-<AnimateOnScroll animation="fade-up" delay={0.2}>
-  {/* Your content */}
-</AnimateOnScroll>
-```
-
-### Form Components
-
-Built with React Hook Form and Zod validation:
-```tsx
-import { useForm } from 'react-hook-form';
-import { zodResolver } from '@hookform/resolvers/zod';
-import * as z from 'zod';
-
-const schema = z.object({
-  email: z.string().email(),
-  message: z.string().min(10),
-});
-
-const form = useForm({
-  resolver: zodResolver(schema),
-});
-```
 
 ## Development
 
@@ -259,126 +368,89 @@ npm run build:optimized
 # Optimize images only
 npm run export-images
 
-# Start production server
-npm start
-
 # Type check
 npm run typecheck
 ```
 
-### Build Commands Explained
+### Build Output
 
-- **`npm run build`**: Standard build with CSS optimization (no image processing)
-- **`npm run build:optimized`**: Full build including image optimization and WebP conversion
-- **`npm run export-images`**: Run image optimization separately without building
+The build generates a complete static site in the `out` directory, including:
+- All static pages
+- City-specific local SEO pages
+- Problem-specific pages
+- Blog posts
+- Optimized images
+- Sitemap.xml
 
-**Note**: If images are already optimized (exist in `nextImageExportOptimizer` folders), they will be skipped unless the source image has changed. This makes subsequent builds much faster.
+---
 
 ## Deployment
 
-This template is optimized for static deployment:
+Optimized for static deployment:
 
-1. **Vercel** (recommended):
-   - Push to GitHub and connect to Vercel
-   - Use build command: `npm run build` (images already optimized)
-   - Output directory: `out`
+### Vercel (Recommended)
+```bash
+# Push to GitHub and connect to Vercel
+# Build command: npm run build
+# Output directory: out
+```
 
-2. **Netlify**:
-   - Use build command: `npm run build`
-   - Publish directory: `out`
+### Netlify
+```bash
+# Build command: npm run build
+# Publish directory: out
+```
 
-3. **Static hosting** (S3, GitHub Pages, etc.):
-   - Run `npm run build` locally
-   - Upload the `out` directory
+### Static Hosting (S3, GitHub Pages)
+```bash
+npm run build
+# Upload 'out' directory
+```
 
-**Deployment Tips**:
-- Pre-optimize images before deploying to reduce build times
-- The `out` directory contains the complete static site
-- All optimized images are included in the build
-- No server runtime required
+---
 
 ## SEO Features
 
 - Dynamic meta tags from config
-- Open Graph support
-- Twitter Cards
+- Open Graph and Twitter Cards
+- Structured data (LocalBusiness, FAQPage, Service schemas)
 - Automatic sitemap.xml generation
 - robots.txt for crawler control
 - Semantic HTML structure
-- Image alt tags
-- Structured data ready (add Schema.org markup)
+- Internal linking for PageRank flow
+- City-specific canonical URLs
+- Breadcrumb navigation
+
+---
 
 ## Performance
 
-- Static generation for all pages (output: 'export')
-- Advanced image optimization with WebP conversion and blur placeholders
-- Lazy-loaded images and videos with loading skeletons
-- Automatic CSS optimization and minification
+- Static generation for all pages
+- WebP image optimization with blur placeholders
+- Lazy-loaded images and videos
+- CSS optimization and minification
 - Code splitting and tree shaking
 - Optimized fonts with preloading
-- Minimal JavaScript footprint
-- Fast Time to Interactive (TTI)
-- Error boundaries for graceful degradation
-- Console.log removal in production builds
-- Compression enabled
-- SWC minification for faster builds
+- Console.log removal in production
+- SWC minification
+
+---
 
 ## Contact Form Integration
 
-The contact form is now integrated with **n8n webhooks** for serverless form submissions. The form sends data to your n8n workflow, which can then:
-- Send email notifications
-- Store submissions in a database
-- Trigger other automations
-- Integrate with CRM systems
+The contact form integrates with **n8n webhooks** for serverless form submissions.
 
-### Setting Up n8n Webhook
+### Setup
 
-1. **Create an n8n Webhook Workflow:**
-   - In your n8n instance, create a new workflow
-   - Add a "Webhook" node and configure it to accept POST requests
-   - Copy the webhook URL (e.g., `https://your-n8n-instance.com/webhook/abc123`)
-
-2. **Configure the Environment Variable:**
-   - Create a `.env.local` file in the project root
-   - Add your webhook URL:
-     ```
-     NEXT_PUBLIC_N8N_WEBHOOK_URL=https://your-n8n-instance.com/webhook/abc123
-     ```
-   - For static exports, you'll need to set this during build time or use a config file
-
-3. **Activate Your Workflow:**
-   - Make sure your n8n workflow is **active** (not just saved)
-   - The workflow must be running for the webhook to accept requests
-
-4. **Configure CORS (Important for Local Development):**
-   - In your n8n webhook node settings, you may need to configure CORS
-   - For n8n.cloud, CORS is usually handled automatically for production domains
-   - For local development (localhost:3000), you have two options:
-     - **Option A**: Add a "Respond to Webhook" node after your webhook with these headers:
-       ```
-       Access-Control-Allow-Origin: *
-       Access-Control-Allow-Methods: POST, OPTIONS
-       Access-Control-Allow-Headers: Content-Type
-       ```
-     - **Option B**: Use n8n's production URL (not localhost) for testing
-   - **Note**: The 404 error suggests your workflow might not be active - make sure to activate it!
-
-5. **Build and Deploy:**
-   - The form will automatically use the webhook URL from the environment variable
-   - For static sites, make sure to set the environment variable during your build process
-
-### Troubleshooting CORS Errors
-
-If you see a CORS error when submitting the form:
-
-1. **Check if workflow is active**: The workflow must be active (not just saved) in n8n
-2. **Add CORS headers in n8n**: Add a "Respond to Webhook" node with CORS headers (see step 4 above)
-3. **Verify webhook URL**: Make sure the webhook URL is correct and the workflow is active
-4. **Test the webhook directly**: Use a tool like Postman or curl to test if the webhook accepts requests
+1. Create n8n webhook workflow
+2. Add webhook URL to `.env.local`:
+   ```
+   NEXT_PUBLIC_N8N_WEBHOOK_URL=https://your-n8n-instance.com/webhook/abc123
+   ```
+3. Activate workflow in n8n
 
 ### Form Data Structure
 
-The form sends the following JSON payload to your n8n webhook:
 ```json
 {
   "name": "John Doe",
@@ -390,13 +462,22 @@ The form sends the following JSON payload to your n8n webhook:
 }
 ```
 
-### Alternative Integration Options
+---
 
-If you prefer other solutions:
-1. **Formspree** (easiest): No backend required
-2. **Netlify Forms**: Simple attribute addition
-3. **Custom API Route**: Full control with email service
-4. **Email Link**: Simplest fallback option
+## Page Count Summary
+
+| Content Type | Count |
+|--------------|-------|
+| Static Pages | ~15 |
+| Service Pages | 11 |
+| Guide/Pillar Pages | 4 |
+| Blog Posts | 23 |
+| City Service Pages | ~117 (39 cities × 3 services) |
+| Problem Pages | ~13 |
+| Problem + City Pages | ~500+ |
+| **Total Pages** | **~700+** |
+
+---
 
 ## Browser Support
 
@@ -405,9 +486,13 @@ If you prefer other solutions:
 - Safari (last 2 versions)
 - Edge (last 2 versions)
 
+---
+
 ## License
 
 MIT
+
+---
 
 ## Support
 

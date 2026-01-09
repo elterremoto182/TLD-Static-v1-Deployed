@@ -1,0 +1,52 @@
+{
+  "_description": "Video configuration for service and city pages. Default videos are used unless overridden at the city level.",
+  
+  "defaultVideos": {
+    "sewer-camera-inspection": {
+      "url": "https://www.youtube.com/watch?v=Sk7VPGiqhek",
+      "title": "Sewer Camera Inspection Service"
+    },
+    "leak-detection": {
+      "url": null,
+      "title": "Leak Detection Service"
+    },
+    "mold-testing": {
+      "url": null,
+      "title": "Mold Testing Service"
+    }
+  },
+  
+  "cityOverrides": {
+    "_example_usage": "Add city-specific videos here. Format: { 'city-slug': { 'service-slug': { 'url': '...', 'title': '...' } } }",
+    
+    "coconut-creek": {
+      "mold-testing": {
+        "url": "https://www.youtube.com/watch?v=4lgSZKgCvZo",
+        "title": "Mold Testing in Coconut Creek"
+      }
+    },
+    "miami-lakes": {
+      "leak-detection": {
+        "url": "https://www.youtube.com/watch?v=1z_hTGO6R3k",
+        "title": "Leak Detection in Miami Lakes"
+      }
+    },
+    "miramar": {
+      "sewer-camera-inspection": {
+        "url": null,
+        "title": "Sewer Camera Inspection in Miramar"
+      },
+      "leak-detection": {
+        "url": "https://www.youtube.com/watch?v=3tiaHonMHEM",
+        "title": "Leak Detection in Miramar"
+      }
+    },
+    "palmetto-bay": {
+      "leak-detection": {
+        "url": "https://www.youtube.com/watch?v=rjLunKvu57s",
+        "title": "Leak Detection in Palmetto Bay"
+      }
+    }
+  }
+}
+

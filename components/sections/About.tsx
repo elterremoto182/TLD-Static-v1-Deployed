@@ -1,6 +1,7 @@
 import { Shield, Award, Clock, Users, CheckCircle, LucideIcon } from 'lucide-react';
 import OptimizedImage from '@/components/OptimizedImage';
 import { AnimateOnScroll } from '@/components/AnimateOnScroll';
+import { YouTubeEmbed } from '@/components/media/YouTubeEmbed';
 import content from '@/config/content.json';
 
 // Icon mapping for about features - selective imports for better tree-shaking
@@ -46,6 +47,26 @@ export function About() {
             </div>
           </AnimateOnScroll>
         )}
+
+        {/* Company Introduction Video */}
+        <AnimateOnScroll animation="fade-in-up" duration={600} delay={100}>
+          <div className="mb-16">
+            <div className="text-center mb-6">
+              <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-3">
+                Meet Our Team
+              </h3>
+              <p className="text-gray-600 max-w-2xl mx-auto">
+                Get to know the people behind Total Leak Detection and see why families and businesses trust us with their properties.
+              </p>
+            </div>
+            <div className="max-w-4xl mx-auto rounded-2xl overflow-hidden shadow-xl">
+              <YouTubeEmbed
+                videoId="zAQ-o5fv-wU"
+                title="Total Leak Detection - Company Introduction"
+              />
+            </div>
+          </div>
+        </AnimateOnScroll>
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-16">
           {about.stats.map((stat, index) => (

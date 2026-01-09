@@ -6,7 +6,7 @@ import { AnimateOnScroll } from '@/components/AnimateOnScroll';
 import OptimizedImage from '@/components/OptimizedImage';
 import { Phone, Shield, Clock, CheckCircle, Camera } from 'lucide-react';
 
-import { getService, getAllCities } from '@/lib/local-seo/data';
+import { getService, getAllCities, getServiceVideo } from '@/lib/local-seo/data';
 import {
   generateServiceHubBreadcrumbs,
   generateBreadcrumbSchema,
@@ -14,7 +14,7 @@ import {
   schemaToJsonLd,
 } from '@/lib/local-seo/schema';
 import { getServiceHubCanonicalUrl } from '@/lib/local-seo/links';
-import { CityGrid, ServiceProcess, LocalCTA } from '@/components/local-seo';
+import { CityGrid, ServiceProcess, LocalCTA, ServiceVideoEmbed } from '@/components/local-seo';
 
 const SERVICE_SLUG = 'sewer-camera-inspection';
 
@@ -45,6 +45,7 @@ export default function SewerCameraInspectionHubPage() {
   const cities = getAllCities();
   const breadcrumbs = generateServiceHubBreadcrumbs(service);
   const canonicalUrl = getServiceHubCanonicalUrl(SERVICE_SLUG);
+  const videoConfig = getServiceVideo(SERVICE_SLUG);
   
   const breadcrumbSchema = generateBreadcrumbSchema(breadcrumbs, canonicalUrl);
   const webPageSchema = generateWebPageSchema({
@@ -150,6 +151,13 @@ export default function SewerCameraInspectionHubPage() {
           title={`How Our ${service.name} Works`}
           subtitle="Our proven process delivers accurate results every time"
         />
+        
+        {videoConfig && (
+          <ServiceVideoEmbed 
+            videoUrl={videoConfig.url!}
+            title={videoConfig.title}
+          />
+        )}
         
         <section className="py-16 bg-white">
           <div className="max-w-4xl mx-auto px-4">

@@ -19,9 +19,6 @@ From preventing sewer pipe problems to delivering super reliable plumbing report
 
 The good news is that the sooner they are corrected, the less chance there is of it causing serious damage to your home or business.
 
-<iframe width="100%" height="400px" src="https://www.youtube.com/embed/zAQ-o5fv-wU?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-
 ### Why choose us? 
 
 We specialize in non-invasive leak detection. This involves the use of advanced techniques inside and outside the house that avoid expensive tear-down of walls, floors, and landscaping. Not only do we have the advanced tools and equipment, but have properly trained professionals to create customized solutions for your exact problem.

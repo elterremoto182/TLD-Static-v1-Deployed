@@ -2,6 +2,7 @@ import citiesData from '@/config/local-seo/cities.json';
 import servicesData from '@/config/local-seo/services.json';
 import problemsData from '@/config/local-seo/problems.json';
 import faqsData from '@/config/local-seo/faqs.json';
+import videosData from '@/config/local-seo/videos.json';
 
 // Type definitions
 export interface CityLocalFactors {
@@ -216,5 +217,62 @@ export function getStats() {
                 getAllServiceSlugs().length + // service hub pages
                 getAllProblemSlugs().length,  // problem hub pages
   };
+}
+
+// Video configuration types
+export interface VideoConfig {
+  url: string | null;
+  title: string;
+}
+
+interface VideosConfig {
+  defaultVideos: Record<string, VideoConfig>;
+  cityOverrides: Record<string, Record<string, VideoConfig>>;
+}
+
+const videos = videosData as VideosConfig;
+
+/**
+ * Get the video configuration for a service hub page (no city specified)
+ * Returns the default video for the service, or null if none configured
+ */
+export function getServiceVideo(serviceSlug: string): VideoConfig | null {
+  const defaultVideo = videos.defaultVideos[serviceSlug];
+  if (defaultVideo?.url) {
+    return defaultVideo;
+  }
+  return null;
+}
+
+/**
+ * Get the video configuration for a city service page
+ * First checks for a city-specific override, then falls back to the service default
+ * Returns null if no video is configured
+ */
+export function getCityServiceVideo(serviceSlug: string, citySlug: string): VideoConfig | null {
+  // Check for city-specific override first
+  const cityOverride = videos.cityOverrides[citySlug]?.[serviceSlug];
+  if (cityOverride?.url) {
+    return cityOverride;
+  }
+  
+  // Fall back to service default
+  return getServiceVideo(serviceSlug);
+}
+
+/**
+ * Check if a service has any video configured (default or any city override)
+ */
+export function serviceHasVideo(serviceSlug: string): boolean {
+  return !!videos.defaultVideos[serviceSlug]?.url;
+}
+
+/**
+ * Get all cities that have a video override for a specific service
+ */
+export function getCitiesWithVideoOverride(serviceSlug: string): string[] {
+  return Object.entries(videos.cityOverrides)
+    .filter(([_, overrides]) => overrides[serviceSlug]?.url)
+    .map(([citySlug]) => citySlug);
 }
 

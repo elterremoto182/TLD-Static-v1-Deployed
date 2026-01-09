@@ -20,3 +20,6 @@ export { LocalCTA, InlineCTA } from './LocalCTA';
 // Linking components
 export { RelatedLinks } from './RelatedLinks';
 
+// Media components
+export { ServiceVideoEmbed } from './ServiceVideoEmbed';
+
