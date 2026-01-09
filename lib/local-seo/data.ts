@@ -230,7 +230,20 @@ interface VideosConfig {
   cityOverrides: Record<string, Record<string, VideoConfig>>;
 }
 
-const videos = videosData as VideosConfig;
+// Extract videos config, filtering out documentation fields (prefixed with _)
+const rawVideos = videosData as {
+  _description?: string;
+  defaultVideos: Record<string, VideoConfig>;
+  cityOverrides: Record<string, string | Record<string, VideoConfig>>;
+};
+
+const videos: VideosConfig = {
+  defaultVideos: rawVideos.defaultVideos,
+  cityOverrides: Object.fromEntries(
+    Object.entries(rawVideos.cityOverrides)
+      .filter(([key]) => !key.startsWith('_'))
+  ) as Record<string, Record<string, VideoConfig>>,
+};
 
 /**
  * Get the video configuration for a service hub page (no city specified)
