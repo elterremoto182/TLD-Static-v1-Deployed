@@ -5,8 +5,7 @@ import { Footer } from '@/components/sections/Footer';
 import { Breadcrumb } from '@/components/ui/breadcrumb';
 import { AnimateOnScroll } from '@/components/AnimateOnScroll';
 import OptimizedImage from '@/components/OptimizedImage';
-import { Phone, Shield, AlertTriangle, CheckCircle, ArrowRight, MapPin } from 'lucide-react';
-import * as LucideIcons from 'lucide-react';
+import { Phone, Shield, AlertTriangle, MapPin, getIcon } from '@/lib/icons';
 
 import {
   getProblem,
@@ -121,8 +120,7 @@ export default async function ProblemHubPage({
     breadcrumbs,
   });
   
-  const IconComponent = (LucideIcons[problem.icon as keyof typeof LucideIcons] || 
-    LucideIcons.AlertTriangle) as React.ElementType;
+  const IconComponent = getIcon(problem.icon);
   
   return (
     <>

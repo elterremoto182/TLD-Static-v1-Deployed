@@ -1,6 +1,6 @@
 'use client';
 
-import * as LucideIcons from 'lucide-react';
+import { getIcon, CheckCircle } from '@/lib/icons';
 import { AnimateOnScroll } from '@/components/AnimateOnScroll';
 import type { ProcessStep } from '@/lib/local-seo/data';
 
@@ -29,8 +29,7 @@ export function ServiceProcess({
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {steps.map((step, index) => {
-            const IconComponent = (LucideIcons[step.icon as keyof typeof LucideIcons] || 
-              LucideIcons.CheckCircle) as React.ElementType;
+            const IconComponent = getIcon(step.icon, CheckCircle);
             
             return (
               <AnimateOnScroll

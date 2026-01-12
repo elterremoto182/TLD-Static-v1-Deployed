@@ -3,8 +3,7 @@ import { Header } from '@/components/sections/Header';
 import { Footer } from '@/components/sections/Footer';
 import { Breadcrumb } from '@/components/ui/breadcrumb';
 import { AnimateOnScroll } from '@/components/AnimateOnScroll';
-import * as LucideIcons from 'lucide-react';
-import { Phone } from 'lucide-react';
+import { Phone, AlertTriangle, Wrench, getIcon } from '@/lib/icons';
 import { getAllProblems, getAllServices, getProblemsByService } from '@/lib/local-seo/data';
 import {
   generateBreadcrumbSchema,
@@ -91,7 +90,7 @@ export default function ProblemsPage() {
           <div className="max-w-6xl mx-auto px-4 text-center">
             <AnimateOnScroll animation="fade-in-up" duration={600} delay={0}>
               <div className="inline-flex items-center gap-2 bg-red-100 text-red-700 px-4 py-2 rounded-full text-sm font-medium mb-6">
-                <LucideIcons.AlertTriangle className="w-4 h-4" />
+                <AlertTriangle className="w-4 h-4" />
                 Expert Problem Diagnosis
               </div>
               <h1 className="text-5xl md:text-6xl font-bold tracking-tight text-gray-900 mb-6">
@@ -115,8 +114,7 @@ export default function ProblemsPage() {
 
         {/* Problems by Category */}
         {problemsByService.map((group, groupIndex) => {
-          const ServiceIcon = (LucideIcons[group.service.icon as keyof typeof LucideIcons] ||
-            LucideIcons.Wrench) as React.ElementType;
+          const ServiceIcon = getIcon(group.service.icon, Wrench);
 
           return (
             <section
@@ -142,9 +140,7 @@ export default function ProblemsPage() {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                   {group.problems.map((problem, index) => {
-                    const ProblemIcon = (LucideIcons[
-                      problem.icon as keyof typeof LucideIcons
-                    ] || LucideIcons.AlertTriangle) as React.ElementType;
+                    const ProblemIcon = getIcon(problem.icon);
 
                     return (
                       <AnimateOnScroll
@@ -257,9 +253,7 @@ export default function ProblemsPage() {
               </h2>
               <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3">
                 {allProblems.map((problem) => {
-                  const ProblemIcon = (LucideIcons[
-                    problem.icon as keyof typeof LucideIcons
-                  ] || LucideIcons.AlertTriangle) as React.ElementType;
+                  const ProblemIcon = getIcon(problem.icon);
 
                   return (
                     <Link

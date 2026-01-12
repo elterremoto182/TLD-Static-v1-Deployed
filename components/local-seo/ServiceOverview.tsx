@@ -1,7 +1,6 @@
 'use client';
 
-import * as LucideIcons from 'lucide-react';
-import { CheckCircle, AlertTriangle } from 'lucide-react';
+import { CheckCircle, AlertTriangle } from '@/lib/icons';
 import { AnimateOnScroll } from '@/components/AnimateOnScroll';
 import type { Technology } from '@/lib/local-seo/data';
 

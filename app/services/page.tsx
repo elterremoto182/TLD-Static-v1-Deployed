@@ -5,7 +5,7 @@ import { Breadcrumb } from '@/components/ui/breadcrumb';
 import { AnimateOnScroll } from '@/components/AnimateOnScroll';
 import OptimizedImage from '@/components/OptimizedImage';
 import content from '@/config/content.json';
-import * as LucideIcons from 'lucide-react';
+import { getIcon, Wrench } from '@/lib/icons';
 import { generatePageMetadata, generateBreadcrumbs } from '@/lib/utils';
 import { generateCollectionPageSchema, structuredDataToJsonLd } from '@/lib/seo/structured-data';
 
@@ -74,9 +74,7 @@ export default function ServicesPage() {
           <div className="max-w-6xl mx-auto px-4">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {services.map((service, index) => {
-                const IconComponent = (LucideIcons[
-                  service.icon as keyof typeof LucideIcons
-                ] || LucideIcons.Wrench) as React.ElementType;
+                const IconComponent = getIcon(service.icon, Wrench);
                 const serviceSlug = serviceSlugMap[service.id] || '/services/';
 
                 return (
