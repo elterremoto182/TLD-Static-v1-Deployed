@@ -18,13 +18,9 @@ import {
 } from '@/lib/local-seo/templates';
 import {
   generateCityServiceBreadcrumbs,
-  generateBreadcrumbSchema,
-  generateLocalBusinessSchema,
-  generateLocalServiceSchema,
-  generateFaqSchema,
-  generateHowToSchema,
   schemaToJsonLd,
 } from '@/lib/local-seo/schema';
+import { buildPageSchemaGraph } from '@/lib/seo/schema';
 import {
   getNearbyCityLinks,
   getRelatedServiceLinks,
@@ -108,36 +104,37 @@ export default async function SewerCameraInspectionCityPage({
   const videoConfig = getCityServiceVideo(SERVICE_SLUG, citySlug);
   
   const canonicalUrl = getCityServiceCanonicalUrl(SERVICE_SLUG, citySlug);
-  const breadcrumbSchema = generateBreadcrumbSchema(breadcrumbs, canonicalUrl);
-  const localBusinessSchema = generateLocalBusinessSchema(city, service);
-  const serviceSchema = generateLocalServiceSchema(service, city);
-  const howToSchema = generateHowToSchema(service, city);
-  const faqSchema = faqs.length > 0 ? generateFaqSchema(faqs) : null;
+  
+  // Build unified schema graph with all structured data
+  const schemaGraph = buildPageSchemaGraph({
+    pageType: 'city-service',
+    pageUrl: canonicalUrl,
+    title: h1,
+    description: subtitle,
+    breadcrumbs,
+    service: {
+      name: service.name,
+      description: service.bodyContent.overview,
+      serviceType: service.name,
+    },
+    city: {
+      name: city.name,
+      county: city.county,
+      coordinates: city.coordinates,
+      slug: city.slug,
+    },
+    faqs: faqs.length > 0 ? faqs : undefined,
+    process: service.process,
+    technology: service.bodyContent.technology,
+  });
   
   return (
     <>
+      {/* Unified structured data with @graph */}
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: schemaToJsonLd(breadcrumbSchema) }}
+        dangerouslySetInnerHTML={{ __html: schemaToJsonLd(schemaGraph) }}
       />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: schemaToJsonLd(localBusinessSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: schemaToJsonLd(serviceSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: schemaToJsonLd(howToSchema) }}
-      />
-      {faqSchema && (
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: schemaToJsonLd(faqSchema) }}
-        />
-      )}
       
       <Header />
       <main className="min-h-screen">
@@ -220,4 +217,3 @@ export default async function SewerCameraInspectionCityPage({
     </>
   );
 }
-

@@ -7,7 +7,7 @@ import { getAllPosts } from '@/lib/blog/posts';
 import { Calendar, User, ArrowRight } from 'lucide-react';
 import { getPageBySlug } from '@/lib/pages/pages';
 import { generatePageMetadata, generateBreadcrumbs } from '@/lib/utils';
-import { generateCollectionPageSchema, structuredDataToJsonLd } from '@/lib/seo/structured-data';
+import { buildPageSchemaGraph, schemaToJsonLd, baseUrl } from '@/lib/seo/schema';
 
 export async function generateMetadata() {
   const page = getPageBySlug('blog');
@@ -23,20 +23,24 @@ export async function generateMetadata() {
 export default function BlogPage() {
   const posts = getAllPosts();
   const breadcrumbs = generateBreadcrumbs('/blog', 'Blog');
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://totalleakdetection.com';
-  const collectionPageSchema = generateCollectionPageSchema({
+  const pageUrl = `${baseUrl}/blog/`;
+  
+  // Build unified schema graph
+  const schemaGraph = buildPageSchemaGraph({
+    pageType: 'collection',
+    pageUrl,
     title: 'Blog - Total Leak Detection',
     description: 'Expert tips, guides, and insights for maintaining your home plumbing and leak detection.',
-    url: `${baseUrl}/blog/`,
     breadcrumbs,
   });
 
   return (
     <>
+      {/* Unified structured data with @graph */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: structuredDataToJsonLd(collectionPageSchema),
+          __html: schemaToJsonLd(schemaGraph),
         }}
       />
       <Header />

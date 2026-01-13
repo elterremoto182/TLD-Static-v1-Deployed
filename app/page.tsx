@@ -10,8 +10,8 @@ import { Footer } from '@/components/sections/Footer';
 import { ServiceAreas } from '@/components/sections/ServiceAreas';
 import { getPageBySlug } from '@/lib/pages/pages';
 import { generatePageMetadata } from '@/lib/utils';
-import { generateLocalBusinessSchema, generateServiceSchema, structuredDataToJsonLd } from '@/lib/seo/structured-data';
-import { generateFAQSchema } from '@/lib/seo/faq-data';
+import { buildPageSchemaGraph, schemaToJsonLd, baseUrl } from '@/lib/seo/schema';
+import { faqs } from '@/lib/seo/faq-data';
 
 // Lazy load below-the-fold components to reduce initial bundle size
 const Gallery = dynamic(() => import('@/components/sections/Gallery').then(mod => ({ default: mod.Gallery })), {
@@ -42,34 +42,27 @@ export async function generateMetadata() {
 }
 
 export default function Home() {
-  const localBusinessSchema = generateLocalBusinessSchema();
-  const serviceSchema = generateServiceSchema({
-    name: 'Leak Detection',
+  // Build unified schema graph with all structured data
+  const schemaGraph = buildPageSchemaGraph({
+    pageType: 'home',
+    pageUrl: baseUrl,
+    title: 'Leak Detection Miami | Water Leak Detection Services',
     description: 'Professional water leak detection services in Miami FL. Non-invasive leak detection for residential and commercial properties.',
-    serviceType: 'Water Leak Detection',
-    areaServed: 'Miami',
+    service: {
+      name: 'Leak Detection',
+      description: 'Professional water leak detection services in Miami FL. Non-invasive leak detection for residential and commercial properties.',
+      serviceType: 'Water Leak Detection',
+    },
+    faqs,
   });
-  const faqSchema = generateFAQSchema();
 
   return (
     <>
-      {/* Structured data - placed early in body for static export compatibility */}
+      {/* Unified structured data with @graph */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: structuredDataToJsonLd(localBusinessSchema),
-        }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: structuredDataToJsonLd(serviceSchema),
-        }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: structuredDataToJsonLd(faqSchema),
+          __html: schemaToJsonLd(schemaGraph),
         }}
       />
       <Header />

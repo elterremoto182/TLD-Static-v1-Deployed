@@ -10,11 +10,7 @@ import { AnimateOnScroll } from '@/components/AnimateOnScroll';
 import siteConfig from '@/config/site.json';
 import content from '@/config/content.json';
 import { generateBreadcrumbs } from '@/lib/utils';
-import {
-  generateWebPageSchema,
-  generateBreadcrumbListSchema,
-  structuredDataToJsonLd,
-} from '@/lib/seo/structured-data';
+import { buildPageSchemaGraph, schemaToJsonLd } from '@/lib/seo/schema';
 
 
 export default function ContactPage() {
@@ -97,26 +93,24 @@ export default function ContactPage() {
   const googleMapsSearchUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(siteConfig.address)}`;
   const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://totalleakdetection.com';
   const breadcrumbs = generateBreadcrumbs('/contact', 'Contact');
-  const webPageSchema = generateWebPageSchema({
+  const pageUrl = `${baseUrl}/contact/`;
+  
+  // Build unified schema graph
+  const schemaGraph = buildPageSchemaGraph({
+    pageType: 'contact',
+    pageUrl,
     title: 'Contact - Total Leak Detection',
     description: contact.description,
-    url: `${baseUrl}/contact/`,
     breadcrumbs,
   });
-  const breadcrumbSchema = generateBreadcrumbListSchema(breadcrumbs, `${baseUrl}/contact/`);
 
   return (
     <>
+      {/* Unified structured data with @graph */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: structuredDataToJsonLd(webPageSchema),
-        }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: structuredDataToJsonLd(breadcrumbSchema),
+          __html: schemaToJsonLd(schemaGraph),
         }}
       />
       <Header />
@@ -218,7 +212,7 @@ export default function ContactPage() {
                       <h3 className="text-lg font-bold text-gray-900 mb-1">
                         Hours
                       </h3>
-                      <p className="text-gray-600">{siteConfig.hours}</p>
+                      <p className="text-gray-600">24/7 - Always Available</p>
                     </div>
                   </div>
                 </div>
@@ -312,4 +306,3 @@ export default function ContactPage() {
     </>
   );
 }
-

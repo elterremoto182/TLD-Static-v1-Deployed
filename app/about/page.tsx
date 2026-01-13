@@ -9,11 +9,7 @@ import OptimizedImage from '@/components/OptimizedImage';
 import { Phone, Shield, Play } from 'lucide-react';
 import { getPageBySlug } from '@/lib/pages/pages';
 import { generatePageMetadata, generateBreadcrumbs } from '@/lib/utils';
-import {
-  generateWebPageSchema,
-  generateBreadcrumbListSchema,
-  structuredDataToJsonLd,
-} from '@/lib/seo/structured-data';
+import { buildPageSchemaGraph, schemaToJsonLd, baseUrl } from '@/lib/seo/schema';
 
 export async function generateMetadata() {
   const page = getPageBySlug('about');
@@ -41,15 +37,18 @@ export default async function AboutPage() {
     notFound();
   }
 
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://totalleakdetection.com';
   const breadcrumbs = generateBreadcrumbs('/about', page.title);
-  const webPageSchema = generateWebPageSchema({
+  const pageUrl = `${baseUrl}/about/`;
+  
+  // Build unified schema graph
+  const schemaGraph = buildPageSchemaGraph({
+    pageType: 'about',
+    pageUrl,
     title: page.seo_title || page.title || 'About - Total Leak Detection',
     description: page.seo_description || 'Learn about Total Leak Detection and our expertise in leak detection services.',
-    url: `${baseUrl}/about/`,
     breadcrumbs,
   });
-  const breadcrumbSchema = generateBreadcrumbListSchema(breadcrumbs, `${baseUrl}/about/`);
+
   const html = await processMarkdown(page.content);
   
   // Use a service image for the hero
@@ -57,16 +56,11 @@ export default async function AboutPage() {
 
   return (
     <>
+      {/* Unified structured data with @graph */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: structuredDataToJsonLd(webPageSchema),
-        }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: structuredDataToJsonLd(breadcrumbSchema),
+          __html: schemaToJsonLd(schemaGraph),
         }}
       />
       <Header />
@@ -155,4 +149,3 @@ export default async function AboutPage() {
     </>
   );
 }
-

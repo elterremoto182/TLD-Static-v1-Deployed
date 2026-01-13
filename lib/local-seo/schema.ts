@@ -1,266 +1,65 @@
-import type { City, Service, Problem, FAQ } from './data';
-import siteConfig from '@/config/site.json';
+/**
+ * Local SEO Schema Module
+ * 
+ * Re-exports schema functions from the consolidated schema module
+ * with local-seo specific types imported.
+ */
 
-const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://totalleakdetection.com';
+import type { City, Service, Problem } from './data';
 
-export interface BreadcrumbItem {
-  label: string;
-  href: string;
-}
+// Re-export everything from the consolidated schema module
+export {
+  // Types
+  type BreadcrumbItem,
+  type SchemaGraph,
+  
+  // Core schema generators
+  generateWebSiteSchema,
+  generateOrganizationSchema,
+  generateBreadcrumbSchema,
+  generateBreadcrumbListSchema,
+  generateWebPageSchema,
+  generateCollectionPageSchema,
+  generateServiceSchema,
+  generateArticleSchema,
+  generateFaqSchema,
+  generateFAQSchema,
+  generateHowToSchema,
+  
+  // Local-SEO specific
+  generateLocalServiceSchema,
+  generateCityServiceBreadcrumbs,
+  generateProblemCityBreadcrumbs,
+  generateServiceHubBreadcrumbs,
+  generateProblemHubBreadcrumbs,
+  
+  // Graph builder
+  buildPageSchemaGraph,
+  
+  // Utilities
+  schemaToJsonLd,
+  structuredDataToJsonLd,
+  parseAddress,
+  baseUrl,
+} from '@/lib/seo/schema';
+
+// Re-export the local business schema with proper typing for local-seo usage
+import { generateLocalBusinessSchema as baseGenerateLocalBusinessSchema } from '@/lib/seo/schema';
 
 /**
  * Generate LocalBusiness schema with city-specific information
+ * Wrapper for local-seo pages that takes City and Service objects
  */
 export function generateLocalBusinessSchema(city: City, service?: Service) {
-  // Parse the address to extract just the street portion
-  // Address format: "7790 NW 55th St, Doral, FL 33166"
-  const fullAddress = siteConfig.address || '7790 NW 55th St, Doral, FL 33166';
-  const streetAddress = fullAddress.split(',')[0]?.trim() || '7790 NW 55th St';
-  
-  return {
-    '@context': 'https://schema.org',
-    '@type': 'LocalBusiness',
-    '@id': `${baseUrl}#organization`,
-    name: siteConfig.name,
-    image: `${baseUrl}${siteConfig.logo}`,
-    url: baseUrl,
-    telephone: siteConfig.phone,
-    email: siteConfig.email,
-    description: service 
-      ? `Professional ${service.name.toLowerCase()} services in ${city.name}, ${city.county}, Florida.`
-      : `Professional leak detection and plumbing services in ${city.name}, ${city.county}, Florida.`,
-    address: {
-      '@type': 'PostalAddress',
-      streetAddress: streetAddress,
-      addressLocality: 'Doral',
-      addressRegion: 'FL',
-      postalCode: '33166',
-      addressCountry: 'US',
-    },
-    geo: {
-      '@type': 'GeoCoordinates',
-      latitude: city.coordinates.lat,
-      longitude: city.coordinates.lng,
-    },
-    areaServed: {
-      '@type': 'City',
+  return baseGenerateLocalBusinessSchema({
+    city: {
       name: city.name,
-      containedInPlace: {
-        '@type': 'AdministrativeArea',
-        name: city.county,
-      },
+      county: city.county,
+      coordinates: city.coordinates,
     },
-    openingHoursSpecification: [
-      {
-        '@type': 'OpeningHoursSpecification',
-        dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
-        opens: '09:00',
-        closes: '17:00',
-      },
-      {
-        '@type': 'OpeningHoursSpecification',
-        dayOfWeek: ['Saturday', 'Sunday'],
-        opens: '00:00',
-        closes: '23:59',
-        description: '24/7 Emergency Service Available',
-      },
-    ],
-    priceRange: '$$',
-    paymentAccepted: ['Cash', 'Credit Card', 'Check', 'Insurance'],
-  };
+    service: service ? { name: service.name } : undefined,
+  });
 }
 
-/**
- * Generate Service schema for city × service pages
- */
-export function generateLocalServiceSchema(service: Service, city: City) {
-  // Parse the address to extract just the street portion
-  const fullAddress = siteConfig.address || '7790 NW 55th St, Doral, FL 33166';
-  const streetAddress = fullAddress.split(',')[0]?.trim() || '7790 NW 55th St';
-  
-  return {
-    '@context': 'https://schema.org',
-    '@type': 'Service',
-    name: `${service.name} in ${city.name}, FL`,
-    description: service.bodyContent.overview,
-    provider: {
-      '@type': 'LocalBusiness',
-      name: siteConfig.name,
-      '@id': `${baseUrl}#organization`,
-      address: {
-        '@type': 'PostalAddress',
-        streetAddress: streetAddress,
-        addressLocality: 'Doral',
-        addressRegion: 'FL',
-        postalCode: '33166',
-        addressCountry: 'US',
-      },
-    },
-    areaServed: {
-      '@type': 'City',
-      name: city.name,
-      containedInPlace: {
-        '@type': 'AdministrativeArea',
-        name: city.county,
-      },
-    },
-    serviceType: service.name,
-    availableChannel: {
-      '@type': 'ServiceChannel',
-      serviceUrl: `${baseUrl}/${service.slug}/${city.slug}/`,
-      servicePhone: siteConfig.phone,
-      availableLanguage: ['English', 'Spanish'],
-    },
-  };
-}
-
-/**
- * Generate FAQ schema for city × service pages
- */
-export function generateFaqSchema(faqs: Array<{ question: string; answer: string }>) {
-  if (faqs.length === 0) return null;
-  
-  return {
-    '@context': 'https://schema.org',
-    '@type': 'FAQPage',
-    mainEntity: faqs.map(faq => ({
-      '@type': 'Question',
-      name: faq.question,
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: faq.answer,
-      },
-    })),
-  };
-}
-
-/**
- * Generate HowTo schema for service process steps
- */
-export function generateHowToSchema(service: Service, city: City) {
-  return {
-    '@context': 'https://schema.org',
-    '@type': 'HowTo',
-    name: `How ${service.name} Works in ${city.name}, FL`,
-    description: `Our ${service.name.toLowerCase()} process for ${city.name} properties`,
-    step: service.process.map((step, index) => ({
-      '@type': 'HowToStep',
-      position: index + 1,
-      name: step.title,
-      text: step.description,
-    })),
-    totalTime: 'PT2H',
-    tool: service.bodyContent.technology.map(tech => ({
-      '@type': 'HowToTool',
-      name: tech.name,
-    })),
-  };
-}
-
-/**
- * Generate BreadcrumbList schema
- */
-export function generateBreadcrumbSchema(items: BreadcrumbItem[], pageUrl?: string) {
-  // Determine the page URL for @id - use provided pageUrl or derive from last breadcrumb item
-  let breadcrumbId: string;
-  if (pageUrl) {
-    breadcrumbId = `${pageUrl}#BreadcrumbList`;
-  } else {
-    const lastItem = items[items.length - 1];
-    const url = lastItem ? `${baseUrl}${lastItem.href}` : baseUrl;
-    breadcrumbId = `${url}#BreadcrumbList`;
-  }
-
-  return {
-    '@context': 'https://schema.org',
-    '@type': 'BreadcrumbList',
-    '@id': breadcrumbId,
-    itemListElement: items.map((item, index) => ({
-      '@type': 'ListItem',
-      position: index + 1,
-      name: item.label,
-      item: `${baseUrl}${item.href}`,
-    })),
-  };
-}
-
-/**
- * Generate WebPage schema
- */
-export function generateWebPageSchema(options: {
-  title: string;
-  description: string;
-  url: string;
-  breadcrumbs?: BreadcrumbItem[];
-}) {
-  const schema: Record<string, unknown> = {
-    '@context': 'https://schema.org',
-    '@type': 'WebPage',
-    name: options.title,
-    description: options.description,
-    url: options.url,
-    isPartOf: {
-      '@type': 'WebSite',
-      name: siteConfig.name,
-      url: baseUrl,
-    },
-  };
-
-  if (options.breadcrumbs && options.breadcrumbs.length > 0) {
-    schema.breadcrumb = generateBreadcrumbSchema(options.breadcrumbs, options.url);
-  }
-
-  return schema;
-}
-
-/**
- * Generate breadcrumb items for city × service page
- */
-export function generateCityServiceBreadcrumbs(service: Service, city: City): BreadcrumbItem[] {
-  return [
-    { label: 'Home', href: '/' },
-    { label: service.name, href: `/${service.slug}/` },
-    { label: city.name, href: `/${service.slug}/${city.slug}/` },
-  ];
-}
-
-/**
- * Generate breadcrumb items for problem × city page
- */
-export function generateProblemCityBreadcrumbs(problem: Problem, city: City): BreadcrumbItem[] {
-  return [
-    { label: 'Home', href: '/' },
-    { label: 'Problems', href: '/problems/' },
-    { label: problem.name, href: `/problems/${problem.slug}/` },
-    { label: city.name, href: `/problems/${problem.slug}/${city.slug}/` },
-  ];
-}
-
-/**
- * Generate breadcrumb items for service hub page
- */
-export function generateServiceHubBreadcrumbs(service: Service): BreadcrumbItem[] {
-  return [
-    { label: 'Home', href: '/' },
-    { label: service.name, href: `/${service.slug}/` },
-  ];
-}
-
-/**
- * Generate breadcrumb items for problem hub page
- */
-export function generateProblemHubBreadcrumbs(problem: Problem): BreadcrumbItem[] {
-  return [
-    { label: 'Home', href: '/' },
-    { label: 'Problems', href: '/problems/' },
-    { label: problem.name, href: `/problems/${problem.slug}/` },
-  ];
-}
-
-/**
- * Convert schema object to JSON-LD string
- */
-export function schemaToJsonLd(schema: object): string {
-  return JSON.stringify(schema, null, 0);
-}
-
+// Type exports for local-seo
+export type { City, Service, Problem };

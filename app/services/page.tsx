@@ -7,7 +7,7 @@ import OptimizedImage from '@/components/OptimizedImage';
 import content from '@/config/content.json';
 import { getIcon, Wrench } from '@/lib/icons';
 import { generatePageMetadata, generateBreadcrumbs } from '@/lib/utils';
-import { generateCollectionPageSchema, structuredDataToJsonLd } from '@/lib/seo/structured-data';
+import { buildPageSchemaGraph, schemaToJsonLd, baseUrl } from '@/lib/seo/schema';
 
 // Map service IDs to their slugs from markdown files
 // URLs should have trailing slashes to match Next.js trailingSlash: true configuration
@@ -36,20 +36,24 @@ export async function generateMetadata() {
 export default function ServicesPage() {
   const { services } = content;
   const breadcrumbs = generateBreadcrumbs('/services', 'Services');
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://totalleakdetection.com';
-  const collectionPageSchema = generateCollectionPageSchema({
+  const pageUrl = `${baseUrl}/services/`;
+  
+  // Build unified schema graph
+  const schemaGraph = buildPageSchemaGraph({
+    pageType: 'collection',
+    pageUrl,
     title: 'Our Services - Total Leak Detection',
     description: 'Comprehensive plumbing and leak detection services in Miami, FL. Water leak detection, sewer camera inspections, mold testing, and more.',
-    url: `${baseUrl}/services/`,
     breadcrumbs,
   });
 
   return (
     <>
+      {/* Unified structured data with @graph */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: structuredDataToJsonLd(collectionPageSchema),
+          __html: schemaToJsonLd(schemaGraph),
         }}
       />
       <Header />
@@ -170,4 +174,3 @@ export default function ServicesPage() {
     </>
   );
 }
-

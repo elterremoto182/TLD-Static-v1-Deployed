@@ -1,3 +1,6 @@
+/**
+ * Default FAQ data for the home page
+ */
 export const faqs = [
   {
     question: 'How do I know if I have a water leak?',
@@ -26,18 +29,16 @@ export const faqs = [
   },
 ];
 
+// Re-export the generateFAQSchema function from the consolidated schema module
+// but provide a pre-configured version that uses the default faqs
+import { generateFaqSchema, baseUrl } from './schema';
+
+/**
+ * Generate FAQ schema using the default home page FAQs
+ */
 export function generateFAQSchema() {
   return {
     '@context': 'https://schema.org',
-    '@type': 'FAQPage',
-    mainEntity: faqs.map((faq) => ({
-      '@type': 'Question',
-      name: faq.question,
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: faq.answer,
-      },
-    })),
+    ...generateFaqSchema(faqs, baseUrl),
   };
 }
-

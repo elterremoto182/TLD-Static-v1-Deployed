@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import siteConfig from '@/config/site.json';
 import { StickyCallButton } from '@/components/StickyCallButton';
-import { generateOrganizationSchema, structuredDataToJsonLd } from '@/lib/seo/structured-data';
+import { generateOrganizationSchema, schemaToJsonLd } from '@/lib/seo/schema';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -40,7 +40,12 @@ export default function RootLayout({
 }) {
   const faviconPath = siteConfig.favicon || '/favicon.ico';
 
-  const organizationSchema = generateOrganizationSchema();
+  // Organization schema is included in each page's @graph,
+  // but we keep a standalone version here for any pages that might not have their own schema
+  const organizationSchema = {
+    '@context': 'https://schema.org',
+    ...generateOrganizationSchema(),
+  };
 
   // Get critical image paths for preloading
   const heroBackgroundImage = '/images/hero/hero-background.jpeg';
@@ -70,7 +75,7 @@ export default function RootLayout({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: structuredDataToJsonLd(organizationSchema),
+            __html: schemaToJsonLd(organizationSchema),
           }}
         />
       </head>

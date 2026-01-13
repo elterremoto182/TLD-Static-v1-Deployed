@@ -8,12 +8,7 @@ import OptimizedImage from '@/components/OptimizedImage';
 import { FindInYourCity } from '@/components/sections/FindInYourCity';
 import { getPageBySlug, getAllPages } from '@/lib/pages/pages';
 import { generatePageMetadata, generateBreadcrumbs } from '@/lib/utils';
-import {
-  generateServiceSchema,
-  generateBreadcrumbListSchema,
-  generateWebPageSchema,
-  structuredDataToJsonLd,
-} from '@/lib/seo/structured-data';
+import { buildPageSchemaGraph, schemaToJsonLd, baseUrl } from '@/lib/seo/schema';
 
 export async function generateStaticParams() {
   const pages = getAllPages();
@@ -123,25 +118,24 @@ export default async function ServicePage({
     notFound();
   }
 
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://totalleakdetection.com';
   const normalizedSlug = page.slug.replace(/^\/+|\/+$/g, '');
   const pageUrl = `${baseUrl}/${normalizedSlug}/`;
   const breadcrumbs = generateBreadcrumbs(`/${normalizedSlug}`, page.title);
   
-  const serviceSchema = generateServiceSchema({
-    name: page.title,
-    description: page.seo_description || page.title,
-    serviceType: page.title,
-    areaServed: 'Miami',
-  });
-  
-  const breadcrumbSchema = generateBreadcrumbListSchema(breadcrumbs, pageUrl);
-  const webPageSchema = generateWebPageSchema({
+  // Build unified schema graph
+  const schemaGraph = buildPageSchemaGraph({
+    pageType: 'service',
+    pageUrl,
     title: page.title,
     description: page.seo_description || page.title,
-    url: pageUrl,
     breadcrumbs,
+    service: {
+      name: page.title,
+      description: page.seo_description || page.title,
+      serviceType: page.title,
+    },
   });
+
   let html = await processMarkdown(page.content);
   
   // Extract first image from markdown content for hero, or use page.image or default
@@ -162,22 +156,11 @@ export default async function ServicePage({
 
   return (
     <>
+      {/* Unified structured data with @graph */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: structuredDataToJsonLd(serviceSchema),
-        }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: structuredDataToJsonLd(breadcrumbSchema),
-        }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: structuredDataToJsonLd(webPageSchema),
+          __html: schemaToJsonLd(schemaGraph),
         }}
       />
       <Header />
@@ -226,4 +209,3 @@ export default async function ServicePage({
     </>
   );
 }
-

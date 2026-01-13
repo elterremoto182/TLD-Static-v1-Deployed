@@ -11,13 +11,7 @@ import { getPostBySlug, getAllPosts, BlogPost } from '@/lib/blog/posts';
 import { RelatedPosts } from '@/components/blog/RelatedPosts';
 import { Calendar, User, Phone, MapPin, Shield } from 'lucide-react';
 import { generatePageMetadata, generateBreadcrumbs } from '@/lib/utils';
-import {
-  generateArticleSchema,
-  generateWebPageSchema,
-  generateBreadcrumbListSchema,
-  generateServiceSchema,
-  structuredDataToJsonLd,
-} from '@/lib/seo/structured-data';
+import { buildPageSchemaGraph, schemaToJsonLd, baseUrl } from '@/lib/seo/schema';
 
 // Default images for service area pages based on service type
 const SERVICE_AREA_IMAGES = [
@@ -195,20 +189,25 @@ export default async function DynamicPage({
   // Check for blog post first
   const post = getPostBySlug(slug);
   if (post) {
-    const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://totalleakdetection.com';
     const postUrl = `${baseUrl}/${post.slug}/`;
     const breadcrumbs = generateBreadcrumbs(`/${post.slug}`, post.title);
-    const articleSchema = generateArticleSchema({
+    
+    // Build unified schema graph for article
+    const schemaGraph = buildPageSchemaGraph({
+      pageType: 'article',
+      pageUrl: postUrl,
       title: post.title,
       description: post.excerpt || post.title,
-      author: post.author,
-      datePublished: post.date,
-      dateModified: post.date,
-      image: post.image,
-      url: postUrl,
-      content: post.content,
+      breadcrumbs,
+      article: {
+        datePublished: post.date,
+        dateModified: post.date,
+        author: post.author,
+        image: post.image,
+        content: post.content,
+      },
     });
-    const breadcrumbSchema = generateBreadcrumbListSchema(breadcrumbs, postUrl);
+    
     const html = await processMarkdown(post.content);
     
     // Get all posts for related posts section
@@ -235,16 +234,11 @@ export default async function DynamicPage({
 
     return (
       <>
+        {/* Unified structured data with @graph */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: structuredDataToJsonLd(articleSchema),
-          }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: structuredDataToJsonLd(breadcrumbSchema),
+            __html: schemaToJsonLd(schemaGraph),
           }}
         />
         <Header />
@@ -315,31 +309,24 @@ export default async function DynamicPage({
     notFound();
   }
 
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://totalleakdetection.com';
   const pageUrl = `${baseUrl}/${slug}/`;
   const breadcrumbs = generateBreadcrumbs(`/${slug}`, page.title);
   const isLocationPage = slug.includes('leak-detection') || slug.includes('mold-testing');
   
-  // Generate appropriate schema based on page type
-  let pageSchema;
-  if (isLocationPage) {
-    // For location pages, use Service schema
-    pageSchema = generateServiceSchema({
+  // Build unified schema graph
+  const schemaGraph = buildPageSchemaGraph({
+    pageType: isLocationPage ? 'service' : 'home',
+    pageUrl,
+    title: page.title,
+    description: page.seo_description || page.title,
+    breadcrumbs,
+    service: isLocationPage ? {
       name: page.title,
       description: page.seo_description || page.title,
-      areaServed: page.title.includes('Miami') ? 'Miami' : undefined,
-    });
-  } else {
-    // For other pages, use WebPage schema
-    pageSchema = generateWebPageSchema({
-      title: page.title,
-      description: page.seo_description || page.title,
-      url: pageUrl,
-      breadcrumbs,
-    });
-  }
-  
-  const breadcrumbSchema = generateBreadcrumbListSchema(breadcrumbs, pageUrl);
+      serviceType: page.title.includes('Mold') ? 'Mold Testing' : 'Leak Detection',
+    } : undefined,
+  });
+
   const heroImage = isLocationPage ? getServiceAreaImage(slug, page.image) : null;
   const cityName = isLocationPage ? extractCityName(slug) : '';
   const html = await processMarkdown(page.content);
@@ -348,16 +335,11 @@ export default async function DynamicPage({
   if (isLocationPage) {
     return (
       <>
+        {/* Unified structured data with @graph */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: structuredDataToJsonLd(pageSchema),
-          }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: structuredDataToJsonLd(breadcrumbSchema),
+            __html: schemaToJsonLd(schemaGraph),
           }}
         />
         <Header />
@@ -461,16 +443,11 @@ export default async function DynamicPage({
   // Render regular pages (non-location)
   return (
     <>
+      {/* Unified structured data with @graph */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: structuredDataToJsonLd(pageSchema),
-        }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: structuredDataToJsonLd(breadcrumbSchema),
+          __html: schemaToJsonLd(schemaGraph),
         }}
       />
       <Header />
@@ -491,4 +468,3 @@ export default async function DynamicPage({
     </>
   );
 }
-
