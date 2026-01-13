@@ -24,7 +24,7 @@ const GUIDE_CONFIG: Record<string, {
   },
   'sewer-camera-inspection': {
     icon: Camera,
-    image: '/images/services/camera-inspection.jpg',
+    image: '/images/gallery/camera-inspection-after.jpg',
     servicePath: '/services/camera-inspection/',
     serviceName: 'Sewer Camera Inspection Services',
   },
@@ -36,7 +36,7 @@ const GUIDE_CONFIG: Record<string, {
   },
   'mold-testing': {
     icon: AlertTriangle,
-    image: '/images/services/mold-testing.jpg',
+    image: '/images/services/mold.jpg',
     servicePath: '/services/mold-testing/',
     serviceName: 'Mold Testing Services',
   },

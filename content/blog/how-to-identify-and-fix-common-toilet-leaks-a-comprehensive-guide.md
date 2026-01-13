@@ -301,3 +301,7 @@ Some toilet leaks require expertise beyond what you can do yourself. It’s impo
 -   **Persistent Leaks**: If DIY attempts fail to resolve the issue, a professional can diagnose and fix underlying problems effectively.
 
 Consulting a professional plumber ensures thorough repairs, preventing further damage and costly water waste. Our [professional leak detection services](/services/leak-detection/) can help identify the source of toilet leaks, while our [leaking toilet services](/services/leaking-toilet/) specialize in resolving toilet-related issues. If you suspect mold growth from water damage, our [mold testing services](/services/mold-testing/) can help identify and address the problem. For comprehensive plumbing assistance, [contact Total Leak Detection](/contact/) today.
+
+## Local Toilet Leak Detection Services
+
+We provide specialized toilet leak detection throughout South Florida. If you're experiencing toilet leaks in Key Biscayne, our [Key Biscayne toilet leak detection services](/problems/toilet-leak/key-biscayne/) are designed for the island's unique coastal properties where saltwater corrosion can accelerate plumbing issues. We also serve [Miami](/leak-detection/miami/), [Coral Gables](/leak-detection/coral-gables/), and surrounding areas.

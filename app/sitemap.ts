@@ -81,11 +81,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   ];
 
+  // Service pages that redirect to local SEO hub pages (excluded from sitemap)
+  const excludedServicePages = [
+    'services/leak-detection',    // Redirects to /leak-detection/
+    'services/mold-testing',      // Redirects to /mold-testing/
+    'services/camera-inspection', // Redirects to /sewer-camera-inspection/
+  ];
+
   // Service pages (from markdown)
   const servicePages = pages
     .filter((page) => {
       const normalizedSlug = page.slug.replace(/^\/+|\/+$/g, '');
-      return normalizedSlug.startsWith('services/');
+      return normalizedSlug.startsWith('services/') && !excludedServicePages.includes(normalizedSlug);
     })
     .map((page) => {
       const normalizedSlug = page.slug.replace(/^\/+|\/+$/g, '');

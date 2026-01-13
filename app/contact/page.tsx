@@ -1,16 +1,44 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, Suspense } from 'react';
+import dynamic from 'next/dynamic';
 import { Header } from '@/components/sections/Header';
 import { Footer } from '@/components/sections/Footer';
 import { Breadcrumb } from '@/components/ui/breadcrumb';
-import { GoogleMap } from '@/components/sections/GoogleMap';
 import { Mail, Phone, MapPin, Send, CheckCircle, AlertCircle, Loader2 } from 'lucide-react';
-import { AnimateOnScroll } from '@/components/AnimateOnScroll';
 import siteConfig from '@/config/site.json';
 import content from '@/config/content.json';
 import { generateBreadcrumbs } from '@/lib/utils';
 import { buildPageSchemaGraph, schemaToJsonLd } from '@/lib/seo/schema';
+
+// Lazy load heavy components
+const AnimateOnScroll = dynamic(
+  () => import('@/components/AnimateOnScroll').then((mod) => ({ default: mod.AnimateOnScroll })),
+  { ssr: true }
+);
+
+// Lazy load map with facade pattern - only loads on user interaction
+const GoogleMapLazy = dynamic(
+  () => import('@/components/sections/GoogleMapLazy').then((mod) => ({ default: mod.GoogleMapLazy })),
+  { 
+    ssr: false,
+    loading: () => <MapPlaceholder />
+  }
+);
+
+// Lightweight placeholder for map
+function MapPlaceholder() {
+  return (
+    <div className="w-full min-h-[400px] rounded-xl bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center">
+      <div className="text-center">
+        <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-3">
+          <MapPin className="w-8 h-8 text-primary" />
+        </div>
+        <p className="text-sm text-gray-500">Loading map...</p>
+      </div>
+    </div>
+  );
+}
 
 
 export default function ContactPage() {
@@ -131,10 +159,12 @@ export default function ContactPage() {
             </div>
           </AnimateOnScroll>
 
-          {/* Map Section */}
+          {/* Map Section - Lazy loaded with facade pattern */}
           <AnimateOnScroll animation="fade-in-up" duration={600} delay={200}>
             <div className="mb-12">
-              <GoogleMap />
+              <Suspense fallback={<MapPlaceholder />}>
+                <GoogleMapLazy />
+              </Suspense>
             </div>
           </AnimateOnScroll>
 
