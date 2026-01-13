@@ -5,6 +5,9 @@ export { LocalIntro } from './LocalIntro';
 // Service-specific components
 export { ServiceProcess } from './ServiceProcess';
 export { ServiceOverview } from './ServiceOverview';
+export { ServiceBenefits } from './ServiceBenefits';
+export { ServiceUrgency } from './ServiceUrgency';
+export { WhyChooseUs } from './WhyChooseUs';
 
 // Location components
 export { NeighborhoodList } from './NeighborhoodList';

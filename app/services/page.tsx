@@ -9,13 +9,14 @@ import { getIcon, Wrench } from '@/lib/icons';
 import { generatePageMetadata, generateBreadcrumbs } from '@/lib/utils';
 import { buildPageSchemaGraph, schemaToJsonLd, baseUrl } from '@/lib/seo/schema';
 
-// Map service IDs to their slugs from markdown files
+// Map service IDs to their slugs
 // URLs should have trailing slashes to match Next.js trailingSlash: true configuration
+// Services with local SEO structure now use their hub page URLs
 const serviceSlugMap: Record<string, string> = {
-  'camera-inspection': '/services/camera-inspection/',
+  'camera-inspection': '/sewer-camera-inspection/',
   'clogged-drains': '/services/clogged-drains/',
-  'leak-detection': '/services/leak-detection/',
-  'mold-testing': '/services/mold-testing/',
+  'leak-detection': '/leak-detection/',
+  'mold-testing': '/mold-testing/',
   'leaking-toilet': '/services/leaking-toilet/',
   'damaged-sewer': '/services/damaged-sewer/',
   'hydro-jetting': '/services/hydro-jetting/',

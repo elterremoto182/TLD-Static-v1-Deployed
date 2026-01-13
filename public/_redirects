@@ -1,11 +1,16 @@
 # Redirects for static site
 # Format: from_path to_path status_code
 
-# Service page redirects
-/leak-detection-services/ /services/leak-detection/ 301
+# Service page redirects - consolidated to local SEO hub URLs
+/services/leak-detection/ /leak-detection/ 301
+/services/mold-testing/ /mold-testing/ 301
+/services/camera-inspection/ /sewer-camera-inspection/ 301
+
+# Legacy service URL redirects
+/leak-detection-services/ /leak-detection/ 301
 /how-to-check-a-shower-pan-for-leaks/ /how-to-check-shower-pan-leaks/ 301
-/services/leak-detection-services/ /services/leak-detection/ 301
-/services/mold-detectionl-and-remediation/ /services/mold-testing/ 301
+/services/leak-detection-services/ /leak-detection/ 301
+/services/mold-detectionl-and-remediation/ /mold-testing/ 301
 /reviews/ /testimonials/ 301
 
 # Local SEO City Page Redirects - Miami-Dade County

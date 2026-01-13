@@ -10,12 +10,20 @@ import { getPageBySlug, getAllPages } from '@/lib/pages/pages';
 import { generatePageMetadata, generateBreadcrumbs } from '@/lib/utils';
 import { buildPageSchemaGraph, schemaToJsonLd, baseUrl } from '@/lib/seo/schema';
 
+// Services that have been consolidated to local SEO hub pages
+// These should not be generated from markdown and will redirect to their hub URLs
+const EXCLUDED_SERVICE_SLUGS = ['leak-detection', 'mold-testing', 'camera-inspection'];
+
 export async function generateStaticParams() {
   const pages = getAllPages();
-  // Filter only service pages
+  // Filter only service pages, excluding those consolidated to local SEO hubs
   const servicePages = pages.filter((page) => {
     const normalizedSlug = page.slug.replace(/^\/+|\/+$/g, '');
-    return normalizedSlug.startsWith('services/');
+    if (!normalizedSlug.startsWith('services/')) return false;
+    
+    // Extract the slug part and check if it's excluded
+    const slugPart = normalizedSlug.replace(/^services\//, '').replace(/\/$/, '');
+    return !EXCLUDED_SERVICE_SLUGS.includes(slugPart);
   });
   
   return servicePages.map((page) => {
