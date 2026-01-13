@@ -8,7 +8,7 @@ import { generateOrganizationSchema, schemaToJsonLd } from '@/lib/seo/schema';
 const inter = Inter({
   subsets: ['latin'],
   variable: '--font-inter',
-  display: 'swap',
+  display: 'optional', // Changed from 'swap' for faster FCP - font renders immediately with fallback
   preload: true,
   fallback: ['system-ui', '-apple-system', 'sans-serif'],
   adjustFontFallback: true,
@@ -57,17 +57,19 @@ export default function RootLayout({
         {/* Preconnect to Google Fonts for faster font loading */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        {/* Preload critical images */}
+        {/* Preload critical images with explicit types for better optimization */}
         <link
           rel="preload"
           href={heroBackgroundImage}
           as="image"
+          type="image/jpeg"
           fetchPriority="high"
         />
         <link
           rel="preload"
           href={logoImage}
           as="image"
+          type="image/png"
           fetchPriority="high"
         />
         <link rel="icon" href={faviconPath} />

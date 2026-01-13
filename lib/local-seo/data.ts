@@ -11,6 +11,18 @@ export interface CityLocalFactors {
   characteristics: string;
 }
 
+export interface CityUniqueContent {
+  whyChooseUsLocal?: string;
+  localExpertise?: string;
+  testimonialHighlight?: string;
+}
+
+export interface CityLocalStats {
+  yearsServing?: number;
+  jobsCompleted?: string;
+  avgResponseMins?: number;
+}
+
 export interface City {
   name: string;
   slug: string;
@@ -24,6 +36,9 @@ export interface City {
   intro: string;
   extendedContent: string;
   nearbyAreas: string[];
+  uniqueContent?: CityUniqueContent;
+  localStats?: CityLocalStats;
+  customFaqs?: FAQ[];
 }
 
 export interface ProcessStep {
@@ -165,6 +180,22 @@ export function getProblemsByService(serviceSlug: string): Problem[] {
 // FAQ access functions
 export function getFaqsForService(serviceSlug: string): FAQ[] {
   return faqs[serviceSlug] || [];
+}
+
+/**
+ * Get FAQs for a service with city-specific custom FAQs merged in
+ * Custom FAQs from the city are prioritized and appear at the top
+ */
+export function getFaqsForServiceAndCity(serviceSlug: string, citySlug: string): FAQ[] {
+  const serviceFaqs = getFaqsForService(serviceSlug);
+  const city = getCity(citySlug);
+  
+  if (!city || !city.customFaqs || city.customFaqs.length === 0) {
+    return serviceFaqs;
+  }
+  
+  // Merge custom FAQs at the top (they're more specific and valuable)
+  return [...city.customFaqs, ...serviceFaqs];
 }
 
 // Generate all city × service combinations for static generation

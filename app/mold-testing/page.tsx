@@ -23,6 +23,7 @@ import {
   ServiceBenefits,
   WhyChooseUs,
   LocalFAQ,
+  RelatedProblems,
 } from '@/components/local-seo';
 
 const SERVICE_SLUG = 'mold-testing';
@@ -343,6 +344,13 @@ export default function MoldTestingHubPage() {
           serviceSlug={SERVICE_SLUG}
           serviceName={service.name}
           groupByCounty={true}
+        />
+        
+        {/* Common Mold Problems */}
+        <RelatedProblems
+          serviceSlug={SERVICE_SLUG}
+          title="Common Mold Problems We Test For"
+          subtitle="Click on any problem below to learn about warning signs, causes, and our testing approach"
         />
         
         {/* Why Choose Us */}

@@ -36,7 +36,7 @@
     ],
     "problems": ["slab-leak", "pipe-burst", "water-heater-leak", "pool-leak", "underground-leak", "shower-pan-leak", "toilet-leak"],
     "bodyContent": {
-      "overview": "Water leaks can cause thousands of dollars in damage if left undetected. From hidden pipe leaks behind walls to slab leaks under your foundation, our advanced detection technology finds problems before they become disasters. Total Leak Detection uses non-invasive methods to pinpoint leaks quickly and accurately, saving you money and protecting your property.",
+      "overview": "Water leaks can cause thousands of dollars in damage if left undetected. In {city}, factors like {climate} make leak detection even more critical. From hidden pipe leaks behind walls to slab leaks under your foundation, our advanced detection technology finds problems before they become disasters. Total Leak Detection uses non-invasive methods to pinpoint leaks quickly and accurately, saving you money and protecting your {city} property.",
       "whyImportant": "A small leak can waste thousands of gallons of water and cause extensive structural damage, mold growth, and foundation problems. Early detection is crucial to preventing costly repairs and health hazards.",
       "technology": [
         {
@@ -115,7 +115,7 @@
         "icon": "FileCheck"
       }
     ],
-    "problems": ["bathroom-mold", "attic-mold", "water-damage-mold", "hidden-mold", "hvac-mold", "basement-mold"],
+    "problems": ["bathroom-mold", "attic-mold", "water-damage-mold", "hidden-mold", "hvac-mold", "basement-mold", "ac-mold", "kitchen-mold", "closet-mold", "crawlspace-mold"],
     "bodyContent": {
       "overview": "Mold can grow undetected in your home or business, causing health problems and property damage. Total Leak Detection provides professional mold testing services to identify mold types, assess contamination levels, and guide effective remediation. Our certified inspectors use accredited laboratory analysis to give you accurate, actionable results.",
       "whyImportant": "Mold exposure can cause allergic reactions, respiratory problems, and other health issues. Some mold types produce mycotoxins that can be particularly harmful. Professional testing identifies the specific molds present and their concentration levels.",
@@ -196,7 +196,7 @@
         "icon": "Video"
       }
     ],
-    "problems": ["root-intrusion", "pipe-collapse", "sewer-blockage", "grease-buildup", "pipe-corrosion", "bellied-pipe"],
+    "problems": ["root-intrusion", "pipe-collapse", "sewer-blockage", "grease-buildup", "pipe-corrosion", "bellied-pipe", "offset-joint", "scale-buildup", "foreign-object", "cracked-pipe"],
     "bodyContent": {
       "overview": "See inside your pipes without digging or demolition. Total Leak Detection's sewer camera inspection service uses HD video technology to diagnose blockages, locate damage, and assess pipe conditions. Whether you're dealing with slow drains, buying a home, or planning renovations, our camera inspections provide the answers you need.",
       "whyImportant": "Sewer line problems can be expensive to repair if not caught early. Camera inspection allows us to identify issues like root intrusion, pipe collapse, and corrosion before they cause backups or require emergency repairs. It's also essential for home buyers to assess the condition of sewer lines before purchase.",

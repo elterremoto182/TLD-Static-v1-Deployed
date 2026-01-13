@@ -22,6 +22,8 @@ export { LocalCTA, InlineCTA } from './LocalCTA';
 
 // Linking components
 export { RelatedLinks } from './RelatedLinks';
+export { RelatedProblems } from './RelatedProblems';
+export { RelatedQuestions, generateRelatedQuestions } from './RelatedQuestions';
 
 // Media components
 export { ServiceVideoEmbed } from './ServiceVideoEmbed';

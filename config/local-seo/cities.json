@@ -15,7 +15,27 @@
     },
     "intro": "As Miami's trusted leak detection experts, Total Leak Detection provides fast, professional service throughout the city. From Brickell's high-rise condos to Coconut Grove's historic homes, we understand the unique plumbing challenges Miami properties face.",
     "extendedContent": "Miami's tropical climate and aging infrastructure make professional leak detection essential. Our technicians are experienced with the specific challenges of Miami properties, including saltwater corrosion, limestone foundations, and high humidity conditions that can mask water damage.",
-    "nearbyAreas": ["miami-beach", "coral-gables", "hialeah", "doral", "north-miami"]
+    "nearbyAreas": ["miami-beach", "coral-gables", "hialeah", "doral", "north-miami"],
+    "uniqueContent": {
+      "whyChooseUsLocal": "With nearly two decades serving Miami, we know the city's unique plumbing landscape—from the Art Deco buildings of South Beach to the modern high-rises of Brickell. Our Miami-based team understands how the tropical climate, limestone geology, and coastal conditions affect your plumbing.",
+      "localExpertise": "Miami's combination of historic properties, newer construction, and diverse building styles requires versatile expertise. Our technicians are trained to work in high-rise condos, navigate historic district requirements, and handle the unique challenges of properties built on porous limestone.",
+      "testimonialHighlight": "Maria G. from Brickell says: 'They found a slab leak that our previous plumber missed. Professional, fast, and the report was perfect for our insurance claim.'"
+    },
+    "localStats": {
+      "yearsServing": 19,
+      "jobsCompleted": "3,500+",
+      "avgResponseMins": 35
+    },
+    "customFaqs": [
+      {
+        "question": "Why are slab leaks so common in Miami?",
+        "answer": "Miami's limestone foundation and high water table create unique conditions that accelerate pipe corrosion and foundation settling. Combined with the tropical climate and aging infrastructure in many neighborhoods, slab leaks are unfortunately common. Our thermal imaging technology is specifically calibrated for detecting these hidden leaks under Miami's limestone foundations."
+      },
+      {
+        "question": "Do you work with Miami-Dade County insurance claims?",
+        "answer": "Yes, we work with all insurance companies and are very familiar with Miami-Dade County insurance claim requirements. Our detailed reports include exact leak locations, photographic evidence, and professional documentation that meets local insurance standards. We've helped thousands of Miami homeowners navigate the claims process successfully."
+      }
+    ]
   },
   "miami-beach": {
     "name": "Miami Beach",
@@ -51,7 +71,17 @@
     },
     "intro": "Total Leak Detection provides expert service for Coral Gables' distinctive Mediterranean-style homes and estates. We specialize in non-invasive detection methods that protect your property's historic character and beautiful landscaping.",
     "extendedContent": "Coral Gables' historic homes and mature landscaping require specialized leak detection approaches. Our team understands the importance of preserving architectural integrity while quickly locating and addressing water leaks.",
-    "nearbyAreas": ["miami", "south-miami", "pinecrest", "coconut-grove"]
+    "nearbyAreas": ["miami", "south-miami", "pinecrest", "coconut-grove"],
+    "uniqueContent": {
+      "whyChooseUsLocal": "Coral Gables' Mediterranean Revival architecture and historic preservation requirements demand a delicate touch. Our non-invasive technology protects your property's character while pinpointing leaks with precision—no unnecessary demolition.",
+      "localExpertise": "We're familiar with the unique challenges of Coral Gables estates: mature banyan tree roots invading pipes, coral rock foundations that complicate detection, and the need to work within historic district guidelines. Our team respects your property's heritage.",
+      "testimonialHighlight": "Jennifer M. from Cocoplum says: 'They found our pool leak without disturbing our landscaping. Very professional and respectful of our historic property.'"
+    },
+    "localStats": {
+      "yearsServing": 19,
+      "jobsCompleted": "800+",
+      "avgResponseMins": 30
+    }
   },
   "hialeah": {
     "name": "Hialeah",
@@ -87,7 +117,17 @@
     },
     "intro": "As Doral's local leak detection experts—headquartered right here in your community—Total Leak Detection provides the fastest response times and most reliable service for homes and businesses throughout the city.",
     "extendedContent": "From our Doral headquarters, we serve the entire community with expert leak detection. Whether you're in a Downtown Doral condo, a family home in Doral Isles, or a commercial property, we're your neighbors and your trusted leak detection specialists.",
-    "nearbyAreas": ["miami", "hialeah", "sweetwater", "miami-springs"]
+    "nearbyAreas": ["miami", "hialeah", "sweetwater", "miami-springs"],
+    "uniqueContent": {
+      "whyChooseUsLocal": "Doral is our home. With headquarters at 7790 NW 55th St, we're not just serving your community—we're part of it. When you call, you get the fastest response times because we're already here.",
+      "localExpertise": "We know Doral's modern construction inside and out. From the newer homes in Doral Isles to commercial properties along NW 36th Street, we understand the specific plumbing systems and common issues in this community.",
+      "testimonialHighlight": "Carlos R. from Downtown Doral says: 'Being their neighbors, they got here in 25 minutes. Found the leak under my pool deck with their camera. Best service in Doral!'"
+    },
+    "localStats": {
+      "yearsServing": 19,
+      "jobsCompleted": "1,200+",
+      "avgResponseMins": 25
+    }
   },
   "kendall": {
     "name": "Kendall",
@@ -339,7 +379,17 @@
     },
     "intro": "Total Leak Detection serves Fort Lauderdale from our Miami-Dade headquarters with fast, professional leak detection. From Las Olas to Harbor Beach, we protect your property with expert service.",
     "extendedContent": "Fort Lauderdale's extensive canal system and waterfront properties create unique plumbing challenges. Our detection technology is ideal for locating leaks in these complex environments.",
-    "nearbyAreas": ["oakland-park", "wilton-manors", "pompano-beach", "hollywood", "lauderdale-by-the-sea"]
+    "nearbyAreas": ["oakland-park", "wilton-manors", "pompano-beach", "hollywood", "lauderdale-by-the-sea"],
+    "uniqueContent": {
+      "whyChooseUsLocal": "Fort Lauderdale's 'Venice of America' canal system creates unique leak detection challenges. Our team is experienced with waterfront estates, yacht facilities, and the salt air corrosion that accelerates pipe deterioration in coastal properties.",
+      "localExpertise": "From the historic Sailboat Bend district to the luxury estates of Harbor Beach, we understand how Fort Lauderdale's proximity to water—both fresh and salt—affects your plumbing. Our equipment is calibrated for the specific challenges of canal-adjacent properties.",
+      "testimonialHighlight": "Robert S. from Las Olas says: 'Excellent service from start to finish. Found a hidden leak in our seawall-adjacent property that other companies missed.'"
+    },
+    "localStats": {
+      "yearsServing": 19,
+      "jobsCompleted": "1,500+",
+      "avgResponseMins": 40
+    }
   },
   "hollywood": {
     "name": "Hollywood",

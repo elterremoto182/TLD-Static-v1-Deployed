@@ -23,6 +23,7 @@ import {
   ServiceBenefits,
   WhyChooseUs,
   LocalFAQ,
+  RelatedProblems,
 } from '@/components/local-seo';
 
 const SERVICE_SLUG = 'sewer-camera-inspection';
@@ -405,6 +406,13 @@ export default function SewerCameraInspectionHubPage() {
           serviceSlug={SERVICE_SLUG}
           serviceName={service.name}
           groupByCounty={true}
+        />
+        
+        {/* Common Sewer Problems */}
+        <RelatedProblems
+          serviceSlug={SERVICE_SLUG}
+          title="Common Sewer Problems We Diagnose"
+          subtitle="Click on any problem below to learn about warning signs, causes, and our inspection approach"
         />
         
         {/* Why Choose Us */}

@@ -23,6 +23,7 @@ import {
   ServiceBenefits,
   WhyChooseUs,
   LocalFAQ,
+  RelatedProblems,
 } from '@/components/local-seo';
 
 const SERVICE_SLUG = 'leak-detection';
@@ -300,6 +301,13 @@ export default function LeakDetectionHubPage() {
           serviceSlug={SERVICE_SLUG}
           serviceName={service.name}
           groupByCounty={true}
+        />
+        
+        {/* Common Leak Problems */}
+        <RelatedProblems
+          serviceSlug={SERVICE_SLUG}
+          title="Common Leak Problems We Detect"
+          subtitle="Click on any problem below to learn about warning signs, causes, and our detection approach"
         />
         
         {/* Why Choose Us */}

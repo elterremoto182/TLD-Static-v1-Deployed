@@ -378,6 +378,241 @@
     ],
     "whyUrgent": "Sewer blockages can cause sewage to back up into your home, creating health hazards and significant cleanup costs.",
     "ourApproach": "Camera inspection identifies the type, location, and extent of blockages. This ensures the right clearing method is used—whether mechanical snaking, hydro jetting, or repair."
+  },
+  "ac-mold": {
+    "name": "AC System Mold Testing",
+    "slug": "ac-mold",
+    "parentService": "mold-testing",
+    "icon": "Wind",
+    "metaTitleTemplate": "AC Mold Testing in {city}, FL | Air Conditioner Mold Inspection",
+    "metaDescTemplate": "Professional AC mold testing in {city}, {county}. Find mold in air conditioners, air handlers, and ductwork. Certified inspection for Florida homes. Call (855) 385-5325!",
+    "h1Template": "AC System Mold Testing in {city}, FL",
+    "keywords": ["ac mold", "air conditioner mold", "hvac mold", "ac unit mold", "mold in air handler", "ductwork mold", "ac mold testing"],
+    "overview": "In Florida's humid climate, air conditioning systems are prime breeding grounds for mold. Condensation, moisture, and organic debris in AC units, air handlers, and ductwork create ideal conditions for mold growth that can spread spores throughout your entire home.",
+    "symptoms": [
+      "Musty smell when AC runs",
+      "Visible mold on vents or registers",
+      "Black spots around AC unit or air handler",
+      "Allergic symptoms that worsen indoors",
+      "Respiratory issues when AC is running",
+      "Condensation or water around AC unit",
+      "Dust or debris blowing from vents"
+    ],
+    "causes": [
+      "High humidity levels in Florida climate",
+      "Clogged condensate drain lines",
+      "Dirty or wet air filters",
+      "Poor insulation on ductwork causing condensation",
+      "Oversized AC units that don't dehumidify properly",
+      "Infrequent HVAC maintenance"
+    ],
+    "whyUrgent": "AC mold spreads spores throughout your entire home every time the system runs. This constant exposure can cause respiratory problems, allergies, and illness—especially in children, elderly, and those with compromised immune systems.",
+    "ourApproach": "We inspect AC units, air handlers, evaporator coils, drip pans, and accessible ductwork for mold growth. Air sampling tests determine if mold spores are being circulated through your HVAC system. Our reports identify the source and guide remediation."
+  },
+  "kitchen-mold": {
+    "name": "Kitchen Mold Testing",
+    "slug": "kitchen-mold",
+    "parentService": "mold-testing",
+    "icon": "UtensilsCrossed",
+    "metaTitleTemplate": "Kitchen Mold Testing in {city}, FL | Under Sink & Cabinet Mold",
+    "metaDescTemplate": "Professional kitchen mold testing in {city}, {county}. Find hidden mold under sinks, in cabinets, and behind appliances. Certified inspection. Call (855) 385-5325!",
+    "h1Template": "Kitchen Mold Testing in {city}, FL",
+    "keywords": ["kitchen mold", "mold under sink", "cabinet mold", "kitchen water damage mold", "mold behind refrigerator", "kitchen mold testing"],
+    "overview": "Kitchens contain multiple water sources and high moisture levels that create perfect conditions for mold growth. From leaky pipes under sinks to condensation behind refrigerators, mold can grow hidden in your kitchen while contaminating food preparation areas.",
+    "symptoms": [
+      "Musty odor in kitchen area",
+      "Visible mold under sink or in cabinets",
+      "Warped or swollen cabinet bottoms",
+      "Soft spots in flooring near sink or dishwasher",
+      "Discoloration on walls behind appliances",
+      "Peeling paint or wallpaper near water sources"
+    ],
+    "causes": [
+      "Leaky pipes under kitchen sink",
+      "Dishwasher connection leaks",
+      "Refrigerator water line leaks",
+      "Poor ventilation during cooking",
+      "Condensation behind refrigerator",
+      "Garbage disposal leaks"
+    ],
+    "whyUrgent": "Kitchen mold poses a direct health risk as it can contaminate food and food preparation surfaces. Hidden mold also damages cabinets and flooring, leading to costly repairs if not caught early.",
+    "ourApproach": "We inspect under sinks, inside cabinets, behind appliances, and around all water connections for signs of moisture and mold. Air sampling and surface testing identify mold types and contamination levels in your kitchen."
+  },
+  "closet-mold": {
+    "name": "Closet Mold Detection",
+    "slug": "closet-mold",
+    "parentService": "mold-testing",
+    "icon": "DoorClosed",
+    "metaTitleTemplate": "Closet Mold Testing in {city}, FL | Hidden Closet Mold Detection",
+    "metaDescTemplate": "Expert closet mold detection in {city}, {county}. Find hidden mold in closets on exterior walls. Protect your belongings and health. Call (855) 385-5325!",
+    "h1Template": "Closet Mold Detection in {city}, FL",
+    "keywords": ["closet mold", "mold in closet", "hidden closet mold", "closet mildew", "mold on closet walls", "closet mold testing"],
+    "overview": "Closets—especially those on exterior walls—are common locations for hidden mold growth. Poor air circulation, darkness, and temperature differences between interior and exterior walls create condensation and humidity that promote mold growth on walls, floors, and belongings.",
+    "symptoms": [
+      "Musty smell in closet",
+      "Mold or mildew on clothing or shoes",
+      "Dark spots on closet walls or ceiling",
+      "Peeling paint in closet",
+      "Warped or buckled flooring",
+      "Condensation on closet walls",
+      "Damaged stored items"
+    ],
+    "causes": [
+      "Exterior wall location with temperature differential",
+      "Poor air circulation in enclosed space",
+      "Inadequate insulation causing condensation",
+      "Storing damp items in closet",
+      "Adjacent bathroom or plumbing leaks",
+      "Roof leaks affecting closet ceiling"
+    ],
+    "whyUrgent": "Closet mold damages clothing, shoes, and stored valuables while releasing spores into your home. Because closets are often overlooked, mold can spread extensively before discovery, requiring more extensive remediation.",
+    "ourApproach": "We inspect closet walls, floors, and ceilings for moisture and mold growth, paying special attention to exterior walls. Moisture meters and thermal imaging reveal hidden problems, while air and surface sampling confirm mold presence."
+  },
+  "crawlspace-mold": {
+    "name": "Crawlspace Mold Testing",
+    "slug": "crawlspace-mold",
+    "parentService": "mold-testing",
+    "icon": "Home",
+    "metaTitleTemplate": "Crawlspace Mold Testing in {city}, FL | Under House Mold Inspection",
+    "metaDescTemplate": "Professional crawlspace mold testing in {city}, {county}. Find mold under your house before it spreads. Certified inspection and air testing. Call (855) 385-5325!",
+    "h1Template": "Crawlspace Mold Testing in {city}, FL",
+    "keywords": ["crawlspace mold", "crawl space mold", "mold under house", "foundation mold", "subfloor mold", "crawlspace mold testing"],
+    "overview": "Crawlspaces are highly susceptible to mold growth due to ground moisture, poor ventilation, and proximity to soil. Mold in your crawlspace can spread throughout your home as air naturally moves upward, affecting indoor air quality on every floor.",
+    "symptoms": [
+      "Musty odors throughout home",
+      "Visible mold on floor joists or subfloor",
+      "Sagging or soft floors above crawlspace",
+      "High humidity levels in home",
+      "Allergy symptoms that don't improve",
+      "Pest infestations attracted to moisture",
+      "Standing water in crawlspace"
+    ],
+    "causes": [
+      "Ground moisture evaporating into crawlspace",
+      "Poor or absent vapor barrier",
+      "Inadequate crawlspace ventilation",
+      "Plumbing leaks under the house",
+      "Flooding or poor drainage around foundation",
+      "HVAC ductwork condensation in crawlspace"
+    ],
+    "whyUrgent": "Up to 50% of indoor air comes from below your home. Crawlspace mold releases spores that travel upward through the stack effect, contaminating your entire home's air quality and potentially causing structural damage to floor joists.",
+    "ourApproach": "We inspect crawlspace conditions including floor joists, subfloor, vapor barriers, and insulation. Air sampling compares crawlspace air to interior air to determine if mold spores are entering your living space. We identify moisture sources and recommend solutions."
+  },
+  "offset-joint": {
+    "name": "Offset Pipe Joint Detection",
+    "slug": "offset-joint",
+    "parentService": "sewer-camera-inspection",
+    "icon": "Unlink",
+    "metaTitleTemplate": "Offset Pipe Joint Detection in {city}, FL | Misaligned Sewer Pipes",
+    "metaDescTemplate": "HD camera inspection for offset pipe joints in {city}, {county}. Find misaligned sewer connections causing clogs and leaks. Accurate diagnosis. Call (855) 385-5325!",
+    "h1Template": "Offset Pipe Joint Detection in {city}, FL",
+    "keywords": ["offset joint", "pipe joint separation", "misaligned pipe", "separated sewer joint", "offset pipe joint", "sewer joint repair"],
+    "overview": "Offset pipe joints occur when sewer pipe sections shift out of alignment at connection points. These misalignments create ledges that catch debris, cause recurring clogs, and can allow roots and groundwater to enter the pipe. Camera inspection identifies offset joints that need repair.",
+    "symptoms": [
+      "Recurring drain clogs in same location",
+      "Slow drainage that returns after cleaning",
+      "Gurgling sounds from drains",
+      "Sewage odors from drains",
+      "Root intrusion at joint locations",
+      "Frequent need for drain cleaning"
+    ],
+    "causes": [
+      "Ground settling or shifting",
+      "Poor original installation",
+      "Tree root pressure on pipes",
+      "Heavy vehicle traffic above sewer line",
+      "Age and deterioration of pipe joints",
+      "Erosion around pipe bedding"
+    ],
+    "whyUrgent": "Offset joints worsen over time and create catch points for debris, roots, and waste. What starts as a minor misalignment can lead to complete blockages, root intrusion, and eventual pipe failure requiring more extensive repairs.",
+    "ourApproach": "Our HD camera inspection clearly shows offset joints, measuring the degree of misalignment and identifying the exact location. We can recommend targeted repairs like pipe lining, spot repairs, or replacement depending on severity."
+  },
+  "scale-buildup": {
+    "name": "Pipe Scale Buildup Detection",
+    "slug": "scale-buildup",
+    "parentService": "sewer-camera-inspection",
+    "icon": "Layers",
+    "metaTitleTemplate": "Pipe Scale Buildup Detection in {city}, FL | Mineral Deposit Diagnosis",
+    "metaDescTemplate": "HD camera inspection for pipe scale and mineral buildup in {city}, {county}. Diagnose reduced flow from deposits. Expert sewer inspection. Call (855) 385-5325!",
+    "h1Template": "Pipe Scale Buildup Detection in {city}, FL",
+    "keywords": ["pipe scale", "mineral buildup", "pipe deposits", "hard water buildup", "pipe corrosion scale", "calcium buildup pipes"],
+    "overview": "Scale buildup occurs when minerals in water—calcium, magite, and iron—accumulate on pipe walls over time. This reduces pipe diameter, slows drainage, and can eventually cause complete blockages. Camera inspection reveals the extent of scale buildup so the right cleaning method can be used.",
+    "symptoms": [
+      "Gradually slowing drainage over time",
+      "Reduced water flow throughout property",
+      "White or rust-colored residue at fixtures",
+      "Recurring partial blockages",
+      "Old cast iron or galvanized pipes",
+      "Hard water in your area"
+    ],
+    "causes": [
+      "Hard water with high mineral content",
+      "Cast iron pipe corrosion and rust",
+      "Galvanized pipe deterioration",
+      "Chemical reactions with cleaning products",
+      "Age of plumbing system",
+      "Infrequent drain maintenance"
+    ],
+    "whyUrgent": "Scale buildup progressively reduces pipe capacity, eventually causing complete blockages. Severe buildup can indicate pipe corrosion that may lead to leaks or pipe failure. Early detection allows for cleaning before replacement becomes necessary.",
+    "ourApproach": "Camera inspection shows the type and severity of scale buildup, helping us determine if hydro jetting can clear the deposits or if pipes have deteriorated beyond cleaning. We measure remaining pipe diameter and recommend the most cost-effective solution."
+  },
+  "foreign-object": {
+    "name": "Foreign Object Blockage Detection",
+    "slug": "foreign-object",
+    "parentService": "sewer-camera-inspection",
+    "icon": "Ban",
+    "metaTitleTemplate": "Foreign Object Blockage Detection in {city}, FL | Drain Camera Inspection",
+    "metaDescTemplate": "HD camera inspection for foreign objects in drains in {city}, {county}. Find and locate objects blocking your sewer line. Fast diagnosis. Call (855) 385-5325!",
+    "h1Template": "Foreign Object Blockage Detection in {city}, FL",
+    "keywords": ["foreign object drain", "object stuck in pipe", "blocked sewer object", "drain blockage", "item stuck in drain", "retrieve object from drain"],
+    "overview": "Foreign objects—from children's toys to hygiene products—are a common cause of sudden drain blockages. Camera inspection locates these objects precisely, showing exactly what's blocking your pipe and where it's lodged so removal can be targeted and effective.",
+    "symptoms": [
+      "Sudden complete drain blockage",
+      "Plunging doesn't clear the clog",
+      "Snaking hits obstruction but won't clear",
+      "Known item dropped or flushed",
+      "Single drain affected while others work",
+      "Water backs up quickly when used"
+    ],
+    "causes": [
+      "Items accidentally dropped into drains",
+      "Children flushing toys or objects",
+      "Feminine hygiene products flushed",
+      "Wipes marketed as flushable",
+      "Paper towels or excessive toilet paper",
+      "Grease-solidified masses with debris"
+    ],
+    "whyUrgent": "Foreign objects don't dissolve or break down—they remain lodged until removed. Continued use can push objects deeper into the system, making retrieval more difficult and expensive.",
+    "ourApproach": "Camera inspection shows exactly what object is causing the blockage, its location, and the best approach for removal. We can often retrieve objects using specialized tools, or recommend the most effective clearing method."
+  },
+  "cracked-pipe": {
+    "name": "Cracked Pipe Detection",
+    "slug": "cracked-pipe",
+    "parentService": "sewer-camera-inspection",
+    "icon": "Slash",
+    "metaTitleTemplate": "Cracked Pipe Detection in {city}, FL | Sewer Line Crack Inspection",
+    "metaDescTemplate": "HD camera inspection for cracked sewer pipes in {city}, {county}. Find pipe cracks before they become major problems. Accurate diagnosis. Call (855) 385-5325!",
+    "h1Template": "Cracked Pipe Detection in {city}, FL",
+    "keywords": ["cracked pipe", "pipe crack", "fractured sewer line", "damaged pipe", "cracked sewer", "hairline crack pipe"],
+    "overview": "Cracked sewer pipes—whether hairline fractures or significant breaks—allow groundwater infiltration, root intrusion, and sewage exfiltration. Unlike fully collapsed pipes, cracked pipes may still function but deteriorate over time. Camera inspection identifies cracks early so repairs can prevent complete failure.",
+    "symptoms": [
+      "Sewage odors in yard or home",
+      "Recurring root intrusion",
+      "Wet areas in yard near sewer line",
+      "Slow drainage that worsens over time",
+      "Pest infestations near sewer line",
+      "Sinkholes developing in yard"
+    ],
+    "causes": [
+      "Age and deterioration of pipe materials",
+      "Ground movement and settling",
+      "Temperature changes causing expansion/contraction",
+      "Tree root pressure on pipes",
+      "Heavy loads above buried pipes",
+      "Manufacturing defects in older pipes"
+    ],
+    "whyUrgent": "Cracked pipes allow roots to enter and grow, groundwater to infiltrate during rain, and sewage to leak into surrounding soil. Without repair, cracks expand into breaks and eventual collapse, dramatically increasing repair costs.",
+    "ourApproach": "HD camera inspection reveals the location, extent, and severity of pipe cracks. We can distinguish between surface cracks, through-wall cracks, and structural failures, recommending appropriate repairs from pipe lining to spot repairs to replacement."
   }
 }
 

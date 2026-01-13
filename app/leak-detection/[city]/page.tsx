@@ -153,6 +153,8 @@ export default async function LeakDetectionCityPage({
           extendedContent={city.extendedContent}
           cityName={city.name}
           localFactors={city.localFactors}
+          uniqueContent={city.uniqueContent}
+          localStats={city.localStats}
         />
         
         <ServiceOverview

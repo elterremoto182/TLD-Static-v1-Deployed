@@ -41,9 +41,17 @@ const PROBLEM_IMAGES: Record<string, string> = {
   'bathroom-mold': '/images/services/mold.jpg',
   'water-damage-mold': '/images/services/mold.jpg',
   'hidden-mold': '/images/services/mold.jpg',
+  'ac-mold': '/images/services/mold.jpg',
+  'kitchen-mold': '/images/services/mold.jpg',
+  'closet-mold': '/images/services/mold.jpg',
+  'crawlspace-mold': '/images/services/mold.jpg',
   'root-intrusion': '/images/services/drain-cleaning.jpg',
   'pipe-collapse': '/images/services/drain-cleaning.jpg',
   'sewer-blockage': '/images/services/drain-cleaning.jpg',
+  'offset-joint': '/images/services/drain-cleaning.jpg',
+  'scale-buildup': '/images/services/drain-cleaning.jpg',
+  'foreign-object': '/images/services/drain-cleaning.jpg',
+  'cracked-pipe': '/images/services/drain-cleaning.jpg',
 };
 
 export async function generateStaticParams() {

@@ -8,11 +8,17 @@ export interface TemplateVariables {
   problem?: string;
   responseTime?: string;
   phone?: string;
+  neighborhoods?: string;
+  zipCodes?: string;
+  climate?: string;
+  risks?: string;
+  characteristics?: string;
 }
 
 /**
  * Replace template variables in a string
- * Supports: {city}, {county}, {state}, {service}, {problem}, {responseTime}, {phone}
+ * Supports: {city}, {county}, {state}, {service}, {problem}, {responseTime}, {phone},
+ *           {neighborhoods}, {zipCodes}, {climate}, {risks}, {characteristics}
  */
 export function renderTemplate(template: string, variables: TemplateVariables): string {
   let result = template;
@@ -37,6 +43,21 @@ export function renderTemplate(template: string, variables: TemplateVariables): 
   }
   if (variables.phone) {
     result = result.replace(/\{phone\}/gi, variables.phone);
+  }
+  if (variables.neighborhoods) {
+    result = result.replace(/\{neighborhoods\}/gi, variables.neighborhoods);
+  }
+  if (variables.zipCodes) {
+    result = result.replace(/\{zipCodes\}/gi, variables.zipCodes);
+  }
+  if (variables.climate) {
+    result = result.replace(/\{climate\}/gi, variables.climate);
+  }
+  if (variables.risks) {
+    result = result.replace(/\{risks\}/gi, variables.risks);
+  }
+  if (variables.characteristics) {
+    result = result.replace(/\{characteristics\}/gi, variables.characteristics);
   }
   
   return result;
