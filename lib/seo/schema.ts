@@ -855,7 +855,7 @@ export function generateHowToSchema(
  * Combines all relevant schemas into a single JSON-LD block
  */
 export function buildPageSchemaGraph(options: {
-  pageType: 'home' | 'service' | 'article' | 'collection' | 'contact' | 'about' | 'city-service';
+  pageType: 'home' | 'service' | 'service-hub' | 'article' | 'collection' | 'contact' | 'about' | 'city-service';
   pageUrl: string;
   title: string;
   description: string;
@@ -894,7 +894,7 @@ export function buildPageSchemaGraph(options: {
   graph.push(generateOrganizationSchema());
 
   // Add LocalBusiness for relevant pages
-  if (['home', 'service', 'city-service', 'contact'].includes(options.pageType)) {
+  if (['home', 'service', 'service-hub', 'city-service', 'contact'].includes(options.pageType)) {
     graph.push(
       generateLocalBusinessSchema({
         city: options.city,
@@ -980,6 +980,27 @@ export function buildPageSchemaGraph(options: {
             },
             options.city
           )
+        );
+      }
+      break;
+
+    case 'service-hub':
+      // Service hub pages (e.g., /leak-detection/) - CollectionPage listing cities
+      graph.push(
+        generateCollectionPageSchema({
+          title: options.title,
+          description: options.description,
+          url: options.pageUrl,
+          breadcrumbs: options.breadcrumbs,
+        })
+      );
+      // Add Service schema for the hub service
+      if (options.service) {
+        graph.push(
+          generateServiceSchema({
+            ...options.service,
+            url: options.pageUrl,
+          })
         );
       }
       break;

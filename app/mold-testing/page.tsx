@@ -9,8 +9,7 @@ import { Phone, Shield, Clock, CheckCircle, AlertTriangle } from 'lucide-react';
 import { getService, getAllCities, getServiceVideo } from '@/lib/local-seo/data';
 import {
   generateServiceHubBreadcrumbs,
-  generateBreadcrumbSchema,
-  generateWebPageSchema,
+  buildPageSchemaGraph,
   schemaToJsonLd,
 } from '@/lib/local-seo/schema';
 import { getServiceHubCanonicalUrl } from '@/lib/local-seo/links';
@@ -186,23 +185,26 @@ export default function MoldTestingHubPage() {
   const canonicalUrl = getServiceHubCanonicalUrl(SERVICE_SLUG);
   const videoConfig = getServiceVideo(SERVICE_SLUG);
   
-  const breadcrumbSchema = generateBreadcrumbSchema(breadcrumbs, canonicalUrl);
-  const webPageSchema = generateWebPageSchema({
+  // Build comprehensive schema graph for SEO
+  const schemaGraph = buildPageSchemaGraph({
+    pageType: 'service-hub',
+    pageUrl: canonicalUrl,
     title: 'Mold Testing Services in Miami, Broward and Palm Beach',
     description: 'Mold Testing Services by Total Leak Detection: Ensure the safety of your home by detecting and addressing any mold issues promptly.',
-    url: canonicalUrl,
     breadcrumbs,
+    service: {
+      name: service.name,
+      description: service.bodyContent.overview,
+      serviceType: 'Mold Testing',
+    },
+    faqs: moldTestingFaqs,
   });
   
   return (
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: schemaToJsonLd(breadcrumbSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: schemaToJsonLd(webPageSchema) }}
+        dangerouslySetInnerHTML={{ __html: schemaToJsonLd(schemaGraph) }}
       />
       
       <Header />

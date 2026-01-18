@@ -9,8 +9,7 @@ import { Phone, Shield, Clock, CheckCircle, Droplet } from 'lucide-react';
 import { getService, getAllCities, getServiceVideo } from '@/lib/local-seo/data';
 import {
   generateServiceHubBreadcrumbs,
-  generateBreadcrumbSchema,
-  generateWebPageSchema,
+  buildPageSchemaGraph,
   schemaToJsonLd,
 } from '@/lib/local-seo/schema';
 import { getServiceHubCanonicalUrl } from '@/lib/local-seo/links';
@@ -175,23 +174,26 @@ export default function LeakDetectionHubPage() {
   const canonicalUrl = getServiceHubCanonicalUrl(SERVICE_SLUG);
   const videoConfig = getServiceVideo(SERVICE_SLUG);
   
-  const breadcrumbSchema = generateBreadcrumbSchema(breadcrumbs, canonicalUrl);
-  const webPageSchema = generateWebPageSchema({
+  // Build comprehensive schema graph for SEO
+  const schemaGraph = buildPageSchemaGraph({
+    pageType: 'service-hub',
+    pageUrl: canonicalUrl,
     title: 'Leak Detection Services Florida | 24/7 Expert Water Leak Locators',
     description: 'Hire leak detection services in Miami, Ft Lauderdale & more. Quick & accurate detection & repairs. 40+ years of experience.',
-    url: canonicalUrl,
     breadcrumbs,
+    service: {
+      name: service.name,
+      description: service.bodyContent.overview,
+      serviceType: 'Leak Detection',
+    },
+    faqs: leakDetectionFaqs,
   });
   
   return (
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: schemaToJsonLd(breadcrumbSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: schemaToJsonLd(webPageSchema) }}
+        dangerouslySetInnerHTML={{ __html: schemaToJsonLd(schemaGraph) }}
       />
       
       <Header />

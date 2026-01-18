@@ -9,8 +9,7 @@ import { Phone, Shield, Clock, CheckCircle, Camera, AlertTriangle, Search, Video
 import { getService, getAllCities, getServiceVideo } from '@/lib/local-seo/data';
 import {
   generateServiceHubBreadcrumbs,
-  generateBreadcrumbSchema,
-  generateWebPageSchema,
+  buildPageSchemaGraph,
   schemaToJsonLd,
 } from '@/lib/local-seo/schema';
 import { getServiceHubCanonicalUrl } from '@/lib/local-seo/links';
@@ -210,23 +209,26 @@ export default function SewerCameraInspectionHubPage() {
   const canonicalUrl = getServiceHubCanonicalUrl(SERVICE_SLUG);
   const videoConfig = getServiceVideo(SERVICE_SLUG);
   
-  const breadcrumbSchema = generateBreadcrumbSchema(breadcrumbs, canonicalUrl);
-  const webPageSchema = generateWebPageSchema({
+  // Build comprehensive schema graph for SEO
+  const schemaGraph = buildPageSchemaGraph({
+    pageType: 'service-hub',
+    pageUrl: canonicalUrl,
     title: 'Sewer Camera Inspection Services, Miami | Total Leak Detection',
     description: 'Get reliable sewer camera inspection services in Miami, FL. Our pipe inspection cameras diagnose blockages/leaks without invasive procedures.',
-    url: canonicalUrl,
     breadcrumbs,
+    service: {
+      name: service.name,
+      description: service.bodyContent.overview,
+      serviceType: 'Sewer Camera Inspection',
+    },
+    faqs: sewerCameraFaqs,
   });
   
   return (
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: schemaToJsonLd(breadcrumbSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: schemaToJsonLd(webPageSchema) }}
+        dangerouslySetInnerHTML={{ __html: schemaToJsonLd(schemaGraph) }}
       />
       
       <Header />
