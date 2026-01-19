@@ -23,6 +23,7 @@ import {
   WhyChooseUs,
   LocalFAQ,
   RelatedProblems,
+  RealWorkGallery,
 } from '@/components/local-seo';
 
 const SERVICE_SLUG = 'leak-detection';
@@ -283,6 +284,9 @@ export default function LeakDetectionHubPage() {
           subtitle="Detect Leaks Without Property Damage"
           benefits={solutionBenefits}
         />
+        
+        {/* Real Work Gallery - Early for trust building */}
+        <RealWorkGallery serviceSlug="leak-detection" />
         
         {/* Service Areas intro */}
         <section className="py-12 bg-gray-50">

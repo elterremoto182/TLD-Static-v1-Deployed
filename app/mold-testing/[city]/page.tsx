@@ -40,6 +40,7 @@ import {
   NearbyAreas,
   RelatedLinks,
   ServiceVideoEmbed,
+  RealWorkGallery,
 } from '@/components/local-seo';
 
 const SERVICE_SLUG = 'mold-testing';
@@ -155,6 +156,13 @@ export default async function MoldTestingCityPage({
           localFactors={city.localFactors}
           uniqueContent={city.uniqueContent}
           localStats={city.localStats}
+        />
+        
+        {/* Real Work Gallery - Early for trust building */}
+        <RealWorkGallery 
+          serviceSlug="mold-testing" 
+          variant="compact"
+          cityName={city.name}
         />
         
         <ServiceOverview

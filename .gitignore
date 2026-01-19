@@ -34,3 +34,7 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# local scripts (not committed)
+/scripts/optimize-gallery-media.sh
+/scripts/optimize-gallery-media.py

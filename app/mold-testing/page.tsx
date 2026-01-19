@@ -23,6 +23,7 @@ import {
   WhyChooseUs,
   LocalFAQ,
   RelatedProblems,
+  RealWorkGallery,
 } from '@/components/local-seo';
 
 const SERVICE_SLUG = 'mold-testing';
@@ -294,6 +295,9 @@ export default function MoldTestingHubPage() {
           subtitle="Professional testing methods to identify and locate mold problems"
           benefits={testingBenefits}
         />
+        
+        {/* Real Work Gallery - Early for trust building */}
+        <RealWorkGallery serviceSlug="mold-testing" />
         
         {/* When to Test Section */}
         <section className="py-16 bg-white">

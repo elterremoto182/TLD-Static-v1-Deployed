@@ -40,6 +40,7 @@ import {
   NearbyAreas,
   RelatedLinks,
   ServiceVideoEmbed,
+  RealWorkGallery,
 } from '@/components/local-seo';
 
 const SERVICE_SLUG = 'sewer-camera-inspection';
@@ -155,6 +156,13 @@ export default async function SewerCameraInspectionCityPage({
           localFactors={city.localFactors}
           uniqueContent={city.uniqueContent}
           localStats={city.localStats}
+        />
+        
+        {/* Real Work Gallery - Early for trust building */}
+        <RealWorkGallery 
+          serviceSlug="sewer-camera-inspection" 
+          variant="compact"
+          cityName={city.name}
         />
         
         <ServiceOverview

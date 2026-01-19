@@ -11,8 +11,8 @@ seo_description: >-
   Miramar Leak Detection: Pinholes in Pines: Discover our specialized leak
   detection services in Miramar and how we address pinhole leaks.
 keywords: ["miramar leak detection"]
-image: /images/gallery/leak-detection-before.jpg
-imageAlt: Copper pipe with pinhole leak found during professional leak detection service in Miramar Florida
+image: /images/gallery/pipe-leak-closeup.jpg
+imageAlt: Closeup of a copper pipe with pinhole leak discovered during professional leak detection service in Miramar Florida
 ---
 
 In this article we are going to be talking about copper pipe pinhole leaks. These leaks seem to be affecting the city of Miramar in South Florida the most. 
@@ -37,7 +37,9 @@ Now let’s get into the process of what to do next. First we check the meter it
 
 ## Leak Detection in Miramar
 
-Once we are identified your meter is moving or you have water damage stains, we want to trace all the copper lines throughout the home. We do this by connecting the transmitter to the lines and using a location device to locate the signal from the pipes. 
+Once we are identified your meter is moving or you have water damage stains, we want to trace all the copper lines throughout the home. We do this by connecting the transmitter to the lines and using a location device to locate the signal from the pipes.
+
+![Total Leak Detection technician using professional leak detection equipment in a Miramar home](/images/gallery/leak-detection-technician.jpg) 
 
 Gen ear location 
 
@@ -45,7 +47,9 @@ Once we’ve located the pipes now we want to identify where the pinhole leaks a
 
 ## Plumbing Report & Estimate
 
-Once we’ve located all the pipes we are ready to create a comprehensive report with pictures and recommendations. With this report plumber can create an estimate for repairs or many people use this for the insurance company as detailed causation reports to help determine coverage.
+![Pipe leak damage discovered during leak detection inspection in Miramar Florida](/images/gallery/pipe-leak.jpg)
+
+Once we've located all the pipes we are ready to create a comprehensive report with pictures and recommendations. With this report plumber can create an estimate for repairs or many people use this for the insurance company as detailed causation reports to help determine coverage.
 
 If more than one leak is found we usually recommend replacing all the lines because the pipe is most likely defective
 

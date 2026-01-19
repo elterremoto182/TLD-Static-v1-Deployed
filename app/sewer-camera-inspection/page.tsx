@@ -23,6 +23,7 @@ import {
   WhyChooseUs,
   LocalFAQ,
   RelatedProblems,
+  RealWorkGallery,
 } from '@/components/local-seo';
 
 const SERVICE_SLUG = 'sewer-camera-inspection';
@@ -318,6 +319,9 @@ export default function SewerCameraInspectionHubPage() {
           subtitle="See exactly what's happening inside your pipes with crystal-clear video"
           benefits={cameraBenefits}
         />
+        
+        {/* Real Work Gallery - Early for trust building */}
+        <RealWorkGallery serviceSlug="sewer-camera-inspection" />
         
         {/* Advantages Section */}
         <section className="py-16 bg-white">

@@ -20,8 +20,8 @@ seo_description: >-
   concrete foundations. Learn about the latest technologies and practical
   solutions to address this challenging issue effectively.
 keywords: ["concrete leak detection"]
-image: /images/gallery/leak-detection-before.jpg
-imageAlt: Leak detection technician using specialized equipment to locate a slab leak beneath a concrete foundation
+image: /images/gallery/moisture-detection.jpg
+imageAlt: Professional moisture detection equipment being used to locate hidden slab leaks beneath a concrete foundation in South Florida
 ---
 
 Detecting and repairing leaks beneath concrete foundations are critical for maintaining the structural integrity of buildings and ensuring a safe living environment. This comprehensive guide explores advanced techniques and best practices to help you efficiently manage and resolve these hidden problems.
@@ -41,6 +41,8 @@ Before diving into detection methods, it’s crucial to recognize the signs of a
 -   Cracks in walls or flooring
 
 ## **Advanced Detection Techniques**
+
+![Professional leak detection equipment used to locate slab leaks including moisture meters and thermal imaging](/images/gallery/leak-detection-equipment.jpg)
 
 Detecting a leak beneath a concrete slab requires precision and expertise. Here are several advanced methods used by professionals:
 
@@ -93,6 +95,8 @@ Once the repair is complete, the concrete and any affected flooring must be rest
 Implement maintenance practices such as regular pressure checks and using water softeners to reduce mineral buildup in pipes. Regular [sewer camera inspections](/services/camera-inspection/) can also help identify potential issues before they become major problems. For comprehensive plumbing maintenance, consider our [drain cleaning services](/services/drain-cleaning/) to keep your pipes clear and functioning properly.
 
 ## **Ensuring Professional Intervention**
+
+![Total Leak Detection technician performing a professional slab leak inspection in South Florida](/images/gallery/leak-detection-technician.jpg)
 
 While some keen DIYers might attempt to tackle leak detection, the precision required in locating and repairing slab leaks suggests the need for professional intervention. Experts in leak detection, like those at [Total Leak Detection](/services/leak-detection/), are equipped with the technology and skills necessary to handle these challenges efficiently. Our [slab leak detection services](/services/slab-leaks/) specialize in finding leaks beneath concrete foundations using advanced non-invasive techniques. By choosing professional services, you ensure that the job is done right the first time, potentially saving you money and avoiding significant property damage. For more information about our comprehensive leak detection services, visit our [leak detection services page](/services/leak-detection/).
 

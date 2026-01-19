@@ -28,3 +28,6 @@ export { RelatedQuestions, generateRelatedQuestions } from './RelatedQuestions';
 // Media components
 export { ServiceVideoEmbed } from './ServiceVideoEmbed';
 
+
+// Gallery components
+export { RealWorkGallery } from './RealWorkGallery';
