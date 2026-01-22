@@ -39,7 +39,7 @@ Now let’s get into the process of what to do next. First we check the meter it
 
 Once we are identified your meter is moving or you have water damage stains, we want to trace all the copper lines throughout the home. We do this by connecting the transmitter to the lines and using a location device to locate the signal from the pipes.
 
-![Total Leak Detection technician using professional leak detection equipment in a Miramar home](/images/gallery/leak-detection-technician.jpg) 
+![Professional technician using moisture detection equipment to locate copper pipe pinhole leaks in Miramar Florida home](/images/gallery/leak%20detection%20technitian.JPG) 
 
 Gen ear location 
 
@@ -47,7 +47,7 @@ Once we’ve located the pipes now we want to identify where the pinhole leaks a
 
 ## Plumbing Report & Estimate
 
-![Pipe leak damage discovered during leak detection inspection in Miramar Florida](/images/gallery/pipe-leak.jpg)
+![Copper pipe pinhole leak with visible water damage discovered during professional leak detection service in Miramar](/images/gallery/pipe%20leak%20closeup.JPG)
 
 Once we've located all the pipes we are ready to create a comprehensive report with pictures and recommendations. With this report plumber can create an estimate for repairs or many people use this for the insurance company as detailed causation reports to help determine coverage.
 

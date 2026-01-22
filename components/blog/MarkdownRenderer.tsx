@@ -5,7 +5,53 @@ import remarkRehype from 'remark-rehype';
 import rehypeRaw from 'rehype-raw';
 import rehypeStringify from 'rehype-stringify';
 import { visit } from 'unist-util-visit';
+import { toString as hastToString } from 'hast-util-to-string';
 import type { Root, Element } from 'hast';
+
+/**
+ * Convert a string to a URL-friendly slug
+ */
+function slugify(text: string): string {
+  return text
+    .toLowerCase()
+    .replace(/[^\w\s-]/g, '') // Remove special characters
+    .replace(/\s+/g, '-') // Replace spaces with hyphens
+    .replace(/-+/g, '-') // Replace multiple hyphens with single
+    .trim()
+    .replace(/^-+|-+$/g, ''); // Remove leading/trailing hyphens
+}
+
+/**
+ * Rehype plugin to add IDs to headings for anchor links
+ */
+function rehypeHeadingIds() {
+  return (tree: Root) => {
+    const usedIds = new Set<string>();
+    
+    visit(tree, 'element', (node: Element) => {
+      if (['h1', 'h2', 'h3', 'h4', 'h5', 'h6'].includes(node.tagName)) {
+        // Extract text content from heading
+        const text = hastToString(node);
+        let id = slugify(text);
+        
+        // Handle duplicate IDs by appending a number
+        if (usedIds.has(id)) {
+          let counter = 1;
+          while (usedIds.has(`${id}-${counter}`)) {
+            counter++;
+          }
+          id = `${id}-${counter}`;
+        }
+        
+        usedIds.add(id);
+        
+        // Add the ID to the heading
+        if (!node.properties) node.properties = {};
+        node.properties.id = id;
+      }
+    });
+  };
+}
 
 interface MarkdownRendererProps {
   content: string;
@@ -203,6 +249,7 @@ export async function processMarkdown(content: string): Promise<string> {
     .use(remarkRehype, { allowDangerousHtml: true })
     .use(rehypeRaw)
     .use(rehypeYouTubeFacade)
+    .use(rehypeHeadingIds)
     .use(rehypeApplyStyles)
     .use(rehypeStringify, { allowDangerousHtml: true })
     .process(content);

@@ -219,6 +219,17 @@ export function Footer() {
               </Link>
             </div>
           </div>
+          <div className="mt-4 text-center text-xs text-gray-500">
+            Developed By{' '}
+            <a
+              href="https://aipress.io/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-400 hover:text-white transition-colors duration-200"
+            >
+              aipress.io
+            </a>
+          </div>
         </div>
       </div>
     </footer>

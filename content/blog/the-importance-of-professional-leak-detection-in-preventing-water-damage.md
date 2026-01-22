@@ -17,8 +17,8 @@ seo_description: >-
   your home or business. Learn why early detection matters and how experts find
   hidden leaks.
 keywords: ["Professional leak detection"]
-image: /images/gallery/leak-detection-technician.jpg
-imageAlt: Total Leak Detection technician using professional moisture detection equipment to locate hidden water leaks in a Florida home
+image: /images/gallery/leak%20detection%20technitian.JPG
+imageAlt: Professional leak detection technician performing thermal imaging inspection to locate hidden water leaks in South Florida home
 ---
 
 # The Importance of Professional Leak Detection in Preventing Water Damage
@@ -52,7 +52,7 @@ Because many leaks are hidden, the damage often builds up unnoticed until major 
 
 Modern leak detection goes far beyond guesswork. Specialists use advanced technology to locate leaks without invasive procedures:
 
-![Leak detection equipment including thermal imaging and moisture meters used by Total Leak Detection](/images/gallery/leak-detection-equipment.jpg)
+![Advanced thermal imaging camera detecting temperature variations in walls to locate hidden water leaks without invasive procedures](/images/gallery/leak%20detection%20gun.JPG)
 
 -   **Acoustic sensors** detect the sound of water escaping from pipes
     

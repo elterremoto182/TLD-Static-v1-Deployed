@@ -36,6 +36,8 @@ This comprehensive guide covers everything Florida homeowners need to know about
 
 ## Why Drains Clog
 
+![Clogged drain showing buildup that causes drainage problems](/images/services/clog.jpg)
+
 Understanding what causes clogs helps you prevent them and choose the right cleaning approach.
 
 ### Common Clog Culprits
@@ -178,6 +180,8 @@ Stop and call professionals if:
 
 ## Professional Drain Cleaning Options
 
+![Professional drain cleaning service using advanced equipment](/images/services/drain-cleaning.jpg)
+
 ### Mechanical Snaking (Augering)
 
 **How it works:**
@@ -213,6 +217,8 @@ High-pressure water (3,000-4,000+ PSI) scours pipe walls, removing all buildup a
 - Environmentally friendly (just water)
 
 ### Video Camera Inspection
+
+![Camera inspection reveals the inside of pipes before cleaning](/images/gallery/camera-inspection-before.jpg)
 
 Often combined with cleaning to:
 - Diagnose the problem before cleaning

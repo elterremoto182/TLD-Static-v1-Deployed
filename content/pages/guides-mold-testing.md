@@ -37,6 +37,8 @@ This comprehensive guide explains everything you need to know about mold testing
 
 ## Understanding Mold in Florida Homes
 
+![Professional mold inspection showing affected area before remediation](/images/gallery/mold-inspection-before.jpg)
+
 ### What Is Mold?
 
 Mold is a type of fungus that grows in multicellular structures called hyphae. It reproduces by releasing microscopic spores into the air. These spores are everywhere—indoors and outdoors—but become problematic when they find moisture and suitable surfaces to colonize inside your home.
@@ -75,6 +77,8 @@ Mold exposure can cause:
 ---
 
 ## Signs You May Have a Mold Problem
+
+![Moisture detection is essential for identifying potential mold growth areas](/images/gallery/moisture-detection.jpg)
 
 ### Visual Indicators
 
@@ -230,6 +234,8 @@ Physical pieces of building materials are removed and sent to a laboratory.
 
 ## The Mold Testing Process
 
+![Professional mold testing and inspection equipment](/images/services/mold.jpg)
+
 ### What to Expect
 
 **1. Initial Consultation**
@@ -348,6 +354,8 @@ Consider the cost of NOT testing:
 
 ## Prevention and Remediation
 
+![Clean area after successful mold remediation](/images/gallery/mold-inspection-after.jpg)
+
 ### Preventing Mold Growth
 
 **Control moisture:**
@@ -375,7 +383,7 @@ Consider the cost of NOT testing:
 May be suitable for DIY cleaning with proper precautions.
 
 **Larger areas or HVAC contamination:**
-Professional remediation recommended.
+[Professional mold remediation](https://totalcarerestoration.com/mold-remediation/) recommended.
 
 **Health concerns or sensitive individuals:**
 Always seek professional help.

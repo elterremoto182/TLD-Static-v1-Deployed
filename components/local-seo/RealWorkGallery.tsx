@@ -23,34 +23,34 @@ interface RealWorkGalleryProps {
 const serviceImages: Record<string, GalleryImage[]> = {
   'leak-detection': [
     {
-      src: '/images/gallery/leak-detection-technician.jpg',
-      alt: 'Total Leak Detection technician using professional moisture detection equipment',
+      src: '/images/gallery/leak%20detection%20technitian.JPG',
+      alt: 'Professional leak detection technician using moisture detection equipment during inspection',
       title: 'Professional Inspection',
-      caption: 'Using advanced moisture detection equipment',
+      caption: 'Expert technician performing leak detection',
+    },
+    {
+      src: '/images/gallery/pipe%20leak%20closeup.JPG',
+      alt: 'Copper pipe pinhole leak discovered during professional leak detection inspection',
+      title: 'Leak Discovered',
+      caption: 'Pinhole leak found behind wall',
+    },
+    {
+      src: '/images/gallery/leak%20detection%20gun.JPG',
+      alt: 'Thermal imaging camera detecting hidden water leaks in walls with temperature variations',
+      title: 'Thermal Imaging Detection',
+      caption: 'Advanced thermal imaging technology',
+    },
+    {
+      src: '/images/gallery/leak%20detection%20moisture.JPG',
+      alt: 'Moisture detection equipment showing thermal readings to locate hidden leaks',
+      title: 'Moisture Detection',
+      caption: 'Precision moisture detection equipment',
     },
     {
       src: '/images/gallery/pipe-leak.jpg',
-      alt: 'Hidden pipe leak discovered behind wall during leak detection inspection',
+      alt: 'Water damage from hidden pipe leak discovered during inspection',
       title: 'Hidden Leak Found',
       caption: 'Water damage discovered behind wall',
-    },
-    {
-      src: '/images/gallery/pipe-leak-closeup.jpg',
-      alt: 'Closeup of copper pipe with pinhole leak',
-      title: 'Pinhole Leak Detection',
-      caption: 'Copper pipe damage identified',
-    },
-    {
-      src: '/images/gallery/leak-detection-equipment.jpg',
-      alt: 'Professional leak detection equipment including thermal imaging and moisture meters',
-      title: 'Professional Equipment',
-      caption: 'State-of-the-art detection technology',
-    },
-    {
-      src: '/images/gallery/moisture-detection.jpg',
-      alt: 'Moisture detection being performed to locate hidden water leaks',
-      title: 'Moisture Detection',
-      caption: 'Identifying water damage sources',
     },
   ],
   'mold-testing': [
@@ -67,10 +67,10 @@ const serviceImages: Record<string, GalleryImage[]> = {
       caption: 'Results after following our recommendations',
     },
     {
-      src: '/images/gallery/leak-detection-equipment.jpg',
-      alt: 'Professional testing equipment for mold detection',
-      title: 'Testing Equipment',
-      caption: 'Professional-grade inspection tools',
+      src: '/images/gallery/leak%20detection%20moisture.JPG',
+      alt: 'Moisture detection equipment used to identify water sources causing mold growth',
+      title: 'Moisture Testing',
+      caption: 'Locating moisture sources for mold',
     },
   ],
   'sewer-camera-inspection': [
@@ -87,10 +87,10 @@ const serviceImages: Record<string, GalleryImage[]> = {
       caption: 'Clean pipe after targeted repair',
     },
     {
-      src: '/images/gallery/leak-detection-equipment.jpg',
-      alt: 'Professional sewer camera inspection equipment',
-      title: 'HD Camera Equipment',
-      caption: 'Professional-grade video inspection',
+      src: '/images/gallery/leak%20detection%20technitian.JPG',
+      alt: 'Professional technician preparing sewer camera inspection equipment',
+      title: 'Professional Service',
+      caption: 'Expert camera inspection service',
     },
   ],
 };

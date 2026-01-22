@@ -27,7 +27,7 @@ Total Leak Detection is Florida's leading leak detection company with 40+ years 
 
 ## The Hidden Cost of Water Leaks: Why Every Hour Counts
 
-![Water Leak Damage Before Detection](/images/gallery/leak-detection-before.jpg)
+![Copper pipe with pinhole leak showing visible water damage before professional leak detection and repair](/images/gallery/pipe%20leak%20closeup.JPG)
 
 Water leaks are silent destroyers. What starts as a small drip can quickly escalate into:
 
@@ -51,7 +51,7 @@ Water leaks are silent destroyers. What starts as a small drip can quickly escal
 
 ## Our Non-Invasive Solution: Detect Leaks Without Property Damage
 
-![Leak Detection Success - Problem Solved](/images/gallery/leak-detection-after.jpg)
+![Professional technician using thermal imaging camera to detect hidden water leaks with precision accuracy](/images/gallery/leak%20detection%20gun.JPG)
 
 Unlike traditional methods that require digging, drilling, or tearing down walls, our advanced leak detection technology:
 
@@ -113,7 +113,7 @@ We're not just another leak detection company. We're Florida's trusted experts b
 
 ## What Makes Our Leak Detection Services Different
 
-![Professional Leak Detection Equipment](/images/services/leak-detection.jpg)
+![Advanced moisture detection equipment displaying thermal readings for precise leak location identification](/images/gallery/leak%20detection%20moisture.JPG)
 
 ### Advanced Technology That Actually Works
 

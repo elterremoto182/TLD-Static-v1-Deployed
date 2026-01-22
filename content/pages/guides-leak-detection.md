@@ -36,6 +36,8 @@ This comprehensive guide covers everything you need to know about water leak det
 
 ## Why Leak Detection Matters in Florida
 
+![Professional leak detection equipment being used to locate hidden water leaks](/images/gallery/leak-detection-equipment.jpg)
+
 Florida's unique climate and geology create perfect conditions for water leak problems. High humidity, limestone foundations, and aging plumbing infrastructure mean that leaks are not just possible—they're probable for many homeowners.
 
 ### The True Cost of Undetected Leaks
@@ -61,6 +63,8 @@ Florida homeowners face unique challenges:
 ---
 
 ## Common Signs of Water Leaks
+
+![Water damage from a pipe leak showing moisture on surfaces](/images/gallery/moisture-detection.jpg)
 
 Learning to recognize the early warning signs of water leaks can save you thousands in damage. Here are the most common indicators:
 
@@ -101,6 +105,8 @@ For a deeper dive into recognizing leak symptoms, read our article on [the impor
 Understanding the different types of water leaks helps you identify potential problems and communicate effectively with professionals.
 
 ### Slab Leaks
+
+![Close-up view of a leaking pipe showing water damage](/images/gallery/pipe-leak-closeup.jpg)
 
 Slab leaks occur in the water lines running beneath your concrete foundation. They're particularly common in Florida due to:
 
@@ -157,6 +163,8 @@ Florida's outdoor living lifestyle means many homes have pools and extensive irr
 ---
 
 ## How Professional Leak Detection Works
+
+![Certified leak detection technician using specialized equipment](/images/gallery/leak-detection-technician.jpg)
 
 Professional leak detection uses advanced technology to locate leaks without destructive exploration. Here's what modern leak detection involves:
 
@@ -260,6 +268,8 @@ While leak detection has an upfront cost, consider the alternative:
 ---
 
 ## The Connection Between Leaks and Mold
+
+![Pipe leak showing active water damage that can lead to mold growth](/images/gallery/pipe-leak.jpg)
 
 In Florida's humid climate, water leaks and mold growth go hand in hand. Understanding this connection is crucial for protecting your health and property.
 

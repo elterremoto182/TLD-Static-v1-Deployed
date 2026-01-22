@@ -36,6 +36,8 @@ This comprehensive guide explains everything Florida property owners need to kno
 
 ## What Is a Sewer Camera Inspection?
 
+![Sewer camera inspection revealing pipe conditions before service](/images/gallery/camera-inspection-before.jpg)
+
 A sewer camera inspection uses a specialized waterproof camera attached to a flexible cable to visually examine the inside of your drain and sewer pipes. The camera transmits real-time video to a monitor, allowing technicians to see exactly what's happening inside your plumbing system.
 
 ### How the Technology Works
@@ -97,6 +99,8 @@ Florida properties face unique sewer challenges:
 
 ## What Problems Sewer Cameras Find
 
+![Pipe damage discovered during sewer camera inspection](/images/gallery/pipe-leak-closeup.jpg)
+
 ### Root Intrusion
 
 Tree roots seek water sources and can infiltrate sewer lines through tiny cracks or joint gaps. Once inside, roots grow and expand, eventually blocking or breaking pipes.
@@ -149,6 +153,8 @@ Cameras reveal what your pipes are made of:
 ---
 
 ## The Inspection Process
+
+![Clean pipe after professional inspection and service](/images/gallery/camera-inspection-after.jpg)
 
 ### What to Expect
 
@@ -252,6 +258,8 @@ Inspection findings can help you:
 ---
 
 ## Maintaining Your Sewer Line
+
+![Professional plumbing equipment for sewer line maintenance](/images/services/plumbing.jpg)
 
 Proper maintenance extends the life of your sewer system and prevents emergencies.
 

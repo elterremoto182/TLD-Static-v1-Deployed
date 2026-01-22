@@ -15,8 +15,8 @@ seo_description: >-
   Discover effective leak detection in Miami Lakes to prevent costly water waste
   and plumbing emergencies in your home.
 keywords: ["leak detection miami lakes"]
-image: /images/gallery/leak-detection-before.jpg
-imageAlt: Total Leak Detection team performing professional leak detection services in Miami Lakes Florida
+image: /images/gallery/leak%20detection%20technitian.JPG
+imageAlt: Professional leak detection technician performing comprehensive inspection at Miami Lakes Florida home
 ---
 
 The following is a video of a leak detection in Miami Lakes Florida.

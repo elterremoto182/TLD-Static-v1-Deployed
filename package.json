@@ -23,6 +23,7 @@
     "eslint": "8.49.0",
     "eslint-config-next": "13.5.1",
     "gray-matter": "^4.0.3",
+    "hast-util-to-string": "^3.0.1",
     "lucide-react": "^0.446.0",
     "next": "^14.2.18",
     "next-image-export-optimizer": "^1.19.0",
