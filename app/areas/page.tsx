@@ -21,12 +21,20 @@ const SERVICE_ICONS: Record<string, React.ElementType> = {
 };
 
 export async function generateMetadata() {
-  return generatePageMetadata({
-    title: 'Service Areas | Leak Detection Throughout South Florida',
-    description: 'Total Leak Detection serves Miami-Dade and Broward counties with professional leak detection, mold testing, and sewer camera inspection services. Find your city.',
-    keywords: ['leak detection service areas', 'South Florida leak detection', 'Miami leak detection', 'Broward leak detection'],
-    path: '/areas',
-  });
+  return {
+    ...generatePageMetadata({
+      title: 'Service Areas | Leak Detection Throughout South Florida',
+      description: 'Total Leak Detection serves Miami-Dade and Broward counties with professional leak detection, mold testing, and sewer camera inspection services. Find your city.',
+      keywords: ['leak detection service areas', 'South Florida leak detection', 'Miami leak detection', 'Broward leak detection'],
+      path: '/areas',
+    }),
+    // noindex, follow - Safety net page ensures all cities are crawlable
+    // while concentrating indexable link equity on tiered pages
+    robots: {
+      index: false,
+      follow: true,
+    },
+  };
 }
 
 export default function AreasPage() {

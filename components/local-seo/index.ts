@@ -13,6 +13,8 @@ export { WhyChooseUs } from './WhyChooseUs';
 export { NeighborhoodList } from './NeighborhoodList';
 export { NearbyAreas } from './NearbyAreas';
 export { CityGrid } from './CityGrid';
+export { TieredCityGrid } from './TieredCityGrid';
+export { ServiceHubCityGrid } from './ServiceHubCityGrid';
 
 // FAQ component
 export { LocalFAQ } from './LocalFAQ';

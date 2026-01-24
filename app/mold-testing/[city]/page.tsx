@@ -22,12 +22,12 @@ import {
 } from '@/lib/local-seo/schema';
 import { buildPageSchemaGraph } from '@/lib/seo/schema';
 import {
-  getNearbyCityLinks,
   getRelatedServiceLinks,
   getProblemLinksForService,
   getRelatedBlogLinks,
   getCityServiceCanonicalUrl,
 } from '@/lib/local-seo/links';
+import { getAllNearbyTierLinks } from '@/lib/local-seo/tier-links';
 
 import {
   LocalHero,
@@ -98,7 +98,8 @@ export default async function MoldTestingCityPage({
   const baseFaqs = getFaqsForService(SERVICE_SLUG);
   const faqs = renderFaqs(baseFaqs, city);
   
-  const nearbyCityLinks = getNearbyCityLinks(citySlug, SERVICE_SLUG, 6);
+  // Get tier-based city links (links to appropriate tier below + supplemental for orphan prevention)
+  const nearbyCityLinks = getAllNearbyTierLinks(citySlug, SERVICE_SLUG, 3);
   const relatedServiceLinks = getRelatedServiceLinks(SERVICE_SLUG, citySlug);
   const problemLinks = getProblemLinksForService(SERVICE_SLUG, citySlug);
   const blogLinks = getRelatedBlogLinks(SERVICE_SLUG, citySlug, 3);

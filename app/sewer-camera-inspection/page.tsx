@@ -14,7 +14,7 @@ import {
 } from '@/lib/local-seo/schema';
 import { getServiceHubCanonicalUrl } from '@/lib/local-seo/links';
 import { 
-  CityGrid, 
+  ServiceHubCityGrid, 
   ServiceProcess, 
   LocalCTA, 
   ServiceVideoEmbed,
@@ -407,11 +407,11 @@ export default function SewerCameraInspectionHubPage() {
           </div>
         </section>
         
-        <CityGrid 
+        {/* Service Hub City Grid - Only Tier 1 cities to concentrate link equity */}
+        <ServiceHubCityGrid 
           cities={cities}
           serviceSlug={SERVICE_SLUG}
           serviceName={service.name}
-          groupByCounty={true}
         />
         
         {/* Common Sewer Problems */}
