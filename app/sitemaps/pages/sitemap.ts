@@ -1,54 +1,24 @@
 import { MetadataRoute } from 'next';
-import { getAllPosts } from '@/lib/blog/posts';
 import { getAllPages } from '@/lib/pages/pages';
-import { 
-  getAllCityServiceCombinations, 
-  getAllProblemCityCombinations,
-  getAllServices,
-  getAllProblems,
-} from '@/lib/local-seo/data';
-import {
-  getCityServiceLastModified,
-  getProblemCityLastModified,
-  getCachedGitLastModified,
-} from '@/lib/git-dates';
+import { getCachedGitLastModified } from '@/lib/git-dates';
+import { ensureTrailingSlash, getBaseUrl } from '@/lib/sitemap-utils';
 
 /**
- * Ensures a URL has a trailing slash, except for the base URL
- * This matches Next.js trailingSlash: true configuration
+ * Pages Sitemap
+ * Contains: Static pages, guides, service subpages from markdown
+ * ~15 URLs
  */
-function ensureTrailingSlash(url: string, baseUrl: string): string {
-  // Base URL should not have trailing slash
-  if (url === baseUrl) {
-    return url;
-  }
-  // All other URLs should have trailing slash
-  return url.endsWith('/') ? url : `${url}/`;
-}
-
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://totalleakdetection.com';
-
-  const posts = getAllPosts();
+  const baseUrl = getBaseUrl();
   const pages = getAllPages();
 
-  // Get git-based dates for all pages (cached for performance)
+  // Get git-based dates for static pages
   const homePageDate = getCachedGitLastModified('app/page.tsx');
   const aboutPageDate = getCachedGitLastModified('content/pages/about.md');
   const contactPageDate = getCachedGitLastModified('app/contact/page.tsx');
   const privacyPageDate = getCachedGitLastModified('content/pages/privacy-policy.md');
   const servicesConfigDate = getCachedGitLastModified('config/local-seo/services.json');
   const problemsConfigDate = getCachedGitLastModified('config/local-seo/problems.json');
-  const cityServiceDate = getCityServiceLastModified();
-  const problemCityDate = getProblemCityLastModified();
-
-  // Blog routes
-  const blogRoutes = posts.map((post) => ({
-    url: ensureTrailingSlash(`${baseUrl}/${post.slug}`, baseUrl),
-    lastModified: new Date(post.date),
-    changeFrequency: 'monthly' as const,
-    priority: 0.7,
-  }));
 
   // Static main routes
   const staticRoutes = [
@@ -57,12 +27,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: homePageDate,
       changeFrequency: 'weekly' as const,
       priority: 1,
-    },
-    {
-      url: ensureTrailingSlash(`${baseUrl}/blog`, baseUrl),
-      lastModified: posts.length > 0 ? new Date(posts[0].date) : new Date(),
-      changeFrequency: 'weekly' as const,
-      priority: 0.8,
     },
     {
       url: ensureTrailingSlash(`${baseUrl}/services`, baseUrl),
@@ -98,12 +62,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   // Service pages that redirect to local SEO hub pages (excluded from sitemap)
   const excludedServicePages = [
-    'services/leak-detection',    // Redirects to /leak-detection/
-    'services/mold-testing',      // Redirects to /mold-testing/
-    'services/camera-inspection', // Redirects to /sewer-camera-inspection/
+    'services/leak-detection',
+    'services/mold-testing',
+    'services/camera-inspection',
   ];
 
-  // Service pages (from markdown)
+  // Service subpages (from markdown)
   const servicePages = pages
     .filter((page) => {
       const normalizedSlug = page.slug.replace(/^\/+|\/+$/g, '');
@@ -119,50 +83,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
       };
     });
 
-  // Local SEO: Service hub pages
-  const services = getAllServices();
-  const serviceHubRoutes = services.map((service) => ({
-    url: ensureTrailingSlash(`${baseUrl}/${service.slug}`, baseUrl),
-    lastModified: servicesConfigDate,
-    changeFrequency: 'weekly' as const,
-    priority: 0.9,
-  }));
-
-  // Local SEO: City × Service pages (money pages)
-  const cityServiceCombinations = getAllCityServiceCombinations();
-  const cityServiceRoutes = cityServiceCombinations.map(({ service, city }) => ({
-    url: ensureTrailingSlash(`${baseUrl}/${service}/${city}`, baseUrl),
-    lastModified: cityServiceDate,
-    changeFrequency: 'monthly' as const,
-    priority: 0.8,
-  }));
-
-  // Local SEO: Problem hub pages
-  const problems = getAllProblems();
-  const problemHubRoutes = problems.map((problem) => ({
-    url: ensureTrailingSlash(`${baseUrl}/problems/${problem.slug}`, baseUrl),
-    lastModified: problemsConfigDate,
-    changeFrequency: 'monthly' as const,
-    priority: 0.7,
-  }));
-
-  // Local SEO: Problem × City pages (long-tail)
-  const problemCityCombinations = getAllProblemCityCombinations();
-  const problemCityRoutes = problemCityCombinations.map(({ problem, city }) => ({
-    url: ensureTrailingSlash(`${baseUrl}/problems/${problem}/${city}`, baseUrl),
-    lastModified: problemCityDate,
-    changeFrequency: 'monthly' as const,
-    priority: 0.6,
-  }));
-
   // Other pages (excluding services handled above and old city pages that are now redirected)
   const excludedSlugs = [
     'home', 'about', 'contact', 'blog', 'privacy-policy',
     // Orphan/redirect pages - excluded from sitemap
-    'financing',  // Legacy HVAC page with no internal links
-    'reviews',    // Redirects to /testimonials/
-    'thanks',     // Thank you page (not for organic traffic)
-    // These are now handled by local SEO routes
+    'financing',
+    'reviews',
+    'thanks',
+    // Legacy city pages now handled by local SEO routes
     'miami-leak-detection-services',
     'doral-leak-detection-expert-water-sewer-leak-detection-services',
     'coral-gables-leak-detection-services',
@@ -220,12 +148,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   return [
     ...staticRoutes,
-    ...serviceHubRoutes,
-    ...cityServiceRoutes,
-    ...problemHubRoutes,
-    ...problemCityRoutes,
     ...servicePages,
     ...otherPages,
-    ...blogRoutes,
   ];
 }
