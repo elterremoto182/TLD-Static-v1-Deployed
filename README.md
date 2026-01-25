@@ -95,7 +95,6 @@ City-specific service pages for local search visibility:
 ├── app/                          # Next.js App Router
 │   ├── page.tsx                  # Home page
 │   ├── layout.tsx                # Root layout with SEO
-│   ├── sitemap.ts                # Dynamic sitemap generator
 │   │
 │   ├── guides/                   # Tier 1: Pillar pages
 │   │   └── [slug]/page.tsx       # Dynamic guide pages
@@ -206,8 +205,12 @@ City-specific service pages for local search visibility:
 │   │   └── faq-data.ts
 │   └── utils.ts                  # Helper functions
 │
+├── scripts/
+│   └── generate-sitemaps.ts      # Sitemap generation script
+│
 └── public/
     ├── images/                   # Image assets
+    ├── sitemaps/                 # Generated sitemap XML files
     ├── robots.txt
     └── llms.txt                  # AI crawler guidance
 ```
@@ -359,11 +362,14 @@ npm install
 # Run development server
 npm run dev
 
-# Build for production (standard)
+# Build for production (includes sitemap generation)
 npm run build
 
 # Build with image optimization
 npm run build:optimized
+
+# Generate sitemaps only (without full build)
+npm run generate-sitemaps
 
 # Optimize images only
 npm run export-images
@@ -380,7 +386,63 @@ The build generates a complete static site in the `out` directory, including:
 - Problem-specific pages
 - Blog posts
 - Optimized images
-- Sitemap.xml
+- Segmented sitemaps (see below)
+
+---
+
+## Sitemaps
+
+The site uses **logically segmented sitemaps** for better SEO crawlability. Instead of one giant sitemap, URLs are organized by content type.
+
+### Sitemap Structure
+
+| Sitemap | URLs | Content |
+|---------|------|---------|
+| `/sitemaps/index.xml` | - | Sitemap index (references all below) |
+| `/sitemaps/static.xml` | ~22 | Home, about, contact, guides, etc. |
+| `/sitemaps/services.xml` | ~120 | Service hubs + city-service pages |
+| `/sitemaps/problems.xml` | ~840 | Problem hubs + problem-city pages |
+| `/sitemaps/blog.xml` | ~25 | Blog listing + posts |
+| **Total** | **~1,007** | |
+
+### How It Works
+
+Sitemaps are generated automatically during the build process:
+
+1. `npm run build` triggers `prebuild` hook
+2. `prebuild` runs `npm run generate-sitemaps`
+3. Script generates XML files to `public/sitemaps/`
+4. Next.js static export copies them to `out/sitemaps/`
+
+### Manual Generation
+
+To regenerate sitemaps without a full build:
+
+```bash
+npm run generate-sitemaps
+```
+
+### Google Search Console
+
+Submit only the sitemap index URL:
+```
+https://totalleakdetection.com/sitemaps/index.xml
+```
+
+Google will automatically discover and crawl all segment sitemaps.
+
+### Benefits
+
+- **Priority crawling**: Google can prioritize services over blog content
+- **Faster debugging**: Isolate indexing issues to specific content types
+- **Incremental refresh**: Only resubmit changed sitemaps in GSC
+- **Scalability**: Easy to add new segments (images, videos) later
+
+### Files
+
+- `scripts/generate-sitemaps.ts` - Generation script
+- `public/sitemaps/*.xml` - Generated sitemap files
+- `public/robots.txt` - Points to `/sitemaps/index.xml`
 
 ---
 
@@ -414,7 +476,7 @@ npm run build
 - Dynamic meta tags from config
 - Open Graph and Twitter Cards
 - Structured data (LocalBusiness, FAQPage, Service schemas)
-- Automatic sitemap.xml generation
+- Segmented sitemaps (services, problems, blog, static pages)
 - robots.txt for crawler control
 - Semantic HTML structure
 - Internal linking for PageRank flow
@@ -468,14 +530,13 @@ The contact form integrates with **n8n webhooks** for serverless form submission
 
 | Content Type | Count |
 |--------------|-------|
-| Static Pages | ~15 |
-| Service Pages | 11 |
-| Guide/Pillar Pages | 4 |
-| Blog Posts | 23 |
-| City Service Pages | ~117 (39 cities × 3 services) |
-| Problem Pages | ~13 |
-| Problem + City Pages | ~500+ |
-| **Total Pages** | **~700+** |
+| Static Pages | ~22 |
+| Service Hub Pages | 3 |
+| City × Service Pages | 117 (39 cities × 3 services) |
+| Problem Hub Pages | 21 |
+| Problem × City Pages | 819 (21 problems × 39 cities) |
+| Blog Posts | 24 |
+| **Total Pages** | **~1,007** |
 
 ---
 
