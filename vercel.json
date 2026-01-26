@@ -1,6 +1,11 @@
 {
   "redirects": [
     {
+      "source": "/sitemap.xml",
+      "destination": "/sitemaps/index.xml",
+      "permanent": true
+    },
+    {
       "source": "/leak-detection-services/",
       "destination": "/services/leak-detection/",
       "permanent": true

@@ -1,6 +1,9 @@
 # Redirects for static site
 # Format: from_path to_path status_code
 
+# Sitemap redirect - Google looks for /sitemap.xml by default
+/sitemap.xml /sitemaps/index.xml 301
+
 # Service page redirects - consolidated to local SEO hub URLs
 /services/leak-detection/ /leak-detection/ 301
 /services/mold-testing/ /mold-testing/ 301
