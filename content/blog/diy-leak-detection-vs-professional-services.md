@@ -127,7 +127,7 @@ Professional-grade moisture meters measure dampness levels in building materials
 
 A small camera on a flexible cable is inserted into your plumbing system, providing real-time video of pipe interiors. This reveals cracks, corrosion, root intrusion, and other issues invisible from outside.
 
-**Best for:** Diagnosing problems inside drain lines, sewer pipes, and supply lines. Learn more about [sewer camera inspection](/services/sewer-camera-inspection/).
+**Best for:** Diagnosing problems inside drain lines, sewer pipes, and supply lines. Learn more about [sewer camera inspection](/sewer-camera-inspection/).
 
 ### Pressure Testing
 

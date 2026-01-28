@@ -72,7 +72,7 @@ Hydro jetting uses highly pressurized water (typically 3,000-4,000 PSI or more) 
 
 ### The Hydro Jetting Process
 
-1. **Camera inspection first** — A [sewer camera inspection](/services/sewer-camera-inspection/) determines pipe condition and clog location
+1. **Camera inspection first** — A [sewer camera inspection](/sewer-camera-inspection/) determines pipe condition and clog location
 2. **Access point identification** — Usually through a cleanout or removed toilet
 3. **Jetting** — The nozzle is fed through the line while high-pressure water scours pipes clean
 4. **Verification** — Camera inspection confirms the line is clear
@@ -185,7 +185,7 @@ When multiple drains are slow, the problem is likely buildup in your main line. 
 
 ## The Importance of Camera Inspection
 
-Before any significant drain cleaning—but especially before hydro jetting—a [sewer camera inspection](/services/sewer-camera-inspection/) provides crucial information:
+Before any significant drain cleaning—but especially before hydro jetting—a [sewer camera inspection](/sewer-camera-inspection/) provides crucial information:
 
 ### What the Camera Reveals
 
@@ -284,7 +284,7 @@ We don't recommend these:
 
 ## Get the Right Solution for Your Situation
 
-At **Total Leak Detection**, we approach every drain problem by first understanding what's causing it. Using [sewer camera inspection](/services/sewer-camera-inspection/), we see exactly what's happening inside your pipes and recommend the most effective, appropriate solution—not just the quickest or most expensive option.
+At **Total Leak Detection**, we approach every drain problem by first understanding what's causing it. Using [sewer camera inspection](/sewer-camera-inspection/), we see exactly what's happening inside your pipes and recommend the most effective, appropriate solution—not just the quickest or most expensive option.
 
 Whether your situation calls for snaking, [hydro jetting](/services/hydro-jetting/), or a different approach entirely, we'll explain your options so you can make an informed decision.
 
@@ -316,5 +316,5 @@ Hydro jetting effectively removes most root intrusions and clears debris, but it
 
 - [Why Your Drains Keep Clogging](/why-your-drains-keep-clogging/) - Understanding recurring problems
 - [Warning Signs Your Sewer Line Is Failing](/warning-signs-your-sewer-line-is-failing/) - When clogs indicate bigger issues
-- [Sewer Camera Inspection Services](/services/sewer-camera-inspection/) - See inside your pipes
+- [Sewer Camera Inspection Services](/sewer-camera-inspection/) - See inside your pipes
 - [Essential Sewer Line Maintenance Tips](/essential-tips-for-maintaining-your-sewer-line-what-homeowners-must-know/) - Prevention strategies

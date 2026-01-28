@@ -6,7 +6,7 @@ excerpt: >-
 author: Tomasz Alemany
 category: Sewer Camera Inspection
 pillar: sewer-camera-inspection
-feedsService: /services/sewer-camera-inspection/
+feedsService: /sewer-camera-inspection/
 seo_title: Warning Signs Your Sewer Line Is Failing | Don't Ignore These
 seo_description: >-
   Recognize the warning signs of sewer line failure before disaster strikes. Learn what causes sewer damage and when to schedule a professional camera inspection.
@@ -178,7 +178,7 @@ Digging, heavy equipment, or new construction can damage sewer lines—sometimes
 
 ## The Importance of Camera Inspection
 
-When sewer problems arise, [camera inspection](/services/sewer-camera-inspection/) is the gold standard for diagnosis. Here's why:
+When sewer problems arise, [camera inspection](/sewer-camera-inspection/) is the gold standard for diagnosis. Here's why:
 
 ### See the Problem Directly
 
@@ -271,12 +271,12 @@ If you've noticed any warning signs, here's what to do:
 
 ## Get Answers Before Problems Get Worse
 
-At **Total Leak Detection**, our [sewer camera inspection](/services/sewer-camera-inspection/) services show you exactly what's happening inside your pipes. We provide clear explanations of what we find and honest recommendations for addressing problems.
+At **Total Leak Detection**, our [sewer camera inspection](/sewer-camera-inspection/) services show you exactly what's happening inside your pipes. We provide clear explanations of what we find and honest recommendations for addressing problems.
 
 Whether you've noticed warning signs or want to proactively check your system, we're here to help you protect your home from sewer emergencies.
 
 📞 **Call Today:** (855) 385-5325  
-🌐 **Learn More:** [totalleakdetection.com](/services/sewer-camera-inspection/)
+🌐 **Learn More:** [totalleakdetection.com](/sewer-camera-inspection/)
 
 * * *
 

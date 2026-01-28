@@ -85,7 +85,7 @@ Pipes don't last forever. Damage creates rough surfaces, low spots, and misalign
 
 No amount of cleaning will fix a structural problem. Material will continue accumulating at the damage point until the pipe is repaired or replaced.
 
-**The fix:** [Sewer camera inspection](/services/sewer-camera-inspection/) to identify damage, followed by appropriate repair—spot fixes for localized damage, or relining/replacement for extensive deterioration.
+**The fix:** [Sewer camera inspection](/sewer-camera-inspection/) to identify damage, followed by appropriate repair—spot fixes for localized damage, or relining/replacement for extensive deterioration.
 
 ### 4. Improper Drain Slope
 
@@ -202,7 +202,7 @@ Capacity or slope issues that can't handle peak demand.
 
 ### Step 1: Camera Inspection
 
-You can't fix what you can't see. [Sewer camera inspection](/services/sewer-camera-inspection/) reveals:
+You can't fix what you can't see. [Sewer camera inspection](/sewer-camera-inspection/) reveals:
 -   The exact location of problems
 -   The cause of recurring clogs
 -   The condition of your pipes
@@ -307,7 +307,7 @@ Once you've addressed the underlying problem, keep drains flowing:
 
 At **Total Leak Detection**, we help South Florida homeowners break free from the recurring clog cycle. Our approach starts with understanding why your drains keep clogging—not just clearing the immediate blockage.
 
-Using [camera inspection](/services/sewer-camera-inspection/) and professional [hydro jetting](/services/hydro-jetting/), we identify and address root causes so you can stop dealing with the same problem over and over.
+Using [camera inspection](/sewer-camera-inspection/) and professional [hydro jetting](/services/hydro-jetting/), we identify and address root causes so you can stop dealing with the same problem over and over.
 
 📞 **Call Today:** (855) 385-5325  
 🌐 **Learn More:** [totalleakdetection.com](/services/hydro-jetting/)
