@@ -8,6 +8,7 @@ excerpt: >-
   flexible plastic.
 author: Tomasz Alemany
 category: Leak Detection
+tags: ["early-warning-signs"]
 pillar: leak-detection
 feedsService: /services/leak-detection/
 seo_title: How to Check A Shower Pan For Leaks - Total Leak Detection

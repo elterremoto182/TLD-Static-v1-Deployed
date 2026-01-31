@@ -5,6 +5,7 @@ excerpt: >-
   Learn the 10 warning signs of a hidden water leak in your home, from unexplained high water bills to musty odors. Discover what causes hidden leaks and when to call a professional leak detection service.
 author: Tomasz Alemany
 category: Leak Detection
+tags: ["early-warning-signs"]
 pillar: leak-detection
 feedsService: /services/leak-detection/
 seo_title: 10 Signs You Have a Hidden Water Leak | What to Do Next

@@ -5,6 +5,7 @@ excerpt: >-
   Understand how mold services work in Florida, including what mold testing involves, what remediation involves, and how the process typically works from discovery to resolution.
 author: Tomasz Alemany
 category: Mold Testing
+tags: ["insurance-support"]
 pillar: mold-testing
 feedsService: /services/mold-testing/
 seo_title: Florida Mold Testing vs Mold Remediation | Complete Guide

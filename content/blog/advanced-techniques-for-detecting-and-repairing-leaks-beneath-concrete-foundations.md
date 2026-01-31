@@ -12,6 +12,7 @@ excerpt: >-
   referred to …
 author: Tomasz Alemany
 category: Leak Detection
+tags: ["advanced-technology"]
 pillar: leak-detection
 feedsService: /services/leak-detection/
 seo_title: Detecting and Repairing Leaks Beneath Concrete Foundations

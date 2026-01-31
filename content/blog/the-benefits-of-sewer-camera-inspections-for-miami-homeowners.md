@@ -9,6 +9,7 @@ excerpt: >-
   effective tools available to …
 author: Tomasz Alemany
 category: Sewer Camera Inspection
+tags: ["advanced-technology"]
 pillar: sewer-camera-inspection
 feedsService: /services/camera-inspection/
 seo_title: Sewer Camera Inspection Miami | Homeowners Should Consider It

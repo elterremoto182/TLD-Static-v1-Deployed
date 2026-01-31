@@ -9,6 +9,7 @@ excerpt: >-
   undetected leaks can slowly compromise your property's …
 author: Tomasz Alemany
 category: Leak Detection
+tags: ["non-invasive-detection"]
 pillar: leak-detection
 feedsService: /services/leak-detection/
 seo_title: Professional Leak Detection Miami | Prevent Water Damage

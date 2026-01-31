@@ -5,6 +5,7 @@ excerpt: >-
   Wondering if you need a mold test after water damage? Learn when testing is essential, how to make the decision, and what professional mold assessment can tell you about your home.
 author: Tomasz Alemany
 category: Mold Testing
+tags: ["insurance-support"]
 pillar: mold-testing
 feedsService: /services/mold-testing/
 seo_title: Do I Need a Mold Test After Water Damage? | Decision Guide

@@ -53,13 +53,13 @@ function getAllProblemSlugs(): string[] {
   return Object.keys(problemsData);
 }
 
-// Get all blog posts
-function getAllPosts(): Array<{ slug: string; date: string }> {
+// Get all blog posts with full metadata
+function getAllPosts(): Array<{ slug: string; date: string; category?: string; tags?: string[] }> {
   const postsDir = path.join(process.cwd(), 'content/blog');
   if (!fs.existsSync(postsDir)) return [];
   
   const files = fs.readdirSync(postsDir).filter(f => f.endsWith('.md'));
-  const posts: Array<{ slug: string; date: string }> = [];
+  const posts: Array<{ slug: string; date: string; category?: string; tags?: string[] }> = [];
   
   for (const file of files) {
     const content = fs.readFileSync(path.join(postsDir, file), 'utf8');
@@ -67,10 +67,67 @@ function getAllPosts(): Array<{ slug: string; date: string }> {
     posts.push({
       slug: file.replace(/\.md$/, ''),
       date: data.date || new Date().toISOString(),
+      category: data.category,
+      tags: Array.isArray(data.tags) ? data.tags : [],
     });
   }
   
   return posts.sort((a, b) => (a.date > b.date ? -1 : 1));
+}
+
+// Category display name to URL slug mapping
+const categorySlugMap: Record<string, string> = {
+  'Leak Detection': 'leak-detection',
+  'Mold Testing': 'mold-testing',
+  'Sewer Camera Inspection': 'sewer-camera-inspection',
+  'Drain Cleaning': 'drain-cleaning',
+};
+
+// Get all unique categories with their slugs
+function getAllCategories(): string[] {
+  return Object.values(categorySlugMap);
+}
+
+// Get all unique tags from blog posts
+function getAllTags(): string[] {
+  const posts = getAllPosts();
+  const tags = new Set<string>();
+  
+  for (const post of posts) {
+    if (post.tags) {
+      post.tags.forEach(tag => tags.add(tag));
+    }
+  }
+  
+  return Array.from(tags);
+}
+
+// Load blog tags config for indexable check
+function getBlogTagsConfig(): Record<string, { indexable: boolean; minPosts?: number }> {
+  try {
+    const tagsConfig = JSON.parse(
+      fs.readFileSync(path.join(process.cwd(), 'config/blog-tags.json'), 'utf8')
+    );
+    return tagsConfig.tags || {};
+  } catch {
+    return {};
+  }
+}
+
+// Get tag post counts
+function getTagPostCounts(): Record<string, number> {
+  const posts = getAllPosts();
+  const tagCounts: Record<string, number> = {};
+  
+  for (const post of posts) {
+    if (post.tags) {
+      for (const tag of post.tags) {
+        tagCounts[tag] = (tagCounts[tag] || 0) + 1;
+      }
+    }
+  }
+  
+  return tagCounts;
 }
 
 // Get all markdown pages
@@ -291,6 +348,10 @@ function generateProblemsSitemap(): { xml: string; count: number } {
 function generateBlogSitemap(): { xml: string; count: number } {
   const today = formatDate(new Date());
   const posts = getAllPosts();
+  const categories = getAllCategories();
+  const tags = getAllTags();
+  const tagsConfig = getBlogTagsConfig();
+  const tagCounts = getTagPostCounts();
   
   const entries: SitemapEntry[] = [
     // Blog listing page
@@ -301,6 +362,39 @@ function generateBlogSitemap(): { xml: string; count: number } {
       priority: 0.8,
     },
   ];
+
+  // Category pages
+  for (const category of categories) {
+    entries.push({
+      url: ensureTrailingSlash(`${BASE_URL}/blog/category/${category}`),
+      lastmod: today,
+      changefreq: 'weekly',
+      priority: 0.7,
+    });
+  }
+
+  // Tag pages (only if indexable and meets minPosts threshold)
+  for (const tag of tags) {
+    const tagConfig = tagsConfig[tag];
+    const postCount = tagCounts[tag] || 0;
+    
+    // Skip tags that don't meet minPosts threshold
+    if (tagConfig?.minPosts && postCount < tagConfig.minPosts) {
+      continue;
+    }
+    
+    // Skip tags marked as not indexable
+    if (tagConfig && tagConfig.indexable === false) {
+      continue;
+    }
+    
+    entries.push({
+      url: ensureTrailingSlash(`${BASE_URL}/blog/tag/${tag}`),
+      lastmod: today,
+      changefreq: 'weekly',
+      priority: 0.6,
+    });
+  }
 
   // Individual blog posts
   for (const post of posts) {

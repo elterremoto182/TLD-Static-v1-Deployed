@@ -7,6 +7,7 @@ excerpt: >-
   exclusive Miami Beach island property using advanced detection technology.
 author: Tomasz Alemany
 category: Leak Detection
+tags: ["property-types"]
 pillar: leak-detection
 feedsService: /services/leak-detection/
 seo_title: 'Water Intrusion Hibiscus Island | Professional Leak Detection Miami Beach'

@@ -5,6 +5,7 @@ excerpt: >-
   Learn the differences between black mold and other common household molds. Understand the health risks, how to identify different mold types, and why professional testing is essential.
 author: Tomasz Alemany
 category: Mold Testing
+tags: ["early-warning-signs"]
 pillar: mold-testing
 feedsService: /services/mold-testing/
 seo_title: Black Mold vs Regular Mold | What Homeowners Need to Know

@@ -5,6 +5,7 @@ excerpt: >-
   Learn how quickly mold can grow after water damage and why Florida's climate accelerates the process. Understand the timeline, warning signs, and when to call for professional mold assessment.
 author: Tomasz Alemany
 category: Mold Testing
+tags: ["early-warning-signs"]
 pillar: mold-testing
 feedsService: /services/mold-testing/
 seo_title: How Long After Water Damage Does Mold Grow? | Florida Timeline

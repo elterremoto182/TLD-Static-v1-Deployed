@@ -4,6 +4,7 @@ date: '2024-12-03'
 excerpt: "Introduction\_ If you're a homeowner in Miami, FL, it's important to understand what happens during a sewer camera inspection. This knowledge will help you maintain a healthy plumbing system.\_ Sewer camera inspections are a non-invasive way to diagnose plumbing problems. They use advanced video technology to provide a clear view inside your pipes. This method …"
 author: Tomasz Alemany
 category: Sewer Camera Inspection
+tags: ["advanced-technology"]
 pillar: sewer-camera-inspection
 feedsService: /services/camera-inspection/
 seo_title: 'What to Expect During a Sewer Camera Inspection in Miami'

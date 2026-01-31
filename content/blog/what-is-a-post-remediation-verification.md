@@ -9,6 +9,7 @@ excerpt: >-
   an essential safeguard that confirms your property is truly safe …
 author: Tomasz Alemany
 category: Mold Testing
+tags: ["insurance-support"]
 pillar: mold-testing
 feedsService: /services/mold-testing/
 seo_title: 'What is a Post Remediation Verification? [Needed Mold Tests]'

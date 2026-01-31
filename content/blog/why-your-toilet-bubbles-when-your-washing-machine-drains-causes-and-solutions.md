@@ -9,6 +9,7 @@ excerpt: >-
   Ignoring it may result in extensive plumbing repairs and increased …
 author: Tomasz Alemany
 category: Drain Cleaning
+tags: ["early-warning-signs"]
 pillar: drain-cleaning
 feedsService: /services/drain-cleaning/
 seo_title: 'Toilet Bubbles When Washer Drains: Causes & Solutions'

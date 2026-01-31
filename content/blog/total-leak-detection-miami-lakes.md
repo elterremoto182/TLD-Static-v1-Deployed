@@ -8,6 +8,7 @@ excerpt: >-
   water bill or—even worse—a plumbing emergency in your home.
 author: priyanka
 category: Leak Detection
+tags: ["property-types"]
 pillar: leak-detection
 feedsService: /services/leak-detection/
 seo_title: 'Leak Detection Miami Lakes: Save Water Today - Total Leak Detection'

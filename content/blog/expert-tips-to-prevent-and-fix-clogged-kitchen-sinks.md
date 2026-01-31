@@ -9,6 +9,7 @@ excerpt: >-
   article will provide you with …
 author: Tomasz Alemany
 category: Drain Cleaning
+tags: ["early-warning-signs"]
 pillar: drain-cleaning
 feedsService: /services/drain-cleaning/
 seo_title: Expert Tips to Prevent and Fix Clogged Kitchen Sinks | Total Leak Detection

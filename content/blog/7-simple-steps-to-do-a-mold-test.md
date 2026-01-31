@@ -8,6 +8,7 @@ excerpt: >-
   If mold is detected, a professional can then help …
 author: priyanka
 category: Mold Testing
+tags: ["advanced-technology"]
 pillar: mold-testing
 feedsService: /services/mold-testing/
 seo_title: '7 Simple Steps To Do A Mold Test [Tips & Benefits]'

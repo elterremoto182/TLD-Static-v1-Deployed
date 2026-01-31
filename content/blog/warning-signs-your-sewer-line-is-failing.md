@@ -5,6 +5,7 @@ excerpt: >-
   Learn the warning signs of a failing sewer line before a small problem becomes an expensive emergency. Discover what causes sewer line damage and when to get a professional inspection.
 author: Tomasz Alemany
 category: Sewer Camera Inspection
+tags: ["early-warning-signs"]
 pillar: sewer-camera-inspection
 feedsService: /sewer-camera-inspection/
 seo_title: Warning Signs Your Sewer Line Is Failing | Don't Ignore These

@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { Header } from '@/components/sections/Header';
 import { Footer } from '@/components/sections/Footer';
@@ -7,9 +8,10 @@ import { MarkdownRenderer, processMarkdown } from '@/components/blog/MarkdownRen
 import { YouTubeHydrator } from '@/components/YouTubeHydrator';
 import OptimizedImage from '@/components/OptimizedImage';
 import { getPageBySlug, getAllPages } from '@/lib/pages/pages';
-import { getPostBySlug, getAllPosts, BlogPost } from '@/lib/blog/posts';
+import { getPostBySlug, getAllPosts, BlogPost, categoryToSlug } from '@/lib/blog/posts';
 import { RelatedPosts } from '@/components/blog/RelatedPosts';
-import { Calendar, User, Phone, MapPin, Shield } from 'lucide-react';
+import { getTagData } from '@/components/blog/TagCloud';
+import { Calendar, User, Phone, MapPin, Shield, Tag } from 'lucide-react';
 import { generatePageMetadata, generateBreadcrumbs } from '@/lib/utils';
 import { buildPageSchemaGraph, schemaToJsonLd, baseUrl } from '@/lib/seo/schema';
 
@@ -249,11 +251,30 @@ export default async function DynamicPage({
                 <Breadcrumb items={breadcrumbs} />
               </div>
 
-              {post.category && (
-                <span className="inline-block px-3 py-1 bg-primary/10 text-primary text-xs font-semibold rounded-full mb-4">
-                  {post.category}
-                </span>
-              )}
+              <div className="flex flex-wrap items-center gap-2 mb-4">
+                {post.category && (
+                  <Link
+                    href={`/blog/category/${categoryToSlug(post.category)}/`}
+                    className="inline-block px-3 py-1 bg-primary/10 text-primary text-xs font-semibold rounded-full hover:bg-primary/20 transition-colors"
+                  >
+                    {post.category}
+                  </Link>
+                )}
+                {post.tags && post.tags.length > 0 && post.tags.map((tagSlug) => {
+                  const tagData = getTagData(tagSlug);
+                  if (!tagData) return null;
+                  return (
+                    <Link
+                      key={tagSlug}
+                      href={`/blog/tag/${tagSlug}/`}
+                      className="inline-flex items-center gap-1 px-2.5 py-1 bg-gray-100 text-gray-600 text-xs font-medium rounded-full hover:bg-gray-200 transition-colors"
+                    >
+                      <Tag className="w-3 h-3" />
+                      {tagData.label}
+                    </Link>
+                  );
+                })}
+              </div>
 
               <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-gray-900 mb-6">
                 {post.title}

@@ -4,6 +4,7 @@ date: '2022-08-19'
 excerpt: "In this article we are going to be talking about copper pipe pinhole leaks. These leaks seem to be affecting the city of Miramar in South Florida the most.\_ Quick History of Miramar The city of Miramar was incorporated on May 26, 1955. It was named after the Miramar area of Havana, Cuba. Miramar translates …"
 author: Tomasz Alemany
 category: Leak Detection
+tags: ["property-types"]
 pillar: leak-detection
 feedsService: /services/leak-detection/
 seo_title: 'Miramar Leak Detection [Pinholes in Pines] - Total Leak Detection'

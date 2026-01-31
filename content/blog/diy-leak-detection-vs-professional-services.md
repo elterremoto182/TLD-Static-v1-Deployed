@@ -5,6 +5,7 @@ excerpt: >-
   Comparing DIY leak detection methods to professional services. Learn when you can handle a leak yourself and when it's time to call the experts for accurate, non-invasive detection.
 author: Tomasz Alemany
 category: Leak Detection
+tags: ["non-invasive-detection"]
 pillar: leak-detection
 feedsService: /services/leak-detection/
 seo_title: DIY Leak Detection vs Professional Services | Which Is Better?
