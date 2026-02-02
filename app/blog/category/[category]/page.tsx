@@ -69,7 +69,7 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
   const categoryData = getCategoryData(category);
   const breadcrumbs = [
     ...generateBreadcrumbs('/blog', 'Blog'),
-    { name: categoryName, href: `/blog/category/${category}/` },
+    { label: categoryName, href: `/blog/category/${category}/` },
   ];
   const pageUrl = `${baseUrl}/blog/category/${category}/`;
 
