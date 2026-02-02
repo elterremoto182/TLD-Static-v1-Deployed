@@ -49,7 +49,7 @@ export default async function TagPage({ params }: TagPageProps) {
   const posts = getPostsByTag(tag);
   const breadcrumbs = [
     ...generateBreadcrumbs('/blog', 'Blog'),
-    { name: tagData.label, href: `/blog/tag/${tag}/` },
+    { label: tagData.label, href: `/blog/tag/${tag}/` },
   ];
   const pageUrl = `${baseUrl}/blog/tag/${tag}/`;
 
