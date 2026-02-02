@@ -8,6 +8,8 @@
 /services/leak-detection/ /leak-detection/ 301
 /services/mold-testing/ /mold-testing/ 301
 /services/camera-inspection/ /sewer-camera-inspection/ 301
+/services/sewer-camera-inspection/ /sewer-camera-inspection/ 301
+/services/sewer-camera-inspection/ /sewer-camera-inspection/ 301
 
 # Legacy service URL redirects
 /leak-detection-services/ /leak-detection/ 301

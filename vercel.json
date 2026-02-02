@@ -6,6 +6,16 @@
       "permanent": true
     },
     {
+      "source": "/services/sewer-camera-inspection",
+      "destination": "/sewer-camera-inspection/",
+      "permanent": true
+    },
+    {
+      "source": "/services/sewer-camera-inspection/",
+      "destination": "/sewer-camera-inspection/",
+      "permanent": true
+    },
+    {
       "source": "/leak-detection-services/",
       "destination": "/services/leak-detection/",
       "permanent": true

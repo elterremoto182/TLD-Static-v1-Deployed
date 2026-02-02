@@ -12,7 +12,7 @@ import { buildPageSchemaGraph, schemaToJsonLd, baseUrl } from '@/lib/seo/schema'
 
 // Services that have been consolidated to local SEO hub pages
 // These should not be generated from markdown and will redirect to their hub URLs
-const EXCLUDED_SERVICE_SLUGS = ['leak-detection', 'mold-testing', 'camera-inspection'];
+const EXCLUDED_SERVICE_SLUGS = ['leak-detection', 'mold-testing', 'camera-inspection', 'sewer-camera-inspection'];
 
 export async function generateStaticParams() {
   const pages = getAllPages();
