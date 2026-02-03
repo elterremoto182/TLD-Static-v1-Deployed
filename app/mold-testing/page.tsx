@@ -38,7 +38,16 @@ export async function generateMetadata() {
   return {
     title: 'Mold Testing Services in Miami, Broward and Palm Beach | Total Leak Detection',
     description: 'Mold Testing Services by Total Leak Detection: Ensure the safety of your home by detecting and addressing any mold issues promptly. Certified inspectors, lab analysis.',
-    keywords: ['mold testing', 'mold inspection', 'mold detection miami', 'air quality testing', ...service.keywords],
+    keywords: [
+      'mold testing services',
+      'mold inspection',
+      'professional mold testing',
+      'air quality testing',
+      'indoor mold detection',
+      'black mold testing',
+      'mold assessment',
+      'certified mold inspection',
+    ],
     alternates: { canonical: canonicalUrl },
     openGraph: {
       title: 'Mold Testing Services | Total Leak Detection',

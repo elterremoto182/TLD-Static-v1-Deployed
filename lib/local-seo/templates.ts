@@ -171,6 +171,7 @@ export function renderFaqs(faqs: FAQ[], city: City): FAQ[] {
 
 /**
  * Generate keywords array with city name added
+ * @deprecated Use generateFocusedKeywords() instead for modern SEO
  */
 export function generateLocalKeywords(baseKeywords: string[], city: City): string[] {
   const localKeywords: string[] = [];
@@ -188,6 +189,34 @@ export function generateLocalKeywords(baseKeywords: string[], city: City): strin
   localKeywords.push(`plumbing services ${city.name}`);
   
   return [...new Set(localKeywords)]; // Remove duplicates
+}
+
+/**
+ * Generate focused, intent-driven keywords for city pages.
+ * Modern SEO: one primary keyword + 2-3 semantic variants only.
+ * Works for both service pages and problem pages.
+ */
+export function generateFocusedKeywords(
+  entity: { name: string; keywords: string[] },
+  city: City
+): string[] {
+  const entityName = entity.name.toLowerCase();
+  const cityName = city.name.toLowerCase();
+  
+  // Primary keyword: {name} {city} fl
+  const primary = `${entityName} ${cityName} fl`;
+  
+  // First semantic variant: use first keyword if different from name
+  const firstKeyword = entity.keywords[0]?.toLowerCase();
+  const variant1 = firstKeyword && firstKeyword !== entityName 
+    ? `${firstKeyword} ${cityName}`
+    : `${cityName} ${entityName}`;
+  
+  // Second semantic variant: reversed word order
+  const variant2 = `${cityName} ${entityName}`;
+  
+  // Return unique keywords only
+  return [...new Set([primary, variant1, variant2])];
 }
 
 /**

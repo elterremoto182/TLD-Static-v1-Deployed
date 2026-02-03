@@ -38,7 +38,16 @@ export async function generateMetadata() {
   return {
     title: 'Leak Detection Services Florida | 24/7 Expert Water Leak Locators',
     description: 'Hire leak detection services in Miami, Ft Lauderdale & more. Quick & accurate detection & repairs. 40+ years of experience. Commercial & residential.',
-    keywords: ['leak detection services', 'water leak detection', 'leak detection miami', 'leak detection florida', ...service.keywords],
+    keywords: [
+      'water leak detection services',
+      'leak detection',
+      'professional leak detection',
+      'plumbing leak detection',
+      'hidden leak detection',
+      'slab leak detection',
+      'pipe leak detection',
+      'non-invasive leak detection',
+    ],
     alternates: { canonical: canonicalUrl },
     openGraph: {
       title: 'Leak Detection Services Florida | Total Leak Detection',

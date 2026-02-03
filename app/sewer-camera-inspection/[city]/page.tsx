@@ -15,6 +15,7 @@ import {
   generateCityServiceH1,
   generateCityServiceSubheading,
   renderFaqs,
+  generateFocusedKeywords,
 } from '@/lib/local-seo/templates';
 import {
   generateCityServiceBreadcrumbs,
@@ -72,7 +73,7 @@ export async function generateMetadata({
   return {
     title,
     description,
-    keywords: [...service.keywords, city.name, city.county],
+    keywords: generateFocusedKeywords(service, city),
     alternates: { canonical: canonicalUrl },
     openGraph: { title, description, url: canonicalUrl, type: 'website' },
   };

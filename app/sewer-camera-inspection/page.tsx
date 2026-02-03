@@ -38,7 +38,16 @@ export async function generateMetadata() {
   return {
     title: 'Sewer Camera Inspection Services, Miami | Total Leak Detection',
     description: 'Get reliable sewer camera inspection services in Miami, FL. Our pipe inspection cameras diagnose blockages/leaks without invasive procedures. Fast reports!',
-    keywords: ['sewer camera inspection', 'video pipe inspection', 'drain camera', 'sewer line inspection', ...service.keywords],
+    keywords: [
+      'sewer camera inspection services',
+      'video pipe inspection',
+      'sewer line inspection',
+      'drain camera inspection',
+      'plumbing camera inspection',
+      'sewer scope inspection',
+      'pipe video inspection',
+      'non-invasive pipe diagnosis',
+    ],
     alternates: { canonical: canonicalUrl },
     openGraph: {
       title: 'Sewer Camera Inspection Services | Total Leak Detection',

@@ -18,6 +18,7 @@ import {
   generateProblemCityMetaTitle,
   generateProblemCityMetaDesc,
   generateProblemCityH1,
+  generateFocusedKeywords,
 } from '@/lib/local-seo/templates';
 import {
   generateProblemCityBreadcrumbs,
@@ -94,7 +95,7 @@ export async function generateMetadata({
   return {
     title,
     description,
-    keywords: [...problem.keywords, city.name, city.county],
+    keywords: generateFocusedKeywords(problem, city),
     alternates: {
       canonical: canonicalUrl,
     },
