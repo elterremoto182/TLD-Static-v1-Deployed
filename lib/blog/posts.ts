@@ -8,11 +8,13 @@ export interface BlogPost {
   slug: string;
   title: string;
   seo_title?: string;
+  seo_description?: string;
   date: string;
   excerpt: string;
   author: string;
   category: string;
   tags?: string[];
+  keywords?: string[];
   image?: string;
   imageAlt?: string;
   content: string;
@@ -58,11 +60,13 @@ export function getPostBySlug(slug: string): BlogPost | null {
       slug: realSlug,
       title: data.title || '',
       seo_title: data.seo_title,
+      seo_description: data.seo_description,
       date: data.date || '',
       excerpt: data.excerpt || '',
       author: data.author || '',
       category: data.category || '',
       tags: Array.isArray(data.tags) ? data.tags : [],
+      keywords: Array.isArray(data.keywords) ? data.keywords : [],
       image: data.image || '',
       imageAlt: data.imageAlt || '',
       content,

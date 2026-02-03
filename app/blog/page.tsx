@@ -15,7 +15,7 @@ export async function generateMetadata() {
   return generatePageMetadata({
     title: page?.seo_title || page?.title || 'Total Leak Detection',
     description: page?.seo_description || 'Expert tips, guides, and insights for maintaining your home plumbing and leak detection.',
-    keywords: page?.seo_title ? ['blog', 'plumbing tips', 'leak detection'] : undefined,
+    keywords: page?.keywords || ['blog', 'plumbing tips', 'leak detection'],
     path: '/blog',
   });
 }

@@ -13,6 +13,7 @@ import {
   schemaToJsonLd,
 } from '@/lib/local-seo/schema';
 import { generatePageMetadata, generateBreadcrumbs } from '@/lib/utils';
+import { getPageBySlug } from '@/lib/pages/pages';
 
 const SERVICE_ICONS: Record<string, React.ElementType> = {
   'leak-detection': Droplet,
@@ -21,11 +22,13 @@ const SERVICE_ICONS: Record<string, React.ElementType> = {
 };
 
 export async function generateMetadata() {
+  const page = getPageBySlug('areas');
+  
   return {
     ...generatePageMetadata({
-      title: 'Service Areas | Leak Detection Throughout South Florida',
-      description: 'Total Leak Detection serves Miami-Dade and Broward counties with professional leak detection, mold testing, and sewer camera inspection services. Find your city.',
-      keywords: ['leak detection service areas', 'South Florida leak detection', 'Miami leak detection', 'Broward leak detection'],
+      title: page?.seo_title || 'Service Areas | Leak Detection Throughout South Florida',
+      description: page?.seo_description || 'Total Leak Detection serves Miami-Dade and Broward counties with professional leak detection, mold testing, and sewer camera inspection services. Find your city.',
+      keywords: page?.keywords || ['leak detection service areas', 'South Florida leak detection', 'Miami leak detection', 'Broward leak detection'],
       path: '/areas',
     }),
     // noindex, follow - Safety net page ensures all cities are crawlable

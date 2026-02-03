@@ -129,8 +129,10 @@ export async function generateMetadata({
   if (post) {
     return generatePageMetadata({
       title: post.seo_title || `${post.title} | Total Leak Detection`,
-      description: post.excerpt || post.title,
-      keywords: post.category ? [post.category, 'blog'] : ['blog'],
+      description: post.seo_description || post.excerpt || post.title,
+      keywords: post.keywords && post.keywords.length > 0 
+        ? post.keywords 
+        : (post.category ? [post.category, 'blog'] : ['blog']),
       path: `/${post.slug}`,
       ogImage: post.image,
       articleType: 'article',

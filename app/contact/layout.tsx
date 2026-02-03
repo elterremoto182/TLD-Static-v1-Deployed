@@ -7,7 +7,7 @@ export async function generateMetadata() {
   return generatePageMetadata({
     title: page?.seo_title || page?.title || 'Contact Us - Total Leak Detection',
     description: page?.seo_description || 'Get in touch with Total Leak Detection. Schedule an estimate or receive more information on our leak detection services in Miami, FL.',
-    keywords: page?.seo_title ? ['contact', 'leak detection', 'Miami'] : undefined,
+    keywords: page?.keywords || ['contact', 'leak detection', 'Miami'],
     path: '/contact',
   });
 }
