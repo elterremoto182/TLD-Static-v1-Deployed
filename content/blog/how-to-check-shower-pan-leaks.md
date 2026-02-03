@@ -61,7 +61,7 @@ The test takes a few hours. Mostly it takes that long because you need to wait f
 
 Shower pan leaks are a common yet often overlooked cause of water damage and mold in the home. The liner of the shower pan, which is usually made of thin, strong, and flexible plastic, can last anywhere from 10 to 40 years, depending on the materials and the amount of use it gets.
 
-However, improper installation or a defective plastic liner can lead to a shower pan leak sooner than expected. The main piece that can fail in a shower pan’s construction is the thin plastic liner (see image below). To prevent [water damage](https://totalcarerestoration.com/services/water-restoration/) and mold, it is important to inspect your shower pan regularly and make sure it is properly installed and sealed.
+However, improper installation or a defective plastic liner can lead to a shower pan leak sooner than expected. The main piece that can fail in a shower pan’s construction is the thin plastic liner (see image below). To prevent [water damage](https://totalcarerestoration.com/water-restoration/) and mold, it is important to inspect your shower pan regularly and make sure it is properly installed and sealed.
 
 ​  
 ![Shower Pan Diagram](/wp-content/uploads/2020/08/image-2.png)
@@ -97,4 +97,4 @@ We do thousands of shower pan tests a year. With over 40 years of plumbing exper
 
 We offer services in Miami, Ft Lauderdale, and more recently in Ft Myers. For services in specific areas, check out our [Miami leak detection services](/leak-detection/miami/), [Miami Lakes leak detection services](/leak-detection/miami-lakes/), [Miramar leak detection services](/leak-detection/miramar/), and [Deerfield Beach leak detection services](/leak-detection/deerfield-beach/). If you're in Key Biscayne, we offer specialized [shower pan leak detection in Key Biscayne](/problems/shower-pan-leak/key-biscayne/) for the island's unique coastal properties.
 
-If you are looking for a major shower pan fixes contact our sister company [Hernandez Plumbing](https://plumbinginmiamifl.com/services/7-shower-pan-leak-fixes/). For more information about our services or to schedule an inspection, [contact Total Leak Detection](/contact/) today. Check out our [current promotions](/promotions/) for special offers on leak detection services!
+If you are looking for a major shower pan fixes contact our sister company [Hernandez Plumbing](https://plumbinginmiamifl.com/). For more information about our services or to schedule an inspection, [contact Total Leak Detection](/contact/) today. Check out our [current promotions](/promotions/) for special offers on leak detection services!
