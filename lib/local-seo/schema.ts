@@ -49,8 +49,10 @@ import { generateLocalBusinessSchema as baseGenerateLocalBusinessSchema } from '
 /**
  * Generate LocalBusiness schema with city-specific information
  * Wrapper for local-seo pages that takes City and Service objects
+ * 
+ * For problem × city pages, excludes reviews/ratings to avoid schema misinterpretation
  */
-export function generateLocalBusinessSchema(city: City, service?: Service) {
+export function generateLocalBusinessSchema(city: City, service?: Service, includeReviews?: boolean) {
   return baseGenerateLocalBusinessSchema({
     city: {
       name: city.name,
@@ -58,6 +60,7 @@ export function generateLocalBusinessSchema(city: City, service?: Service) {
       coordinates: city.coordinates,
     },
     service: service ? { name: service.name } : undefined,
+    includeReviews: includeReviews !== undefined ? includeReviews : false, // Default false for city pages
   });
 }
 

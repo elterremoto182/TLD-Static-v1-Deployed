@@ -441,9 +441,9 @@ export function generateLocalBusinessSchema(options?: {
   city?: { name: string; county: string; coordinates?: { lat: number; lng: number } };
   service?: { name: string };
   customDescription?: string;
+  includeReviews?: boolean; // Only add reviews/ratings where page truly represents reviews
 }): Omit<LocalBusinessSchema, '@context'> {
   const socialLinks = getSocialLinks();
-  const aggregateRating = getAggregateRating();
   
   // Dynamic description based on context
   let description = siteConfig.description;
@@ -454,6 +454,12 @@ export function generateLocalBusinessSchema(options?: {
   } else if (options?.customDescription) {
     description = options.customDescription;
   }
+
+  // Only include reviews/ratings on main pages (home, contact) where they truly represent the business
+  // NOT on city pages where Google may interpret as "this page has its own reviews"
+  const shouldIncludeReviews = options?.includeReviews !== false; // Default true for backward compatibility
+  const aggregateRating = shouldIncludeReviews ? getAggregateRating() : undefined;
+  const reviews = shouldIncludeReviews ? getCustomerReviews() : undefined;
 
   const schema: Omit<LocalBusinessSchema, '@context'> = {
     '@type': ['LocalBusiness', 'Plumber', 'HomeAndConstructionBusiness'],
@@ -480,7 +486,7 @@ export function generateLocalBusinessSchema(options?: {
     },
     sameAs: socialLinks.length > 0 ? socialLinks : undefined,
     aggregateRating,
-    review: getCustomerReviews(),
+    review: reviews,
     foundingDate: '2005',
     slogan: 'Expert Leak Detection & Plumbing Services - Available 24/7',
     knowsAbout: [
@@ -894,11 +900,14 @@ export function buildPageSchemaGraph(options: {
   graph.push(generateOrganizationSchema());
 
   // Add LocalBusiness for relevant pages
+  // For city-service pages, exclude reviews/ratings to avoid Google interpreting as page-specific reviews
   if (['home', 'service', 'service-hub', 'city-service', 'contact'].includes(options.pageType)) {
+    const includeReviews = options.pageType !== 'city-service'; // Exclude reviews from city pages
     graph.push(
       generateLocalBusinessSchema({
         city: options.city,
         service: options.service,
+        includeReviews,
       })
     );
   }

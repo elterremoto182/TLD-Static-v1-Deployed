@@ -317,6 +317,157 @@ Local Page: /leak-detection/miami/
 
 ---
 
+## Metadata & Keywords System
+
+The site uses a sophisticated template-driven system for generating SEO metadata across different page types. This ensures consistent, optimized meta tags while allowing city and service customization.
+
+### Page Types & Metadata Sources
+
+| Page Type | URL Pattern | Metadata Source | Keywords Source |
+|-----------|-------------|-----------------|-----------------|
+| Service Pages | `/services/{slug}/` | Markdown frontmatter | Markdown `keywords` array |
+| City × Service | `/{service}/{city}/` | `config/local-seo/services.json` | JSON `keywords` + city name |
+| Problem Hub | `/problems/{problem}/` | `config/local-seo/problems.json` | JSON `keywords` array |
+| Problem × City | `/problems/{problem}/{city}/` | `config/local-seo/problems.json` | JSON `keywords` + city name |
+| Blog Posts | `/blog/{slug}/` | Markdown frontmatter | Markdown `keywords` |
+
+---
+
+### Service Pages (`/services/[slug]/`)
+
+Service pages get metadata from **Markdown frontmatter** in `content/pages/services-*.md`:
+
+```yaml
+---
+title: Slab Leaks
+slug: services/slab-leaks
+seo_title: Slab Leaks - Total Leak Detection
+seo_description: >-
+  Slab Leak Detection and Repair by Total Leak Detection...
+keywords: ["slab leaks in miami", "foundation leak detection"]
+---
+```
+
+**Generated metadata:**
+- `<title>` → `seo_title` (falls back to `title`)
+- `<meta name="description">` → `seo_description`
+- `<meta name="keywords">` → `keywords` array joined
+- OpenGraph tags auto-generated from same data
+
+---
+
+### City × Service Pages (`/{service}/{city}/`)
+
+City-service pages use **JSON templates** with variable substitution from `config/local-seo/services.json`:
+
+```json
+{
+  "leak-detection": {
+    "name": "Leak Detection",
+    "metaTitleTemplate": "{service} in {city}, FL | 24/7 Service",
+    "metaDescTemplate": "Expert {service} services in {city}, {county}. Non-invasive water leak detection...",
+    "h1Template": "{service} Services in {city}, FL",
+    "subheadingTemplate": "Professional Water Leak Detection for {city} Homes & Businesses",
+    "keywords": ["leak detection", "water leak detection", "plumbing leak detection", ...]
+  }
+}
+```
+
+**Template variables:**
+- `{service}` → Service name (e.g., "Leak Detection")
+- `{city}` → City name (e.g., "Miami")
+- `{county}` → County name (e.g., "Miami-Dade County")
+- `{state}` → State (FL)
+
+**Keyword generation (`generateFocusedKeywords()`):**
+
+Modern SEO-focused approach generates 3 targeted keywords per page:
+1. Primary: `{service} {city} fl` → "leak detection miami fl"
+2. Variant 1: `{first keyword} {city}` → "water leak detection miami"
+3. Variant 2: `{city} {service}` → "miami leak detection"
+
+---
+
+### Problem Hub Pages (`/problems/[problem]/`)
+
+Problem hubs get metadata from `config/local-seo/problems.json`:
+
+```json
+{
+  "slab-leak": {
+    "name": "Slab Leak Detection",
+    "slug": "slab-leak",
+    "parentService": "leak-detection",
+    "metaTitleTemplate": "Slab Leak Detection in {city}, FL | Under Foundation Leak Repair",
+    "metaDescTemplate": "Expert slab leak detection in {city}, {county}...",
+    "h1Template": "Slab Leak Detection in {city}, FL",
+    "keywords": ["slab leak", "under slab leak", "foundation leak", ...],
+    "overview": "A slab leak occurs when...",
+    "symptoms": [...],
+    "causes": [...],
+    "whyUrgent": "...",
+    "ourApproach": "..."
+  }
+}
+```
+
+**Hub page metadata (no city):**
+- Title: `{problem.name} | Expert Detection & Solutions in Florida`
+- Description: `{problem.overview}`
+- Keywords: `{problem.keywords}` array
+
+---
+
+### Problem × City Pages (`/problems/[problem]/[city]/`)
+
+Combines problem templates with city data:
+
+**Template functions:**
+- `generateProblemCityMetaTitle(problem, city)` → "Slab Leak Detection in Miami, FL | Under Foundation Leak Repair"
+- `generateProblemCityMetaDesc(problem, city)` → "Expert slab leak detection in Miami, Miami-Dade County..."
+- `generateProblemCityH1(problem, city)` → "Slab Leak Detection in Miami, FL"
+- `generateFocusedKeywords(problem, city)` → ["slab leak detection miami fl", "slab leak miami", "miami slab leak detection"]
+
+---
+
+### Template Rendering System
+
+Located in `lib/local-seo/templates.ts`:
+
+```typescript
+function renderTemplate(template: string, variables: TemplateVariables): string
+```
+
+**Supported variables:**
+| Variable | Description | Example |
+|----------|-------------|---------|
+| `{city}` | City name | Miami |
+| `{county}` | County name | Miami-Dade County |
+| `{state}` | State | FL |
+| `{service}` | Service name | Leak Detection |
+| `{problem}` | Problem name | Slab Leak Detection |
+| `{responseTime}` | City response time | 30-45 minutes |
+| `{phone}` | Business phone | (855) 385-5325 |
+| `{climate}` | Local climate factor | South Florida's humid climate |
+| `{neighborhoods}` | Formatted neighborhoods | Downtown, Brickell, Wynwood |
+| `{zipCodes}` | Formatted ZIP codes | 33101, 33102, 33109 |
+
+---
+
+### Adding New Services or Problems
+
+**To add a new service:**
+1. Add entry to `config/local-seo/services.json` with templates
+2. Create route folder `app/{service-slug}/` with `page.tsx` and `[city]/page.tsx`
+3. Add to `scripts/generate-sitemaps.ts` for sitemap inclusion
+
+**To add a new problem:**
+1. Add entry to `config/local-seo/problems.json` with all required fields
+2. Set `parentService` to link to appropriate service
+3. Problems automatically get city pages via existing dynamic routes
+
+---
+
 ## Configuration
 
 ### Site Configuration (`config/site.json`)
@@ -350,6 +501,49 @@ Complete content structure including:
 - `services.json` - Service templates with process steps, technology, content
 - `problems.json` - Problem definitions with symptoms, causes, urgency
 - `faqs.json` - FAQ content organized by service type
+- `videos.json` - City/service-specific video content
+
+#### City Data Structure (`cities.json`)
+
+Each city entry supports extensive customization:
+
+```json
+{
+  "miami": {
+    "name": "Miami",
+    "slug": "miami",
+    "county": "Miami-Dade County",
+    "state": "FL",
+    "coordinates": { "lat": 25.7617, "lng": -80.1918 },
+    "neighborhoods": ["Brickell", "Downtown Miami", ...],
+    "zipCodes": ["33101", "33109", ...],
+    "responseTime": "30-45 minutes",
+    "localFactors": {
+      "climate": "Tropical monsoon climate...",
+      "risks": ["Hurricane flooding", "Aging infrastructure", ...],
+      "characteristics": "Mix of high-rise condos..."
+    },
+    "intro": "As Miami's trusted leak detection experts...",
+    "extendedContent": "Miami's tropical climate and aging infrastructure...",
+    "nearbyAreas": ["miami-beach", "coral-gables", ...],
+    "uniqueContent": {
+      "whyChooseUsLocal": "Custom why choose us text for this city",
+      "localExpertise": "Custom expertise paragraph",
+      "testimonialHighlight": "City-specific testimonial"
+    },
+    "localStats": {
+      "yearsServing": 19,
+      "jobsCompleted": "3,500+",
+      "avgResponseMins": 35
+    },
+    "customFaqs": [
+      { "question": "City-specific FAQ?", "answer": "..." }
+    ]
+  }
+}
+```
+
+All fields except `name`, `slug`, `county`, `state`, and `coordinates` are optional. City pages gracefully handle missing fields.
 
 ---
 
