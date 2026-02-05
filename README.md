@@ -694,18 +694,22 @@ npm run build
 
 ## Contact Form Integration
 
-The contact form integrates with **n8n webhooks** for serverless form submissions.
+The contact form submits to **`/api/contact`**, which proxies to an **n8n webhook**. Using a same-origin API route avoids CORS: the browser never calls n8n directly.
 
 ### Setup
 
-1. Create n8n webhook workflow
+1. Create n8n webhook workflow and activate it.
 2. Add webhook URL to `.env.local`:
-   ```
-   NEXT_PUBLIC_N8N_WEBHOOK_URL=https://your-n8n-instance.com/webhook/abc123
-   ```
-3. Activate workflow in n8n
+   - **Preferred (server-only, not exposed to client):**
+     ```
+     N8N_WEBHOOK_URL=https://your-n8n-instance.com/webhook/abc123
+     ```
+   - Or (still supported): `NEXT_PUBLIC_N8N_WEBHOOK_URL=...`
+3. Deploy with a Node/server environment so `app/api/contact` runs (e.g. Vercel, Node server). Static-only hosts without API routes need n8n to allow your origin in CORS instead.
 
 ### Form Data Structure
+
+The API forwards the same JSON body to n8n. Contact page can include optional `service`:
 
 ```json
 {
@@ -713,6 +717,7 @@ The contact form integrates with **n8n webhooks** for serverless form submission
   "email": "john@example.com",
   "phone": "+1234567890",
   "message": "Your message here",
+  "service": "leak-detection",
   "timestamp": "2024-01-01T12:00:00.000Z",
   "source": "contact-form"
 }

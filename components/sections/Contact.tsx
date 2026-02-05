@@ -1,18 +1,15 @@
 'use client';
 
 import { useState } from 'react';
-import { useRouter } from 'next/navigation';
 import { Mail, Phone, MapPin, CheckCircle, AlertCircle, Loader2, Clock, Shield, Star, PhoneCall, MessageCircle } from 'lucide-react';
 import { AnimateOnScroll } from '@/components/AnimateOnScroll';
-import { trackFormSubmission } from '@/lib/analytics';
 import siteConfig from '@/config/site.json';
 import content from '@/config/content.json';
 
 export function Contact() {
-  const router = useRouter();
   const { contact } = content;
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitStatus, setSubmitStatus] = useState<'idle' | 'error'>('idle');
+  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
   const [errorMessage, setErrorMessage] = useState('');
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
@@ -23,17 +20,6 @@ export function Contact() {
 
     const form = e.currentTarget;
     const formData = new FormData(form);
-    
-    // Get the n8n webhook URL from environment variable
-    // For static sites, you can also set this in your build process or config
-    const webhookUrl = process.env.NEXT_PUBLIC_N8N_WEBHOOK_URL || '';
-
-    if (!webhookUrl) {
-      setSubmitStatus('error');
-      setErrorMessage('Webhook URL not configured. Please set NEXT_PUBLIC_N8N_WEBHOOK_URL environment variable.');
-      setIsSubmitting(false);
-      return;
-    }
 
     try {
       const payload = {
@@ -45,9 +31,9 @@ export function Contact() {
         source: 'contact-form',
       };
 
-      const response = await fetch(webhookUrl, {
+      // Same-origin API route avoids CORS; server proxies to n8n webhook
+      const response = await fetch('/api/contact', {
         method: 'POST',
-        mode: 'cors', // Explicitly set CORS mode
         headers: {
           'Content-Type': 'application/json',
         },
@@ -55,26 +41,21 @@ export function Contact() {
       });
 
       if (!response.ok) {
-        throw new Error(`HTTP error! status: ${response.status}`);
+        const data = await response.json().catch(() => ({}));
+        throw new Error((data as { error?: string }).error || `HTTP ${response.status}`);
       }
 
-      trackFormSubmission('contact_form');
-      router.push('/contact/thank-you/');
+      setSubmitStatus('success');
+      form.reset();
+      setTimeout(() => setSubmitStatus('idle'), 5000);
     } catch (error) {
       console.error('Form submission error:', error);
       setSubmitStatus('error');
-      
-      // Check for CORS errors specifically
-      if (error instanceof TypeError && error.message.includes('fetch')) {
-        setErrorMessage(
-          'CORS error: The webhook server needs to allow requests from this origin. ' +
-          'Please configure CORS in your n8n webhook settings or activate the workflow.'
-        );
-      } else if (error instanceof Error) {
-        setErrorMessage(error.message);
-      } else {
-        setErrorMessage('Failed to send message. Please try again or contact us directly.');
-      }
+      setErrorMessage(
+        error instanceof Error
+          ? error.message
+          : 'Failed to send message. Please try again or contact us directly.'
+      );
     } finally {
       setIsSubmitting(false);
     }
@@ -256,6 +237,17 @@ export function Contact() {
                     className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-200 resize-none disabled:opacity-50 disabled:cursor-not-allowed"
                   />
                 </div>
+
+                {/* Success Message */}
+                {submitStatus === 'success' && (
+                  <div className="p-4 bg-green-50 border border-green-200 rounded-xl flex items-start">
+                    <CheckCircle className="w-5 h-5 text-green-600 mr-3 flex-shrink-0 mt-0.5" />
+                    <div>
+                      <p className="text-green-800 font-semibold">Message sent successfully!</p>
+                      <p className="text-green-700 text-sm mt-1">We&apos;ll get back to you as soon as possible.</p>
+                    </div>
+                  </div>
+                )}
 
                 {/* Error Message */}
                 {submitStatus === 'error' && (
