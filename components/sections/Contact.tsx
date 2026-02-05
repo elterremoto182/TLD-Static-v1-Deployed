@@ -1,12 +1,15 @@
 'use client';
 
 import { useState } from 'react';
+import { useRouter } from 'next/navigation';
 import { Mail, Phone, MapPin, CheckCircle, AlertCircle, Loader2, Clock, Shield, Star, PhoneCall, MessageCircle } from 'lucide-react';
 import { AnimateOnScroll } from '@/components/AnimateOnScroll';
 import siteConfig from '@/config/site.json';
 import content from '@/config/content.json';
+import { trackFormSubmission } from '@/lib/analytics';
 
 export function Contact() {
+  const router = useRouter();
   const { contact } = content;
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
@@ -52,9 +55,9 @@ export function Contact() {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
 
-      setSubmitStatus('success');
+      trackFormSubmission('contact_form');
       form.reset();
-      setTimeout(() => setSubmitStatus('idle'), 5000);
+      router.push('/contact/thank-you/');
     } catch (error) {
       console.error('Form submission error:', error);
       setSubmitStatus('error');
