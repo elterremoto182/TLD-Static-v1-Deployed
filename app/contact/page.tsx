@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, Suspense } from 'react';
+import { useRouter } from 'next/navigation';
 import dynamic from 'next/dynamic';
 import { Header } from '@/components/sections/Header';
 import { Footer } from '@/components/sections/Footer';
@@ -10,6 +11,7 @@ import siteConfig from '@/config/site.json';
 import content from '@/config/content.json';
 import { generateBreadcrumbs } from '@/lib/utils';
 import { buildPageSchemaGraph, schemaToJsonLd } from '@/lib/seo/schema';
+import { trackFormSubmission } from '@/lib/analytics';
 
 // Lazy load heavy components
 const AnimateOnScroll = dynamic(
@@ -62,6 +64,7 @@ function TrustBadges() {
 
 
 export default function ContactPage() {
+  const router = useRouter();
   const { contact } = content;
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
@@ -108,9 +111,9 @@ export default function ContactPage() {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
 
-      setSubmitStatus('success');
+      trackFormSubmission('contact_form');
       form.reset();
-      setTimeout(() => setSubmitStatus('idle'), 5000);
+      router.push('/contact/thank-you/');
     } catch (error) {
       console.error('Form submission error:', error);
       setSubmitStatus('error');

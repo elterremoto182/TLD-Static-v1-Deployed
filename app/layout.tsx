@@ -5,9 +5,7 @@ import Script from 'next/script';
 import siteConfig from '@/config/site.json';
 import { StickyCallButton } from '@/components/StickyCallButton';
 import { generateOrganizationSchema, schemaToJsonLd } from '@/lib/seo/schema';
-
-// Analytics IDs
-const GA_MEASUREMENT_ID = 'G-E2QGKSKT4V';
+import { GA_MEASUREMENT_ID } from '@/lib/analytics';
 // Microsoft Clarity ID for heatmaps & session recordings
 const CLARITY_ID = 'vcow2597yw';
 
