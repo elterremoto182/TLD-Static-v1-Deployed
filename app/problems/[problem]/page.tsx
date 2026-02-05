@@ -3,7 +3,6 @@ import Link from 'next/link';
 import { Header } from '@/components/sections/Header';
 import { Footer } from '@/components/sections/Footer';
 import { Breadcrumb } from '@/components/ui/breadcrumb';
-import { AnimateOnScroll } from '@/components/AnimateOnScroll';
 import OptimizedImage from '@/components/OptimizedImage';
 import { Phone, Shield, AlertTriangle, MapPin, getIcon } from '@/lib/icons';
 
@@ -197,7 +196,6 @@ export default async function ProblemHubPage({
           <div className="max-w-6xl mx-auto px-4">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
               {/* Symptoms */}
-              <AnimateOnScroll animation="fade-in-up" duration={600}>
                 <div className="bg-red-50 rounded-xl p-8 border border-red-100">
                   <div className="flex items-center gap-3 mb-6">
                     <div className="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center">
@@ -216,10 +214,8 @@ export default async function ProblemHubPage({
                     ))}
                   </ul>
                 </div>
-              </AnimateOnScroll>
               
               {/* Causes */}
-              <AnimateOnScroll animation="fade-in-up" duration={600} delay={100}>
                 <div className="bg-blue-50 rounded-xl p-8 border border-blue-100">
                   <div className="flex items-center gap-3 mb-6">
                     <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
@@ -238,7 +234,6 @@ export default async function ProblemHubPage({
                     ))}
                   </ul>
                 </div>
-              </AnimateOnScroll>
             </div>
           </div>
         </section>
@@ -246,8 +241,7 @@ export default async function ProblemHubPage({
         {/* Why Urgent + Our Approach */}
         <section className="py-16 bg-gray-50">
           <div className="max-w-4xl mx-auto px-4">
-            <AnimateOnScroll animation="fade-in-up" duration={600}>
-              <div className="bg-amber-50 border border-amber-200 rounded-xl p-8 mb-8">
+            <div className="bg-amber-50 border border-amber-200 rounded-xl p-8 mb-8">
                 <h2 className="text-xl font-bold text-gray-900 mb-4">
                   Why Immediate Action Matters
                 </h2>
@@ -255,10 +249,8 @@ export default async function ProblemHubPage({
                   {problem.whyUrgent}
                 </p>
               </div>
-            </AnimateOnScroll>
             
-            <AnimateOnScroll animation="fade-in-up" duration={600} delay={100}>
-              <div className="bg-green-50 border border-green-200 rounded-xl p-8">
+            <div className="bg-green-50 border border-green-200 rounded-xl p-8">
                 <h2 className="text-xl font-bold text-gray-900 mb-4">
                   Our Approach to {problem.name}
                 </h2>
@@ -266,15 +258,13 @@ export default async function ProblemHubPage({
                   {problem.ourApproach}
                 </p>
               </div>
-            </AnimateOnScroll>
           </div>
         </section>
         
         {/* City Grid for Problem Pages */}
         <section className="py-16 bg-white">
           <div className="max-w-6xl mx-auto px-4">
-            <AnimateOnScroll animation="fade-in-up" duration={600}>
-              <div className="text-center mb-12">
+            <div className="text-center mb-12">
                 <h2 className="text-3xl font-bold text-gray-900 mb-4">
                   {problem.name} Detection by Location
                 </h2>
@@ -282,7 +272,6 @@ export default async function ProblemHubPage({
                   Select your city for local information about {problem.name.toLowerCase()} detection and solutions
                 </p>
               </div>
-            </AnimateOnScroll>
             
             {/* All city links for problem pages - grouped by county */}
             <div className="space-y-8">

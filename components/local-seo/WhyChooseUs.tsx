@@ -10,7 +10,6 @@ import {
   CheckCircle,
   Phone
 } from 'lucide-react';
-import { AnimateOnScroll } from '@/components/AnimateOnScroll';
 
 interface WhyChooseUsItem {
   icon: 'trophy' | 'clock' | 'dollar' | 'wrench' | 'shield' | 'star';
@@ -52,8 +51,7 @@ export function WhyChooseUs({
   return (
     <section className="py-16 bg-white">
       <div className="max-w-6xl mx-auto px-4">
-        <AnimateOnScroll animation="fade-in-up" duration={600}>
-          <div className="text-center mb-12">
+        <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
               {title}
             </h2>
@@ -66,19 +64,12 @@ export function WhyChooseUs({
               </p>
             )}
           </div>
-        </AnimateOnScroll>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
           {sections.map((section, index) => {
             const IconComponent = iconMap[section.icon];
             return (
-              <AnimateOnScroll
-                key={index}
-                animation="fade-in-up"
-                duration={600}
-                delay={index * 100}
-              >
-                <div className="bg-gray-50 rounded-xl p-6 border border-gray-100 h-full">
+                <div key={index} className="bg-gray-50 rounded-xl p-6 border border-gray-100 h-full">
                   <div className="flex items-center gap-3 mb-4">
                     <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center">
                       <IconComponent className="w-5 h-5 text-primary" />
@@ -94,13 +85,11 @@ export function WhyChooseUs({
                     ))}
                   </ul>
                 </div>
-              </AnimateOnScroll>
             );
           })}
         </div>
 
         {testimonial && (
-          <AnimateOnScroll animation="fade-in-up" duration={600} delay={400}>
             <div className="bg-primary/5 border border-primary/20 rounded-xl p-8 max-w-3xl mx-auto text-center">
               <div className="flex justify-center gap-1 mb-4">
                 {[...Array(5)].map((_, i) => (
@@ -112,7 +101,6 @@ export function WhyChooseUs({
               </blockquote>
               <p className="text-gray-900 font-semibold">— {testimonial.author}</p>
             </div>
-          </AnimateOnScroll>
         )}
       </div>
     </section>

@@ -2,7 +2,6 @@ import Link from 'next/link';
 import { Header } from '@/components/sections/Header';
 import { Footer } from '@/components/sections/Footer';
 import { Breadcrumb } from '@/components/ui/breadcrumb';
-import { AnimateOnScroll } from '@/components/AnimateOnScroll';
 import OptimizedImage from '@/components/OptimizedImage';
 import { getAllPages } from '@/lib/pages/pages';
 import { generatePageMetadata, generateBreadcrumbs } from '@/lib/utils';
@@ -89,8 +88,7 @@ export default function GuidesPage() {
             <Breadcrumb items={breadcrumbs} />
           </div>
           <div className="max-w-6xl mx-auto px-4 text-center">
-            <AnimateOnScroll animation="fade-in-up" duration={600} delay={0}>
-              <div className="flex items-center justify-center gap-2 mb-4">
+            <div className="flex items-center justify-center gap-2 mb-4">
                 <BookOpen className="w-6 h-6 text-primary" />
                 <span className="text-primary font-semibold text-sm uppercase tracking-wider">
                   Educational Resources
@@ -102,7 +100,6 @@ export default function GuidesPage() {
               <p className="text-xl text-gray-600 max-w-2xl mx-auto">
                 Comprehensive resources to help Florida homeowners understand, prevent, and solve common plumbing problems
               </p>
-            </AnimateOnScroll>
           </div>
         </section>
 
@@ -117,20 +114,15 @@ export default function GuidesPage() {
               </div>
             ) : (
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                {guidePages.map((guide, index) => {
+                {guidePages.map((guide) => {
                   const slugPart = guide.slug.replace(/^\/+|\/+$/g, '').replace(/^guides\//, '');
                   const config = GUIDE_CONFIG[slugPart];
                   const IconComponent = config?.icon || BookOpen;
                   const guideImage = config?.image || '/images/services/leak-detection.jpg';
                   
                   return (
-                    <AnimateOnScroll
-                      key={guide.slug}
-                      animation="fade-in-up"
-                      duration={600}
-                      delay={index * 100}
-                    >
                       <Link
+                        key={guide.slug}
                         href={`/${guide.slug.replace(/^\/+|\/+$/g, '')}/`}
                         className="group block bg-white rounded-xl border border-gray-200 overflow-hidden hover:-translate-y-1 hover:shadow-xl transition-all duration-300"
                       >
@@ -183,7 +175,6 @@ export default function GuidesPage() {
                           </div>
                         </div>
                       </Link>
-                    </AnimateOnScroll>
                   );
                 })}
               </div>

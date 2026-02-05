@@ -2,8 +2,6 @@
 
 import { useState } from 'react';
 import { ChevronDown, HelpCircle } from 'lucide-react';
-import { AnimateOnScroll } from '@/components/AnimateOnScroll';
-
 interface FAQ {
   question: string;
   answer: string;
@@ -31,8 +29,7 @@ export function LocalFAQ({
   return (
     <section className="py-16 bg-gray-50">
       <div className="max-w-4xl mx-auto px-4">
-        <AnimateOnScroll animation="fade-in-up" duration={600}>
-          <div className="text-center mb-12">
+        <div className="text-center mb-12">
             <div className="inline-flex items-center justify-center w-14 h-14 bg-primary/10 rounded-full mb-4">
               <HelpCircle className="w-7 h-7 text-primary" />
             </div>
@@ -43,17 +40,10 @@ export function LocalFAQ({
               {subtitle}
             </p>
           </div>
-        </AnimateOnScroll>
         
         <div className="space-y-4">
           {faqs.map((faq, index) => (
-            <AnimateOnScroll
-              key={index}
-              animation="fade-in-up"
-              duration={600}
-              delay={index * 50}
-            >
-              <div className="bg-white rounded-xl border border-gray-200 overflow-hidden">
+              <div key={index} className="bg-white rounded-xl border border-gray-200 overflow-hidden">
                 <button
                   onClick={() => toggleFaq(index)}
                   className="w-full flex items-center justify-between p-6 text-left hover:bg-gray-50 transition-colors"
@@ -79,7 +69,6 @@ export function LocalFAQ({
                   </div>
                 </div>
               </div>
-            </AnimateOnScroll>
           ))}
         </div>
       </div>

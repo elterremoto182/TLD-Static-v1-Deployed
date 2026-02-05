@@ -1,5 +1,4 @@
 import OptimizedImage from '@/components/OptimizedImage';
-import { AnimateOnScroll } from '@/components/AnimateOnScroll';
 import { Shield, Award, CheckCircle, BadgeCheck, FileCheck, Users } from 'lucide-react';
 import content from '@/config/content.json';
 
@@ -52,8 +51,7 @@ export function TrustBadges() {
   return (
     <section className="py-20 md:py-28 bg-gradient-to-b from-background to-muted/30 border-t border-gray-200">
       <div className="max-w-6xl mx-auto px-4">
-        <AnimateOnScroll animation="fade-in-up" duration={600} delay={0}>
-          <div className="text-center mb-12">
+        <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-gray-900 mb-4">
               Trusted & Certified
             </h2>
@@ -72,7 +70,6 @@ export function TrustBadges() {
               </div>
             </div>
           </div>
-        </AnimateOnScroll>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {badges.map((badge, index) => {
@@ -80,13 +77,7 @@ export function TrustBadges() {
             const hasImage = badge.image && badge.image !== '';
 
             return (
-              <AnimateOnScroll
-                key={index}
-                animation="fade-in-up"
-                duration={600}
-                delay={index * 100}
-              >
-                <div className={`bg-white rounded-xl border-2 ${badge.color || 'border-gray-200'} p-6 hover:-translate-y-1 hover:shadow-xl transition-all duration-300 group`}>
+                <div key={index} className={`bg-white rounded-xl border-2 ${badge.color || 'border-gray-200'} p-6 hover:-translate-y-1 hover:shadow-xl transition-all duration-300 group`}>
                   <div className="flex flex-col items-center text-center">
                     {hasImage ? (
                       <div className="w-20 h-20 rounded-full overflow-hidden bg-white shadow-md mb-4 group-hover:shadow-lg transition-shadow duration-200 border-2 border-gray-100">
@@ -115,13 +106,11 @@ export function TrustBadges() {
                     )}
                   </div>
                 </div>
-              </AnimateOnScroll>
             );
           })}
         </div>
 
         {/* Additional Trust Indicators */}
-        <AnimateOnScroll animation="fade-in-up" duration={600} delay={400}>
           <div className="mt-12 pt-8 border-t border-gray-200">
             <div className="flex flex-wrap justify-center items-center gap-8 text-sm text-gray-600">
               <div className="flex items-center gap-2">
@@ -138,7 +127,6 @@ export function TrustBadges() {
               </div>
             </div>
           </div>
-        </AnimateOnScroll>
       </div>
     </section>
   );

@@ -3,7 +3,6 @@ import Link from 'next/link';
 import { Header } from '@/components/sections/Header';
 import { Footer } from '@/components/sections/Footer';
 import { Breadcrumb } from '@/components/ui/breadcrumb';
-import { AnimateOnScroll } from '@/components/AnimateOnScroll';
 import OptimizedImage from '@/components/OptimizedImage';
 import { Phone, Shield, AlertTriangle, Clock, MapPin, ArrowRight, getIcon } from '@/lib/icons';
 
@@ -228,18 +227,15 @@ export default async function ProblemCityPage({
         <section className="py-16 bg-white">
           <div className="max-w-4xl mx-auto px-4">
             {/* City-specific intro */}
-            <AnimateOnScroll animation="fade-in-up" duration={600}>
-              <div className="prose prose-lg max-w-none mb-12">
+            <div className="prose prose-lg max-w-none mb-12">
                 <p className="text-gray-700 leading-relaxed">
                   If you suspect {problem.name.toLowerCase()} at your {city.name} property, 
                   Total Leak Detection can help. {city.localFactors.characteristics} {city.localFactors.climate}
                 </p>
               </div>
-            </AnimateOnScroll>
             
             {/* Symptoms and Causes Grid */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-              <AnimateOnScroll animation="fade-in-up" duration={600}>
                 <div className="bg-red-50 rounded-xl p-6 border border-red-100 h-full">
                   <div className="flex items-center gap-3 mb-4">
                     <AlertTriangle className="w-6 h-6 text-red-600" />
@@ -254,9 +250,7 @@ export default async function ProblemCityPage({
                     ))}
                   </ul>
                 </div>
-              </AnimateOnScroll>
               
-              <AnimateOnScroll animation="fade-in-up" duration={600} delay={100}>
                 <div className="bg-blue-50 rounded-xl p-6 border border-blue-100 h-full">
                   <div className="flex items-center gap-3 mb-4">
                     <Shield className="w-6 h-6 text-blue-600" />
@@ -271,12 +265,10 @@ export default async function ProblemCityPage({
                     ))}
                   </ul>
                 </div>
-              </AnimateOnScroll>
             </div>
             
             {/* Why Urgent */}
-            <AnimateOnScroll animation="fade-in-up" duration={600}>
-              <div className="bg-amber-50 border border-amber-200 rounded-xl p-6 mb-8">
+            <div className="bg-amber-50 border border-amber-200 rounded-xl p-6 mb-8">
                 <h3 className="text-lg font-bold text-gray-900 mb-3">
                   Why {city.name} Property Owners Should Act Fast
                 </h3>
@@ -284,11 +276,9 @@ export default async function ProblemCityPage({
                   {problem.whyUrgent}
                 </p>
               </div>
-            </AnimateOnScroll>
             
             {/* Our Approach */}
-            <AnimateOnScroll animation="fade-in-up" duration={600} delay={100}>
-              <div className="bg-green-50 border border-green-200 rounded-xl p-6">
+            <div className="bg-green-50 border border-green-200 rounded-xl p-6">
                 <h3 className="text-lg font-bold text-gray-900 mb-3">
                   How We Solve {problem.name} in {city.name}
                 </h3>
@@ -296,7 +286,6 @@ export default async function ProblemCityPage({
                   {problem.ourApproach}
                 </p>
               </div>
-            </AnimateOnScroll>
           </div>
         </section>
         
@@ -304,7 +293,6 @@ export default async function ProblemCityPage({
         {parentService && (
           <section className="py-12 bg-gray-50">
             <div className="max-w-4xl mx-auto px-4">
-              <AnimateOnScroll animation="fade-in-up" duration={600}>
                 <Link
                   href={`/${parentService.slug}/${citySlug}/`}
                   className="group flex items-center justify-between p-6 bg-white rounded-xl border border-gray-200 hover:border-primary/30 hover:shadow-md transition-all"
@@ -317,7 +305,6 @@ export default async function ProblemCityPage({
                   </div>
                   <ArrowRight className="w-6 h-6 text-gray-400 group-hover:text-primary group-hover:translate-x-1 transition-all" />
                 </Link>
-              </AnimateOnScroll>
             </div>
           </section>
         )}
@@ -326,7 +313,6 @@ export default async function ProblemCityPage({
         {nearbyCities.length > 0 && (
           <section className="py-12 bg-white">
             <div className="max-w-4xl mx-auto px-4">
-              <AnimateOnScroll animation="fade-in-up" duration={600}>
                 <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">
                   {problem.name} Detection in Nearby Areas
                 </h2>
@@ -344,7 +330,6 @@ export default async function ProblemCityPage({
                     </Link>
                   ))}
                 </div>
-              </AnimateOnScroll>
             </div>
           </section>
         )}

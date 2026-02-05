@@ -1,7 +1,6 @@
 'use client';
 
 import Link from 'next/link';
-import { AnimateOnScroll } from '@/components/AnimateOnScroll';
 import { ChevronRight, HelpCircle } from 'lucide-react';
 
 interface RelatedQuestion {
@@ -32,8 +31,7 @@ export function RelatedQuestions({
   return (
     <section className="py-12 bg-gray-50">
       <div className="max-w-4xl mx-auto px-4">
-        <AnimateOnScroll animation="fade-in-up" duration={600}>
-          <div className="text-center mb-8">
+        <div className="text-center mb-8">
             <h2 className="text-2xl font-bold text-gray-900 mb-2">
               {title}
             </h2>
@@ -43,17 +41,11 @@ export function RelatedQuestions({
               </p>
             )}
           </div>
-        </AnimateOnScroll>
 
         <div className="space-y-3">
           {questions.map((item, index) => (
-            <AnimateOnScroll
-              key={index}
-              animation="fade-in-up"
-              duration={600}
-              delay={index * 50}
-            >
               <Link
+                key={index}
                 href={item.href}
                 className="group block bg-white border border-gray-200 rounded-lg p-4 hover:border-primary hover:shadow-md transition-all duration-200"
               >
@@ -72,12 +64,10 @@ export function RelatedQuestions({
                   <ChevronRight className="w-5 h-5 text-gray-400 group-hover:text-primary group-hover:translate-x-1 transition-all flex-shrink-0" />
                 </div>
               </Link>
-            </AnimateOnScroll>
           ))}
         </div>
 
         {cityName && (
-          <AnimateOnScroll animation="fade-in-up" duration={600} delay={questions.length * 50 + 100}>
             <p className="text-center text-sm text-gray-500 mt-6">
               Have a different question about our services in {cityName}?{' '}
               <Link href="/contact/" className="text-primary hover:underline">
@@ -85,7 +75,6 @@ export function RelatedQuestions({
               </Link>{' '}
               for personalized assistance.
             </p>
-          </AnimateOnScroll>
         )}
       </div>
     </section>

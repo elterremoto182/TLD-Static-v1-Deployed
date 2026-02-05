@@ -2,7 +2,6 @@ import { notFound } from 'next/navigation';
 import { Header } from '@/components/sections/Header';
 import { Footer } from '@/components/sections/Footer';
 import { Breadcrumb } from '@/components/ui/breadcrumb';
-import { AnimateOnScroll } from '@/components/AnimateOnScroll';
 import OptimizedImage from '@/components/OptimizedImage';
 import { Phone, Shield, Clock, CheckCircle, Droplet } from 'lucide-react';
 
@@ -300,14 +299,12 @@ export default function LeakDetectionHubPage() {
         {/* Service Areas intro */}
         <section className="py-12 bg-gray-50">
           <div className="max-w-4xl mx-auto px-4 text-center">
-            <AnimateOnScroll animation="fade-in-up" duration={600}>
-              <h2 className="text-2xl font-bold text-gray-900 mb-4">
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">
                 Find Leak Detection in Your City
               </h2>
               <p className="text-lg text-gray-600">
                 {service.hubContent.serviceAreas}
               </p>
-            </AnimateOnScroll>
           </div>
         </section>
         
@@ -357,24 +354,16 @@ export default function LeakDetectionHubPage() {
         {/* Technology Section */}
         <section className="py-16 bg-white">
           <div className="max-w-6xl mx-auto px-4">
-            <AnimateOnScroll animation="fade-in-up" duration={600}>
-              <h2 className="text-3xl font-bold text-gray-900 mb-4 text-center">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4 text-center">
                 Advanced Technology That Actually Works
               </h2>
               <p className="text-lg text-gray-600 text-center max-w-2xl mx-auto mb-10">
                 We invest in the latest leak detection equipment because your property deserves the best
               </p>
-            </AnimateOnScroll>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {service.bodyContent.technology.map((tech, index) => (
-                <AnimateOnScroll
-                  key={tech.name}
-                  animation="fade-in-up"
-                  duration={600}
-                  delay={index * 100}
-                >
-                  <div className="bg-gray-50 rounded-xl p-6 border border-gray-100">
+              {service.bodyContent.technology.map((tech) => (
+                  <div key={tech.name} className="bg-gray-50 rounded-xl p-6 border border-gray-100">
                     <h3 className="text-lg font-semibold text-gray-900 mb-2">
                       {tech.name}
                     </h3>
@@ -382,7 +371,6 @@ export default function LeakDetectionHubPage() {
                       {tech.description}
                     </p>
                   </div>
-                </AnimateOnScroll>
               ))}
             </div>
           </div>

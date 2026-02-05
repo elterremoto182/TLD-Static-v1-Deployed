@@ -2,7 +2,6 @@ import { notFound } from 'next/navigation';
 import { Header } from '@/components/sections/Header';
 import { Footer } from '@/components/sections/Footer';
 import { Breadcrumb } from '@/components/ui/breadcrumb';
-import { AnimateOnScroll } from '@/components/AnimateOnScroll';
 import OptimizedImage from '@/components/OptimizedImage';
 import { Phone, Shield, Clock, CheckCircle, AlertTriangle } from 'lucide-react';
 
@@ -311,8 +310,7 @@ export default function MoldTestingHubPage() {
         {/* When to Test Section */}
         <section className="py-16 bg-white">
           <div className="max-w-4xl mx-auto px-4">
-            <AnimateOnScroll animation="fade-in-up" duration={600}>
-              <div className="text-center mb-10">
+            <div className="text-center mb-10">
                 <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
                   When Should You Test for Mold?
                 </h2>
@@ -320,21 +318,13 @@ export default function MoldTestingHubPage() {
                   Immediate testing is recommended if you notice any of these warning signs
                 </p>
               </div>
-            </AnimateOnScroll>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {whenToTestItems.map((item, index) => (
-                <AnimateOnScroll
-                  key={index}
-                  animation="fade-in-up"
-                  duration={600}
-                  delay={index * 50}
-                >
-                  <div className="flex items-start gap-3 bg-amber-50 rounded-xl p-4 border border-amber-100">
+                  <div key={index} className="flex items-start gap-3 bg-amber-50 rounded-xl p-4 border border-amber-100">
                     <AlertTriangle className="w-5 h-5 text-amber-600 flex-shrink-0 mt-0.5" />
                     <span className="text-gray-700">{item}</span>
                   </div>
-                </AnimateOnScroll>
               ))}
             </div>
           </div>
@@ -343,14 +333,12 @@ export default function MoldTestingHubPage() {
         {/* Service Areas intro */}
         <section className="py-12 bg-gray-50">
           <div className="max-w-4xl mx-auto px-4 text-center">
-            <AnimateOnScroll animation="fade-in-up" duration={600}>
-              <h2 className="text-2xl font-bold text-gray-900 mb-4">
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">
                 Find Mold Testing in Your City
               </h2>
               <p className="text-lg text-gray-600">
                 {service.hubContent.serviceAreas}
               </p>
-            </AnimateOnScroll>
           </div>
         </section>
         
@@ -400,17 +388,14 @@ export default function MoldTestingHubPage() {
         {/* What Reports Include Section */}
         <section className="py-16 bg-white">
           <div className="max-w-6xl mx-auto px-4">
-            <AnimateOnScroll animation="fade-in-up" duration={600}>
-              <h2 className="text-3xl font-bold text-gray-900 mb-4 text-center">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4 text-center">
                 What Our Mold Testing Reports Include
               </h2>
               <p className="text-lg text-gray-600 text-center max-w-2xl mx-auto mb-10">
                 Comprehensive reports provide everything you need for informed decisions
               </p>
-            </AnimateOnScroll>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <AnimateOnScroll animation="fade-in-up" duration={600} delay={0}>
                 <div className="bg-gray-50 rounded-xl p-6 border border-gray-100 h-full">
                   <h3 className="text-lg font-semibold text-gray-900 mb-4">Detailed Analysis</h3>
                   <ul className="space-y-2 text-gray-600 text-sm">
@@ -421,9 +406,7 @@ export default function MoldTestingHubPage() {
                     <li>• Health risk assessment</li>
                   </ul>
                 </div>
-              </AnimateOnScroll>
               
-              <AnimateOnScroll animation="fade-in-up" duration={600} delay={100}>
                 <div className="bg-gray-50 rounded-xl p-6 border border-gray-100 h-full">
                   <h3 className="text-lg font-semibold text-gray-900 mb-4">Clear Documentation</h3>
                   <ul className="space-y-2 text-gray-600 text-sm">
@@ -434,9 +417,7 @@ export default function MoldTestingHubPage() {
                     <li>• Insurance-ready format</li>
                   </ul>
                 </div>
-              </AnimateOnScroll>
               
-              <AnimateOnScroll animation="fade-in-up" duration={600} delay={200}>
                 <div className="bg-gray-50 rounded-xl p-6 border border-gray-100 h-full">
                   <h3 className="text-lg font-semibold text-gray-900 mb-4">Action Plan</h3>
                   <ul className="space-y-2 text-gray-600 text-sm">
@@ -447,7 +428,6 @@ export default function MoldTestingHubPage() {
                     <li>• Follow-up testing schedule</li>
                   </ul>
                 </div>
-              </AnimateOnScroll>
             </div>
           </div>
         </section>

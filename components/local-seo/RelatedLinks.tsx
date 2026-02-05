@@ -2,7 +2,6 @@
 
 import Link from 'next/link';
 import { ArrowRight, Wrench, AlertTriangle, BookOpen } from 'lucide-react';
-import { AnimateOnScroll } from '@/components/AnimateOnScroll';
 import type { InternalLink } from '@/lib/local-seo/links';
 
 interface RelatedLinksProps {
@@ -23,8 +22,7 @@ export function RelatedLinks({
   return (
     <section className="py-16 bg-gray-50">
       <div className="max-w-6xl mx-auto px-4">
-        <AnimateOnScroll animation="fade-in-up" duration={600}>
-          <div className="text-center mb-12">
+        <div className="text-center mb-12">
             <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-3">
               Related Resources
             </h2>
@@ -32,12 +30,10 @@ export function RelatedLinks({
               Explore more services and helpful information
             </p>
           </div>
-        </AnimateOnScroll>
         
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {/* Related Services */}
           {serviceLinks.length > 0 && (
-            <AnimateOnScroll animation="fade-in-up" duration={600} delay={0}>
               <div className="bg-white rounded-xl p-6 border border-gray-100">
                 <div className="flex items-center gap-3 mb-4">
                   <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center">
@@ -61,12 +57,10 @@ export function RelatedLinks({
                   ))}
                 </ul>
               </div>
-            </AnimateOnScroll>
           )}
           
           {/* Related Problems */}
           {problemLinks.length > 0 && (
-            <AnimateOnScroll animation="fade-in-up" duration={600} delay={100}>
               <div className="bg-white rounded-xl p-6 border border-gray-100">
                 <div className="flex items-center gap-3 mb-4">
                   <div className="w-10 h-10 bg-accent/10 rounded-lg flex items-center justify-center">
@@ -90,12 +84,10 @@ export function RelatedLinks({
                   ))}
                 </ul>
               </div>
-            </AnimateOnScroll>
           )}
           
           {/* Related Blog Posts */}
           {blogLinks.length > 0 && (
-            <AnimateOnScroll animation="fade-in-up" duration={600} delay={200}>
               <div className="bg-white rounded-xl p-6 border border-gray-100">
                 <div className="flex items-center gap-3 mb-4">
                   <div className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center">
@@ -119,7 +111,6 @@ export function RelatedLinks({
                   ))}
                 </ul>
               </div>
-            </AnimateOnScroll>
           )}
         </div>
       </div>

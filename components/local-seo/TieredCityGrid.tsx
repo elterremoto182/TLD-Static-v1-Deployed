@@ -3,7 +3,6 @@
 import Link from 'next/link';
 import { MapPin, Star, ChevronDown, ChevronUp } from 'lucide-react';
 import { useState } from 'react';
-import { AnimateOnScroll } from '@/components/AnimateOnScroll';
 import type { City } from '@/lib/local-seo/data';
 import { getCityTier } from '@/lib/local-seo/city-tiers';
 
@@ -47,8 +46,7 @@ export function TieredCityGrid({
   return (
     <section className="py-16 bg-white">
       <div className="max-w-6xl mx-auto px-4">
-        <AnimateOnScroll animation="fade-in-up" duration={600}>
-          <div className="text-center mb-12">
+        <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
               {serviceName} Service Areas
             </h2>
@@ -56,28 +54,20 @@ export function TieredCityGrid({
               Select your city for local {serviceName.toLowerCase()} information and service
             </p>
           </div>
-        </AnimateOnScroll>
         
         {/* Tier 1 Cities - Featured Section */}
         <div className="mb-12">
-          <AnimateOnScroll animation="fade-in-up" duration={600}>
             <div className="flex items-center gap-2 mb-6 pb-2 border-b border-primary/20">
               <Star className="w-5 h-5 text-primary" />
               <h3 className="text-xl font-bold text-gray-900">
                 Major Service Areas
               </h3>
             </div>
-          </AnimateOnScroll>
           
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
-            {tier1Cities.map((city, index) => (
-              <AnimateOnScroll
-                key={city.slug}
-                animation="fade-in-up"
-                duration={600}
-                delay={index * 40}
-              >
+            {tier1Cities.map((city) => (
                 <Link
+                  key={city.slug}
                   href={`/${serviceSlug}/${city.slug}/`}
                   className="group flex items-center gap-2 p-4 bg-primary/5 hover:bg-primary/10 rounded-lg border border-primary/20 hover:border-primary/40 transition-all duration-200"
                 >
@@ -86,14 +76,12 @@ export function TieredCityGrid({
                     {city.name}
                   </span>
                 </Link>
-              </AnimateOnScroll>
             ))}
           </div>
         </div>
         
         {/* All Other Cities - Expandable Section */}
         <div>
-          <AnimateOnScroll animation="fade-in-up" duration={600}>
             <button
               onClick={() => setShowAllCities(!showAllCities)}
               className="flex items-center justify-between w-full mb-6 pb-2 border-b border-gray-200 hover:border-gray-300 transition-colors"
@@ -107,27 +95,19 @@ export function TieredCityGrid({
                 <ChevronDown className="w-5 h-5 text-gray-500" />
               )}
             </button>
-          </AnimateOnScroll>
           
           {showAllCities && (
             <div className="space-y-8">
               {counties.map((county) => (
                 <div key={county}>
-                  <AnimateOnScroll animation="fade-in-up" duration={600}>
                     <h4 className="text-lg font-semibold text-gray-700 mb-4">
                       {county}
                     </h4>
-                  </AnimateOnScroll>
                   
                   <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3">
-                    {citiesByCounty[county].map((city, index) => (
-                      <AnimateOnScroll
-                        key={city.slug}
-                        animation="fade-in-up"
-                        duration={600}
-                        delay={index * 20}
-                      >
+                    {citiesByCounty[county].map((city) => (
                         <Link
+                          key={city.slug}
                           href={`/${serviceSlug}/${city.slug}/`}
                           className="group flex items-center gap-2 p-3 bg-gray-50 hover:bg-primary/5 rounded-lg border border-gray-100 hover:border-primary/20 transition-all duration-200"
                         >
@@ -136,7 +116,6 @@ export function TieredCityGrid({
                             {city.name}
                           </span>
                         </Link>
-                      </AnimateOnScroll>
                     ))}
                   </div>
                 </div>

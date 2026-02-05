@@ -168,7 +168,6 @@ City-specific service pages for local search visibility:
 │   │   └── loading-skeleton.tsx
 │   │
 │   ├── media/VideoPlayer.tsx
-│   ├── AnimateOnScroll.tsx
 │   ├── OptimizedImage.tsx
 │   ├── ReviewBadge.tsx
 │   ├── StickyCallButton.tsx

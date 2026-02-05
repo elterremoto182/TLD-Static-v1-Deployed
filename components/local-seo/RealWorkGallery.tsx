@@ -2,8 +2,6 @@
 
 import { Phone } from 'lucide-react';
 import OptimizedImage from '@/components/OptimizedImage';
-import { AnimateOnScroll } from '@/components/AnimateOnScroll';
-
 interface GalleryImage {
   src: string;
   alt: string;
@@ -115,28 +113,20 @@ export function RealWorkGallery({
   return (
     <section className={`py-12 ${variant === 'compact' ? 'bg-white' : 'bg-gray-50'}`}>
       <div className="max-w-6xl mx-auto px-4">
-        <AnimateOnScroll animation="fade-in-up" duration={600}>
-          <h2 className={`font-bold text-gray-900 mb-3 text-center ${variant === 'compact' ? 'text-2xl' : 'text-3xl'}`}>
+        <h2 className={`font-bold text-gray-900 mb-3 text-center ${variant === 'compact' ? 'text-2xl' : 'text-3xl'}`}>
             {title || defaultTitle}
           </h2>
           <p className={`text-gray-600 text-center max-w-2xl mx-auto ${variant === 'compact' ? 'mb-6 text-base' : 'mb-10 text-lg'}`}>
             {subtitle || defaultSubtitle}
           </p>
-        </AnimateOnScroll>
         
         <div className={`grid gap-4 ${
           variant === 'compact' 
             ? 'grid-cols-1 sm:grid-cols-3' 
             : 'grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6'
         }`}>
-          {displayImages.map((image, index) => (
-            <AnimateOnScroll
-              key={image.src}
-              animation="fade-in-up"
-              duration={600}
-              delay={index * 100}
-            >
-              <div className="relative rounded-xl overflow-hidden shadow-lg group">
+          {displayImages.map((image) => (
+              <div key={image.src} className="relative rounded-xl overflow-hidden shadow-lg group">
                 <OptimizedImage
                   src={image.src}
                   alt={image.alt}
@@ -151,12 +141,10 @@ export function RealWorkGallery({
                   <p className="text-white/80 text-sm">{image.caption}</p>
                 </div>
               </div>
-            </AnimateOnScroll>
           ))}
           
           {/* CTA Card - only show in default variant */}
           {variant === 'default' && (
-            <AnimateOnScroll animation="fade-in-up" duration={600} delay={displayImages.length * 100}>
               <div className="relative rounded-xl overflow-hidden shadow-lg group bg-primary flex items-center justify-center h-64">
                 <div className="text-center p-6">
                   <p className="text-white font-bold text-xl mb-2">Need Our Help?</p>
@@ -170,7 +158,6 @@ export function RealWorkGallery({
                   </a>
                 </div>
               </div>
-            </AnimateOnScroll>
           )}
         </div>
       </div>

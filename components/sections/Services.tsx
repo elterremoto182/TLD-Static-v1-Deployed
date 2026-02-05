@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import OptimizedImage from '@/components/OptimizedImage';
 import { Camera, Zap, Shield, Droplet, AlertTriangle, Waves, FileText, Building, Wrench, LucideIcon } from 'lucide-react';
-import { AnimateOnScroll } from '@/components/AnimateOnScroll';
 import content from '@/config/content.json';
 
 // Icon mapping for service icons - selective imports for better tree-shaking
@@ -39,7 +38,6 @@ export function Services() {
   return (
     <section id="services" className="py-20 md:py-28 bg-background">
       <div className="max-w-6xl mx-auto px-4">
-        <AnimateOnScroll animation="fade-in-up" duration={600} delay={0}>
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-gray-900 mb-4">
               Our Services
@@ -48,21 +46,15 @@ export function Services() {
               Leak detection and plumbing services for Miami homes and businesses
             </p>
           </div>
-        </AnimateOnScroll>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {services.map((service, index) => {
+          {services.map((service) => {
             const IconComponent = iconMap[service.icon] || Wrench;
             const serviceSlug = serviceSlugMap[service.id] || '/services/';
 
             return (
-              <AnimateOnScroll
-                key={service.id}
-                animation="fade-in-up"
-                duration={600}
-                delay={index * 100}
-              >
                 <Link
+                  key={service.id}
                   href={serviceSlug}
                   className="block bg-white rounded-xl border border-gray-200 hover:-translate-y-1 hover:shadow-lg transition-all duration-200 overflow-hidden group cursor-pointer"
                 >
@@ -121,7 +113,6 @@ export function Services() {
                     </ul>
                   </div>
                 </Link>
-              </AnimateOnScroll>
             );
           })}
         </div>

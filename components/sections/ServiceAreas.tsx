@@ -2,8 +2,6 @@
 
 import Link from 'next/link';
 import { MapPin, Droplet, Shield, Camera, ArrowRight } from 'lucide-react';
-import { AnimateOnScroll } from '@/components/AnimateOnScroll';
-
 // Service hub data
 const services = [
   {
@@ -46,8 +44,7 @@ export function ServiceAreas() {
     <section className="py-20 bg-gradient-to-br from-gray-50 to-white" id="service-areas">
       <div className="max-w-6xl mx-auto px-4">
         {/* Section Header */}
-        <AnimateOnScroll animation="fade-in-up" duration={600}>
-          <div className="text-center mb-12">
+        <div className="text-center mb-12">
             <span className="text-primary font-semibold text-sm uppercase tracking-wider">
               Serving South Florida
             </span>
@@ -59,18 +56,12 @@ export function ServiceAreas() {
               throughout Miami-Dade and Broward counties.
             </p>
           </div>
-        </AnimateOnScroll>
 
         {/* Service Cards */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-          {services.map((service, index) => (
-            <AnimateOnScroll
-              key={service.slug}
-              animation="fade-in-up"
-              duration={600}
-              delay={index * 100}
-            >
+          {services.map((service) => (
               <Link
+                key={service.slug}
                 href={`/${service.slug}/`}
                 className="group block bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-primary/20"
               >
@@ -88,12 +79,10 @@ export function ServiceAreas() {
                   <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
                 </span>
               </Link>
-            </AnimateOnScroll>
           ))}
         </div>
 
         {/* Popular Cities Grid */}
-        <AnimateOnScroll animation="fade-in-up" duration={600} delay={300}>
           <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-100">
             <div className="flex items-center justify-between mb-6">
               <h3 className="text-xl font-bold text-gray-900 flex items-center gap-2">
@@ -129,7 +118,6 @@ export function ServiceAreas() {
               ))}
             </div>
           </div>
-        </AnimateOnScroll>
       </div>
     </section>
   );

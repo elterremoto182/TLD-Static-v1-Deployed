@@ -1,6 +1,5 @@
 'use client';
 
-import { AnimateOnScroll } from '@/components/AnimateOnScroll';
 import { Clock, CheckCircle, Award, Quote } from 'lucide-react';
 
 interface LocalIntroProps {
@@ -35,9 +34,8 @@ export function LocalIntro({
   return (
     <section className="py-12 bg-white">
       <div className="max-w-4xl mx-auto px-4">
-        <AnimateOnScroll animation="fade-in-up" duration={600}>
-          {/* Main intro with className for speakable */}
-          <div className="local-intro prose prose-lg max-w-none mb-8">
+        {/* Main intro with className for speakable */}
+        <div className="local-intro prose prose-lg max-w-none mb-8">
             <p className="text-gray-700 leading-relaxed text-lg">
               {intro}
             </p>
@@ -47,11 +45,9 @@ export function LocalIntro({
               </p>
             )}
           </div>
-        </AnimateOnScroll>
 
         {/* Local Stats - if available */}
         {localStats && (
-          <AnimateOnScroll animation="fade-in-up" duration={600} delay={50}>
             <div className="grid grid-cols-3 gap-4 mb-8">
               {localStats.yearsServing && (
                 <div className="text-center p-4 bg-gray-50 rounded-lg">
@@ -81,12 +77,10 @@ export function LocalIntro({
                 </div>
               )}
             </div>
-          </AnimateOnScroll>
         )}
 
         {/* Unique Content - Why Choose Us Local */}
         {uniqueContent?.whyChooseUsLocal && (
-          <AnimateOnScroll animation="fade-in-up" duration={600} delay={75}>
             <div className="bg-primary/5 border border-primary/10 rounded-xl p-6 mb-6">
               <h3 className="text-lg font-semibold text-gray-900 mb-3">
                 Why {cityName} Chooses Us
@@ -100,12 +94,10 @@ export function LocalIntro({
                 </p>
               )}
             </div>
-          </AnimateOnScroll>
         )}
 
         {/* Testimonial Highlight */}
         {uniqueContent?.testimonialHighlight && (
-          <AnimateOnScroll animation="fade-in-up" duration={600} delay={100}>
             <div className="bg-accent/5 border border-accent/20 rounded-xl p-6 mb-6">
               <div className="flex items-start gap-3">
                 <Quote className="w-8 h-8 text-accent flex-shrink-0 mt-1" />
@@ -114,12 +106,10 @@ export function LocalIntro({
                 </p>
               </div>
             </div>
-          </AnimateOnScroll>
         )}
         
         {/* Local factors callout */}
         {localFactors && (
-          <AnimateOnScroll animation="fade-in-up" duration={600} delay={125}>
             <div className="bg-blue-50 border border-blue-100 rounded-xl p-6">
               <h3 className="text-lg font-semibold text-gray-900 mb-3">
                 Understanding {cityName}&apos;s Unique Challenges
@@ -142,7 +132,6 @@ export function LocalIntro({
                 {localFactors.characteristics}
               </p>
             </div>
-          </AnimateOnScroll>
         )}
       </div>
     </section>

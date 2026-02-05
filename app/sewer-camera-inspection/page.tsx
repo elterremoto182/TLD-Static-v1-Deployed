@@ -2,7 +2,6 @@ import { notFound } from 'next/navigation';
 import { Header } from '@/components/sections/Header';
 import { Footer } from '@/components/sections/Footer';
 import { Breadcrumb } from '@/components/ui/breadcrumb';
-import { AnimateOnScroll } from '@/components/AnimateOnScroll';
 import OptimizedImage from '@/components/OptimizedImage';
 import { Phone, Shield, Clock, CheckCircle, Camera, AlertTriangle, Search, Video, Eye } from 'lucide-react';
 
@@ -335,24 +334,16 @@ export default function SewerCameraInspectionHubPage() {
         {/* Advantages Section */}
         <section className="py-16 bg-white">
           <div className="max-w-6xl mx-auto px-4">
-            <AnimateOnScroll animation="fade-in-up" duration={600}>
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 text-center">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 text-center">
                 Advantages of Professional Camera Inspection
               </h2>
               <p className="text-lg text-gray-600 text-center max-w-2xl mx-auto mb-10">
                 Leave it to the professionals—we have a 4.7 Rating on Google with over 100 Reviews!
               </p>
-            </AnimateOnScroll>
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {advantageItems.map((item, index) => (
-                <AnimateOnScroll
-                  key={index}
-                  animation="fade-in-up"
-                  duration={600}
-                  delay={index * 100}
-                >
-                  <div className="bg-gray-50 rounded-xl p-6 border border-gray-100 h-full">
+                  <div key={index} className="bg-gray-50 rounded-xl p-6 border border-gray-100 h-full">
                     <div className="w-8 h-8 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
                       <span className="text-primary font-bold">{index + 1}</span>
                     </div>
@@ -361,7 +352,6 @@ export default function SewerCameraInspectionHubPage() {
                     </h3>
                     <p className="text-gray-600 text-sm">{item.description}</p>
                   </div>
-                </AnimateOnScroll>
               ))}
             </div>
           </div>
@@ -370,8 +360,7 @@ export default function SewerCameraInspectionHubPage() {
         {/* When You Need Inspection */}
         <section className="py-16 bg-gray-50">
           <div className="max-w-4xl mx-auto px-4">
-            <AnimateOnScroll animation="fade-in-up" duration={600}>
-              <div className="text-center mb-10">
+            <div className="text-center mb-10">
                 <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
                   When Do You Need a Camera Inspection?
                 </h2>
@@ -379,23 +368,15 @@ export default function SewerCameraInspectionHubPage() {
                   Schedule an inspection if you notice any of these warning signs
                 </p>
               </div>
-            </AnimateOnScroll>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {whenNeededItems.map((item, index) => {
                 const IconComponent = item.icon;
                 return (
-                  <AnimateOnScroll
-                    key={index}
-                    animation="fade-in-up"
-                    duration={600}
-                    delay={index * 50}
-                  >
-                    <div className="flex items-start gap-3 bg-white rounded-xl p-4 border border-gray-200">
+                    <div key={index} className="flex items-start gap-3 bg-white rounded-xl p-4 border border-gray-200">
                       <IconComponent className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
                       <span className="text-gray-700">{item.text}</span>
                     </div>
-                  </AnimateOnScroll>
                 );
               })}
             </div>
@@ -405,14 +386,12 @@ export default function SewerCameraInspectionHubPage() {
         {/* Service Areas intro */}
         <section className="py-12 bg-white">
           <div className="max-w-4xl mx-auto px-4 text-center">
-            <AnimateOnScroll animation="fade-in-up" duration={600}>
-              <h2 className="text-2xl font-bold text-gray-900 mb-4">
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">
                 Find Sewer Camera Inspection in Your City
               </h2>
               <p className="text-lg text-gray-600">
                 {service.hubContent.serviceAreas}
               </p>
-            </AnimateOnScroll>
           </div>
         </section>
         
@@ -458,24 +437,16 @@ export default function SewerCameraInspectionHubPage() {
         {/* Technology Section */}
         <section className="py-16 bg-white">
           <div className="max-w-6xl mx-auto px-4">
-            <AnimateOnScroll animation="fade-in-up" duration={600}>
-              <h2 className="text-3xl font-bold text-gray-900 mb-4 text-center">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4 text-center">
                 Advanced Camera Technology
               </h2>
               <p className="text-lg text-gray-600 text-center max-w-2xl mx-auto mb-10">
                 We use professional-grade equipment for accurate diagnosis
               </p>
-            </AnimateOnScroll>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {service.bodyContent.technology.map((tech, index) => (
-                <AnimateOnScroll
-                  key={tech.name}
-                  animation="fade-in-up"
-                  duration={600}
-                  delay={index * 100}
-                >
-                  <div className="bg-gray-50 rounded-xl p-6 border border-gray-100">
+              {service.bodyContent.technology.map((tech) => (
+                  <div key={tech.name} className="bg-gray-50 rounded-xl p-6 border border-gray-100">
                     <h3 className="text-lg font-semibold text-gray-900 mb-2">
                       {tech.name}
                     </h3>
@@ -483,7 +454,6 @@ export default function SewerCameraInspectionHubPage() {
                       {tech.description}
                     </p>
                   </div>
-                </AnimateOnScroll>
               ))}
             </div>
           </div>

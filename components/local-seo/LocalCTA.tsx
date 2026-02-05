@@ -1,8 +1,6 @@
 'use client';
 
 import { Phone, Clock, Shield, CheckCircle } from 'lucide-react';
-import { AnimateOnScroll } from '@/components/AnimateOnScroll';
-
 interface LocalCTAProps {
   cityName: string;
   serviceName: string;
@@ -23,7 +21,6 @@ export function LocalCTA({
   return (
     <section className={`py-16 ${isPrimary ? 'bg-gradient-to-br from-primary to-primary/90' : 'bg-gray-900'}`}>
       <div className="max-w-6xl mx-auto px-4">
-        <AnimateOnScroll animation="fade-in-up" duration={600}>
           <div className="text-center">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
               Need {serviceName} in {cityName}?
@@ -65,7 +62,6 @@ export function LocalCTA({
               </a>
             </div>
           </div>
-        </AnimateOnScroll>
       </div>
     </section>
   );

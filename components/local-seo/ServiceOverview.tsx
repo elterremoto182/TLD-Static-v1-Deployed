@@ -1,7 +1,6 @@
 'use client';
 
 import { CheckCircle, AlertTriangle } from '@/lib/icons';
-import { AnimateOnScroll } from '@/components/AnimateOnScroll';
 import type { Technology } from '@/lib/local-seo/data';
 
 interface ServiceOverviewProps {
@@ -27,8 +26,7 @@ export function ServiceOverview({
     <section className="py-16 bg-white">
       <div className="max-w-6xl mx-auto px-4">
         {/* Overview */}
-        <AnimateOnScroll animation="fade-in-up" duration={600}>
-          <div className="max-w-3xl mx-auto text-center mb-16">
+        <div className="max-w-3xl mx-auto text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
               Professional {serviceName} in {cityName}
             </h2>
@@ -36,11 +34,9 @@ export function ServiceOverview({
               {overview}
             </p>
           </div>
-        </AnimateOnScroll>
         
         {/* Why Important */}
-        <AnimateOnScroll animation="fade-in-up" duration={600} delay={100}>
-          <div className="bg-amber-50 border border-amber-200 rounded-xl p-6 mb-12">
+        <div className="bg-amber-50 border border-amber-200 rounded-xl p-6 mb-12">
             <div className="flex items-start gap-4">
               <div className="w-10 h-10 bg-amber-100 rounded-lg flex items-center justify-center flex-shrink-0">
                 <AlertTriangle className="w-5 h-5 text-amber-600" />
@@ -55,24 +51,15 @@ export function ServiceOverview({
               </div>
             </div>
           </div>
-        </AnimateOnScroll>
         
         {/* Technology Grid */}
         <div className="mb-16">
-          <AnimateOnScroll animation="fade-in-up" duration={600}>
             <h3 className="text-2xl font-bold text-gray-900 text-center mb-8">
               Advanced Technology We Use
             </h3>
-          </AnimateOnScroll>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {technology.map((tech, index) => (
-              <AnimateOnScroll
-                key={tech.name}
-                animation="fade-in-up"
-                duration={600}
-                delay={index * 100}
-              >
-                <div className="bg-gray-50 rounded-xl p-6 border border-gray-100">
+            {technology.map((tech) => (
+                <div key={tech.name} className="bg-gray-50 rounded-xl p-6 border border-gray-100">
                   <h4 className="text-lg font-semibold text-gray-900 mb-2">
                     {tech.name}
                   </h4>
@@ -80,7 +67,6 @@ export function ServiceOverview({
                     {tech.description}
                   </p>
                 </div>
-              </AnimateOnScroll>
             ))}
           </div>
         </div>
@@ -88,7 +74,6 @@ export function ServiceOverview({
         {/* Two Column: Signs + Why Choose Us */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {/* Common Signs */}
-          <AnimateOnScroll animation="fade-in-up" duration={600} delay={0}>
             <div className="bg-red-50 rounded-xl p-6 border border-red-100">
               <h3 className="text-xl font-bold text-gray-900 mb-4">
                 Warning Signs to Watch For
@@ -102,10 +87,8 @@ export function ServiceOverview({
                 ))}
               </ul>
             </div>
-          </AnimateOnScroll>
           
           {/* Why Choose Us */}
-          <AnimateOnScroll animation="fade-in-up" duration={600} delay={100}>
             <div className="bg-green-50 rounded-xl p-6 border border-green-100">
               <h3 className="text-xl font-bold text-gray-900 mb-4">
                 Why Choose Total Leak Detection
@@ -119,7 +102,6 @@ export function ServiceOverview({
                 ))}
               </ul>
             </div>
-          </AnimateOnScroll>
         </div>
       </div>
     </section>

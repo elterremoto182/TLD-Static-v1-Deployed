@@ -13,12 +13,6 @@ import { generateBreadcrumbs } from '@/lib/utils';
 import { buildPageSchemaGraph, schemaToJsonLd } from '@/lib/seo/schema';
 import { trackFormSubmission } from '@/lib/analytics';
 
-// Lazy load heavy components
-const AnimateOnScroll = dynamic(
-  () => import('@/components/AnimateOnScroll').then((mod) => ({ default: mod.AnimateOnScroll })),
-  { ssr: true }
-);
-
 // Lazy load map with facade pattern - only loads on user interaction
 const GoogleMapLazy = dynamic(
   () => import('@/components/sections/GoogleMapLazy').then((mod) => ({ default: mod.GoogleMapLazy })),
@@ -167,8 +161,7 @@ export default function ContactPage() {
               <Breadcrumb items={breadcrumbs} />
             </div>
 
-            <AnimateOnScroll animation="fade-in-up" duration={600} delay={0}>
-              <div className="text-center mb-8">
+            <div className="text-center mb-8">
                 <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-gray-900 mb-4">
                   Get Your Free Leak Detection Estimate
                 </h1>
@@ -177,10 +170,8 @@ export default function ContactPage() {
                 </p>
                 <TrustBadges />
               </div>
-            </AnimateOnScroll>
 
             {/* Urgent Contact Banner */}
-            <AnimateOnScroll animation="fade-in-up" duration={600} delay={100}>
               <div className="bg-primary rounded-2xl p-6 md:p-8 mb-8 shadow-xl">
                 <div className="flex flex-col md:flex-row items-center justify-between gap-4">
                   <div className="flex items-center gap-4">
@@ -210,7 +201,6 @@ export default function ContactPage() {
                   </div>
                 </div>
               </div>
-            </AnimateOnScroll>
           </div>
         </section>
 
@@ -221,7 +211,7 @@ export default function ContactPage() {
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-start">
               
               {/* Contact Form - Main Focus (7 columns on desktop) */}
-              <AnimateOnScroll animation="fade-in-up" duration={600} delay={0} className="lg:col-span-7 order-1">
+              <div className="lg:col-span-7 order-1">
                 <div className="bg-white rounded-2xl shadow-xl border border-gray-100 p-6 md:p-8 lg:p-10">
                   <div className="mb-8">
                     <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-2">Request Your Free Estimate</h2>
@@ -371,10 +361,10 @@ export default function ContactPage() {
                     </div>
                   </form>
                 </div>
-              </AnimateOnScroll>
+              </div>
 
               {/* Contact Information - Sidebar (5 columns on desktop) */}
-              <AnimateOnScroll animation="fade-in-up" duration={600} delay={100} className="lg:col-span-5 order-2">
+              <div className="lg:col-span-5 order-2">
                 <div className="space-y-5 lg:sticky lg:top-24">
                   {/* Trust & Credentials Card */}
                   <div className="bg-gradient-to-br from-primary to-blue-700 rounded-2xl p-6 shadow-lg">
@@ -478,7 +468,7 @@ export default function ContactPage() {
                     </div>
                   </div>
                 </div>
-              </AnimateOnScroll>
+              </div>
             </div>
           </div>
         </section>
@@ -486,17 +476,13 @@ export default function ContactPage() {
         {/* Map Section - Lazy loaded with facade pattern */}
         <section className="py-12 bg-gray-50">
           <div className="max-w-6xl mx-auto px-4">
-            <AnimateOnScroll animation="fade-in-up" duration={600} delay={0}>
-              <div className="text-center mb-8">
+            <div className="text-center mb-8">
                 <h2 className="text-2xl font-bold text-gray-900 mb-2">Our Location</h2>
                 <p className="text-gray-600">Serving Miami-Dade, Broward, and Palm Beach Counties</p>
               </div>
-            </AnimateOnScroll>
-            <AnimateOnScroll animation="fade-in-up" duration={600} delay={100}>
-              <Suspense fallback={<MapPlaceholder />}>
+            <Suspense fallback={<MapPlaceholder />}>
                 <GoogleMapLazy />
               </Suspense>
-            </AnimateOnScroll>
           </div>
         </section>
       </main>

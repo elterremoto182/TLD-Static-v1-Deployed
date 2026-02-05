@@ -3,7 +3,6 @@
 import { useState } from 'react';
 import OptimizedImage from '@/components/OptimizedImage';
 import { X, ChevronLeft, ChevronRight } from 'lucide-react';
-import { AnimateOnScroll } from '@/components/AnimateOnScroll';
 import content from '@/config/content.json';
 
 interface Project {
@@ -55,8 +54,7 @@ export function Gallery() {
   return (
     <section id="gallery" className="py-20 md:py-28 bg-muted/30">
       <div className="max-w-7xl mx-auto px-4">
-        <AnimateOnScroll animation="fade-in-up" duration={600} delay={0}>
-          <div className="text-center mb-12">
+        <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-gray-900 mb-4">
               {gallery.headline}
             </h2>
@@ -80,17 +78,11 @@ export function Gallery() {
               ))}
             </div>
           </div>
-        </AnimateOnScroll>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {filteredProjects.map((project: Project, index: number) => (
-            <AnimateOnScroll
-              key={project.id}
-              animation="fade-in-up"
-              duration={600}
-              delay={index * 100}
-            >
+          {filteredProjects.map((project: Project) => (
               <div
+                key={project.id}
                 className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer group"
                 onClick={() => {
                   setSelectedProject(project);
@@ -117,7 +109,6 @@ export function Gallery() {
                   </div>
                 </div>
               </div>
-            </AnimateOnScroll>
           ))}
         </div>
       </div>

@@ -1,6 +1,5 @@
 import { Shield, Award, Clock, Users, CheckCircle, LucideIcon } from 'lucide-react';
 import OptimizedImage from '@/components/OptimizedImage';
-import { AnimateOnScroll } from '@/components/AnimateOnScroll';
 import { YouTubeEmbed } from '@/components/media/YouTubeEmbed';
 import content from '@/config/content.json';
 
@@ -19,7 +18,6 @@ export function About() {
   return (
     <section id="about" className="py-20 md:py-28 bg-muted/50">
       <div className="max-w-6xl mx-auto px-4">
-        <AnimateOnScroll animation="fade-in-up" duration={600} delay={0}>
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
               {about.headline}
@@ -28,10 +26,8 @@ export function About() {
               {about.description}
             </p>
           </div>
-        </AnimateOnScroll>
 
         {about.teamImage && (
-          <AnimateOnScroll animation="fade-in-up" duration={600} delay={0}>
             <div className="mb-16">
               <div className="relative aspect-[21/9] rounded-2xl overflow-hidden shadow-xl">
                 <OptimizedImage
@@ -45,11 +41,9 @@ export function About() {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
               </div>
             </div>
-          </AnimateOnScroll>
         )}
 
         {/* Company Introduction Video */}
-        <AnimateOnScroll animation="fade-in-up" duration={600} delay={100}>
           <div className="mb-16">
             <div className="text-center mb-6">
               <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-3">
@@ -66,17 +60,10 @@ export function About() {
               />
             </div>
           </div>
-        </AnimateOnScroll>
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-16">
           {about.stats.map((stat, index) => (
-            <AnimateOnScroll
-              key={index}
-              animation="scale-in"
-              duration={500}
-              delay={index * 100}
-            >
-              <div className="text-center">
+              <div key={index} className="text-center">
                 <div className="text-4xl md:text-5xl font-bold text-primary mb-2">
                   {stat.value}
                 </div>
@@ -84,7 +71,6 @@ export function About() {
                   {stat.label}
                 </div>
               </div>
-            </AnimateOnScroll>
           ))}
         </div>
 
@@ -93,13 +79,7 @@ export function About() {
             const IconComponent = iconMap[feature.icon] || CheckCircle;
 
             return (
-              <AnimateOnScroll
-                key={index}
-                animation="fade-in-up"
-                duration={600}
-                delay={index * 100}
-              >
-                <div className="bg-white p-6 rounded-xl border border-gray-200">
+                <div key={index} className="bg-white p-6 rounded-xl border border-gray-200">
                   <IconComponent className="w-10 h-10 text-primary mb-4" />
                   <h3 className="text-lg font-bold text-gray-900 mb-2">
                     {feature.title}
@@ -108,7 +88,6 @@ export function About() {
                     {feature.description}
                   </p>
                 </div>
-              </AnimateOnScroll>
             );
           })}
         </div>

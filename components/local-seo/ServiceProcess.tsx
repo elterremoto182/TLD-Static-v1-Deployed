@@ -1,7 +1,6 @@
 'use client';
 
 import { getIcon, CheckCircle } from '@/lib/icons';
-import { AnimateOnScroll } from '@/components/AnimateOnScroll';
 import type { ProcessStep } from '@/lib/local-seo/data';
 
 interface ServiceProcessProps {
@@ -32,13 +31,7 @@ export function ServiceProcess({
             const IconComponent = getIcon(step.icon, CheckCircle);
             
             return (
-              <AnimateOnScroll
-                key={step.step}
-                animation="fade-in-up"
-                duration={600}
-                delay={index * 100}
-              >
-                <div className="relative bg-white rounded-xl p-6 shadow-sm border border-gray-100 h-full">
+                <div key={step.step} className="relative bg-white rounded-xl p-6 shadow-sm border border-gray-100 h-full">
                   {/* Step number */}
                   <div className="absolute -top-3 -left-3 w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center font-bold text-sm">
                     {step.step}
@@ -62,7 +55,6 @@ export function ServiceProcess({
                     <div className="hidden lg:block absolute top-1/2 -right-4 w-8 h-0.5 bg-gray-200" />
                   )}
                 </div>
-              </AnimateOnScroll>
             );
           })}
         </div>

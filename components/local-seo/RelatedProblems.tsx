@@ -2,7 +2,6 @@
 
 import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
-import { AnimateOnScroll } from '@/components/AnimateOnScroll';
 import { getProblemsByService } from '@/lib/local-seo/data';
 import { getIcon } from '@/lib/icons';
 
@@ -24,8 +23,7 @@ export function RelatedProblems({
   return (
     <section className="py-16 bg-white">
       <div className="max-w-6xl mx-auto px-4">
-        <AnimateOnScroll animation="fade-in-up" duration={600}>
-          <div className="text-center mb-12">
+        <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
               {title}
             </h2>
@@ -35,20 +33,14 @@ export function RelatedProblems({
               </p>
             )}
           </div>
-        </AnimateOnScroll>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {problems.map((problem, index) => {
+          {problems.map((problem) => {
             const IconComponent = getIcon(problem.icon);
 
             return (
-              <AnimateOnScroll
-                key={problem.slug}
-                animation="fade-in-up"
-                duration={600}
-                delay={index * 75}
-              >
                 <Link
+                  key={problem.slug}
                   href={`/problems/${problem.slug}/`}
                   className="group block bg-gray-50 hover:bg-white rounded-xl border border-gray-100 hover:border-primary/20 hover:shadow-lg transition-all duration-200 h-full"
                 >
@@ -74,7 +66,6 @@ export function RelatedProblems({
                     </div>
                   </div>
                 </Link>
-              </AnimateOnScroll>
             );
           })}
         </div>

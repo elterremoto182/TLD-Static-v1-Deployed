@@ -2,7 +2,6 @@ import Link from 'next/link';
 import { Header } from '@/components/sections/Header';
 import { Footer } from '@/components/sections/Footer';
 import { Breadcrumb } from '@/components/ui/breadcrumb';
-import { AnimateOnScroll } from '@/components/AnimateOnScroll';
 import OptimizedImage from '@/components/OptimizedImage';
 import content from '@/config/content.json';
 import { getIcon, Wrench } from '@/lib/icons';
@@ -64,32 +63,25 @@ export default function ServicesPage() {
             <Breadcrumb items={breadcrumbs} />
           </div>
           <div className="max-w-6xl mx-auto px-4 text-center">
-            <AnimateOnScroll animation="fade-in-up" duration={600} delay={0}>
-              <h1 className="text-5xl md:text-6xl font-bold tracking-tight text-gray-900 mb-6">
+            <h1 className="text-5xl md:text-6xl font-bold tracking-tight text-gray-900 mb-6">
                 Our Services
               </h1>
               <p className="text-xl text-gray-600 max-w-2xl mx-auto">
                 Comprehensive plumbing and leak detection services in Miami, FL
               </p>
-            </AnimateOnScroll>
           </div>
         </section>
 
         <section className="py-20 bg-background">
           <div className="max-w-6xl mx-auto px-4">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {services.map((service, index) => {
+              {services.map((service) => {
                 const IconComponent = getIcon(service.icon, Wrench);
                 const serviceSlug = serviceSlugMap[service.id] || '/services/';
 
                 return (
-                  <AnimateOnScroll
-                    key={service.id}
-                    animation="fade-in-up"
-                    duration={600}
-                    delay={index * 100}
-                  >
                     <Link
+                      key={service.id}
                       href={serviceSlug}
                       className="block bg-white rounded-xl border border-gray-200 overflow-hidden hover:-translate-y-1 hover:shadow-lg transition-all duration-200 group"
                     >
@@ -164,7 +156,6 @@ export default function ServicesPage() {
                         </span>
                       </div>
                     </Link>
-                  </AnimateOnScroll>
                 );
               })}
             </div>

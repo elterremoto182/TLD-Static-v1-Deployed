@@ -51,8 +51,7 @@ export default function RootLayout({
     ...generateOrganizationSchema(),
   };
 
-  // Get critical image paths for preloading
-  const heroBackgroundImage = '/images/hero/hero-background.jpeg';
+  // Logo is above-the-fold on every page; hero image is preloaded only on homepage via (home)/layout
   const logoImage = siteConfig.logo || '/images/logo.png';
 
   return (
@@ -64,14 +63,7 @@ export default function RootLayout({
         {/* Preconnect to analytics domains for faster script loading */}
         <link rel="preconnect" href="https://www.googletagmanager.com" />
         <link rel="preconnect" href="https://www.google-analytics.com" />
-        {/* Preload critical images with explicit types for better optimization */}
-        <link
-          rel="preload"
-          href={heroBackgroundImage}
-          as="image"
-          type="image/jpeg"
-          fetchPriority="high"
-        />
+        {/* Preload logo - above-the-fold on every page */}
         <link
           rel="preload"
           href={logoImage}

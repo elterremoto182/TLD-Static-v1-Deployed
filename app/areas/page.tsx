@@ -2,7 +2,6 @@ import Link from 'next/link';
 import { Header } from '@/components/sections/Header';
 import { Footer } from '@/components/sections/Footer';
 import { Breadcrumb } from '@/components/ui/breadcrumb';
-import { AnimateOnScroll } from '@/components/AnimateOnScroll';
 import { Phone, MapPin, Droplet, Shield, Camera, ArrowRight } from 'lucide-react';
 
 import { getAllCities, getAllServices } from '@/lib/local-seo/data';
@@ -82,8 +81,7 @@ export default function AreasPage() {
               <Breadcrumb items={breadcrumbs} />
             </div>
             
-            <AnimateOnScroll animation="fade-in-up" duration={600}>
-              <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
                 Service Areas
               </h1>
               <p className="text-xl text-gray-600 max-w-3xl mb-8">
@@ -98,30 +96,22 @@ export default function AreasPage() {
                 <Phone className="w-5 h-5" />
                 Call (855) 385-5325
               </a>
-            </AnimateOnScroll>
           </div>
         </section>
         
         {/* Services Section */}
         <section className="py-16 bg-white">
           <div className="max-w-6xl mx-auto px-4">
-            <AnimateOnScroll animation="fade-in-up" duration={600}>
-              <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">
+            <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">
                 Our Services
               </h2>
-            </AnimateOnScroll>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {services.map((service, index) => {
+              {services.map((service) => {
                 const IconComponent = SERVICE_ICONS[service.slug] || Droplet;
                 return (
-                  <AnimateOnScroll
-                    key={service.slug}
-                    animation="fade-in-up"
-                    duration={600}
-                    delay={index * 100}
-                  >
                     <Link
+                      key={service.slug}
                       href={`/${service.slug}/`}
                       className="group block bg-gray-50 hover:bg-primary/5 rounded-xl p-6 border border-gray-100 hover:border-primary/20 transition-all duration-200"
                     >
@@ -141,7 +131,6 @@ export default function AreasPage() {
                         <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
                       </span>
                     </Link>
-                  </AnimateOnScroll>
                 );
               })}
             </div>
@@ -151,28 +140,20 @@ export default function AreasPage() {
         {/* Popular Cities Quick Links */}
         <section className="py-16 bg-gray-50">
           <div className="max-w-6xl mx-auto px-4">
-            <AnimateOnScroll animation="fade-in-up" duration={600}>
-              <h2 className="text-3xl font-bold text-gray-900 mb-4 text-center">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4 text-center">
                 Popular Service Areas
               </h2>
               <p className="text-gray-600 text-center mb-8 max-w-2xl mx-auto">
                 Quick access to our most requested service areas
               </p>
-            </AnimateOnScroll>
             
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-              {popularCities.map((citySlug, index) => {
+              {popularCities.map((citySlug) => {
                 const city = cities.find(c => c.slug === citySlug);
                 if (!city) return null;
                 
                 return (
-                  <AnimateOnScroll
-                    key={citySlug}
-                    animation="fade-in-up"
-                    duration={600}
-                    delay={index * 50}
-                  >
-                    <div className="bg-white rounded-xl p-4 border border-gray-100 hover:border-primary/20 hover:shadow-md transition-all">
+                    <div key={citySlug} className="bg-white rounded-xl p-4 border border-gray-100 hover:border-primary/20 hover:shadow-md transition-all">
                       <div className="flex items-center gap-2 mb-3">
                         <MapPin className="w-5 h-5 text-primary" />
                         <h3 className="font-semibold text-gray-900">{city.name}</h3>
@@ -189,7 +170,6 @@ export default function AreasPage() {
                         ))}
                       </div>
                     </div>
-                  </AnimateOnScroll>
                 );
               })}
             </div>
@@ -199,29 +179,19 @@ export default function AreasPage() {
         {/* All Cities by County */}
         <section className="py-16 bg-white">
           <div className="max-w-6xl mx-auto px-4">
-            <AnimateOnScroll animation="fade-in-up" duration={600}>
-              <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">
+            <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">
                 All Service Areas
               </h2>
-            </AnimateOnScroll>
             
             {Object.entries(citiesByCounty).sort().map(([county, countyCities]) => (
               <div key={county} className="mb-12 last:mb-0">
-                <AnimateOnScroll animation="fade-in-up" duration={600}>
-                  <h3 className="text-2xl font-bold text-gray-900 mb-6 pb-2 border-b border-gray-200">
+                <h3 className="text-2xl font-bold text-gray-900 mb-6 pb-2 border-b border-gray-200">
                     {county}
                   </h3>
-                </AnimateOnScroll>
                 
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
-                  {countyCities.map((city, index) => (
-                    <AnimateOnScroll
-                      key={city.slug}
-                      animation="fade-in-up"
-                      duration={600}
-                      delay={index * 30}
-                    >
-                      <div className="bg-gray-50 rounded-lg p-4 hover:bg-primary/5 transition-colors">
+                  {countyCities.map((city) => (
+                      <div key={city.slug} className="bg-gray-50 rounded-lg p-4 hover:bg-primary/5 transition-colors">
                         <div className="flex items-center gap-2 mb-2">
                           <MapPin className="w-4 h-4 text-primary" />
                           <span className="font-semibold text-gray-900">{city.name}</span>
@@ -238,7 +208,6 @@ export default function AreasPage() {
                           ))}
                         </div>
                       </div>
-                    </AnimateOnScroll>
                   ))}
                 </div>
               </div>
@@ -249,8 +218,7 @@ export default function AreasPage() {
         {/* CTA Section */}
         <section className="py-16 bg-gradient-to-br from-primary to-primary/90">
           <div className="max-w-4xl mx-auto px-4 text-center">
-            <AnimateOnScroll animation="fade-in-up" duration={600}>
-              <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
                 Don&apos;t See Your City?
               </h2>
               <p className="text-lg text-white/90 mb-8 max-w-2xl mx-auto">
@@ -272,7 +240,6 @@ export default function AreasPage() {
                   Contact Us
                 </Link>
               </div>
-            </AnimateOnScroll>
           </div>
         </section>
       </main>

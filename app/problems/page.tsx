@@ -2,7 +2,6 @@ import Link from 'next/link';
 import { Header } from '@/components/sections/Header';
 import { Footer } from '@/components/sections/Footer';
 import { Breadcrumb } from '@/components/ui/breadcrumb';
-import { AnimateOnScroll } from '@/components/AnimateOnScroll';
 import { Phone, AlertTriangle, Wrench, getIcon } from '@/lib/icons';
 import { getAllProblems, getAllServices, getProblemsByService } from '@/lib/local-seo/data';
 import {
@@ -88,8 +87,7 @@ export default function ProblemsPage() {
             <Breadcrumb items={breadcrumbs} />
           </div>
           <div className="max-w-6xl mx-auto px-4 text-center">
-            <AnimateOnScroll animation="fade-in-up" duration={600} delay={0}>
-              <div className="inline-flex items-center gap-2 bg-red-100 text-red-700 px-4 py-2 rounded-full text-sm font-medium mb-6">
+            <div className="inline-flex items-center gap-2 bg-red-100 text-red-700 px-4 py-2 rounded-full text-sm font-medium mb-6">
                 <AlertTriangle className="w-4 h-4" />
                 Expert Problem Diagnosis
               </div>
@@ -108,7 +106,6 @@ export default function ProblemsPage() {
                 <Phone className="w-6 h-6" />
                 Call (855) 385-5325
               </a>
-            </AnimateOnScroll>
           </div>
         </section>
 
@@ -122,8 +119,7 @@ export default function ProblemsPage() {
               className={`py-16 ${groupIndex % 2 === 0 ? 'bg-white' : 'bg-gray-50'}`}
             >
               <div className="max-w-6xl mx-auto px-4">
-                <AnimateOnScroll animation="fade-in-up" duration={600}>
-                  <div className="flex items-center gap-4 mb-8">
+                <div className="flex items-center gap-4 mb-8">
                     <div className="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center">
                       <ServiceIcon className="w-7 h-7 text-primary" />
                     </div>
@@ -136,20 +132,14 @@ export default function ProblemsPage() {
                       </p>
                     </div>
                   </div>
-                </AnimateOnScroll>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                  {group.problems.map((problem, index) => {
+                  {group.problems.map((problem) => {
                     const ProblemIcon = getIcon(problem.icon);
 
                     return (
-                      <AnimateOnScroll
-                        key={problem.slug}
-                        animation="fade-in-up"
-                        duration={600}
-                        delay={index * 100}
-                      >
                         <Link
+                          key={problem.slug}
                           href={`/problems/${problem.slug}/`}
                           className="group block bg-white rounded-xl border border-gray-200 overflow-hidden hover:-translate-y-1 hover:shadow-lg transition-all duration-200"
                         >
@@ -205,7 +195,6 @@ export default function ProblemsPage() {
                             </span>
                           </div>
                         </Link>
-                      </AnimateOnScroll>
                     );
                   })}
                 </div>
@@ -217,8 +206,7 @@ export default function ProblemsPage() {
         {/* CTA Section */}
         <section className="py-20 bg-gradient-to-br from-primary to-primary/90">
           <div className="max-w-4xl mx-auto px-4 text-center">
-            <AnimateOnScroll animation="fade-in-up" duration={600}>
-              <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
                 Not Sure What&apos;s Causing the Problem?
               </h2>
               <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
@@ -240,15 +228,13 @@ export default function ProblemsPage() {
                   Request Free Estimate
                 </Link>
               </div>
-            </AnimateOnScroll>
           </div>
         </section>
 
         {/* All Problems Quick Links */}
         <section className="py-16 bg-gray-50">
           <div className="max-w-6xl mx-auto px-4">
-            <AnimateOnScroll animation="fade-in-up" duration={600}>
-              <h2 className="text-2xl font-bold text-gray-900 mb-8 text-center">
+            <h2 className="text-2xl font-bold text-gray-900 mb-8 text-center">
                 All Problem Types We Diagnose
               </h2>
               <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3">
@@ -269,7 +255,6 @@ export default function ProblemsPage() {
                   );
                 })}
               </div>
-            </AnimateOnScroll>
           </div>
         </section>
       </main>

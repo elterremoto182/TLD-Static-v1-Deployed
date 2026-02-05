@@ -2,7 +2,6 @@
 
 import Link from 'next/link';
 import { MapPin, Star, ArrowRight } from 'lucide-react';
-import { AnimateOnScroll } from '@/components/AnimateOnScroll';
 import type { City } from '@/lib/local-seo/data';
 import { getCityTier } from '@/lib/local-seo/city-tiers';
 
@@ -39,8 +38,7 @@ export function ServiceHubCityGrid({
   return (
     <section className="py-16 bg-white">
       <div className="max-w-6xl mx-auto px-4">
-        <AnimateOnScroll animation="fade-in-up" duration={600}>
-          <div className="text-center mb-12">
+        <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
               {serviceName} Service Areas
             </h2>
@@ -48,28 +46,20 @@ export function ServiceHubCityGrid({
               Select your city for local {serviceName.toLowerCase()} information and service
             </p>
           </div>
-        </AnimateOnScroll>
         
         {/* Tier 1 Cities - Major Service Areas */}
         <div className="mb-8">
-          <AnimateOnScroll animation="fade-in-up" duration={600}>
             <div className="flex items-center gap-2 mb-6 pb-2 border-b border-primary/20">
               <Star className="w-5 h-5 text-primary" />
               <h3 className="text-xl font-bold text-gray-900">
                 Major Service Areas
               </h3>
             </div>
-          </AnimateOnScroll>
           
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
-            {tier1Cities.map((city, index) => (
-              <AnimateOnScroll
-                key={city.slug}
-                animation="fade-in-up"
-                duration={600}
-                delay={index * 40}
-              >
+            {tier1Cities.map((city) => (
                 <Link
+                  key={city.slug}
                   href={`/${serviceSlug}/${city.slug}/`}
                   className="group flex items-center gap-2 p-4 bg-primary/5 hover:bg-primary/10 rounded-lg border border-primary/20 hover:border-primary/40 transition-all duration-200"
                 >
@@ -78,14 +68,12 @@ export function ServiceHubCityGrid({
                     {city.name}
                   </span>
                 </Link>
-              </AnimateOnScroll>
             ))}
           </div>
         </div>
         
         {/* Link to All Service Areas - Single link to /areas/ page */}
         {otherCitiesCount > 0 && (
-          <AnimateOnScroll animation="fade-in-up" duration={600}>
             <div className="text-center pt-6 border-t border-gray-100">
               <p className="text-gray-600 mb-3">
                 We also serve {otherCitiesCount}+ additional cities across South Florida
@@ -98,7 +86,6 @@ export function ServiceHubCityGrid({
                 <ArrowRight className="w-4 h-4" />
               </Link>
             </div>
-          </AnimateOnScroll>
         )}
       </div>
     </section>

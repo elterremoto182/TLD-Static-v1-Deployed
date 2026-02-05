@@ -2,7 +2,6 @@ import Link from 'next/link';
 import type { Metadata } from 'next';
 import { Header } from '@/components/sections/Header';
 import { Footer } from '@/components/sections/Footer';
-import { AnimateOnScroll } from '@/components/AnimateOnScroll';
 import { ThankYouAnalytics } from '@/components/ThankYouAnalytics';
 import OptimizedImage from '@/components/OptimizedImage';
 import { 
@@ -91,8 +90,7 @@ export default function ThankYouPage() {
         {/* Confirmation Hero */}
         <section className="bg-gradient-to-br from-green-50 via-white to-primary/5 py-16 md:py-20">
           <div className="max-w-4xl mx-auto px-4 text-center">
-            <AnimateOnScroll animation="fade-in-up" duration={600} delay={0}>
-              <div className="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
+            <div className="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
                 <CheckCircle className="w-10 h-10 text-green-600" />
               </div>
               
@@ -101,9 +99,8 @@ export default function ThankYouPage() {
               </h1>
               
               <p className="text-xl text-gray-600 max-w-2xl mx-auto mb-8">
-                Your request has been received. A team member will contact you within 
-                <span className="font-semibold text-gray-900"> 2 hours </span> 
-                during business hours.
+                We will reach out within 
+                <span className="font-semibold text-gray-900"> 10 minutes</span>.
               </p>
 
               {/* What happens next */}
@@ -149,14 +146,12 @@ export default function ThankYouPage() {
                 </a>
                 <p className="text-xs text-white/80 mt-1">Available 24/7 for emergencies</p>
               </div>
-            </AnimateOnScroll>
           </div>
         </section>
 
         {/* While You Wait - Guides */}
         <section className="py-16 bg-gray-50">
           <div className="max-w-6xl mx-auto px-4">
-            <AnimateOnScroll animation="fade-in-up" duration={600} delay={0}>
               <div className="text-center mb-10">
                 <div className="flex items-center justify-center gap-2 mb-3">
                   <BookOpen className="w-5 h-5 text-primary" />
@@ -171,19 +166,13 @@ export default function ThankYouPage() {
                   Browse our guides to learn more about common plumbing issues and how we solve them.
                 </p>
               </div>
-            </AnimateOnScroll>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-              {GUIDES.map((guide, index) => {
+              {GUIDES.map((guide) => {
                 const IconComponent = guide.icon;
                 return (
-                  <AnimateOnScroll
-                    key={guide.href}
-                    animation="fade-in-up"
-                    duration={600}
-                    delay={index * 100}
-                  >
                     <Link
+                      key={guide.href}
                       href={guide.href}
                       className="group block bg-white rounded-xl border border-gray-200 overflow-hidden hover:-translate-y-1 hover:shadow-lg transition-all duration-300"
                     >
@@ -213,7 +202,6 @@ export default function ThankYouPage() {
                         </span>
                       </div>
                     </Link>
-                  </AnimateOnScroll>
                 );
               })}
             </div>
@@ -223,7 +211,6 @@ export default function ThankYouPage() {
         {/* Popular Blog Posts */}
         <section className="py-16 bg-white">
           <div className="max-w-4xl mx-auto px-4">
-            <AnimateOnScroll animation="fade-in-up" duration={600} delay={0}>
               <div className="text-center mb-8">
                 <h2 className="text-2xl font-bold text-gray-900 mb-2">
                   Popular Articles
@@ -232,17 +219,11 @@ export default function ThankYouPage() {
                   Tips and insights from our plumbing experts
                 </p>
               </div>
-            </AnimateOnScroll>
 
             <div className="space-y-4">
-              {POPULAR_POSTS.map((post, index) => (
-                <AnimateOnScroll
-                  key={post.href}
-                  animation="fade-in-up"
-                  duration={600}
-                  delay={index * 100}
-                >
+              {POPULAR_POSTS.map((post) => (
                   <Link
+                    key={post.href}
                     href={post.href}
                     className="group flex items-center justify-between p-4 bg-gray-50 rounded-xl hover:bg-primary/5 transition-colors duration-200"
                   >
@@ -259,7 +240,6 @@ export default function ThankYouPage() {
                     </div>
                     <ArrowRight className="w-5 h-5 text-gray-400 group-hover:text-primary group-hover:translate-x-1 transition-all" />
                   </Link>
-                </AnimateOnScroll>
               ))}
             </div>
 
@@ -278,7 +258,6 @@ export default function ThankYouPage() {
         {/* Trust & Testimonial */}
         <section className="py-16 bg-gradient-to-br from-gray-900 to-gray-800">
           <div className="max-w-4xl mx-auto px-4">
-            <AnimateOnScroll animation="fade-in-up" duration={600} delay={0}>
               {/* Trust Badges */}
               <div className="flex flex-wrap items-center justify-center gap-6 mb-10 text-white/90">
                 <div className="flex items-center gap-2">
@@ -328,7 +307,6 @@ export default function ThankYouPage() {
                   Return to Homepage
                 </Link>
               </div>
-            </AnimateOnScroll>
           </div>
         </section>
       </main>

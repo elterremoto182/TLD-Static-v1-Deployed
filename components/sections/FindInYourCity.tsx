@@ -2,8 +2,6 @@
 
 import Link from 'next/link';
 import { MapPin, ArrowRight, Droplet, Shield, Camera } from 'lucide-react';
-import { AnimateOnScroll } from '@/components/AnimateOnScroll';
-
 interface FindInYourCityProps {
   serviceSlug: string;
   serviceName: string;
@@ -62,8 +60,7 @@ export function FindInYourCity({ serviceSlug, serviceName }: FindInYourCityProps
   return (
     <section className="py-16 bg-gradient-to-br from-gray-50 to-white border-t border-gray-100">
       <div className="max-w-4xl mx-auto px-4">
-        <AnimateOnScroll animation="fade-in-up" duration={600}>
-          <div className="text-center mb-10">
+        <div className="text-center mb-10">
             <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full mb-4">
               <MapPin className="w-4 h-4" />
               <span className="font-semibold text-sm">Local Service Available</span>
@@ -76,10 +73,8 @@ export function FindInYourCity({ serviceSlug, serviceName }: FindInYourCityProps
               Select your city below to learn about local services and response times.
             </p>
           </div>
-        </AnimateOnScroll>
 
-        <AnimateOnScroll animation="fade-in-up" duration={600} delay={150}>
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3 mb-8">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3 mb-8">
             {popularCities.map((city) => (
               <Link
                 key={city.slug}
@@ -98,10 +93,8 @@ export function FindInYourCity({ serviceSlug, serviceName }: FindInYourCityProps
               </Link>
             ))}
           </div>
-        </AnimateOnScroll>
 
-        <AnimateOnScroll animation="fade-in-up" duration={600} delay={300}>
-          <div className="text-center">
+        <div className="text-center">
             <Link
               href={`/${localSeoServiceSlug}/`}
               className="inline-flex items-center gap-2 bg-primary hover:bg-primary/90 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-200 shadow-lg hover:shadow-xl"
@@ -113,7 +106,6 @@ export function FindInYourCity({ serviceSlug, serviceName }: FindInYourCityProps
               Serving 38+ cities in Miami-Dade & Broward counties
             </p>
           </div>
-        </AnimateOnScroll>
       </div>
     </section>
   );

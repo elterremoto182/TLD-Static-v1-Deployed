@@ -3,7 +3,6 @@
 import Link from 'next/link';
 import OptimizedImage from '@/components/OptimizedImage';
 import { VideoPlayer } from '@/components/media/VideoPlayer';
-import { AnimateOnScroll } from '@/components/AnimateOnScroll';
 import content from '@/config/content.json';
 
 export function Hero() {
@@ -44,47 +43,41 @@ export function Hero() {
       )}
 
       <div className="relative z-10 max-w-4xl mx-auto px-4 text-center">
-        <AnimateOnScroll animation="fade-in-up" duration={800} delay={0}>
-          <h1
-            className={`text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-6 ${
-              hero.backgroundVideo || hero.backgroundImage
-                ? 'text-white'
-                : 'text-gray-900'
-            }`}
+        <h1
+          className={`text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-6 ${
+            hero.backgroundVideo || hero.backgroundImage
+              ? 'text-white'
+              : 'text-gray-900'
+          }`}
+        >
+          {hero.headline}
+        </h1>
+
+        <p
+          className={`text-xl md:text-2xl mb-8 leading-relaxed ${
+            hero.backgroundVideo || hero.backgroundImage
+              ? 'text-gray-100'
+              : 'text-gray-600'
+          }`}
+        >
+          {hero.subheadline}
+        </p>
+
+        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <Link
+            href={hero.ctaPrimary.href}
+            className="inline-block bg-accent text-white font-semibold px-8 py-4 rounded-xl shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-all duration-200"
           >
-            {hero.headline}
-          </h1>
-        </AnimateOnScroll>
+            {hero.ctaPrimary.text}
+          </Link>
 
-        <AnimateOnScroll animation="fade-in-up" duration={800} delay={200}>
-          <p
-            className={`text-xl md:text-2xl mb-8 leading-relaxed ${
-              hero.backgroundVideo || hero.backgroundImage
-                ? 'text-gray-100'
-                : 'text-gray-600'
-            }`}
+          <Link
+            href={hero.ctaSecondary.href}
+            className="inline-block border-2 border-white text-white font-semibold px-8 py-4 rounded-xl hover:bg-white hover:text-primary transition-all duration-200"
           >
-            {hero.subheadline}
-          </p>
-        </AnimateOnScroll>
-
-        <AnimateOnScroll animation="fade-in-up" duration={800} delay={400}>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Link
-              href={hero.ctaPrimary.href}
-              className="inline-block bg-accent text-white font-semibold px-8 py-4 rounded-xl shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-all duration-200"
-            >
-              {hero.ctaPrimary.text}
-            </Link>
-
-            <Link
-              href={hero.ctaSecondary.href}
-              className="inline-block border-2 border-white text-white font-semibold px-8 py-4 rounded-xl hover:bg-white hover:text-primary transition-all duration-200"
-            >
-              {hero.ctaSecondary.text}
-            </Link>
-          </div>
-        </AnimateOnScroll>
+            {hero.ctaSecondary.text}
+          </Link>
+        </div>
       </div>
 
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">

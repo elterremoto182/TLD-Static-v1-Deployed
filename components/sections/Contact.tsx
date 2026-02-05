@@ -3,7 +3,6 @@
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { Mail, Phone, MapPin, CheckCircle, AlertCircle, Loader2, Clock, Shield, Star, PhoneCall, MessageCircle } from 'lucide-react';
-import { AnimateOnScroll } from '@/components/AnimateOnScroll';
 import siteConfig from '@/config/site.json';
 import content from '@/config/content.json';
 import { trackFormSubmission } from '@/lib/analytics';
@@ -81,7 +80,6 @@ export function Contact() {
   return (
     <section id="contact" className="py-20 md:py-28 bg-gradient-to-br from-primary/5 via-muted/50 to-primary/5">
       <div className="max-w-6xl mx-auto px-4">
-        <AnimateOnScroll animation="fade-in-up" duration={600} delay={0}>
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-gray-900 mb-4">
               {contact.headline}
@@ -105,10 +103,8 @@ export function Contact() {
               </div>
             </div>
           </div>
-        </AnimateOnScroll>
 
         {/* Urgent Phone CTA */}
-        <AnimateOnScroll animation="fade-in-up" duration={600} delay={100}>
           <div className="bg-primary text-white rounded-2xl p-6 mb-12 shadow-xl">
             <div className="flex flex-col md:flex-row items-center justify-between gap-4">
               <div className="flex items-center gap-4">
@@ -129,11 +125,10 @@ export function Contact() {
               </a>
             </div>
           </div>
-        </AnimateOnScroll>
 
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 lg:gap-12">
           {/* Contact Info - Smaller Column (col-span on grid child so it gets correct width) */}
-          <AnimateOnScroll animation="fade-in-left" duration={600} delay={0} className="lg:col-span-2 min-w-0">
+          <div className="lg:col-span-2 min-w-0">
             <div className="space-y-4">
               <a
                 href={`tel:${siteConfig.phone}`}
@@ -184,10 +179,10 @@ export function Contact() {
                 <p className="text-sm font-semibold text-gray-900">— Hector R.</p>
               </div>
             </div>
-          </AnimateOnScroll>
+          </div>
 
           {/* Form - Larger Column (col-span on grid child so it gets correct width) */}
-          <AnimateOnScroll animation="fade-in-right" duration={600} delay={0} className="lg:col-span-3 min-w-0">
+          <div className="lg:col-span-3 min-w-0">
             <div className="bg-white rounded-2xl shadow-xl p-6 md:p-8 border border-gray-100">
               <div className="mb-6">
                 <h3 className="text-xl font-bold text-gray-900 mb-1">Request Your Free Estimate</h3>
@@ -314,7 +309,7 @@ export function Contact() {
                 </div>
               </form>
             </div>
-          </AnimateOnScroll>
+          </div>
         </div>
       </div>
     </section>

@@ -1,5 +1,4 @@
 import { CheckCircle } from 'lucide-react';
-import { AnimateOnScroll } from '@/components/AnimateOnScroll';
 
 const detectTypes = [
   'Slab leaks under foundations',
@@ -12,22 +11,17 @@ export function ValueProposition() {
   return (
     <section className="py-16 md:py-20 bg-white">
       <div className="max-w-4xl mx-auto px-4">
-        <AnimateOnScroll animation="fade-in-up" duration={600} delay={0}>
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">
-            Why Homeowners Choose Us for Leak Detection
-          </h2>
-        </AnimateOnScroll>
+        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">
+          Why Homeowners Choose Us for Leak Detection
+        </h2>
 
-        <AnimateOnScroll animation="fade-in-up" duration={600} delay={100}>
-          <p className="text-lg text-gray-600 mb-8 text-center max-w-3xl mx-auto leading-relaxed">
-            Finding a hidden water leak can save you thousands in damage. Our Miami-based team 
-            uses advanced acoustic and thermal technology to pinpoint leaks without tearing up 
-            your property.
-          </p>
-        </AnimateOnScroll>
+        <p className="text-lg text-gray-600 mb-8 text-center max-w-3xl mx-auto leading-relaxed">
+          Finding a hidden water leak can save you thousands in damage. Our Miami-based team 
+          uses advanced acoustic and thermal technology to pinpoint leaks without tearing up 
+          your property.
+        </p>
 
         <div className="grid md:grid-cols-2 gap-8 mt-12">
-          <AnimateOnScroll animation="fade-in-up" duration={600} delay={200}>
             <div className="bg-muted/30 rounded-xl p-6 border border-gray-100">
               <h3 className="text-xl font-bold text-gray-900 mb-4">
                 What We Detect
@@ -41,9 +35,7 @@ export function ValueProposition() {
                 ))}
               </ul>
             </div>
-          </AnimateOnScroll>
 
-          <AnimateOnScroll animation="fade-in-up" duration={600} delay={300}>
             <div className="bg-muted/30 rounded-xl p-6 border border-gray-100">
               <h3 className="text-xl font-bold text-gray-900 mb-4">
                 Our Approach
@@ -69,7 +61,6 @@ export function ValueProposition() {
                 </div>
               </div>
             </div>
-          </AnimateOnScroll>
         </div>
       </div>
     </section>
