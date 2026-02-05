@@ -8,6 +8,7 @@ export {
   // Types
   type BreadcrumbItem,
   type SchemaGraph,
+  type VideoObjectSchema,
   
   // Core schema generators
   generateWebSiteSchema,
@@ -22,6 +23,7 @@ export {
   generateFaqSchema,
   generateFAQSchema,
   generateHowToSchema,
+  generateVideoObjectSchema,
   
   // Graph builder
   buildPageSchemaGraph,

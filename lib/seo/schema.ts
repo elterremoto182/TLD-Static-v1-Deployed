@@ -211,6 +211,23 @@ export interface HowToSchema {
   tool?: Array<{ '@type': 'HowToTool'; name: string }>;
 }
 
+export interface VideoObjectSchema {
+  '@type': 'VideoObject';
+  '@id'?: string;
+  name: string;
+  description: string;
+  thumbnailUrl: string | string[];
+  uploadDate: string;
+  duration?: string;
+  contentUrl?: string;
+  embedUrl: string;
+  publisher?: { '@id': string };
+  potentialAction?: {
+    '@type': 'WatchAction';
+    target: string;
+  };
+}
+
 // Schema graph type
 export interface SchemaGraph {
   '@context': 'https://schema.org';
@@ -847,6 +864,51 @@ export function generateHowToSchema(
       '@type': 'HowToTool',
       name: tech.name,
     }));
+  }
+
+  return schema;
+}
+
+/**
+ * Generate VideoObject schema for embedded videos
+ * Supports YouTube videos with automatic thumbnail and embed URL generation
+ */
+export function generateVideoObjectSchema(options: {
+  videoId: string;
+  name: string;
+  description: string;
+  uploadDate?: string;
+  duration?: string; // ISO 8601 duration format, e.g., "PT5M30S"
+  pageUrl?: string;
+}): Omit<VideoObjectSchema, '@context'> {
+  const videoUrl = `https://www.youtube.com/watch?v=${options.videoId}`;
+  const embedUrl = `https://www.youtube.com/embed/${options.videoId}`;
+  
+  // YouTube thumbnail URLs - provide multiple resolutions for Google
+  const thumbnailUrls = [
+    `https://img.youtube.com/vi/${options.videoId}/maxresdefault.jpg`,
+    `https://img.youtube.com/vi/${options.videoId}/sddefault.jpg`,
+    `https://img.youtube.com/vi/${options.videoId}/hqdefault.jpg`,
+  ];
+
+  const schema: Omit<VideoObjectSchema, '@context'> = {
+    '@type': 'VideoObject',
+    '@id': options.pageUrl ? `${options.pageUrl}#video` : `${videoUrl}#video`,
+    name: options.name,
+    description: options.description,
+    thumbnailUrl: thumbnailUrls,
+    uploadDate: options.uploadDate || new Date().toISOString().split('T')[0],
+    embedUrl,
+    contentUrl: videoUrl,
+    publisher: { '@id': `${baseUrl}/#organization` },
+    potentialAction: {
+      '@type': 'WatchAction',
+      target: videoUrl,
+    },
+  };
+
+  if (options.duration) {
+    schema.duration = options.duration;
   }
 
   return schema;

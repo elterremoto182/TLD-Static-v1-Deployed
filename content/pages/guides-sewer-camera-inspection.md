@@ -27,10 +27,11 @@ This comprehensive guide explains everything Florida property owners need to kno
 2. [When You Need a Sewer Camera Inspection](#when-you-need-a-sewer-camera-inspection)
 3. [What Problems Sewer Cameras Find](#what-problems-sewer-cameras-find)
 4. [The Inspection Process](#the-inspection-process)
-5. [Sewer Inspection Costs](#sewer-inspection-costs)
-6. [Sewer Inspections for Home Buyers](#sewer-inspections-for-home-buyers)
-7. [Maintaining Your Sewer Line](#maintaining-your-sewer-line)
-8. [Related Articles](#related-articles)
+5. [Watch a Sewer Camera Inspection in Action](#watch-a-sewer-camera-inspection-in-action)
+6. [Sewer Inspection Costs](#sewer-inspection-costs)
+7. [Sewer Inspections for Home Buyers](#sewer-inspections-for-home-buyers)
+8. [Maintaining Your Sewer Line](#maintaining-your-sewer-line)
+9. [Related Articles](#related-articles)
 
 ---
 
@@ -192,6 +193,21 @@ Most residential inspections take 30-60 minutes, depending on:
 - Clear access to relevant areas
 
 **Learn more:** [What to Expect During a Sewer Camera Inspection in Miami, FL](/what-to-expect-during-a-sewer-camera-inspection-in-miami-fl/)
+
+---
+
+## Watch a Sewer Camera Inspection in Action
+
+See exactly what our technicians see during a real sewer camera inspection. This video demonstrates the HD camera technology, how we navigate through pipes, and the types of conditions we commonly find in Florida homes.
+
+<iframe 
+  src="https://www.youtube.com/embed/Sk7VPGiqhek" 
+  title="Sewer Camera Inspection - Professional HD Video Pipe Inspection in Florida"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+  allowfullscreen>
+</iframe>
+
+*Our professional sewer camera inspection service provides clear HD video footage of your entire sewer line, helping identify problems before they become emergencies.*
 
 ---
 

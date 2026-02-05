@@ -13,11 +13,23 @@ import { Phone, BookOpen, ArrowRight } from 'lucide-react';
 import {
   generateWebPageSchema,
   generateBreadcrumbListSchema,
+  generateVideoObjectSchema,
   structuredDataToJsonLd,
 } from '@/lib/seo/structured-data';
 
-// Map guide slugs to their related blog categories and service pages
-const GUIDE_CONFIG: Record<string, { category: string; servicePath: string; serviceName: string }> = {
+// Map guide slugs to their related blog categories, service pages, and videos
+const GUIDE_CONFIG: Record<string, { 
+  category: string; 
+  servicePath: string; 
+  serviceName: string;
+  video?: {
+    id: string;
+    title: string;
+    description: string;
+    uploadDate: string;
+    duration?: string;
+  };
+}> = {
   'leak-detection': {
     category: 'Leak Detection',
     servicePath: '/services/leak-detection/',
@@ -27,6 +39,13 @@ const GUIDE_CONFIG: Record<string, { category: string; servicePath: string; serv
     category: 'Sewer Camera Inspection',
     servicePath: '/services/camera-inspection/',
     serviceName: 'Sewer Camera Inspection Services',
+    video: {
+      id: 'Sk7VPGiqhek',
+      title: 'Sewer Camera Inspection - Professional HD Video Pipe Inspection in Florida',
+      description: 'Watch a professional sewer camera inspection in action. See how our HD video technology reveals pipe conditions, blockages, root intrusion, and damage inside sewer lines. Total Leak Detection provides comprehensive video pipe inspection services throughout South Florida.',
+      uploadDate: '2024-01-15',
+      duration: 'PT3M45S',
+    },
   },
   'drain-cleaning': {
     category: 'Drain Cleaning',
@@ -164,6 +183,18 @@ export default async function GuidePage({
   
   const breadcrumbSchema = generateBreadcrumbListSchema(breadcrumbs, pageUrl);
   
+  // Generate video schema if guide has a video
+  const videoSchema = guideConfig?.video 
+    ? generateVideoObjectSchema({
+        videoId: guideConfig.video.id,
+        name: guideConfig.video.title,
+        description: guideConfig.video.description,
+        uploadDate: guideConfig.video.uploadDate,
+        duration: guideConfig.video.duration,
+        pageUrl,
+      })
+    : null;
+  
   // Process markdown content
   let html = await processMarkdown(page.content);
   
@@ -196,6 +227,14 @@ export default async function GuidePage({
           __html: structuredDataToJsonLd(breadcrumbSchema),
         }}
       />
+      {videoSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: structuredDataToJsonLd(videoSchema),
+          }}
+        />
+      )}
       <Header />
       <main className="min-h-screen">
         {/* Hero Section */}
