@@ -93,10 +93,10 @@ export function trackServiceView(serviceName: string, cityName?: string) {
   });
 }
 
-/** GA4 measurement ID (public). Override with NEXT_PUBLIC_GA_MEASUREMENT_ID if needed. */
+/** GA4 measurement ID (public). Set NEXT_PUBLIC_GA_MEASUREMENT_ID in .env. */
 export const GA_MEASUREMENT_ID =
   (typeof process !== 'undefined' && process.env?.NEXT_PUBLIC_GA_MEASUREMENT_ID) ||
-  'G-E2QGKSKT4V';
+  'G-KBJTVHY5C2';
 
 /**
  * Send a page_view for the current path. Use after client-side navigation so the
