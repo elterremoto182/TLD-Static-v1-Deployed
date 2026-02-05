@@ -92,3 +92,31 @@ export function trackServiceView(serviceName: string, cityName?: string) {
     city: cityName,
   });
 }
+
+/** GA4 measurement ID (public). Override with NEXT_PUBLIC_GA_MEASUREMENT_ID if needed. */
+export const GA_MEASUREMENT_ID =
+  (typeof process !== 'undefined' && process.env?.NEXT_PUBLIC_GA_MEASUREMENT_ID) ||
+  'G-E2QGKSKT4V';
+
+/**
+ * Send a page_view for the current path. Use after client-side navigation so the
+ * new page appears in GA (e.g. thank-you page after form submit).
+ */
+export function sendPageView(path: string) {
+  if (typeof window !== 'undefined' && window.gtag) {
+    window.gtag('config', GA_MEASUREMENT_ID, { page_path: path });
+  }
+}
+
+/**
+ * GA4 recommended event for lead generation. Fire on thank-you / confirmation pages
+ * so you can mark "generate_lead" as a conversion in GA4.
+ */
+export function trackGenerateLead() {
+  if (typeof window !== 'undefined' && window.gtag) {
+    window.gtag('event', 'generate_lead', {
+      currency: 'USD',
+      value: 1,
+    });
+  }
+}
