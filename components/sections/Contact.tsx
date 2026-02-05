@@ -129,9 +129,9 @@ export function Contact() {
         </AnimateOnScroll>
 
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 lg:gap-12">
-          {/* Contact Info - Smaller Column */}
-          <AnimateOnScroll animation="fade-in-left" duration={600} delay={0}>
-            <div className="lg:col-span-2 space-y-4">
+          {/* Contact Info - Smaller Column (col-span on grid child so it gets correct width) */}
+          <AnimateOnScroll animation="fade-in-left" duration={600} delay={0} className="lg:col-span-2 min-w-0">
+            <div className="space-y-4">
               <a
                 href={`tel:${siteConfig.phone}`}
                 className="flex items-center p-4 bg-white rounded-xl shadow-sm hover:shadow-md transition-all duration-200 group border border-gray-100"
@@ -183,9 +183,9 @@ export function Contact() {
             </div>
           </AnimateOnScroll>
 
-          {/* Form - Larger Column */}
-          <AnimateOnScroll animation="fade-in-right" duration={600} delay={0}>
-            <div className="lg:col-span-3 bg-white rounded-2xl shadow-xl p-6 md:p-8 border border-gray-100">
+          {/* Form - Larger Column (col-span on grid child so it gets correct width) */}
+          <AnimateOnScroll animation="fade-in-right" duration={600} delay={0} className="lg:col-span-3 min-w-0">
+            <div className="bg-white rounded-2xl shadow-xl p-6 md:p-8 border border-gray-100">
               <div className="mb-6">
                 <h3 className="text-xl font-bold text-gray-900 mb-1">Request Your Free Estimate</h3>
                 <p className="text-gray-600 text-sm">We respond within 2 hours during business hours</p>
