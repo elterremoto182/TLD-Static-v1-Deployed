@@ -694,22 +694,23 @@ npm run build
 
 ## Contact Form Integration
 
-The contact form submits to **`/api/contact`**, which proxies to an **n8n webhook**. Using a same-origin API route avoids CORS: the browser never calls n8n directly.
+This app uses **static export** (`output: 'export'`), so there is **no server at runtime**. The contact form calls the **n8n webhook directly from the browser**. n8n must allow your site’s origin in CORS.
 
 ### Setup
 
-1. Create n8n webhook workflow and activate it.
+1. Create n8n webhook workflow and **activate it**.
 2. Add webhook URL to `.env.local`:
-   - **Preferred (server-only, not exposed to client):**
-     ```
-     N8N_WEBHOOK_URL=https://your-n8n-instance.com/webhook/abc123
-     ```
-   - Or (still supported): `NEXT_PUBLIC_N8N_WEBHOOK_URL=...`
-3. Deploy with a Node/server environment so `app/api/contact` runs (e.g. Vercel, Node server). Static-only hosts without API routes need n8n to allow your origin in CORS instead.
+   ```
+   NEXT_PUBLIC_N8N_WEBHOOK_URL=https://your-n8n-instance.com/webhook/abc123
+   ```
+3. **Configure CORS in n8n** so the webhook accepts requests from your site:
+   - Production: allow `https://totalleakdetection.com` (or your production domain).
+   - Local dev: allow `http://localhost:3000`.
+   - In n8n this is often under the Webhook node settings or instance CORS configuration.
 
 ### Form Data Structure
 
-The API forwards the same JSON body to n8n. Contact page can include optional `service`:
+The form sends this JSON to the webhook. Contact page includes optional `service`:
 
 ```json
 {

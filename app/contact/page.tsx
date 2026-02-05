@@ -76,6 +76,16 @@ export default function ContactPage() {
     const form = e.currentTarget;
     const formData = new FormData(form);
 
+    // Static export: no server at runtime, so we call n8n from the client.
+    // Set NEXT_PUBLIC_N8N_WEBHOOK_URL and allow this origin in n8n CORS.
+    const webhookUrl = process.env.NEXT_PUBLIC_N8N_WEBHOOK_URL || '';
+    if (!webhookUrl) {
+      setSubmitStatus('error');
+      setErrorMessage('Webhook URL not configured. Please set NEXT_PUBLIC_N8N_WEBHOOK_URL.');
+      setIsSubmitting(false);
+      return;
+    }
+
     try {
       const payload = {
         name: formData.get('name'),
@@ -87,18 +97,15 @@ export default function ContactPage() {
         source: 'contact-form',
       };
 
-      // Same-origin API route avoids CORS; server proxies to n8n webhook
-      const response = await fetch('/api/contact', {
+      const response = await fetch(webhookUrl, {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
+        mode: 'cors',
+        headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(payload),
       });
 
       if (!response.ok) {
-        const data = await response.json().catch(() => ({}));
-        throw new Error((data as { error?: string }).error || `HTTP ${response.status}`);
+        throw new Error(`HTTP error! status: ${response.status}`);
       }
 
       setSubmitStatus('success');
@@ -107,11 +114,18 @@ export default function ContactPage() {
     } catch (error) {
       console.error('Form submission error:', error);
       setSubmitStatus('error');
-      setErrorMessage(
-        error instanceof Error
-          ? error.message
-          : 'Failed to send message. Please try again or contact us directly.'
-      );
+      if (error instanceof TypeError && error.message.includes('fetch')) {
+        setErrorMessage(
+          'CORS error: The webhook server must allow requests from this site. ' +
+            'Configure CORS in your n8n webhook (allow your site origin) and ensure the workflow is active.'
+        );
+      } else {
+        setErrorMessage(
+          error instanceof Error
+            ? error.message
+            : 'Failed to send message. Please try again or contact us directly.'
+        );
+      }
     } finally {
       setIsSubmitting(false);
     }

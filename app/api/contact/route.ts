@@ -2,10 +2,12 @@ import { NextRequest, NextResponse } from 'next/server';
 
 /**
  * Contact form API route – proxies submissions to n8n webhook.
- * Using a same-origin API avoids CORS: the browser only talks to this app,
- * and the server calls n8n (no CORS on server-to-server requests).
+ * NOT USED when next.config.js has output: 'export' (static export).
+ * With static export there is no server at runtime, so the contact form
+ * calls the n8n webhook directly from the client and n8n must allow CORS.
+ * This route is here for deployments that run a Node server (no static export).
  *
- * Env: N8N_WEBHOOK_URL (server-only, preferred) or NEXT_PUBLIC_N8N_WEBHOOK_URL
+ * Env: N8N_WEBHOOK_URL (server-only) or NEXT_PUBLIC_N8N_WEBHOOK_URL
  */
 export async function POST(request: NextRequest) {
   const webhookUrl =
