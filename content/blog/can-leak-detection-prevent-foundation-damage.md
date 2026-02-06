@@ -20,8 +20,8 @@ keywords:
 faqs:
   - question: Can leak detection prevent foundation damage?
     answer: 'Yes. Leak detection locates hidden leaks under the slab or near the foundation before water erodes soil or causes heaving. Repairing the leak early limits moisture under the foundation and reduces the risk of cracks, settling, and structural damage.'
-image: /images/gallery/leak-detection-equipment.jpg
-imageAlt: Professional leak detection equipment including thermal imaging and acoustic sensors
+image: /images/gallery/thermal-imaging-leak-detection-attic-miami-doral-miramar.jpeg
+imageAlt: Thermal imaging detecting hidden water leaks that can cause foundation damage
 ---
 
 # Can Leak Detection Prevent Foundation Damage?

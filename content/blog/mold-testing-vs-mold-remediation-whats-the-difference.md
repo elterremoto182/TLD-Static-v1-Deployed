@@ -19,8 +19,8 @@ keywords:
   - when to use
   - mold inspection
   - mold clearance testing
-image: /images/gallery/mold-inspection-before.jpg
-imageAlt: Mold inspection revealing visible mold growth before remediation
+image: /images/gallery/visible-mold-being-tested.jpeg
+imageAlt: Visible mold being tested before remediation process
 faqs:
   - question: What is the difference between mold testing and mold remediation?
     answer: Mold testing is diagnostic—it identifies whether mold conditions exist, where the issue is likely concentrated, and documents findings. Mold remediation is corrective—it removes or contains mold-impacted materials and addresses the moisture source so growth doesn’t return.

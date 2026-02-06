@@ -21,8 +21,8 @@ seo_description: >-
   concrete foundations. Learn about the latest technologies and practical
   solutions to address this challenging issue effectively.
 keywords: ["concrete leak detection"]
-image: /images/gallery/leak%20detection%20moisture.JPG
-imageAlt: Moisture detection equipment showing thermal imaging readings to locate hidden slab leaks beneath concrete foundation in Florida
+image: /images/gallery/miami-moisture-meter-leak-detection.jpeg
+imageAlt: Advanced moisture meter detecting leaks beneath concrete foundation in Florida
 ---
 
 Detecting and repairing leaks beneath concrete foundations are critical for maintaining the structural integrity of buildings and ensuring a safe living environment. This comprehensive guide explores advanced techniques and best practices to help you efficiently manage and resolve these hidden problems.

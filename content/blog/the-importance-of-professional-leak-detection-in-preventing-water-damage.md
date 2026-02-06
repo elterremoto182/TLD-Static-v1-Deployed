@@ -18,8 +18,8 @@ seo_description: >-
   your home or business. Learn why early detection matters and how experts find
   hidden leaks.
 keywords: ["Professional leak detection"]
-image: /images/gallery/leak%20detection%20technitian.JPG
-imageAlt: Professional leak detection technician performing thermal imaging inspection to locate hidden water leaks in South Florida home
+image: /images/gallery/thermal-imaging-leak-detection-attic-miami-doral-miramar.jpeg
+imageAlt: Thermal imaging leak detection preventing water damage in South Florida
 ---
 
 # The Importance of Professional Leak Detection in Preventing Water Damage

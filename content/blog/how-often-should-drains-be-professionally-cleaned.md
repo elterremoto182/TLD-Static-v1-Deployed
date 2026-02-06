@@ -20,8 +20,8 @@ keywords:
 faqs:
   - question: How often should drains be professionally cleaned?
     answer: 'There is no fixed schedule. Homes with older pipes, trees near the sewer line, or a history of clogs may benefit from annual or biennial cleaning. If you have no issues, cleaning may only be needed when a clog occurs. A sewer camera inspection can show pipe condition and help you decide how often to clean.'
-image: /images/gallery/camera-inspection-before.jpg
-imageAlt: Sewer camera inspection used to diagnose drain and sewer problems
+image: /images/gallery/camera-inspection-after.jpg
+imageAlt: Sewer camera inspection showing pipe condition to guide cleaning schedule
 ---
 
 # How Often Should Drains Be Professionally Cleaned?

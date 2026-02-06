@@ -17,8 +17,8 @@ keywords:
   - low pressure
   - leak
   - plumbing
-image: /images/gallery/leak-detection-equipment.jpg
-imageAlt: Professional leak detection equipment including thermal imaging and acoustic sensors
+image: /images/gallery/active-supply-water-line-leak.jpeg
+imageAlt: Active supply water line leak causing sudden water pressure drop
 ---
 
 # What Causes Sudden Water Pressure Drops in a Home?

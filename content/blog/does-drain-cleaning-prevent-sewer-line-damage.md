@@ -20,8 +20,8 @@ keywords:
 faqs:
   - question: Does drain cleaning prevent sewer line damage?
     answer: 'Drain cleaning—especially hydro jetting—can remove buildup and roots that cause blockages and stress on the pipe, which may slow further damage. It does not repair existing cracks, collapse, or offset joints. A sewer camera inspection can show pipe condition and whether cleaning alone is enough or repair is needed.'
-image: /images/gallery/camera-inspection-before.jpg
-imageAlt: Sewer camera inspection used to diagnose drain and sewer problems
+image: /images/gallery/camera-inspection-after.jpg
+imageAlt: Sewer camera inspection showing clean pipe after professional drain cleaning
 ---
 
 # Does Drain Cleaning Prevent Sewer Line Damage?

@@ -19,8 +19,8 @@ keywords:
 faqs:
   - question: How accurate is acoustic leak detection?
     answer: 'Acoustic leak detection is highly accurate for locating pressurized water leaks in pipes. Technicians use ground microphones or correlators to pick up the sound of escaping water and pinpoint the leak location, often within a few feet. It works best when pipes are pressurized and ambient noise is low.'
-image: /images/gallery/moisture-detection.jpg
-imageAlt: Moisture detection equipment being used to locate hidden water leaks
+image: /images/gallery/miami-moisture-meter-leak-detection.jpeg
+imageAlt: Professional acoustic and moisture detection equipment for accurate leak location
 ---
 
 # How Accurate Is Acoustic Leak Detection?

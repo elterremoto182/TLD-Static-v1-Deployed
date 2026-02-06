@@ -17,8 +17,8 @@ keywords:
   - leak inside wall
   - hissing pipes
   - leak detection
-image: /images/gallery/leak-detection-technician.jpg
-imageAlt: Leak detection technician performing non-invasive inspection in a South Florida home
+image: /images/gallery/moisture-detection-water-leak.jpeg
+imageAlt: Moisture detection equipment identifying water leak sounds inside wall cavity
 ---
 
 # What Does a Water Leak Sound Like Inside a Wall?

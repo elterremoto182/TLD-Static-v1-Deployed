@@ -11,7 +11,7 @@ pillar: sewer-camera-inspection
 feedsService: /sewer-camera-inspection/
 draft: false
 seo_title: 'Sewer Inspections Before Buying a Home: What to Know | Total Leak Detection'
-seo_description: Sewer inspections before buying a home: what the camera reveals, how to schedule during due diligence, and how to use results for negotiation.
+seo_description: 'Sewer inspections before buying a home: what the camera reveals, how to schedule during due diligence, and how to use results for negotiation.'
 keywords:
   - sewer inspection
   - buying home

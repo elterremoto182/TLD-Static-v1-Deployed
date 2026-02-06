@@ -12,8 +12,8 @@ seo_title: How Long After Water Damage Does Mold Grow? | Florida Timeline
 seo_description: >-
   Mold can start growing within 24-48 hours of water damage. Learn the timeline, why Florida's humidity speeds growth, and when to get professional mold assessment.
 keywords: ["how fast does mold grow after water damage", "mold growth timeline", "mold after leak", "mold after flood"]
-image: /images/gallery/mold-inspection-before.jpg
-imageAlt: Professional mold inspection revealing early mold growth after water damage in a Florida home
+image: /images/gallery/mold-test-with-visible-mold-swab.jpeg
+imageAlt: Mold testing of early mold growth after water damage in Florida home
 ---
 
 # How Long After Water Damage Does Mold Start Growing?

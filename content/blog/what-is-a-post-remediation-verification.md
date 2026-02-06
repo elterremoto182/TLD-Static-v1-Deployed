@@ -18,8 +18,8 @@ seo_description: >-
   why it matters for mold remediation. Plus: what home sellers need to know about
   mold disclosure, testing, and selling a house after remediation.
 keywords: ["Post Remediation Verification", "selling house after mold remediation", "mold disclosure requirements"]
-image: /images/services/mold.jpg
-imageAlt: Inspector performing post remediation verification testing to confirm mold removal was successful
+image: /images/gallery/air-test-equipment-bathroom.jpeg
+imageAlt: Post remediation verification air testing equipment to confirm mold removal success
 ---
 
 ## A Critical Step in Ensuring Safe, Mold-Free Environments

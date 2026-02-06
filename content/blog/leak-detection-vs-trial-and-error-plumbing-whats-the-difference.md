@@ -29,8 +29,8 @@ faqs:
     answer: Leak detection is diagnostic—it locates the leak. After detection, a plumber or repair team performs the repair based on the marked location.
   - question: Can leak detection help with insurance or documentation?
     answer: Often, yes. A documented location and cause can help support repair scope, especially for hidden leaks like slab or behind-wall failures.
-image: /images/gallery/leak-detection-technician.jpg
-imageAlt: Leak detection technician performing non-invasive inspection in a South Florida home
+image: /images/gallery/process-for-a-shower-pan-leak-test.jpeg
+imageAlt: Professional non-invasive leak detection process showing systematic approach
 ---
 
 When a leak is visible and accessible, a plumber can usually repair it quickly. The problem is the common scenario where you **know you have a leak**, but you **can’t see where it’s coming from**. That’s where the approach matters:

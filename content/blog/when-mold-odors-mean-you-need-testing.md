@@ -19,8 +19,8 @@ keywords:
   - when to test
   - hidden mold smell
   - mildew odor in house
-image: /images/services/mold.jpg
-imageAlt: Professional mold inspector collecting samples for laboratory mold testing
+image: /images/gallery/testing-air-for-mold-livingroom.jpeg
+imageAlt: Air quality mold testing in living room to identify musty odor source
 faqs:
   - question: Does a musty smell always mean mold?
     answer: Not always. Musty odors can also come from damp building materials, HVAC condensation, wet insulation, sewer/drain issues, or old water damage. But persistent odor is a strong reason to investigate moisture and consider mold testing.

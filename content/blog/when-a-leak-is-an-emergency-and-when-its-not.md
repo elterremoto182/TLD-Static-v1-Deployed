@@ -30,8 +30,8 @@ faqs:
     answer: If you can isolate the suspected fixture or zone, shutting it off can reduce damage. If you can’t isolate it and symptoms worsen, shut off the main and call—especially if moisture is spreading quickly.
   - question: Do I need leak detection after an emergency repair?
     answer: Often, yes. If the source wasn’t clearly confirmed (especially for slab or behind-wall leaks), professional leak detection can verify the true location and check for additional weak points.
-image: /images/gallery/leak%20detection%20moisture.JPG
-imageAlt: Technician using moisture detection equipment to find slab or wall leaks
+image: /images/gallery/active-supply-water-line-leak.jpeg
+imageAlt: Active supply water line leak requiring emergency response in South Florida home
 ---
 
 Some leaks are obvious emergencies. Others are “quiet” leaks that can still cause damage—but usually don’t require a same-hour response. The goal is to make the right call quickly: **stop active damage now**, then **diagnose accurately** so you don’t end up cutting into the wrong place.

@@ -17,8 +17,8 @@ keywords:
   - when mold grows
   - mold timeline
   - mold testing
-image: /images/services/mold.jpg
-imageAlt: Professional mold inspector collecting samples for laboratory mold testing
+image: /images/gallery/moisture-meter-with-visible-mold.jpeg
+imageAlt: Moisture meter near visible mold growth after water leak incident
 ---
 
 # When Mold Grows After a Water Leak

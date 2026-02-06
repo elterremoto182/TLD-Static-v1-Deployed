@@ -18,8 +18,8 @@ seo_description: >-
   to boost water pressure instantly and ensure a steady, strong flow quick fixes
   and long-term solutions.
 keywords: ["Increase shower water pressure"]
-image: /images/services/leak-detection.jpg
-imageAlt: Professional plumber checking water pressure in a shower head to diagnose low flow issues
+image: /images/gallery/miami-shower-repair-leak-detection.jpeg
+imageAlt: Professional plumber checking shower for water pressure and leak issues
 ---
 
 # Quick Fixes for Increasing Shower Water Pressure

@@ -18,8 +18,8 @@ seo_description: >-
   inspection is an important maintenance task that can help you identify and
   address any potential problems in your sewer lines...
 keywords: ["sewer camera inspection cost"]
-image: /images/gallery/camera-inspection-before.jpg
-imageAlt: Sewer camera inspection equipment being prepared for a pipe inspection service
+image: /images/gallery/camera-inspection-after.jpg
+imageAlt: Professional sewer camera inspection revealing pipe condition and potential issues
 ---
 
 Are you curious about the sewer camera inspection cost? A sewer camera inspection is an important maintenance task that can help you identify and address any potential problems in your sewer lines. This type of inspection is typically recommended every five years and is essential to keeping your sewer lines in good working order. In this blog post, we'll discuss the cost of a sewer camera inspection and what is involved in the process. Our [sewer camera inspection services](/services/camera-inspection/) provide comprehensive assessments of your sewer lines using advanced technology.

@@ -17,8 +17,8 @@ keywords:
   - Florida
   - insurance claim
   - mold testing
-image: /images/services/mold.jpg
-imageAlt: Professional mold inspector collecting samples for laboratory mold testing
+image: /images/gallery/doral-mold-test-camera-inspection-living-room.jpeg
+imageAlt: Professional mold testing documentation for Florida insurance claims
 ---
 
 # Mold Testing Requirements for Insurance Claims in Florida

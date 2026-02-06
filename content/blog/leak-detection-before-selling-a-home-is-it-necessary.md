@@ -16,8 +16,8 @@ keywords:
   - leak detection before selling
   - home sale
   - pre-listing inspection
-image: /images/gallery/moisture-detection.jpg
-imageAlt: Moisture detection equipment being used to locate hidden water leaks
+image: /images/gallery/shower-pan-inspection-tool-leak-detection-doral-tiled-bathroom-floor.jpeg
+imageAlt: Pre-sale leak detection inspection of shower pan in bathroom
 ---
 
 # Leak Detection Before Selling a Home: Is It Necessary?

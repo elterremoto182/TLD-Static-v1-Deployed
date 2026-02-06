@@ -16,8 +16,8 @@ seo_description: >-
   The first step in the mold testing process is to schedule a mold inspection.
   During the inspection, a qualified mold inspector will assess...
 keywords: ["mold testing"]
-image: /images/services/mold.jpg
-imageAlt: Professional mold inspector collecting air samples for laboratory mold testing in a residential property
+image: /images/gallery/mold-inspection-swap-test-air-vent.jpeg
+imageAlt: Professional mold inspector performing swab test on air vent during mold testing
 ---
 
 The only way to know for sure whether or not there is mold present in your home is to have it tested. Mold testing involves collecting samples of the air or surfaces in your home and testing them in a lab for the presence of mold.

@@ -20,8 +20,8 @@ keywords:
 faqs:
   - question: How long can a hidden water leak go undetected?
     answer: 'A small hidden leak can go undetected for months or even years, especially if it is behind walls or under the slab. Slow leaks often show no obvious signs until damage—such as mold, stains, or higher bills—becomes noticeable. Professional leak detection can locate leaks early before major damage occurs.'
-image: /images/gallery/leak-detection-equipment.jpg
-imageAlt: Professional leak detection equipment including thermal imaging and acoustic sensors
+image: /images/gallery/thermal-imaging-leak-detection-attic-miami-doral-miramar.jpeg
+imageAlt: Thermal imaging revealing hidden water leak that went undetected in attic
 ---
 
 # How Long Can a Hidden Water Leak Go Undetected?

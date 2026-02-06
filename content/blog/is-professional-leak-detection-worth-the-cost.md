@@ -30,8 +30,8 @@ faqs:
     answer: If the leak is visible and accessible—like a dripping shutoff valve under a sink—repair is often the first step. Detection is most valuable when the source is hidden (slab, wall, ceiling, buried line) or intermittent.
   - question: Can leak detection help with insurance documentation?
     answer: Often, yes. A documented leak location and cause can support a claim and help you get accurate repair estimates, especially for hidden leaks like slab or behind-wall pipe failures.
-image: /images/gallery/moisture-detection.jpg
-imageAlt: Moisture detection equipment being used to locate hidden water leaks
+image: /images/gallery/shower-pan-test-techinitian-bathroom.jpeg
+imageAlt: Professional leak detection technician performing shower pan test in bathroom
 ---
 
 Professional leak detection is **usually worth the cost** when you have signs of a hidden leak but can’t see the source. The value isn’t just “finding a leak”—it’s avoiding the most expensive part of many leak repairs: **trial-and-error demolition** and the secondary damage that happens while you wait.

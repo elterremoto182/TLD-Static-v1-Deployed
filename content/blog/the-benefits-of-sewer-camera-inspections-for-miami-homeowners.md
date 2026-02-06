@@ -18,8 +18,8 @@ seo_description: >-
   issues early. Understand the process, benefits, and when to schedule an
   inspection.
 keywords: ["Sewer camera inspection Miami"]
-image: /images/gallery/camera-inspection-before.jpg
-imageAlt: Sewer camera inspection being performed for a Miami homeowner to detect pipe blockages and damage
+image: /images/gallery/camera-inspection-after.jpg
+imageAlt: Sewer camera inspection revealing pipe condition for Miami homeowner
 ---
 
 # The Benefits of Sewer Camera Inspections for Miami Homeowners

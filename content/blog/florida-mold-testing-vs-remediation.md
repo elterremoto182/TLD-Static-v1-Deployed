@@ -12,8 +12,8 @@ seo_title: Florida Mold Testing vs Mold Remediation | Complete Guide
 seo_description: >-
   Learn how mold services work in Florida. Understand the difference between mold testing and remediation, Florida's consumer protections, and what to expect throughout the process.
 keywords: ["Florida mold testing", "mold testing vs remediation Florida", "Florida mold inspection", "mold removal Florida", "mold services Florida"]
-image: /images/services/mold.jpg
-imageAlt: Professional mold inspection and testing services being performed in a Florida residential property
+image: /images/gallery/visible-mold-being-tested.jpeg
+imageAlt: Professional mold testing and assessment services in Florida residential property
 ---
 
 # Florida Mold Testing vs. Mold Remediation: What Homeowners Need to Know

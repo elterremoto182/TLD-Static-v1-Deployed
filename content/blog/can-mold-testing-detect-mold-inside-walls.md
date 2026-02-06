@@ -20,8 +20,8 @@ keywords:
 faqs:
   - question: Can mold testing detect mold inside walls?
     answer: 'Yes. Mold testing can indicate mold inside walls through air sampling (elevated spores when a wall cavity is disturbed), moisture mapping, thermal imaging, or strategic bulk sampling. Professional mold testing can recommend the right approach for your situation.'
-image: /images/gallery/mold-inspection-before.jpg
-imageAlt: Mold inspection revealing visible mold growth before remediation
+image: /images/gallery/mold-behind-base-boards-mold-inspection-swab-test.jpeg
+imageAlt: Mold inspection detecting hidden mold growth behind baseboards and walls
 ---
 
 # Can Mold Testing Detect Mold Inside Walls?

@@ -20,8 +20,8 @@ keywords:
 faqs:
   - question: Can mold testing fail after remediation?
     answer: 'Yes. Post-remediation clearance testing can fail if mold was not fully removed, moisture remains, or new growth has started. In that case, additional remediation and moisture control are needed before retesting. Professional mold testing can identify why clearance failed and what to fix.'
-image: /images/gallery/mold-inspection-before.jpg
-imageAlt: Mold inspection revealing visible mold growth before remediation
+image: /images/gallery/mold-test-with-visible-mold-swab.jpeg
+imageAlt: Post-remediation clearance testing to verify successful mold removal
 ---
 
 # Can Mold Testing Fail After Remediation?

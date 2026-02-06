@@ -17,8 +17,8 @@ keywords:
   - leak damage
   - mold
   - foundation damage
-image: /images/gallery/leak-detection-equipment.jpg
-imageAlt: Professional leak detection equipment including thermal imaging and acoustic sensors
+image: /images/gallery/moisture-detection-water-leak.jpeg
+imageAlt: Moisture damage from long-term unrepaired water leak
 ---
 
 # What Happens If a Leak Is Left Unrepaired for Months?

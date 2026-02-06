@@ -17,8 +17,8 @@ keywords:
   - surface testing mold
   - mold test
   - which is better
-image: /images/gallery/mold-inspection-after.jpg
-imageAlt: Post-remediation mold inspection confirming successful cleanup
+image: /images/gallery/air-test-equipment-bathroom.jpeg
+imageAlt: Air testing equipment setup for mold spore analysis in bathroom
 ---
 
 # Air Testing vs Surface Testing: Which Mold Test Is Better?

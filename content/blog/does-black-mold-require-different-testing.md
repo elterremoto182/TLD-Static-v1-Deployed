@@ -20,8 +20,8 @@ keywords:
 faqs:
   - question: Does black mold require different testing?
     answer: 'No. Black mold (Stachybotrys and similar species) is identified using the same air, surface, or bulk sampling methods as other molds. The lab identifies the species, and the report may note health or remediation implications. Professional mold testing can recommend the right sampling for your situation.'
-image: /images/gallery/mold-inspection-after.jpg
-imageAlt: Post-remediation mold inspection confirming successful cleanup
+image: /images/gallery/dangerous-mold-testing-swab-test.jpeg
+imageAlt: Swab test sampling of dangerous black mold for laboratory identification
 ---
 
 # Does Black Mold Require Different Testing?

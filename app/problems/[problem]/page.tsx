@@ -23,20 +23,23 @@ import { LocalCTA, CityGrid } from '@/components/local-seo';
 
 // Problem-specific hero images (fallback to service images)
 const PROBLEM_IMAGES: Record<string, string> = {
-  'slab-leak': '/images/services/leak-detection.jpg',
-  'pipe-burst': '/images/services/leak-detection.jpg',
-  'water-heater-leak': '/images/services/leak-detection.jpg',
-  'pool-leak': '/images/services/leak-detection.jpg',
-  'underground-leak': '/images/services/leak-detection.jpg',
-  'shower-pan-leak': '/images/services/leak-detection.jpg',
-  'toilet-leak': '/images/services/leak-detection.jpg',
-  'bathroom-mold': '/images/services/mold.jpg',
-  'water-damage-mold': '/images/services/mold.jpg',
-  'hidden-mold': '/images/services/mold.jpg',
-  'ac-mold': '/images/services/mold.jpg',
-  'kitchen-mold': '/images/services/mold.jpg',
-  'closet-mold': '/images/services/mold.jpg',
-  'crawlspace-mold': '/images/services/mold.jpg',
+  // Leak detection problems - using new specific gallery images
+  'slab-leak': '/images/gallery/miami-moisture-meter-leak-detection.jpeg',
+  'pipe-burst': '/images/gallery/active-supply-water-line-leak.jpeg',
+  'water-heater-leak': '/images/gallery/moisture-detection-water-leak.jpeg',
+  'pool-leak': '/images/gallery/thermal-imaging-leak-detection-attic-miami-doral-miramar.jpeg',
+  'underground-leak': '/images/gallery/thermal-imaging-leak-detection-attic-miami-doral-miramar.jpeg',
+  'shower-pan-leak': '/images/gallery/shower-pan-inspection-tool-leak-detection-doral-tiled-bathroom-floor.jpeg',
+  'toilet-leak': '/images/gallery/plumbing-inspection-tub-spout-leakage.jpeg',
+  // Mold problems - using new specific gallery images
+  'bathroom-mold': '/images/gallery/mold-testing-bathroom-swap-test.jpeg',
+  'water-damage-mold': '/images/gallery/moisture-meter-with-visible-mold.jpeg',
+  'hidden-mold': '/images/gallery/hidden-mold-test-swab-test.jpeg',
+  'ac-mold': '/images/gallery/mold-test-air-vent.jpeg',
+  'kitchen-mold': '/images/gallery/mold-test-under-sink.jpeg',
+  'closet-mold': '/images/gallery/mold-behind-base-boards-mold-inspection-swab-test.jpeg',
+  'crawlspace-mold': '/images/gallery/dangerous-mold-testing-swab-test.jpeg',
+  // Sewer problems - keeping existing service images (no new images for this category)
   'root-intrusion': '/images/services/drain-cleaning.jpg',
   'pipe-collapse': '/images/services/drain-cleaning.jpg',
   'sewer-blockage': '/images/services/drain-cleaning.jpg',

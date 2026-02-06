@@ -19,8 +19,8 @@ keywords:
 faqs:
   - question: Can insurance deny a claim without leak detection?
     answer: 'Some insurers may request proof of the cause and location of water damage before approving a claim. Professional leak detection provides a documented report that identifies the source of the leak, which can support your claim and help avoid denial for lack of evidence.'
-image: /images/services/leak-detection.jpg
-imageAlt: Professional leak detection technician using specialized equipment to locate hidden water leaks
+image: /images/gallery/miami-moisture-meter-leak-detection.jpeg
+imageAlt: Professional leak detection documentation for insurance claims
 ---
 
 # Can Insurance Deny a Claim Without Leak Detection?

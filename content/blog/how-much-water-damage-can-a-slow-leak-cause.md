@@ -20,8 +20,8 @@ keywords:
 faqs:
   - question: How much water damage can a slow leak cause?
     answer: 'A slow leak can cause significant damage over time—mold growth, rot in framing or subfloor, stains, warped flooring, and in severe cases structural or foundation issues. The longer the leak continues, the higher the repair cost and health risk. Professional leak detection finds the source so it can be repaired early.'
-image: /images/gallery/leak%20detection%20moisture.JPG
-imageAlt: Technician using moisture detection equipment to find slab or wall leaks
+image: /images/gallery/moisture-detection-water-leak.jpeg
+imageAlt: Moisture detection revealing extent of water damage from slow leak
 ---
 
 # How Much Water Damage Can a Slow Leak Cause?

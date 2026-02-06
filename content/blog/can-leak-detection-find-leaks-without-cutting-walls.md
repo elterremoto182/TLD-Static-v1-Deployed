@@ -20,8 +20,8 @@ keywords:
 faqs:
   - question: Can leak detection find leaks without cutting walls?
     answer: 'Yes. Professional leak detection uses acoustic listening devices, thermal imaging, and electronic correlators to locate leaks behind walls without opening them. Once the leak is pinpointed, repairs can be targeted to a small area instead of cutting blindly.'
-image: /images/services/leak-detection.jpg
-imageAlt: Professional leak detection technician using specialized equipment to locate hidden water leaks
+image: /images/gallery/moisture-detection-water-leak.jpeg
+imageAlt: Non-invasive moisture detection equipment locating hidden water leak behind wall
 ---
 
 # Can Leak Detection Find Leaks Without Cutting Walls?

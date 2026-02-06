@@ -12,8 +12,8 @@ seo_title: 10 Signs You Have a Hidden Water Leak | What to Do Next
 seo_description: >-
   Discover the warning signs of hidden water leaks in your home. Learn how to identify leaks behind walls, under floors, and in your foundation before costly damage occurs.
 keywords: ["hidden water leak signs", "signs of water leak in house", "how to find hidden water leak", "water leak symptoms"]
-image: /images/gallery/moisture-detection.jpg
-imageAlt: Professional moisture detection equipment being used to locate hidden water leaks in a South Florida home
+image: /images/gallery/thermal-imaging-leak-detection-attic-miami-doral-miramar.jpeg
+imageAlt: Thermal imaging revealing hidden water leak signs in South Florida home
 ---
 
 # Signs You Have a Hidden Water Leak (And What to Do Next)

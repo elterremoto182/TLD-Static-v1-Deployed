@@ -15,8 +15,8 @@ seo_description: >-
   Professional water intrusion detection at Hibiscus Island, Miami Beach. See how 
   Total Leak Detection locates hidden water damage in luxury waterfront homes.
 keywords: ["hibiscus island leak detection", "water intrusion miami beach", "waterfront home leak detection", "hibiscus island water damage"]
-image: /images/gallery/leak%20detection%20moisture.JPG
-imageAlt: Professional moisture detection equipment used to locate water intrusion at Hibiscus Island luxury waterfront home in Miami Beach
+image: /images/gallery/moisture-detection-water-leak.jpeg
+imageAlt: Moisture detection equipment locating water intrusion at luxury waterfront home
 ---
 
 Total Leak Detection was recently called to investigate water intrusion at a luxury home on Hibiscus Island. Watch the video below to see our team in action.

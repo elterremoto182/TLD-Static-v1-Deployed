@@ -17,8 +17,8 @@ keywords:
   - difference
   - inspection
   - cleaning
-image: /images/gallery/camera-inspection-before.jpg
-imageAlt: Sewer camera inspection showing interior of sewer line
+image: /images/gallery/camera-inspection-after.jpg
+imageAlt: Sewer camera inspection showing clear interior of sewer line after drain cleaning
 ---
 
 # Sewer Camera Inspection vs Drain Cleaning: What's the Difference?

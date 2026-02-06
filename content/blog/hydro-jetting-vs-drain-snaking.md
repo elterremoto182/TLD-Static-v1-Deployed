@@ -12,8 +12,8 @@ seo_title: Hydro Jetting vs Drain Snaking | Which Is Right for Your Clog?
 seo_description: >-
   Should you use hydro jetting or drain snaking for your clogged drain? Compare effectiveness, costs, and best uses to choose the right solution.
 keywords: ["hydro jetting vs snaking", "best way to clear drain", "hydro jetting worth it", "drain cleaning methods"]
-image: /images/gallery/camera-inspection-before.jpg
-imageAlt: Professional plumber preparing drain cleaning equipment for sewer line service in South Florida
+image: /images/gallery/camera-inspection-after.jpg
+imageAlt: Professional drain cleaning service comparing hydro jetting and snaking methods
 ---
 
 # Hydro Jetting vs. Drain Snaking: Which Is Right for Your Clog?

@@ -12,8 +12,8 @@ seo_title: Black Mold vs Regular Mold | What Homeowners Need to Know
 seo_description: >-
   Is that black mold or regular mold? Learn the differences between mold types, health risks, and why professional testing is the only way to know for sure.
 keywords: ["black mold vs regular mold", "types of household mold", "is black mold dangerous", "mold identification"]
-image: /images/gallery/mold-inspection-after.jpg
-imageAlt: Professional mold inspection identifying different types of mold growth in a South Florida residential property
+image: /images/gallery/dangerous-mold-testing-swab-test.jpeg
+imageAlt: Professional swab test identifying dangerous black mold vs other mold types
 ---
 
 # Black Mold vs. Other Mold Types: What Homeowners Need to Know

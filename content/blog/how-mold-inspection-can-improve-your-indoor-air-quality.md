@@ -17,8 +17,8 @@ seo_description: >-
   Worried about indoor air quality? Get expert mold inspections in Miami from
   Total Leak Detection. Improve your air, protect your health. Call now!
 keywords: ["indoor air quality mold testing"]
-image: /images/gallery/mold-inspection-before.jpg
-imageAlt: Mold inspection specialist testing indoor air quality in a Miami home for mold spores and allergens
+image: /images/gallery/testing-air-for-mold-livingroom.jpeg
+imageAlt: Air quality testing for mold spores to improve indoor air quality in Miami home
 ---
 
 # Mold Inspection Miami | Improve Indoor Air Quality with Total Leak Detection

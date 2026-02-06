@@ -29,8 +29,8 @@ faqs:
     answer: The technician will review symptoms, use non-invasive tools (acoustic listening, thermal imaging, moisture mapping, line tracing), and provide a clear location/mark-out so a repair can be targeted.
   - question: How quickly should I schedule if I suspect a leak?
     answer: If there’s active flooding, call emergency service immediately. For hidden-leak signs without flooding, schedule within a few days—so you limit damage and avoid a bigger repair later.
-image: /images/gallery/moisture-detection.jpg
-imageAlt: Moisture detection equipment being used to locate hidden water leaks
+image: /images/gallery/miami-shower-repair-leak-detection.jpeg
+imageAlt: Leak detection specialist inspecting shower for hidden water leaks in Miami
 ---
 
 If you can’t see the leak, guessing gets expensive. The best time to call a leak detection specialist is **as soon as you have evidence of a hidden leak**—before the problem turns into damaged flooring, mold growth, or repeated “we fixed it but it’s still leaking” repair cycles.

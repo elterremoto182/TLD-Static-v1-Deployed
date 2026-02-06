@@ -18,8 +18,8 @@ keywords:
   - qualified
   - licensed
   - mold assessor
-image: /images/gallery/mold-inspection-before.jpg
-imageAlt: Mold inspection revealing visible mold growth before remediation
+image: /images/gallery/mold-testing-bathroom-swap-test.jpeg
+imageAlt: Licensed Florida mold assessor performing professional mold testing
 ---
 
 # Who Is Qualified to Perform Mold Testing in Florida?

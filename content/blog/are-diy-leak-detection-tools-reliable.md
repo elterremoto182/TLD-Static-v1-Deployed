@@ -17,8 +17,8 @@ keywords:
   - leak detection tools
   - reliable
   - professional
-image: /images/gallery/leak-detection-equipment.jpg
-imageAlt: Professional leak detection equipment including thermal imaging and acoustic sensors
+image: /images/gallery/miami-moisture-meter-leak-detection.jpeg
+imageAlt: Professional moisture meter compared to DIY leak detection tools
 ---
 
 # Are DIY Leak Detection Tools Reliable?

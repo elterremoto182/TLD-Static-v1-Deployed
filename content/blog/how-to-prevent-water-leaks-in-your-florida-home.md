@@ -12,8 +12,8 @@ seo_title: How to Prevent Water Leaks in Your Florida Home | Expert Tips
 seo_description: >-
   Florida-specific tips to prevent water leaks in your home. Learn seasonal maintenance, pipe protection, and when to schedule professional inspections.
 keywords: ["prevent water leaks", "water leak prevention tips", "Florida plumbing maintenance", "South Florida plumbing"]
-image: /images/gallery/leak-detection-technician.jpg
-imageAlt: Professional plumbing technician inspecting residential water lines to prevent leaks in a South Florida home
+image: /images/gallery/plumbing-inspection-tub-spout-leakage.jpeg
+imageAlt: Professional plumbing inspection to prevent water leaks in South Florida home
 ---
 
 # How to Prevent Water Leaks in Your Florida Home

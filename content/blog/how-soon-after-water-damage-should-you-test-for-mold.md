@@ -20,8 +20,8 @@ keywords:
 faqs:
   - question: How soon after water damage should you test for mold?
     answer: Mold can begin growing within 24–48 hours of water damage. Testing is often recommended once the area is dry or nearly dry—typically within a few days to a week after the incident—to confirm whether mold is present and to what extent. Professional mold testing can guide cleanup and remediation.
-image: /images/services/mold.jpg
-imageAlt: Professional mold inspector collecting samples for laboratory mold testing
+image: /images/gallery/moisture-meter-with-visible-mold.jpeg
+imageAlt: Moisture meter reading near mold growth after water damage incident
 ---
 
 # How Soon After Water Damage Should You Test for Mold?

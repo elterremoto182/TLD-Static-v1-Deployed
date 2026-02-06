@@ -12,8 +12,8 @@ seo_title: DIY Leak Detection vs Professional Services | Which Is Better?
 seo_description: >-
   Should you try DIY leak detection or hire a professional? Compare methods, costs, and effectiveness to make the right choice for your situation.
 keywords: ["DIY leak detection", "professional leak detection", "should I hire leak detection", "leak detection cost comparison"]
-image: /images/gallery/leak-detection-equipment.jpg
-imageAlt: Professional leak detection equipment including thermal imaging camera and acoustic sensors used by South Florida technicians
+image: /images/gallery/miami-moisture-meter-leak-detection.jpeg
+imageAlt: Professional moisture meter compared to DIY leak detection methods
 ---
 
 # DIY Leak Detection vs. Professional Services: What Actually Works

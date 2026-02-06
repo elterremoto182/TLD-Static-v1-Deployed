@@ -19,8 +19,8 @@ seo_description: >-
   use a moisture meter to detect a leak and the importance of sealing your
   shower pan correctly.
 keywords: ["shower pan leak"]
-image: /images/gallery/leak%20detection%20moisture.JPG
-imageAlt: Moisture detection equipment being used to check shower pan for hidden water leaks
+image: /images/gallery/shower-pan-inspection-tool-leak-detection-doral-tiled-bathroom-floor.jpeg
+imageAlt: Professional shower pan leak detection using specialized inspection tools on tiled bathroom floor
 ---
 
 ## Shower Pan Leaks

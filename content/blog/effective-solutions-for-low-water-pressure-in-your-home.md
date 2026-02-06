@@ -19,8 +19,8 @@ seo_description: >-
   identify and fix common causes of reduced water flow, ensuring optimal
   plumbing performance.
 keywords: ["Low water pressure solutions"]
-image: /images/services/leak-detection.jpg
-imageAlt: Homeowner testing water pressure from a faucet showing low flow issues
+image: /images/gallery/active-supply-water-line-leak.jpeg
+imageAlt: Water supply line inspection to diagnose low water pressure issues
 ---
 
 ## Understanding Low Water Pressure

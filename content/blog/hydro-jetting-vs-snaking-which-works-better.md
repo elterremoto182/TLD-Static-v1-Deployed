@@ -12,7 +12,7 @@ pillar: drain-cleaning
 feedsService: /services/drain-cleaning/
 draft: false
 seo_title: 'Hydro Jetting vs Snaking: Which Works Better? | Total Leak Detection'
-seo_description: Hydro jetting vs snaking: jetting cleans the entire pipe wall; snaking opens a path through a clog. Learn when each is best—and when not to jet.
+seo_description: 'Hydro jetting vs snaking: jetting cleans the entire pipe wall; snaking opens a path through a clog. Learn when each is best—and when not to jet.'
 keywords:
   - hydro jetting vs snaking
   - drain cleaning

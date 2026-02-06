@@ -20,8 +20,8 @@ keywords:
 faqs:
   - question: Can a water leak dry on its own without repairs?
     answer: 'No. When water dries, the pipe or fitting that is leaking is still damaged. The leak will continue when water runs again and can cause repeated damage, mold, and higher bills. The source of the leak must be located and repaired by a professional.'
-image: /images/gallery/leak%20detection%20moisture.JPG
-imageAlt: Technician using moisture detection equipment to find slab or wall leaks
+image: /images/gallery/active-supply-water-line-leak.jpeg
+imageAlt: Active water supply line leak that requires professional repair
 ---
 
 # Can a Water Leak Dry On Its Own Without Repairs?

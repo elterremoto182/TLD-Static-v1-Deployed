@@ -20,8 +20,8 @@ keywords:
 faqs:
   - question: Is mold testing accurate without visible mold?
     answer: 'Yes. Mold testing can detect mold without visible growth—air sampling captures spores in the air, and surface or bulk sampling can find mold on or in materials. Accuracy depends on the sampling strategy and lab analysis. Professional mold testing can design a plan for your situation.'
-image: /images/gallery/mold-inspection-before.jpg
-imageAlt: Mold inspection revealing visible mold growth before remediation
+image: /images/gallery/testing-air-for-mold-livingroom.jpeg
+imageAlt: Air quality mold testing to detect mold without visible growth
 ---
 
 # Is Mold Testing Accurate Without Visible Mold?

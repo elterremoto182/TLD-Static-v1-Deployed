@@ -20,8 +20,8 @@ keywords:
 faqs:
   - question: Does leak detection find leaks under concrete?
     answer: 'Yes. Professional leak detection can locate leaks under concrete slabs using acoustic listening devices, thermal imaging, and electronic correlators. These methods pinpoint the leak location without jackhammering the entire slab, so repairs can be targeted and less invasive.'
-image: /images/gallery/moisture-detection.jpg
-imageAlt: Moisture detection equipment being used to locate hidden water leaks
+image: /images/gallery/miami-moisture-meter-leak-detection.jpeg
+imageAlt: Moisture meter detecting water leaks under concrete slab foundation
 ---
 
 # Does Leak Detection Find Leaks Under Concrete?

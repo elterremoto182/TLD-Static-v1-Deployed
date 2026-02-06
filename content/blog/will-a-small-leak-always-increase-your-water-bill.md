@@ -17,8 +17,8 @@ keywords:
   - water bill
   - leak detection
   - hidden leak
-image: /images/gallery/moisture-detection.jpg
-imageAlt: Moisture detection equipment being used to locate hidden water leaks
+image: /images/gallery/plumbing-inspection-tub-spout-leakage.jpeg
+imageAlt: Small plumbing leak at tub spout that may increase water bill over time
 ---
 
 # Will a Small Leak Always Increase Your Water Bill?

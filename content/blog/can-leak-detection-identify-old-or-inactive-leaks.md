@@ -30,8 +30,8 @@ faqs:
     answer: Document when it happens (time of day, which fixtures were used), take photos of new staining, and avoid shutting off water for long periods before the appointment unless you’re preventing damage. The goal is to increase the chance the leak is active during testing.
   - question: Is it still important to find the source of an old leak?
     answer: Yes. If the underlying pipe or fitting wasn’t repaired, the same failure point can reopen under pressure or vibration and cause repeat damage.
-image: /images/gallery/moisture-detection.jpg
-imageAlt: Moisture detection equipment being used to locate hidden water leaks
+image: /images/gallery/moisture-detection-water-leak.jpeg
+imageAlt: Moisture detection equipment identifying residual water damage from inactive leak
 ---
 
 Leak detection is easiest when a leak is active. That’s when the tools have a strong signal: sound from escaping water, measurable moisture changes, and temperature differences (especially on hot lines).

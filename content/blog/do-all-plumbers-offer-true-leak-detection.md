@@ -16,8 +16,8 @@ keywords:
   - plumber vs leak detection
   - leak detection specialist
   - professional
-image: /images/gallery/leak-detection-technician.jpg
-imageAlt: Leak detection technician performing non-invasive inspection in a South Florida home
+image: /images/gallery/shower-pan-test-techinitian-bathroom.jpeg
+imageAlt: Specialized leak detection technician performing shower pan test
 ---
 
 # Do All Plumbers Offer True Leak Detection?

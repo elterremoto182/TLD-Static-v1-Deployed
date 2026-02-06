@@ -16,8 +16,8 @@ keywords:
   - leak detection vs plumbing
   - difference
   - specialist
-image: /images/gallery/leak%20detection%20moisture.JPG
-imageAlt: Technician using moisture detection equipment to find slab or wall leaks
+image: /images/gallery/plumbing-inspection-tub-spout-leakage.jpeg
+imageAlt: Professional plumbing inspection identifying tub spout leakage during assessment
 ---
 
 # What Makes Leak Detection Different From Standard Plumbing?

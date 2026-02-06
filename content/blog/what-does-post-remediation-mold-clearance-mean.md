@@ -17,8 +17,8 @@ keywords:
   - mold clearance
   - clearance testing
   - mold testing
-image: /images/gallery/mold-inspection-before.jpg
-imageAlt: Mold inspection revealing visible mold growth before remediation
+image: /images/gallery/air-test-bathroom-mold-test.jpeg
+imageAlt: Post-remediation air quality testing to confirm mold clearance
 ---
 
 # What Does Post-Remediation Mold Clearance Mean?

@@ -19,8 +19,8 @@ keywords:
 faqs:
   - question: How long does a professional leak detection take?
     answer: 'Most residential leak detection visits take one to a few hours, depending on the size of the home, number of suspected areas, and whether multiple methods (acoustic, thermal, electronic) are needed. Your technician can give a more specific estimate on site.'
-image: /images/gallery/leak%20detection%20moisture.JPG
-imageAlt: Technician using moisture detection equipment to find slab or wall leaks
+image: /images/gallery/process-for-a-shower-pan-leak-test.jpeg
+imageAlt: Professional leak detection process showing comprehensive testing methodology
 ---
 
 # How Long Does a Professional Leak Detection Take?

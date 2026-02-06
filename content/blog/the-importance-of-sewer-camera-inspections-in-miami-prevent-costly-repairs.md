@@ -13,8 +13,8 @@ seo_description: >-
   Learn the benefits, process, and why regular inspections are essential for
   maintaining your plumbing system.
 keywords: ["sewer"]
-image: /images/gallery/camera-inspection-before.jpg
-imageAlt: Sewer camera inspection video showing pipe condition to prevent costly repairs in Miami
+image: /images/gallery/camera-inspection-after.jpg
+imageAlt: Sewer camera inspection detecting issues early to prevent costly repairs in Miami
 ---
 
 ## Introduction

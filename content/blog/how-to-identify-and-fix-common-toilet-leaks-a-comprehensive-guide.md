@@ -19,8 +19,8 @@ seo_description: >-
   guide. Discover simple DIY methods to detect leaks, prevent water damage, and
   save on utility bills.
 keywords: ["How to fix common toilet leaks"]
-image: /images/services/leak-detection.jpg
-imageAlt: Plumber diagnosing a toilet leak by inspecting the tank components and water connections
+image: /images/gallery/plumbing-inspection-tub-spout-leakage.jpeg
+imageAlt: Professional plumber diagnosing toilet and fixture leaks during inspection
 ---
 
 ## Understanding Toilet Leaks

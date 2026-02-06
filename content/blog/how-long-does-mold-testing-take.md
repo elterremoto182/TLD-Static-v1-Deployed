@@ -30,8 +30,8 @@ faqs:
     answer: It varies. A small localized concern may use a few targeted samples, while whole-home or multi-zone concerns may require additional indoor samples plus at least one outdoor baseline.
   - question: How long does post-remediation verification (clearance) take?
     answer: The on-site portion is similar to initial testing (often 1–2 hours for the affected area), plus lab turnaround. It’s typically scheduled after the area is fully dry and cleaned.
-image: /images/services/mold.jpg
-imageAlt: Professional mold inspector collecting samples for laboratory mold testing
+image: /images/gallery/air-test-bathroom-mold-test.jpeg
+imageAlt: Professional mold testing equipment collecting air samples for laboratory analysis
 ---
 
 Most mold testing jobs have two timelines:

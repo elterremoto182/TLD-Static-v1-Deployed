@@ -12,8 +12,8 @@ seo_title: Do I Need a Mold Test After Water Damage? | Decision Guide
 seo_description: >-
   Should you get a mold test after water damage? Learn when testing is essential, what factors to consider, and how professional assessment protects your home and health.
 keywords: ["mold test after water damage", "when to get mold inspection", "water damage mold risk", "mold testing necessary"]
-image: /images/services/mold.jpg
-imageAlt: Professional mold testing equipment and inspector assessing water damage in a Florida home
+image: /images/gallery/moisture-meter-with-visible-mold.jpeg
+imageAlt: Moisture meter assessing water damage near visible mold growth in Florida home
 ---
 
 # Do I Need a Mold Test After Water Damage? (When Testing Matters)

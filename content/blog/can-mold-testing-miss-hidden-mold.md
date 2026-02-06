@@ -20,8 +20,8 @@ keywords:
 faqs:
   - question: Can mold testing miss hidden mold?
     answer: 'Yes. Surface or air sampling alone can miss mold growing behind walls, under flooring, or in other inaccessible areas. A thorough assessment—including moisture mapping, thermal imaging, or strategic sampling—reduces the risk. Professional mold testing can recommend the right approach for your situation.'
-image: /images/gallery/mold-inspection-before.jpg
-imageAlt: Mold inspection revealing visible mold growth before remediation
+image: /images/gallery/hidden-mold-test-swab-test.jpeg
+imageAlt: Swab test detecting hidden mold behind wall surfaces
 ---
 
 # Can Mold Testing Miss Hidden Mold?

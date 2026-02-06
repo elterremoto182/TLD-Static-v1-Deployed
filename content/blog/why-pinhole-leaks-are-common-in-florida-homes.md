@@ -17,8 +17,8 @@ keywords:
   - Florida
   - copper pipe
   - leak detection
-image: /images/gallery/leak%20detection%20moisture.JPG
-imageAlt: Technician using moisture detection equipment to find slab or wall leaks
+image: /images/gallery/active-supply-water-line-leak.jpeg
+imageAlt: Pinhole leak in copper water supply line common in Florida homes
 ---
 
 # Why Pinhole Leaks Are Common in Florida Homes

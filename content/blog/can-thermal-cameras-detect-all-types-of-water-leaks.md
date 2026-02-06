@@ -20,8 +20,8 @@ keywords:
 faqs:
   - question: Can thermal cameras detect all types of water leaks?
     answer: 'No. Thermal cameras detect temperature differences, so they work best for hot water leaks or cold spots from moisture. They may miss small cold-water leaks or leaks deep under slab. Professional leak detection often combines thermal imaging with acoustic or electronic methods for full coverage.'
-image: /images/gallery/leak-detection-equipment.jpg
-imageAlt: Professional leak detection equipment including thermal imaging and acoustic sensors
+image: /images/gallery/thermal-imaging-leak-detection-attic-miami-doral-miramar.jpeg
+imageAlt: Thermal imaging camera detecting hidden water leaks in attic insulation
 ---
 
 # Can Thermal Cameras Detect All Types of Water Leaks?

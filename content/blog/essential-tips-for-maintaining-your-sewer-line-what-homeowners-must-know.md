@@ -18,8 +18,8 @@ seo_description: >-
   maintaining your sewer line, including regular inspections, proper waste
   disposal, and preventive measures.
 keywords: ["Sewer line maintenance tips"]
-image: /images/gallery/camera-inspection-before.jpg
-imageAlt: Professional sewer line maintenance inspection using camera technology to check pipe condition
+image: /images/gallery/camera-inspection-after.jpg
+imageAlt: Sewer camera showing well-maintained pipe after following maintenance tips
 ---
 
 ## Understanding Your Sewer Line System

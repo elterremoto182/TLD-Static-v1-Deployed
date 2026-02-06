@@ -30,8 +30,8 @@ faqs:
     answer: Not usually. Professional leak detection uses non-invasive methods like acoustic listening and thermal imaging to pinpoint the leak location so only one small area needs to be opened for repair.
   - question: Is a slab leak an emergency?
     answer: If water is actively flooding or the meter is spinning rapidly, treat it as urgent and shut off the main. If there’s no active flooding but you have clear signs, schedule leak detection soon to limit damage.
-image: /images/gallery/leak-detection-technician.jpg
-imageAlt: Leak detection technician performing non-invasive inspection in a South Florida home
+image: /images/gallery/miami-moisture-meter-leak-detection.jpeg
+imageAlt: Professional moisture meter detecting slab leak in South Florida home foundation
 ---
 
 Slab leaks happen when a water line under the concrete foundation fails. Because you can’t see the pipe, the “leak” often shows up as indirect symptoms: a bill spike, warm floor spots, or moisture that seems to come from nowhere.

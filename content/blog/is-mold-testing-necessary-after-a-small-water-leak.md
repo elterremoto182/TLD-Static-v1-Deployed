@@ -20,8 +20,8 @@ keywords:
 faqs:
   - question: Is mold testing necessary after a small water leak?
     answer: 'It depends. If the area was dried quickly and thoroughly, testing may not be required. If drying was delayed, the leak was hidden, or you notice odor or staining, mold testing can confirm whether mold is present and guide cleanup. Professional mold testing can recommend whether testing is needed for your situation.'
-image: /images/gallery/mold-inspection-after.jpg
-imageAlt: Post-remediation mold inspection confirming successful cleanup
+image: /images/gallery/mold-test-under-sink.jpeg
+imageAlt: Mold testing under sink after small water leak
 ---
 
 # Is Mold Testing Necessary After a Small Water Leak?
