@@ -62,7 +62,8 @@ for (const file of files) {
   const { image, imageAlt } = pickHero(data.category || '', slug);
   data.image = image;
   data.imageAlt = imageAlt;
-  const newRaw = matter.stringify(content, data, { lineWidth: 1000 });
+  // lineWidth is passed through to js-yaml; gray-matter types don't declare it
+  const newRaw = matter.stringify(content, data, { lineWidth: 1000 } as Parameters<typeof matter.stringify>[2]);
   fs.writeFileSync(fullPath, newRaw, 'utf8');
   updated++;
   console.log(slug, '->', image);
