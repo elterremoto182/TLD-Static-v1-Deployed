@@ -1,7 +1,7 @@
 ---
 title: Can Leak Detection Identify Old or Inactive Leaks?
 date: '2026-02-05'
-excerpt: Leak detection works best on active leaks. Learn whether old or inactive leaks can be identified and what to do if a leak has stopped.
+excerpt: Leak detection works best on active leaks, but old or intermittent leaks can still be investigated. Here’s what’s possible and how to prepare.
 author: Tomasz Alemany
 category: Leak Detection
 tags:
@@ -11,22 +11,32 @@ pillar: leak-detection
 feedsService: /leak-detection/
 draft: false
 seo_title: Can Leak Detection Identify Old or Inactive Leaks? | Total Leak Detection
-seo_description: Can leak detection identify old or inactive leaks? Learn when leak detection works and what to do if a leak has stopped or is intermittent.
+seo_description: Can leak detection find an old or inactive leak? Learn what technicians can detect from stains and moisture, and how to catch intermittent leaks.
 keywords:
   - old leak
   - inactive leak
   - leak detection
   - intermittent
+  - intermittent water leak
+  - leak detection when leak stops
 faqs:
   - question: Can leak detection identify old or inactive leaks?
-    answer: 'Leak detection is most effective on active leaks—when water is flowing and making sound or creating temperature differences. Old or inactive leaks may leave stains or moisture that thermal imaging can detect, but the exact source is easier to find when the leak is active. If a leak has stopped, running water to that line may reactivate it for detection.'
+    answer: Leak detection is most accurate when a leak is active. However, technicians can still investigate old or intermittent leaks by analyzing moisture patterns, staining, and by safely re-pressurizing or running water in the suspected line when appropriate.
+  - question: Why are inactive leaks harder to locate?
+    answer: Many detection tools rely on an active signal—sound from escaping water or a clear temperature/moisture anomaly. If the leak isn’t currently leaking, those signals can be weak or absent.
+  - question: Can thermal imaging find an old leak?
+    answer: Thermal imaging can sometimes reveal temperature differences caused by wet materials, but it doesn’t “see water” directly. It’s most useful when there’s residual moisture or when a line is actively leaking.
+  - question: What should I do if a leak seems intermittent?
+    answer: Document when it happens (time of day, which fixtures were used), take photos of new staining, and avoid shutting off water for long periods before the appointment unless you’re preventing damage. The goal is to increase the chance the leak is active during testing.
+  - question: Is it still important to find the source of an old leak?
+    answer: Yes. If the underlying pipe or fitting wasn’t repaired, the same failure point can reopen under pressure or vibration and cause repeat damage.
 image: /images/gallery/moisture-detection.jpg
 imageAlt: Moisture detection equipment being used to locate hidden water leaks
 ---
 
-# Can Leak Detection Identify Old or Inactive Leaks?
+Leak detection is easiest when a leak is active. That’s when the tools have a strong signal: sound from escaping water, measurable moisture changes, and temperature differences (especially on hot lines).
 
-Leak detection works best when a leak is active—water is flowing and can be heard or seen with thermal imaging. Old or inactive leaks may leave stains or moisture that can be inspected, but the exact source is easier to find when water is running. That does not mean detection is useless for past leaks; it means the technician may need to work with what is left behind or temporarily reactivate the line.
+But “old” or “inactive” doesn’t automatically mean “impossible.” If you’re dealing with a past leak, a leak that only happens sometimes, or symptoms that come and go, a technician can often still narrow the cause—especially if you prepare the right information and timing.
 
 ## Why Active Leaks Are Easier to Find
 
@@ -38,7 +48,25 @@ Acoustic leak detection relies on the sound of water escaping from the pipe. Whe
 
 ## What Technicians Do When the Leak Is Inactive
 
-When the leak is not currently flowing, the technician may still be able to narrow down the area. Thermal imaging can show cool or warm spots where moisture has accumulated or where a past leak left the materials damp. Visual inspection of stains, soft drywall, or warped flooring can point to a general zone. In some cases, the technician will recommend running water to the suspected line—for example, turning on a fixture or opening a valve—for a period before or during the inspection so the leak becomes active enough to detect. That approach is common when the leak is intermittent or when the water has been off for a while. Your technician can explain the best approach for your situation.
+When the leak isn’t currently flowing, technicians typically shift from “pinpoint the sound” to “follow the evidence.” That can include:
+
+- **Moisture mapping** to see where materials are still wet (or have re-wet)
+- Reviewing **staining patterns** and where damage is newest vs. oldest
+- Checking for “on/off” causes (toilets, irrigation, recirculation pumps, appliances)
+- **Safely running water** on suspected lines to recreate the leak condition (when appropriate)
+
+If the symptom is intermittent, part of the job is increasing the chance the leak becomes active during the visit.
+
+## Common reasons leaks appear to “stop”
+
+Homeowners often report that a leak “went away.” Common explanations include:
+
+- The home’s water use changed (less pressure/flow for a period)
+- A valve was turned off temporarily (toilet, irrigation zone, appliance)
+- The leak only happens under certain pressure/temperature conditions (expansion/contraction)
+- The water migrated and dried on the surface while still leaking in a hidden cavity
+
+This is why documentation matters—even if the symptom isn’t obvious on inspection day.
 
 ## Why It Still Matters to Find Old Leak Sources
 
@@ -46,4 +74,11 @@ Even if a leak has stopped, finding the source is important. The pipe or fitting
 
 ## What to Tell the Technician When You Schedule
 
-When you schedule [professional leak detection](/leak-detection/), mention if the leak is intermittent or if the water has been off for a while. The technician may ask you to run water to the suspected line before or during the visit so the leak can be activated for acoustic or thermal detection. They can also explain whether they can work from residual moisture and damage alone if running water is not possible. Giving that context helps them choose the right approach for your [slab leak](/problems/slab-leak/) or [pipe burst](/problems/pipe-burst/) situation and improves the chance of a clear, actionable result.
+To improve the odds of a clear result, share:
+
+- **When** you noticed the issue and whether it’s intermittent
+- Any actions that changed symptoms (shutting off irrigation, replacing a toilet flapper, turning off a recirculation pump)
+- Photos of **fresh staining** or moisture when it was active
+- Whether the water has been shut off for long periods
+
+If it’s safe to do so, try not to “freeze” the system in a way that makes the leak impossible to reproduce. Your technician can advise whether to run specific fixtures before arrival so the signal is strong enough to detect.
