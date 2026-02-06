@@ -193,9 +193,15 @@ export default async function DynamicPage({
   // Check for blog post first
   const post = getPostBySlug(slug);
   if (post) {
+    if (post.draft) {
+      notFound();
+    }
     const postUrl = `${baseUrl}/${post.slug}/`;
     const breadcrumbs = generateBreadcrumbs(`/${post.slug}`, post.title);
-    
+    const faqEligible = /^(How|Can|Does|Is)\s/i.test(post.title);
+    const faqsForSchema =
+      faqEligible && post.faqs && post.faqs.length > 0 ? post.faqs : undefined;
+
     // Build unified schema graph for article
     const schemaGraph = buildPageSchemaGraph({
       pageType: 'article',
@@ -210,6 +216,7 @@ export default async function DynamicPage({
         image: post.image,
         content: post.content,
       },
+      faqs: faqsForSchema,
     });
     
     const html = await processMarkdown(post.content);
@@ -315,6 +322,24 @@ export default async function DynamicPage({
               <YouTubeHydrator>
                 <MarkdownRenderer html={html} />
               </YouTubeHydrator>
+
+              {post.faqs && post.faqs.length > 0 && (
+                <section id="faq" className="mt-12 pt-8 border-t border-gray-200">
+                  <h2 className="text-2xl font-bold text-gray-900 mb-4">
+                    Frequently Asked Questions
+                  </h2>
+                  <dl className="space-y-4">
+                    {post.faqs.map((faq, i) => (
+                      <div key={i}>
+                        <dt className="text-lg font-semibold text-gray-900">
+                          {faq.question}
+                        </dt>
+                        <dd className="mt-1 text-gray-600">{faq.answer}</dd>
+                      </div>
+                    ))}
+                  </dl>
+                </section>
+              )}
             </div>
           </article>
           

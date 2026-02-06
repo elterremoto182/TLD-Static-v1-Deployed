@@ -4,6 +4,11 @@ import matter from 'gray-matter';
 
 const postsDirectory = path.join(process.cwd(), 'content/blog');
 
+export interface BlogPostFaq {
+  question: string;
+  answer: string;
+}
+
 export interface BlogPost {
   slug: string;
   title: string;
@@ -18,6 +23,8 @@ export interface BlogPost {
   image?: string;
   imageAlt?: string;
   content: string;
+  draft?: boolean;
+  faqs?: BlogPostFaq[];
 }
 
 // Category display name to URL slug mapping
@@ -42,11 +49,19 @@ export function slugToCategory(slug: string): string | undefined {
   return slugCategoryMap[slug];
 }
 
+const EXCLUDED_SLUGS = ['PUBLISH_WAVES'];
+
 export function getPostSlugs(): string[] {
   if (!fs.existsSync(postsDirectory)) {
     return [];
   }
-  return fs.readdirSync(postsDirectory).filter((file) => file.endsWith('.md'));
+  return fs
+    .readdirSync(postsDirectory)
+    .filter(
+      (file) =>
+        file.endsWith('.md') &&
+        !EXCLUDED_SLUGS.includes(file.replace(/\.md$/, ''))
+    );
 }
 
 export function getPostBySlug(slug: string): BlogPost | null {
@@ -55,6 +70,12 @@ export function getPostBySlug(slug: string): BlogPost | null {
     const fullPath = path.join(postsDirectory, `${realSlug}.md`);
     const fileContents = fs.readFileSync(fullPath, 'utf8');
     const { data, content } = matter(fileContents);
+
+    const faqs = Array.isArray(data.faqs)
+      ? (data.faqs as BlogPostFaq[]).filter(
+          (f) => f && typeof f.question === 'string' && typeof f.answer === 'string'
+        )
+      : undefined;
 
     return {
       slug: realSlug,
@@ -70,19 +91,27 @@ export function getPostBySlug(slug: string): BlogPost | null {
       image: data.image || '',
       imageAlt: data.imageAlt || '',
       content,
+      draft: data.draft === true,
+      faqs: faqs && faqs.length > 0 ? faqs : undefined,
     };
   } catch (error) {
     return null;
   }
 }
 
-export function getAllPosts(): BlogPost[] {
+/**
+ * Get all blog posts. By default returns only published posts (draft !== true).
+ * Pass includeDrafts: true to include draft posts (e.g. for tooling).
+ */
+export function getAllPosts(includeDrafts = false): BlogPost[] {
   const slugs = getPostSlugs();
-  const posts = slugs
+  let posts = slugs
     .map((slug) => getPostBySlug(slug))
-    .filter((post): post is BlogPost => post !== null)
-    .sort((post1, post2) => (post1.date > post2.date ? -1 : 1));
-  return posts;
+    .filter((post): post is BlogPost => post !== null);
+  if (!includeDrafts) {
+    posts = posts.filter((post) => post.draft !== true);
+  }
+  return posts.sort((post1, post2) => (post1.date > post2.date ? -1 : 1));
 }
 
 export function getPostsByCategory(categorySlug: string): BlogPost[] {

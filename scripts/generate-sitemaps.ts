@@ -53,7 +53,7 @@ function getAllProblemSlugs(): string[] {
   return Object.keys(problemsData);
 }
 
-// Get all blog posts with full metadata
+// Get all published blog posts (excludes draft: true)
 function getAllPosts(): Array<{ slug: string; date: string; category?: string; tags?: string[] }> {
   const postsDir = path.join(process.cwd(), 'content/blog');
   if (!fs.existsSync(postsDir)) return [];
@@ -62,10 +62,13 @@ function getAllPosts(): Array<{ slug: string; date: string; category?: string; t
   const posts: Array<{ slug: string; date: string; category?: string; tags?: string[] }> = [];
   
   for (const file of files) {
+    const slug = file.replace(/\.md$/, '');
+    if (slug === 'PUBLISH_WAVES') continue;
     const content = fs.readFileSync(path.join(postsDir, file), 'utf8');
     const { data } = matter(content);
+    if (data.draft === true) continue;
     posts.push({
-      slug: file.replace(/\.md$/, ''),
+      slug,
       date: data.date || new Date().toISOString(),
       category: data.category,
       tags: Array.isArray(data.tags) ? data.tags : [],
