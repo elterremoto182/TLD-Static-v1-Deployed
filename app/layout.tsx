@@ -1,18 +1,24 @@
 import './globals.css';
 import type { Metadata } from 'next';
+import dynamic from 'next/dynamic';
 import { Inter } from 'next/font/google';
 import Script from 'next/script';
 import siteConfig from '@/config/site.json';
-import { StickyCallButton } from '@/components/StickyCallButton';
 import { generateOrganizationSchema, schemaToJsonLd } from '@/lib/seo/schema';
 import { GA_MEASUREMENT_ID } from '@/lib/analytics';
 // Microsoft Clarity ID for heatmaps & session recordings
 const CLARITY_ID = 'vcow2597yw';
 
+// Defer sticky CTA so it doesn't compete with LCP / initial paint
+const StickyCallButton = dynamic(
+  () => import('@/components/StickyCallButton').then((mod) => ({ default: mod.StickyCallButton })),
+  { ssr: false }
+);
+
 const inter = Inter({
   subsets: ['latin'],
   variable: '--font-inter',
-  display: 'optional', // Changed from 'swap' for faster FCP - font renders immediately with fallback
+  display: 'swap',
   preload: true,
   fallback: ['system-ui', '-apple-system', 'sans-serif'],
   adjustFontFallback: true,
@@ -51,8 +57,9 @@ export default function RootLayout({
     ...generateOrganizationSchema(),
   };
 
-  // Logo is above-the-fold on every page; hero image is preloaded only on homepage via (home)/layout
   const logoImage = siteConfig.logo || '/images/logo.png';
+  const heroWebpBase = '/images/hero/nextImageExportOptimizer/hero-background-opt';
+  const heroImageSrcSet = `${heroWebpBase}-640.WEBP 640w, ${heroWebpBase}-1080.WEBP 1080w, ${heroWebpBase}-1920.WEBP 1920w`;
 
   return (
     <html lang="en" className={inter.variable}>
@@ -70,6 +77,21 @@ export default function RootLayout({
           as="image"
           type="image/png"
           fetchPriority="high"
+        />
+        {/* Preload LCP hero image - explicit preload for faster LCP on homepage */}
+        <link
+          rel="preload"
+          as="image"
+          href={`${heroWebpBase}-640.WEBP`}
+          imageSrcSet={heroImageSrcSet}
+          imageSizes="100vw"
+          fetchPriority="high"
+        />
+        {/* Critical inline CSS for hero/LCP - reduces render-blocking and layout thrash */}
+        <style
+          dangerouslySetInnerHTML={{
+            __html: `[data-hero]{position:relative;min-height:100vh;display:flex;align-items:center;justify-content:center;overflow:hidden}[data-hero] img[fetchpriority="high"]{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}`,
+          }}
         />
         <link rel="icon" href={faviconPath} />
         <link rel="apple-touch-icon" href={faviconPath} />

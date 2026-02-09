@@ -5,11 +5,22 @@ import OptimizedImage from '@/components/OptimizedImage';
 import { VideoPlayer } from '@/components/media/VideoPlayer';
 import content from '@/config/content.json';
 
+// Prebuilt WEBP paths for LCP: native <img> avoids hydration delay (~1.8s) vs OptimizedImage
+const HERO_WEBP_BASE = '/images/hero/nextImageExportOptimizer/hero-background-opt';
+const HERO_SRC_SET = `${HERO_WEBP_BASE}-640.WEBP 640w, ${HERO_WEBP_BASE}-1080.WEBP 1080w, ${HERO_WEBP_BASE}-1920.WEBP 1920w`;
+
 export function Hero() {
   const { hero } = content;
+  const useNativeHeroImg =
+    !hero.backgroundVideo &&
+    hero.backgroundImage &&
+    hero.backgroundImage.includes('hero-background');
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section
+      className="relative min-h-screen flex items-center justify-center overflow-hidden"
+      data-hero
+    >
       {hero.backgroundVideo && (
         <div className="absolute inset-0 z-0">
           <VideoPlayer
@@ -23,7 +34,29 @@ export function Hero() {
         </div>
       )}
 
-      {!hero.backgroundVideo && hero.backgroundImage && (
+      {!hero.backgroundVideo && hero.backgroundImage && useNativeHeroImg && (
+        <div className="absolute inset-0 z-0">
+          <img
+            src={`${HERO_WEBP_BASE}-640.WEBP`}
+            srcSet={HERO_SRC_SET}
+            sizes="100vw"
+            alt="Leak Detection Miami - professional water leak detection services in South Florida"
+            loading="eager"
+            decoding="async"
+            fetchPriority="high"
+            className="object-cover"
+            style={{
+              position: 'absolute',
+              inset: 0,
+              width: '100%',
+              height: '100%',
+            }}
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/40 to-black/50" />
+        </div>
+      )}
+
+      {!hero.backgroundVideo && hero.backgroundImage && !useNativeHeroImg && (
         <div className="absolute inset-0 z-0">
           <OptimizedImage
             src={hero.backgroundImage}
