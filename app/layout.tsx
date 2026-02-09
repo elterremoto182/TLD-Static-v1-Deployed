@@ -76,6 +76,14 @@ export default function RootLayout({
           type="image/png"
           fetchPriority="high"
         />
+        {/* Preload hero LCP image so the browser fetches it from <head> instead of on first paint */}
+        <link
+          rel="preload"
+          as="image"
+          href="/images/hero/nextImageExportOptimizer/hero-background-opt-640.WEBP"
+          imageSrcSet="/images/hero/nextImageExportOptimizer/hero-background-opt-640.WEBP 640w, /images/hero/nextImageExportOptimizer/hero-background-opt-1080.WEBP 1080w, /images/hero/nextImageExportOptimizer/hero-background-opt-1920.WEBP 1920w"
+          imageSizes="100vw"
+        />
         <link rel="icon" href={faviconPath} />
         <link rel="apple-touch-icon" href={faviconPath} />
         <script
