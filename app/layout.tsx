@@ -75,13 +75,13 @@ export default function RootLayout({
           type="image/png"
           fetchPriority="high"
         />
-        {/* Preload LCP hero image - imagesrcset/imagesizes so browser picks correct size (e.g. 640w on mobile) */}
+        {/* Preload LCP hero image - imageSrcSet/imageSizes so browser picks correct size (e.g. 640w on mobile) */}
         <link
           rel="preload"
           as="image"
           href={`${heroWebpBase}-640.WEBP`}
-          imagesrcset={heroImageSrcSet}
-          imagesizes="100vw"
+          imageSrcSet={heroImageSrcSet}
+          imageSizes="100vw"
           fetchPriority="high"
         />
         {/* Critical inline CSS for hero/LCP - reduces render-blocking and layout thrash */}
