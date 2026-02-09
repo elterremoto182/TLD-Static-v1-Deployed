@@ -119,8 +119,8 @@ function rehypeApplyStyles() {
       }
     });
     
-    // Second pass: apply styles (use index + parent for img wrapper replacement)
-    visit(tree, 'element', (node: Element, index: number | undefined, parent: Root | Element | undefined) => {
+    // Second pass: apply styles
+    visit(tree, 'element', (node: Element) => {
       const existingClass = node.properties?.className 
         ? (Array.isArray(node.properties.className) 
             ? node.properties.className.join(' ') 
@@ -229,23 +229,9 @@ function rehypeApplyStyles() {
             delete node.properties['data-lcp-image'];
           }
           
-          // Wrap images without dimensions in aspect-ratio container to prevent CLS (skip if already wrapped)
-          const parentClass = parent && 'properties' in parent && parent.properties?.className
-            ? (Array.isArray(parent.properties.className) ? parent.properties.className.join(' ') : String(parent.properties.className))
-            : '';
-          const alreadyWrapped = parentClass.includes('markdown-image-wrapper');
-          if ((!imgWidth || !imgHeight) && parent != null && typeof index === 'number' && 'children' in parent && !alreadyWrapped) {
-            const wrapper: Element = {
-              type: 'element',
-              tagName: 'div',
-              properties: { className: ['markdown-image-wrapper', 'aspect-video', 'overflow-hidden', 'rounded-lg', 'my-6'] },
-              children: [node],
-            };
-            (node as Element).properties = {
-              ...(node.properties || {}),
-              className: `${(node.properties?.className as string) || ''} w-full h-full object-cover`.trim(),
-            };
-            parent.children[index] = wrapper;
+          // If no dimensions, add aspect ratio styling via wrapper
+          if (!imgWidth || !imgHeight) {
+            // We'll handle this via CSS - images without dimensions will use default styling
           }
           break;
       }

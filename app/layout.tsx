@@ -58,13 +58,14 @@ export default function RootLayout({
   };
 
   const logoImage = siteConfig.logo || '/images/logo.png';
-  const heroWebpBase = '/images/hero/nextImageExportOptimizer/hero-background-opt';
-  const heroImageSrcSet = `${heroWebpBase}-640.WEBP 640w, ${heroWebpBase}-1080.WEBP 1080w, ${heroWebpBase}-1920.WEBP 1920w`;
 
   return (
     <html lang="en" className={inter.variable}>
       <head>
-        {/* Preconnect to analytics domains for faster script loading (Inter is self-hosted via next/font) */}
+        {/* Preconnect to Google Fonts for faster font loading */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        {/* Preconnect to analytics domains for faster script loading */}
         <link rel="preconnect" href="https://www.googletagmanager.com" />
         <link rel="preconnect" href="https://www.google-analytics.com" />
         {/* Preload logo - above-the-fold on every page */}
@@ -74,21 +75,6 @@ export default function RootLayout({
           as="image"
           type="image/png"
           fetchPriority="high"
-        />
-        {/* Preload LCP hero image - imageSrcSet/imageSizes so browser picks correct size (e.g. 640w on mobile) */}
-        <link
-          rel="preload"
-          as="image"
-          href={`${heroWebpBase}-640.WEBP`}
-          imageSrcSet={heroImageSrcSet}
-          imageSizes="100vw"
-          fetchPriority="high"
-        />
-        {/* Critical inline CSS for hero/LCP - reduces render-blocking and layout thrash */}
-        <style
-          dangerouslySetInnerHTML={{
-            __html: `[data-hero]{position:relative;min-height:100vh;display:flex;align-items:center;justify-content:center;overflow:hidden}[data-hero] img[fetchpriority="high"]{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}`,
-          }}
         />
         <link rel="icon" href={faviconPath} />
         <link rel="apple-touch-icon" href={faviconPath} />
