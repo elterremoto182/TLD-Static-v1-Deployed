@@ -5,7 +5,6 @@ import { Breadcrumb } from '@/components/ui/breadcrumb';
 import { MarkdownRenderer, processMarkdown } from '@/components/blog/MarkdownRenderer';
 import { YouTubeHydrator } from '@/components/YouTubeHydrator';
 import { YouTubeEmbed } from '@/components/media/YouTubeEmbed';
-import OptimizedImage from '@/components/OptimizedImage';
 import { Phone, Shield, Play } from 'lucide-react';
 import { getPageBySlug } from '@/lib/pages/pages';
 import { generatePageMetadata, generateBreadcrumbs } from '@/lib/utils';
@@ -50,9 +49,10 @@ export default async function AboutPage() {
   });
 
   const html = await processMarkdown(page.content);
-  
-  // Use a service image for the hero
-  const heroImage = '/wp-content/themes/sk-theme-three/dist/images/services/48-plumbing_3721e04b.jpg';
+
+  // Native img + WEBP srcSet for LCP (avoids hydration delay, responsive sizes)
+  const aboutHeroWebpBase = '/wp-content/themes/sk-theme-three/dist/images/services/nextImageExportOptimizer/48-plumbing_3721e04b-opt';
+  const aboutHeroSrcSet = `${aboutHeroWebpBase}-640.WEBP 640w, ${aboutHeroWebpBase}-1080.WEBP 1080w, ${aboutHeroWebpBase}-1920.WEBP 1920w`;
 
   return (
     <>
@@ -69,14 +69,21 @@ export default async function AboutPage() {
         <section className="relative h-[50vh] min-h-[400px] max-h-[500px] overflow-hidden">
           {/* Background Image */}
           <div className="absolute inset-0">
-            <OptimizedImage
-              src={heroImage}
-              alt={`${page.title} - Total Leak Detection`}
-              fill
-              className="object-cover"
-              priority
-              fetchPriority="high"
+            <img
+              src={`${aboutHeroWebpBase}-640.WEBP`}
+              srcSet={aboutHeroSrcSet}
               sizes="100vw"
+              alt={`${page.title} - Total Leak Detection`}
+              loading="eager"
+              decoding="async"
+              fetchPriority="high"
+              className="object-cover"
+              style={{
+                position: 'absolute',
+                inset: 0,
+                width: '100%',
+                height: '100%',
+              }}
             />
             {/* Gradient Overlay */}
             <div className="absolute inset-0 bg-gradient-to-r from-primary/90 via-primary/75 to-primary/60" />

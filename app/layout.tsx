@@ -64,10 +64,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={inter.variable}>
       <head>
-        {/* Preconnect to Google Fonts for faster font loading */}
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        {/* Preconnect to analytics domains for faster script loading */}
+        {/* Preconnect to analytics domains for faster script loading (Inter is self-hosted via next/font) */}
         <link rel="preconnect" href="https://www.googletagmanager.com" />
         <link rel="preconnect" href="https://www.google-analytics.com" />
         {/* Preload logo - above-the-fold on every page */}
@@ -78,13 +75,13 @@ export default function RootLayout({
           type="image/png"
           fetchPriority="high"
         />
-        {/* Preload LCP hero image - explicit preload for faster LCP on homepage */}
+        {/* Preload LCP hero image - imagesrcset/imagesizes so browser picks correct size (e.g. 640w on mobile) */}
         <link
           rel="preload"
           as="image"
           href={`${heroWebpBase}-640.WEBP`}
-          imageSrcSet={heroImageSrcSet}
-          imageSizes="100vw"
+          imagesrcset={heroImageSrcSet}
+          imagesizes="100vw"
           fetchPriority="high"
         />
         {/* Critical inline CSS for hero/LCP - reduces render-blocking and layout thrash */}
