@@ -11,7 +11,6 @@ import {
   getCity,
   getService,
   getAllProblemCityCombinations,
-  getNearbyCities,
 } from '@/lib/local-seo/data';
 import {
   generateProblemCityMetaTitle,
@@ -130,7 +129,6 @@ export default async function ProblemCityPage({
   const h1 = generateProblemCityH1(problem, city);
   const breadcrumbs = generateProblemCityBreadcrumbs(problem, city);
   const canonicalUrl = getProblemCityCanonicalUrl(problemSlug, citySlug);
-  const nearbyCities = getNearbyCities(citySlug, 6);
   
   // Generate schemas
   const breadcrumbSchema = generateBreadcrumbSchema(breadcrumbs, canonicalUrl);
@@ -305,31 +303,6 @@ export default async function ProblemCityPage({
                   </div>
                   <ArrowRight className="w-6 h-6 text-gray-400 group-hover:text-primary group-hover:translate-x-1 transition-all" />
                 </Link>
-            </div>
-          </section>
-        )}
-        
-        {/* Nearby Cities */}
-        {nearbyCities.length > 0 && (
-          <section className="py-12 bg-white">
-            <div className="max-w-4xl mx-auto px-4">
-                <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">
-                  {problem.name} Detection in Nearby Areas
-                </h2>
-                <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
-                  {nearbyCities.map((nearbyCity) => (
-                    <Link
-                      key={nearbyCity.slug}
-                      href={`/problems/${problemSlug}/${nearbyCity.slug}/`}
-                      className="group flex items-center gap-2 p-3 bg-gray-50 hover:bg-primary/5 rounded-lg border border-gray-100 hover:border-primary/20 transition-all"
-                    >
-                      <MapPin className="w-4 h-4 text-primary" />
-                      <span className="font-medium text-gray-800 group-hover:text-primary transition-colors">
-                        {nearbyCity.name}
-                      </span>
-                    </Link>
-                  ))}
-                </div>
             </div>
           </section>
         )}

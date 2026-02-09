@@ -22,13 +22,7 @@ import {
   schemaToJsonLd,
 } from '@/lib/local-seo/schema';
 import { buildPageSchemaGraph } from '@/lib/seo/schema';
-import {
-  getRelatedServiceLinks,
-  getProblemLinksForService,
-  getRelatedBlogLinks,
-  getCityServiceCanonicalUrl,
-} from '@/lib/local-seo/links';
-import { getAllNearbyTierLinks } from '@/lib/local-seo/tier-links';
+import { getCityServiceCanonicalUrl } from '@/lib/local-seo/links';
 
 import {
   LocalHero,
@@ -38,8 +32,6 @@ import {
   NeighborhoodList,
   LocalFAQ,
   LocalCTA,
-  NearbyAreas,
-  RelatedLinks,
   ServiceVideoEmbed,
   RealWorkGallery,
 } from '@/components/local-seo';
@@ -98,12 +90,6 @@ export default async function MoldTestingCityPage({
   
   const baseFaqs = getFaqsForService(SERVICE_SLUG);
   const faqs = renderFaqs(baseFaqs, city);
-  
-  // Get tier-based city links (links to appropriate tier below + supplemental for orphan prevention)
-  const nearbyCityLinks = getAllNearbyTierLinks(citySlug, SERVICE_SLUG, 3);
-  const relatedServiceLinks = getRelatedServiceLinks(SERVICE_SLUG, citySlug);
-  const problemLinks = getProblemLinksForService(SERVICE_SLUG, citySlug);
-  const blogLinks = getRelatedBlogLinks(SERVICE_SLUG, citySlug, 3);
   const videoConfig = getCityServiceVideo(SERVICE_SLUG, citySlug);
   
   const canonicalUrl = getCityServiceCanonicalUrl(SERVICE_SLUG, citySlug);
@@ -204,20 +190,6 @@ export default async function MoldTestingCityPage({
             subtitle="Get answers to common questions about our services"
           />
         )}
-        
-        {nearbyCityLinks.length > 0 && (
-          <NearbyAreas
-            links={nearbyCityLinks}
-            title={`${service.name} in Nearby Areas`}
-            subtitle={`We also serve communities near ${city.name}`}
-          />
-        )}
-        
-        <RelatedLinks
-          serviceLinks={relatedServiceLinks}
-          problemLinks={problemLinks}
-          blogLinks={blogLinks}
-        />
         
         <LocalCTA
           cityName={city.name}
