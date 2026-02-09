@@ -265,6 +265,56 @@ Each city includes:
 
 ---
 
+## How We Link City Pages
+
+City pages are linked using a **3-tier hierarchy** and **geographic proximity** so that link equity flows from hubs to major metros, then to nearby cities, and every city page is reachable from internal links (no orphans).
+
+### City tier hierarchy
+
+- **Tier 1** (10 cities): Major metros — Miami, Miami Beach, Coral Gables, Hialeah, Fort Lauderdale, Hollywood, Pembroke Pines, Pompano Beach, Plantation, Miramar. These get links from every service hub.
+- **Tier 2** (15 cities): Secondary markets — Doral, Kendall, Aventura, North Miami, Pinecrest, Homestead, Miami Lakes, Cutler Bay, Coral Springs, Davie, Sunrise, Weston, Deerfield Beach, Hallandale Beach, Cooper City.
+- **Tier 3**: All remaining cities (e.g. Boca Raton, Key Biscayne, Sweetwater). Linked from Tier 2 and from the `/areas/` page.
+
+Tier definitions live in `lib/local-seo/city-tiers.ts`.
+
+### Hub → city links
+
+- **Service hubs** (`/leak-detection/`, `/mold-testing/`, `/sewer-camera-inspection/`) link to **all Tier 1 cities** in the main grid (`ServiceHubCityGrid` / `getAllTier1CityLinks`). A secondary section can show **all Tier 2 cities** (`getAllTier2CityLinks` / `TieredCityGrid`).
+- **Problem hubs** (`/problems/{problem}/`) list **all cities grouped by county** with links to `/problems/{problem}/{city}/` via `CityGrid`.
+- **Areas page** (`/areas/`) lists popular cities plus **all cities by county** with links to each service: `/{service}/{city}/`.
+
+So: every Tier 1 and Tier 2 city gets links from at least one hub; Tier 3 cities get links from the problem hubs and the areas page.
+
+### City page → nearby city links
+
+On a **city × service page** (e.g. `/leak-detection/miami/`), “nearby” links are **tier-based and geographic** (implemented in `lib/local-seo/tier-links.ts`):
+
+- **Tier 1 city** → links to the **3 geographically nearest Tier 2** cities (Haversine distance).
+- **Tier 2 city** → links to the **3 geographically nearest Tier 3** cities.
+- **Tier 3 city** → links to the **3 nearest other Tier 3** cities (mesh).
+
+**Orphan prevention:** Some Tier 2 cities would not get any link from the “nearest 3” from Tier 1. Those **orphaned Tier 2** cities are distributed across Tier 1 city pages via `getSupplementalTier2Links()` so every Tier 2 city receives at least one inbound link.
+
+The combined set (tier links + supplemental) is provided by `getAllNearbyTierLinks(citySlug, serviceSlug)` and is used in components such as `NearbyAreas` and `RelatedLinks` on city pages.
+
+### Where city links appear
+
+| Location | What’s linked | Source |
+|----------|----------------|--------|
+| Service hub page | All Tier 1 (and optionally Tier 2) cities for that service | `ServiceHubCityGrid`, `TieredCityGrid`, `getAllTier1CityLinks`, `getAllTier2CityLinks` |
+| City × service page | Nearby cities (tier + distance + supplemental) | `NearbyAreas`, `RelatedLinks` → `getAllNearbyTierLinks` |
+| Problem hub page | All cities by county for that problem | `CityGrid` in `app/problems/[problem]/page.tsx` |
+| Problem × city page | Parent service in same city | Link to `/{parentService}/{city}/` from `problems.json` |
+| Areas page | Popular cities + all cities by county, each with links to all services | `app/areas/page.tsx` |
+
+### URL patterns
+
+- Service + city: `/{service}/{city}/` (e.g. `/leak-detection/miami/`).
+- Problem + city: `/problems/{problem}/{city}/` (e.g. `/problems/slab-leak/miami/`).
+- Trailing slashes are used consistently for canonicals and sitemaps.
+
+---
+
 ## Blog Taxonomy
 
 Blog posts are organized by category and linked to their parent service and pillar page:
@@ -299,7 +349,7 @@ Blog posts are organized by category and linked to their parent service and pill
 2. **Tier 1 → Pillar**: Every blog post links to its pillar page
 3. **Pillar → Cluster**: Pillar pages link to all supporting blog posts
 4. **Pillar → Service**: Pillar pages include CTAs to related services
-5. **Service → Local**: Service pages link to city-specific pages
+5. **Service → Local**: Service pages link to city-specific pages (see [How We Link City Pages](#how-we-link-city-pages))
 6. **Cross-Cluster**: Related topics link horizontally (e.g., leaks → mold)
 
 ### Example Link Flow

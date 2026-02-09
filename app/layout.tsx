@@ -83,6 +83,13 @@ export default function RootLayout({
           href="/images/hero/nextImageExportOptimizer/hero-background-opt-640.WEBP"
           imageSrcSet="/images/hero/nextImageExportOptimizer/hero-background-opt-640.WEBP 640w, /images/hero/nextImageExportOptimizer/hero-background-opt-1080.WEBP 1080w, /images/hero/nextImageExportOptimizer/hero-background-opt-1920.WEBP 1920w"
           imageSizes="100vw"
+          fetchPriority="high"
+        />
+        {/* Critical CSS for LCP: hero + LCP image layout so first paint isn't blocked by main stylesheet */}
+        <style
+          dangerouslySetInnerHTML={{
+            __html: `[data-hero]{position:relative;min-height:100vh;display:flex;align-items:center;justify-content:center;overflow:hidden}[data-hero] img[fetchpriority="high"]{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}header{position:fixed;top:0;left:0;right:0;z-index:50}`,
+          }}
         />
         <link rel="icon" href={faviconPath} />
         <link rel="apple-touch-icon" href={faviconPath} />
@@ -113,9 +120,9 @@ export default function RootLayout({
           `}
         </Script>
         
-        {/* Microsoft Clarity - Heatmaps & Session Recordings */}
+        {/* Microsoft Clarity - lazyOnload to avoid forced reflow during critical path (Clarity reads layout for heatmaps) */}
         {CLARITY_ID && (
-          <Script id="microsoft-clarity" strategy="afterInteractive">
+          <Script id="microsoft-clarity" strategy="lazyOnload">
             {`
               (function(c,l,a,r,i,t,y){
                 c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
