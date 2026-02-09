@@ -97,12 +97,12 @@ export default function RootLayout({
         {children}
         <StickyCallButton />
         
-        {/* Google Analytics (GA4) */}
+        {/* Google Analytics (GA4) - lazyOnload to avoid forced reflow during critical path (gtag reads layout) */}
         <Script
           src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
-          strategy="afterInteractive"
+          strategy="lazyOnload"
         />
-        <Script id="google-analytics" strategy="afterInteractive">
+        <Script id="google-analytics" strategy="lazyOnload">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
