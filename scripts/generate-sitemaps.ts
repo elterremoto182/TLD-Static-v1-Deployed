@@ -91,21 +91,7 @@ function getAllCategories(): string[] {
   return Object.values(categorySlugMap);
 }
 
-// Get all unique tags from blog posts
-function getAllTags(): string[] {
-  const posts = getAllPosts();
-  const tags = new Set<string>();
-  
-  for (const post of posts) {
-    if (post.tags) {
-      post.tags.forEach(tag => tags.add(tag));
-    }
-  }
-  
-  return Array.from(tags);
-}
-
-// Load blog tags config for indexable check
+// Load blog tags config (source of truth for tag pages; sitemap must match app's generateStaticParams)
 function getBlogTagsConfig(): Record<string, { indexable: boolean; minPosts?: number }> {
   try {
     const tagsConfig = JSON.parse(
@@ -352,9 +338,12 @@ function generateBlogSitemap(): { xml: string; count: number } {
   const today = formatDate(new Date());
   const posts = getAllPosts();
   const categories = getAllCategories();
-  const tags = getAllTags();
   const tagsConfig = getBlogTagsConfig();
   const tagCounts = getTagPostCounts();
+
+  // Only include tag pages that exist in config (same source as app's generateStaticParams).
+  // Tags from post frontmatter but not in config have no page → would 404 if listed in sitemap.
+  const configTagSlugs = Object.keys(tagsConfig);
   
   const entries: SitemapEntry[] = [
     // Blog listing page
@@ -376,8 +365,8 @@ function generateBlogSitemap(): { xml: string; count: number } {
     });
   }
 
-  // Tag pages (only if indexable and meets minPosts threshold)
-  for (const tag of tags) {
+  // Tag pages: only config-defined tags (indexable and meeting minPosts threshold)
+  for (const tag of configTagSlugs) {
     const tagConfig = tagsConfig[tag];
     const postCount = tagCounts[tag] || 0;
     
