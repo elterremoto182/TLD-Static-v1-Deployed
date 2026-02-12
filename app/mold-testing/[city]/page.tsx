@@ -68,6 +68,7 @@ export async function generateMetadata({
     keywords: generateFocusedKeywords(service, city),
     alternates: { canonical: canonicalUrl },
     openGraph: { title, description, url: canonicalUrl, type: 'website' },
+    twitter: { url: canonicalUrl },
   };
 }
 

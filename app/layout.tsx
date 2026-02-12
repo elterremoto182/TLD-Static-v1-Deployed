@@ -33,6 +33,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: siteConfig.seo.title,
     description: siteConfig.seo.description,
+    url: `${baseUrl}/`,
     images: [siteConfig.seo.ogImage],
     type: 'website',
   },
@@ -40,6 +41,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: siteConfig.seo.title,
     description: siteConfig.seo.description,
+    url: `${baseUrl}/`,
     images: [siteConfig.seo.ogImage],
   },
 };

@@ -403,7 +403,7 @@ export function generateWebSiteSchema(): Omit<WebSiteSchema, '@context'> {
   return {
     '@type': 'WebSite',
     '@id': `${baseUrl}/#website`,
-    url: baseUrl,
+    url: `${baseUrl}/`,
     name: siteConfig.name,
     description: siteConfig.description,
     publisher: { '@id': `${baseUrl}/#organization` },
@@ -429,7 +429,7 @@ export function generateOrganizationSchema(): Omit<OrganizationSchema, '@context
     '@type': 'Organization',
     '@id': `${baseUrl}/#organization`,
     name: siteConfig.name,
-    url: baseUrl,
+    url: `${baseUrl}/`,
     logo: {
       '@type': 'ImageObject',
       url: `${baseUrl}${siteConfig.logo}`,
@@ -481,7 +481,7 @@ export function generateLocalBusinessSchema(options?: {
     '@id': `${baseUrl}/#organization`,
     name: siteConfig.name,
     image: `${baseUrl}${siteConfig.logo}`,
-    url: baseUrl,
+    url: `${baseUrl}/`,
     telephone: siteConfig.phone,
     email: siteConfig.email,
     description,

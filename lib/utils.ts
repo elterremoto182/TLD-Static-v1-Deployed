@@ -137,6 +137,7 @@ export function generatePageMetadata({
       title,
       description: finalDescription,
       images: [ogImageUrl],
+      url,
     },
   };
 }

@@ -39,6 +39,7 @@ export async function generateMetadata() {
       url: canonicalUrl,
       type: 'website',
     },
+    twitter: { url: canonicalUrl },
   };
 }
 
