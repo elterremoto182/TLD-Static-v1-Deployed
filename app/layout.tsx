@@ -4,6 +4,7 @@ import dynamic from 'next/dynamic';
 import { Inter } from 'next/font/google';
 import Script from 'next/script';
 import siteConfig from '@/config/site.json';
+import { baseUrl } from '@/lib/site-url';
 import { generateOrganizationSchema, schemaToJsonLd } from '@/lib/seo/schema';
 import { GA_MEASUREMENT_ID } from '@/lib/analytics';
 // Microsoft Clarity ID for heatmaps & session recordings
@@ -25,7 +26,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://totalleakdetection.com'),
+  metadataBase: new URL(baseUrl),
   title: siteConfig.seo.title,
   description: siteConfig.seo.description,
   keywords: siteConfig.seo.keywords,

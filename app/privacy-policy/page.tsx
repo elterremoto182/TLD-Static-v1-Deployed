@@ -11,6 +11,7 @@ import {
   generateBreadcrumbListSchema,
   structuredDataToJsonLd,
 } from '@/lib/seo/structured-data';
+import { baseUrl } from '@/lib/site-url';
 
 export async function generateMetadata() {
   const page = getPageBySlug('privacy-policy');
@@ -38,7 +39,6 @@ export default async function PrivacyPolicyPage() {
     notFound();
   }
 
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://totalleakdetection.com';
   const breadcrumbs = generateBreadcrumbs('/privacy-policy', page.title);
   const webPageSchema = generateWebPageSchema({
     title: page.seo_title || page.title || 'Privacy Policy - Total Leak Detection',

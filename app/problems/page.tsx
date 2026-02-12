@@ -10,9 +10,9 @@ import {
   schemaToJsonLd,
   BreadcrumbItem,
 } from '@/lib/local-seo/schema';
+import { baseUrl } from '@/lib/site-url';
 
 export async function generateMetadata() {
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://totalleakdetection.com';
   const canonicalUrl = `${baseUrl}/problems/`;
 
   return {
@@ -45,7 +45,6 @@ export async function generateMetadata() {
 export default function ProblemsPage() {
   const allProblems = getAllProblems();
   const allServices = getAllServices();
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://totalleakdetection.com';
   const canonicalUrl = `${baseUrl}/problems/`;
 
   const breadcrumbs: BreadcrumbItem[] = [

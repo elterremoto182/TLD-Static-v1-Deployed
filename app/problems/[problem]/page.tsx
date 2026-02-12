@@ -18,6 +18,7 @@ import {
   generateWebPageSchema,
   schemaToJsonLd,
 } from '@/lib/local-seo/schema';
+import { baseUrl } from '@/lib/site-url';
 
 import { LocalCTA, CityGrid } from '@/components/local-seo';
 
@@ -78,8 +79,7 @@ export async function generateMetadata({
       description: 'The requested problem page could not be found.',
     };
   }
-  
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://totalleakdetection.com';
+
   const canonicalUrl = `${baseUrl}/problems/${problemSlug}/`;
   
   return {
@@ -118,7 +118,6 @@ export default async function ProblemHubPage({
   const parentService = getService(problem.parentService);
   const cities = getAllCities();
   const breadcrumbs = generateProblemHubBreadcrumbs(problem);
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://totalleakdetection.com';
   const canonicalUrl = `${baseUrl}/problems/${problemSlug}/`;
   
   // Generate schemas

@@ -16,6 +16,7 @@ import {
   generateVideoObjectSchema,
   structuredDataToJsonLd,
 } from '@/lib/seo/structured-data';
+import { baseUrl } from '@/lib/site-url';
 
 // Map guide slugs to their related blog categories, service pages, and videos
 const GUIDE_CONFIG: Record<string, { 
@@ -169,7 +170,6 @@ export default async function GuidePage({
         .sort((a: BlogPost, b: BlogPost) => new Date(b.date).getTime() - new Date(a.date).getTime())
     : [];
 
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://totalleakdetection.com';
   const normalizedSlug = page.slug.replace(/^\/+|\/+$/g, '');
   const pageUrl = `${baseUrl}/${normalizedSlug}/`;
   const breadcrumbs = generateBreadcrumbs(`/${normalizedSlug}`, page.title);

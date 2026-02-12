@@ -13,6 +13,7 @@ import {
 } from '@/lib/local-seo/schema';
 import { generatePageMetadata, generateBreadcrumbs } from '@/lib/utils';
 import { getPageBySlug } from '@/lib/pages/pages';
+import { baseUrl } from '@/lib/site-url';
 
 const SERVICE_ICONS: Record<string, React.ElementType> = {
   'leak-detection': Droplet,
@@ -44,8 +45,7 @@ export default function AreasPage() {
   const services = getAllServices();
   const citiesByCounty = groupCitiesByCounty(cities);
   const breadcrumbs = generateBreadcrumbs('/areas', 'Service Areas');
-  
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://totalleakdetection.com';
+
   const pageUrl = `${baseUrl}/areas/`;
   const breadcrumbSchema = generateBreadcrumbSchema(breadcrumbs, pageUrl);
   const webPageSchema = generateWebPageSchema({

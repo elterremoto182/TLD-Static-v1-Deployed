@@ -11,6 +11,7 @@ import siteConfig from '@/config/site.json';
 import content from '@/config/content.json';
 import { generateBreadcrumbs } from '@/lib/utils';
 import { buildPageSchemaGraph, schemaToJsonLd } from '@/lib/seo/schema';
+import { baseUrl } from '@/lib/site-url';
 import { trackFormSubmission } from '@/lib/analytics';
 
 // Lazy load map with facade pattern - only loads on user interaction
@@ -130,7 +131,6 @@ export default function ContactPage() {
 
   // Generate Google Maps search URL for the address link
   const googleMapsSearchUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(siteConfig.address)}`;
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://totalleakdetection.com';
   const breadcrumbs = generateBreadcrumbs('/contact', 'Contact');
   const pageUrl = `${baseUrl}/contact/`;
   

@@ -10,12 +10,10 @@
  */
 
 import siteConfig from '@/config/site.json';
+import { baseUrl } from '@/lib/site-url';
 
-// =============================================================================
-// Constants
-// =============================================================================
-
-export const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://totalleakdetection.com';
+// Re-export for consumers
+export { baseUrl };
 
 // =============================================================================
 // TypeScript Types

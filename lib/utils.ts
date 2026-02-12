@@ -3,6 +3,7 @@ import { twMerge } from 'tailwind-merge';
 import type { Metadata } from 'next';
 import siteConfig from '@/config/site.json';
 import type { BreadcrumbItem } from '@/components/ui/breadcrumb';
+import { baseUrl } from '@/lib/site-url';
 
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
@@ -12,7 +13,6 @@ export function cn(...inputs: ClassValue[]) {
  * Generate breadcrumb items based on path and title
  */
 export function generateBreadcrumbs(path: string, title: string): BreadcrumbItem[] {
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://totalleakdetection.com';
   const items: BreadcrumbItem[] = [
     { label: 'Home', href: '/' },
   ];
@@ -72,13 +72,10 @@ export function generatePageMetadata({
   articleModifiedTime?: string;
   articleType?: 'website' | 'article';
 }): Metadata {
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://totalleakdetection.com';
-  
-  // Home page: canonical without trailing slash (https://totalleakdetection.com)
-  // All other pages: trailing slash per Next.js trailingSlash configuration
+  // All pages: trailing slash canonical per Next.js trailingSlash configuration
   let canonicalPath = path;
   if (!path || path === '/') {
-    canonicalPath = '';
+    canonicalPath = '/';
   } else if (!path.endsWith('/')) {
     canonicalPath = `${path}/`;
   }

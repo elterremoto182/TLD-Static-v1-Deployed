@@ -10,6 +10,7 @@ import {
   type Service, 
   type Problem 
 } from './data';
+import { baseUrl } from '@/lib/site-url';
 
 export interface InternalLink {
   href: string;
@@ -317,7 +318,6 @@ export function getAllBlogPostLinks(): InternalLink[] {
  * Generate canonical URL for city × service page
  */
 export function getCityServiceCanonicalUrl(serviceSlug: string, citySlug: string): string {
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://totalleakdetection.com';
   return `${baseUrl}/${serviceSlug}/${citySlug}/`;
 }
 
@@ -325,7 +325,6 @@ export function getCityServiceCanonicalUrl(serviceSlug: string, citySlug: string
  * Generate canonical URL for problem × city page
  */
 export function getProblemCityCanonicalUrl(problemSlug: string, citySlug: string): string {
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://totalleakdetection.com';
   return `${baseUrl}/problems/${problemSlug}/${citySlug}/`;
 }
 
@@ -333,7 +332,6 @@ export function getProblemCityCanonicalUrl(problemSlug: string, citySlug: string
  * Generate canonical URL for service hub page
  */
 export function getServiceHubCanonicalUrl(serviceSlug: string): string {
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://totalleakdetection.com';
   return `${baseUrl}/${serviceSlug}/`;
 }
 

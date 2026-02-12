@@ -44,7 +44,7 @@ export default function Home() {
   // Build unified schema graph with all structured data
   const schemaGraph = buildPageSchemaGraph({
     pageType: 'home',
-    pageUrl: baseUrl,
+    pageUrl: `${baseUrl}/`,
     title: 'Leak Detection Miami | Water Leak Detection Services',
     description: 'Professional water leak detection services in Miami FL. Non-invasive leak detection for residential and commercial properties.',
     service: {

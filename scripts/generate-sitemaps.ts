@@ -20,7 +20,7 @@ import matter from 'gray-matter';
 // Configuration
 // ============================================================================
 
-const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://totalleakdetection.com';
+import { baseUrl as BASE_URL } from '../lib/site-url';
 const OUTPUT_DIR = path.join(process.cwd(), 'public/sitemaps');
 
 // ============================================================================
@@ -147,7 +147,6 @@ function formatDate(date: Date): string {
 }
 
 function ensureTrailingSlash(url: string): string {
-  if (url === BASE_URL) return url;
   return url.endsWith('/') ? url : `${url}/`;
 }
 
@@ -244,7 +243,7 @@ function generateStaticSitemap(): { xml: string; count: number } {
 
   const entries: SitemapEntry[] = [
     // Homepage
-    { url: BASE_URL, lastmod: today, changefreq: 'weekly', priority: 1.0 },
+    { url: ensureTrailingSlash(BASE_URL), lastmod: today, changefreq: 'weekly', priority: 1.0 },
     // Services listing
     { url: ensureTrailingSlash(`${BASE_URL}/services`), lastmod: today, changefreq: 'weekly', priority: 0.9 },
     // Problems listing
