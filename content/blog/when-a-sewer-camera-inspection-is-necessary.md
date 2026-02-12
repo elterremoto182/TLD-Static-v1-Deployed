@@ -87,7 +87,7 @@ Many technicians can mark an approximate surface location using distance measure
 
 Pre-purchase sewer inspections are a special case because risk is asymmetric: you could inherit a major repair immediately after closing. If you’re buying a home—especially an older home or one with large trees—camera inspection during due diligence is often one of the highest-ROI “extra” inspections.
 
-For more detail, see: [Sewer inspections before buying a home: what to know](/blog/sewer-inspections-before-buying-a-home-what-to-know/).
+For more detail, see: [Sewer inspections before buying a home: what to know](/sewer-inspections-before-buying-a-home-what-to-know/).
 
 ## What If You Skip the Inspection?
 

@@ -103,7 +103,7 @@ Camera inspections are especially useful when:
 - You’re buying a home and want to reduce risk
 - You’re considering hydro jetting and want to confirm pipe condition first
 
-For a “when to schedule” checklist, see: [When a sewer camera inspection is necessary](/blog/when-a-sewer-camera-inspection-is-necessary/).
+For a “when to schedule” checklist, see: [When a sewer camera inspection is necessary](/when-a-sewer-camera-inspection-is-necessary/).
 
 ## Bottom line
 
