@@ -17,7 +17,7 @@
     },
     {
       "source": "/leak-detection-services/",
-      "destination": "/services/leak-detection/",
+      "destination": "/leak-detection/",
       "permanent": true
     },
     {
@@ -27,17 +27,17 @@
     },
     {
       "source": "/services/leak-detection-services/",
-      "destination": "/services/leak-detection/",
+      "destination": "/leak-detection/",
       "permanent": true
     },
     {
       "source": "/services/mold-detectionl-and-remediation/",
-      "destination": "/services/mold-testing/",
+      "destination": "/mold-testing/",
       "permanent": true
     },
     {
       "source": "/reviews/",
-      "destination": "/testimonials/",
+      "destination": "/#testimonials",
       "permanent": true
     }
   ],

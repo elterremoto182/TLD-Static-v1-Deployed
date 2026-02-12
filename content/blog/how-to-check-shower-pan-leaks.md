@@ -61,7 +61,7 @@ The test takes a few hours. Mostly it takes that long because you need to wait f
 
 Shower pan leaks are a common yet often overlooked cause of water damage and mold in the home. The liner of the shower pan, which is usually made of thin, strong, and flexible plastic, can last anywhere from 10 to 40 years, depending on the materials and the amount of use it gets.
 
-However, improper installation or a defective plastic liner can lead to a shower pan leak sooner than expected. The main piece that can fail in a shower pan’s construction is the thin plastic liner (see image below). To prevent [water damage](https://totalcarerestoration.com/water-restoration/) and mold, it is important to inspect your shower pan regularly and make sure it is properly installed and sealed.
+However, improper installation or a defective plastic liner can lead to a shower pan leak sooner than expected. The main piece that can fail in a shower pan’s construction is the thin plastic liner (see image below). To prevent [water damage](https://totalcarerestoration.com/water-damage-restoration/) and mold, it is important to inspect your shower pan regularly and make sure it is properly installed and sealed.
 
 ​  
 ![Shower Pan Diagram](/wp-content/uploads/2020/08/image-2.png)

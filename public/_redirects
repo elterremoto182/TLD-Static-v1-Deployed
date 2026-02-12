@@ -14,14 +14,13 @@ https://www.totalleakdetection.com/* https://totalleakdetection.com/:splat 301!
 /services/mold-testing/ /mold-testing/ 301
 /services/camera-inspection/ /sewer-camera-inspection/ 301
 /services/sewer-camera-inspection/ /sewer-camera-inspection/ 301
-/services/sewer-camera-inspection/ /sewer-camera-inspection/ 301
 
 # Legacy service URL redirects
 /leak-detection-services/ /leak-detection/ 301
 /how-to-check-a-shower-pan-for-leaks/ /how-to-check-shower-pan-leaks/ 301
 /services/leak-detection-services/ /leak-detection/ 301
 /services/mold-detectionl-and-remediation/ /mold-testing/ 301
-/reviews/ /testimonials/ 301
+/reviews/ /#testimonials 301
 
 # Local SEO City Page Redirects - Miami-Dade County
 /miami-leak-detection-services/ /leak-detection/miami/ 301
