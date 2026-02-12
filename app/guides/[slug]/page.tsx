@@ -33,12 +33,12 @@ const GUIDE_CONFIG: Record<string, {
 }> = {
   'leak-detection': {
     category: 'Leak Detection',
-    servicePath: '/services/leak-detection/',
+    servicePath: '/leak-detection/',
     serviceName: 'Leak Detection Services',
   },
   'sewer-camera-inspection': {
     category: 'Sewer Camera Inspection',
-    servicePath: '/services/camera-inspection/',
+    servicePath: '/sewer-camera-inspection/',
     serviceName: 'Sewer Camera Inspection Services',
     video: {
       id: 'Sk7VPGiqhek',
@@ -55,7 +55,7 @@ const GUIDE_CONFIG: Record<string, {
   },
   'mold-testing': {
     category: 'Mold Testing',
-    servicePath: '/services/mold-testing/',
+    servicePath: '/mold-testing/',
     serviceName: 'Mold Testing Services',
   },
 };

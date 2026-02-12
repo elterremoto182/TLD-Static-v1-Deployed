@@ -103,7 +103,7 @@ Rats, mice, and insects are attracted to sewer lines—they provide water, food,
 
 ### 9. Mold Growth in Unusual Places
 
-A leaking sewer line near your foundation can increase moisture levels inside your home, leading to [mold growth](/services/mold-testing/) in basements, crawl spaces, or lower levels.
+A leaking sewer line near your foundation can increase moisture levels inside your home, leading to [mold growth](/mold-testing/) in basements, crawl spaces, or lower levels.
 
 **Connection to sewer problems:** If mold appears without an obvious water source (no visible leaks, no flooding history), a hidden sewer leak may be the culprit.
 

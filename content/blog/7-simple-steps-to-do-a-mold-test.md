@@ -10,7 +10,7 @@ author: priyanka
 category: Mold Testing
 tags: ["advanced-technology"]
 pillar: mold-testing
-feedsService: /services/mold-testing/
+feedsService: /mold-testing/
 seo_title: '7 Simple Steps To Do A Mold Test [Tips & Benefits]'
 seo_description: >-
   The first step in the mold testing process is to schedule a mold inspection.
@@ -74,7 +74,7 @@ After the re-testing has been completed, the mold inspector will provide a final
 
 Total Leak Detection offers reliable and accurate mold testing services for residential and commercial properties. Our team of experienced professionals use the latest testing methods and equipment to detect the presence of mold in your property, and to identify the type of mold present.
 
-We also provide recommendations on how to best address any mold issues that are found. Learn more about [how mold inspection can improve your indoor air quality](/how-mold-inspection-can-improve-your-indoor-air-quality/) and our commitment to [health and safety](/health-and-safety/). Contact us today to learn more about our [mold testing services](/services/mold-testing/) and how we can help you protect your home or business from mold-related health risks. Check out our [current promotions](/promotions/) for special offers on mold testing and leak detection services.
+We also provide recommendations on how to best address any mold issues that are found. Learn more about [how mold inspection can improve your indoor air quality](/how-mold-inspection-can-improve-your-indoor-air-quality/) and our commitment to [health and safety](/health-and-safety/). Contact us today to learn more about our [mold testing services](/mold-testing/) and how we can help you protect your home or business from mold-related health risks. Check out our [current promotions](/promotions/) for special offers on mold testing and leak detection services.
 
 ### Related Resources
 

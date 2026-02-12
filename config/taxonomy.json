@@ -38,14 +38,14 @@
           "path": "/guides/leak-detection/",
           "title": "The Complete Guide to Leak Detection",
           "description": "Everything Florida homeowners need to know about detecting and preventing water leaks",
-          "feedsService": "/services/leak-detection/",
+          "feedsService": "/leak-detection/",
           "relatedCategory": "leak-detection"
         },
         "sewer-camera-inspection": {
           "path": "/guides/sewer-camera-inspection/",
           "title": "The Complete Guide to Sewer Camera Inspections",
           "description": "Comprehensive guide to sewer line inspections for Florida property owners",
-          "feedsService": "/services/camera-inspection/",
+          "feedsService": "/sewer-camera-inspection/",
           "relatedCategory": "sewer-camera-inspection"
         },
         "drain-cleaning": {
@@ -59,7 +59,7 @@
           "path": "/guides/mold-testing/",
           "title": "The Complete Guide to Mold Testing",
           "description": "Everything you need to know about mold testing and indoor air quality",
-          "feedsService": "/services/mold-testing/",
+          "feedsService": "/mold-testing/",
           "relatedCategory": "mold-testing"
         }
       }
@@ -71,7 +71,7 @@
       "tier": 2,
       "children": {
         "leak-detection": {
-          "path": "/services/leak-detection/",
+          "path": "/leak-detection/",
           "title": "Leak Detection",
           "description": "Professional water leak detection services using non-invasive technology",
           "keywords": ["leak detection", "water leak detection", "plumbing leak detection", "pipe leak detection", "hidden water leaks"],
@@ -79,7 +79,7 @@
           "fedByPillar": "/guides/leak-detection/"
         },
         "mold-testing": {
-          "path": "/services/mold-testing/",
+          "path": "/mold-testing/",
           "title": "Mold Testing",
           "description": "Certified mold inspection and air quality testing services",
           "keywords": ["mold testing", "mold inspection", "mold detection", "air quality testing", "mold assessment", "indoor air quality"],
@@ -87,7 +87,7 @@
           "fedByPillar": "/guides/mold-testing/"
         },
         "camera-inspection": {
-          "path": "/services/camera-inspection/",
+          "path": "/sewer-camera-inspection/",
           "title": "Sewer Camera Inspection",
           "description": "HD video sewer line and drain inspection services",
           "keywords": ["sewer camera inspection", "video pipe inspection", "drain camera", "sewer line inspection", "plumbing camera"],
@@ -172,17 +172,17 @@
         "leak-detection": {
           "pathPattern": "/leak-detection/{city}/",
           "title": "Leak Detection in {City}, FL",
-          "parentService": "/services/leak-detection/"
+          "parentService": "/leak-detection/"
         },
         "mold-testing": {
           "pathPattern": "/mold-testing/{city}/",
           "title": "Mold Testing in {City}, FL",
-          "parentService": "/services/mold-testing/"
+          "parentService": "/mold-testing/"
         },
         "sewer-camera-inspection": {
           "pathPattern": "/sewer-camera-inspection/{city}/",
           "title": "Sewer Camera Inspection in {City}, FL",
-          "parentService": "/services/camera-inspection/"
+          "parentService": "/sewer-camera-inspection/"
         },
         "problems": {
           "pathPattern": "/problems/{problem}/{city}/",
@@ -228,14 +228,14 @@
       "leak-detection": {
         "path": "/guides/leak-detection/",
         "title": "The Complete Guide to Leak Detection for Florida Homeowners",
-        "feedsService": "/services/leak-detection/",
+        "feedsService": "/leak-detection/",
         "tier": 1,
         "targetPostCount": 20
       },
       "sewer-camera-inspection": {
         "path": "/guides/sewer-camera-inspection/",
         "title": "The Complete Guide to Sewer Camera Inspections",
-        "feedsService": "/services/camera-inspection/",
+        "feedsService": "/sewer-camera-inspection/",
         "tier": 1,
         "targetPostCount": 15
       },
@@ -249,17 +249,17 @@
       "mold-testing": {
         "path": "/guides/mold-testing/",
         "title": "The Complete Guide to Mold Testing and Indoor Air Quality",
-        "feedsService": "/services/mold-testing/",
+        "feedsService": "/mold-testing/",
         "tier": 1,
         "targetPostCount": 15
       }
     },
     "categories": {
       "leak-detection": {
-        "service": "/services/leak-detection/",
+        "service": "/leak-detection/",
         "serviceName": "Leak Detection",
         "pillarPage": "/guides/leak-detection/",
-        "feedsService": "/services/leak-detection/",
+        "feedsService": "/leak-detection/",
         "articles": [
           {
             "slug": "the-importance-of-professional-leak-detection-in-preventing-water-damage",
@@ -327,10 +327,10 @@
         ]
       },
       "mold-testing": {
-        "service": "/services/mold-testing/",
+        "service": "/mold-testing/",
         "serviceName": "Mold Testing",
         "pillarPage": "/guides/mold-testing/",
-        "feedsService": "/services/mold-testing/",
+        "feedsService": "/mold-testing/",
         "articles": [
           {
             "slug": "how-mold-inspection-can-improve-your-indoor-air-quality",
@@ -364,10 +364,10 @@
         ]
       },
       "sewer-camera-inspection": {
-        "service": "/services/camera-inspection/",
+        "service": "/sewer-camera-inspection/",
         "serviceName": "Sewer Camera Inspection",
         "pillarPage": "/guides/sewer-camera-inspection/",
-        "feedsService": "/services/camera-inspection/",
+        "feedsService": "/sewer-camera-inspection/",
         "articles": [
           {
             "slug": "the-benefits-of-sewer-camera-inspections-for-miami-homeowners",
@@ -463,9 +463,9 @@
         "description": "Every blog post MUST link to its parent service page at least once as a CTA",
         "required": true,
         "examples": {
-          "leak-detection-articles": "/services/leak-detection/",
-          "mold-articles": "/services/mold-testing/",
-          "sewer-articles": "/services/camera-inspection/",
+          "leak-detection-articles": "/leak-detection/",
+          "mold-articles": "/mold-testing/",
+          "sewer-articles": "/sewer-camera-inspection/",
           "drain-articles": "/services/drain-cleaning/"
         }
       },

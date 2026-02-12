@@ -18,13 +18,13 @@ const GUIDE_CONFIG: Record<string, {
   'leak-detection': {
     icon: Droplets,
     image: '/images/services/leak-detection.jpg',
-    servicePath: '/services/leak-detection/',
+    servicePath: '/leak-detection/',
     serviceName: 'Leak Detection Services',
   },
   'sewer-camera-inspection': {
     icon: Camera,
     image: '/images/gallery/camera-inspection-after.jpg',
-    servicePath: '/services/camera-inspection/',
+    servicePath: '/sewer-camera-inspection/',
     serviceName: 'Sewer Camera Inspection Services',
   },
   'drain-cleaning': {
@@ -36,7 +36,7 @@ const GUIDE_CONFIG: Record<string, {
   'mold-testing': {
     icon: AlertTriangle,
     image: '/images/services/mold.jpg',
-    servicePath: '/services/mold-testing/',
+    servicePath: '/mold-testing/',
     serviceName: 'Mold Testing Services',
   },
 };

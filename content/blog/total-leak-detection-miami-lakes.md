@@ -10,7 +10,7 @@ author: priyanka
 category: Leak Detection
 tags: ["property-types"]
 pillar: leak-detection
-feedsService: /services/leak-detection/
+feedsService: /leak-detection/
 seo_title: 'Leak Detection Miami Lakes: Save Water Today - Total Leak Detection'
 seo_description: >-
   Discover effective leak detection in Miami Lakes to prevent costly water waste
@@ -76,4 +76,4 @@ When it comes to house water leak detection, one name in South Florida stands ou
 
 The Total Leak Detection Company has been serving families in the Miami area for three generations. We know how to detect water leaks in walls, under floors, and everywhere else on your property.
 
-Whether you need water leak detection, sewer camera inspections, or a plumbing report writing, we're standing by 24/7 to help. Our [professional leak detection services](/services/leak-detection/) specialize in finding hidden leaks throughout your Miami Lakes home. We also serve nearby areas including [Miramar](/leak-detection/miramar/) and [Deerfield Beach](/leak-detection/deerfield-beach/). For sewer issues, our [sewer camera inspection services](/services/camera-inspection/) can help identify problems in your sewer lines. Learn more about [the benefits of sewer camera inspections for Miami homeowners](/the-benefits-of-sewer-camera-inspections-for-miami-homeowners/). Give us a call at 855-385-5325 or use [our online contact form](/contact/) to get in touch. Check out our [current promotions](/promotions/) for special offers!
+Whether you need water leak detection, sewer camera inspections, or a plumbing report writing, we're standing by 24/7 to help. Our [professional leak detection services](/leak-detection/) specialize in finding hidden leaks throughout your Miami Lakes home. We also serve nearby areas including [Miramar](/leak-detection/miramar/) and [Deerfield Beach](/leak-detection/deerfield-beach/). For sewer issues, our [sewer camera inspection services](/sewer-camera-inspection/) can help identify problems in your sewer lines. Learn more about [the benefits of sewer camera inspections for Miami homeowners](/the-benefits-of-sewer-camera-inspections-for-miami-homeowners/). Give us a call at 855-385-5325 or use [our online contact form](/contact/) to get in touch. Check out our [current promotions](/promotions/) for special offers!

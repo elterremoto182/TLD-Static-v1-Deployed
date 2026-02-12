@@ -9,7 +9,7 @@ author: Tomasz Alemany
 category: Leak Detection
 tags: ["property-types"]
 pillar: leak-detection
-feedsService: /services/leak-detection/
+feedsService: /leak-detection/
 seo_title: 'Water Intrusion Hibiscus Island | Professional Leak Detection Miami Beach'
 seo_description: >-
   Professional water intrusion detection at Hibiscus Island, Miami Beach. See how 
@@ -72,9 +72,9 @@ If you suspect water intrusion at your Hibiscus Island property—or any waterfr
 
 ## Schedule Your Inspection
 
-Total Leak Detection provides professional [leak detection services](/services/leak-detection/) throughout Miami Beach, including Hibiscus Island, Star Island, Palm Island, and all surrounding waterfront communities.
+Total Leak Detection provides professional [leak detection services](/leak-detection/) throughout Miami Beach, including Hibiscus Island, Star Island, Palm Island, and all surrounding waterfront communities.
 
-We also offer [mold testing services](/services/mold-testing/) to check for mold growth that often accompanies water intrusion problems.
+We also offer [mold testing services](/mold-testing/) to check for mold growth that often accompanies water intrusion problems.
 
 **Call us at [855-385-5325](tel:8553855325)** or use our [online contact form](/contact/) to schedule your water intrusion inspection today.
 

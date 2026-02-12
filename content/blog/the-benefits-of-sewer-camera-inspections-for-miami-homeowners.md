@@ -11,7 +11,7 @@ author: Tomasz Alemany
 category: Sewer Camera Inspection
 tags: ["advanced-technology"]
 pillar: sewer-camera-inspection
-feedsService: /services/camera-inspection/
+feedsService: /sewer-camera-inspection/
 seo_title: Sewer Camera Inspection Miami | Homeowners Should Consider It
 seo_description: >-
   Learn how sewer camera inspections help Miami homeowners detect plumbing
@@ -94,7 +94,7 @@ Sewer camera inspections offer Miami homeowners a practical way to assess their 
 
 At Total Leak Detection, we offer a wide range of services to address your specific plumbing needs. Our expert plumbers specialize in:
 
--   [Sewer Camera Inspections](/services/camera-inspection/): Learn more about our cutting-edge sewer camera inspection technology and how it can benefit your plumbing system.
+-   [Sewer Camera Inspections](/sewer-camera-inspection/): Learn more about our cutting-edge sewer camera inspection technology and how it can benefit your plumbing system.
 -   [Damaged Sewer Line Repair](/services/damaged-sewer/): Discover our solutions for repairing damaged sewer lines, including trenchless repair options that minimize disruption to your property.
 -   [Plumbing Report Writing](/services/plumbing-report-writing/): Find out how our professionally written plumbing reports can provide you with a detailed assessment of your plumbing system's condition.
 

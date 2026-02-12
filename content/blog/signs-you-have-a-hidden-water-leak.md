@@ -7,7 +7,7 @@ author: Tomasz Alemany
 category: Leak Detection
 tags: ["early-warning-signs"]
 pillar: leak-detection
-feedsService: /services/leak-detection/
+feedsService: /leak-detection/
 seo_title: 10 Signs You Have a Hidden Water Leak | What to Do Next
 seo_description: >-
   Discover the warning signs of hidden water leaks in your home. Learn how to identify leaks behind walls, under floors, and in your foundation before costly damage occurs.
@@ -42,7 +42,7 @@ If you hear water running through pipes when all faucets, appliances, and toilet
 
 Hidden leaks create the perfect environment for mold and mildew growth. If you notice a persistent musty smell—especially in bathrooms, basements, or near walls—moisture is likely accumulating somewhere out of sight.
 
-**Why it matters:** Mold can begin growing within 24-48 hours of water exposure, and Florida's humidity accelerates this process. If you smell mold, our [mold testing services](/services/mold-testing/) can identify the extent of the problem.
+**Why it matters:** Mold can begin growing within 24-48 hours of water exposure, and Florida's humidity accelerates this process. If you smell mold, our [mold testing services](/mold-testing/) can identify the extent of the problem.
 
 ### 4. Discoloration on Walls or Ceilings
 
@@ -163,7 +163,7 @@ At **Total Leak Detection**, we specialize in finding hidden leaks throughout Mi
 If you've noticed any of these warning signs, don't wait for the problem to get worse. Early detection saves you money, protects your home's structure, and prevents mold from taking hold.
 
 📞 **Call Today:** (855) 385-5325  
-🌐 **Learn More:** [totalleakdetection.com](/services/leak-detection/)
+🌐 **Learn More:** [totalleakdetection.com](/leak-detection/)
 
 * * *
 
@@ -191,4 +191,4 @@ Immediately. Water damage compounds over time, and mold can begin growing within
 - [The Importance of Professional Leak Detection](/the-importance-of-professional-leak-detection-in-preventing-water-damage/) - Why expert detection matters
 - [How to Check Your Shower Pan for Leaks](/how-to-check-shower-pan-leaks/) - DIY shower inspection guide
 - [Advanced Slab Leak Detection Techniques](/advanced-techniques-for-detecting-and-repairing-leaks-beneath-concrete-foundations/) - Under-foundation leak solutions
-- [Mold Testing Services](/services/mold-testing/) - If you suspect mold from water damage
+- [Mold Testing Services](/mold-testing/) - If you suspect mold from water damage

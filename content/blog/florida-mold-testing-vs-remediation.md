@@ -7,7 +7,7 @@ author: Tomasz Alemany
 category: Mold Testing
 tags: ["insurance-support"]
 pillar: mold-testing
-feedsService: /services/mold-testing/
+feedsService: /mold-testing/
 seo_title: Florida Mold Testing vs Mold Remediation | Complete Guide
 seo_description: >-
   Learn how mold services work in Florida. Understand the difference between mold testing and remediation, Florida's consumer protections, and what to expect throughout the process.
@@ -295,12 +295,12 @@ In this environment, mold problems develop faster and can be more severe than in
 
 If you suspect mold in your Florida home—whether from visible growth, musty odors, health symptoms, or recent water damage—professional assessment is the logical first step. You'll understand exactly what you're dealing with and can make informed decisions about how to proceed.
 
-At **Total Leak Detection**, our [mold testing services](/services/mold-testing/) provide the clear, accurate information you need. We assess your situation, collect appropriate samples, and provide detailed reports with honest recommendations.
+At **Total Leak Detection**, our [mold testing services](/mold-testing/) provide the clear, accurate information you need. We assess your situation, collect appropriate samples, and provide detailed reports with honest recommendations.
 
 Whether you have a small concern or a major mold worry, we're here to help you understand your situation and protect your home.
 
 📞 **Call Today:** (855) 385-5325  
-🌐 **Learn More:** [totalleakdetection.com](/services/mold-testing/)
+🌐 **Learn More:** [totalleakdetection.com](/mold-testing/)
 
 * * *
 

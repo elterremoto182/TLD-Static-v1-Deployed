@@ -7,7 +7,7 @@ author: Tomasz Alemany
 category: Leak Detection
 tags: ["early-warning-signs"]
 pillar: leak-detection
-feedsService: /services/leak-detection/
+feedsService: /leak-detection/
 seo_title: How to Prevent Water Leaks in Your Florida Home | Expert Tips
 seo_description: >-
   Florida-specific tips to prevent water leaks in your home. Learn seasonal maintenance, pipe protection, and when to schedule professional inspections.
@@ -91,7 +91,7 @@ Florida doesn't have the traditional "winter prep" that northern climates requir
 -   Look for signs of moisture around AC condensate lines
 
 **Annually:**
--   Have a [professional leak detection inspection](/services/leak-detection/)
+-   Have a [professional leak detection inspection](/leak-detection/)
 -   Flush water heater to remove sediment
 -   Inspect all visible plumbing connections
 -   Check outdoor spigots and hose connections
@@ -213,7 +213,7 @@ Beyond your own maintenance, professional inspections provide peace of mind:
 -   **For homes 20+ years old** — More frequent inspections as plumbing ages
 -   **If you have polybutylene pipes** — Immediate assessment recommended
 
-Professional [leak detection services](/services/leak-detection/) use thermal imaging, acoustic sensors, and other technology to find problems before they cause damage.
+Professional [leak detection services](/leak-detection/) use thermal imaging, acoustic sensors, and other technology to find problems before they cause damage.
 
 * * *
 
@@ -240,7 +240,7 @@ At **Total Leak Detection**, we help South Florida homeowners protect their prop
 Don't wait for a leak to become a flood. Schedule a professional inspection and know your home is protected.
 
 📞 **Call Today:** (855) 385-5325  
-🌐 **Learn More:** [totalleakdetection.com](/services/leak-detection/)
+🌐 **Learn More:** [totalleakdetection.com](/leak-detection/)
 
 * * *
 

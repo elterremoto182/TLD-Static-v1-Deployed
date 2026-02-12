@@ -23,9 +23,9 @@ Take advantage of our current promotions on leak detection and plumbing services
 
 ### Popular Services
 
-- [Leak Detection Services](/services/leak-detection/) - Professional non-invasive leak detection
+- [Leak Detection Services](/leak-detection/) - Professional non-invasive leak detection
 - [Slab Leak Detection](/services/slab-leaks/) - Specialized slab leak services
-- [Mold Testing Services](/services/mold-testing/) - Comprehensive mold assessments
+- [Mold Testing Services](/mold-testing/) - Comprehensive mold assessments
 - [Drain Cleaning Services](/services/drain-cleaning/) - Professional drain cleaning
 
 ---

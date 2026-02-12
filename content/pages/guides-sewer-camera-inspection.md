@@ -8,7 +8,7 @@ seo_description: >-
   Everything Florida property owners need to know about sewer camera inspections. Learn when you need one, what they find, costs, and how they prevent costly repairs.
 keywords: ["sewer camera inspection guide", "video pipe inspection", "sewer line inspection Florida", "plumbing camera inspection", "sewer scope"]
 pillar: sewer-camera-inspection
-feedsService: /services/camera-inspection/
+feedsService: /sewer-camera-inspection/
 ---
 
 # The Complete Guide to Sewer Camera Inspections in Florida
@@ -17,7 +17,7 @@ Your sewer line is one of the most critical—and often neglected—components o
 
 This comprehensive guide explains everything Florida property owners need to know about sewer camera inspections: when you need one, what problems they reveal, how the process works, and how this technology saves you money by preventing catastrophic failures.
 
-**Need a sewer inspection now?** [Contact Total Leak Detection](/services/camera-inspection/) for professional video pipe inspection services.
+**Need a sewer inspection now?** [Contact Total Leak Detection](/sewer-camera-inspection/) for professional video pipe inspection services.
 
 ---
 

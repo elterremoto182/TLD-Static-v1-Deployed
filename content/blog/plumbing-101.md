@@ -6,7 +6,7 @@ author: Tomasz Alemany
 category: Leak Detection
 tags: ["insurance-support"]
 pillar: leak-detection
-feedsService: /services/leak-detection/
+feedsService: /leak-detection/
 seo_title: Plumbing 101 - Total Leak Detection
 seo_description: >-
   Plumbing 101: Learn the basics of plumbing and gain valuable insights into
@@ -24,7 +24,7 @@ imageAlt: Plumbing 101 class teaching property adjusters about leak detection an
 
 Sign up for our Plumbing 101 free class
 
-For professional leak detection services, visit [Total Leak Detection](/services/leak-detection/) to learn more about our comprehensive leak detection solutions. Our [professional leak detection services](/services/leak-detection/) use advanced technology to locate hidden leaks throughout your property. For leaks beneath concrete, our [slab leak detection services](/services/slab-leaks/) specialize in non-invasive detection. If you need immediate assistance, [contact us](/contact/) today. Learn more about [the importance of professional leak detection](/the-importance-of-professional-leak-detection-in-preventing-water-damage/) in preventing costly water damage. Check out our [current promotions](/promotions/) for special offers on plumbing services.
+For professional leak detection services, visit [Total Leak Detection](/leak-detection/) to learn more about our comprehensive leak detection solutions. Our [professional leak detection services](/leak-detection/) use advanced technology to locate hidden leaks throughout your property. For leaks beneath concrete, our [slab leak detection services](/services/slab-leaks/) specialize in non-invasive detection. If you need immediate assistance, [contact us](/contact/) today. Learn more about [the importance of professional leak detection](/the-importance-of-professional-leak-detection-in-preventing-water-damage/) in preventing costly water damage. Check out our [current promotions](/promotions/) for special offers on plumbing services.
 
      
 

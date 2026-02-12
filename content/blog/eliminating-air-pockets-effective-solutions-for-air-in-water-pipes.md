@@ -61,7 +61,7 @@ Eliminating air from your water pipes can improve water pressure and prevent dam
 
 Prevention is key to avoiding recurring issues with air in your water pipes:
 
--   Regular Maintenance: Regularly check your plumbing system for leaks and damages. Consider a [camera inspection](/services/camera-inspection/) to get a detailed view of the condition of your underground water pipes.
+-   Regular Maintenance: Regularly check your plumbing system for leaks and damages. Consider a [camera inspection](/sewer-camera-inspection/) to get a detailed view of the condition of your underground water pipes.
 -   Proper Venting: Ensure your plumbing system is properly vented. Incorrect venting can cause air locks in the pipes, leading to air buildup.
 -   Check Valve Installation: Installing check valves can help prevent backflow, which is a common cause of air getting into the lines.
 

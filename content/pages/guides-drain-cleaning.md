@@ -366,8 +366,8 @@ Sometimes drain problems indicate bigger issues that cleaning alone won't solve.
 
 ### Related Services
 
-- [Sewer Camera Inspection](/services/camera-inspection/) - See what's causing problems
-- [Leak Detection](/services/leak-detection/) - Find related water issues
+- [Sewer Camera Inspection](/sewer-camera-inspection/) - See what's causing problems
+- [Leak Detection](/leak-detection/) - Find related water issues
 - [Damaged Sewer Repair](/services/damaged-sewer/) - Fix underlying pipe problems
 
 ---

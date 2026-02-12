@@ -11,7 +11,7 @@ author: Tomasz Alemany
 category: Sewer Camera Inspection
 tags: ["property-types"]
 pillar: sewer-camera-inspection
-feedsService: /services/camera-inspection/
+feedsService: /sewer-camera-inspection/
 seo_title: 'Main Sewer Line Pipe Size: Importance Explained - Total Leak Detection'
 seo_description: >-
   Learn how to choose the perfect pipe size for your main sewer line. Explore
@@ -28,7 +28,7 @@ Choosing the perfect pipe size for your main sewer line is critical for the over
 
 **Key takeaway:** In this article, we discuss the different types of pipes for main sewer lines, standard sizes you should be aware of, and provide expert tips on how to determine the perfect pipe size.
 
-Additionally, when it comes to maintaining a well-functioning sewer system, it's important to consider certain factors beyond just pipe size. [Health and safety](/health-and-safety/) is one such aspect that requires attention. At Total Leak Detection, we prioritize the well-being of our customers and employees in all our leak detection services, including those related to sewer systems. Regular [sewer camera inspections](/services/camera-inspection/) are essential for maintaining your sewer line's health and identifying issues before they become costly repairs.
+Additionally, when it comes to maintaining a well-functioning sewer system, it's important to consider certain factors beyond just pipe size. [Health and safety](/health-and-safety/) is one such aspect that requires attention. At Total Leak Detection, we prioritize the well-being of our customers and employees in all our leak detection services, including those related to sewer systems. Regular [sewer camera inspections](/sewer-camera-inspection/) are essential for maintaining your sewer line's health and identifying issues before they become costly repairs.
 
 Moreover, after completing any remediation project within your property, it is crucial to ensure its success through a process called [Post Remediation Verification (PRV)](/what-is-a-post-remediation-verification/). This process guarantees that the remediation was effective in addressing any issues such as mold growth or leaks. Understanding PRV can help you assess the efficacy of your own projects and make necessary improvements.
 
@@ -94,8 +94,8 @@ Key factors for determining the size of commercial sewer pipes include:
 -   **Building Occupancy**: Higher occupancy levels mean more wastewater generation.
 -   **Type of Business**: Restaurants and hotels produce significantly more wastewater compared to office buildings.
 -   **Local Regulations**: Certain areas have specific requirements or regulations that dictate minimum pipe sizes for commercial properties.
--   [**Sewer Camera Inspection**](/services/camera-inspection/): A crucial step in determining the condition of your commercial sewer pipes is a thorough inspection with advanced technology. Sewer camera inspections can identify blockages, leaks, or other issues without invasive procedures.
--   [**Mold Testing**](/services/mold-testing/): Mold growth is a common problem in damp environments, and it can affect both residential and commercial properties. For commercial buildings, where the presence of mold can lead to health and safety concerns for occupants, regular mold testing is essential.
+-   [**Sewer Camera Inspection**](/sewer-camera-inspection/): A crucial step in determining the condition of your commercial sewer pipes is a thorough inspection with advanced technology. Sewer camera inspections can identify blockages, leaks, or other issues without invasive procedures.
+-   [**Mold Testing**](/mold-testing/): Mold growth is a common problem in damp environments, and it can affect both residential and commercial properties. For commercial buildings, where the presence of mold can lead to health and safety concerns for occupants, regular mold testing is essential.
 
 Choosing the right-sized sewer pipe is crucial for maintaining an efficient drainage system, preventing clogs, and following local codes. Whether you're dealing with residential or commercial properties, consulting professionals like [Total Leak Detection](/) ensures that your system operates efficiently and complies with all relevant codes and regulations. For more tips on maintaining your sewer line, check out our guide on [essential tips for maintaining your sewer line](/essential-tips-for-maintaining-your-sewer-line-what-homeowners-must-know/). If you need immediate assistance, [contact us](/contact/) for professional sewer services.
 

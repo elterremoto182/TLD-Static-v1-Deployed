@@ -7,7 +7,7 @@ author: Tomasz Alemany
 category: Mold Testing
 tags: ["insurance-support"]
 pillar: mold-testing
-feedsService: /services/mold-testing/
+feedsService: /mold-testing/
 seo_title: Do I Need a Mold Test After Water Damage? | Decision Guide
 seo_description: >-
   Should you get a mold test after water damage? Learn when testing is essential, what factors to consider, and how professional assessment protects your home and health.
@@ -282,7 +282,7 @@ At **Total Leak Detection**, we help Florida homeowners understand their mold si
 If you've experienced water damage and aren't sure whether mold testing is right for your situation, we're happy to discuss your specific circumstances and help you make an informed decision.
 
 📞 **Call Today:** (855) 385-5325  
-🌐 **Learn More:** [totalleakdetection.com](/services/mold-testing/)
+🌐 **Learn More:** [totalleakdetection.com](/mold-testing/)
 
 * * *
 
@@ -310,4 +310,4 @@ Test results help determine appropriate next steps based on the type and extent 
 - [How Long After Water Damage Does Mold Grow?](/how-long-after-water-damage-does-mold-grow/) - Understanding the timeline
 - [Black Mold vs. Other Mold Types](/black-mold-vs-other-mold-types/) - What different molds mean
 - [Signs You Have a Hidden Water Leak](/signs-you-have-a-hidden-water-leak/) - Finding the moisture source
-- [Mold Testing Services](/services/mold-testing/) - Professional assessment options
+- [Mold Testing Services](/mold-testing/) - Professional assessment options

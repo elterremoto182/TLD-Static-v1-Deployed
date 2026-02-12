@@ -7,7 +7,7 @@ author: Tomasz Alemany
 category: Mold Testing
 tags: ["early-warning-signs"]
 pillar: mold-testing
-feedsService: /services/mold-testing/
+feedsService: /mold-testing/
 seo_title: Black Mold vs Regular Mold | What Homeowners Need to Know
 seo_description: >-
   Is that black mold or regular mold? Learn the differences between mold types, health risks, and why professional testing is the only way to know for sure.
@@ -204,7 +204,7 @@ Disturbing mold releases spores into the air. If you have significant visible mo
 
 ### Address the Moisture Source
 
-Mold needs moisture to survive. Identify and fix leaks, reduce humidity, and improve ventilation. Our [leak detection services](/services/leak-detection/) can help identify hidden water sources feeding mold growth.
+Mold needs moisture to survive. Identify and fix leaks, reduce humidity, and improve ventilation. Our [leak detection services](/leak-detection/) can help identify hidden water sources feeding mold growth.
 
 ### Document What You've Found
 
@@ -212,7 +212,7 @@ Take photos before cleaning or disturbing anything. Note when you first noticed 
 
 ### Consider Professional Assessment
 
-For anything beyond small, surface-level mold in a visible area, professional [mold testing](/services/mold-testing/) helps you understand:
+For anything beyond small, surface-level mold in a visible area, professional [mold testing](/mold-testing/) helps you understand:
 -   What species are present
 -   The extent of contamination
 -   Whether the situation poses elevated health risks
@@ -257,7 +257,7 @@ At **Total Leak Detection**, we help Florida homeowners understand their mold si
 Whether you've spotted suspicious growth, smell something musty, or want peace of mind after water damage, we can help you understand what you're dealing with.
 
 📞 **Call Today:** (855) 385-5325  
-🌐 **Learn More:** [totalleakdetection.com](/services/mold-testing/)
+🌐 **Learn More:** [totalleakdetection.com](/mold-testing/)
 
 * * *
 

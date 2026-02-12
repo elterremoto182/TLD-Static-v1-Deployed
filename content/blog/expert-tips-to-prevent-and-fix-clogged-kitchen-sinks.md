@@ -179,4 +179,4 @@ Taking care of your kitchen sink can help prevent most clogs. By regularly maint
 
 But there are times when you need to call in a professional. If you notice things like stubborn clogs, frequent blockages, or strange sounds, it's a sign that you should seek **[plumbing services](/)**. Our [clogged drains services](/services/clogged-drains/) specialize in resolving kitchen sink clogs and other drainage issues. Knowing when to reach out for expert help can save you time and stop any possible harm to your plumbing system. For comprehensive plumbing assistance, [contact Total Leak Detection](/contact/) today.
 
-By mixing regular maintenance with prompt professional support, you can keep your kitchen sink running smoothly all year round. Learn more about [sewer camera inspections](/services/camera-inspection/) to identify underlying issues in your plumbing system.
+By mixing regular maintenance with prompt professional support, you can keep your kitchen sink running smoothly all year round. Learn more about [sewer camera inspections](/sewer-camera-inspection/) to identify underlying issues in your plumbing system.

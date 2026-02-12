@@ -10,7 +10,7 @@ author: Tomasz Alemany
 category: Leak Detection
 tags: ["early-warning-signs"]
 pillar: leak-detection
-feedsService: /services/leak-detection/
+feedsService: /leak-detection/
 seo_title: How to Check A Shower Pan For Leaks - Total Leak Detection
 seo_description: >-
   This article provides a step-by-step guide on how to check for shower pan
@@ -72,7 +72,7 @@ Shower Pan Diagram
 
 The plastic liner of a shower pan is a vital component for keeping water from leaking or filtering out while someone is taking a shower.
 
-If not addressed quickly, a shower pan leak can lead to water damage on bathroom walls, around the shower curb, first floor ceilings under the shower, and in crawl spaces. Furthermore, it can cause mold growth and wet rot in the subfloor. If you suspect mold growth from water damage, our [mold testing services](/services/mold-testing/) can help identify and address the problem. For comprehensive leak detection, our [professional leak detection services](/services/leak-detection/) can locate hidden leaks throughout your home.
+If not addressed quickly, a shower pan leak can lead to water damage on bathroom walls, around the shower curb, first floor ceilings under the shower, and in crawl spaces. Furthermore, it can cause mold growth and wet rot in the subfloor. If you suspect mold growth from water damage, our [mold testing services](/mold-testing/) can help identify and address the problem. For comprehensive leak detection, our [professional leak detection services](/leak-detection/) can locate hidden leaks throughout your home.
 
 Watch the video above to learn how to test the liner for any potential leaks. To prevent water damage and mold, it is important to inspect your shower pan regularly and make sure it is properly installed and sealed. Learn more about [10 effective ways to boost water pressure in your shower](/10-effective-ways-to-boost-water-pressure-in-your-shower-quick-fixes-and-long-term-solutions/) and [effective solutions for low water pressure](/effective-solutions-for-low-water-pressure-in-your-home/) to maintain your shower's performance.
 
@@ -93,7 +93,7 @@ The 3 most common areas a shower pan can leak from :
 
 If you are experiencing water build up in around your shower pan, do not hesitate to contact us.
 
-We do thousands of shower pan tests a year. With over 40 years of plumbing experience, you can rest assure you are in good hands. Our [professional leak detection services](/services/leak-detection/) specialize in finding leaks throughout your home, including shower pan leaks.
+We do thousands of shower pan tests a year. With over 40 years of plumbing experience, you can rest assure you are in good hands. Our [professional leak detection services](/leak-detection/) specialize in finding leaks throughout your home, including shower pan leaks.
 
 We offer services in Miami, Ft Lauderdale, and more recently in Ft Myers. For services in specific areas, check out our [Miami leak detection services](/leak-detection/miami/), [Miami Lakes leak detection services](/leak-detection/miami-lakes/), [Miramar leak detection services](/leak-detection/miramar/), and [Deerfield Beach leak detection services](/leak-detection/deerfield-beach/). If you're in Key Biscayne, we offer specialized [shower pan leak detection in Key Biscayne](/problems/shower-pan-leak/key-biscayne/) for the island's unique coastal properties.
 

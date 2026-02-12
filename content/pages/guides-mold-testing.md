@@ -8,7 +8,7 @@ seo_description: >-
   Everything Florida homeowners need to know about mold testing and indoor air quality. Learn the signs of mold, testing methods, costs, and when you need professional help.
 keywords: ["mold testing guide", "mold inspection Florida", "indoor air quality testing", "black mold testing", "mold assessment"]
 pillar: mold-testing
-feedsService: /services/mold-testing/
+feedsService: /mold-testing/
 ---
 
 # The Complete Guide to Mold Testing and Indoor Air Quality
@@ -17,7 +17,7 @@ Mold is a serious concern for Florida homeowners. Our subtropical climate—with
 
 This comprehensive guide explains everything you need to know about mold testing: how to recognize mold problems, when testing is necessary, what the testing process involves, how to interpret results, and what steps to take if mold is found.
 
-**Concerned about mold?** [Contact Total Leak Detection](/services/mold-testing/) for professional mold testing and air quality assessment.
+**Concerned about mold?** [Contact Total Leak Detection](/mold-testing/) for professional mold testing and air quality assessment.
 
 ---
 
@@ -429,7 +429,7 @@ Effective mold remediation requires:
 3. Drying affected areas
 4. Preventing recurrence
 
-**Related service:** [Professional Leak Detection](/services/leak-detection/)
+**Related service:** [Professional Leak Detection](/leak-detection/)
 
 ---
 

@@ -6,7 +6,7 @@ author: Tomasz Alemany
 category: Sewer Camera Inspection
 tags: ["non-invasive-detection"]
 pillar: sewer-camera-inspection
-feedsService: /services/camera-inspection/
+feedsService: /sewer-camera-inspection/
 seo_title: 'Sewer Camera Inspections in Miami: Prevent Costly Repairs'
 seo_description: >-
   Discover how sewer camera inspections in Miami can prevent costly repairs.
@@ -29,7 +29,7 @@ Miami homes face unique challenges:
 - **Tree roots** often grow into sewer lines
 - **Older buildings** have aging plumbing systems
 
-Regular [sewer camera inspections](/services/camera-inspection/) catch these problems before they get worse.
+Regular [sewer camera inspections](/sewer-camera-inspection/) catch these problems before they get worse.
 
 ## What Is a Sewer Camera Inspection?
 
@@ -76,7 +76,7 @@ After the inspection, the technician reviews all footage. They explain what they
 
 ![](/wp-content/uploads/2024/12/Downpic.cc-2389927459.jpg)
 
-Regular [sewer camera inspections](/services/camera-inspection/) offer real benefits for your home and wallet.
+Regular [sewer camera inspections](/sewer-camera-inspection/) offer real benefits for your home and wallet.
 
 ### Catch Problems Early
 
@@ -203,7 +203,7 @@ Regular sewer camera inspections protect your home. They find problems early, sa
 - ✓ Cost-effective repairs
 - ✓ Peace of mind
 
-The importance of [sewer camera inspections in Miami](/services/camera-inspection/) is clear. This simple step keeps your plumbing healthy for years.
+The importance of [sewer camera inspections in Miami](/sewer-camera-inspection/) is clear. This simple step keeps your plumbing healthy for years.
 
 **Ready to protect your home?** Schedule an inspection before small problems become big ones.
 

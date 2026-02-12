@@ -7,7 +7,7 @@ author: Tomasz Alemany
 category: Mold Testing
 tags: ["early-warning-signs"]
 pillar: mold-testing
-feedsService: /services/mold-testing/
+feedsService: /mold-testing/
 seo_title: How Long After Water Damage Does Mold Grow? | Florida Timeline
 seo_description: >-
   Mold can start growing within 24-48 hours of water damage. Learn the timeline, why Florida's humidity speeds growth, and when to get professional mold assessment.
@@ -122,7 +122,7 @@ The EPA and mold remediation experts agree: the goal is to dry wet materials wit
 
 ### Why Many Homeowners Miss It
 
--   **Hidden water damage** — [Leaks behind walls or under slabs](/services/leak-detection/) aren't discovered immediately
+-   **Hidden water damage** — [Leaks behind walls or under slabs](/leak-detection/) aren't discovered immediately
 -   **Underestimating the problem** — "It's just a small leak" mentality
 -   **Incomplete drying** — Surface looks dry but moisture remains inside materials
 -   **Insurance delays** — Waiting for adjusters while the clock ticks
@@ -192,7 +192,7 @@ If the affected area is larger than about 10 square feet, or if water has been p
 
 ## When to Get Professional Mold Assessment
 
-Don't wait until you see visible mold to call for help. Consider professional [mold testing and inspection](/services/mold-testing/) when:
+Don't wait until you see visible mold to call for help. Consider professional [mold testing and inspection](/mold-testing/) when:
 
 -   **Water damage occurred more than 48 hours ago** — Mold growth is likely beginning
 -   **You smell musty odors** — Even without visible mold
@@ -224,12 +224,12 @@ Acting quickly after water damage isn't just about protecting your property—it
 
 ## Get Expert Assessment When It Matters
 
-At **Total Leak Detection**, we understand the urgency of water damage situations. Our [mold testing services](/services/mold-testing/) help you understand exactly what you're dealing with after water intrusion—whether mold has started growing, where it's located, and how extensive the problem is.
+At **Total Leak Detection**, we understand the urgency of water damage situations. Our [mold testing services](/mold-testing/) help you understand exactly what you're dealing with after water intrusion—whether mold has started growing, where it's located, and how extensive the problem is.
 
 If you've experienced water damage—even if you've cleaned up the visible water—professional assessment can give you peace of mind or catch problems before they become serious.
 
 📞 **Call Today:** (855) 385-5325  
-🌐 **Learn More:** [totalleakdetection.com](/services/mold-testing/)
+🌐 **Learn More:** [totalleakdetection.com](/mold-testing/)
 
 * * *
 
@@ -257,4 +257,4 @@ A musty odor after water damage is a strong indicator of mold growth, even if yo
 - [Mold Inspection and Indoor Air Quality](/how-mold-inspection-can-improve-your-indoor-air-quality/) - How testing improves your home environment
 - [7 Simple Steps to Do a Mold Test](/7-simple-steps-to-do-a-mold-test/) - Understanding the testing process
 - [Signs You Have a Hidden Water Leak](/signs-you-have-a-hidden-water-leak/) - Catching leaks before mold starts
-- [Leak Detection Services](/services/leak-detection/) - Find water damage sources
+- [Leak Detection Services](/leak-detection/) - Find water damage sources

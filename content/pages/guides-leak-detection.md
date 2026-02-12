@@ -8,7 +8,7 @@ seo_description: >-
   Everything Florida homeowners need to know about detecting water leaks. Learn the signs, causes, detection methods, costs, and when to call professionals.
 keywords: ["leak detection guide", "water leak signs", "how to detect leaks", "Florida leak detection", "hidden water leaks"]
 pillar: leak-detection
-feedsService: /services/leak-detection/
+feedsService: /leak-detection/
 ---
 
 # The Complete Guide to Leak Detection for Florida Homeowners
@@ -17,7 +17,7 @@ Water leaks are one of the most common—and costly—problems facing Florida ho
 
 This comprehensive guide covers everything you need to know about water leak detection: the warning signs to watch for, the different types of leaks, how professionals find hidden leaks, what it costs, and when you need expert help.
 
-**Need professional leak detection now?** [Contact Total Leak Detection](/services/leak-detection/) for 24/7 service with 40+ years of experience.
+**Need professional leak detection now?** [Contact Total Leak Detection](/leak-detection/) for 24/7 service with 40+ years of experience.
 
 ---
 
@@ -194,7 +194,7 @@ For difficult-to-find leaks, a harmless tracer gas is introduced into the plumbi
 5. **Location confirmation**: Pinpoint exact leak location
 6. **Documentation**: Provide detailed report for repairs and insurance
 
-**Ready for professional detection?** [Schedule your leak detection service](/services/leak-detection/)
+**Ready for professional detection?** [Schedule your leak detection service](/leak-detection/)
 
 ---
 
@@ -294,7 +294,7 @@ Finding and fixing leaks quickly is the best mold prevention strategy. Once mold
 - Property damage spreads
 - Insurance complications arise
 
-**Related service:** [Professional Mold Testing](/services/mold-testing/)
+**Related service:** [Professional Mold Testing](/mold-testing/)
 
 ---
 
@@ -352,7 +352,7 @@ Total Leak Detection provides:
 - **Insurance-ready reports** and documentation
 - **Licensed and insured** technicians
 
-[**Schedule Your Leak Detection Service**](/services/leak-detection/)
+[**Schedule Your Leak Detection Service**](/leak-detection/)
 
 ---
 
