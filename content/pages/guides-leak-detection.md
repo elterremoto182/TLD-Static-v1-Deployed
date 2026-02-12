@@ -366,6 +366,7 @@ Explore more resources from our leak detection experts:
 
 ### Specific Leak Types
 - [How to Check Shower Pan for Leaks](/how-to-check-shower-pan-leaks/)
+- [How to Troubleshoot a Leaky Toilet](/how-to-troubleshoot-a-leaky-toilet/)
 - [How to Identify and Fix Common Toilet Leaks](/how-to-identify-and-fix-common-toilet-leaks-a-comprehensive-guide/)
 - [Miramar Leak Detection: Pinholes in Pembroke Pines](/miramar-leak-detection-pinholes-in-pines/)
 

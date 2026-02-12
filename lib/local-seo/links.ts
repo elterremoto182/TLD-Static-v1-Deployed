@@ -239,6 +239,11 @@ export function getAllBlogPostLinks(): InternalLink[] {
       description: 'A comprehensive guide to toilet leak repair.',
     },
     {
+      href: '/how-to-troubleshoot-a-leaky-toilet/',
+      label: 'How to Troubleshoot a Leaky Toilet',
+      description: 'Step-by-step leak diagnosis and fixes for toilet problems.',
+    },
+    {
       href: '/effective-solutions-for-low-water-pressure-in-your-home/',
       label: 'Solutions for Low Water Pressure',
       description: 'Effective fixes for water pressure issues at home.',
