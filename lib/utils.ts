@@ -74,10 +74,12 @@ export function generatePageMetadata({
 }): Metadata {
   const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://totalleakdetection.com';
   
-  // Ensure trailing slash for canonical URL (except base URL)
-  // This matches Next.js trailingSlash: true configuration
+  // Home page: canonical without trailing slash (https://totalleakdetection.com)
+  // All other pages: trailing slash per Next.js trailingSlash configuration
   let canonicalPath = path;
-  if (path && path !== '/' && !path.endsWith('/')) {
+  if (!path || path === '/') {
+    canonicalPath = '';
+  } else if (!path.endsWith('/')) {
     canonicalPath = `${path}/`;
   }
   
