@@ -6,9 +6,6 @@ http://www.totalleakdetection.com/* https://totalleakdetection.com/:splat 301!
 http://totalleakdetection.com/* https://totalleakdetection.com/:splat 301!
 https://www.totalleakdetection.com/* https://totalleakdetection.com/:splat 301!
 
-# Force trailing slash on homepage (bare domain -> slash canonical)
-https://totalleakdetection.com  https://totalleakdetection.com/ 301!
-
 # Sitemap redirect - Google looks for /sitemap.xml by default
 /sitemap.xml /sitemaps/index.xml 301
 
