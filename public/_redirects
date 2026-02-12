@@ -1,9 +1,6 @@
 # Redirects for static site
 # Format: from_path to_path status_code
 
-# Force trailing slash on the root (homepage)
-https://totalleakdetection.com  https://totalleakdetection.com/  301!
-
 # Force HTTPS + remove www in one hop (canonical: https://totalleakdetection.com/)
 http://www.totalleakdetection.com/* https://totalleakdetection.com/:splat 301!
 http://totalleakdetection.com/* https://totalleakdetection.com/:splat 301!
