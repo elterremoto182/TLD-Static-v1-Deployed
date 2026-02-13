@@ -296,9 +296,9 @@ export function getAllBlogPostLinks(): InternalLink[] {
       description: 'Types, repairs, and expert tips for sewer line pipes.',
     },
     {
-      href: '/essential-tips-for-maintaining-your-sewer-line-what-homeowners-must-know/',
-      label: 'Essential Sewer Line Maintenance Tips',
-      description: 'What homeowners must know about sewer maintenance.',
+      href: '/guides/sewer-camera-inspection/',
+      label: 'Complete Guide to Sewer Camera Inspections',
+      description: 'Sewer maintenance, inspections, and what homeowners must know.',
     },
     // Drain Cleaning Articles
     {

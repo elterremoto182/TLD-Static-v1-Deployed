@@ -37,7 +37,6 @@ We specialize in non-invasive leak detection. This involves the use of advanced 
 
 ### Educational Resources
 
-- [Plumbing 101](/plumbing-101/) - Sign up for our FREE plumbing class
 - [Event Sign Up](/event-sign-up/) - Register for our upcoming presentations
 
 ### Helpful Guides

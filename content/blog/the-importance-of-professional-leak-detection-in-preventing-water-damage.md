@@ -138,4 +138,3 @@ For more information about leak detection, check out our guide on [advanced tech
 - [How to Check Shower Pan for Leaks](/how-to-check-shower-pan-leaks/) - DIY shower pan leak detection guide
 - [How to Identify and Fix Common Toilet Leaks](/how-to-identify-and-fix-common-toilet-leaks-a-comprehensive-guide/) - Comprehensive toilet leak guide
 - [Slab Leak Detection Services](/services/slab-leaks/) - Expert slab leak detection
-- [Plumbing 101](/plumbing-101/) - Free plumbing class from our experts

@@ -109,5 +109,4 @@ Contact us today to schedule your sewer camera inspection or to learn more about
 ### Related Resources
 
 - [Main Sewer Line Pipe Size Guide](/choosing-the-perfect-pipe-size-for-your-main-sewer-line-types-repairs-and-expert-tips/) - Understanding sewer pipe sizing
-- [Essential Tips for Maintaining Your Sewer Line](/essential-tips-for-maintaining-your-sewer-line-what-homeowners-must-know/) - Sewer maintenance for homeowners
-- [Plumbing 101](/plumbing-101/) - Sign up for our free plumbing class
+- [Complete Guide to Sewer Camera Inspections](/guides/sewer-camera-inspection/) - Sewer maintenance for homeowners

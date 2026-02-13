@@ -93,7 +93,7 @@ A consistent maintenance routine is essential for keeping your kitchen sink clog
 
 1.  **Monthly Deep Clean:** Perform a more thorough cleaning monthly by removing any visible debris from the drain screen and using natural cleaners.
 
-These expert tips emphasize proactive measures like proper grease disposal, installing drain screens, and adhering to a regular maintenance routine. By integrating these practices into your daily habits, you can effectively prevent clogs in your kitchen sink. If you need professional assistance, our [clogged drains services](/services/clogged-drains/) can help resolve persistent kitchen sink clogs. For related plumbing issues, learn about [essential tips for maintaining your sewer line](/essential-tips-for-maintaining-your-sewer-line-what-homeowners-must-know/) to prevent problems throughout your plumbing system.
+These expert tips emphasize proactive measures like proper grease disposal, installing drain screens, and adhering to a regular maintenance routine. By integrating these practices into your daily habits, you can effectively prevent clogs in your kitchen sink. If you need professional assistance, our [clogged drains services](/services/clogged-drains/) can help resolve persistent kitchen sink clogs. For related plumbing issues, learn about [maintaining your sewer line](/guides/sewer-camera-inspection/) to prevent problems throughout your plumbing system.
 
 ## Step-by-Step Guide to Fixing a Clogged Kitchen Sink Like a Pro
 

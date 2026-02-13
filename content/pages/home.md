@@ -68,7 +68,6 @@ Licensed & Insured
 
 ## Educational Resources
 
-- [Plumbing 101](/plumbing-101/) - Sign up for our FREE plumbing class
 - [Event Sign Up](/event-sign-up/) - Register for our presentations
 - [How to Check Shower Pan for Leaks](/how-to-check-shower-pan-leaks/) - DIY guide
 - [How to Identify and Fix Common Toilet Leaks)- Toilet leak guide

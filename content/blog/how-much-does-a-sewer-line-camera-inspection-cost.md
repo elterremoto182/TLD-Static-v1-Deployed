@@ -63,7 +63,6 @@ Sewer camera inspections are an important part of maintaining your sewer lines a
 
 ### Related Resources
 
-- [Essential Tips for Maintaining Your Sewer Line](/essential-tips-for-maintaining-your-sewer-line-what-homeowners-must-know/) - Sewer maintenance guide for homeowners
+- [Complete Guide to Sewer Camera Inspections](/guides/sewer-camera-inspection/) - Sewer maintenance and inspection guide
 - [Main Sewer Line Pipe Size Guide](/choosing-the-perfect-pipe-size-for-your-main-sewer-line-types-repairs-and-expert-tips/) - Understanding proper pipe sizing
-- [Plumbing 101](/plumbing-101/) - Sign up for our free plumbing class
 - [Our Current Promotions](/promotions/) - Check out our latest discounts

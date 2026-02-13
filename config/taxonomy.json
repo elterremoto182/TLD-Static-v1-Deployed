@@ -282,11 +282,6 @@
             "topics": ["pinhole leaks", "copper pipe leaks", "Miramar"]
           },
           {
-            "slug": "total-leak-detection-miami-lakes",
-            "title": "Total Leak Detection: Miami Lakes",
-            "topics": ["Miami Lakes", "water leak detection", "sewer camera"]
-          },
-          {
             "slug": "effective-solutions-for-low-water-pressure-in-your-home",
             "title": "Effective Solutions for Low Water Pressure in Your Home",
             "topics": ["water pressure", "plumbing issues", "leak symptoms"]
@@ -305,11 +300,6 @@
             "slug": "how-to-troubleshoot-a-leaky-toilet",
             "title": "How to Troubleshoot a Leaky Toilet",
             "topics": ["toilet leaks", "troubleshooting", "leak diagnosis"]
-          },
-          {
-            "slug": "plumbing-101",
-            "title": "Plumbing 101",
-            "topics": ["plumbing basics", "education", "leak detection training"]
           },
           {
             "slug": "event-sign-up",
@@ -398,11 +388,6 @@
             "slug": "choosing-the-perfect-pipe-size-for-your-main-sewer-line-types-repairs-and-expert-tips",
             "title": "Choosing the Perfect Pipe Size for Your Main Sewer Line",
             "topics": ["pipe sizing", "sewer materials", "installation"]
-          },
-          {
-            "slug": "essential-tips-for-maintaining-your-sewer-line-what-homeowners-must-know",
-            "title": "Essential Tips for Maintaining Your Sewer Line",
-            "topics": ["sewer maintenance", "preventive tips", "tree roots"]
           }
         ],
         "plannedArticles": [

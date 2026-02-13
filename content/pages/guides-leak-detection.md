@@ -375,8 +375,7 @@ Explore more resources from our leak detection experts:
 - [10 Effective Ways to Boost Water Pressure in Your Shower](/10-effective-ways-to-boost-water-pressure-in-your-shower-quick-fixes-and-long-term-solutions/)
 
 ### Local Resources
-- [Total Leak Detection: Miami Lakes](/total-leak-detection-miami-lakes/)
-- [Plumbing 101 Training](/plumbing-101/)
+- [Leak Detection Miami Lakes](/leak-detection/miami-lakes/)
 
 ---
 

@@ -208,5 +208,4 @@ However, before diving into these solutions, it's crucial to ensure that there a
 - [How to Identify and Fix Common Toilet Leaks](/how-to-identify-and-fix-common-toilet-leaks-a-comprehensive-guide/) - Comprehensive toilet troubleshooting guide
 - [How to Check Shower Pan for Leaks](/how-to-check-shower-pan-leaks/) - Check for leaks that may affect your shower
 - [Expert Tips to Prevent and Fix Clogged Kitchen Sinks](/expert-tips-to-prevent-and-fix-clogged-kitchen-sinks/) - Kitchen plumbing tips
-- [Plumbing 101](/plumbing-101/) - Sign up for our free plumbing class
 - [Slab Leak Detection Services](/services/slab-leaks/) - Leaks beneath your foundation can affect water pressure

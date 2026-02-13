@@ -17,7 +17,6 @@ Take advantage of our current promotions on leak detection and plumbing services
 
 ### Educational Resources
 
-- [Plumbing 101](/plumbing-101/) - Sign up for our FREE plumbing class to learn from the experts
 - [Event Sign Up](/event-sign-up/) - Register for our upcoming presentations and events
 - [The Importance of Professional Leak Detection)- Learn why early detection matters
 

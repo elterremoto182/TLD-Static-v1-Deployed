@@ -113,5 +113,4 @@ By staying informed and proactive, you can protect your property from the severe
 
 - [Effective Solutions for Low Water Pressure](/effective-solutions-for-low-water-pressure-in-your-home/) - Slab leaks can cause water pressure issues
 - [Eliminating Air Pockets in Water Pipes](/eliminating-air-pockets-effective-solutions-for-air-in-water-pipes/) - Related plumbing maintenance tips
-- [Essential Tips for Maintaining Your Sewer Line](/essential-tips-for-maintaining-your-sewer-line-what-homeowners-must-know/) - Comprehensive sewer maintenance guide
-- [Plumbing 101](/plumbing-101/) - Sign up for our free plumbing class to learn from the experts
+- [Complete Guide to Sewer Camera Inspections](/guides/sewer-camera-inspection/) - Sewer maintenance and inspection guide

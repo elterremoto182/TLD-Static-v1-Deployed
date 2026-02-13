@@ -179,8 +179,8 @@ By understanding what to expect during a sewer camera inspection in Miami, FL, h
 
 ### Related Resources
 
-- [Essential Tips for Maintaining Your Sewer Line](/essential-tips-for-maintaining-your-sewer-line-what-homeowners-must-know/) - Sewer maintenance guide
+- [Complete Guide to Sewer Camera Inspections](/guides/sewer-camera-inspection/) - Sewer maintenance guide
 - [Main Sewer Line Pipe Size Guide](/choosing-the-perfect-pipe-size-for-your-main-sewer-line-types-repairs-and-expert-tips/) - Understanding sewer pipe sizing
 - [The Ultimate Guide to Effective Drain Cleaners](/the-ultimate-guide-to-effective-drain-cleaners-what-really-works/) - What drain cleaners work
-- [Miami Lakes Leak Detection](/total-leak-detection-miami-lakes/) - Serving Miami Lakes area
+- [Miami Lakes Leak Detection](/leak-detection/miami-lakes/) - Serving Miami Lakes area
 - [Our Current Promotions](/promotions/) - Check out our latest discounts
