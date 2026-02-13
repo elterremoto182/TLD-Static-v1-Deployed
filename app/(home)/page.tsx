@@ -34,7 +34,7 @@ export async function generateMetadata() {
   
   return generatePageMetadata({
     title: page?.seo_title || page?.title || 'Leak Detection Miami | Water Leak Detection Services',
-    description: page?.seo_description || 'Need leak detection in Miami? Our licensed technicians find hidden water leaks fast using non-invasive methods. Family-owned since 2005. Free estimates!',
+    description: page?.seo_description || 'Need leak detection in Miami? Our licensed technicians find hidden water leaks fast using non-invasive methods. Family-owned since 2019. Free estimates!',
     keywords: page?.keywords || ['leak detection miami', 'water leak detection', 'leak detection near me'],
     path: '/',
   });

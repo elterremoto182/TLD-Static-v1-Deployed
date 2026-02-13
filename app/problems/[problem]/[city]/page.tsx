@@ -20,10 +20,9 @@ import {
 } from '@/lib/local-seo/templates';
 import {
   generateProblemCityBreadcrumbs,
-  generateBreadcrumbSchema,
-  generateLocalBusinessSchema,
-  generateWebPageSchema,
+  buildPageSchemaGraph,
   schemaToJsonLd,
+  baseUrl,
 } from '@/lib/local-seo/schema';
 import { getProblemCityCanonicalUrl } from '@/lib/local-seo/links';
 import { LocalCTA } from '@/components/local-seo';
@@ -130,32 +129,32 @@ export default async function ProblemCityPage({
   const h1 = generateProblemCityH1(problem, city);
   const breadcrumbs = generateProblemCityBreadcrumbs(problem, city);
   const canonicalUrl = getProblemCityCanonicalUrl(problemSlug, citySlug);
-  
-  // Generate schemas
-  const breadcrumbSchema = generateBreadcrumbSchema(breadcrumbs, canonicalUrl);
-  const localBusinessSchema = generateLocalBusinessSchema(city);
-  const webPageSchema = generateWebPageSchema({
+
+  const schemaGraph = buildPageSchemaGraph({
+    pageType: 'problem-city',
+    pageUrl: canonicalUrl,
     title: h1,
     description: problem.overview,
-    url: canonicalUrl,
     breadcrumbs,
+    city: {
+      name: city.name,
+      county: city.county,
+      slug: city.slug,
+    },
+    problem: {
+      name: problem.name,
+      slug: problem.slug,
+    },
+    parentPageUrl: `${baseUrl}/problems/${problemSlug}/`,
   });
-  
+
   const IconComponent = getIcon(problem.icon);
-  
+
   return (
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: schemaToJsonLd(breadcrumbSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: schemaToJsonLd(localBusinessSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: schemaToJsonLd(webPageSchema) }}
+        dangerouslySetInnerHTML={{ __html: schemaToJsonLd(schemaGraph) }}
       />
       
       <Header />

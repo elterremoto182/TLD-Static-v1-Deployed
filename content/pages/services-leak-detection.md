@@ -80,7 +80,7 @@ Our certified technicians use cutting-edge equipment to pinpoint the exact locat
 
 ## Why Florida Homeowners and Businesses Choose Total Leak Detection
 
-### 40+ Years of Experience | 4.7 Google Rating | 100+ Five-Star Reviews
+### 40+ Years of Experience | 4.6 Google Rating | 137 Five-Star Reviews
 
 We're not just another leak detection company. We're Florida's trusted experts because we deliver results:
 
@@ -154,7 +154,7 @@ We invest in the latest leak detection equipment because your property deserves 
 — Gabrielle Shirek, Verified Customer
 
 **Our Results Speak for Themselves:**
-- ⭐ **4.7 out of 5 stars** on Google with 100+ reviews
+- ⭐ **4.6 out of 5 stars** on Google with 137 reviews
 - 🏆 **1,000+ successful leak detections** completed
 - ⏱️ **Same-day service** available for emergencies
 - 💯 **100% satisfaction guarantee** on all our work
@@ -223,7 +223,7 @@ We offer **free estimates and inspections**. Our pricing is transparent with no 
 
 ### 6. What makes Total Leak Detection different from other companies?
 
-With **40+ years of experience**, **4.7-star rating**, and **1,000+ successful detections**, we combine proven expertise with cutting-edge technology. We're licensed, insured, and BBB accredited. Most importantly, we've located leaks that other companies missed—saving our customers thousands in unnecessary repairs.
+With **40+ years of experience**, **4.6-star rating**, and **1,000+ successful detections**, we combine proven expertise with cutting-edge technology. We're licensed, insured, and BBB accredited. Most importantly, we've located leaks that other companies missed—saving our customers thousands in unnecessary repairs.
 
 ### 7. Are you available for emergencies?
 
@@ -247,7 +247,7 @@ We provide a detailed report with the exact leak location, photos, and recommend
 
 **Total Leak Detection** - Florida's Trusted Leak Detection Experts Since 1980
 
-Licensed & Insured (CFC1430460) | Better Business Bureau Accredited | 4.7★ Rating with 100+ Reviews
+Licensed & Insured (CFC1430460) | Better Business Bureau Accredited | 4.6★ Rating with 137 Reviews
 
 ---
 

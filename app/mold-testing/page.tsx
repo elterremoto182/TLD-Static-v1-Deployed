@@ -363,7 +363,7 @@ export default function MoldTestingHubPage() {
           subtitle="Mold testing requires specialized expertise. We're Florida's trusted experts because we deliver results."
           sections={whyChooseUsSections}
           stats={{
-            rating: '4.7',
+            rating: '4.6',
             reviews: '100+',
             projects: '1,000+',
           }}

@@ -15,6 +15,9 @@ import { baseUrl } from '@/lib/site-url';
 // Re-export for consumers
 export { baseUrl };
 
+/** Main entity @id fragment - single Plumber/LocalBusiness entity for the entire site */
+export const ENTITY_ID = '#plumber';
+
 // =============================================================================
 // TypeScript Types
 // =============================================================================
@@ -52,21 +55,6 @@ export interface AggregateRatingSchema {
   reviewCount: number;
   bestRating?: number;
   worstRating?: number;
-}
-
-export interface ReviewSchema {
-  '@type': 'Review';
-  reviewRating: {
-    '@type': 'Rating';
-    ratingValue: string;
-    bestRating: string;
-  };
-  author: {
-    '@type': 'Person';
-    name: string;
-  };
-  datePublished: string;
-  reviewBody: string;
 }
 
 export interface OrganizationSchema {
@@ -107,7 +95,6 @@ export interface LocalBusinessSchema {
   areaServed: object;
   sameAs?: string[];
   aggregateRating?: AggregateRatingSchema;
-  review?: ReviewSchema[];
   foundingDate: string;
   slogan: string;
   knowsAbout: string[];
@@ -270,114 +257,26 @@ function getSocialLinks(): string[] {
 }
 
 /**
- * Calculate aggregate rating from site reviews
+ * Get aggregate rating from primary (Google) reviews for schema.
+ * Uses Google only to match visible content (ReviewBadge, Contact) and what Google can verify.
+ * Schema must match real Google Business Profile data - do not fake counts.
  */
 function getAggregateRating(): AggregateRatingSchema | undefined {
-  const ratings = [
-    siteConfig.reviews?.google?.rating,
-    siteConfig.reviews?.yelp?.rating,
-    siteConfig.reviews?.facebook?.rating,
-  ].filter((r): r is number => typeof r === 'number');
+  const primary = siteConfig.reviews?.google;
+  if (!primary || typeof primary.rating !== 'number') return undefined;
 
-  if (ratings.length === 0) return undefined;
-
-  const totalReviews = [
-    siteConfig.reviews?.google?.reviewCount,
-    siteConfig.reviews?.yelp?.reviewCount,
-    siteConfig.reviews?.facebook?.reviewCount,
-  ]
-    .filter((c): c is string => typeof c === 'string')
-    .reduce((sum, count) => {
-      const num = parseInt(count.replace(/\D/g, ''), 10) || 0;
-      return sum + num;
-    }, 0);
+  const reviewCount = typeof primary.reviewCount === 'string'
+    ? parseInt(primary.reviewCount.replace(/\D/g, ''), 10) || 0
+    : typeof primary.reviewCount === 'number' ? primary.reviewCount : 0;
+  if (reviewCount === 0) return undefined;
 
   return {
     '@type': 'AggregateRating',
-    ratingValue: (ratings.reduce((a, b) => a + b, 0) / ratings.length).toFixed(1),
-    reviewCount: totalReviews,
+    ratingValue: primary.rating.toFixed(1),
+    reviewCount,
     bestRating: 5,
     worstRating: 1,
   };
-}
-
-/**
- * Get hardcoded customer reviews for schema markup
- * These are real reviews from Google/Yelp for rich snippet eligibility
- */
-function getCustomerReviews(): ReviewSchema[] {
-  return [
-    {
-      '@type': 'Review',
-      reviewRating: {
-        '@type': 'Rating',
-        ratingValue: '5',
-        bestRating: '5',
-      },
-      author: {
-        '@type': 'Person',
-        name: 'Maria G.',
-      },
-      datePublished: '2024-11-15',
-      reviewBody: 'Total Leak Detection saved us from a major disaster. They found a slab leak that our previous plumber missed. Professional, fast, and the report was detailed enough for our insurance claim. Highly recommend!',
-    },
-    {
-      '@type': 'Review',
-      reviewRating: {
-        '@type': 'Rating',
-        ratingValue: '5',
-        bestRating: '5',
-      },
-      author: {
-        '@type': 'Person',
-        name: 'Robert S.',
-      },
-      datePublished: '2024-10-28',
-      reviewBody: 'Excellent service from start to finish. The technician was knowledgeable and explained everything clearly. They used thermal imaging to find a hidden leak in our wall without any damage. Worth every penny.',
-    },
-    {
-      '@type': 'Review',
-      reviewRating: {
-        '@type': 'Rating',
-        ratingValue: '5',
-        bestRating: '5',
-      },
-      author: {
-        '@type': 'Person',
-        name: 'Jennifer M.',
-      },
-      datePublished: '2024-09-12',
-      reviewBody: 'Called them for a mold inspection after water damage. Very thorough, got lab results back quickly, and the report helped us understand exactly what remediation was needed. Great communication throughout.',
-    },
-    {
-      '@type': 'Review',
-      reviewRating: {
-        '@type': 'Rating',
-        ratingValue: '5',
-        bestRating: '5',
-      },
-      author: {
-        '@type': 'Person',
-        name: 'Carlos R.',
-      },
-      datePublished: '2024-08-05',
-      reviewBody: 'Best leak detection company in Miami! They came out same day and found the leak under our pool deck. The camera inspection was amazing - we could see exactly where the problem was. Fair pricing too.',
-    },
-    {
-      '@type': 'Review',
-      reviewRating: {
-        '@type': 'Rating',
-        ratingValue: '5',
-        bestRating: '5',
-      },
-      author: {
-        '@type': 'Person',
-        name: 'David L.',
-      },
-      datePublished: '2024-07-22',
-      reviewBody: 'Used them for a pre-purchase sewer camera inspection. Found issues the seller had to fix before closing. Their detailed video and report gave me confidence in my home purchase. Professional team!',
-    },
-  ];
 }
 
 /**
@@ -406,7 +305,7 @@ export function generateWebSiteSchema(): Omit<WebSiteSchema, '@context'> {
     url: `${baseUrl}/`,
     name: siteConfig.name,
     description: siteConfig.description,
-    publisher: { '@id': `${baseUrl}/#organization` },
+    publisher: { '@id': `${baseUrl}${ENTITY_ID}` },
     potentialAction: {
       '@type': 'SearchAction',
       target: {
@@ -420,14 +319,15 @@ export function generateWebSiteSchema(): Omit<WebSiteSchema, '@context'> {
 }
 
 /**
- * Generate Organization schema
+ * Generate Organization schema (minimal stub for pages that reference the main entity)
+ * Used by layout and pages that need #plumber reference resolution without full LocalBusiness
  */
 export function generateOrganizationSchema(): Omit<OrganizationSchema, '@context'> {
   const socialLinks = getSocialLinks();
-  
+
   return {
     '@type': 'Organization',
-    '@id': `${baseUrl}/#organization`,
+    '@id': `${baseUrl}${ENTITY_ID}`,
     name: siteConfig.name,
     url: `${baseUrl}/`,
     logo: {
@@ -444,8 +344,21 @@ export function generateOrganizationSchema(): Omit<OrganizationSchema, '@context
       availableLanguage: ['English', 'Spanish'],
     },
     sameAs: socialLinks.length > 0 ? socialLinks : undefined,
-    foundingDate: '2005',
+    foundingDate: '2019',
     slogan: 'Expert Leak Detection & Plumbing Services',
+  };
+}
+
+/**
+ * Minimal main entity stub for reference resolution (provider, publisher)
+ * Use when page references #plumber but should not include full LocalBusiness
+ */
+function generateMainEntityStub(): object {
+  return {
+    '@type': 'Plumber',
+    '@id': `${baseUrl}${ENTITY_ID}`,
+    name: siteConfig.name,
+    url: `${baseUrl}/`,
   };
 }
 
@@ -470,15 +383,14 @@ export function generateLocalBusinessSchema(options?: {
     description = options.customDescription;
   }
 
-  // Only include reviews/ratings on main pages (home, contact) where they truly represent the business
-  // NOT on city pages where Google may interpret as "this page has its own reviews"
-  const shouldIncludeReviews = options?.includeReviews !== false; // Default true for backward compatibility
+  // Only include aggregateRating on main pages (home) where it truly represents the business.
+  // NOT on city pages where Google may interpret as "this page has its own reviews".
+  const shouldIncludeReviews = options?.includeReviews !== false;
   const aggregateRating = shouldIncludeReviews ? getAggregateRating() : undefined;
-  const reviews = shouldIncludeReviews ? getCustomerReviews() : undefined;
 
   const schema: Omit<LocalBusinessSchema, '@context'> = {
     '@type': ['LocalBusiness', 'Plumber', 'HomeAndConstructionBusiness'],
-    '@id': `${baseUrl}/#organization`,
+    '@id': `${baseUrl}${ENTITY_ID}`,
     name: siteConfig.name,
     image: `${baseUrl}${siteConfig.logo}`,
     url: `${baseUrl}/`,
@@ -501,8 +413,7 @@ export function generateLocalBusinessSchema(options?: {
     },
     sameAs: socialLinks.length > 0 ? socialLinks : undefined,
     aggregateRating,
-    review: reviews,
-    foundingDate: '2005',
+    foundingDate: '2019',
     slogan: 'Expert Leak Detection & Plumbing Services - Available 24/7',
     knowsAbout: [
       'Water Leak Detection',
@@ -710,7 +621,7 @@ export function generateServiceSchema(options: {
     '@type': 'Service',
     name: options.city ? `${options.name} in ${options.city.name}, FL` : options.name,
     description: options.description,
-    provider: { '@id': `${baseUrl}/#organization` },
+    provider: { '@id': `${baseUrl}${ENTITY_ID}` },
     serviceType: options.serviceType || options.name,
     areaServed,
     serviceOutput: {
@@ -779,7 +690,7 @@ export function generateArticleSchema(options: {
   const author = isCompanyAuthor
     ? {
         '@type': 'Organization',
-        '@id': `${baseUrl}/#organization`,
+        '@id': `${baseUrl}${ENTITY_ID}`,
         name: siteConfig.name,
         url: `${baseUrl}/about/`,
         sameAs: socialLinks.length > 0 ? socialLinks : undefined,
@@ -799,7 +710,7 @@ export function generateArticleSchema(options: {
     datePublished: options.datePublished,
     dateModified: options.dateModified || options.datePublished,
     author,
-    publisher: { '@id': `${baseUrl}/#organization` },
+    publisher: { '@id': `${baseUrl}${ENTITY_ID}` },
     mainEntityOfPage: { '@id': `${options.url}#webpage` },
     wordCount,
     isAccessibleForFree: true,
@@ -898,7 +809,7 @@ export function generateVideoObjectSchema(options: {
     uploadDate: options.uploadDate || new Date().toISOString().split('T')[0],
     embedUrl,
     contentUrl: videoUrl,
-    publisher: { '@id': `${baseUrl}/#organization` },
+    publisher: { '@id': `${baseUrl}${ENTITY_ID}` },
     potentialAction: {
       '@type': 'WatchAction',
       target: videoUrl,
@@ -921,7 +832,7 @@ export function generateVideoObjectSchema(options: {
  * Combines all relevant schemas into a single JSON-LD block
  */
 export function buildPageSchemaGraph(options: {
-  pageType: 'home' | 'service' | 'service-hub' | 'article' | 'collection' | 'contact' | 'about' | 'city-service';
+  pageType: 'home' | 'service' | 'service-hub' | 'article' | 'collection' | 'contact' | 'about' | 'city-service' | 'problem-city';
   pageUrl: string;
   title: string;
   description: string;
@@ -940,13 +851,20 @@ export function buildPageSchemaGraph(options: {
     description: string;
     serviceType?: string;
   };
-  // For city-service pages
+  // For city-service and problem-city pages
   city?: {
     name: string;
     county: string;
     coordinates?: { lat: number; lng: number };
     slug?: string;
   };
+  // For problem-city pages (problem offering in city)
+  problem?: {
+    name: string;
+    slug: string;
+  };
+  // Parent page URL for breadcrumb hierarchy (e.g., problem hub for problem-city)
+  parentPageUrl?: string;
   // For FAQs
   faqs?: Array<{ question: string; answer: string }>;
   // For HowTo
@@ -955,21 +873,21 @@ export function buildPageSchemaGraph(options: {
 }): SchemaGraph {
   const graph: object[] = [];
 
-  // Always include WebSite and Organization
+  // WebSite (publisher references #plumber)
   graph.push(generateWebSiteSchema());
-  graph.push(generateOrganizationSchema());
 
-  // Add LocalBusiness for relevant pages
-  // For city-service pages, exclude reviews/ratings to avoid Google interpreting as page-specific reviews
-  if (['home', 'service', 'service-hub', 'city-service', 'contact'].includes(options.pageType)) {
-    const includeReviews = options.pageType !== 'city-service'; // Exclude reviews from city pages
+  // Main entity: full Plumber with AggregateRating on homepage only
+  // Other pages get minimal stub so provider/publisher references resolve
+  if (options.pageType === 'home') {
     graph.push(
       generateLocalBusinessSchema({
         city: options.city,
         service: options.service,
-        includeReviews,
+        includeReviews: true,
       })
     );
+  } else {
+    graph.push(generateMainEntityStub());
   }
 
   // Add breadcrumbs if provided
@@ -1068,6 +986,31 @@ export function buildPageSchemaGraph(options: {
         graph.push(
           generateServiceSchema({
             ...options.service,
+            url: options.pageUrl,
+          })
+        );
+      }
+      break;
+
+    case 'problem-city':
+      // Problem × city pages (e.g., /problems/slab-leak/miami/) - Service only, no LocalBusiness
+      graph.push(
+        generateWebPageSchema({
+          title: options.title,
+          description: options.description,
+          url: options.pageUrl,
+          breadcrumbs: options.breadcrumbs,
+          parentPageUrl: options.parentPageUrl,
+          includeSpeakable: true,
+        })
+      );
+      if (options.problem && options.city) {
+        graph.push(
+          generateServiceSchema({
+            name: options.problem.name,
+            description: options.description,
+            serviceType: options.problem.name,
+            city: options.city,
             url: options.pageUrl,
           })
         );

@@ -47,7 +47,7 @@ function TrustBadges() {
       </div>
       <div className="flex items-center gap-1.5">
         <Star className="w-4 h-4 text-yellow-500 fill-yellow-500" />
-        <span>4.7 Rating (136+ Reviews)</span>
+        <span>4.6 Rating (137 Reviews)</span>
       </div>
       <div className="flex items-center gap-1.5">
         <Clock className="w-4 h-4 text-primary" />
@@ -384,8 +384,8 @@ export default function ContactPage() {
                           <Star className="w-5 h-5 text-yellow-300 fill-yellow-300" />
                         </div>
                         <div>
-                          <p className="font-semibold text-white">4.7 Star Rating</p>
-                          <p className="text-blue-100 text-sm">136+ Google Reviews</p>
+                          <p className="font-semibold text-white">4.6 Star Rating</p>
+                          <p className="text-blue-100 text-sm">137 Google Reviews</p>
                         </div>
                       </div>
                       <div className="flex items-center gap-3">

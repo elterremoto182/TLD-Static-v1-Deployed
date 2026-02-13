@@ -163,7 +163,7 @@ const leakDetectionFaqs = [
   },
   {
     question: 'What makes Total Leak Detection different from other companies?',
-    answer: 'With 40+ years of experience, 4.7-star rating, and 1,000+ successful detections, we combine proven expertise with cutting-edge technology. We\'re licensed, insured, and BBB accredited. Most importantly, we\'ve located leaks that other companies missed—saving our customers thousands in unnecessary repairs.',
+    answer: 'With 40+ years of experience, 4.6-star rating, and 1,000+ successful detections, we combine proven expertise with cutting-edge technology. We\'re licensed, insured, and BBB accredited. Most importantly, we\'ve located leaks that other companies missed—saving our customers thousands in unnecessary repairs.',
   },
   {
     question: 'Are you available for emergencies?',
@@ -329,7 +329,7 @@ export default function LeakDetectionHubPage() {
           subtitle="We're not just another leak detection company. We're Florida's trusted experts because we deliver results."
           sections={whyChooseUsSections}
           stats={{
-            rating: '4.7',
+            rating: '4.6',
             reviews: '100+',
             projects: '1,000+',
           }}

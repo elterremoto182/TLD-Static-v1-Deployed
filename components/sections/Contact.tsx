@@ -95,7 +95,7 @@ export function Contact() {
               </div>
               <div className="flex items-center gap-1.5">
                 <Star className="w-4 h-4 text-yellow-500 fill-yellow-500" />
-                <span>4.7 Rating (136+ Reviews)</span>
+                <span>4.6 Rating (137 Reviews)</span>
               </div>
               <div className="flex items-center gap-1.5">
                 <Clock className="w-4 h-4 text-primary" />

@@ -92,7 +92,7 @@ Our professionals have experience with all types of drain and sewer issues, incl
 
 ## Why Florida Property Owners Choose Total Leak Detection
 
-### 40+ Years of Experience | 4.7 Google Rating | 100+ Five-Star Reviews
+### 40+ Years of Experience | 4.6 Google Rating | 137 Five-Star Reviews
 
 Clogged drains require the right tools and expertise. We're Florida's trusted experts because we deliver results:
 
@@ -165,7 +165,7 @@ Fix damaged pipes from the inside using advanced relining technology.
 ## Trusted by 1,000+ Florida Property Owners
 
 **Our Results Speak for Themselves:**
-- ⭐ **4.7 out of 5 stars** on Google with 100+ reviews
+- ⭐ **4.6 out of 5 stars** on Google with 137 reviews
 - 🏆 **1,000+ successful services** completed
 - ⏱️ **Same-day service** available for emergencies
 - 💯 **100% satisfaction guarantee** on all our work
@@ -251,7 +251,7 @@ Snaking only clears the immediate blockage. Hydro jetting uses high-pressure wat
 
 **Total Leak Detection** - Florida's Trusted Drain Service Experts Since 1980
 
-Licensed & Insured (CFC1430460) | Better Business Bureau Accredited | 4.7★ Rating with 100+ Reviews
+Licensed & Insured (CFC1430460) | Better Business Bureau Accredited | 4.6★ Rating with 137 Reviews
 
 ---
 

@@ -88,7 +88,7 @@ Suspect you have a plumbing issue on your commercial property? We use specialize
 
 ## Why Florida Businesses Choose Total Leak Detection
 
-### 40+ Years of Experience | 4.7 Google Rating | 100+ Five-Star Reviews
+### 40+ Years of Experience | 4.6 Google Rating | 137 Five-Star Reviews
 
 Commercial plumbing requires specialized expertise. We're Florida's trusted commercial plumbing experts because we deliver results:
 
@@ -190,7 +190,7 @@ Regular maintenance of your plumbing systems ensures they work smoothly all year
 ![Completed commercial plumbing repair - leak detection and repair results for Florida businesses](/images/gallery/leak-detection-after.jpg)
 
 **Our Results Speak for Themselves:**
-- ⭐ **4.7 out of 5 stars** on Google with 100+ reviews
+- ⭐ **4.6 out of 5 stars** on Google with 137 reviews
 - 🏆 **1,000+ successful commercial projects** completed
 - ⏱️ **Same-day service** available for emergencies
 - 💯 **100% satisfaction guarantee** on all our work
@@ -272,4 +272,4 @@ We offer **free estimates and consultations**. Our pricing is transparent with n
 
 **Total Leak Detection** - Florida's Trusted Commercial Plumbing Experts Since 1980
 
-Licensed & Insured (CFC1430460) | Better Business Bureau Accredited | 4.7★ Rating with 100+ Reviews
+Licensed & Insured (CFC1430460) | Better Business Bureau Accredited | 4.6★ Rating with 137 Reviews

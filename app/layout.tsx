@@ -5,7 +5,6 @@ import { Inter } from 'next/font/google';
 import Script from 'next/script';
 import siteConfig from '@/config/site.json';
 import { baseUrl } from '@/lib/site-url';
-import { generateOrganizationSchema, schemaToJsonLd } from '@/lib/seo/schema';
 import { GA_MEASUREMENT_ID } from '@/lib/analytics';
 // Microsoft Clarity ID for heatmaps & session recordings
 const CLARITY_ID = 'vcow2597yw';
@@ -52,14 +51,6 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   const faviconPath = siteConfig.favicon || '/favicon.ico';
-
-  // Organization schema is included in each page's @graph,
-  // but we keep a standalone version here for any pages that might not have their own schema
-  const organizationSchema = {
-    '@context': 'https://schema.org',
-    ...generateOrganizationSchema(),
-  };
-
   const logoImage = siteConfig.logo || '/images/logo.png';
 
   return (
@@ -96,12 +87,6 @@ export default function RootLayout({
         />
         <link rel="icon" href={faviconPath} />
         <link rel="apple-touch-icon" href={faviconPath} />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: schemaToJsonLd(organizationSchema),
-          }}
-        />
       </head>
       <body>
         {children}

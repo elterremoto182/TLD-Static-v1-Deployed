@@ -106,7 +106,7 @@ This means that we guarantee to have your report completed and delivered to you 
 
 ## Why Florida Property Owners Choose Total Leak Detection
 
-### 40+ Years of Experience | 4.7 Google Rating | 100+ Five-Star Reviews
+### 40+ Years of Experience | 4.6 Google Rating | 137 Five-Star Reviews
 
 Plumbing report writing requires specialized expertise. We're Florida's trusted experts because we deliver results:
 
@@ -197,7 +197,7 @@ Our plumbing reports include a thorough examination of all the major components 
 ## Trusted by 1,000+ Florida Property Owners
 
 **Our Results Speak for Themselves:**
-- ⭐ **4.7 out of 5 stars** on Google with 100+ reviews
+- ⭐ **4.6 out of 5 stars** on Google with 137 reviews
 - 🏆 **1,000+ successful reports** completed
 - ⏱️ **48-hour guarantee** on all reports
 - 💯 **100% satisfaction guarantee** on all our work
@@ -279,6 +279,6 @@ Our reports include: thorough examination of all plumbing components, detailed a
 
 **Total Leak Detection** - Florida's Trusted Plumbing Report Experts Since 1980
 
-Licensed & Insured (CFC1430460) | Better Business Bureau Accredited | 4.7★ Rating with 100+ Reviews
+Licensed & Insured (CFC1430460) | Better Business Bureau Accredited | 4.6★ Rating with 137 Reviews
 
 Contact us today to schedule your inspection and get peace of mind knowing that your plumbing is in good condition.

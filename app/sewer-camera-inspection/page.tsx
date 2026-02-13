@@ -339,7 +339,7 @@ export default function SewerCameraInspectionHubPage() {
                 Advantages of Professional Camera Inspection
               </h2>
               <p className="text-lg text-gray-600 text-center max-w-2xl mx-auto mb-10">
-                Leave it to the professionals—we have a 4.7 Rating on Google with over 100 Reviews!
+                Leave it to the professionals—we have a 4.6 Rating on Google with 137 Reviews!
               </p>
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -416,7 +416,7 @@ export default function SewerCameraInspectionHubPage() {
           subtitle="Sewer camera inspection requires specialized equipment and expertise. We're Miami's trusted experts."
           sections={whyChooseUsSections}
           stats={{
-            rating: '4.7',
+            rating: '4.6',
             reviews: '100+',
             projects: '1,000+',
           }}

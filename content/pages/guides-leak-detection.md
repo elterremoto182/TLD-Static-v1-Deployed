@@ -388,7 +388,7 @@ Total Leak Detection has served Florida homeowners for over 40 years with:
 - ✅ Advanced non-invasive detection technology
 - ✅ 24/7 emergency service availability
 - ✅ Insurance-ready documentation
-- ✅ 4.7-star rating with 100+ reviews
+- ✅ 4.6-star rating with 137 reviews
 - ✅ Licensed and insured (CFC1430460)
 
 **Don't let a hidden leak destroy your property.**

@@ -114,13 +114,13 @@ Our detailed reports with HD images provide perfect documentation for insurance 
 ### 5. Informed Decisions
 See the problem yourself and make informed decisions about repairs, replacements, or maintenance.
 
-**Leave it to the professionals. We have a 4.7 Rating on Google with Over 100 Reviews!**
+**Leave it to the professionals. We have a 4.6 Rating on Google with 137 Reviews!**
 
 ---
 
 ## Why Miami Property Owners Choose Total Leak Detection
 
-### 40+ Years of Experience | 4.7 Google Rating | 100+ Five-Star Reviews
+### 40+ Years of Experience | 4.6 Google Rating | 137 Five-Star Reviews
 
 Sewer camera inspection requires specialized equipment and expertise. We're Miami's trusted experts because we deliver results:
 
@@ -193,7 +193,7 @@ You receive a comprehensive report with HD images, exact locations, and repair r
 ## Trusted by 1,000+ Florida Property Owners
 
 **Our Results Speak for Themselves:**
-- ⭐ **4.7 out of 5 stars** on Google with 100+ reviews
+- ⭐ **4.6 out of 5 stars** on Google with 137 reviews
 - 🏆 **1,000+ successful inspections** completed
 - ⏱️ **Same-day service** available for emergencies
 - 💯 **100% satisfaction guarantee** on all our work
@@ -279,7 +279,7 @@ Most inspections take between 30 minutes to 1 hour, depending on the complexity 
 
 **Total Leak Detection** - Miami's Trusted Sewer Camera Inspection Experts Since 1980
 
-Licensed & Insured (CFC1430460) | Better Business Bureau Accredited | 4.7★ Rating with 100+ Reviews
+Licensed & Insured (CFC1430460) | Better Business Bureau Accredited | 4.6★ Rating with 137 Reviews
 
 ---
 

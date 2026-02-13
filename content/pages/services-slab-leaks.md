@@ -121,7 +121,7 @@ Our certified technicians use cutting-edge equipment specifically designed for s
 
 ## Why Florida Homeowners Trust Total Leak Detection for Slab Leaks
 
-### 40+ Years of Experience | 4.7 Google Rating | 100+ Five-Star Reviews
+### 40+ Years of Experience | 4.6 Google Rating | 137 Five-Star Reviews
 
 Slab leaks require specialized expertise. We're Florida's trusted experts because we deliver results:
 
@@ -176,7 +176,7 @@ We connect you with trusted repair partners or provide detailed information for 
 — Hector Rodriguez, Verified Customer
 
 **Our Results Speak for Themselves:**
-- ⭐ **4.7 out of 5 stars** on Google with 100+ reviews
+- ⭐ **4.6 out of 5 stars** on Google with 137 reviews
 - 🏆 **1,000+ successful leak detections** completed
 - ⏱️ **Same-day service** available for emergencies
 - 💯 **100% satisfaction guarantee** on all our work
@@ -262,7 +262,7 @@ Slab leaks are typically caused by: ground shifting underneath the home, copper 
 
 **Total Leak Detection** - Florida's Trusted Slab Leak Detection Experts Since 1980
 
-Licensed & Insured (CFC1430460) | Better Business Bureau Accredited | 4.7★ Rating with 100+ Reviews
+Licensed & Insured (CFC1430460) | Better Business Bureau Accredited | 4.6★ Rating with 137 Reviews
 
 ---
 

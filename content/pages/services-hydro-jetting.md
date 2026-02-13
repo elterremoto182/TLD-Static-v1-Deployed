@@ -94,7 +94,7 @@ Hydro jetting provides lasting results. Clean pipes mean fewer clogs, better flo
 
 ## Why Florida Property Owners Choose Total Leak Detection
 
-### 40+ Years of Experience | 4.7 Google Rating | 100+ Five-Star Reviews
+### 40+ Years of Experience | 4.6 Google Rating | 137 Five-Star Reviews
 
 Hydro jetting requires specialized equipment and expertise. We're Florida's trusted experts because we deliver results:
 
@@ -167,7 +167,7 @@ You get clean, flowing pipes that work like new, with long-lasting results.
 ## Trusted by 1,000+ Florida Property Owners
 
 **Our Results Speak for Themselves:**
-- ⭐ **4.7 out of 5 stars** on Google with 100+ reviews
+- ⭐ **4.6 out of 5 stars** on Google with 137 reviews
 - 🏆 **1,000+ successful services** completed
 - ⏱️ **Same-day service** available for emergencies
 - 💯 **100% satisfaction guarantee** on all our work
@@ -253,4 +253,4 @@ We recommend a camera inspection first to assess your pipe condition and identif
 
 **Total Leak Detection** - Florida's Trusted Hydro Jetting Experts Since 1980
 
-Licensed & Insured (CFC1430460) | Better Business Bureau Accredited | 4.7★ Rating with 100+ Reviews
+Licensed & Insured (CFC1430460) | Better Business Bureau Accredited | 4.6★ Rating with 137 Reviews

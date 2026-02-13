@@ -77,7 +77,7 @@ Our experienced team of certified professionals uses the latest testing methods 
 
 ## Why Florida Property Owners Choose Total Leak Detection
 
-### 40+ Years of Experience | 4.7 Google Rating | 100+ Five-Star Reviews
+### 40+ Years of Experience | 4.6 Google Rating | 137 Five-Star Reviews
 
 Mold testing requires specialized expertise. We're Florida's trusted experts because we deliver results:
 
@@ -163,7 +163,7 @@ Our comprehensive reports provide everything you need:
 ## Trusted by 1,000+ Florida Property Owners
 
 **Our Results Speak for Themselves:**
-- ⭐ **4.7 out of 5 stars** on Google with 100+ reviews
+- ⭐ **4.6 out of 5 stars** on Google with 137 reviews
 - 🏆 **1,000+ successful mold tests** completed
 - ⏱️ **Same-day service** available for emergencies
 - 💯 **100% satisfaction guarantee** on all our work
@@ -249,7 +249,7 @@ We provide a detailed report with remediation recommendations. We can connect yo
 
 **Total Leak Detection** - Florida's Trusted Mold Testing Experts Since 1980
 
-Licensed & Insured (CFC1430460) | Better Business Bureau Accredited | 4.7★ Rating with 100+ Reviews
+Licensed & Insured (CFC1430460) | Better Business Bureau Accredited | 4.6★ Rating with 137 Reviews
 
 ---
 

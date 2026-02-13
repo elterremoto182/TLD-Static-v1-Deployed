@@ -266,11 +266,11 @@ export default function ThankYouPage() {
                 </div>
                 <div className="flex items-center gap-2">
                   <Star className="w-5 h-5 text-yellow-400 fill-yellow-400" />
-                  <span className="text-sm font-medium">4.7 Rating (136+ Reviews)</span>
+                  <span className="text-sm font-medium">4.6 Rating (137 Reviews)</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Clock className="w-5 h-5 text-primary" />
-                  <span className="text-sm font-medium">Serving Florida Since 2005</span>
+                  <span className="text-sm font-medium">Serving Florida Since 2019</span>
                 </div>
               </div>
 
