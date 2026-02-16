@@ -10,12 +10,7 @@ import { getPageBySlug, getAllPages } from '@/lib/pages/pages';
 import { getAllPosts, BlogPost } from '@/lib/blog/posts';
 import { generatePageMetadata, generateBreadcrumbs } from '@/lib/utils';
 import { Phone, BookOpen, ArrowRight } from 'lucide-react';
-import {
-  generateWebPageSchema,
-  generateBreadcrumbListSchema,
-  generateVideoObjectSchema,
-  structuredDataToJsonLd,
-} from '@/lib/seo/structured-data';
+import { buildPageSchemaGraph, schemaToJsonLd } from '@/lib/seo/schema';
 import { baseUrl } from '@/lib/site-url';
 
 // Map guide slugs to their related blog categories, service pages, and videos
@@ -174,26 +169,15 @@ export default async function GuidePage({
   const pageUrl = `${baseUrl}/${normalizedSlug}/`;
   const breadcrumbs = generateBreadcrumbs(`/${normalizedSlug}`, page.title);
   
-  const webPageSchema = generateWebPageSchema({
+  // Build unified schema graph with @context - fixes parse errors from multiple blocks
+  const schemaGraph = buildPageSchemaGraph({
+    pageType: 'guide',
+    pageUrl,
     title: page.title,
     description: page.seo_description || page.title,
-    url: pageUrl,
     breadcrumbs,
+    video: guideConfig?.video,
   });
-  
-  const breadcrumbSchema = generateBreadcrumbListSchema(breadcrumbs, pageUrl);
-  
-  // Generate video schema if guide has a video
-  const videoSchema = guideConfig?.video 
-    ? generateVideoObjectSchema({
-        videoId: guideConfig.video.id,
-        name: guideConfig.video.title,
-        description: guideConfig.video.description,
-        uploadDate: guideConfig.video.uploadDate,
-        duration: guideConfig.video.duration,
-        pageUrl,
-      })
-    : null;
   
   // Process markdown content
   let html = await processMarkdown(page.content);
@@ -218,23 +202,9 @@ export default async function GuidePage({
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: structuredDataToJsonLd(webPageSchema),
+          __html: schemaToJsonLd(schemaGraph),
         }}
       />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: structuredDataToJsonLd(breadcrumbSchema),
-        }}
-      />
-      {videoSchema && (
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: structuredDataToJsonLd(videoSchema),
-          }}
-        />
-      )}
       <Header />
       <main className="min-h-screen">
         {/* Hero Section */}

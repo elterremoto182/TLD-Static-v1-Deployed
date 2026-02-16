@@ -4,12 +4,7 @@ import { Footer } from '@/components/sections/Footer';
 import { Breadcrumb } from '@/components/ui/breadcrumb';
 import { Phone, AlertTriangle, Wrench, getIcon } from '@/lib/icons';
 import { getAllProblems, getAllServices, getProblemsByService } from '@/lib/local-seo/data';
-import {
-  generateBreadcrumbSchema,
-  generateWebPageSchema,
-  schemaToJsonLd,
-  BreadcrumbItem,
-} from '@/lib/local-seo/schema';
+import { buildPageSchemaGraph, schemaToJsonLd, BreadcrumbItem } from '@/lib/local-seo/schema';
 import { baseUrl } from '@/lib/site-url';
 
 export async function generateMetadata() {
@@ -52,12 +47,12 @@ export default function ProblemsPage() {
     { label: 'Problems', href: '/problems/' },
   ];
 
-  const breadcrumbSchema = generateBreadcrumbSchema(breadcrumbs, canonicalUrl);
-  const webPageSchema = generateWebPageSchema({
+  const schemaGraph = buildPageSchemaGraph({
+    pageType: 'collection',
+    pageUrl: canonicalUrl,
     title: 'Common Plumbing Problems | Expert Detection & Solutions',
     description:
       'Expert diagnosis and solutions for common plumbing problems in Florida. From slab leaks and burst pipes to mold testing and sewer blockages.',
-    url: canonicalUrl,
     breadcrumbs,
   });
 
@@ -71,11 +66,7 @@ export default function ProblemsPage() {
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: schemaToJsonLd(breadcrumbSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: schemaToJsonLd(webPageSchema) }}
+        dangerouslySetInnerHTML={{ __html: schemaToJsonLd(schemaGraph) }}
       />
 
       <Header />

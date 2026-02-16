@@ -6,11 +6,7 @@ import { Phone, MapPin, Droplet, Shield, Camera, ArrowRight } from 'lucide-react
 
 import { getAllCities, getAllServices } from '@/lib/local-seo/data';
 import { groupCitiesByCounty } from '@/lib/local-seo/links';
-import {
-  generateBreadcrumbSchema,
-  generateWebPageSchema,
-  schemaToJsonLd,
-} from '@/lib/local-seo/schema';
+import { buildPageSchemaGraph, schemaToJsonLd } from '@/lib/local-seo/schema';
 import { generatePageMetadata, generateBreadcrumbs } from '@/lib/utils';
 import { getPageBySlug } from '@/lib/pages/pages';
 import { baseUrl } from '@/lib/site-url';
@@ -47,11 +43,11 @@ export default function AreasPage() {
   const breadcrumbs = generateBreadcrumbs('/areas', 'Service Areas');
 
   const pageUrl = `${baseUrl}/areas/`;
-  const breadcrumbSchema = generateBreadcrumbSchema(breadcrumbs, pageUrl);
-  const webPageSchema = generateWebPageSchema({
+  const schemaGraph = buildPageSchemaGraph({
+    pageType: 'collection',
+    pageUrl,
     title: 'Service Areas | Total Leak Detection',
     description: 'Professional leak detection services throughout South Florida',
-    url: `${baseUrl}/areas/`,
     breadcrumbs,
   });
   
@@ -65,13 +61,9 @@ export default function AreasPage() {
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: schemaToJsonLd(breadcrumbSchema) }}
+        dangerouslySetInnerHTML={{ __html: schemaToJsonLd(schemaGraph) }}
       />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: schemaToJsonLd(webPageSchema) }}
-      />
-      
+
       <Header />
       <main className="min-h-screen">
         {/* Hero Section */}

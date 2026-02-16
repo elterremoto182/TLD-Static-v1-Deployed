@@ -839,11 +839,19 @@ export function generateVideoObjectSchema(options: {
  * Combines all relevant schemas into a single JSON-LD block
  */
 export function buildPageSchemaGraph(options: {
-  pageType: 'home' | 'service' | 'service-hub' | 'article' | 'collection' | 'contact' | 'about' | 'city-service' | 'problem-city';
+  pageType: 'home' | 'service' | 'service-hub' | 'article' | 'collection' | 'contact' | 'about' | 'guide' | 'page' | 'city-service' | 'problem-city';
   pageUrl: string;
   title: string;
   description: string;
   breadcrumbs?: BreadcrumbItem[];
+  // For guide pages with embedded video
+  video?: {
+    id: string;
+    title: string;
+    description: string;
+    uploadDate: string;
+    duration?: string;
+  };
   // For articles
   article?: {
     datePublished: string;
@@ -1035,6 +1043,29 @@ export function buildPageSchemaGraph(options: {
       );
       break;
 
+    case 'guide':
+      graph.push(
+        generateWebPageSchema({
+          title: options.title,
+          description: options.description,
+          url: options.pageUrl,
+          breadcrumbs: options.breadcrumbs,
+        })
+      );
+      if (options.video) {
+        graph.push(
+          generateVideoObjectSchema({
+            videoId: options.video.id,
+            name: options.video.title,
+            description: options.video.description,
+            uploadDate: options.video.uploadDate,
+            duration: options.video.duration,
+            pageUrl: options.pageUrl,
+          })
+        );
+      }
+      break;
+
     case 'contact':
       graph.push(
         generateWebPageSchema({
@@ -1058,6 +1089,17 @@ export function buildPageSchemaGraph(options: {
         })
       );
       break;
+
+    case 'page':
+      graph.push(
+        generateWebPageSchema({
+          title: options.title,
+          description: options.description,
+          url: options.pageUrl,
+          breadcrumbs: options.breadcrumbs,
+        })
+      );
+      break;
   }
 
   // Add FAQs if provided
@@ -1076,9 +1118,12 @@ export function buildPageSchemaGraph(options: {
 
 /**
  * Convert schema graph to JSON-LD string
+ * Escapes </script> to prevent HTML parser from prematurely closing the script tag
+ * when JSON content contains that sequence (e.g. in descriptions or titles)
  */
 export function schemaToJsonLd(schema: object): string {
-  return JSON.stringify(schema, null, 0);
+  const json = JSON.stringify(schema, null, 0);
+  return json.replace(/<\/script/gi, '<\\/script');
 }
 
 // Alias for backward compatibility

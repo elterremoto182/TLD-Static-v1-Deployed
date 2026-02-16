@@ -14,8 +14,7 @@ import {
 } from '@/lib/local-seo/data';
 import {
   generateProblemHubBreadcrumbs,
-  generateBreadcrumbSchema,
-  generateWebPageSchema,
+  buildPageSchemaGraph,
   schemaToJsonLd,
 } from '@/lib/local-seo/schema';
 import { baseUrl } from '@/lib/site-url';
@@ -120,12 +119,12 @@ export default async function ProblemHubPage({
   const breadcrumbs = generateProblemHubBreadcrumbs(problem);
   const canonicalUrl = `${baseUrl}/problems/${problemSlug}/`;
   
-  // Generate schemas
-  const breadcrumbSchema = generateBreadcrumbSchema(breadcrumbs, canonicalUrl);
-  const webPageSchema = generateWebPageSchema({
+  // Generate unified schema graph
+  const schemaGraph = buildPageSchemaGraph({
+    pageType: 'collection',
+    pageUrl: canonicalUrl,
     title: `${problem.name} | Expert Detection & Solutions`,
     description: problem.overview,
-    url: canonicalUrl,
     breadcrumbs,
   });
   
@@ -135,13 +134,9 @@ export default async function ProblemHubPage({
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: schemaToJsonLd(breadcrumbSchema) }}
+        dangerouslySetInnerHTML={{ __html: schemaToJsonLd(schemaGraph) }}
       />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: schemaToJsonLd(webPageSchema) }}
-      />
-      
+
       <Header />
       <main className="min-h-screen">
         {/* Hero Section */}

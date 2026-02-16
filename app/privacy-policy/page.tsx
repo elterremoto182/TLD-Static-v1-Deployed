@@ -6,11 +6,7 @@ import { MarkdownRenderer, processMarkdown } from '@/components/blog/MarkdownRen
 import { YouTubeHydrator } from '@/components/YouTubeHydrator';
 import { getPageBySlug } from '@/lib/pages/pages';
 import { generatePageMetadata, generateBreadcrumbs } from '@/lib/utils';
-import {
-  generateWebPageSchema,
-  generateBreadcrumbListSchema,
-  structuredDataToJsonLd,
-} from '@/lib/seo/structured-data';
+import { buildPageSchemaGraph, schemaToJsonLd } from '@/lib/seo/schema';
 import { baseUrl } from '@/lib/site-url';
 
 export async function generateMetadata() {
@@ -40,13 +36,14 @@ export default async function PrivacyPolicyPage() {
   }
 
   const breadcrumbs = generateBreadcrumbs('/privacy-policy', page.title);
-  const webPageSchema = generateWebPageSchema({
+  const pageUrl = `${baseUrl}/privacy-policy/`;
+  const schemaGraph = buildPageSchemaGraph({
+    pageType: 'page',
+    pageUrl,
     title: page.seo_title || page.title || 'Privacy Policy - Total Leak Detection',
     description: page.seo_description || 'Privacy Policy for Total Leak Detection.',
-    url: `${baseUrl}/privacy-policy/`,
     breadcrumbs,
   });
-  const breadcrumbSchema = generateBreadcrumbListSchema(breadcrumbs, `${baseUrl}/privacy-policy/`);
   const html = await processMarkdown(page.content);
 
   return (
@@ -54,13 +51,7 @@ export default async function PrivacyPolicyPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: structuredDataToJsonLd(webPageSchema),
-        }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: structuredDataToJsonLd(breadcrumbSchema),
+          __html: schemaToJsonLd(schemaGraph),
         }}
       />
       <Header />
