@@ -351,7 +351,8 @@ export function generateOrganizationSchema(): Omit<OrganizationSchema, '@context
 
 /**
  * Minimal main entity stub for reference resolution (provider, publisher)
- * Use when page references #plumber but should not include full LocalBusiness
+ * Use when page references #plumber but should not include full LocalBusiness.
+ * Includes address (required for LocalBusiness/Plumber validation) and image for brand consistency.
  */
 function generateMainEntityStub(): object {
   return {
@@ -359,6 +360,8 @@ function generateMainEntityStub(): object {
     '@id': `${baseUrl}${ENTITY_ID}`,
     name: siteConfig.name,
     url: `${baseUrl}/`,
+    image: `${baseUrl}${siteConfig.logo}`,
+    address: parseAddress(),
   };
 }
 

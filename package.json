@@ -6,7 +6,7 @@
     "dev": "next dev",
     "generate-sitemaps": "tsx scripts/generate-sitemaps.ts",
     "prebuild": "npm run generate-sitemaps",
-    "build": "next build",
+    "build": "next build && next-image-export-optimizer",
     "build:optimized": "next build && next-image-export-optimizer",
     "start": "next start",
     "lint": "next lint",
