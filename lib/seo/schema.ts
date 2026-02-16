@@ -305,7 +305,7 @@ export function generateWebSiteSchema(): Omit<WebSiteSchema, '@context'> {
     url: `${baseUrl}/`,
     name: siteConfig.name,
     description: siteConfig.description,
-    publisher: { '@id': `${baseUrl}${ENTITY_ID}` },
+    publisher: { '@id': `${baseUrl}/${ENTITY_ID}` },
     potentialAction: {
       '@type': 'SearchAction',
       target: {
@@ -327,7 +327,7 @@ export function generateOrganizationSchema(): Omit<OrganizationSchema, '@context
 
   return {
     '@type': 'Organization',
-    '@id': `${baseUrl}${ENTITY_ID}`,
+    '@id': `${baseUrl}/${ENTITY_ID}`,
     name: siteConfig.name,
     url: `${baseUrl}/`,
     logo: {
@@ -350,18 +350,17 @@ export function generateOrganizationSchema(): Omit<OrganizationSchema, '@context
 }
 
 /**
- * Minimal main entity stub for reference resolution (provider, publisher)
- * Use when page references #plumber but should not include full LocalBusiness.
- * Includes address (required for LocalBusiness/Plumber validation) and image for brand consistency.
+ * Minimal Organization stub for reference resolution (provider, publisher)
+ * Used on non-home pages so publisher/provider @id references resolve.
+ * Organization avoids LocalBusiness validator recommendations (geo, priceRange, etc.)
+ * without harming SEO—full LocalBusiness/Plumber lives on homepage only.
  */
 function generateMainEntityStub(): object {
   return {
-    '@type': 'Plumber',
-    '@id': `${baseUrl}${ENTITY_ID}`,
+    '@type': 'Organization',
+    '@id': `${baseUrl}/${ENTITY_ID}`,
     name: siteConfig.name,
     url: `${baseUrl}/`,
-    image: `${baseUrl}${siteConfig.logo}`,
-    address: parseAddress(),
   };
 }
 
@@ -393,7 +392,7 @@ export function generateLocalBusinessSchema(options?: {
 
   const schema: Omit<LocalBusinessSchema, '@context'> = {
     '@type': ['LocalBusiness', 'Plumber', 'HomeAndConstructionBusiness'],
-    '@id': `${baseUrl}${ENTITY_ID}`,
+    '@id': `${baseUrl}/${ENTITY_ID}`,
     name: siteConfig.name,
     image: `${baseUrl}${siteConfig.logo}`,
     url: `${baseUrl}/`,
@@ -401,6 +400,11 @@ export function generateLocalBusinessSchema(options?: {
     email: siteConfig.email,
     description,
     address: parseAddress(),
+    geo: {
+      '@type': 'GeoCoordinates',
+      latitude: 25.8576,
+      longitude: -80.3553,
+    },
     openingHoursSpecification: get24x7OpeningHours(),
     priceRange: '$$',
     currenciesAccepted: 'USD',
@@ -624,7 +628,7 @@ export function generateServiceSchema(options: {
     '@type': 'Service',
     name: options.city ? `${options.name} in ${options.city.name}, FL` : options.name,
     description: options.description,
-    provider: { '@id': `${baseUrl}${ENTITY_ID}` },
+    provider: { '@id': `${baseUrl}/${ENTITY_ID}` },
     serviceType: options.serviceType || options.name,
     areaServed,
     serviceOutput: {
@@ -693,7 +697,7 @@ export function generateArticleSchema(options: {
   const author = isCompanyAuthor
     ? {
         '@type': 'Organization',
-        '@id': `${baseUrl}${ENTITY_ID}`,
+        '@id': `${baseUrl}/${ENTITY_ID}`,
         name: siteConfig.name,
         url: `${baseUrl}/about/`,
         sameAs: socialLinks.length > 0 ? socialLinks : undefined,
@@ -713,7 +717,7 @@ export function generateArticleSchema(options: {
     datePublished: options.datePublished,
     dateModified: options.dateModified || options.datePublished,
     author,
-    publisher: { '@id': `${baseUrl}${ENTITY_ID}` },
+    publisher: { '@id': `${baseUrl}/${ENTITY_ID}` },
     mainEntityOfPage: { '@id': `${options.url}#webpage` },
     wordCount,
     isAccessibleForFree: true,
@@ -812,7 +816,7 @@ export function generateVideoObjectSchema(options: {
     uploadDate: options.uploadDate || new Date().toISOString().split('T')[0],
     embedUrl,
     contentUrl: videoUrl,
-    publisher: { '@id': `${baseUrl}${ENTITY_ID}` },
+    publisher: { '@id': `${baseUrl}/${ENTITY_ID}` },
     potentialAction: {
       '@type': 'WatchAction',
       target: videoUrl,
