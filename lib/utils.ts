@@ -51,6 +51,32 @@ export function generateBreadcrumbs(path: string, title: string): BreadcrumbItem
   return items;
 }
 
+/**
+ * Generate breadcrumb items for blog posts: Home > Blog > [Category] > Article Title
+ * Category links to /blog/category/{categorySlug}/
+ */
+export function generateBlogPostBreadcrumbs(
+  postSlug: string,
+  postTitle: string,
+  category?: { label: string; slug: string }
+): BreadcrumbItem[] {
+  const items: BreadcrumbItem[] = [
+    { label: 'Home', href: '/' },
+    { label: 'Blog', href: '/blog/' },
+  ];
+  if (category) {
+    items.push({
+      label: category.label,
+      href: `/blog/category/${category.slug}/`,
+    });
+  }
+  items.push({
+    label: postTitle,
+    href: `/${postSlug}/`,
+  });
+  return items;
+}
+
 export function generatePageMetadata({
   title,
   description,

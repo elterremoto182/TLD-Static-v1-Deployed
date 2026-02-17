@@ -12,7 +12,7 @@ import { getPostBySlug, getAllPosts, BlogPost, categoryToSlug } from '@/lib/blog
 import { RelatedPosts } from '@/components/blog/RelatedPosts';
 import { getTagData } from '@/components/blog/TagCloud';
 import { Calendar, User, Phone, MapPin, Shield, Tag } from 'lucide-react';
-import { generatePageMetadata, generateBreadcrumbs } from '@/lib/utils';
+import { generatePageMetadata, generateBreadcrumbs, generateBlogPostBreadcrumbs } from '@/lib/utils';
 import { buildPageSchemaGraph, schemaToJsonLd, baseUrl } from '@/lib/seo/schema';
 
 // Default images for service area pages based on service type
@@ -197,7 +197,11 @@ export default async function DynamicPage({
       notFound();
     }
     const postUrl = `${baseUrl}/${post.slug}/`;
-    const breadcrumbs = generateBreadcrumbs(`/${post.slug}`, post.title);
+    const breadcrumbs = generateBlogPostBreadcrumbs(
+      post.slug,
+      post.title,
+      post.category ? { label: post.category, slug: categoryToSlug(post.category) } : undefined
+    );
     const faqEligible = /^(How|Can|Does|Is)\s/i.test(post.title);
     const faqsForSchema =
       faqEligible && post.faqs && post.faqs.length > 0 ? post.faqs : undefined;
