@@ -255,6 +255,39 @@ export default async function ProblemHubPage({
                   {problem.ourApproach}
                 </p>
               </div>
+
+            {/* Contextual link to parent service hub */}
+            {parentService && (
+              <p className="text-gray-700 leading-relaxed mt-8">
+                {parentService.slug === 'leak-detection' && (
+                  <>
+                    Professional detection of this issue requires specialized acoustic and thermal imaging equipment to accurately locate the source without unnecessary damage. Learn more about our{' '}
+                    <Link href={`/${parentService.slug}/`} className="text-primary font-medium hover:underline">
+                      complete leak detection services
+                    </Link>
+                    {' '}and how our non-invasive process works.
+                  </>
+                )}
+                {parentService.slug === 'mold-testing' && (
+                  <>
+                    Accurate identification of mold issues requires professional testing methods and proper sampling. Learn more about our{' '}
+                    <Link href={`/${parentService.slug}/`} className="text-primary font-medium hover:underline">
+                      complete mold testing services
+                    </Link>
+                    {' '}and how our process works.
+                  </>
+                )}
+                {parentService.slug === 'sewer-camera-inspection' && (
+                  <>
+                    Identifying issues inside sewer lines requires specialized camera equipment to see what&apos;s happening in your pipes. Learn more about our{' '}
+                    <Link href={`/${parentService.slug}/`} className="text-primary font-medium hover:underline">
+                      sewer camera inspection services
+                    </Link>
+                    {' '}and how our process works.
+                  </>
+                )}
+              </p>
+            )}
           </div>
         </section>
         
