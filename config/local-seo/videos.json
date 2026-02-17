@@ -4,7 +4,10 @@
   "defaultVideos": {
     "sewer-camera-inspection": {
       "url": "https://www.youtube.com/watch?v=Sk7VPGiqhek",
-      "title": "Sewer Camera Inspection Service"
+      "title": "Sewer Camera Inspection Service",
+      "description": "Watch our professional sewer camera inspection in action. HD video technology reveals pipe conditions, blockages, root intrusion, and damage inside sewer lines throughout South Florida.",
+      "duration": "PT3M45S",
+      "uploadDate": "2024-01-15"
     },
     "leak-detection": {
       "url": null,

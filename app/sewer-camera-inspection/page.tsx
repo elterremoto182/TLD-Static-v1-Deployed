@@ -5,7 +5,7 @@ import { Breadcrumb } from '@/components/ui/breadcrumb';
 import OptimizedImage from '@/components/OptimizedImage';
 import { Phone, Shield, Clock, CheckCircle, Camera, AlertTriangle, Search, Video, Eye } from 'lucide-react';
 
-import { getService, getAllCities, getServiceVideo } from '@/lib/local-seo/data';
+import { getService, getAllCities, getServiceVideo, videoConfigToSchemaVideo } from '@/lib/local-seo/data';
 import {
   generateServiceHubBreadcrumbs,
   buildPageSchemaGraph,
@@ -219,6 +219,7 @@ export default function SewerCameraInspectionHubPage() {
   const videoConfig = getServiceVideo(SERVICE_SLUG);
   
   // Build comprehensive schema graph for SEO
+  const schemaVideo = videoConfig ? videoConfigToSchemaVideo(videoConfig) : null;
   const schemaGraph = buildPageSchemaGraph({
     pageType: 'service-hub',
     pageUrl: canonicalUrl,
@@ -231,6 +232,7 @@ export default function SewerCameraInspectionHubPage() {
       serviceType: 'Sewer Camera Inspection',
     },
     faqs: sewerCameraFaqs,
+    video: schemaVideo ?? undefined,
   });
   
   return (

@@ -254,6 +254,12 @@ export function getStats() {
 export interface VideoConfig {
   url: string | null;
   title: string;
+  /** Required for VideoObject schema - ISO 8601 duration, e.g. "PT3M45S" */
+  duration?: string;
+  /** Required for VideoObject schema */
+  description?: string;
+  uploadDate?: string;
+  viewCount?: number;
 }
 
 interface VideosConfig {
@@ -275,6 +281,34 @@ const videos: VideosConfig = {
       .filter(([key]) => !key.startsWith('_'))
   ) as Record<string, Record<string, VideoConfig>>,
 };
+
+/**
+ * Extract YouTube video ID from URL (watch or embed format)
+ */
+export function extractYouTubeVideoId(url: string): string | null {
+  const match = url.match(/(?:youtube\.com\/watch\?v=|youtu\.be\/|youtube\.com\/embed\/)([a-zA-Z0-9_-]{11})/);
+  return match ? match[1] : null;
+}
+
+/**
+ * Convert VideoConfig to schema-ready format when duration and description are present.
+ * Used for VideoObject JSON-LD on hub pages.
+ */
+export function videoConfigToSchemaVideo(
+  config: VideoConfig
+): { id: string; title: string; description: string; duration: string; uploadDate?: string; viewCount?: number } | null {
+  if (!config.url || !config.duration || !config.description) return null;
+  const id = extractYouTubeVideoId(config.url);
+  if (!id) return null;
+  return {
+    id,
+    title: config.title,
+    description: config.description,
+    duration: config.duration,
+    uploadDate: config.uploadDate,
+    viewCount: config.viewCount,
+  };
+}
 
 /**
  * Get the video configuration for a service hub page (no city specified)

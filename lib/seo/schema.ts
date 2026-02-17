@@ -203,9 +203,14 @@ export interface VideoObjectSchema {
   description: string;
   thumbnailUrl: string | string[];
   uploadDate: string;
-  duration?: string;
+  duration: string; // ISO 8601 - required by Google Video
   contentUrl?: string;
   embedUrl: string;
+  interactionStatistic?: {
+    '@type': 'InteractionCounter';
+    interactionType: 'https://schema.org/WatchAction';
+    userInteractionCount: number;
+  };
   publisher?: { '@id': string };
   potentialAction?: {
     '@type': 'WatchAction';
@@ -787,19 +792,21 @@ export function generateHowToSchema(
 
 /**
  * Generate VideoObject schema for embedded videos
- * Supports YouTube videos with automatic thumbnail and embed URL generation
+ * Supports YouTube videos with automatic thumbnail and embed URL generation.
+ * Includes duration (required by Google Video) and optional interactionStatistic (view count).
  */
 export function generateVideoObjectSchema(options: {
   videoId: string;
   name: string;
   description: string;
+  duration: string; // ISO 8601, e.g. "PT5M30S" - required by Google Video
   uploadDate?: string;
-  duration?: string; // ISO 8601 duration format, e.g., "PT5M30S"
+  viewCount?: number; // YouTube view count for interactionStatistic (recommended by Google)
   pageUrl?: string;
 }): Omit<VideoObjectSchema, '@context'> {
   const videoUrl = `https://www.youtube.com/watch?v=${options.videoId}`;
   const embedUrl = `https://www.youtube.com/embed/${options.videoId}`;
-  
+
   // YouTube thumbnail URLs - provide multiple resolutions for Google
   const thumbnailUrls = [
     `https://img.youtube.com/vi/${options.videoId}/maxresdefault.jpg`,
@@ -814,6 +821,7 @@ export function generateVideoObjectSchema(options: {
     description: options.description,
     thumbnailUrl: thumbnailUrls,
     uploadDate: options.uploadDate || new Date().toISOString().split('T')[0],
+    duration: options.duration,
     embedUrl,
     contentUrl: videoUrl,
     publisher: { '@id': `${baseUrl}/${ENTITY_ID}` },
@@ -823,8 +831,12 @@ export function generateVideoObjectSchema(options: {
     },
   };
 
-  if (options.duration) {
-    schema.duration = options.duration;
+  if (typeof options.viewCount === 'number' && options.viewCount >= 0) {
+    schema.interactionStatistic = {
+      '@type': 'InteractionCounter',
+      interactionType: 'https://schema.org/WatchAction',
+      userInteractionCount: options.viewCount,
+    };
   }
 
   return schema;
@@ -849,8 +861,9 @@ export function buildPageSchemaGraph(options: {
     id: string;
     title: string;
     description: string;
-    uploadDate: string;
-    duration?: string;
+    duration: string; // ISO 8601 - required by Google Video
+    uploadDate?: string;
+    viewCount?: number; // For interactionStatistic (recommended by Google)
   };
   // For articles
   article?: {
@@ -1052,18 +1065,6 @@ export function buildPageSchemaGraph(options: {
           breadcrumbs: options.breadcrumbs,
         })
       );
-      if (options.video) {
-        graph.push(
-          generateVideoObjectSchema({
-            videoId: options.video.id,
-            name: options.video.title,
-            description: options.video.description,
-            uploadDate: options.video.uploadDate,
-            duration: options.video.duration,
-            pageUrl: options.pageUrl,
-          })
-        );
-      }
       break;
 
     case 'contact':
@@ -1108,6 +1109,21 @@ export function buildPageSchemaGraph(options: {
     if (faqSchema) {
       graph.push(faqSchema);
     }
+  }
+
+  // Add VideoObject if provided (guides, service-hubs, etc.)
+  if (options.video) {
+    graph.push(
+      generateVideoObjectSchema({
+        videoId: options.video.id,
+        name: options.video.title,
+        description: options.video.description,
+        duration: options.video.duration,
+        uploadDate: options.video.uploadDate,
+        viewCount: options.video.viewCount,
+        pageUrl: options.pageUrl,
+      })
+    );
   }
 
   return {
