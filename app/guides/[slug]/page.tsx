@@ -170,13 +170,24 @@ export default async function GuidePage({
   const breadcrumbs = generateBreadcrumbs(`/${normalizedSlug}`, page.title);
   
   // Build unified schema graph with @context - fixes parse errors from multiple blocks
+  // Only include video if it has required duration field (required by Google Video schema)
+  const videoForSchema = guideConfig?.video?.duration 
+    ? {
+        id: guideConfig.video.id,
+        title: guideConfig.video.title,
+        description: guideConfig.video.description,
+        duration: guideConfig.video.duration,
+        uploadDate: guideConfig.video.uploadDate,
+      }
+    : undefined;
+  
   const schemaGraph = buildPageSchemaGraph({
     pageType: 'guide',
     pageUrl,
     title: page.title,
     description: page.seo_description || page.title,
     breadcrumbs,
-    video: guideConfig?.video,
+    video: videoForSchema,
   });
   
   // Process markdown content
