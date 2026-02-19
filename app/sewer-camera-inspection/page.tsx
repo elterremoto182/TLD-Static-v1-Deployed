@@ -23,7 +23,9 @@ import {
   LocalFAQ,
   RelatedProblems,
   RealWorkGallery,
+  LocalReviewsSection,
 } from '@/components/local-seo';
+import { selectReviewsForHub } from '@/lib/local-seo/reviews';
 
 const SERVICE_SLUG = 'sewer-camera-inspection';
 
@@ -217,6 +219,7 @@ export default function SewerCameraInspectionHubPage() {
   const breadcrumbs = generateServiceHubBreadcrumbs(service);
   const canonicalUrl = getServiceHubCanonicalUrl(SERVICE_SLUG);
   const videoConfig = getServiceVideo(SERVICE_SLUG);
+  const reviews = selectReviewsForHub(SERVICE_SLUG, 3);
   
   // Build comprehensive schema graph for SEO
   const schemaVideo = videoConfig ? videoConfigToSchemaVideo(videoConfig) : null;
@@ -460,6 +463,13 @@ export default function SewerCameraInspectionHubPage() {
             </div>
           </div>
         </section>
+        
+        {/* Customer Reviews Section */}
+        <LocalReviewsSection
+          reviews={reviews}
+          serviceName={service.name}
+          showGbpLink={true}
+        />
         
         {/* FAQ Section */}
         <LocalFAQ

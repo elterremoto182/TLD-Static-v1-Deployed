@@ -34,7 +34,10 @@ import {
   LocalCTA,
   ServiceVideoEmbed,
   RealWorkGallery,
+  LocalReviewsSection,
 } from '@/components/local-seo';
+import { selectReviewsForPage } from '@/lib/local-seo/reviews';
+import { getCityTier } from '@/lib/local-seo/city-tiers';
 
 const SERVICE_SLUG = 'leak-detection';
 
@@ -93,6 +96,12 @@ export default async function LeakDetectionCityPage({
   const videoConfig = getCityServiceVideo(SERVICE_SLUG, citySlug);
   
   const canonicalUrl = getCityServiceCanonicalUrl(SERVICE_SLUG, citySlug);
+  
+  // Reviews section - Tier 1 cities get 3 reviews + GBP link, Tier 2+ get 2 reviews
+  const tier = getCityTier(citySlug);
+  const reviewCount = tier === 1 ? 3 : 2;
+  const showGbpLink = tier === 1;
+  const reviews = selectReviewsForPage(citySlug, SERVICE_SLUG, reviewCount);
   
   // Build unified schema graph with all structured data
   const schemaGraph = buildPageSchemaGraph({
@@ -181,6 +190,14 @@ export default async function LeakDetectionCityPage({
           zipCodes={city.zipCodes}
           cityName={city.name}
           serviceName={service.name}
+        />
+        
+        {/* Customer Reviews Section */}
+        <LocalReviewsSection
+          reviews={reviews}
+          serviceName={service.name}
+          cityName={city.name}
+          showGbpLink={showGbpLink}
         />
         
         {faqs.length > 0 && (

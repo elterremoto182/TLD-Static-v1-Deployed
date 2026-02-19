@@ -19,6 +19,9 @@ export { ServiceHubCityGrid } from './ServiceHubCityGrid';
 // FAQ component
 export { LocalFAQ } from './LocalFAQ';
 
+// Reviews component
+export { LocalReviewsSection } from './LocalReviewsSection';
+
 // CTA components
 export { LocalCTA, InlineCTA } from './LocalCTA';
 
