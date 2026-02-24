@@ -9,8 +9,6 @@ seo_description: >-
   services and our commitment to customer satisfaction.
 keywords: ["About Total Leak Detection"]
 ---
-# About Total Leak Detection
-
 ## About Total Leak Detection
 
 We decided to build a business around simplifying the plumbing industry with Total Leak Detection. With 3rd generation plumbing knowledge, we look to redefine customer service in three concentrated areas: water leak detection, sewer camera inspections, and plumbing report writing.  

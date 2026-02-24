@@ -42,7 +42,7 @@ Recognizing these indicators allows you to address issues promptly, ensuring a c
 
 ## Common Causes of Low Water Pressure
 
-![](/wp-content/uploads/2024/11/bath-3597350_1280-1024x682.jpg)
+![Bathroom sink or bathtub fixture affected by low water pressure from clogged pipes](/wp-content/uploads/2024/11/bath-3597350_1280-1024x682.jpg)
 
 ### 1\. Clogged Pipes
 

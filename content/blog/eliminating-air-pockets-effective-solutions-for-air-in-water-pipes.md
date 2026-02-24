@@ -24,7 +24,7 @@ imageAlt: Plumber working on water pipes to eliminate air pockets causing sputte
 
 Have you ever turned on a faucet only to be greeted by a burst of air or sputtering water? This common issue is usually caused by air trapped in your water pipes. Not only can it be annoying, but it can also potentially lead to more serious plumbing problems. In this detailed guide, we’ll explore why air gets into water lines, the effects it can have on your home’s plumbing system, and effective solutions to eliminate these air pockets for smoother, more reliable water flow.
 
-![](/wp-content/uploads/2024/05/shutterstock_2335716415.jpg)
+![Sputtering faucet caused by trapped air in water pipes, a common sign of air pockets in plumbing](/wp-content/uploads/2024/05/shutterstock_2335716415.jpg)
 
 ## What Causes Air in Water Pipes?
 
@@ -57,7 +57,7 @@ Eliminating air from your water pipes can improve water pressure and prevent dam
 
 ## Preventing Future Air Pockets in Water Lines
 
-![](/wp-content/uploads/2024/05/shutterstock_2153085611.jpg)
+![Plumber performing routine maintenance on water pipes to prevent air pocket buildup](/wp-content/uploads/2024/05/shutterstock_2153085611.jpg)
 
 Prevention is key to avoiding recurring issues with air in your water pipes:
 

@@ -223,7 +223,7 @@ export default async function DynamicPage({
       faqs: faqsForSchema,
     });
     
-    const html = await processMarkdown(post.content);
+    const html = await processMarkdown(post.content, { downgradeFirstH1: true });
     
     // Get all posts for related posts section
     const allPosts = getAllPosts();
@@ -381,7 +381,7 @@ export default async function DynamicPage({
 
   const heroImage = isLocationPage ? getServiceAreaImage(slug, page.image) : null;
   const cityName = isLocationPage ? extractCityName(slug) : '';
-  const html = await processMarkdown(page.content);
+  const html = await processMarkdown(page.content, { downgradeFirstH1: isLocationPage });
 
   // Render location/service area page with hero image
   if (isLocationPage) {

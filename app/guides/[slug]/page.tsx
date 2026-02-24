@@ -191,7 +191,7 @@ export default async function GuidePage({
   });
   
   // Process markdown content
-  let html = await processMarkdown(page.content);
+  let html = await processMarkdown(page.content, { downgradeFirstH1: true });
   
   // Extract first image for hero
   const extractFirstImage = (htmlContent: string): string | null => {

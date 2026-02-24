@@ -49,7 +49,7 @@ export default async function AboutPage() {
     breadcrumbs,
   });
 
-  const html = await processMarkdown(page.content);
+  const html = await processMarkdown(page.content, { downgradeFirstH1: true });
 
   const heroImage = '/wp-content/themes/sk-theme-three/dist/images/services/48-plumbing_3721e04b.jpg';
 

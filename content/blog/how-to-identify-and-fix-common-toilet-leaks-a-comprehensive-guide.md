@@ -47,7 +47,7 @@ For additional plumbing services, consider visiting [Total Leak Detection](/) or
 
 ## Identifying Toilet Leaks
 
-![](/wp-content/uploads/2024/07/shutterstock_2303247803-1-1024x684.jpg)
+![Toilet tank interior showing flapper, fill valve, and float mechanism for leak identification](/wp-content/uploads/2024/07/shutterstock_2303247803-1-1024x684.jpg)
 
 ### Performing the Food Coloring Test
 

@@ -103,6 +103,21 @@ function rehypeYouTubeFacade() {
 }
 
 /**
+ * Rehype plugin to downgrade the first H1 to H2 (for pages that already have a hero H1)
+ */
+function rehypeDowngradeFirstH1() {
+  return (tree: Root) => {
+    let firstH1Found = false;
+    visit(tree, 'element', (node: Element) => {
+      if (node.tagName === 'h1' && !firstH1Found) {
+        node.tagName = 'h2';
+        firstH1Found = true;
+      }
+    });
+  };
+}
+
+/**
  * Rehype plugin to apply custom styling classes
  */
 function rehypeApplyStyles() {
@@ -239,17 +254,33 @@ function rehypeApplyStyles() {
   };
 }
 
+export interface ProcessMarkdownOptions {
+  /** When true, downgrades the first H1 to H2 (for pages with a hero H1) */
+  downgradeFirstH1?: boolean;
+}
+
 /**
  * Process markdown content to HTML at build time
  */
-export async function processMarkdown(content: string): Promise<string> {
-  const file = await unified()
+export async function processMarkdown(
+  content: string,
+  options: ProcessMarkdownOptions = {}
+): Promise<string> {
+  const { downgradeFirstH1 = false } = options;
+
+  const processor = unified()
     .use(remarkParse)
     .use(remarkGfm)
     .use(remarkRehype, { allowDangerousHtml: true })
     .use(rehypeRaw)
     .use(rehypeYouTubeFacade)
-    .use(rehypeHeadingIds)
+    .use(rehypeHeadingIds);
+
+  if (downgradeFirstH1) {
+    processor.use(rehypeDowngradeFirstH1);
+  }
+
+  const file = await processor
     .use(rehypeApplyStyles)
     .use(rehypeStringify, { allowDangerousHtml: true })
     .process(content);

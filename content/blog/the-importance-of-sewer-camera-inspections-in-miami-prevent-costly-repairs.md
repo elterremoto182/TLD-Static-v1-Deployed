@@ -74,7 +74,7 @@ After the inspection, the technician reviews all footage. They explain what they
 
 ## Why Regular Inspections Are Worth the Investment
 
-![](/wp-content/uploads/2024/12/Downpic.cc-2389927459.jpg)
+![Sewer camera inspection footage showing pipe interior for early problem detection in Miami](/wp-content/uploads/2024/12/Downpic.cc-2389927459.jpg)
 
 Regular [sewer camera inspections](/sewer-camera-inspection/) offer real benefits for your home and wallet.
 

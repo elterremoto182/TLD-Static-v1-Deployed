@@ -72,7 +72,7 @@ If you’re currently dealing with issues like slab leaks, our [Slab Leak Detect
 
 ## **2\. Understanding Standard Sewer Pipe Sizes**
 
-![](/wp-content/uploads/2024/06/shutterstock_1104346235-1024x768.jpg)
+![Residential and commercial sewer pipe diameter comparison chart showing standard sizes from 4 to 12 inches](/wp-content/uploads/2024/06/shutterstock_1104346235-1024x768.jpg)
 
 ### **2.1 Residential Sewer Pipe Sizes**
 
@@ -155,7 +155,7 @@ Properly sized pipes not only ensure efficient wastewater flow but also minimize
 
 ## **5\. Expert Tips for Choosing and Installing the Perfect Pipe Size**
 
-![](/wp-content/uploads/2024/06/shutterstock_706215073-1-1024x576.jpg)
+![Plumber measuring and selecting the correct pipe size for a main sewer line installation](/wp-content/uploads/2024/06/shutterstock_706215073-1-1024x576.jpg)
 
 Selecting the right pipe size for your main sewer line ensures a reliable and efficient drainage system. Here are some expert tips to guide you:
 

@@ -52,7 +52,7 @@ Preventative measures not only save you from inconvenient clogs but also extend 
 
 ## Expert Tips for Preventing Clogs in Your Kitchen Sink
 
-![](/wp-content/uploads/2021/10/clogged-drain.jpg)
+![Clogged kitchen sink drain showing buildup that causes blockages](/wp-content/uploads/2021/10/clogged-drain.jpg)
 
 ### Avoiding Grease and Oils
 

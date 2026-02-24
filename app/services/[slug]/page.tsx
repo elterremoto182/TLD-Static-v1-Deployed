@@ -144,7 +144,7 @@ export default async function ServicePage({
     },
   });
 
-  let html = await processMarkdown(page.content);
+  let html = await processMarkdown(page.content, { downgradeFirstH1: true });
   
   // Extract first image from markdown content for hero, or use page.image or default
   const extractFirstImage = (htmlContent: string): string | null => {
